@@ -614,6 +614,13 @@
           
             // check if pointer points to derrived type:
             
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexWidget::getIdStatic()) {
+                return (QListView*)(QHelpIndexWidget*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QListWidget::getIdStatic()) {
                 return (QListView*)(QListWidget*)vp;
               }

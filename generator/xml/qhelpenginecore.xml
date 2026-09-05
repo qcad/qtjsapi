@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpenginecore.h">
+  <class_decl name="QHelpFilterEngine" />
+  <class_decl name="QHelpLink" />
+  <class name="QHelpEngineCore" ifdef="QT_HELP_LIB" downcast="true">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="collectionFile" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isReadOnly">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setReadOnly">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filterEngine">
+      <variant return-type="QHelpFilterEngine*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setupData">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="collectionFile">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCollectionFile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyCollectionFile">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="namespaceName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="documentationFileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="registerDocumentation">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="documentationFileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unregisterDocumentation">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="documentationFileName">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="namespaceName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="registeredDocumentations">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fileData">
+      <variant return-type="QByteArray" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="customFilters">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="removeCustomFilter">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addCustomFilter">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="attributes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filterAttributes">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentFilter">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="files">
+      <variant return-type="QList&lt;QUrl&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="" name="namespaceName" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="filterAttributes" />
+          <parameter const="true" type="QString" modifier="&amp;" name="extensionFilter" default="QString()" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;QUrl&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="" name="namespaceName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="extensionFilter" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="findFile">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="documentsForIdentifier">
+      <variant return-type="QList&lt;QHelpLink&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;QHelpLink&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="documentsForKeyword">
+      <variant return-type="QList&lt;QHelpLink&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="keyword" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;QHelpLink&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="keyword" />
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeCustomValue">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="customValue">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="defaultValue" default="QVariant()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCustomValue">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="metaData" static="true">
+      <variant return-type="QVariant" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="documentationFileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="error">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoSaveFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="save" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoSaveFilter">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUsesFilterEngine">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="uses" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="usesFilterEngine">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setupStarted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setupFinished">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="warning">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="msg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentFilterChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="newFilter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="readersAboutToBeInvalidated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

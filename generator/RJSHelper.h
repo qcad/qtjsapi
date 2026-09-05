@@ -24,6 +24,9 @@
       #ifdef QT_SQL_LIB
       #include <QtSql>
       #endif
+      #ifdef QT_HELP_LIB
+      #include <QtHelp>
+      #endif
       #ifdef QT_POSITIONING_LIB
       #include <QtPositioning>
       #endif
@@ -79,6 +82,15 @@
         public:
           virtual QJSValue downcast(RJSApi& handler, QFrame* o) = 0;
         };
+        
+          #ifdef QT_HELP_LIB
+        // Base class for downcasters that can downcast QHelpEngineCore to specific types:
+        class RJSDowncaster_QHelpEngineCore {
+        public:
+          virtual QJSValue downcast(RJSApi& handler, QHelpEngineCore* o) = 0;
+        };
+        
+          #endif
         
         // Base class for downcasters that can downcast QItemDelegate to specific types:
         class RJSDowncaster_QItemDelegate {
@@ -926,6 +938,114 @@
           virtual QHeaderView* castToBase(int t, void* vp) = 0;
         };
         
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpContentItem:
+        class RJSBasecaster_QHelpContentItem {
+        public:
+          virtual QHelpContentItem* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpContentModel:
+        class RJSBasecaster_QHelpContentModel {
+        public:
+          virtual QHelpContentModel* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpContentWidget:
+        class RJSBasecaster_QHelpContentWidget {
+        public:
+          virtual QHelpContentWidget* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpEngine:
+        class RJSBasecaster_QHelpEngine {
+        public:
+          virtual QHelpEngine* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpEngineCore:
+        class RJSBasecaster_QHelpEngineCore {
+        public:
+          virtual QHelpEngineCore* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpFilterEngine:
+        class RJSBasecaster_QHelpFilterEngine {
+        public:
+          virtual QHelpFilterEngine* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpIndexModel:
+        class RJSBasecaster_QHelpIndexModel {
+        public:
+          virtual QHelpIndexModel* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpIndexWidget:
+        class RJSBasecaster_QHelpIndexWidget {
+        public:
+          virtual QHelpIndexWidget* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpSearchEngine:
+        class RJSBasecaster_QHelpSearchEngine {
+        public:
+          virtual QHelpSearchEngine* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpSearchQueryWidget:
+        class RJSBasecaster_QHelpSearchQueryWidget {
+        public:
+          virtual QHelpSearchQueryWidget* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpSearchResult:
+        class RJSBasecaster_QHelpSearchResult {
+        public:
+          virtual QHelpSearchResult* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
+          #ifdef QT_HELP_LIB
+        // Base class for basecasters that can cast void* to base class QHelpSearchResultWidget:
+        class RJSBasecaster_QHelpSearchResultWidget {
+        public:
+          virtual QHelpSearchResultWidget* castToBase(int t, void* vp) = 0;
+        };
+        
+          #endif
+        
         // Base class for basecasters that can cast void* to base class QHostAddress:
         class RJSBasecaster_QHostAddress {
         public:
@@ -1655,6 +1775,12 @@
           virtual QStringDecoder* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class QStringListModel:
+        class RJSBasecaster_QStringListModel {
+        public:
+          virtual QStringListModel* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class QStyleOption:
         class RJSBasecaster_QStyleOption {
         public:
@@ -2236,6 +2362,13 @@
           static QJSValue cpp2js_QList_QPair_QString_QString(RJSApi& handler, const QList<QPair<QString,QString> >& v);
           static QList<QPair<QString,QString> > js2cpp_QList_QPair_QString_QString(RJSApi& handler, const QJSValue& v);
           static bool is_QList_QPair_QString_QString(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+
+          #ifdef QT_HELP_LIB
+          // QHelpLink is a plain struct (url, title), converted to / from a JS object:
+          static QJSValue cpp2js_QHelpLink(RJSApi& handler, const QHelpLink& v);
+          static QHelpLink js2cpp_QHelpLink(RJSApi& handler, const QJSValue& v);
+          static bool is_QHelpLink(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+          #endif
         
   // ----------------
   // primitive types:
@@ -4282,6 +4415,14 @@
     
     #endif
   
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpSearchResult(RJSApi& handler, const QHelpSearchResult* v);
+      static QJSValue cpp2js_QHelpSearchResult(RJSApi& handler, const QHelpSearchResult& v);
+      static QHelpSearchResult js2cpp_QHelpSearchResult(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpSearchResult(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
       static QJSValue cpp2js_QJsonDocument(RJSApi& handler, const QJsonDocument* v);
       static QJSValue cpp2js_QJsonDocument(RJSApi& handler, const QJsonDocument& v);
       static QJsonDocument js2cpp_QJsonDocument(RJSApi& handler, const QJSValue& v);
@@ -4736,6 +4877,13 @@
       static QJSValue cpp2js_QSqlQuery(RJSApi& handler, QSqlQuery* v);
       static QSqlQuery* js2cpp_QSqlQuery_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QSqlQuery_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpContentItem(RJSApi& handler, QHelpContentItem* v);
+      static QHelpContentItem* js2cpp_QHelpContentItem_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpContentItem_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
     #endif
   
@@ -5312,6 +5460,91 @@
       static QStandardItemModel* js2cpp_QStandardItemModel_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_QStandardItemModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QStringListModel(RJSApi& handler, QStringListModel* v);
+      static QJSValue cpp2js_QStringListModel(RJSApi& handler, const QStringListModel* v);
+      static QStringListModel* js2cpp_QStringListModel_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QStringListModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpEngineCore(RJSApi& handler, QHelpEngineCore* v);
+      static QJSValue cpp2js_QHelpEngineCore(RJSApi& handler, const QHelpEngineCore* v);
+      static QHelpEngineCore* js2cpp_QHelpEngineCore_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpEngineCore_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpEngine(RJSApi& handler, QHelpEngine* v);
+      static QJSValue cpp2js_QHelpEngine(RJSApi& handler, const QHelpEngine* v);
+      static QHelpEngine* js2cpp_QHelpEngine_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpContentModel(RJSApi& handler, QHelpContentModel* v);
+      static QJSValue cpp2js_QHelpContentModel(RJSApi& handler, const QHelpContentModel* v);
+      static QHelpContentModel* js2cpp_QHelpContentModel_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpContentModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpContentWidget(RJSApi& handler, QHelpContentWidget* v);
+      static QJSValue cpp2js_QHelpContentWidget(RJSApi& handler, const QHelpContentWidget* v);
+      static QHelpContentWidget* js2cpp_QHelpContentWidget_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpContentWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpIndexModel(RJSApi& handler, QHelpIndexModel* v);
+      static QJSValue cpp2js_QHelpIndexModel(RJSApi& handler, const QHelpIndexModel* v);
+      static QHelpIndexModel* js2cpp_QHelpIndexModel_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpIndexModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpIndexWidget(RJSApi& handler, QHelpIndexWidget* v);
+      static QJSValue cpp2js_QHelpIndexWidget(RJSApi& handler, const QHelpIndexWidget* v);
+      static QHelpIndexWidget* js2cpp_QHelpIndexWidget_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpIndexWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpSearchEngine(RJSApi& handler, QHelpSearchEngine* v);
+      static QJSValue cpp2js_QHelpSearchEngine(RJSApi& handler, const QHelpSearchEngine* v);
+      static QHelpSearchEngine* js2cpp_QHelpSearchEngine_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpSearchEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpSearchQueryWidget(RJSApi& handler, QHelpSearchQueryWidget* v);
+      static QJSValue cpp2js_QHelpSearchQueryWidget(RJSApi& handler, const QHelpSearchQueryWidget* v);
+      static QHelpSearchQueryWidget* js2cpp_QHelpSearchQueryWidget_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpSearchQueryWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpSearchResultWidget(RJSApi& handler, QHelpSearchResultWidget* v);
+      static QJSValue cpp2js_QHelpSearchResultWidget(RJSApi& handler, const QHelpSearchResultWidget* v);
+      static QHelpSearchResultWidget* js2cpp_QHelpSearchResultWidget_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpSearchResultWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QHelpFilterEngine(RJSApi& handler, QHelpFilterEngine* v);
+      static QJSValue cpp2js_QHelpFilterEngine(RJSApi& handler, const QHelpFilterEngine* v);
+      static QHelpFilterEngine* js2cpp_QHelpFilterEngine_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_QHelpFilterEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
       static QJSValue cpp2js_QStatusBar(RJSApi& handler, QStatusBar* v);
       static QJSValue cpp2js_QStatusBar(RJSApi& handler, const QStatusBar* v);
       static QStatusBar* js2cpp_QStatusBar_ptr(RJSApi& handler, const QJSValue& v);
@@ -5592,6 +5825,20 @@
     
     #endif
   
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QList_QHelpLink(RJSApi& handler, const QList<QHelpLink>& v);
+      static QList<QHelpLink> js2cpp_QList_QHelpLink(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QHelpLink(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      static QJSValue cpp2js_QList_QHelpSearchResult(RJSApi& handler, const QList<QHelpSearchResult>& v);
+      static QList<QHelpSearchResult> js2cpp_QList_QHelpSearchResult(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QHelpSearchResult(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+    #endif
+  
   // --------------------
   // QList pointer types:
   // --------------------
@@ -5805,6 +6052,17 @@
           public:
             static void registerDowncaster_QFrame(RJSDowncaster_QFrame* dc) {
               downcasters_QFrame.append(dc);
+            }
+
+          
+
+          // allow downcasting for type QHelpEngineCore:
+          private:
+            static QList<RJSDowncaster_QHelpEngineCore*> downcasters_QHelpEngineCore;
+
+          public:
+            static void registerDowncaster_QHelpEngineCore(RJSDowncaster_QHelpEngineCore* dc) {
+              downcasters_QHelpEngineCore.append(dc);
             }
 
           

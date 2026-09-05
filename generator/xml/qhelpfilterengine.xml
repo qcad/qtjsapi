@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpfilterengine.h">
+  <class name="QHelpFilterEngine" ifdef="QT_HELP_LIB" ownership="cpp" nodestructor="true">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <function name="filters">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="activeFilter">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setActiveFilter">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="availableComponents">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="removeFilter">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="namespacesForFilter">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indices">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filterActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="newFilter" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

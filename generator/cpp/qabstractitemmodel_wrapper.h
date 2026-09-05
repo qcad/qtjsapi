@@ -500,12 +500,30 @@
                 return (QAbstractItemModel*)(QFileSystemModel*)vp;
               }
               
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentModel::getIdStatic()) {
+                return (QAbstractItemModel*)(QHelpContentModel*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexModel::getIdStatic()) {
+                return (QAbstractItemModel*)(QHelpIndexModel*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QSortFilterProxyModel::getIdStatic()) {
                 return (QAbstractItemModel*)(QSortFilterProxyModel*)vp;
               }
               
               if (t==RJSType_QStandardItemModel::getIdStatic()) {
                 return (QAbstractItemModel*)(QStandardItemModel*)vp;
+              }
+              
+              if (t==RJSType_QStringListModel::getIdStatic()) {
+                return (QAbstractItemModel*)(QStringListModel*)vp;
               }
               
 
@@ -3836,6 +3854,17 @@ HorizontalSortHint = QAbstractTableModel::HorizontalSortHint,
           
             // check if pointer points to derrived type:
             
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexModel::getIdStatic()) {
+                return (QAbstractListModel*)(QHelpIndexModel*)vp;
+              }
+              
+                #endif
+              
+              if (t==RJSType_QStringListModel::getIdStatic()) {
+                return (QAbstractListModel*)(QStringListModel*)vp;
+              }
+              
 
           // hook for modules to cast from other types to base QAbstractListModel:
           for (int i=0; i<basecasters_QAbstractListModel.length(); i++) {

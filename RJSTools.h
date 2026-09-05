@@ -10,6 +10,8 @@
 #include <QObject>
 #include <QDebug>
 #include <QThreadPool>
+#include <QVariantMap>
+#include <QVariantList>
 
 class RJSWrapperObj;
 class RJSApi;
@@ -34,6 +36,8 @@ public:
     Q_INVOKABLE bool isDeleted(const QJSValue& obj);
     Q_INVOKABLE QString download(const QString& url, int timeout);
     Q_INVOKABLE bool downloadToFile(const QString& url, const QString& path, const QString& fileName, int timeout);
+    Q_INVOKABLE QVariantMap httpGet(const QString& url, double from, double to, int timeout, const QVariantMap& headers = QVariantMap());
+    Q_INVOKABLE QVariantList httpGetAll(const QVariantList& requests, int timeout);
     Q_INVOKABLE void print(const QJSValue& args);
     Q_INVOKABLE void debug(const QJSValue& args);
     Q_INVOKABLE void warning(const QJSValue& args);

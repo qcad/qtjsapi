@@ -540,6 +540,20 @@
                 return (QAbstractItemView*)(QHeaderView*)vp;
               }
               
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentWidget::getIdStatic()) {
+                return (QAbstractItemView*)(QHelpContentWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexWidget::getIdStatic()) {
+                return (QAbstractItemView*)(QHelpIndexWidget*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QListView::getIdStatic()) {
                 return (QAbstractItemView*)(QListView*)vp;
               }
@@ -7849,6 +7863,48 @@ InternalMove = QAbstractItemView::InternalMove,
               ;
             
     // Class: QAbstractItemView
+    // Function: pressed
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void pressed(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void pressedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QAbstractItemView
+    // Function: clicked
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void clicked(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void clickedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QAbstractItemView
     // Function: doubleClicked
     // Source: 
     // Static: false
@@ -7866,6 +7922,48 @@ InternalMove = QAbstractItemView::InternalMove,
               // called when signal is emitted from wrapped class:
               public slots:
               void doubleClickedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QAbstractItemView
+    // Function: activated
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void activated(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void activatedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QAbstractItemView
+    // Function: entered
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void entered(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void enteredEmitter(
                 const QModelIndex& index
               );
             

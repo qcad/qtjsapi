@@ -109,6 +109,13 @@
                 return (QPaintDevice*)(QHeaderView*)vp;
               }
               
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentWidget::getIdStatic()) {
+                return (QPaintDevice*)(QHelpContentWidget*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QImage::getIdStatic()) {
                 return (QPaintDevice*)(QImage*)vp;
               }

@@ -1,5 +1,6 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
+#include <QThread>
 #include <QTimer>
 #include <QDomNode>
 #include <QtConcurrent>
@@ -247,6 +248,137 @@ QString RJSTools::download(const QString& url, int timeout) {
     delete reply;
 
     return content;
+}
+
+/**
+ * Worker thread for RJSTools::httpGet: runs the request with its own
+ * QNetworkAccessManager and event loop, so that the calling (script)
+ * thread does not have to spin a nested event loop.
+ *
+ * (A nested event loop in the script thread lets the JS engine run
+ * garbage collection steps from the event loop; with a lot of garbage
+ * pending, the engine was measured to be 4-5 times slower for the rest of
+ * the script run.)
+ */
+class RJSHttpGetThread : public QThread {
+public:
+    RJSHttpGetThread(const QNetworkRequest& request) : request(request), status(0), contentLength(-1.0) {}
+
+    void run() override {
+        QNetworkAccessManager manager;
+        QEventLoop loop;
+        QNetworkReply* reply = manager.get(request);
+        QObject::connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+        loop.exec();
+
+        status = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+        if (reply->error()!=QNetworkReply::NoError) {
+            error = reply->errorString();
+        }
+        if (reply->hasRawHeader("Content-Range")) {
+            // "bytes a-b/total":
+            QString cr = QString::fromLatin1(reply->rawHeader("Content-Range"));
+            int idx = cr.lastIndexOf('/');
+            if (idx!=-1) {
+                contentLength = cr.mid(idx+1).toDouble();
+            }
+        }
+        else if (reply->hasRawHeader("Content-Length")) {
+            contentLength = QString::fromLatin1(reply->rawHeader("Content-Length")).toDouble();
+        }
+        data = reply->readAll();
+        delete reply;
+    }
+
+    QNetworkRequest request;
+    int status;
+    QString error;
+    double contentLength;
+    QByteArray data;
+};
+
+/**
+ * Binary HTTP(S) GET with optional byte range, blocking.
+ *
+ * The request runs in a worker thread; the calling thread blocks until it
+ * is finished (no nested event loop in the calling thread).
+ *
+ * \param from First byte to request (>=0) or -1 for no range.
+ * \param to Last byte to request (inclusive), -1 for "to end of resource".
+ * If from is -1 and to > 0, the last 'to' bytes are requested.
+ * \param timeout Transfer timeout in ms (0: none).
+ * \param headers Additional request headers.
+ * \return Object with status (HTTP status code, 0 on network error),
+ * error (empty on success), contentLength (from the Content-Length or
+ * Content-Range header, total size of the resource) and data (the body as
+ * ArrayBuffer).
+ */
+static QNetworkRequest rjsMakeHttpRequest(const QString& url, double from, double to, int timeout, const QVariantMap& headers) {
+    QNetworkRequest request{QUrl(url)};
+    request.setAttribute(QNetworkRequest::RedirectPolicyAttribute, QNetworkRequest::NoLessSafeRedirectPolicy);
+    if (from>=0) {
+        QString range = QString("bytes=%1-").arg((qint64)from);
+        if (to>=from) {
+            range += QString::number((qint64)to);
+        }
+        request.setRawHeader("Range", range.toLatin1());
+    }
+    else if (to>0) {
+        // last 'to' bytes:
+        request.setRawHeader("Range", QString("bytes=-%1").arg((qint64)to).toLatin1());
+    }
+    QVariantMap::const_iterator it;
+    for (it=headers.constBegin(); it!=headers.constEnd(); ++it) {
+        request.setRawHeader(it.key().toLatin1(), it.value().toString().toLatin1());
+    }
+    if (timeout>0) {
+        request.setTransferTimeout(timeout);
+    }
+    return request;
+}
+
+static QVariantMap rjsHttpGetResult(const RJSHttpGetThread& thread) {
+    QVariantMap ret;
+    ret["status"] = thread.status;
+    ret["error"] = thread.error;
+    ret["contentLength"] = thread.contentLength;
+    ret["data"] = thread.data;
+    return ret;
+}
+
+QVariantMap RJSTools::httpGet(const QString& url, double from, double to, int timeout, const QVariantMap& headers) {
+    RJSHttpGetThread thread(rjsMakeHttpRequest(url, from, to, timeout, headers));
+    thread.start();
+    thread.wait();
+    return rjsHttpGetResult(thread);
+}
+
+/**
+ * Runs several HTTP GET requests concurrently (one thread each) and
+ * blocks until all are finished.
+ *
+ * \param requests List of objects { url, from, to, headers } (see httpGet).
+ * eturn List of result objects (see httpGet) in the same order.
+ */
+QVariantList RJSTools::httpGetAll(const QVariantList& requests, int timeout) {
+    QList<RJSHttpGetThread*> threads;
+    for (int i=0; i<requests.length(); i++) {
+        QVariantMap r = requests[i].toMap();
+        double from = r.contains("from") ? r["from"].toDouble() : -1.0;
+        double to = r.contains("to") ? r["to"].toDouble() : -1.0;
+        QVariantMap headers = r.contains("headers") ? r["headers"].toMap() : QVariantMap();
+        RJSHttpGetThread* t = new RJSHttpGetThread(rjsMakeHttpRequest(r["url"].toString(), from, to, timeout, headers));
+        threads.append(t);
+        t->start();
+    }
+
+    QVariantList ret;
+    for (int i=0; i<threads.length(); i++) {
+        threads[i]->wait();
+        ret.append(rjsHttpGetResult(*threads[i]));
+        delete threads[i];
+    }
+    return ret;
 }
 
 bool RJSTools::downloadToFile(const QString& url, const QString& path, const QString& fileName, int timeout) {

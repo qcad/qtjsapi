@@ -331,6 +331,76 @@
                 return (QObject*)(QHeaderView*)vp;
               }
               
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentModel::getIdStatic()) {
+                return (QObject*)(QHelpContentModel*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentWidget::getIdStatic()) {
+                return (QObject*)(QHelpContentWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpEngine::getIdStatic()) {
+                return (QObject*)(QHelpEngine*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpEngineCore::getIdStatic()) {
+                return (QObject*)(QHelpEngineCore*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpFilterEngine::getIdStatic()) {
+                return (QObject*)(QHelpFilterEngine*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexModel::getIdStatic()) {
+                return (QObject*)(QHelpIndexModel*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexWidget::getIdStatic()) {
+                return (QObject*)(QHelpIndexWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpSearchEngine::getIdStatic()) {
+                return (QObject*)(QHelpSearchEngine*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpSearchQueryWidget::getIdStatic()) {
+                return (QObject*)(QHelpSearchQueryWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpSearchResultWidget::getIdStatic()) {
+                return (QObject*)(QHelpSearchResultWidget*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QInputDevice::getIdStatic()) {
                 return (QObject*)(QInputDevice*)vp;
               }
@@ -529,6 +599,10 @@
               
               if (t==RJSType_QStatusBar::getIdStatic()) {
                 return (QObject*)(QStatusBar*)vp;
+              }
+              
+              if (t==RJSType_QStringListModel::getIdStatic()) {
+                return (QObject*)(QStringListModel*)vp;
               }
               
               if (t==RJSType_QSvgRenderer::getIdStatic()) {

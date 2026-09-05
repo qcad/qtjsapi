@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpsearchengine.h">
+  <class_decl name="QHelpEngineCore" />
+  <class_decl name="QHelpSearchQueryWidget" />
+  <class_decl name="QHelpSearchResultWidget" />
+  <class_decl name="QHelpSearchResult" />
+  <class name="QHelpSearchEngine" ifdef="QT_HELP_LIB">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QHelpEngineCore" modifier="*" name="helpEngine" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="queryWidget">
+      <variant return-type="QHelpSearchQueryWidget*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resultWidget">
+      <variant return-type="QHelpSearchResultWidget*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="searchResultCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="searchResults">
+      <variant return-type="QList&lt;QHelpSearchResult&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="start" />
+          <parameter const="false" type="int" modifier="" name="end" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="searchInput">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reindexDocumentation">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cancelIndexing">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="search">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="searchInput" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cancelSearching">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scheduleIndexDocumentation">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexingStarted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexingFinished">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="searchingStarted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="searchingFinished">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="searchResultCount" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

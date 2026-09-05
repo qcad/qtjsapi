@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpsearchresultwidget.h">
+  <class name="QHelpSearchResultWidget" ifdef="QT_HELP_LIB" ownership="cpp" nodestructor="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" downcast="true" />
+    </super_list>
+    <function name="linkAt">
+      <variant return-type="QUrl" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="requestShowLink">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

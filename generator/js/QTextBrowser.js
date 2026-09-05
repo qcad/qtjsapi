@@ -195,6 +195,38 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
 
       // functions:
       
+      // function 
+      QTextBrowser.prototype.loadResource = function() 
+        
+      {
+        //print("JS: QTextBrowser.prototype.loadResource");
+        
+      if (arguments.length == 2) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.loadResource(
+                // call highest level JS implementation:
+                //return this.loadResourceBase(
+                
+                    return this.loadResourceSuper(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, QTextBrowser);
+  }
+
+  
+  else {
+    
+        print("QTextBrowser.loadResource(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+      };
+    
 
       // static functions:
       

@@ -270,6 +270,37 @@
     
       #endif
     
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpLink : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpLink";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpLink();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
 
   
 
@@ -2627,6 +2658,37 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_QSqlRecord();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpSearchResult : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpSearchResult";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpSearchResult();
           //}
 
           Q_INVOKABLE
@@ -5285,6 +5347,37 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_QSqlQuery();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpContentItem : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpContentItem";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpContentItem();
           //}
 
           Q_INVOKABLE
@@ -8506,6 +8599,344 @@
       private:
           static int id;
       };
+    
+      class QTJSAPI_EXPORT  RJSType_QStringListModel : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QStringListModel";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QStringListModel();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpEngineCore : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpEngineCore";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpEngineCore();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpEngine : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpEngine";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpEngine();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpContentModel : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpContentModel";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpContentModel();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpContentWidget : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpContentWidget";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpContentWidget();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpIndexModel : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpIndexModel";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpIndexModel();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpIndexWidget : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpIndexWidget";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpIndexWidget();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpSearchEngine : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpSearchEngine";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpSearchEngine();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpSearchQueryWidget : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpSearchQueryWidget";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpSearchQueryWidget();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpSearchResultWidget : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpSearchResultWidget";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpSearchResultWidget();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      class QTJSAPI_EXPORT  RJSType_QHelpFilterEngine : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "QHelpFilterEngine";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_QHelpFilterEngine();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+
+      private:
+          static int id;
+      };
+    
+      #endif
     
       class QTJSAPI_EXPORT  RJSType_QStatusBar : public RJSTypeEnum {
           Q_OBJECT

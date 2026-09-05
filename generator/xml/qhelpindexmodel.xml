@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpindexmodel.h">
+  <class_decl name="QHelpEngineCore" />
+  <class_decl name="QHelpLink" />
+  <class name="QHelpIndexModel" ifdef="QT_HELP_LIB" ownership="cpp" nodestructor="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAbstractItemModel" />
+      <super name="QAbstractListModel" />
+      <super name="QStringListModel" />
+    </super_list>
+    <function name="createIndexForCurrentFilter">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="createIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="customFilterName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filter">
+      <variant return-type="QModelIndex" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" />
+          <parameter const="true" type="QString" modifier="&amp;" name="wildcard" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCreatingIndex">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="helpEngine">
+      <variant return-type="QHelpEngineCore*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexCreationStarted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexCreated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

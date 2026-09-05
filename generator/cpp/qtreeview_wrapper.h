@@ -592,6 +592,13 @@
           
             // check if pointer points to derrived type:
             
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentWidget::getIdStatic()) {
+                return (QTreeView*)(QHelpContentWidget*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QTreeWidget::getIdStatic()) {
                 return (QTreeView*)(QTreeWidget*)vp;
               }
@@ -7712,6 +7719,48 @@ InternalMove = QTreeView::InternalMove,
               ;
             
     // Class: QTreeView
+    // Function: pressed
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void pressed(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void pressedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QTreeView
+    // Function: clicked
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void clicked(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void clickedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QTreeView
     // Function: doubleClicked
     // Source: QAbstractItemView
     // Static: false
@@ -7729,6 +7778,48 @@ InternalMove = QTreeView::InternalMove,
               // called when signal is emitted from wrapped class:
               public slots:
               void doubleClickedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QTreeView
+    // Function: activated
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void activated(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void activatedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: QTreeView
+    // Function: entered
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void entered(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void enteredEmitter(
                 const QModelIndex& index
               );
             

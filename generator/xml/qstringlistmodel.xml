@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qstringlistmodel.h">
+  <class name="QStringListModel" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAbstractItemModel" />
+      <super name="QAbstractListModel" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="strings" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="stringList">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStringList">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="strings" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

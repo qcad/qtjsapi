@@ -257,6 +257,36 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhelpcontentitem_wrapper.h"
+        
+          #include "qhelpcontentmodel_wrapper.h"
+        
+          #include "qhelpcontentwidget_wrapper.h"
+        
+          #include "qtreeview_wrapper.h"
+        
+          #include "qhelpengine_wrapper.h"
+        
+          #include "qhelpenginecore_wrapper.h"
+        
+          #include "qhelpfilterengine_wrapper.h"
+        
+          #include "qhelpindexmodel_wrapper.h"
+        
+          #include "qstringlistmodel_wrapper.h"
+        
+          #include "qhelpindexwidget_wrapper.h"
+        
+          #include "qlistview_wrapper.h"
+        
+          #include "qhelpsearchengine_wrapper.h"
+        
+          #include "qhelpsearchquerywidget_wrapper.h"
+        
+          #include "qhelpsearchresult_wrapper.h"
+        
+          #include "qhelpsearchresultwidget_wrapper.h"
+        
           #include "qhostaddress_wrapper.h"
         
           #include "qicon_wrapper.h"
@@ -294,8 +324,6 @@
           #include "qlinef_wrapper.h"
         
           #include "qlineedit_wrapper.h"
-        
-          #include "qlistview_wrapper.h"
         
           #include "qlistwidgetitem_wrapper.h"
         
@@ -592,8 +620,6 @@
           #include "qtransform_wrapper.h"
         
           #include "qtranslator_wrapper.h"
-        
-          #include "qtreeview_wrapper.h"
         
           #include "qtreewidgetitem_wrapper.h"
         
@@ -932,6 +958,17 @@
                     return RJSHelper::cpp2js_QFileSystemModel(handler, o);
                 }
             }
+            
+              #ifdef QT_HELP_LIB
+            // downcast to QHelpContentModel:
+            {
+                QHelpContentModel* o = qobject_cast<QHelpContentModel*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QHelpContentModel(handler, o);
+                }
+            }
+            
+              #endif
             
             // downcast to QStandardItemModel:
             {
@@ -6721,6 +6758,17 @@
     
       QJSValue RJSHelper::cpp2js_QListView(RJSApi& handler, QListView* v) {
           
+              #ifdef QT_HELP_LIB
+            // downcast to QHelpIndexWidget:
+            {
+                QHelpIndexWidget* o = qobject_cast<QHelpIndexWidget*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QHelpIndexWidget(handler, o);
+                }
+            }
+            
+              #endif
+            
             // downcast to QListWidget:
             {
                 QListWidget* o = qobject_cast<QListWidget*>(v);
@@ -10368,6 +10416,1221 @@
       }
 
     
+      QJSValue RJSHelper::cpp2js_QStringListModel(RJSApi& handler, QStringListModel* v) {
+          
+              #ifdef QT_HELP_LIB
+            // downcast to QHelpIndexModel:
+            {
+                QHelpIndexModel* o = qobject_cast<QHelpIndexModel*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QHelpIndexModel(handler, o);
+                }
+            }
+            
+              #endif
+            QStringListModel_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QStringListModel_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QStringListModel: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QStringListModel_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QStringListModel_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QStringListModel('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QStringListModel");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QStringListModel is undefined. Use QStringListModel_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QStringListModel('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QStringListModel(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QStringListModel(RJSApi& handler, const QStringListModel* v) {
+          return RJSHelper::cpp2js_QStringListModel(handler, const_cast<QStringListModel*>(v));
+      }
+
+      QStringListModel* RJSHelper::js2cpp_QStringListModel_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QStringListModel: not a QObject";
+              return nullptr;
+          }
+          //QStringListModel_Wrapper* wrapper = getWrapper<QStringListModel_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QStringListModel_Wrapper* wrapper = qobject_cast<QStringListModel_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QStringListModel_Wrapper* wrapper = dynamic_cast<QStringListModel_Wrapper*>(obj);
+          //QStringListModel_Wrapper* wrapper = (QStringListModel_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QStringListModel: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QStringListModel*)wrapper->getWrappedVoid();
+          //return getWrapped_QStringListModel(wrapper);
+          return QStringListModel_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QStringListModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QStringListModel: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QStringListModel_Type);
+          //return fun.call().toInt()==RJSType::QStringListModel_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QStringListModel::getIdStatic())).toBool();
+      }
+
+    
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpEngineCore(RJSApi& handler, QHelpEngineCore* v) {
+          
+              #ifdef QT_HELP_LIB
+            // downcast to QHelpEngine:
+            {
+                QHelpEngine* o = qobject_cast<QHelpEngine*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QHelpEngine(handler, o);
+                }
+            }
+            
+              #endif
+            
+            // downcast to types derrived from QHelpEngineCore but defined in other modules:
+            for (int i=0; i<downcasters_QHelpEngineCore.length(); i++) {
+                QJSValue dc = downcasters_QHelpEngineCore[i]->downcast(handler, v);
+                if (!dc.isUndefined()) {
+                    return dc;
+                }
+            }
+          QHelpEngineCore_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpEngineCore_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpEngineCore: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpEngineCore_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpEngineCore_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpEngineCore('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpEngineCore");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpEngineCore is undefined. Use QHelpEngineCore_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpEngineCore('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpEngineCore(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpEngineCore(RJSApi& handler, const QHelpEngineCore* v) {
+          return RJSHelper::cpp2js_QHelpEngineCore(handler, const_cast<QHelpEngineCore*>(v));
+      }
+
+      QHelpEngineCore* RJSHelper::js2cpp_QHelpEngineCore_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpEngineCore: not a QObject";
+              return nullptr;
+          }
+          //QHelpEngineCore_Wrapper* wrapper = getWrapper<QHelpEngineCore_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpEngineCore_Wrapper* wrapper = qobject_cast<QHelpEngineCore_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpEngineCore_Wrapper* wrapper = dynamic_cast<QHelpEngineCore_Wrapper*>(obj);
+          //QHelpEngineCore_Wrapper* wrapper = (QHelpEngineCore_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpEngineCore: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpEngineCore*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpEngineCore(wrapper);
+          return QHelpEngineCore_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpEngineCore_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpEngineCore: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpEngineCore_Type);
+          //return fun.call().toInt()==RJSType::QHelpEngineCore_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpEngineCore::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpEngine(RJSApi& handler, QHelpEngine* v) {
+          QHelpEngine_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpEngine_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpEngine: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpEngine_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpEngine_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpEngine('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpEngine");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpEngine is undefined. Use QHelpEngine_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpEngine('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpEngine(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpEngine(RJSApi& handler, const QHelpEngine* v) {
+          return RJSHelper::cpp2js_QHelpEngine(handler, const_cast<QHelpEngine*>(v));
+      }
+
+      QHelpEngine* RJSHelper::js2cpp_QHelpEngine_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpEngine: not a QObject";
+              return nullptr;
+          }
+          //QHelpEngine_Wrapper* wrapper = getWrapper<QHelpEngine_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpEngine_Wrapper* wrapper = qobject_cast<QHelpEngine_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpEngine_Wrapper* wrapper = dynamic_cast<QHelpEngine_Wrapper*>(obj);
+          //QHelpEngine_Wrapper* wrapper = (QHelpEngine_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpEngine: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpEngine*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpEngine(wrapper);
+          return QHelpEngine_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpEngine: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpEngine_Type);
+          //return fun.call().toInt()==RJSType::QHelpEngine_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpEngine::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpContentModel(RJSApi& handler, QHelpContentModel* v) {
+          QHelpContentModel_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpContentModel_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpContentModel: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpContentModel_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpContentModel_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpContentModel('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpContentModel");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpContentModel is undefined. Use QHelpContentModel_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpContentModel('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpContentModel(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpContentModel(RJSApi& handler, const QHelpContentModel* v) {
+          return RJSHelper::cpp2js_QHelpContentModel(handler, const_cast<QHelpContentModel*>(v));
+      }
+
+      QHelpContentModel* RJSHelper::js2cpp_QHelpContentModel_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpContentModel: not a QObject";
+              return nullptr;
+          }
+          //QHelpContentModel_Wrapper* wrapper = getWrapper<QHelpContentModel_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpContentModel_Wrapper* wrapper = qobject_cast<QHelpContentModel_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpContentModel_Wrapper* wrapper = dynamic_cast<QHelpContentModel_Wrapper*>(obj);
+          //QHelpContentModel_Wrapper* wrapper = (QHelpContentModel_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpContentModel: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpContentModel*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpContentModel(wrapper);
+          return QHelpContentModel_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpContentModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpContentModel: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpContentModel_Type);
+          //return fun.call().toInt()==RJSType::QHelpContentModel_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpContentModel::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpContentWidget(RJSApi& handler, QHelpContentWidget* v) {
+          QHelpContentWidget_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpContentWidget_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpContentWidget: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpContentWidget_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpContentWidget_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpContentWidget('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpContentWidget");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpContentWidget is undefined. Use QHelpContentWidget_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpContentWidget('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpContentWidget(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpContentWidget(RJSApi& handler, const QHelpContentWidget* v) {
+          return RJSHelper::cpp2js_QHelpContentWidget(handler, const_cast<QHelpContentWidget*>(v));
+      }
+
+      QHelpContentWidget* RJSHelper::js2cpp_QHelpContentWidget_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpContentWidget: not a QObject";
+              return nullptr;
+          }
+          //QHelpContentWidget_Wrapper* wrapper = getWrapper<QHelpContentWidget_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpContentWidget_Wrapper* wrapper = qobject_cast<QHelpContentWidget_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpContentWidget_Wrapper* wrapper = dynamic_cast<QHelpContentWidget_Wrapper*>(obj);
+          //QHelpContentWidget_Wrapper* wrapper = (QHelpContentWidget_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpContentWidget: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpContentWidget*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpContentWidget(wrapper);
+          return QHelpContentWidget_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpContentWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpContentWidget: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpContentWidget_Type);
+          //return fun.call().toInt()==RJSType::QHelpContentWidget_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpContentWidget::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpIndexModel(RJSApi& handler, QHelpIndexModel* v) {
+          QHelpIndexModel_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpIndexModel_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpIndexModel: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpIndexModel_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpIndexModel_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpIndexModel('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpIndexModel");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpIndexModel is undefined. Use QHelpIndexModel_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpIndexModel('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpIndexModel(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpIndexModel(RJSApi& handler, const QHelpIndexModel* v) {
+          return RJSHelper::cpp2js_QHelpIndexModel(handler, const_cast<QHelpIndexModel*>(v));
+      }
+
+      QHelpIndexModel* RJSHelper::js2cpp_QHelpIndexModel_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpIndexModel: not a QObject";
+              return nullptr;
+          }
+          //QHelpIndexModel_Wrapper* wrapper = getWrapper<QHelpIndexModel_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpIndexModel_Wrapper* wrapper = qobject_cast<QHelpIndexModel_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpIndexModel_Wrapper* wrapper = dynamic_cast<QHelpIndexModel_Wrapper*>(obj);
+          //QHelpIndexModel_Wrapper* wrapper = (QHelpIndexModel_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpIndexModel: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpIndexModel*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpIndexModel(wrapper);
+          return QHelpIndexModel_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpIndexModel_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpIndexModel: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpIndexModel_Type);
+          //return fun.call().toInt()==RJSType::QHelpIndexModel_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpIndexModel::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpIndexWidget(RJSApi& handler, QHelpIndexWidget* v) {
+          QHelpIndexWidget_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpIndexWidget_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpIndexWidget: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpIndexWidget_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpIndexWidget_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpIndexWidget('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpIndexWidget");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpIndexWidget is undefined. Use QHelpIndexWidget_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpIndexWidget('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpIndexWidget(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpIndexWidget(RJSApi& handler, const QHelpIndexWidget* v) {
+          return RJSHelper::cpp2js_QHelpIndexWidget(handler, const_cast<QHelpIndexWidget*>(v));
+      }
+
+      QHelpIndexWidget* RJSHelper::js2cpp_QHelpIndexWidget_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpIndexWidget: not a QObject";
+              return nullptr;
+          }
+          //QHelpIndexWidget_Wrapper* wrapper = getWrapper<QHelpIndexWidget_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpIndexWidget_Wrapper* wrapper = qobject_cast<QHelpIndexWidget_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpIndexWidget_Wrapper* wrapper = dynamic_cast<QHelpIndexWidget_Wrapper*>(obj);
+          //QHelpIndexWidget_Wrapper* wrapper = (QHelpIndexWidget_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpIndexWidget: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpIndexWidget*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpIndexWidget(wrapper);
+          return QHelpIndexWidget_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpIndexWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpIndexWidget: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpIndexWidget_Type);
+          //return fun.call().toInt()==RJSType::QHelpIndexWidget_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpIndexWidget::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpSearchEngine(RJSApi& handler, QHelpSearchEngine* v) {
+          QHelpSearchEngine_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpSearchEngine_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpSearchEngine: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpSearchEngine_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpSearchEngine_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpSearchEngine('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpSearchEngine");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpSearchEngine is undefined. Use QHelpSearchEngine_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpSearchEngine('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpSearchEngine(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpSearchEngine(RJSApi& handler, const QHelpSearchEngine* v) {
+          return RJSHelper::cpp2js_QHelpSearchEngine(handler, const_cast<QHelpSearchEngine*>(v));
+      }
+
+      QHelpSearchEngine* RJSHelper::js2cpp_QHelpSearchEngine_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpSearchEngine: not a QObject";
+              return nullptr;
+          }
+          //QHelpSearchEngine_Wrapper* wrapper = getWrapper<QHelpSearchEngine_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpSearchEngine_Wrapper* wrapper = qobject_cast<QHelpSearchEngine_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpSearchEngine_Wrapper* wrapper = dynamic_cast<QHelpSearchEngine_Wrapper*>(obj);
+          //QHelpSearchEngine_Wrapper* wrapper = (QHelpSearchEngine_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpSearchEngine: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpSearchEngine*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpSearchEngine(wrapper);
+          return QHelpSearchEngine_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpSearchEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpSearchEngine: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpSearchEngine_Type);
+          //return fun.call().toInt()==RJSType::QHelpSearchEngine_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpSearchEngine::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpSearchQueryWidget(RJSApi& handler, QHelpSearchQueryWidget* v) {
+          QHelpSearchQueryWidget_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpSearchQueryWidget_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpSearchQueryWidget: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpSearchQueryWidget_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpSearchQueryWidget_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpSearchQueryWidget('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpSearchQueryWidget");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpSearchQueryWidget is undefined. Use QHelpSearchQueryWidget_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpSearchQueryWidget('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpSearchQueryWidget(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpSearchQueryWidget(RJSApi& handler, const QHelpSearchQueryWidget* v) {
+          return RJSHelper::cpp2js_QHelpSearchQueryWidget(handler, const_cast<QHelpSearchQueryWidget*>(v));
+      }
+
+      QHelpSearchQueryWidget* RJSHelper::js2cpp_QHelpSearchQueryWidget_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpSearchQueryWidget: not a QObject";
+              return nullptr;
+          }
+          //QHelpSearchQueryWidget_Wrapper* wrapper = getWrapper<QHelpSearchQueryWidget_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpSearchQueryWidget_Wrapper* wrapper = qobject_cast<QHelpSearchQueryWidget_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpSearchQueryWidget_Wrapper* wrapper = dynamic_cast<QHelpSearchQueryWidget_Wrapper*>(obj);
+          //QHelpSearchQueryWidget_Wrapper* wrapper = (QHelpSearchQueryWidget_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpSearchQueryWidget: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpSearchQueryWidget*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpSearchQueryWidget(wrapper);
+          return QHelpSearchQueryWidget_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpSearchQueryWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpSearchQueryWidget: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpSearchQueryWidget_Type);
+          //return fun.call().toInt()==RJSType::QHelpSearchQueryWidget_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpSearchQueryWidget::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpSearchResultWidget(RJSApi& handler, QHelpSearchResultWidget* v) {
+          QHelpSearchResultWidget_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpSearchResultWidget_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpSearchResultWidget: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpSearchResultWidget_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpSearchResultWidget_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpSearchResultWidget('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpSearchResultWidget");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpSearchResultWidget is undefined. Use QHelpSearchResultWidget_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpSearchResultWidget('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpSearchResultWidget(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpSearchResultWidget(RJSApi& handler, const QHelpSearchResultWidget* v) {
+          return RJSHelper::cpp2js_QHelpSearchResultWidget(handler, const_cast<QHelpSearchResultWidget*>(v));
+      }
+
+      QHelpSearchResultWidget* RJSHelper::js2cpp_QHelpSearchResultWidget_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpSearchResultWidget: not a QObject";
+              return nullptr;
+          }
+          //QHelpSearchResultWidget_Wrapper* wrapper = getWrapper<QHelpSearchResultWidget_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpSearchResultWidget_Wrapper* wrapper = qobject_cast<QHelpSearchResultWidget_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpSearchResultWidget_Wrapper* wrapper = dynamic_cast<QHelpSearchResultWidget_Wrapper*>(obj);
+          //QHelpSearchResultWidget_Wrapper* wrapper = (QHelpSearchResultWidget_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpSearchResultWidget: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpSearchResultWidget*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpSearchResultWidget(wrapper);
+          return QHelpSearchResultWidget_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpSearchResultWidget_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpSearchResultWidget: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpSearchResultWidget_Type);
+          //return fun.call().toInt()==RJSType::QHelpSearchResultWidget_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpSearchResultWidget::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QHelpFilterEngine(RJSApi& handler, QHelpFilterEngine* v) {
+          QHelpFilterEngine_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<QHelpFilterEngine_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper::cpp2js_QHelpFilterEngine: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new QHelpFilterEngine_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new QHelpFilterEngine_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new QHelpFilterEngine('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("QHelpFilterEngine");
+          if (cl.isUndefined()) {
+              qWarning() << "Class QHelpFilterEngine is undefined. Use QHelpFilterEngine_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new QHelpFilterEngine('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new QHelpFilterEngine(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper::cpp2js_QHelpFilterEngine(RJSApi& handler, const QHelpFilterEngine* v) {
+          return RJSHelper::cpp2js_QHelpFilterEngine(handler, const_cast<QHelpFilterEngine*>(v));
+      }
+
+      QHelpFilterEngine* RJSHelper::js2cpp_QHelpFilterEngine_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_QHelpFilterEngine: not a QObject";
+              return nullptr;
+          }
+          //QHelpFilterEngine_Wrapper* wrapper = getWrapper<QHelpFilterEngine_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //QHelpFilterEngine_Wrapper* wrapper = qobject_cast<QHelpFilterEngine_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //QHelpFilterEngine_Wrapper* wrapper = dynamic_cast<QHelpFilterEngine_Wrapper*>(obj);
+          //QHelpFilterEngine_Wrapper* wrapper = (QHelpFilterEngine_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QHelpFilterEngine: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (QHelpFilterEngine*)wrapper->getWrappedVoid();
+          //return getWrapped_QHelpFilterEngine(wrapper);
+          return QHelpFilterEngine_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper::is_QHelpFilterEngine_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper::is_QHelpFilterEngine: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::QHelpFilterEngine_Type);
+          //return fun.call().toInt()==RJSType::QHelpFilterEngine_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_QHelpFilterEngine::getIdStatic())).toBool();
+      }
+
+    
+    #endif
+  
       QJSValue RJSHelper::cpp2js_QStatusBar(RJSApi& handler, QStatusBar* v) {
           QStatusBar_Wrapper* ret = nullptr;
           bool existing = false;
@@ -11775,6 +13038,17 @@
     
       QJSValue RJSHelper::cpp2js_QTreeView(RJSApi& handler, QTreeView* v) {
           
+              #ifdef QT_HELP_LIB
+            // downcast to QHelpContentWidget:
+            {
+                QHelpContentWidget* o = qobject_cast<QHelpContentWidget*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper::cpp2js_QHelpContentWidget(handler, o);
+                }
+            }
+            
+              #endif
+            
             // downcast to QTreeWidget:
             {
                 QTreeWidget* o = qobject_cast<QTreeWidget*>(v);

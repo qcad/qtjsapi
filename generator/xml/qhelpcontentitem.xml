@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpcontentitem.h">
+  <class name="QHelpContentItem" ifdef="QT_HELP_LIB" ownership="cpp" nodestructor="true">
+    <function name="child">
+      <variant return-type="QHelpContentItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="childCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="title">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="url">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="row">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="parent">
+      <variant return-type="QHelpContentItem*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="childPosition">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QHelpContentItem" modifier="*" name="child" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -257,6 +257,36 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhelpcontentitem_wrapper.h"
+        
+          #include "qhelpcontentmodel_wrapper.h"
+        
+          #include "qhelpcontentwidget_wrapper.h"
+        
+          #include "qtreeview_wrapper.h"
+        
+          #include "qhelpengine_wrapper.h"
+        
+          #include "qhelpenginecore_wrapper.h"
+        
+          #include "qhelpfilterengine_wrapper.h"
+        
+          #include "qhelpindexmodel_wrapper.h"
+        
+          #include "qstringlistmodel_wrapper.h"
+        
+          #include "qhelpindexwidget_wrapper.h"
+        
+          #include "qlistview_wrapper.h"
+        
+          #include "qhelpsearchengine_wrapper.h"
+        
+          #include "qhelpsearchquerywidget_wrapper.h"
+        
+          #include "qhelpsearchresult_wrapper.h"
+        
+          #include "qhelpsearchresultwidget_wrapper.h"
+        
           #include "qhostaddress_wrapper.h"
         
           #include "qicon_wrapper.h"
@@ -294,8 +324,6 @@
           #include "qlinef_wrapper.h"
         
           #include "qlineedit_wrapper.h"
-        
-          #include "qlistview_wrapper.h"
         
           #include "qlistwidgetitem_wrapper.h"
         
@@ -593,8 +621,6 @@
         
           #include "qtranslator_wrapper.h"
         
-          #include "qtreeview_wrapper.h"
-        
           #include "qtreewidgetitem_wrapper.h"
         
           #include "qtreewidget_wrapper.h"
@@ -666,6 +692,8 @@
         QList<RJSDowncaster_QFileSystemModel*> RJSHelper::downcasters_QFileSystemModel;
         
         QList<RJSDowncaster_QFrame*> RJSHelper::downcasters_QFrame;
+        
+        QList<RJSDowncaster_QHelpEngineCore*> RJSHelper::downcasters_QHelpEngineCore;
         
         QList<RJSDowncaster_QItemDelegate*> RJSHelper::downcasters_QItemDelegate;
         
@@ -1171,6 +1199,44 @@
       QList<QObject*> RJSHelper::js2cpp_QObjectList(RJSApi& handler, const QJSValue& v) {
           return RJSHelper::js2cpp_QList_QObject_ptr(handler, v);
       }
+
+#ifdef QT_HELP_LIB
+      // QHelpLink (Qt Help) is a struct with public members url and title.
+      // It is represented in JS as a plain object: { url: QUrl, title: String }.
+      QJSValue RJSHelper::cpp2js_QHelpLink(RJSApi& handler, const QHelpLink& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newObject();
+          ret.setProperty("url", RJSHelper::cpp2js_QUrl(handler, v.url));
+          ret.setProperty("title", QJSValue(v.title));
+          return ret;
+      }
+
+      QHelpLink RJSHelper::js2cpp_QHelpLink(RJSApi& handler, const QJSValue& v) {
+          QHelpLink ret;
+          if (!v.isObject()) {
+              return ret;
+          }
+          QJSValue url = v.property("url");
+          if (url.isString()) {
+              ret.url = QUrl(url.toString());
+          }
+          else if (RJSHelper::is_QUrl(handler, url)) {
+              ret.url = RJSHelper::js2cpp_QUrl(handler, url);
+          }
+          QJSValue title = v.property("title");
+          if (!title.isUndefined()) {
+              ret.title = title.toString();
+          }
+          return ret;
+      }
+
+      bool RJSHelper::is_QHelpLink(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isObject() && v.hasProperty("url");
+      }
+#endif
 
       QJSValue RJSHelper::cpp2js_QObject(RJSApi& handler, QObject* v) {
           if (v==nullptr) {

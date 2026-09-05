@@ -11,10 +11,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 
 # Mandatory modules
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Svg Xml Qml UiTools)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Svg Xml Qml UiTools Help)
 
 # Optional modules
-set(QT_OPTIONAL_COMPONENTS Core5Compat PrintSupport QuickWidgets Sql Positioning Location)
+set(QT_OPTIONAL_COMPONENTS Core5Compat PrintSupport QuickWidgets Sql Positioning Location Help)
 find_package(Qt6 OPTIONAL_COMPONENTS ${QT_OPTIONAL_COMPONENTS})
 
 qt_standard_project_setup()
@@ -103,6 +103,7 @@ target_link_libraries(qtjsapi PRIVATE
     Qt::Widgets
     Qt::Xml
     Qt::UiTools
+    Qt::Help
 )
 
 # Link optional modules if present

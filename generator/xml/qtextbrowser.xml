@@ -41,7 +41,7 @@
       </variant>
     </function>
     <function name="loadResource">
-      <variant return-type="QVariant" virtual="true" access="public">
+      <variant return-type="QVariant" virtual="true" overridable="true" access="public">
         <parameters>
           <parameter const="false" type="int" modifier="" name="type" />
           <parameter const="true" type="QUrl" modifier="&amp;" name="name" />

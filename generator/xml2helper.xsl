@@ -91,6 +91,9 @@
       #ifdef QT_SQL_LIB
       #include &lt;QtSql&gt;
       #endif
+      #ifdef QT_HELP_LIB
+      #include &lt;QtHelp&gt;
+      #endif
       #ifdef QT_POSITIONING_LIB
       #include &lt;QtPositioning&gt;
       #endif
@@ -273,6 +276,13 @@
           static QJSValue cpp2js_QList_QPair_QString_QString(RJSApi&amp; handler, const QList&lt;QPair&lt;QString,QString&gt; &gt;&amp; v);
           static QList&lt;QPair&lt;QString,QString&gt; &gt; js2cpp_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v);
           static bool is_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+
+          #ifdef QT_HELP_LIB
+          // QHelpLink is a plain struct (url, title), converted to / from a JS object:
+          static QJSValue cpp2js_QHelpLink(RJSApi&amp; handler, const QHelpLink&amp; v);
+          static QHelpLink js2cpp_QHelpLink(RJSApi&amp; handler, const QJSValue&amp; v);
+          static bool is_QHelpLink(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
+          #endif
         </xsl:if>
          
         <xsl:apply-templates />
@@ -1095,6 +1105,44 @@
       QList&lt;QObject*&gt; RJSHelper::js2cpp_QObjectList(RJSApi&amp; handler, const QJSValue&amp; v) {
           return RJSHelper::js2cpp_QList_QObject_ptr(handler, v);
       }
+
+#ifdef QT_HELP_LIB
+      // QHelpLink (Qt Help) is a struct with public members url and title.
+      // It is represented in JS as a plain object: { url: QUrl, title: String }.
+      QJSValue RJSHelper::cpp2js_QHelpLink(RJSApi&amp; handler, const QHelpLink&amp; v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newObject();
+          ret.setProperty("url", RJSHelper::cpp2js_QUrl(handler, v.url));
+          ret.setProperty("title", QJSValue(v.title));
+          return ret;
+      }
+
+      QHelpLink RJSHelper::js2cpp_QHelpLink(RJSApi&amp; handler, const QJSValue&amp; v) {
+          QHelpLink ret;
+          if (!v.isObject()) {
+              return ret;
+          }
+          QJSValue url = v.property("url");
+          if (url.isString()) {
+              ret.url = QUrl(url.toString());
+          }
+          else if (RJSHelper::is_QUrl(handler, url)) {
+              ret.url = RJSHelper::js2cpp_QUrl(handler, url);
+          }
+          QJSValue title = v.property("title");
+          if (!title.isUndefined()) {
+              ret.title = title.toString();
+          }
+          return ret;
+      }
+
+      bool RJSHelper::is_QHelpLink(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isObject() &amp;&amp; v.hasProperty("url");
+      }
+#endif
 
       QJSValue RJSHelper::cpp2js_QObject(RJSApi&amp; handler, QObject* v) {
           if (v==nullptr) {

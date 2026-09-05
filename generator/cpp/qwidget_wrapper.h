@@ -784,6 +784,34 @@
                 return (QWidget*)(QHeaderView*)vp;
               }
               
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentWidget::getIdStatic()) {
+                return (QWidget*)(QHelpContentWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexWidget::getIdStatic()) {
+                return (QWidget*)(QHelpIndexWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpSearchQueryWidget::getIdStatic()) {
+                return (QWidget*)(QHelpSearchQueryWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpSearchResultWidget::getIdStatic()) {
+                return (QWidget*)(QHelpSearchResultWidget*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QInputDialog::getIdStatic()) {
                 return (QWidget*)(QInputDialog*)vp;
               }

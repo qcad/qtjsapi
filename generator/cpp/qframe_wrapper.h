@@ -454,6 +454,20 @@
                 return (QFrame*)(QHeaderView*)vp;
               }
               
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentWidget::getIdStatic()) {
+                return (QFrame*)(QHelpContentWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexWidget::getIdStatic()) {
+                return (QFrame*)(QHelpIndexWidget*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QLabel::getIdStatic()) {
                 return (QFrame*)(QLabel*)vp;
               }

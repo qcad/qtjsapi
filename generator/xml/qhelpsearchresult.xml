@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpsearchresult.h">
+  <class name="QHelpSearchResult" ifdef="QT_HELP_LIB">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="url" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="snippet" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="title">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="url">
+      <variant return-type="QUrl" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="snippet">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -103,7 +103,19 @@
     <file alias="generator/js/QGuiApplication.js">generator/js/QGuiApplication.js</file>
     <file alias="generator/js/QHBoxLayout.js">generator/js/QHBoxLayout.js</file>
     <file alias="generator/js/QHeaderView.js">generator/js/QHeaderView.js</file>
+    <file alias="generator/js/QHelpContentItem.js">generator/js/QHelpContentItem.js</file>
+    <file alias="generator/js/QHelpContentModel.js">generator/js/QHelpContentModel.js</file>
+    <file alias="generator/js/QHelpContentWidget.js">generator/js/QHelpContentWidget.js</file>
+    <file alias="generator/js/QHelpEngine.js">generator/js/QHelpEngine.js</file>
+    <file alias="generator/js/QHelpEngineCore.js">generator/js/QHelpEngineCore.js</file>
     <file alias="generator/js/QHelpEvent.js">generator/js/QHelpEvent.js</file>
+    <file alias="generator/js/QHelpFilterEngine.js">generator/js/QHelpFilterEngine.js</file>
+    <file alias="generator/js/QHelpIndexModel.js">generator/js/QHelpIndexModel.js</file>
+    <file alias="generator/js/QHelpIndexWidget.js">generator/js/QHelpIndexWidget.js</file>
+    <file alias="generator/js/QHelpSearchEngine.js">generator/js/QHelpSearchEngine.js</file>
+    <file alias="generator/js/QHelpSearchQueryWidget.js">generator/js/QHelpSearchQueryWidget.js</file>
+    <file alias="generator/js/QHelpSearchResult.js">generator/js/QHelpSearchResult.js</file>
+    <file alias="generator/js/QHelpSearchResultWidget.js">generator/js/QHelpSearchResultWidget.js</file>
     <file alias="generator/js/QHostAddress.js">generator/js/QHostAddress.js</file>
     <file alias="generator/js/QIcon.js">generator/js/QIcon.js</file>
     <file alias="generator/js/QImage.js">generator/js/QImage.js</file>
@@ -235,6 +247,7 @@
     <file alias="generator/js/QStringConverter.js">generator/js/QStringConverter.js</file>
     <file alias="generator/js/QStringDecoder.js">generator/js/QStringDecoder.js</file>
     <file alias="generator/js/QStringEncoder.js">generator/js/QStringEncoder.js</file>
+    <file alias="generator/js/QStringListModel.js">generator/js/QStringListModel.js</file>
     <file alias="generator/js/QStyleOption.js">generator/js/QStyleOption.js</file>
     <file alias="generator/js/QStyleOptionButton.js">generator/js/QStyleOptionButton.js</file>
     <file alias="generator/js/QStyleOptionComboBox.js">generator/js/QStyleOptionComboBox.js</file>

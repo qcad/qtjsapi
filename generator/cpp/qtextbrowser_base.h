@@ -104,6 +104,30 @@ QTextBrowser_Base
 
       // public virtual overwritten functions / events:
       
+    public:
+    // implementation of virtual public function
+    // calls JS implementation if available
+    virtual QVariant loadResource(
+      int type, const QUrl& name
+    )
+    
+    ;
+
+    
+      // implementation of virtual public function
+      // always calls super implementation
+      virtual QVariant loadResourceSup(
+        int type, const QUrl& name
+      )
+      
+      {
+        
+          return
+        QTextBrowser::loadResource(
+          type, name
+        );
+      }
+    
 
       // public pure-virtual functions:
       

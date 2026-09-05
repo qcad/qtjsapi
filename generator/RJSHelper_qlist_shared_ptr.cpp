@@ -257,6 +257,36 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhelpcontentitem_wrapper.h"
+        
+          #include "qhelpcontentmodel_wrapper.h"
+        
+          #include "qhelpcontentwidget_wrapper.h"
+        
+          #include "qtreeview_wrapper.h"
+        
+          #include "qhelpengine_wrapper.h"
+        
+          #include "qhelpenginecore_wrapper.h"
+        
+          #include "qhelpfilterengine_wrapper.h"
+        
+          #include "qhelpindexmodel_wrapper.h"
+        
+          #include "qstringlistmodel_wrapper.h"
+        
+          #include "qhelpindexwidget_wrapper.h"
+        
+          #include "qlistview_wrapper.h"
+        
+          #include "qhelpsearchengine_wrapper.h"
+        
+          #include "qhelpsearchquerywidget_wrapper.h"
+        
+          #include "qhelpsearchresult_wrapper.h"
+        
+          #include "qhelpsearchresultwidget_wrapper.h"
+        
           #include "qhostaddress_wrapper.h"
         
           #include "qicon_wrapper.h"
@@ -294,8 +324,6 @@
           #include "qlinef_wrapper.h"
         
           #include "qlineedit_wrapper.h"
-        
-          #include "qlistview_wrapper.h"
         
           #include "qlistwidgetitem_wrapper.h"
         
@@ -592,8 +620,6 @@
           #include "qtransform_wrapper.h"
         
           #include "qtranslator_wrapper.h"
-        
-          #include "qtreeview_wrapper.h"
         
           #include "qtreewidgetitem_wrapper.h"
         

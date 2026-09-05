@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpengine.h">
+  <class_decl name="QHelpContentModel" />
+  <class_decl name="QHelpContentWidget" />
+  <class_decl name="QHelpIndexModel" />
+  <class_decl name="QHelpIndexWidget" />
+  <class_decl name="QHelpSearchEngine" />
+  <class name="QHelpEngine" ifdef="QT_HELP_LIB">
+    <super_list>
+      <super name="QObject" />
+      <super name="QHelpEngineCore" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="collectionFile" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="contentModel">
+      <variant return-type="QHelpContentModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexModel">
+      <variant return-type="QHelpIndexModel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contentWidget">
+      <variant return-type="QHelpContentWidget*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="indexWidget">
+      <variant return-type="QHelpIndexWidget*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="searchEngine">
+      <variant return-type="QHelpSearchEngine*" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

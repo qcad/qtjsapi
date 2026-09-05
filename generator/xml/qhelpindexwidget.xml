@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpindexwidget.h">
+  <class_decl name="QHelpEngineCore" />
+  <class_decl name="QHelpLink" />
+  <class name="QHelpIndexWidget" ifdef="QT_HELP_LIB" ownership="cpp" nodestructor="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" downcast="true" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+      <super name="QAbstractItemView" />
+      <super name="QListView" />
+    </super_list>
+    <function name="filterIndices">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" />
+          <parameter const="true" type="QString" modifier="&amp;" name="wildcard" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activateCurrentItem">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="documentActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QHelpLink" modifier="&amp;" name="document" />
+          <parameter const="true" type="QString" modifier="&amp;" name="keyword" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="documentsActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QList&lt;QHelpLink&gt;" modifier="&amp;" name="documents" />
+          <parameter const="true" type="QString" modifier="&amp;" name="keyword" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

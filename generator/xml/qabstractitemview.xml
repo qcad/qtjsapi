@@ -655,14 +655,14 @@
     </function>
     -->
     <function name="pressed">
-      <variant return-type="void" access="protected" signal="true">
+      <variant return-type="void" access="public" signal="true">
         <parameters>
           <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
         </parameters>
       </variant>
     </function>
     <function name="clicked">
-      <variant return-type="void" access="protected" signal="true">
+      <variant return-type="void" access="public" signal="true">
         <parameters>
           <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
         </parameters>
@@ -679,14 +679,14 @@
       </variant>
     </function>
     <function name="activated">
-      <variant return-type="void" access="protected" signal="true">
+      <variant return-type="void" access="public" signal="true">
         <parameters>
           <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
         </parameters>
       </variant>
     </function>
     <function name="entered">
-      <variant return-type="void" access="protected" signal="true">
+      <variant return-type="void" access="public" signal="true">
         <parameters>
           <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
         </parameters>

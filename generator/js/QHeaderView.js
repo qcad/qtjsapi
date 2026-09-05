@@ -90,7 +90,15 @@
               
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
+    this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
+  
+    this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
+  
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
+  
+    this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
+  
+    this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
   
     this["sectionMoved(int,int,int)"] = Object.getPrototypeOf(this).sectionMoved;
   

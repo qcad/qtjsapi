@@ -240,6 +240,19 @@
 #include "generator/cpp/qgeopath_wrapper.h"
 #include "generator/cpp/qgeopolygon_wrapper.h"
 #include "generator/cpp/qgeojson_wrapper.h"
+#include "generator/cpp/qstringlistmodel_wrapper.h"
+#include "generator/cpp/qhelpenginecore_wrapper.h"
+#include "generator/cpp/qhelpengine_wrapper.h"
+#include "generator/cpp/qhelpcontentitem_wrapper.h"
+#include "generator/cpp/qhelpcontentmodel_wrapper.h"
+#include "generator/cpp/qhelpcontentwidget_wrapper.h"
+#include "generator/cpp/qhelpindexmodel_wrapper.h"
+#include "generator/cpp/qhelpindexwidget_wrapper.h"
+#include "generator/cpp/qhelpsearchengine_wrapper.h"
+#include "generator/cpp/qhelpsearchresult_wrapper.h"
+#include "generator/cpp/qhelpsearchquerywidget_wrapper.h"
+#include "generator/cpp/qhelpsearchresultwidget_wrapper.h"
+#include "generator/cpp/qhelpfilterengine_wrapper.h"
 #include "generator/cpp/qstyleoption_wrapper.h"
 #include "generator/cpp/qstyleoptionbutton_wrapper.h"
 #include "generator/cpp/qstyleoptioncombobox_wrapper.h"
@@ -339,6 +352,8 @@ void RJSApi::init() {
     engine->evaluate("function isDeleted(obj) { return tools.isDeleted(obj); } ");
     engine->evaluate("function download(url, timeout) { return tools.download(url, timeout); } ");
     engine->evaluate("function downloadToFile(url, path, fileName, timeout) { return tools.downloadToFile(url, path, fileName, timeout); } ");
+    engine->evaluate("function httpGetAll(requests, timeout) { return tools.httpGetAll(requests, timeout===undefined ? 0 : timeout); } ");
+    engine->evaluate("function httpGet(url, from, to, timeout, headers) { return tools.httpGet(url, from===undefined ? -1 : from, to===undefined ? -1 : to, timeout===undefined ? 0 : timeout, headers===undefined ? {} : headers); } ");
     // Array.prototype.slice.apply converts arguments into an array:
     engine->evaluate("function print() { tools.print(Array.prototype.slice.apply(arguments)); } ");
     engine->evaluate("function qDebug() { tools.debug(Array.prototype.slice.apply(arguments)); } ");
@@ -687,6 +702,21 @@ void RJSApi::init() {
 #ifdef QT_PRINTSUPPORT_LIB
     QAbstractPrintDialog_Wrapper::init(*this);
     QPrinterInfo_Wrapper::init(*this);
+#endif
+    QStringListModel_Wrapper::init(*this);
+#ifdef QT_HELP_LIB
+    QHelpEngineCore_Wrapper::init(*this);
+    QHelpEngine_Wrapper::init(*this);
+    QHelpContentItem_Wrapper::init(*this);
+    QHelpContentModel_Wrapper::init(*this);
+    QHelpContentWidget_Wrapper::init(*this);
+    QHelpIndexModel_Wrapper::init(*this);
+    QHelpIndexWidget_Wrapper::init(*this);
+    QHelpSearchEngine_Wrapper::init(*this);
+    QHelpSearchResult_Wrapper::init(*this);
+    QHelpSearchQueryWidget_Wrapper::init(*this);
+    QHelpSearchResultWidget_Wrapper::init(*this);
+    QHelpFilterEngine_Wrapper::init(*this);
 #endif
 #ifdef QT_SQL_LIB
     QSql_Wrapper::init(*this);

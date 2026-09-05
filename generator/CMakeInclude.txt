@@ -174,7 +174,31 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qhboxlayout_wrapper.h
     generator/cpp/qheaderview_base.h
     generator/cpp/qheaderview_wrapper.h
+    generator/cpp/qhelpcontentitem_base.h
+    generator/cpp/qhelpcontentitem_wrapper.h
+    generator/cpp/qhelpcontentmodel_base.h
+    generator/cpp/qhelpcontentmodel_wrapper.h
+    generator/cpp/qhelpcontentwidget_base.h
+    generator/cpp/qhelpcontentwidget_wrapper.h
+    generator/cpp/qhelpengine_base.h
+    generator/cpp/qhelpengine_wrapper.h
+    generator/cpp/qhelpenginecore_base.h
+    generator/cpp/qhelpenginecore_wrapper.h
     generator/cpp/qhelpevent_wrapper.h
+    generator/cpp/qhelpfilterengine_base.h
+    generator/cpp/qhelpfilterengine_wrapper.h
+    generator/cpp/qhelpindexmodel_base.h
+    generator/cpp/qhelpindexmodel_wrapper.h
+    generator/cpp/qhelpindexwidget_base.h
+    generator/cpp/qhelpindexwidget_wrapper.h
+    generator/cpp/qhelpsearchengine_base.h
+    generator/cpp/qhelpsearchengine_wrapper.h
+    generator/cpp/qhelpsearchquerywidget_base.h
+    generator/cpp/qhelpsearchquerywidget_wrapper.h
+    generator/cpp/qhelpsearchresult_base.h
+    generator/cpp/qhelpsearchresult_wrapper.h
+    generator/cpp/qhelpsearchresultwidget_base.h
+    generator/cpp/qhelpsearchresultwidget_wrapper.h
     generator/cpp/qhostaddress_base.h
     generator/cpp/qhostaddress_wrapper.h
     generator/cpp/qicon_base.h
@@ -406,6 +430,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qstringconverterbase_wrapper.h
     generator/cpp/qstringdecoder_wrapper.h
     generator/cpp/qstringencoder_wrapper.h
+    generator/cpp/qstringlistmodel_base.h
+    generator/cpp/qstringlistmodel_wrapper.h
     generator/cpp/qstylehintreturn_wrapper.h
     generator/cpp/qstylehintreturnmask_wrapper.h
     generator/cpp/qstylehintreturnvariant_wrapper.h
@@ -675,6 +701,30 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qguiapplication_wrapper.cpp
     generator/cpp/qheaderview_base.cpp
     generator/cpp/qheaderview_wrapper.cpp
+    generator/cpp/qhelpcontentitem_base.cpp
+    generator/cpp/qhelpcontentitem_wrapper.cpp
+    generator/cpp/qhelpcontentmodel_base.cpp
+    generator/cpp/qhelpcontentmodel_wrapper.cpp
+    generator/cpp/qhelpcontentwidget_base.cpp
+    generator/cpp/qhelpcontentwidget_wrapper.cpp
+    generator/cpp/qhelpengine_base.cpp
+    generator/cpp/qhelpengine_wrapper.cpp
+    generator/cpp/qhelpenginecore_base.cpp
+    generator/cpp/qhelpenginecore_wrapper.cpp
+    generator/cpp/qhelpfilterengine_base.cpp
+    generator/cpp/qhelpfilterengine_wrapper.cpp
+    generator/cpp/qhelpindexmodel_base.cpp
+    generator/cpp/qhelpindexmodel_wrapper.cpp
+    generator/cpp/qhelpindexwidget_base.cpp
+    generator/cpp/qhelpindexwidget_wrapper.cpp
+    generator/cpp/qhelpsearchengine_base.cpp
+    generator/cpp/qhelpsearchengine_wrapper.cpp
+    generator/cpp/qhelpsearchquerywidget_base.cpp
+    generator/cpp/qhelpsearchquerywidget_wrapper.cpp
+    generator/cpp/qhelpsearchresult_base.cpp
+    generator/cpp/qhelpsearchresult_wrapper.cpp
+    generator/cpp/qhelpsearchresultwidget_base.cpp
+    generator/cpp/qhelpsearchresultwidget_wrapper.cpp
     generator/cpp/qhostaddress_base.cpp
     generator/cpp/qhostaddress_wrapper.cpp
     generator/cpp/qicon_base.cpp
@@ -871,6 +921,8 @@ target_sources(qtjsapi PUBLIC
     generator/cpp/qstatusbar_wrapper.cpp
     generator/cpp/qstringconverter_base.cpp
     generator/cpp/qstringconverter_wrapper.cpp
+    generator/cpp/qstringlistmodel_base.cpp
+    generator/cpp/qstringlistmodel_wrapper.cpp
     generator/cpp/qstyleoption_base.cpp
     generator/cpp/qstyleoption_wrapper.cpp
     generator/cpp/qsurfaceformat_base.cpp

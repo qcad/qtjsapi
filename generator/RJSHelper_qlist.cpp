@@ -257,6 +257,36 @@
         
           #include "qheaderview_wrapper.h"
         
+          #include "qhelpcontentitem_wrapper.h"
+        
+          #include "qhelpcontentmodel_wrapper.h"
+        
+          #include "qhelpcontentwidget_wrapper.h"
+        
+          #include "qtreeview_wrapper.h"
+        
+          #include "qhelpengine_wrapper.h"
+        
+          #include "qhelpenginecore_wrapper.h"
+        
+          #include "qhelpfilterengine_wrapper.h"
+        
+          #include "qhelpindexmodel_wrapper.h"
+        
+          #include "qstringlistmodel_wrapper.h"
+        
+          #include "qhelpindexwidget_wrapper.h"
+        
+          #include "qlistview_wrapper.h"
+        
+          #include "qhelpsearchengine_wrapper.h"
+        
+          #include "qhelpsearchquerywidget_wrapper.h"
+        
+          #include "qhelpsearchresult_wrapper.h"
+        
+          #include "qhelpsearchresultwidget_wrapper.h"
+        
           #include "qhostaddress_wrapper.h"
         
           #include "qicon_wrapper.h"
@@ -294,8 +324,6 @@
           #include "qlinef_wrapper.h"
         
           #include "qlineedit_wrapper.h"
-        
-          #include "qlistview_wrapper.h"
         
           #include "qlistwidgetitem_wrapper.h"
         
@@ -592,8 +620,6 @@
           #include "qtransform_wrapper.h"
         
           #include "qtranslator_wrapper.h"
-        
-          #include "qtreeview_wrapper.h"
         
           #include "qtreewidgetitem_wrapper.h"
         
@@ -2107,6 +2133,86 @@
       }
 
       bool RJSHelper::is_QList_QGeoCoordinate(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QList_QHelpLink(RJSApi& handler, const QList<QHelpLink>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QHelpLink(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QHelpLink> RJSHelper::js2cpp_QList_QHelpLink(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QHelpLink>>(v);
+          QList<QHelpLink> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QHelpLink: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QHelpLink(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QHelpLink(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+    #endif
+  
+    #ifdef QT_HELP_LIB
+      QJSValue RJSHelper::cpp2js_QList_QHelpSearchResult(RJSApi& handler, const QList<QHelpSearchResult>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper::cpp2js_QHelpSearchResult(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<QHelpSearchResult> RJSHelper::js2cpp_QList_QHelpSearchResult(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<QHelpSearchResult>>(v);
+          QList<QHelpSearchResult> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QHelpSearchResult: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_QHelpSearchResult(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper::is_QList_QHelpSearchResult(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }

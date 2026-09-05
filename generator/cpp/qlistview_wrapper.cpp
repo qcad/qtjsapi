@@ -162,9 +162,37 @@
 
   connect(
     getWrapped(), 
+    SIGNAL(pressed(const QModelIndex&)), 
+    this, 
+    SLOT(pressedEmitter(const QModelIndex&))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(clicked(const QModelIndex&)), 
+    this, 
+    SLOT(clickedEmitter(const QModelIndex&))
+  );
+
+  connect(
+    getWrapped(), 
     SIGNAL(doubleClicked(const QModelIndex&)), 
     this, 
     SLOT(doubleClickedEmitter(const QModelIndex&))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(activated(const QModelIndex&)), 
+    this, 
+    SLOT(activatedEmitter(const QModelIndex&))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(entered(const QModelIndex&)), 
+    this, 
+    SLOT(enteredEmitter(const QModelIndex&))
   );
 
               /*

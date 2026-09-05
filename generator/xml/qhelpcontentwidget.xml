@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="qhelpcontentwidget.h">
+  <class_decl name="QHelpContentItem" />
+  <class_decl name="QHelpEngineCore" />
+  <class name="QHelpContentWidget" ifdef="QT_HELP_LIB" ownership="cpp" nodestructor="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QPaintDevice" />
+      <super name="QWidget" downcast="true" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+      <super name="QAbstractItemView" />
+      <super name="QTreeView" />
+    </super_list>
+    <function name="indexOf">
+      <variant return-type="QModelIndex" access="public">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="link" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="linkActivated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QUrl" modifier="&amp;" name="link" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -452,6 +452,20 @@
                 return (QAbstractScrollArea*)(QHeaderView*)vp;
               }
               
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpContentWidget::getIdStatic()) {
+                return (QAbstractScrollArea*)(QHelpContentWidget*)vp;
+              }
+              
+                #endif
+              
+                #ifdef QT_HELP_LIB
+              if (t==RJSType_QHelpIndexWidget::getIdStatic()) {
+                return (QAbstractScrollArea*)(QHelpIndexWidget*)vp;
+              }
+              
+                #endif
+              
               if (t==RJSType_QListView::getIdStatic()) {
                 return (QAbstractScrollArea*)(QListView*)vp;
               }

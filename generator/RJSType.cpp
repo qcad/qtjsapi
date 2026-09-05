@@ -143,6 +143,24 @@
       
       #endif
     
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpLink::id = -1;
+
+      int RJSType_QHelpLink::getId() const {
+          return RJSType_QHelpLink::getIdStatic();
+      }
+
+      int RJSType_QHelpLink::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpLink());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
 
   
 
@@ -1413,6 +1431,24 @@
       int RJSType_QSqlRecord::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QSqlRecord());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpSearchResult::id = -1;
+
+      int RJSType_QHelpSearchResult::getId() const {
+          return RJSType_QHelpSearchResult::getIdStatic();
+      }
+
+      int RJSType_QHelpSearchResult::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpSearchResult());
           }
           return id;
       }
@@ -2849,6 +2885,24 @@
       int RJSType_QSqlQuery::getIdStatic() {
           if (id<0) {
               id = RJSTypeEnum::reserve(new RJSType_QSqlQuery());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpContentItem::id = -1;
+
+      int RJSType_QHelpContentItem::getId() const {
+          return RJSType_QHelpContentItem::getIdStatic();
+      }
+
+      int RJSType_QHelpContentItem::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpContentItem());
           }
           return id;
       }
@@ -4584,6 +4638,201 @@
 
 
       
+      int RJSType_QStringListModel::id = -1;
+
+      int RJSType_QStringListModel::getId() const {
+          return RJSType_QStringListModel::getIdStatic();
+      }
+
+      int RJSType_QStringListModel::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QStringListModel());
+          }
+          return id;
+      }
+
+
+      
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpEngineCore::id = -1;
+
+      int RJSType_QHelpEngineCore::getId() const {
+          return RJSType_QHelpEngineCore::getIdStatic();
+      }
+
+      int RJSType_QHelpEngineCore::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpEngineCore());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpEngine::id = -1;
+
+      int RJSType_QHelpEngine::getId() const {
+          return RJSType_QHelpEngine::getIdStatic();
+      }
+
+      int RJSType_QHelpEngine::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpEngine());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpContentModel::id = -1;
+
+      int RJSType_QHelpContentModel::getId() const {
+          return RJSType_QHelpContentModel::getIdStatic();
+      }
+
+      int RJSType_QHelpContentModel::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpContentModel());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpContentWidget::id = -1;
+
+      int RJSType_QHelpContentWidget::getId() const {
+          return RJSType_QHelpContentWidget::getIdStatic();
+      }
+
+      int RJSType_QHelpContentWidget::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpContentWidget());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpIndexModel::id = -1;
+
+      int RJSType_QHelpIndexModel::getId() const {
+          return RJSType_QHelpIndexModel::getIdStatic();
+      }
+
+      int RJSType_QHelpIndexModel::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpIndexModel());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpIndexWidget::id = -1;
+
+      int RJSType_QHelpIndexWidget::getId() const {
+          return RJSType_QHelpIndexWidget::getIdStatic();
+      }
+
+      int RJSType_QHelpIndexWidget::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpIndexWidget());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpSearchEngine::id = -1;
+
+      int RJSType_QHelpSearchEngine::getId() const {
+          return RJSType_QHelpSearchEngine::getIdStatic();
+      }
+
+      int RJSType_QHelpSearchEngine::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpSearchEngine());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpSearchQueryWidget::id = -1;
+
+      int RJSType_QHelpSearchQueryWidget::getId() const {
+          return RJSType_QHelpSearchQueryWidget::getIdStatic();
+      }
+
+      int RJSType_QHelpSearchQueryWidget::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpSearchQueryWidget());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpSearchResultWidget::id = -1;
+
+      int RJSType_QHelpSearchResultWidget::getId() const {
+          return RJSType_QHelpSearchResultWidget::getIdStatic();
+      }
+
+      int RJSType_QHelpSearchResultWidget::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpSearchResultWidget());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
+      #ifdef QT_HELP_LIB
+      int RJSType_QHelpFilterEngine::id = -1;
+
+      int RJSType_QHelpFilterEngine::getId() const {
+          return RJSType_QHelpFilterEngine::getIdStatic();
+      }
+
+      int RJSType_QHelpFilterEngine::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_QHelpFilterEngine());
+          }
+          return id;
+      }
+
+
+      
+      #endif
+    
       int RJSType_QStatusBar::id = -1;
 
       int RJSType_QStatusBar::getId() const {
