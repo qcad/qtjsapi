@@ -173,8 +173,18 @@ bool RJSTools::include(const QString& fileName, QString trContext, bool force) {
         including++;
         engine->globalObject().setProperty("including", true);
         //qDebug() << "eval include for " << fileName;
+        // compile under the resolved location, not the include argument:
+        // the engine turns the file name into a URL (file:GCodeBase.js for
+        // a bare name), and tools like the script debugger (qcaddbg) need
+        // to find the source again from that name:
+        QString unitFileName = fileNameLocal;
+        if (unitFileName.startsWith(":") && !unitFileName.startsWith(":/")) {
+            unitFileName.insert(1, '/');
+        }
+        unitFileName = QDir::cleanPath(unitFileName);
+
         QStringList trace;
-        QJSValue res = engine->evaluate(contents, fileName, 1, &trace);
+        QJSValue res = engine->evaluate(contents, unitFileName, 1, &trace);
 
         if (res.isError()) {
             qWarning() << "include exception: " << res.toString();
@@ -358,7 +368,8 @@ QVariantMap RJSTools::httpGet(const QString& url, double from, double to, int ti
  * blocks until all are finished.
  *
  * \param requests List of objects { url, from, to, headers } (see httpGet).
- * eturn List of result objects (see httpGet) in the same order.
+ * 
+eturn List of result objects (see httpGet) in the same order.
  */
 QVariantList RJSTools::httpGetAll(const QVariantList& requests, int timeout) {
     QList<RJSHttpGetThread*> threads;
