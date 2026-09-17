@@ -183,6 +183,8 @@ bool RJSTools::include(const QString& fileName, QString trContext, bool force) {
         }
         unitFileName = QDir::cleanPath(unitFileName);
 
+        emit handler.preprocessSource(unitFileName, contents, true);
+
         QStringList trace;
         QJSValue res = engine->evaluate(contents, unitFileName, 1, &trace);
 

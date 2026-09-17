@@ -70,7 +70,7 @@ QItemDelegate_Base
     // calls JS implementation if available
     virtual QWidget* createEditor(
       QWidget* parent, const QStyleOptionViewItem& option, const QModelIndex& index
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):

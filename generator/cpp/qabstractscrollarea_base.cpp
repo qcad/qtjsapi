@@ -213,7 +213,7 @@ margins
 
   QMargins QAbstractScrollArea_Base::viewportMargins(
       
-    ) {
+    ) const {
 
       //qDebug() << "QAbstractScrollArea_Base::viewportMargins()";
 
@@ -911,7 +911,7 @@ dy
 
   QSize QAbstractScrollArea_Base::viewportSizeHint(
       
-    ) {
+    ) const {
 
       //qDebug() << "QAbstractScrollArea_Base::viewportSizeHint()";
 

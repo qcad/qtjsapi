@@ -117,6 +117,59 @@ a1
       }
     }
 
+  void QLineEdit_Base::keyPressEvent(
+      QKeyEvent* a1
+    ) {
+
+      //qDebug() << "QLineEdit_Base::keyPressEvent()";
+
+      //QJSValue f = self.prototype().property("keyPressEvent");
+      QJSValue f = self.property("keyPressEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QKeyEvent(
+    handler, 
+    // non-copyable: true
+a1
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.keyPressEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        QLineEdit::keyPressEvent(
+          a1
+        );
+      }
+    }
+
   void QLineEdit_Base::paintEvent(
       QPaintEvent* a1
     ) {

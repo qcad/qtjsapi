@@ -508,7 +508,13 @@
     </function>
     <function name="mouseReleaseEvent" />
     <function name="mouseDoubleClickEvent" />
-    <function name="keyPressEvent" />
+    <function name="keyPressEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
     <function name="keyReleaseEvent" />
     <function name="focusInEvent" />
     <function name="focusOutEvent" />

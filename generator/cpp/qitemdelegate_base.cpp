@@ -21,7 +21,7 @@
       // protected overwritten functions / events and their public invokable counterparts:
       QWidget* QItemDelegate_Base::createEditor(
       QWidget* parent, const QStyleOptionViewItem& option, const QModelIndex& index
-    ) {
+    ) const {
 
       //qDebug() << "QItemDelegate_Base::createEditor()";
 

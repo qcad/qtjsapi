@@ -7106,6 +7106,32 @@ PasswordEchoOnEdit = QLineEdit::PasswordEchoOnEdit,
               ;
             
     // Class: QLineEdit
+    // Function: keyPressEvent
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      keyPressEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: QLineEdit
     // Function: paintEvent
     // Source: 
     // Static: false

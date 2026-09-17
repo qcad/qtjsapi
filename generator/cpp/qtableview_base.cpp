@@ -209,7 +209,7 @@ margins
 
   QMargins QTableView_Base::viewportMargins(
       
-    ) {
+    ) const {
 
       //qDebug() << "QTableView_Base::viewportMargins()";
 
@@ -1394,7 +1394,7 @@ e
 
   int QTableView_Base::horizontalOffset(
       
-    ) {
+    ) const {
 
       //qDebug() << "QTableView_Base::horizontalOffset()";
 
@@ -1443,7 +1443,7 @@ e
 
   int QTableView_Base::verticalOffset(
       
-    ) {
+    ) const {
 
       //qDebug() << "QTableView_Base::verticalOffset()";
 
@@ -1552,7 +1552,7 @@ command
 
   QRegion QTableView_Base::visualRegionForSelection(
       const QItemSelection& selection
-    ) {
+    ) const {
 
       //qDebug() << "QTableView_Base::visualRegionForSelection()";
 
@@ -1654,7 +1654,7 @@ selection
 
   QSize QTableView_Base::viewportSizeHint(
       
-    ) {
+    ) const {
 
       //qDebug() << "QTableView_Base::viewportSizeHint()";
 
@@ -1809,7 +1809,7 @@ action
 
   bool QTableView_Base::isIndexHidden(
       const QModelIndex& index
-    ) {
+    ) const {
 
       //qDebug() << "QTableView_Base::isIndexHidden()";
 

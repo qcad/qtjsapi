@@ -20541,6 +20541,89 @@ QString a1_cpp;
               }
             
     // Class: QLineEdit
+    // Function: keyPressEvent
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              QLineEdit_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      keyPressEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QKeyEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (QKeyEvent)
+  
+
+          // pointer:
+          QKeyEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QKeyEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of QLineEdit_Base class as 
+                // function has postfix inheritable class, overridable function):
+                QLineEdit_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "QLineEdit::keyPressEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->keyPressEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for keyPressEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: QLineEdit
     // Function: paintEvent
     // Source: 
     // Static: false

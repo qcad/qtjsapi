@@ -209,7 +209,7 @@ margins
 
   QMargins QListView_Base::viewportMargins(
       
-    ) {
+    ) const {
 
       //qDebug() << "QListView_Base::viewportMargins()";
 
@@ -801,7 +801,7 @@ height
 
   QSize QListView_Base::contentsSize(
       
-    ) {
+    ) const {
 
       //qDebug() << "QListView_Base::contentsSize()";
 
@@ -1422,7 +1422,7 @@ e
 
   int QListView_Base::horizontalOffset(
       
-    ) {
+    ) const {
 
       //qDebug() << "QListView_Base::horizontalOffset()";
 
@@ -1471,7 +1471,7 @@ e
 
   int QListView_Base::verticalOffset(
       
-    ) {
+    ) const {
 
       //qDebug() << "QListView_Base::verticalOffset()";
 
@@ -1520,7 +1520,7 @@ e
 
   QRect QListView_Base::rectForIndex(
       const QModelIndex& index
-    ) {
+    ) const {
 
       //qDebug() << "QListView_Base::rectForIndex()";
 
@@ -1682,7 +1682,7 @@ index
 
   bool QListView_Base::isIndexHidden(
       const QModelIndex& index
-    ) {
+    ) const {
 
       //qDebug() << "QListView_Base::isIndexHidden()";
 
@@ -1798,7 +1798,7 @@ previous
 
   QSize QListView_Base::viewportSizeHint(
       
-    ) {
+    ) const {
 
       //qDebug() << "QListView_Base::viewportSizeHint()";
 

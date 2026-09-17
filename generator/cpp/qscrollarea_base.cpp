@@ -201,7 +201,7 @@ margins
 
   QMargins QScrollArea_Base::viewportMargins(
       
-    ) {
+    ) const {
 
       //qDebug() << "QScrollArea_Base::viewportMargins()";
 
@@ -962,7 +962,7 @@ dy
 
   QSize QScrollArea_Base::viewportSizeHint(
       
-    ) {
+    ) const {
 
       //qDebug() << "QScrollArea_Base::viewportSizeHint()";
 

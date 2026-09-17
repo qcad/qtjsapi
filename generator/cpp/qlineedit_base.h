@@ -164,6 +164,25 @@ QLineEdit_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
+    void keyPressEvent(
+      QKeyEvent* a1
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void keyPressEventPublic(
+      QKeyEvent* a1
+    ) {
+      //qDebug() << "QLineEdit_Base::keyPressEventPublic()";
+      QLineEdit::keyPressEvent(
+        a1
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
     void paintEvent(
       QPaintEvent* a1
     );

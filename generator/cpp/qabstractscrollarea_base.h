@@ -141,7 +141,7 @@ QAbstractScrollArea_Base
     // calls JS implementation if available
     QMargins viewportMargins(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -397,7 +397,7 @@ QAbstractScrollArea_Base
     // calls JS implementation if available
     virtual QSize viewportSizeHint(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):

@@ -557,7 +557,7 @@
     // calls JS implementation if available
     <xsl:value-of select="concat($specifier, @return-type, ' ', ../@name)" />(
       <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" />
-    );
+    )<xsl:if test="@const='true'"> const</xsl:if>;
   </xsl:if>
 
   <xsl:if test="$mode='h'">
@@ -581,7 +581,7 @@
   <xsl:if test="$mode='cpp'">
     <xsl:value-of select="concat($specifier, @return-type, ' ', ancestor::qsrc:class/@name, '_Base::' ,../@name)" />(
       <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" />
-    ) {
+    )<xsl:if test="@const='true'"> const</xsl:if> {
 
       //qDebug() &lt;&lt; "<xsl:value-of select="ancestor::qsrc:class/@name" />_Base::<xsl:value-of select="../@name" />()";
 

@@ -135,7 +135,7 @@ QTableView_Base
     // calls JS implementation if available
     QMargins viewportMargins(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -543,7 +543,7 @@ QTableView_Base
     // calls JS implementation if available
     int horizontalOffset(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -565,7 +565,7 @@ QTableView_Base
     // calls JS implementation if available
     int verticalOffset(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -606,7 +606,7 @@ QTableView_Base
     // calls JS implementation if available
     QRegion visualRegionForSelection(
       const QItemSelection& selection
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -647,7 +647,7 @@ QTableView_Base
     // calls JS implementation if available
     QSize viewportSizeHint(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -707,7 +707,7 @@ QTableView_Base
     // calls JS implementation if available
     bool isIndexHidden(
       const QModelIndex& index
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
