@@ -5,6 +5,7 @@
 #include <QDomNode>
 #include <QtConcurrent>
 #include <QImage>
+#include <QGridLayout>
 
 #include "RJSHelper.h"
 #include "RJSTools.h"
@@ -491,6 +492,48 @@ QString RJSTools::jsQNodeSave(const QJSValue& jsNode, int indent) {
     QTextStream stream(&str);
     node.save(stream, indent);
     return str;
+}
+
+/**
+ * \return Row of the item at the given index in the given grid layout or -1.
+ *
+ * QGridLayout::getItemPosition cannot be exported to scripts since it returns
+ * its results through pointer arguments.
+ */
+int RJSTools::jsQGridLayoutGetItemRow(const QJSValue& jsLayout, int index) {
+    QGridLayout* layout = RJSHelper::js2cpp_QGridLayout_ptr(handler, jsLayout);
+    if (layout==NULL) {
+        qWarning() << "jsQGridLayoutGetItemRow: not a QGridLayout";
+        return -1;
+    }
+
+    int row = -1;
+    int column = -1;
+    int rowSpan = -1;
+    int columnSpan = -1;
+    layout->getItemPosition(index, &row, &column, &rowSpan, &columnSpan);
+    return row;
+}
+
+/**
+ * \return Column of the item at the given index in the given grid layout or -1.
+ *
+ * QGridLayout::getItemPosition cannot be exported to scripts since it returns
+ * its results through pointer arguments.
+ */
+int RJSTools::jsQGridLayoutGetItemColumn(const QJSValue& jsLayout, int index) {
+    QGridLayout* layout = RJSHelper::js2cpp_QGridLayout_ptr(handler, jsLayout);
+    if (layout==NULL) {
+        qWarning() << "jsQGridLayoutGetItemColumn: not a QGridLayout";
+        return -1;
+    }
+
+    int row = -1;
+    int column = -1;
+    int rowSpan = -1;
+    int columnSpan = -1;
+    layout->getItemPosition(index, &row, &column, &rowSpan, &columnSpan);
+    return column;
 }
 
 bool RJSTools::jsQThreadPoolWaitForDone(int msecs) {

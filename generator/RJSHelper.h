@@ -5766,6 +5766,10 @@
       static QList<QVariant> js2cpp_QList_QVariant(RJSApi& handler, const QJSValue& v);
       static bool is_QList_QVariant(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QList_QStringList(RJSApi& handler, const QList<QStringList>& v);
+      static QList<QStringList> js2cpp_QList_QStringList(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_QStringList(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QList_Qt_DayOfWeek(RJSApi& handler, const QList<Qt::DayOfWeek>& v);
       static QList<Qt::DayOfWeek> js2cpp_QList_Qt_DayOfWeek(RJSApi& handler, const QJSValue& v);
       static bool is_QList_Qt_DayOfWeek(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);

@@ -767,6 +767,7 @@
     <type>QList&lt;QTextLength&gt;</type>
     <type>QList&lt;QUrl&gt;</type>
     <type>QList&lt;QVariant&gt;</type>
+    <type>QList&lt;QStringList&gt;</type>
     <type>QList&lt;Qt::DayOfWeek&gt;</type>
     <type>QList&lt;bool&gt;</type>
     <type>QList&lt;double&gt;</type>

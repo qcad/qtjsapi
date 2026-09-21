@@ -45,3 +45,28 @@ function inspect(obj, indent) {
 
     inspect(p, indent + 2);
 }
+
+/**
+ * QGridLayout::getItemPosition is not available to scripts since it returns
+ * its results through pointer arguments.
+ *
+ * \param layout QGridLayout
+ * \param index Index of the item in the layout.
+ *
+ * \return Row / column of the item at the given index or -1.
+ */
+QGridLayout.getItemRow = function(layout, index) {
+    return tools.jsQGridLayoutGetItemRow(layout, index);
+};
+
+QGridLayout.getItemColumn = function(layout, index) {
+    return tools.jsQGridLayoutGetItemColumn(layout, index);
+};
+
+QGridLayout.prototype.getItemRow = function(index) {
+    return QGridLayout.getItemRow(this, index);
+};
+
+QGridLayout.prototype.getItemColumn = function(index) {
+    return QGridLayout.getItemColumn(this, index);
+};

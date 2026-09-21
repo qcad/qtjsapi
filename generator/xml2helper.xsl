@@ -829,6 +829,10 @@
       }
 
       QVariant RJSHelper::js2cpp_QVariant(RJSApi&amp; handler, const QJSValue&amp; v) {
+          if (v.isNull() || v.isUndefined()) {
+              // value is invalid:
+              return QVariant();
+          }
           if (v.isNumber()) {
               // value is number:
               return QVariant(v.toNumber());
@@ -2788,19 +2792,36 @@
   </xsl:variable>
 
   <xsl:variable name="itemtype">
-    <xsl:value-of select="
-      qc:replace(
-      qc:replace(
-      qc:replace(
-      qc:replace(
-      qc:replace(
-         $type, 
-         'QList&lt;', ''
-      ), '&gt;', ''
-      ), '::', '_'
-      ), 'List', ''
-      ), '*', ''
-      )" />
+    <xsl:choose>
+      <!-- explicit list type (e.g. QList&lt;QStringList&gt;): item type is the
+           template argument, 'List' must not be stripped from it: -->
+      <xsl:when test="contains($type, '&lt;')">
+        <xsl:value-of select="
+          qc:replace(
+          qc:replace(
+          qc:replace(
+          qc:replace(
+             $type, 
+             'QList&lt;', ''
+          ), '&gt;', ''
+          ), '::', '_'
+          ), '*', ''
+          )" />
+      </xsl:when>
+      <!-- list type alias (e.g. QStringList, QModelIndexList): item type is
+           the alias name without the 'List' suffix: -->
+      <xsl:otherwise>
+        <xsl:value-of select="
+          qc:replace(
+          qc:replace(
+          qc:replace(
+             $type, 
+             '::', '_'
+          ), 'List', ''
+          ), '*', ''
+          )" />
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:variable>
 
   <xsl:apply-templates select="." mode="ifdef" />

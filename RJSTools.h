@@ -44,6 +44,9 @@ public:
 
     Q_INVOKABLE QString jsQNodeSave(const QJSValue& jsNode, int indent);
 
+    Q_INVOKABLE int jsQGridLayoutGetItemRow(const QJSValue& jsLayout, int index);
+    Q_INVOKABLE int jsQGridLayoutGetItemColumn(const QJSValue& jsLayout, int index);
+
     Q_INVOKABLE bool jsQThreadPoolWaitForDone(int msecs = -1);
     Q_INVOKABLE bool jsQImageSave(const QJSValue& jsImage, const QString& filePath, const QString& format, int quality);
 

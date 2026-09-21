@@ -1036,6 +1036,10 @@
       }
 
       QVariant RJSHelper::js2cpp_QVariant(RJSApi& handler, const QJSValue& v) {
+          if (v.isNull() || v.isUndefined()) {
+              // value is invalid:
+              return QVariant();
+          }
           if (v.isNumber()) {
               // value is number:
               return QVariant(v.toNumber());
