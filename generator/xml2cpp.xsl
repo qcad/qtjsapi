@@ -2132,7 +2132,7 @@
 
   <xsl:value-of select="qc:type-to-function-is(@type, @modifier)" />(handler, a<xsl:value-of select="$pos"/>
   <!-- allow null / undefined if value has default value or is a pointer: -->
-  <xsl:if test="@default or @modifier='*'">
+  <xsl:if test="@default or @modifier='*' or @accept-undefined='true'">
     , true
   </xsl:if>
   )
