@@ -35,6 +35,9 @@ then
 elif [[ `pwd` == *qcadconnectorjsapi* ]]
 then
     MODULE="qcadconnector"
+elif [[ `pwd` == *qcadmeshjsapi* ]]
+then
+    MODULE="qcadmesh"
 elif [[ `pwd` == *qcadrhi3djsapi* ]]
 then
     MODULE="qcadrhi3d"
