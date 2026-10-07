@@ -32,9 +32,9 @@ then
 elif [[ `pwd` == *qcadconstraintjsapi* ]]
 then
     MODULE="qcadconstraint"
-elif [[ `pwd` == *qcadconnectorjsapi* ]]
+elif [[ `pwd` == *qcadflowjsapi* ]]
 then
-    MODULE="qcadconnector"
+    MODULE="qcadflow"
 elif [[ `pwd` == *qcadmeshjsapi* ]]
 then
     MODULE="qcadmesh"

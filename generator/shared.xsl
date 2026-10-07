@@ -196,9 +196,9 @@
           <xsl:when test="document('../../qcadconstraintjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
             <xsl:value-of select="'_qcadconstraint'" />
           </xsl:when>
-          <!-- qcadconnectorjsapi types.xml is for qcadconnector -->
-          <xsl:when test="document('../../qcadconnectorjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
-            <xsl:value-of select="'_qcadconnector'" />
+          <!-- qcadflowjsapi types.xml is for qcadflow -->
+          <xsl:when test="document('../../qcadflowjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
+            <xsl:value-of select="'_qcadflow'" />
           </xsl:when>
           <!-- qcadmeshjsapi types.xml is for qcadmesh -->
           <xsl:when test="document('../../qcadmeshjsapi/generator/types.xml')//type[text()=$class or text()=$itemclass or text()=$itemclass2]">
