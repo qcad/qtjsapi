@@ -5,6 +5,7 @@
 #include <QDomNode>
 #include <QtConcurrent>
 #include <QImage>
+#include <QSaveFile>
 #include <QGridLayout>
 
 #include "RJSHelper.h"
@@ -551,14 +552,22 @@ bool RJSTools::jsQImageSave(const QJSValue& jsImage, const QString& filePath, co
     //qDebug() << "saving image in bg: " << filePath;
 
     QFuture<bool> future = QtConcurrent::run(&pool, [=]{
-        if (image.save(filePath, (const char*)format.toUtf8(), quality)) {
+        // write to a temporary file which replaces the target atomically
+        // (QSaveFile): the same file may be saved several times while an
+        // earlier save is still pending (e.g. tutorial frames with the same
+        // hash, saved in the background). QImage::save(filePath) truncates
+        // and writes in place, two concurrent writers then leave an
+        // interleaved file behind (a complete PNG followed by the tail of a
+        // longer one), which ffmpeg rejects ("Invalid PNG signature"). With
+        // QSaveFile every writer produces a complete file, the last commit
+        // wins:
+        QSaveFile file(filePath);
+        if (file.open(QIODevice::WriteOnly) && image.save(&file, (const char*)format.toUtf8(), quality) && file.commit()) {
             //qDebug() << "image saved: " << filePath;
-            //emit imageSaved(filename);
             return true;
         }
         else {
             qWarning() << "image NOT saved: " << filePath;
-            //emit imageSaveFailed(filename);
             return false;
         }
     });
