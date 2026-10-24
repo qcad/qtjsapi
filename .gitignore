@@ -1,4 +1,21 @@
 build
 .qtcreator_build
 deployment_log
+.cmake
+.qt
+.qtc_clangd
+.qtcreator
+CMakeCache.txt
+CMakeFiles
+CMakeLists.txt.user
+Makefile
+Testing
+cmake_install.cmake
+.DS_Store
+meta_types
+out
+qrc_qtjsapi.cpp
+qrc_rjsapi.cpp
+qtcsettings.cmake
+qtjsapi.qrc.depends
 
