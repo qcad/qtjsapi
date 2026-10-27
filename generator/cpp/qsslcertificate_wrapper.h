@@ -140,6 +140,7 @@
               
               ;
             
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
     // Class: QSslCertificate
     // Function: fromFile
     // Source: 
@@ -167,6 +168,7 @@
               
               ;
             
+#endif
 #ifndef QT_NO_SSL
 
     // Class: QSslCertificate

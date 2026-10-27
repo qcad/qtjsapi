@@ -235,6 +235,7 @@
         </parameters>
       </variant>
     </function>
+    <preproc plain="#if QT_VERSION&gt;=QT_VERSION_CHECK(6,10,0)" />
     <function name="fromFile" static="true">
       <variant return-type="QList&lt;QSslCertificate&gt;" static="true" access="public">
         <parameters>
@@ -243,6 +244,7 @@
         </parameters>
       </variant>
     </function>
+    <preproc plain="#endif" />
     <preproc plain="#ifndef QT_NO_SSL" />
     <function name="verify" static="true">
       <variant return-type="QList&lt;QSslError&gt;" static="true" access="public">

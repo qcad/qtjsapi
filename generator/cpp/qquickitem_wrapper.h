@@ -118,8 +118,10 @@ ItemRotationHasChanged = QQuickItem::ItemRotationHasChanged,
 ItemAntialiasingHasChanged = QQuickItem::ItemAntialiasingHasChanged,
 ItemDevicePixelRatioHasChanged = QQuickItem::ItemDevicePixelRatioHasChanged,
 ItemEnabledHasChanged = QQuickItem::ItemEnabledHasChanged,
+#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
 ItemScaleHasChanged = QQuickItem::ItemScaleHasChanged,
 ItemTransformHasChanged = QQuickItem::ItemTransformHasChanged,
+#endif
 
   };
   Q_ENUM(ItemChange)
