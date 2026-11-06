@@ -202,7 +202,7 @@ QStringDecoder.LastEncoding = QStringDecoder_Wrapper.LastEncoding;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QStringDecoder.prototype.resetState = function(...args) 
           
@@ -212,7 +212,7 @@ QStringDecoder.LastEncoding = QStringDecoder_Wrapper.LastEncoding;
               return this.__PROXY__.resetState(...args);
             
         };
-    
+        
         // function 
         QStringDecoder.prototype.hasError = function(...args) 
           
@@ -222,7 +222,7 @@ QStringDecoder.LastEncoding = QStringDecoder_Wrapper.LastEncoding;
               return this.__PROXY__.hasError(...args);
             
         };
-    
+        
         // function 
         QStringDecoder.prototype.name = function(...args) 
           
@@ -232,7 +232,7 @@ QStringDecoder.LastEncoding = QStringDecoder_Wrapper.LastEncoding;
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QStringDecoder.prototype.decode = function(...args) 
           
@@ -242,7 +242,7 @@ QStringDecoder.LastEncoding = QStringDecoder_Wrapper.LastEncoding;
               return this.__PROXY__.decode(...args);
             
         };
-    
+        
         // function 
         QStringDecoder.prototype.requiredSpace = function(...args) 
           
@@ -252,7 +252,7 @@ QStringDecoder.LastEncoding = QStringDecoder_Wrapper.LastEncoding;
               return this.__PROXY__.requiredSpace(...args);
             
         };
-    
+        
 
       // static functions:
       QStringDecoder.prototype.isNullWrapper = function() {

@@ -638,6 +638,12 @@
             </xsl:otherwise>
           </xsl:choose>
         };
+        <xsl:if test="qsrc:variant[1]/@access='protected' or (qsrc:variant[1]/@virtual='true' and qsrc:variant[1]/@overridable='true')">
+          <!-- mark the forwarder as auto generated: the C++ base class (<class>_Base) only calls into
+               JS for real overrides (see xml2cppbase.xsl), not for this forwarder which would only
+               call back into C++ (and fails during construction, before __PROXY__ is set): -->
+          <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:choose><xsl:when test="@jsname"><xsl:value-of select="@jsname" /></xsl:when><xsl:otherwise><xsl:value-of select="@name" /></xsl:otherwise></xsl:choose>.__SUPER__ = true;
+        </xsl:if>
     </xsl:when>
 
   </xsl:choose>

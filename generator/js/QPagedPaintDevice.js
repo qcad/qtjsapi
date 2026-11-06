@@ -114,7 +114,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.paintingActive = function(...args) 
           
@@ -124,7 +124,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.paintEngine = function(...args) 
           
@@ -134,7 +134,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.width = function(...args) 
           
@@ -144,7 +144,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.height = function(...args) 
           
@@ -154,7 +154,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.widthMM = function(...args) 
           
@@ -164,7 +164,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.heightMM = function(...args) 
           
@@ -174,7 +174,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.logicalDpiX = function(...args) 
           
@@ -184,7 +184,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.logicalDpiY = function(...args) 
           
@@ -194,7 +194,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.physicalDpiX = function(...args) 
           
@@ -204,7 +204,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.physicalDpiY = function(...args) 
           
@@ -214,7 +214,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.devicePixelRatio = function(...args) 
           
@@ -224,7 +224,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.devicePixelRatioF = function(...args) 
           
@@ -234,7 +234,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.colorCount = function(...args) 
           
@@ -244,7 +244,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.depth = function(...args) 
           
@@ -254,7 +254,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.metric = function(...args) 
           
@@ -264,7 +264,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.initPainter = function(...args) 
           
@@ -274,7 +274,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.redirected = function(...args) 
           
@@ -284,7 +284,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.sharedPainter = function(...args) 
           
@@ -294,7 +294,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.qt_paint_device_metric = function(...args) 
           
@@ -304,7 +304,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.newPage = function(...args) 
           
@@ -314,7 +314,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.newPage(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.setPageLayout = function(...args) 
           
@@ -324,7 +324,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.setPageLayout(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.setPageSize = function(...args) 
           
@@ -334,7 +334,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.setPageSize(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.setPageOrientation = function(...args) 
           
@@ -344,7 +344,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.setPageOrientation(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.setPageMargins = function(...args) 
           
@@ -354,7 +354,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.setPageMargins(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.pageLayout = function(...args) 
           
@@ -364,7 +364,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.pageLayout(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.setPageRanges = function(...args) 
           
@@ -374,7 +374,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.setPageRanges(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.pageRanges = function(...args) 
           
@@ -384,7 +384,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.pageRanges(...args);
             
         };
-    
+        
         // function 
         QPagedPaintDevice.prototype.dd = function(...args) 
           
@@ -394,7 +394,7 @@ QPagedPaintDevice.PdfVersion_1_6 = QPagedPaintDevice_Wrapper.PdfVersion_1_6;
               return this.__PROXY__.dd(...args);
             
         };
-    
+        
 
       // static functions:
       QPagedPaintDevice.prototype.isNullWrapper = function() {

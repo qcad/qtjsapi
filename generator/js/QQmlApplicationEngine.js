@@ -201,7 +201,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.isWidgetType = function(...args) 
           
@@ -211,7 +211,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.isWindowType = function(...args) 
           
@@ -221,7 +221,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.signalsBlocked = function(...args) 
           
@@ -231,7 +231,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.blockSignals = function(...args) 
           
@@ -241,7 +241,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.findChild = function(...args) 
           
@@ -251,7 +251,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.children = function(...args) 
           
@@ -261,7 +261,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setParent = function(...args) 
           
@@ -271,7 +271,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.installEventFilter = function(...args) 
           
@@ -281,7 +281,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.removeEventFilter = function(...args) 
           
@@ -291,7 +291,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.dumpObjectTree = function(...args) 
           
@@ -301,7 +301,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.dumpObjectInfo = function(...args) 
           
@@ -311,7 +311,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setProperty = function(...args) 
           
@@ -321,7 +321,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.property = function(...args) 
           
@@ -331,7 +331,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.dynamicPropertyNames = function(...args) 
           
@@ -341,7 +341,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.parent = function(...args) 
           
@@ -351,7 +351,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.deleteLater = function(...args) 
           
@@ -361,7 +361,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.evaluate = function(...args) 
           
@@ -371,7 +371,7 @@
               return this.__PROXY__.evaluate(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.collectGarbage = function(...args) 
           
@@ -381,7 +381,7 @@
               return this.__PROXY__.collectGarbage(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setUiLanguage = function(...args) 
           
@@ -391,7 +391,7 @@
               return this.__PROXY__.setUiLanguage(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.rootContext = function(...args) 
           
@@ -401,7 +401,7 @@
               return this.__PROXY__.rootContext(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.clearComponentCache = function(...args) 
           
@@ -411,7 +411,7 @@
               return this.__PROXY__.clearComponentCache(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.trimComponentCache = function(...args) 
           
@@ -421,7 +421,7 @@
               return this.__PROXY__.trimComponentCache(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.clearSingletons = function(...args) 
           
@@ -431,7 +431,7 @@
               return this.__PROXY__.clearSingletons(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.importPathList = function(...args) 
           
@@ -441,7 +441,7 @@
               return this.__PROXY__.importPathList(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setImportPathList = function(...args) 
           
@@ -451,7 +451,7 @@
               return this.__PROXY__.setImportPathList(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.addImportPath = function(...args) 
           
@@ -461,7 +461,7 @@
               return this.__PROXY__.addImportPath(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.pluginPathList = function(...args) 
           
@@ -471,7 +471,7 @@
               return this.__PROXY__.pluginPathList(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setPluginPathList = function(...args) 
           
@@ -481,7 +481,7 @@
               return this.__PROXY__.setPluginPathList(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.addPluginPath = function(...args) 
           
@@ -491,7 +491,7 @@
               return this.__PROXY__.addPluginPath(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.addNamedBundle = function(...args) 
           
@@ -501,7 +501,7 @@
               return this.__PROXY__.addNamedBundle(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.baseUrl = function(...args) 
           
@@ -511,7 +511,7 @@
               return this.__PROXY__.baseUrl(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setBaseUrl = function(...args) 
           
@@ -521,7 +521,7 @@
               return this.__PROXY__.setBaseUrl(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.outputWarningsToStandardError = function(...args) 
           
@@ -531,7 +531,7 @@
               return this.__PROXY__.outputWarningsToStandardError(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setOutputWarningsToStandardError = function(...args) 
           
@@ -541,7 +541,7 @@
               return this.__PROXY__.setOutputWarningsToStandardError(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.retranslate = function(...args) 
           
@@ -551,7 +551,7 @@
               return this.__PROXY__.retranslate(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.rootObjects = function(...args) 
           
@@ -561,7 +561,7 @@
               return this.__PROXY__.rootObjects(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.load = function(...args) 
           
@@ -571,7 +571,7 @@
               return this.__PROXY__.load(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setInitialProperties = function(...args) 
           
@@ -581,7 +581,7 @@
               return this.__PROXY__.setInitialProperties(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.setExtraFileSelectors = function(...args) 
           
@@ -591,7 +591,7 @@
               return this.__PROXY__.setExtraFileSelectors(...args);
             
         };
-    
+        
         // function 
         QQmlApplicationEngine.prototype.loadData = function(...args) 
           
@@ -601,7 +601,7 @@
               return this.__PROXY__.loadData(...args);
             
         };
-    
+        
 
       // static functions:
       

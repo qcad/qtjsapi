@@ -179,7 +179,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.isWidgetType = function(...args) 
           
@@ -189,7 +189,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.isWindowType = function(...args) 
           
@@ -199,7 +199,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.signalsBlocked = function(...args) 
           
@@ -209,7 +209,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.blockSignals = function(...args) 
           
@@ -219,7 +219,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.findChild = function(...args) 
           
@@ -229,7 +229,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.children = function(...args) 
           
@@ -239,7 +239,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.setParent = function(...args) 
           
@@ -249,7 +249,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.installEventFilter = function(...args) 
           
@@ -259,7 +259,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.removeEventFilter = function(...args) 
           
@@ -269,7 +269,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.dumpObjectTree = function(...args) 
           
@@ -279,7 +279,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.dumpObjectInfo = function(...args) 
           
@@ -289,7 +289,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.setProperty = function(...args) 
           
@@ -299,7 +299,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.property = function(...args) 
           
@@ -309,7 +309,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.dynamicPropertyNames = function(...args) 
           
@@ -319,7 +319,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.parent = function(...args) 
           
@@ -329,7 +329,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.deleteLater = function(...args) 
           
@@ -339,7 +339,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.hasIndex = function(...args) 
           
@@ -349,7 +349,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.hasIndex(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.rowCount = function(...args) 
           
@@ -359,7 +359,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.rowCount(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.data = function(...args) 
           
@@ -369,7 +369,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.setData = function(...args) 
           
@@ -379,7 +379,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.headerData = function(...args) 
           
@@ -389,7 +389,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.headerData(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.setHeaderData = function(...args) 
           
@@ -399,7 +399,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.setHeaderData(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.clearItemData = function(...args) 
           
@@ -409,7 +409,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.clearItemData(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.mimeTypes = function(...args) 
           
@@ -419,7 +419,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.mimeTypes(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.supportedDropActions = function(...args) 
           
@@ -429,7 +429,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.supportedDropActions(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.supportedDragActions = function(...args) 
           
@@ -439,7 +439,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.supportedDragActions(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.insertRows = function(...args) 
           
@@ -449,7 +449,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.insertRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.insertColumns = function(...args) 
           
@@ -459,7 +459,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.insertColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.removeRows = function(...args) 
           
@@ -469,7 +469,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.removeRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.removeColumns = function(...args) 
           
@@ -479,7 +479,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.removeColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.moveRows = function(...args) 
           
@@ -489,7 +489,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.moveRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.moveColumns = function(...args) 
           
@@ -499,7 +499,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.moveColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.insertRow = function(...args) 
           
@@ -509,7 +509,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.insertRow(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.insertColumn = function(...args) 
           
@@ -519,7 +519,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.insertColumn(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.removeRow = function(...args) 
           
@@ -529,7 +529,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.removeRow(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.removeColumn = function(...args) 
           
@@ -539,7 +539,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.removeColumn(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.moveRow = function(...args) 
           
@@ -549,7 +549,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.moveRow(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.moveColumn = function(...args) 
           
@@ -559,7 +559,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.moveColumn(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.fetchMore = function(...args) 
           
@@ -569,7 +569,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.fetchMore(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.canFetchMore = function(...args) 
           
@@ -579,7 +579,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.canFetchMore(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.sort = function(...args) 
           
@@ -589,7 +589,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.sort(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.buddy = function(...args) 
           
@@ -599,7 +599,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.buddy(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.span = function(...args) 
           
@@ -609,7 +609,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.span(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.roleNames = function(...args) 
           
@@ -619,7 +619,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.roleNames(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.submit = function(...args) 
           
@@ -629,7 +629,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.submit(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.revert = function(...args) 
           
@@ -639,7 +639,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.revert(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.resetInternalData = function(...args) 
           
@@ -649,7 +649,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.resetInternalData(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.createIndex = function(...args) 
           
@@ -659,7 +659,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.createIndex(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.encodeData = function(...args) 
           
@@ -669,7 +669,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.encodeData(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.decodeData = function(...args) 
           
@@ -679,7 +679,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.decodeData(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.beginInsertRows = function(...args) 
           
@@ -689,7 +689,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.beginInsertRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.endInsertRows = function(...args) 
           
@@ -699,7 +699,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.endInsertRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.beginRemoveRows = function(...args) 
           
@@ -709,7 +709,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.beginRemoveRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.endRemoveRows = function(...args) 
           
@@ -719,7 +719,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.endRemoveRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.beginMoveRows = function(...args) 
           
@@ -729,7 +729,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.beginMoveRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.endMoveRows = function(...args) 
           
@@ -739,7 +739,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.endMoveRows(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.beginInsertColumns = function(...args) 
           
@@ -749,7 +749,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.beginInsertColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.endInsertColumns = function(...args) 
           
@@ -759,7 +759,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.endInsertColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.beginRemoveColumns = function(...args) 
           
@@ -769,7 +769,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.beginRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.endRemoveColumns = function(...args) 
           
@@ -779,7 +779,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.endRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.beginMoveColumns = function(...args) 
           
@@ -789,7 +789,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.beginMoveColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.endMoveColumns = function(...args) 
           
@@ -799,7 +799,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.endMoveColumns(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.beginResetModel = function(...args) 
           
@@ -809,7 +809,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.beginResetModel(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.endResetModel = function(...args) 
           
@@ -819,7 +819,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.endResetModel(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.changePersistentIndex = function(...args) 
           
@@ -829,7 +829,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.changePersistentIndex(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.changePersistentIndexList = function(...args) 
           
@@ -839,7 +839,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.changePersistentIndexList(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.persistentIndexList = function(...args) 
           
@@ -849,7 +849,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.persistentIndexList(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.index = function(...args) 
           
@@ -859,7 +859,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.index(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.sibling = function(...args) 
           
@@ -869,7 +869,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.sibling(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.flags = function(...args) 
           
@@ -879,7 +879,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.stringList = function(...args) 
           
@@ -889,7 +889,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.stringList(...args);
             
         };
-    
+        
         // function 
         QStringListModel.prototype.setStringList = function(...args) 
           
@@ -899,7 +899,7 @@ QStringListModel.HorizontalSortHint = QStringListModel_Wrapper.HorizontalSortHin
               return this.__PROXY__.setStringList(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -207,7 +207,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isWidgetType = function(...args) 
           
@@ -217,7 +217,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isWindowType = function(...args) 
           
@@ -227,7 +227,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.signalsBlocked = function(...args) 
           
@@ -237,7 +237,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.blockSignals = function(...args) 
           
@@ -247,7 +247,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.findChild = function(...args) 
           
@@ -257,7 +257,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.children = function(...args) 
           
@@ -267,7 +267,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setParent = function(...args) 
           
@@ -277,7 +277,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.installEventFilter = function(...args) 
           
@@ -287,7 +287,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.removeEventFilter = function(...args) 
           
@@ -297,7 +297,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.dumpObjectTree = function(...args) 
           
@@ -307,7 +307,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.dumpObjectInfo = function(...args) 
           
@@ -317,7 +317,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setProperty = function(...args) 
           
@@ -327,7 +327,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.property = function(...args) 
           
@@ -337,7 +337,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.dynamicPropertyNames = function(...args) 
           
@@ -347,7 +347,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.parent = function(...args) 
           
@@ -357,7 +357,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.deleteLater = function(...args) 
           
@@ -367,7 +367,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.associatedObjects = function(...args) 
           
@@ -377,7 +377,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.associatedObjects(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setIcon = function(...args) 
           
@@ -387,7 +387,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setText = function(...args) 
           
@@ -397,7 +397,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setIconText = function(...args) 
           
@@ -407,7 +407,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setIconText(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setToolTip = function(...args) 
           
@@ -417,7 +417,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setStatusTip = function(...args) 
           
@@ -427,7 +427,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setWhatsThis = function(...args) 
           
@@ -437,7 +437,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setPriority = function(...args) 
           
@@ -447,7 +447,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setPriority(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.menu = function(...args) 
           
@@ -457,7 +457,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.menu(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setMenu = function(...args) 
           
@@ -467,7 +467,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setMenu(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setSeparator = function(...args) 
           
@@ -477,7 +477,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setSeparator(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isSeparator = function(...args) 
           
@@ -487,7 +487,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isSeparator(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setShortcut = function(...args) 
           
@@ -497,7 +497,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcut(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setShortcuts = function(...args) 
           
@@ -507,7 +507,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcuts(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.shortcuts = function(...args) 
           
@@ -517,7 +517,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.shortcuts(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setShortcutContext = function(...args) 
           
@@ -527,7 +527,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcutContext(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setAutoRepeat = function(...args) 
           
@@ -537,7 +537,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setFont = function(...args) 
           
@@ -547,7 +547,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setCheckable = function(...args) 
           
@@ -557,7 +557,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isCheckable = function(...args) 
           
@@ -567,7 +567,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.data = function(...args) 
           
@@ -577,7 +577,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setData = function(...args) 
           
@@ -587,7 +587,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isChecked = function(...args) 
           
@@ -597,7 +597,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isChecked(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isEnabled = function(...args) 
           
@@ -607,7 +607,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isVisible = function(...args) 
           
@@ -617,7 +617,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.showStatusText = function(...args) 
           
@@ -627,7 +627,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.showStatusText(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setMenuRole = function(...args) 
           
@@ -637,7 +637,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setMenuRole(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setIconVisibleInMenu = function(...args) 
           
@@ -647,7 +647,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setIconVisibleInMenu(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isIconVisibleInMenu = function(...args) 
           
@@ -657,7 +657,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isIconVisibleInMenu(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setShortcutVisibleInContextMenu = function(...args) 
           
@@ -667,7 +667,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcutVisibleInContextMenu(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.isShortcutVisibleInContextMenu = function(...args) 
           
@@ -677,7 +677,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.isShortcutVisibleInContextMenu(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.event = function(...args) 
           
@@ -687,7 +687,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.trigger = function(...args) 
           
@@ -697,7 +697,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.trigger(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.hover = function(...args) 
           
@@ -707,7 +707,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.hover(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setChecked = function(...args) 
           
@@ -717,7 +717,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setChecked(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.toggle = function(...args) 
           
@@ -727,7 +727,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.toggle(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setEnabled = function(...args) 
           
@@ -737,7 +737,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setDisabled = function(...args) 
           
@@ -747,7 +747,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.setVisible = function(...args) 
           
@@ -757,7 +757,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QAction.prototype.qt_mac_clear_status_text = function(...args) 
           
@@ -767,7 +767,7 @@ QAction.HighPriority = QAction_Wrapper.HighPriority;
               return this.__PROXY__.qt_mac_clear_status_text(...args);
             
         };
-    
+        
 
       // static functions:
       

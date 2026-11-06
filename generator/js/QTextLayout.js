@@ -187,7 +187,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.font = function(...args) 
           
@@ -197,7 +197,7 @@
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.setText = function(...args) 
           
@@ -207,7 +207,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.text = function(...args) 
           
@@ -217,7 +217,7 @@
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.setPreeditArea = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.setPreeditArea(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.preeditAreaPosition = function(...args) 
           
@@ -237,7 +237,7 @@
               return this.__PROXY__.preeditAreaPosition(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.preeditAreaText = function(...args) 
           
@@ -247,7 +247,7 @@
               return this.__PROXY__.preeditAreaText(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.clearFormats = function(...args) 
           
@@ -257,7 +257,7 @@
               return this.__PROXY__.clearFormats(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.setCacheEnabled = function(...args) 
           
@@ -267,7 +267,7 @@
               return this.__PROXY__.setCacheEnabled(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.cacheEnabled = function(...args) 
           
@@ -277,7 +277,7 @@
               return this.__PROXY__.cacheEnabled(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.setCursorMoveStyle = function(...args) 
           
@@ -287,7 +287,7 @@
               return this.__PROXY__.setCursorMoveStyle(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.cursorMoveStyle = function(...args) 
           
@@ -297,7 +297,7 @@
               return this.__PROXY__.cursorMoveStyle(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.beginLayout = function(...args) 
           
@@ -307,7 +307,7 @@
               return this.__PROXY__.beginLayout(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.endLayout = function(...args) 
           
@@ -317,7 +317,7 @@
               return this.__PROXY__.endLayout(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.clearLayout = function(...args) 
           
@@ -327,7 +327,7 @@
               return this.__PROXY__.clearLayout(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.lineCount = function(...args) 
           
@@ -337,7 +337,7 @@
               return this.__PROXY__.lineCount(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.isValidCursorPosition = function(...args) 
           
@@ -347,7 +347,7 @@
               return this.__PROXY__.isValidCursorPosition(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.nextCursorPosition = function(...args) 
           
@@ -357,7 +357,7 @@
               return this.__PROXY__.nextCursorPosition(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.previousCursorPosition = function(...args) 
           
@@ -367,7 +367,7 @@
               return this.__PROXY__.previousCursorPosition(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.leftCursorPosition = function(...args) 
           
@@ -377,7 +377,7 @@
               return this.__PROXY__.leftCursorPosition(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.rightCursorPosition = function(...args) 
           
@@ -387,7 +387,7 @@
               return this.__PROXY__.rightCursorPosition(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.drawCursor = function(...args) 
           
@@ -397,7 +397,7 @@
               return this.__PROXY__.drawCursor(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.position = function(...args) 
           
@@ -407,7 +407,7 @@
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.setPosition = function(...args) 
           
@@ -417,7 +417,7 @@
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.boundingRect = function(...args) 
           
@@ -427,7 +427,7 @@
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.minimumWidth = function(...args) 
           
@@ -437,7 +437,7 @@
               return this.__PROXY__.minimumWidth(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.maximumWidth = function(...args) 
           
@@ -447,7 +447,7 @@
               return this.__PROXY__.maximumWidth(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.setFlags = function(...args) 
           
@@ -457,7 +457,7 @@
               return this.__PROXY__.setFlags(...args);
             
         };
-    
+        
         // function 
         QTextLayout.prototype.qt_format_text = function(...args) 
           
@@ -467,7 +467,7 @@
               return this.__PROXY__.qt_format_text(...args);
             
         };
-    
+        
 
       // static functions:
       QTextLayout.prototype.isNullWrapper = function() {

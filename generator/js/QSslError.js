@@ -252,7 +252,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QSslError.prototype.operator_assign = function(...args) 
           
@@ -262,7 +262,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QSslError.prototype.equals = function(...args) 
           
@@ -272,7 +272,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QSslError.prototype.operator_not_assign = function(...args) 
           
@@ -282,7 +282,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
         // function 
         QSslError.prototype.error = function(...args) 
           
@@ -292,7 +292,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QSslError.prototype.errorString = function(...args) 
           
@@ -302,7 +302,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QSslError.prototype.certificate = function(...args) 
           
@@ -312,7 +312,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
               return this.__PROXY__.certificate(...args);
             
         };
-    
+        
         // function 
         QSslError.prototype.print = function(...args) 
           
@@ -322,7 +322,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
 
       // static functions:
       QSslError.prototype.isNullWrapper = function() {

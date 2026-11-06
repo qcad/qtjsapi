@@ -186,7 +186,7 @@
               return this.__PROXY__.manhattanLength(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.isNull = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.x = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.x(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.y = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.y(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.setX = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.setX(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.setY = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.setY(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.transposed = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.transposed(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.rx = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.rx(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.ry = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.ry(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.dotProduct = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.dotProduct(...args);
             
         };
-    
+        
         // function 
         QPointF.prototype.toPoint = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.toPoint(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -264,7 +264,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.isEmpty = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.isValid = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.left = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.left(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.top = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.top(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.right = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.right(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.bottom = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.bottom(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.normalized = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.normalized(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.x = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.x(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.y = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.y(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setLeft = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.setLeft(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setTop = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.setTop(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setRight = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.setRight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setBottom = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.setBottom(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setX = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.setX(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setY = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setY(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setTopLeft = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.setTopLeft(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setBottomRight = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.setBottomRight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setTopRight = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.setTopRight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setBottomLeft = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.setBottomLeft(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.topLeft = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.topLeft(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.bottomRight = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.bottomRight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.topRight = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.topRight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.bottomLeft = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.bottomLeft(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.center = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.center(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveLeft = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.moveLeft(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveTop = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.moveTop(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveRight = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.moveRight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveBottom = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.moveBottom(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveTopLeft = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.moveTopLeft(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveBottomRight = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.moveBottomRight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveTopRight = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.moveTopRight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveBottomLeft = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.moveBottomLeft(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveCenter = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.moveCenter(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.translate = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.translated = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.transposed = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.transposed(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.moveTo = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.moveTo(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setRect = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.setRect(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setCoords = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.setCoords(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.adjust = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.adjust(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.adjusted = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.adjusted(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.size = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.width = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.height = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setWidth = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setHeight = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.setSize = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.setSize(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.contains = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.united = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.united(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.intersected = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.intersected(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.intersects = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.intersects(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.marginsAdded = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.marginsAdded(...args);
             
         };
-    
+        
         // function 
         QRect.prototype.marginsRemoved = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.marginsRemoved(...args);
             
         };
-    
+        
 
       // static functions:
       QRect.prototype.isNullWrapper = function() {

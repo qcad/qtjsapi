@@ -105,7 +105,7 @@
               return this.__PROXY__.warning(...args);
             
         };
-    
+        
         // function 
         QXmlErrorHandler.prototype.error = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QXmlErrorHandler.prototype.fatalError = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.fatalError(...args);
             
         };
-    
+        
         // function 
         QXmlErrorHandler.prototype.errorString = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlErrorHandler.prototype.isNullWrapper = function() {

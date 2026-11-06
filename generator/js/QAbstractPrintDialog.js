@@ -165,7 +165,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isWidgetType = function(...args) 
           
@@ -175,7 +175,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isWindowType = function(...args) 
           
@@ -185,7 +185,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.signalsBlocked = function(...args) 
           
@@ -195,7 +195,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.blockSignals = function(...args) 
           
@@ -205,7 +205,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.findChild = function(...args) 
           
@@ -215,7 +215,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.children = function(...args) 
           
@@ -225,7 +225,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.installEventFilter = function(...args) 
           
@@ -235,7 +235,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.removeEventFilter = function(...args) 
           
@@ -245,7 +245,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.dumpObjectTree = function(...args) 
           
@@ -255,7 +255,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.dumpObjectInfo = function(...args) 
           
@@ -265,7 +265,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setProperty = function(...args) 
           
@@ -275,7 +275,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.property = function(...args) 
           
@@ -285,7 +285,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.dynamicPropertyNames = function(...args) 
           
@@ -295,7 +295,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.parent = function(...args) 
           
@@ -305,7 +305,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.deleteLater = function(...args) 
           
@@ -315,7 +315,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.devType = function(...args) 
           
@@ -325,7 +325,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.createWinId = function(...args) 
           
@@ -335,7 +335,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isWindow = function(...args) 
           
@@ -345,7 +345,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isModal = function(...args) 
           
@@ -355,7 +355,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowModality = function(...args) 
           
@@ -365,7 +365,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isEnabled = function(...args) 
           
@@ -375,7 +375,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isEnabledTo = function(...args) 
           
@@ -385,7 +385,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setEnabled = function(...args) 
           
@@ -395,7 +395,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setDisabled = function(...args) 
           
@@ -405,7 +405,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowModified = function(...args) 
           
@@ -415,7 +415,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMinimumSize = function(...args) 
           
@@ -425,7 +425,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMaximumSize = function(...args) 
           
@@ -435,7 +435,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMinimumWidth = function(...args) 
           
@@ -445,7 +445,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMinimumHeight = function(...args) 
           
@@ -455,7 +455,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMaximumWidth = function(...args) 
           
@@ -465,7 +465,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMaximumHeight = function(...args) 
           
@@ -475,7 +475,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setSizeIncrement = function(...args) 
           
@@ -485,7 +485,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setBaseSize = function(...args) 
           
@@ -495,7 +495,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setFixedSize = function(...args) 
           
@@ -505,7 +505,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setFixedWidth = function(...args) 
           
@@ -515,7 +515,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setFixedHeight = function(...args) 
           
@@ -525,7 +525,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mapToGlobal = function(...args) 
           
@@ -535,7 +535,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mapFromGlobal = function(...args) 
           
@@ -545,7 +545,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mapToParent = function(...args) 
           
@@ -555,7 +555,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mapFromParent = function(...args) 
           
@@ -565,7 +565,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mapTo = function(...args) 
           
@@ -575,7 +575,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mapFrom = function(...args) 
           
@@ -585,7 +585,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.window = function(...args) 
           
@@ -595,7 +595,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.nativeParentWidget = function(...args) 
           
@@ -605,7 +605,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.topLevelWidget = function(...args) 
           
@@ -615,7 +615,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setPalette = function(...args) 
           
@@ -625,7 +625,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setBackgroundRole = function(...args) 
           
@@ -635,7 +635,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.backgroundRole = function(...args) 
           
@@ -645,7 +645,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setForegroundRole = function(...args) 
           
@@ -655,7 +655,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.foregroundRole = function(...args) 
           
@@ -665,7 +665,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setFont = function(...args) 
           
@@ -675,7 +675,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.fontInfo = function(...args) 
           
@@ -685,7 +685,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setCursor = function(...args) 
           
@@ -695,7 +695,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.unsetCursor = function(...args) 
           
@@ -705,7 +705,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMouseTracking = function(...args) 
           
@@ -715,7 +715,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.hasMouseTracking = function(...args) 
           
@@ -725,7 +725,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.underMouse = function(...args) 
           
@@ -735,7 +735,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setTabletTracking = function(...args) 
           
@@ -745,7 +745,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.hasTabletTracking = function(...args) 
           
@@ -755,7 +755,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMask = function(...args) 
           
@@ -765,7 +765,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mask = function(...args) 
           
@@ -775,7 +775,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.clearMask = function(...args) 
           
@@ -785,7 +785,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.grab = function(...args) 
           
@@ -795,7 +795,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.grabGesture = function(...args) 
           
@@ -805,7 +805,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.ungrabGesture = function(...args) 
           
@@ -815,7 +815,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowTitle = function(...args) 
           
@@ -825,7 +825,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setStyleSheet = function(...args) 
           
@@ -835,7 +835,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowIcon = function(...args) 
           
@@ -845,7 +845,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowIconText = function(...args) 
           
@@ -855,7 +855,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowRole = function(...args) 
           
@@ -865,7 +865,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.windowRole = function(...args) 
           
@@ -875,7 +875,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowFilePath = function(...args) 
           
@@ -885,7 +885,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowOpacity = function(...args) 
           
@@ -895,7 +895,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isWindowModified = function(...args) 
           
@@ -905,7 +905,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setToolTip = function(...args) 
           
@@ -915,7 +915,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setToolTipDuration = function(...args) 
           
@@ -925,7 +925,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setStatusTip = function(...args) 
           
@@ -935,7 +935,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWhatsThis = function(...args) 
           
@@ -945,7 +945,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setAccessibleName = function(...args) 
           
@@ -955,7 +955,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setAccessibleDescription = function(...args) 
           
@@ -965,7 +965,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setLayoutDirection = function(...args) 
           
@@ -975,7 +975,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.unsetLayoutDirection = function(...args) 
           
@@ -985,7 +985,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setLocale = function(...args) 
           
@@ -995,7 +995,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.unsetLocale = function(...args) 
           
@@ -1005,7 +1005,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isRightToLeft = function(...args) 
           
@@ -1015,7 +1015,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isLeftToRight = function(...args) 
           
@@ -1025,7 +1025,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.activateWindow = function(...args) 
           
@@ -1035,7 +1035,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.clearFocus = function(...args) 
           
@@ -1045,7 +1045,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setFocus = function(...args) 
           
@@ -1055,7 +1055,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setFocusPolicy = function(...args) 
           
@@ -1065,7 +1065,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.hasFocus = function(...args) 
           
@@ -1075,7 +1075,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setFocusProxy = function(...args) 
           
@@ -1085,7 +1085,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.focusProxy = function(...args) 
           
@@ -1095,7 +1095,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1105,7 +1105,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.grabMouse = function(...args) 
           
@@ -1115,7 +1115,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.releaseMouse = function(...args) 
           
@@ -1125,7 +1125,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.grabKeyboard = function(...args) 
           
@@ -1135,7 +1135,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.releaseKeyboard = function(...args) 
           
@@ -1145,7 +1145,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.grabShortcut = function(...args) 
           
@@ -1155,7 +1155,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.releaseShortcut = function(...args) 
           
@@ -1165,7 +1165,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setShortcutEnabled = function(...args) 
           
@@ -1175,7 +1175,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1185,7 +1185,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1195,7 +1195,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.update = function(...args) 
           
@@ -1205,7 +1205,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.repaint = function(...args) 
           
@@ -1215,7 +1215,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setHidden = function(...args) 
           
@@ -1225,7 +1225,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.show = function(...args) 
           
@@ -1235,7 +1235,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.hide = function(...args) 
           
@@ -1245,7 +1245,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.showMinimized = function(...args) 
           
@@ -1255,7 +1255,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.showMaximized = function(...args) 
           
@@ -1265,7 +1265,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.showFullScreen = function(...args) 
           
@@ -1275,7 +1275,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.showNormal = function(...args) 
           
@@ -1285,7 +1285,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.close = function(...args) 
           
@@ -1295,7 +1295,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.raise = function(...args) 
           
@@ -1305,7 +1305,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.lower = function(...args) 
           
@@ -1315,7 +1315,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.stackUnder = function(...args) 
           
@@ -1325,7 +1325,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.move = function(...args) 
           
@@ -1335,7 +1335,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.resize = function(...args) 
           
@@ -1345,7 +1345,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setGeometry = function(...args) 
           
@@ -1355,7 +1355,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.saveGeometry = function(...args) 
           
@@ -1365,7 +1365,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.restoreGeometry = function(...args) 
           
@@ -1375,7 +1375,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.adjustSize = function(...args) 
           
@@ -1385,7 +1385,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isVisible = function(...args) 
           
@@ -1395,7 +1395,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isVisibleTo = function(...args) 
           
@@ -1405,7 +1405,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isHidden = function(...args) 
           
@@ -1415,7 +1415,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isMinimized = function(...args) 
           
@@ -1425,7 +1425,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isMaximized = function(...args) 
           
@@ -1435,7 +1435,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isFullScreen = function(...args) 
           
@@ -1445,7 +1445,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.windowState = function(...args) 
           
@@ -1455,7 +1455,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowState = function(...args) 
           
@@ -1465,7 +1465,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.overrideWindowState = function(...args) 
           
@@ -1475,7 +1475,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setSizePolicy = function(...args) 
           
@@ -1485,7 +1485,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.heightForWidth = function(...args) 
           
@@ -1495,7 +1495,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.hasHeightForWidth = function(...args) 
           
@@ -1505,7 +1505,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.visibleRegion = function(...args) 
           
@@ -1515,7 +1515,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setContentsMargins = function(...args) 
           
@@ -1525,7 +1525,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.contentsMargins = function(...args) 
           
@@ -1535,7 +1535,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.contentsRect = function(...args) 
           
@@ -1545,7 +1545,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.layout = function(...args) 
           
@@ -1555,7 +1555,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setLayout = function(...args) 
           
@@ -1565,7 +1565,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.updateGeometry = function(...args) 
           
@@ -1575,7 +1575,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setParent = function(...args) 
           
@@ -1585,7 +1585,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.scroll = function(...args) 
           
@@ -1595,7 +1595,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.focusWidget = function(...args) 
           
@@ -1605,7 +1605,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.nextInFocusChain = function(...args) 
           
@@ -1615,7 +1615,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.previousInFocusChain = function(...args) 
           
@@ -1625,7 +1625,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setAcceptDrops = function(...args) 
           
@@ -1635,7 +1635,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.addAction = function(...args) 
           
@@ -1645,7 +1645,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.addActions = function(...args) 
           
@@ -1655,7 +1655,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.insertActions = function(...args) 
           
@@ -1665,7 +1665,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.insertAction = function(...args) 
           
@@ -1675,7 +1675,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.removeAction = function(...args) 
           
@@ -1685,7 +1685,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.actions = function(...args) 
           
@@ -1695,7 +1695,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.parentWidget = function(...args) 
           
@@ -1705,7 +1705,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowFlags = function(...args) 
           
@@ -1715,7 +1715,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.windowFlags = function(...args) 
           
@@ -1725,7 +1725,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setWindowFlag = function(...args) 
           
@@ -1735,7 +1735,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.overrideWindowFlags = function(...args) 
           
@@ -1745,7 +1745,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.windowType = function(...args) 
           
@@ -1755,7 +1755,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.childAt = function(...args) 
           
@@ -1765,7 +1765,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setAttribute = function(...args) 
           
@@ -1775,7 +1775,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.testAttribute = function(...args) 
           
@@ -1785,7 +1785,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.ensurePolished = function(...args) 
           
@@ -1795,7 +1795,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isAncestorOf = function(...args) 
           
@@ -1805,7 +1805,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setAutoFillBackground = function(...args) 
           
@@ -1815,7 +1815,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.event = function(...args) 
           
@@ -1825,7 +1825,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mousePressEvent = function(...args) 
           
@@ -1835,7 +1835,8 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        QAbstractPrintDialog.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         QAbstractPrintDialog.prototype.mouseReleaseEvent = function(...args) 
           
@@ -1845,7 +1846,8 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        QAbstractPrintDialog.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         QAbstractPrintDialog.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1855,7 +1857,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.mouseMoveEvent = function(...args) 
           
@@ -1865,7 +1867,8 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QAbstractPrintDialog.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QAbstractPrintDialog.prototype.wheelEvent = function(...args) 
           
@@ -1875,7 +1878,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.keyReleaseEvent = function(...args) 
           
@@ -1885,7 +1888,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.focusInEvent = function(...args) 
           
@@ -1895,7 +1898,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.focusOutEvent = function(...args) 
           
@@ -1905,7 +1908,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.enterEvent = function(...args) 
           
@@ -1915,7 +1918,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.leaveEvent = function(...args) 
           
@@ -1925,7 +1928,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.paintEvent = function(...args) 
           
@@ -1935,7 +1938,8 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QAbstractPrintDialog.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QAbstractPrintDialog.prototype.moveEvent = function(...args) 
           
@@ -1945,7 +1949,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.tabletEvent = function(...args) 
           
@@ -1955,7 +1959,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       QAbstractPrintDialog.prototype.actionEvent = function() 
         
@@ -1997,7 +2001,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.dragMoveEvent = function(...args) 
           
@@ -2007,7 +2011,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.dragLeaveEvent = function(...args) 
           
@@ -2017,7 +2021,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.dropEvent = function(...args) 
           
@@ -2027,7 +2031,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.hideEvent = function(...args) 
           
@@ -2037,7 +2041,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.nativeEvent = function(...args) 
           
@@ -2047,7 +2051,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.changeEvent = function(...args) 
           
@@ -2057,7 +2061,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.metric = function(...args) 
           
@@ -2067,7 +2071,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.initPainter = function(...args) 
           
@@ -2077,7 +2081,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.redirected = function(...args) 
           
@@ -2087,7 +2091,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.sharedPainter = function(...args) 
           
@@ -2097,7 +2101,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.inputMethodEvent = function(...args) 
           
@@ -2107,7 +2111,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.inputMethodQuery = function(...args) 
           
@@ -2117,7 +2121,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setInputMethodHints = function(...args) 
           
@@ -2127,7 +2131,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.updateMicroFocus = function(...args) 
           
@@ -2137,7 +2141,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.create = function(...args) 
           
@@ -2147,7 +2151,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.destroy = function(...args) 
           
@@ -2157,7 +2161,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.focusNextPrevChild = function(...args) 
           
@@ -2167,7 +2171,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.focusNextChild = function(...args) 
           
@@ -2177,7 +2181,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.focusPreviousChild = function(...args) 
           
@@ -2187,7 +2191,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setBackingStore = function(...args) 
           
@@ -2197,7 +2201,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.testAttribute_helper = function(...args) 
           
@@ -2207,7 +2211,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.takeLayout = function(...args) 
           
@@ -2217,7 +2221,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2227,7 +2231,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.qt_qwidget_data = function(...args) 
           
@@ -2237,7 +2241,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.qt_widget_private = function(...args) 
           
@@ -2247,7 +2251,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.result = function(...args) 
           
@@ -2257,7 +2261,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.result(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setVisible = function(...args) 
           
@@ -2267,7 +2271,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setSizeGripEnabled = function(...args) 
           
@@ -2277,7 +2281,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.isSizeGripEnabled = function(...args) 
           
@@ -2287,7 +2291,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.isSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setModal = function(...args) 
           
@@ -2297,7 +2301,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setModal(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setResult = function(...args) 
           
@@ -2307,7 +2311,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setResult(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.open = function(...args) 
           
@@ -2317,7 +2321,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.exec = function(...args) 
           
@@ -2327,7 +2331,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.done = function(...args) 
           
@@ -2337,7 +2341,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.done(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.accept = function(...args) 
           
@@ -2347,7 +2351,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.reject = function(...args) 
           
@@ -2357,7 +2361,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.reject(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.keyPressEvent = function(...args) 
           
@@ -2367,7 +2371,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.closeEvent = function(...args) 
           
@@ -2377,7 +2381,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.showEvent = function(...args) 
           
@@ -2387,7 +2391,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.resizeEvent = function(...args) 
           
@@ -2397,7 +2401,8 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QAbstractPrintDialog.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QAbstractPrintDialog.prototype.contextMenuEvent = function(...args) 
           
@@ -2407,7 +2412,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.adjustPosition = function(...args) 
           
@@ -2417,7 +2422,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.adjustPosition(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setOptionTabs = function(...args) 
           
@@ -2427,7 +2432,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setOptionTabs(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setPrintRange = function(...args) 
           
@@ -2437,7 +2442,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setPrintRange(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.printRange = function(...args) 
           
@@ -2447,7 +2452,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.printRange(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setMinMax = function(...args) 
           
@@ -2457,7 +2462,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setMinMax(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.minPage = function(...args) 
           
@@ -2467,7 +2472,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.minPage(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.maxPage = function(...args) 
           
@@ -2477,7 +2482,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.maxPage(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.setFromTo = function(...args) 
           
@@ -2487,7 +2492,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.setFromTo(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.fromPage = function(...args) 
           
@@ -2497,7 +2502,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.fromPage(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.toPage = function(...args) 
           
@@ -2507,7 +2512,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.toPage(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.printer = function(...args) 
           
@@ -2517,7 +2522,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.printer(...args);
             
         };
-    
+        
         // function 
         QAbstractPrintDialog.prototype.eventFilter = function(...args) 
           
@@ -2527,7 +2532,7 @@ QAbstractPrintDialog.PrintCurrentPage = QAbstractPrintDialog_Wrapper.PrintCurren
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
 
       // static functions:
       

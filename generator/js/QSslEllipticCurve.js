@@ -134,7 +134,7 @@
               return this.__PROXY__.fromShortName(...args);
             
         };
-    
+        
         // function 
         QSslEllipticCurve.prototype.fromLongName = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.fromLongName(...args);
             
         };
-    
+        
         // function 
         QSslEllipticCurve.prototype.shortName = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.shortName(...args);
             
         };
-    
+        
         // function 
         QSslEllipticCurve.prototype.longName = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.longName(...args);
             
         };
-    
+        
         // function 
         QSslEllipticCurve.prototype.isValid = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QSslEllipticCurve.prototype.isTlsNamedCurve = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.isTlsNamedCurve(...args);
             
         };
-    
+        
         // function 
         QSslEllipticCurve.prototype.equals = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QSslEllipticCurve.prototype.operator_not_assign = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
 
       // static functions:
       

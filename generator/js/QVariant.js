@@ -702,7 +702,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.userType = function(...args) 
           
@@ -712,7 +712,7 @@
               return this.__PROXY__.userType(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.typeId = function(...args) 
           
@@ -722,7 +722,7 @@
               return this.__PROXY__.typeId(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.isValid = function(...args) 
           
@@ -732,7 +732,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.isNull = function(...args) 
           
@@ -742,7 +742,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.clear = function(...args) 
           
@@ -752,7 +752,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.detach = function(...args) 
           
@@ -762,7 +762,7 @@
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.isDetached = function(...args) 
           
@@ -772,7 +772,7 @@
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toInt = function(...args) 
           
@@ -782,7 +782,7 @@
               return this.__PROXY__.toInt(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toUInt = function(...args) 
           
@@ -792,7 +792,7 @@
               return this.__PROXY__.toUInt(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toBool = function(...args) 
           
@@ -802,7 +802,7 @@
               return this.__PROXY__.toBool(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toDouble = function(...args) 
           
@@ -812,7 +812,7 @@
               return this.__PROXY__.toDouble(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toFloat = function(...args) 
           
@@ -822,7 +822,7 @@
               return this.__PROXY__.toFloat(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toReal = function(...args) 
           
@@ -832,7 +832,7 @@
               return this.__PROXY__.toReal(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toByteArray = function(...args) 
           
@@ -842,7 +842,7 @@
               return this.__PROXY__.toByteArray(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toString = function(...args) 
           
@@ -852,7 +852,7 @@
               return this.__PROXY__.toString(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toStringList = function(...args) 
           
@@ -862,7 +862,7 @@
               return this.__PROXY__.toStringList(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toChar = function(...args) 
           
@@ -872,7 +872,7 @@
               return this.__PROXY__.toChar(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toDate = function(...args) 
           
@@ -882,7 +882,7 @@
               return this.__PROXY__.toDate(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toTime = function(...args) 
           
@@ -892,7 +892,7 @@
               return this.__PROXY__.toTime(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toDateTime = function(...args) 
           
@@ -902,7 +902,7 @@
               return this.__PROXY__.toDateTime(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toList = function(...args) 
           
@@ -912,7 +912,7 @@
               return this.__PROXY__.toList(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toPoint = function(...args) 
           
@@ -922,7 +922,7 @@
               return this.__PROXY__.toPoint(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toPointF = function(...args) 
           
@@ -932,7 +932,7 @@
               return this.__PROXY__.toPointF(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toRect = function(...args) 
           
@@ -942,7 +942,7 @@
               return this.__PROXY__.toRect(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toSize = function(...args) 
           
@@ -952,7 +952,7 @@
               return this.__PROXY__.toSize(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toSizeF = function(...args) 
           
@@ -962,7 +962,7 @@
               return this.__PROXY__.toSizeF(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toRectF = function(...args) 
           
@@ -972,7 +972,7 @@
               return this.__PROXY__.toRectF(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toLocale = function(...args) 
           
@@ -982,7 +982,7 @@
               return this.__PROXY__.toLocale(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.toUrl = function(...args) 
           
@@ -992,7 +992,7 @@
               return this.__PROXY__.toUrl(...args);
             
         };
-    
+        
         // function 
         QVariant.prototype.setValue = function(...args) 
           
@@ -1002,7 +1002,7 @@
               return this.__PROXY__.setValue(...args);
             
         };
-    
+        
 
       // static functions:
       QVariant.prototype.isNullWrapper = function() {

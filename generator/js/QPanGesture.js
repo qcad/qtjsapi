@@ -139,7 +139,7 @@
               return this.__PROXY__.setHotSpot(...args);
             
         };
-    
+        
         // function 
         QPanGesture.prototype.unsetHotSpot = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.unsetHotSpot(...args);
             
         };
-    
+        
         // function 
         QPanGesture.prototype.setGestureCancelPolicy = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.setGestureCancelPolicy(...args);
             
         };
-    
+        
         // function 
         QPanGesture.prototype.Q_DECLARE_PRIVATE = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
             
         };
-    
+        
         // function 
         QPanGesture.prototype.setLastOffset = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.setLastOffset(...args);
             
         };
-    
+        
         // function 
         QPanGesture.prototype.setOffset = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.setOffset(...args);
             
         };
-    
+        
         // function 
         QPanGesture.prototype.setAcceleration = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.setAcceleration(...args);
             
         };
-    
+        
 
       // static functions:
       

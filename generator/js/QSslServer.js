@@ -139,7 +139,7 @@
               return this.__PROXY__.listen(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.close = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.isListening = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isListening(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.setMaxPendingConnections = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.setMaxPendingConnections(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.maxPendingConnections = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.maxPendingConnections(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.setListenBacklogSize = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.setListenBacklogSize(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.listenBacklogSize = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.listenBacklogSize(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.serverPort = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.serverPort(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.serverAddress = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.serverAddress(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.waitForNewConnection = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.waitForNewConnection(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.hasPendingConnections = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.hasPendingConnections(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.nextPendingConnection = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.nextPendingConnection(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.serverError = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.serverError(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.errorString = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.pauseAccepting = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.pauseAccepting(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.resumeAccepting = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.resumeAccepting(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.setProxy = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.setProxy(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.proxy = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.proxy(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.setSslConfiguration = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.setSslConfiguration(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.sslConfiguration = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.sslConfiguration(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.setHandshakeTimeout = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.setHandshakeTimeout(...args);
             
         };
-    
+        
         // function 
         QSslServer.prototype.handshakeTimeout = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.handshakeTimeout(...args);
             
         };
-    
+        
 
       // static functions:
       

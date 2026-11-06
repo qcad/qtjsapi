@@ -134,7 +134,7 @@
               return this.__PROXY__.value(...args);
             
         };
-    
+        
         // function 
         QSqlRecord.prototype.isNull = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QSqlRecord.prototype.indexOf = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.indexOf(...args);
             
         };
-    
+        
         // function 
         QSqlRecord.prototype.fieldName = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.fieldName(...args);
             
         };
-    
+        
         // function 
         QSqlRecord.prototype.isEmpty = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QSqlRecord.prototype.contains = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QSqlRecord.prototype.clear = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QSqlRecord.prototype.clearValues = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.clearValues(...args);
             
         };
-    
+        
         // function 
         QSqlRecord.prototype.count = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.count(...args);
             
         };
-    
+        
 
       // static functions:
       QSqlRecord.prototype.isNullWrapper = function() {

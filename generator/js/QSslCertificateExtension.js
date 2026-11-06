@@ -160,7 +160,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QSslCertificateExtension.prototype.swap = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QSslCertificateExtension.prototype.oid = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.oid(...args);
             
         };
-    
+        
         // function 
         QSslCertificateExtension.prototype.name = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QSslCertificateExtension.prototype.value = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.value(...args);
             
         };
-    
+        
         // function 
         QSslCertificateExtension.prototype.isCritical = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.isCritical(...args);
             
         };
-    
+        
         // function 
         QSslCertificateExtension.prototype.isSupported = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.isSupported(...args);
             
         };
-    
+        
 
       // static functions:
       QSslCertificateExtension.prototype.isNullWrapper = function() {

@@ -200,7 +200,7 @@ QStyleOptionButton.CommandLinkButton = QStyleOptionButton_Wrapper.CommandLinkBut
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionButton.prototype.operator_assign = function(...args) 
           
@@ -210,7 +210,7 @@ QStyleOptionButton.CommandLinkButton = QStyleOptionButton_Wrapper.CommandLinkBut
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionButton.prototype.isNullWrapper = function() {

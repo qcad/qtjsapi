@@ -277,7 +277,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.merge = function(...args) 
           
@@ -287,7 +287,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.merge(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isEmpty = function(...args) 
           
@@ -297,7 +297,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.type = function(...args) 
           
@@ -307,7 +307,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.objectIndex = function(...args) 
           
@@ -317,7 +317,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.objectIndex(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setObjectIndex = function(...args) 
           
@@ -327,7 +327,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setObjectIndex(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.property = function(...args) 
           
@@ -337,7 +337,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setProperty = function(...args) 
           
@@ -347,7 +347,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.clearProperty = function(...args) 
           
@@ -357,7 +357,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.clearProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.hasProperty = function(...args) 
           
@@ -367,7 +367,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.hasProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.boolProperty = function(...args) 
           
@@ -377,7 +377,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.boolProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.intProperty = function(...args) 
           
@@ -387,7 +387,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.intProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.doubleProperty = function(...args) 
           
@@ -397,7 +397,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.doubleProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.stringProperty = function(...args) 
           
@@ -407,7 +407,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.stringProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.colorProperty = function(...args) 
           
@@ -417,7 +417,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.colorProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.penProperty = function(...args) 
           
@@ -427,7 +427,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.penProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.brushProperty = function(...args) 
           
@@ -437,7 +437,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.brushProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.lengthProperty = function(...args) 
           
@@ -447,7 +447,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.lengthProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.lengthVectorProperty = function(...args) 
           
@@ -457,7 +457,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.lengthVectorProperty(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.propertyCount = function(...args) 
           
@@ -467,7 +467,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.propertyCount(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setObjectType = function(...args) 
           
@@ -477,7 +477,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setObjectType(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.objectType = function(...args) 
           
@@ -487,7 +487,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.objectType(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isCharFormat = function(...args) 
           
@@ -497,7 +497,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isBlockFormat = function(...args) 
           
@@ -507,7 +507,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isListFormat = function(...args) 
           
@@ -517,7 +517,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isListFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isFrameFormat = function(...args) 
           
@@ -527,7 +527,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isImageFormat = function(...args) 
           
@@ -537,7 +537,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isTableFormat = function(...args) 
           
@@ -547,7 +547,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isTableCellFormat = function(...args) 
           
@@ -557,7 +557,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.toBlockFormat = function(...args) 
           
@@ -567,7 +567,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.toBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.toCharFormat = function(...args) 
           
@@ -577,7 +577,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.toCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.toListFormat = function(...args) 
           
@@ -587,7 +587,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.toListFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.toTableFormat = function(...args) 
           
@@ -597,7 +597,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.toTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.toFrameFormat = function(...args) 
           
@@ -607,7 +607,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.toFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.toImageFormat = function(...args) 
           
@@ -617,7 +617,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.toImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.toTableCellFormat = function(...args) 
           
@@ -627,7 +627,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.toTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setLayoutDirection = function(...args) 
           
@@ -637,7 +637,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.layoutDirection = function(...args) 
           
@@ -647,7 +647,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.layoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setBackground = function(...args) 
           
@@ -657,7 +657,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.background = function(...args) 
           
@@ -667,7 +667,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.clearBackground = function(...args) 
           
@@ -677,7 +677,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.clearBackground(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setForeground = function(...args) 
           
@@ -687,7 +687,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setForeground(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.foreground = function(...args) 
           
@@ -697,7 +697,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.foreground(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.clearForeground = function(...args) 
           
@@ -707,7 +707,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.clearForeground(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.isValid = function(...args) 
           
@@ -717,7 +717,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setAlignment = function(...args) 
           
@@ -727,7 +727,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.alignment = function(...args) 
           
@@ -737,7 +737,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setTopMargin = function(...args) 
           
@@ -747,7 +747,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setTopMargin(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.topMargin = function(...args) 
           
@@ -757,7 +757,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.topMargin(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setBottomMargin = function(...args) 
           
@@ -767,7 +767,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setBottomMargin(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.bottomMargin = function(...args) 
           
@@ -777,7 +777,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.bottomMargin(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setLeftMargin = function(...args) 
           
@@ -787,7 +787,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setLeftMargin(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.leftMargin = function(...args) 
           
@@ -797,7 +797,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.leftMargin(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setRightMargin = function(...args) 
           
@@ -807,7 +807,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setRightMargin(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.rightMargin = function(...args) 
           
@@ -817,7 +817,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.rightMargin(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setTextIndent = function(...args) 
           
@@ -827,7 +827,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setTextIndent(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.textIndent = function(...args) 
           
@@ -837,7 +837,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.textIndent(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setIndent = function(...args) 
           
@@ -847,7 +847,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setIndent(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.indent = function(...args) 
           
@@ -857,7 +857,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.indent(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setHeadingLevel = function(...args) 
           
@@ -867,7 +867,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setHeadingLevel(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.headingLevel = function(...args) 
           
@@ -877,7 +877,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.headingLevel(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setLineHeight = function(...args) 
           
@@ -887,7 +887,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setLineHeight(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.lineHeight = function(...args) 
           
@@ -897,7 +897,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.lineHeight(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.lineHeightType = function(...args) 
           
@@ -907,7 +907,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.lineHeightType(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setNonBreakableLines = function(...args) 
           
@@ -917,7 +917,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setNonBreakableLines(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.nonBreakableLines = function(...args) 
           
@@ -927,7 +927,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.nonBreakableLines(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.setPageBreakPolicy = function(...args) 
           
@@ -937,7 +937,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.setPageBreakPolicy(...args);
             
         };
-    
+        
         // function 
         QTextBlockFormat.prototype.pageBreakPolicy = function(...args) 
           
@@ -947,7 +947,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
               return this.__PROXY__.pageBreakPolicy(...args);
             
         };
-    
+        
 
       // static functions:
       QTextBlockFormat.prototype.isNullWrapper = function() {

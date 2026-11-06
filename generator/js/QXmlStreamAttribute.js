@@ -105,7 +105,7 @@
               return this.__PROXY__.isDefault(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlStreamAttribute.prototype.isNullWrapper = function() {

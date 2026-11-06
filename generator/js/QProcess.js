@@ -175,7 +175,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.isWidgetType = function(...args) 
           
@@ -185,7 +185,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.isWindowType = function(...args) 
           
@@ -195,7 +195,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.signalsBlocked = function(...args) 
           
@@ -205,7 +205,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.blockSignals = function(...args) 
           
@@ -215,7 +215,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.findChild = function(...args) 
           
@@ -225,7 +225,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.children = function(...args) 
           
@@ -235,7 +235,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setParent = function(...args) 
           
@@ -245,7 +245,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.installEventFilter = function(...args) 
           
@@ -255,7 +255,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.removeEventFilter = function(...args) 
           
@@ -265,7 +265,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.dumpObjectTree = function(...args) 
           
@@ -275,7 +275,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.dumpObjectInfo = function(...args) 
           
@@ -285,7 +285,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setProperty = function(...args) 
           
@@ -295,7 +295,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.property = function(...args) 
           
@@ -305,7 +305,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.dynamicPropertyNames = function(...args) 
           
@@ -315,7 +315,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.parent = function(...args) 
           
@@ -325,7 +325,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.deleteLater = function(...args) 
           
@@ -335,7 +335,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.openMode = function(...args) 
           
@@ -345,7 +345,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.openMode(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setTextModeEnabled = function(...args) 
           
@@ -355,7 +355,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.isTextModeEnabled = function(...args) 
           
@@ -365,7 +365,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.isTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.isOpen = function(...args) 
           
@@ -375,7 +375,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.isReadable = function(...args) 
           
@@ -385,7 +385,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.isWritable = function(...args) 
           
@@ -395,7 +395,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.readChannelCount = function(...args) 
           
@@ -405,7 +405,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.readChannelCount(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.writeChannelCount = function(...args) 
           
@@ -415,7 +415,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.writeChannelCount(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.currentReadChannel = function(...args) 
           
@@ -425,7 +425,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.currentReadChannel(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setCurrentReadChannel = function(...args) 
           
@@ -435,7 +435,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setCurrentReadChannel(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.currentWriteChannel = function(...args) 
           
@@ -445,7 +445,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.currentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setCurrentWriteChannel = function(...args) 
           
@@ -455,7 +455,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setCurrentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.pos = function(...args) 
           
@@ -465,7 +465,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.size = function(...args) 
           
@@ -475,7 +475,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.seek = function(...args) 
           
@@ -485,7 +485,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.atEnd = function(...args) 
           
@@ -495,7 +495,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.reset = function(...args) 
           
@@ -505,7 +505,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.bytesAvailable = function(...args) 
           
@@ -515,7 +515,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.bytesAvailable(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.readAll = function(...args) 
           
@@ -525,7 +525,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.canReadLine = function(...args) 
           
@@ -535,7 +535,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.canReadLine(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.startTransaction = function(...args) 
           
@@ -545,7 +545,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.startTransaction(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.commitTransaction = function(...args) 
           
@@ -555,7 +555,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.rollbackTransaction = function(...args) 
           
@@ -565,7 +565,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.isTransactionStarted = function(...args) 
           
@@ -575,7 +575,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.isTransactionStarted(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.write = function(...args) 
           
@@ -585,7 +585,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.skip = function(...args) 
           
@@ -595,7 +595,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.skip(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.ungetChar = function(...args) 
           
@@ -605,7 +605,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.ungetChar(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.putChar = function(...args) 
           
@@ -615,7 +615,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.putChar(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.errorString = function(...args) 
           
@@ -625,7 +625,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.start = function(...args) 
           
@@ -635,7 +635,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.start(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.startCommand = function(...args) 
           
@@ -645,7 +645,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.startCommand(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.startDetached = function(...args) 
           
@@ -655,7 +655,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.startDetached(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.open = function(...args) 
           
@@ -665,7 +665,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.program = function(...args) 
           
@@ -675,7 +675,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.program(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setProgram = function(...args) 
           
@@ -685,7 +685,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setProgram(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.arguments = function(...args) 
           
@@ -695,7 +695,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.arguments(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setArguments = function(...args) 
           
@@ -705,7 +705,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setArguments(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.processChannelMode = function(...args) 
           
@@ -715,7 +715,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.processChannelMode(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setProcessChannelMode = function(...args) 
           
@@ -725,7 +725,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setProcessChannelMode(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.inputChannelMode = function(...args) 
           
@@ -735,7 +735,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.inputChannelMode(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setInputChannelMode = function(...args) 
           
@@ -745,7 +745,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setInputChannelMode(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.readChannel = function(...args) 
           
@@ -755,7 +755,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.readChannel(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setReadChannel = function(...args) 
           
@@ -765,7 +765,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setReadChannel(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.closeReadChannel = function(...args) 
           
@@ -775,7 +775,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.closeReadChannel(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.closeWriteChannel = function(...args) 
           
@@ -785,7 +785,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.closeWriteChannel(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setStandardInputFile = function(...args) 
           
@@ -795,7 +795,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setStandardInputFile(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setStandardOutputFile = function(...args) 
           
@@ -805,7 +805,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setStandardOutputFile(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setStandardErrorFile = function(...args) 
           
@@ -815,7 +815,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setStandardErrorFile(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setStandardOutputProcess = function(...args) 
           
@@ -825,7 +825,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setStandardOutputProcess(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.nativeArguments = function(...args) 
           
@@ -835,7 +835,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.nativeArguments(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setNativeArguments = function(...args) 
           
@@ -845,7 +845,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setNativeArguments(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.workingDirectory = function(...args) 
           
@@ -855,7 +855,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.workingDirectory(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setWorkingDirectory = function(...args) 
           
@@ -865,7 +865,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setWorkingDirectory(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setEnvironment = function(...args) 
           
@@ -875,7 +875,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setEnvironment(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.environment = function(...args) 
           
@@ -885,7 +885,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.environment(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setProcessEnvironment = function(...args) 
           
@@ -895,7 +895,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setProcessEnvironment(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.processEnvironment = function(...args) 
           
@@ -905,7 +905,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.processEnvironment(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.error = function(...args) 
           
@@ -915,7 +915,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.state = function(...args) 
           
@@ -925,7 +925,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.state(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.processId = function(...args) 
           
@@ -935,7 +935,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.processId(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.waitForStarted = function(...args) 
           
@@ -945,7 +945,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.waitForStarted(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.waitForReadyRead = function(...args) 
           
@@ -955,7 +955,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.waitForReadyRead(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.waitForBytesWritten = function(...args) 
           
@@ -965,7 +965,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.waitForBytesWritten(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.waitForFinished = function(...args) 
           
@@ -975,7 +975,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.waitForFinished(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.readAllStandardOutput = function(...args) 
           
@@ -985,7 +985,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.readAllStandardOutput(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.readAllStandardError = function(...args) 
           
@@ -995,7 +995,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.readAllStandardError(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.exitCode = function(...args) 
           
@@ -1005,7 +1005,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.exitCode(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.exitStatus = function(...args) 
           
@@ -1015,7 +1015,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.exitStatus(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.bytesToWrite = function(...args) 
           
@@ -1025,7 +1025,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.bytesToWrite(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.isSequential = function(...args) 
           
@@ -1035,7 +1035,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.isSequential(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.close = function(...args) 
           
@@ -1045,7 +1045,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.systemEnvironment = function(...args) 
           
@@ -1055,7 +1055,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.systemEnvironment(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.nullDevice = function(...args) 
           
@@ -1065,7 +1065,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.nullDevice(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.terminate = function(...args) 
           
@@ -1075,7 +1075,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.terminate(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.kill = function(...args) 
           
@@ -1085,7 +1085,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.kill(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setProcessState = function(...args) 
           
@@ -1095,7 +1095,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setProcessState(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.readData = function(...args) 
           
@@ -1105,7 +1105,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.readData(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.writeData = function(...args) 
           
@@ -1115,7 +1115,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.writeData(...args);
             
         };
-    
+        
         // function 
         QProcess.prototype.setupChildProcess = function(...args) 
           
@@ -1125,7 +1125,7 @@ QProcess.CrashExit = QProcess_Wrapper.CrashExit;
               return this.__PROXY__.setupChildProcess(...args);
             
         };
-    
+        
 
       // static functions:
       

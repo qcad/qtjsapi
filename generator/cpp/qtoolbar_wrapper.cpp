@@ -309,15 +309,21 @@ QString a1_cpp;
 
                 // set handler for wrapped base object:
                 //((QToolBar_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QToolBar_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QToolBar_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       
@@ -367,15 +373,21 @@ QString a1_cpp;
 
                 // set handler for wrapped base object:
                 //((QToolBar_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QToolBar_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QToolBar_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       

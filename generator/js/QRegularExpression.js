@@ -238,7 +238,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.patternOptions(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.setPatternOptions = function(...args) 
           
@@ -248,7 +248,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.setPatternOptions(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.swap = function(...args) 
           
@@ -258,7 +258,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.pattern = function(...args) 
           
@@ -268,7 +268,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.pattern(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.setPattern = function(...args) 
           
@@ -278,7 +278,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.setPattern(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.isValid = function(...args) 
           
@@ -288,7 +288,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.patternErrorOffset = function(...args) 
           
@@ -298,7 +298,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.patternErrorOffset(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.errorString = function(...args) 
           
@@ -308,7 +308,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.captureCount = function(...args) 
           
@@ -318,7 +318,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.captureCount(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.namedCaptureGroups = function(...args) 
           
@@ -328,7 +328,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.namedCaptureGroups(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.match = function(...args) 
           
@@ -338,7 +338,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.match(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.globalMatch = function(...args) 
           
@@ -348,7 +348,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.globalMatch(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.optimize = function(...args) 
           
@@ -358,7 +358,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.optimize(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.escape = function(...args) 
           
@@ -368,7 +368,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.escape(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.wildcardToRegularExpression = function(...args) 
           
@@ -378,7 +378,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.wildcardToRegularExpression(...args);
             
         };
-    
+        
         // function 
         QRegularExpression.prototype.anchoredPattern = function(...args) 
           
@@ -388,7 +388,7 @@ QRegularExpression.UnanchoredWildcardConversion = QRegularExpression_Wrapper.Una
               return this.__PROXY__.anchoredPattern(...args);
             
         };
-    
+        
 
       // static functions:
       

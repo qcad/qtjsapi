@@ -240,7 +240,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.swap = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.isNull = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.clear = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.length = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.type = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.algorithm = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.algorithm(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.toPem = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.toPem(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.toDer = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.toDer(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.equals = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QSslKey.prototype.operator_not_assign = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QSslKey.prototype.isNullWrapper = function() {

@@ -160,7 +160,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.operator_equal = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.operator_equal(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.operator_unequal = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.operator_unequal(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.namedItem = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.namedItem(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.setNamedItem = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.setNamedItem(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.removeNamedItem = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.removeNamedItem(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.item = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.item(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.namedItemNS = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.namedItemNS(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.setNamedItemNS = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.setNamedItemNS(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.removeNamedItemNS = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.removeNamedItemNS(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.length = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.count = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.size = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.isEmpty = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QDomNamedNodeMap.prototype.contains = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
 
       // static functions:
       QDomNamedNodeMap.prototype.isNullWrapper = function() {

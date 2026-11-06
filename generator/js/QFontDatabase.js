@@ -178,7 +178,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.standardSizes(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.writingSystems = function(...args) 
           
@@ -188,7 +188,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.writingSystems(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.families = function(...args) 
           
@@ -198,7 +198,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.families(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.styles = function(...args) 
           
@@ -208,7 +208,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.styles(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.pointSizes = function(...args) 
           
@@ -218,7 +218,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.pointSizes(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.smoothSizes = function(...args) 
           
@@ -228,7 +228,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.smoothSizes(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.styleString = function(...args) 
           
@@ -238,7 +238,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.styleString(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.font = function(...args) 
           
@@ -248,7 +248,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.isBitmapScalable = function(...args) 
           
@@ -258,7 +258,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.isBitmapScalable(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.isSmoothlyScalable = function(...args) 
           
@@ -268,7 +268,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.isSmoothlyScalable(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.isScalable = function(...args) 
           
@@ -278,7 +278,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.isScalable(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.isFixedPitch = function(...args) 
           
@@ -288,7 +288,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.isFixedPitch(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.italic = function(...args) 
           
@@ -298,7 +298,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.italic(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.bold = function(...args) 
           
@@ -308,7 +308,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.bold(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.weight = function(...args) 
           
@@ -318,7 +318,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.weight(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.hasFamily = function(...args) 
           
@@ -328,7 +328,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.hasFamily(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.isPrivateFamily = function(...args) 
           
@@ -338,7 +338,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.isPrivateFamily(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.writingSystemName = function(...args) 
           
@@ -348,7 +348,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.writingSystemName(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.writingSystemSample = function(...args) 
           
@@ -358,7 +358,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.writingSystemSample(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.addApplicationFont = function(...args) 
           
@@ -368,7 +368,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.addApplicationFont(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.addApplicationFontFromData = function(...args) 
           
@@ -378,7 +378,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.addApplicationFontFromData(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.applicationFontFamilies = function(...args) 
           
@@ -388,7 +388,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.applicationFontFamilies(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.removeApplicationFont = function(...args) 
           
@@ -398,7 +398,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.removeApplicationFont(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.removeAllApplicationFonts = function(...args) 
           
@@ -408,7 +408,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.removeAllApplicationFonts(...args);
             
         };
-    
+        
         // function 
         QFontDatabase.prototype.systemFont = function(...args) 
           
@@ -418,7 +418,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
               return this.__PROXY__.systemFont(...args);
             
         };
-    
+        
 
       // static functions:
       

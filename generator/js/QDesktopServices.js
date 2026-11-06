@@ -134,7 +134,7 @@
               return this.__PROXY__.openUrl(...args);
             
         };
-    
+        
         // function 
         QDesktopServices.prototype.setUrlHandler = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.setUrlHandler(...args);
             
         };
-    
+        
         // function 
         QDesktopServices.prototype.unsetUrlHandler = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.unsetUrlHandler(...args);
             
         };
-    
+        
 
       // static functions:
       

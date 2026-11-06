@@ -220,7 +220,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.isWidgetType = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.isWindowType = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.signalsBlocked = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.blockSignals = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.findChild = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.children = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.setParent = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.installEventFilter = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.removeEventFilter = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.dumpObjectTree = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.dumpObjectInfo = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.setProperty = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.property = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.dynamicPropertyNames = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.parent = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.deleteLater = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.isValid = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.defaultSize = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.defaultSize(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.viewBox = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.viewBox(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.viewBoxF = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.viewBoxF(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.setViewBox = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.setViewBox(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.setAspectRatioMode = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.setAspectRatioMode(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.animated = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.animated(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.setFramesPerSecond = function(...args) 
           
@@ -460,7 +460,7 @@
               return this.__PROXY__.setFramesPerSecond(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.setCurrentFrame = function(...args) 
           
@@ -470,7 +470,7 @@
               return this.__PROXY__.setCurrentFrame(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.animationDuration = function(...args) 
           
@@ -480,7 +480,7 @@
               return this.__PROXY__.animationDuration(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.boundsOnElement = function(...args) 
           
@@ -490,7 +490,7 @@
               return this.__PROXY__.boundsOnElement(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.elementExists = function(...args) 
           
@@ -500,7 +500,7 @@
               return this.__PROXY__.elementExists(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.transformForElement = function(...args) 
           
@@ -510,7 +510,7 @@
               return this.__PROXY__.transformForElement(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.load = function(...args) 
           
@@ -520,7 +520,7 @@
               return this.__PROXY__.load(...args);
             
         };
-    
+        
         // function 
         QSvgRenderer.prototype.render = function(...args) 
           
@@ -530,7 +530,7 @@
               return this.__PROXY__.render(...args);
             
         };
-    
+        
 
       // static functions:
       

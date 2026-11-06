@@ -147,7 +147,8 @@
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.setObjectName = function(...args) 
           
@@ -157,7 +158,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isWidgetType = function(...args) 
           
@@ -167,7 +168,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isWindowType = function(...args) 
           
@@ -177,7 +178,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.signalsBlocked = function(...args) 
           
@@ -187,7 +188,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.blockSignals = function(...args) 
           
@@ -197,7 +198,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.findChild = function(...args) 
           
@@ -207,7 +208,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.children = function(...args) 
           
@@ -217,7 +218,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.installEventFilter = function(...args) 
           
@@ -227,7 +228,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.removeEventFilter = function(...args) 
           
@@ -237,7 +238,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.dumpObjectTree = function(...args) 
           
@@ -247,7 +248,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.dumpObjectInfo = function(...args) 
           
@@ -257,7 +258,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setProperty = function(...args) 
           
@@ -267,7 +268,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.property = function(...args) 
           
@@ -277,7 +278,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.dynamicPropertyNames = function(...args) 
           
@@ -287,7 +288,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.parent = function(...args) 
           
@@ -297,7 +298,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.deleteLater = function(...args) 
           
@@ -307,7 +308,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.devType = function(...args) 
           
@@ -317,7 +318,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.createWinId = function(...args) 
           
@@ -327,7 +328,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isWindow = function(...args) 
           
@@ -337,7 +338,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isModal = function(...args) 
           
@@ -347,7 +348,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowModality = function(...args) 
           
@@ -357,7 +358,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isEnabled = function(...args) 
           
@@ -367,7 +368,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isEnabledTo = function(...args) 
           
@@ -377,7 +378,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setEnabled = function(...args) 
           
@@ -387,7 +388,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setDisabled = function(...args) 
           
@@ -397,7 +398,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowModified = function(...args) 
           
@@ -407,7 +408,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMinimumSize = function(...args) 
           
@@ -417,7 +418,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMaximumSize = function(...args) 
           
@@ -427,7 +428,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMinimumWidth = function(...args) 
           
@@ -437,7 +438,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMinimumHeight = function(...args) 
           
@@ -447,7 +448,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMaximumWidth = function(...args) 
           
@@ -457,7 +458,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMaximumHeight = function(...args) 
           
@@ -467,7 +468,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setSizeIncrement = function(...args) 
           
@@ -477,7 +478,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setBaseSize = function(...args) 
           
@@ -487,7 +488,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setFixedSize = function(...args) 
           
@@ -497,7 +498,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setFixedWidth = function(...args) 
           
@@ -507,7 +508,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setFixedHeight = function(...args) 
           
@@ -517,7 +518,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.mapToGlobal = function(...args) 
           
@@ -527,7 +528,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.mapFromGlobal = function(...args) 
           
@@ -537,7 +538,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.mapToParent = function(...args) 
           
@@ -547,7 +548,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.mapFromParent = function(...args) 
           
@@ -557,7 +558,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.mapTo = function(...args) 
           
@@ -567,7 +568,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.mapFrom = function(...args) 
           
@@ -577,7 +578,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.window = function(...args) 
           
@@ -587,7 +588,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.nativeParentWidget = function(...args) 
           
@@ -597,7 +598,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.topLevelWidget = function(...args) 
           
@@ -607,7 +608,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setPalette = function(...args) 
           
@@ -617,7 +618,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setBackgroundRole = function(...args) 
           
@@ -627,7 +628,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.backgroundRole = function(...args) 
           
@@ -637,7 +638,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setForegroundRole = function(...args) 
           
@@ -647,7 +648,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.foregroundRole = function(...args) 
           
@@ -657,7 +658,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setFont = function(...args) 
           
@@ -667,7 +668,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.fontInfo = function(...args) 
           
@@ -677,7 +678,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setCursor = function(...args) 
           
@@ -687,7 +688,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.unsetCursor = function(...args) 
           
@@ -697,7 +698,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMouseTracking = function(...args) 
           
@@ -707,7 +708,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.hasMouseTracking = function(...args) 
           
@@ -717,7 +718,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.underMouse = function(...args) 
           
@@ -727,7 +728,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setTabletTracking = function(...args) 
           
@@ -737,7 +738,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.hasTabletTracking = function(...args) 
           
@@ -747,7 +748,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMask = function(...args) 
           
@@ -757,7 +758,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.mask = function(...args) 
           
@@ -767,7 +768,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.clearMask = function(...args) 
           
@@ -777,7 +778,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.grab = function(...args) 
           
@@ -787,7 +788,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.grabGesture = function(...args) 
           
@@ -797,7 +798,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.ungrabGesture = function(...args) 
           
@@ -807,7 +808,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowTitle = function(...args) 
           
@@ -817,7 +818,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setStyleSheet = function(...args) 
           
@@ -827,7 +828,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowIcon = function(...args) 
           
@@ -837,7 +838,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowIconText = function(...args) 
           
@@ -847,7 +848,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowRole = function(...args) 
           
@@ -857,7 +858,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.windowRole = function(...args) 
           
@@ -867,7 +868,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowFilePath = function(...args) 
           
@@ -877,7 +878,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowOpacity = function(...args) 
           
@@ -887,7 +888,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isWindowModified = function(...args) 
           
@@ -897,7 +898,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setToolTip = function(...args) 
           
@@ -907,7 +908,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setToolTipDuration = function(...args) 
           
@@ -917,7 +918,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setStatusTip = function(...args) 
           
@@ -927,7 +928,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWhatsThis = function(...args) 
           
@@ -937,7 +938,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setAccessibleName = function(...args) 
           
@@ -947,7 +948,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setAccessibleDescription = function(...args) 
           
@@ -957,7 +958,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setLayoutDirection = function(...args) 
           
@@ -967,7 +968,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.unsetLayoutDirection = function(...args) 
           
@@ -977,7 +978,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setLocale = function(...args) 
           
@@ -987,7 +988,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.unsetLocale = function(...args) 
           
@@ -997,7 +998,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isRightToLeft = function(...args) 
           
@@ -1007,7 +1008,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isLeftToRight = function(...args) 
           
@@ -1017,7 +1018,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.activateWindow = function(...args) 
           
@@ -1027,7 +1028,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.clearFocus = function(...args) 
           
@@ -1037,7 +1038,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setFocus = function(...args) 
           
@@ -1047,7 +1048,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setFocusPolicy = function(...args) 
           
@@ -1057,7 +1058,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.hasFocus = function(...args) 
           
@@ -1067,7 +1068,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setFocusProxy = function(...args) 
           
@@ -1077,7 +1078,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.focusProxy = function(...args) 
           
@@ -1087,7 +1088,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1097,7 +1098,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.grabMouse = function(...args) 
           
@@ -1107,7 +1108,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.releaseMouse = function(...args) 
           
@@ -1117,7 +1118,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.grabKeyboard = function(...args) 
           
@@ -1127,7 +1128,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.releaseKeyboard = function(...args) 
           
@@ -1137,7 +1138,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.grabShortcut = function(...args) 
           
@@ -1147,7 +1148,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.releaseShortcut = function(...args) 
           
@@ -1157,7 +1158,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setShortcutEnabled = function(...args) 
           
@@ -1167,7 +1168,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1177,7 +1178,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1187,7 +1188,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.update = function(...args) 
           
@@ -1197,7 +1198,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.repaint = function(...args) 
           
@@ -1207,7 +1208,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setVisible = function(...args) 
           
@@ -1217,7 +1218,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setHidden = function(...args) 
           
@@ -1227,7 +1228,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.show = function(...args) 
           
@@ -1237,7 +1238,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.hide = function(...args) 
           
@@ -1247,7 +1248,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.showMinimized = function(...args) 
           
@@ -1257,7 +1258,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.showMaximized = function(...args) 
           
@@ -1267,7 +1268,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.showFullScreen = function(...args) 
           
@@ -1277,7 +1278,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.showNormal = function(...args) 
           
@@ -1287,7 +1288,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.close = function(...args) 
           
@@ -1297,7 +1298,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.raise = function(...args) 
           
@@ -1307,7 +1308,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.lower = function(...args) 
           
@@ -1317,7 +1318,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.stackUnder = function(...args) 
           
@@ -1327,7 +1328,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.move = function(...args) 
           
@@ -1337,7 +1338,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.resize = function(...args) 
           
@@ -1347,7 +1348,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setGeometry = function(...args) 
           
@@ -1357,7 +1358,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.saveGeometry = function(...args) 
           
@@ -1367,7 +1368,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.restoreGeometry = function(...args) 
           
@@ -1377,7 +1378,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.adjustSize = function(...args) 
           
@@ -1387,7 +1388,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isVisible = function(...args) 
           
@@ -1397,7 +1398,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isVisibleTo = function(...args) 
           
@@ -1407,7 +1408,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isHidden = function(...args) 
           
@@ -1417,7 +1418,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isMinimized = function(...args) 
           
@@ -1427,7 +1428,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isMaximized = function(...args) 
           
@@ -1437,7 +1438,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isFullScreen = function(...args) 
           
@@ -1447,7 +1448,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.windowState = function(...args) 
           
@@ -1457,7 +1458,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowState = function(...args) 
           
@@ -1467,7 +1468,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.overrideWindowState = function(...args) 
           
@@ -1477,7 +1478,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setSizePolicy = function(...args) 
           
@@ -1487,7 +1488,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.heightForWidth = function(...args) 
           
@@ -1497,7 +1498,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.hasHeightForWidth = function(...args) 
           
@@ -1507,7 +1508,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.visibleRegion = function(...args) 
           
@@ -1517,7 +1518,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setContentsMargins = function(...args) 
           
@@ -1527,7 +1528,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.contentsMargins = function(...args) 
           
@@ -1537,7 +1538,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.contentsRect = function(...args) 
           
@@ -1547,7 +1548,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.layout = function(...args) 
           
@@ -1557,7 +1558,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setLayout = function(...args) 
           
@@ -1567,7 +1568,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.updateGeometry = function(...args) 
           
@@ -1577,7 +1578,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setParent = function(...args) 
           
@@ -1587,7 +1588,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.scroll = function(...args) 
           
@@ -1597,7 +1598,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.focusWidget = function(...args) 
           
@@ -1607,7 +1608,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.nextInFocusChain = function(...args) 
           
@@ -1617,7 +1618,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.previousInFocusChain = function(...args) 
           
@@ -1627,7 +1628,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setAcceptDrops = function(...args) 
           
@@ -1637,7 +1638,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.addAction = function(...args) 
           
@@ -1647,7 +1648,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.addActions = function(...args) 
           
@@ -1657,7 +1658,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.insertActions = function(...args) 
           
@@ -1667,7 +1668,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.insertAction = function(...args) 
           
@@ -1677,7 +1678,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.removeAction = function(...args) 
           
@@ -1687,7 +1688,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.actions = function(...args) 
           
@@ -1697,7 +1698,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.parentWidget = function(...args) 
           
@@ -1707,7 +1708,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowFlags = function(...args) 
           
@@ -1717,7 +1718,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.windowFlags = function(...args) 
           
@@ -1727,7 +1728,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setWindowFlag = function(...args) 
           
@@ -1737,7 +1738,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.overrideWindowFlags = function(...args) 
           
@@ -1747,7 +1748,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.windowType = function(...args) 
           
@@ -1757,7 +1758,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.childAt = function(...args) 
           
@@ -1767,7 +1768,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setAttribute = function(...args) 
           
@@ -1777,7 +1778,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.testAttribute = function(...args) 
           
@@ -1787,7 +1788,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.ensurePolished = function(...args) 
           
@@ -1797,7 +1798,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.isAncestorOf = function(...args) 
           
@@ -1807,7 +1808,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setAutoFillBackground = function(...args) 
           
@@ -1817,7 +1818,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.event = function(...args) 
           
@@ -1827,7 +1828,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1837,7 +1838,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.enterEvent = function(...args) 
           
@@ -1847,7 +1848,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.leaveEvent = function(...args) 
           
@@ -1857,7 +1858,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.moveEvent = function(...args) 
           
@@ -1867,7 +1868,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.closeEvent = function(...args) 
           
@@ -1877,7 +1878,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.tabletEvent = function(...args) 
           
@@ -1887,7 +1888,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       QDoubleSpinBox.prototype.actionEvent = function() 
         
@@ -1929,7 +1930,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.dragMoveEvent = function(...args) 
           
@@ -1939,7 +1940,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.dragLeaveEvent = function(...args) 
           
@@ -1949,7 +1950,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.dropEvent = function(...args) 
           
@@ -1959,7 +1960,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.showEvent = function(...args) 
           
@@ -1969,7 +1970,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.hideEvent = function(...args) 
           
@@ -1979,7 +1980,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.nativeEvent = function(...args) 
           
@@ -1989,7 +1990,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.metric = function(...args) 
           
@@ -1999,7 +2000,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.initPainter = function(...args) 
           
@@ -2009,7 +2010,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.redirected = function(...args) 
           
@@ -2019,7 +2020,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.sharedPainter = function(...args) 
           
@@ -2029,7 +2030,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.inputMethodEvent = function(...args) 
           
@@ -2039,7 +2040,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.inputMethodQuery = function(...args) 
           
@@ -2049,7 +2050,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setInputMethodHints = function(...args) 
           
@@ -2059,7 +2060,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.updateMicroFocus = function(...args) 
           
@@ -2069,7 +2070,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.create = function(...args) 
           
@@ -2079,7 +2080,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.destroy = function(...args) 
           
@@ -2089,7 +2090,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.focusNextPrevChild = function(...args) 
           
@@ -2099,7 +2100,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.focusNextChild = function(...args) 
           
@@ -2109,7 +2110,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.focusPreviousChild = function(...args) 
           
@@ -2119,7 +2120,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setBackingStore = function(...args) 
           
@@ -2129,7 +2130,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.testAttribute_helper = function(...args) 
           
@@ -2139,7 +2140,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.takeLayout = function(...args) 
           
@@ -2149,7 +2150,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2159,7 +2160,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.qt_qwidget_data = function(...args) 
           
@@ -2169,7 +2170,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.qt_widget_private = function(...args) 
           
@@ -2179,7 +2180,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.stepUp = function(...args) 
           
@@ -2189,7 +2190,7 @@
               return this.__PROXY__.stepUp(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.stepDown = function(...args) 
           
@@ -2199,7 +2200,7 @@
               return this.__PROXY__.stepDown(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.selectAll = function(...args) 
           
@@ -2209,7 +2210,7 @@
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.clear = function(...args) 
           
@@ -2219,7 +2220,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.resizeEvent = function(...args) 
           
@@ -2229,7 +2230,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.keyPressEvent = function(...args) 
           
@@ -2239,7 +2241,8 @@
               return this.__PROXY__.keyPressEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.keyPressEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.keyReleaseEvent = function(...args) 
           
@@ -2249,7 +2252,8 @@
               return this.__PROXY__.keyReleaseEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.keyReleaseEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.wheelEvent = function(...args) 
           
@@ -2259,7 +2263,8 @@
               return this.__PROXY__.wheelEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.wheelEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.focusInEvent = function(...args) 
           
@@ -2269,7 +2274,8 @@
               return this.__PROXY__.focusInEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.focusInEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.focusOutEvent = function(...args) 
           
@@ -2279,7 +2285,8 @@
               return this.__PROXY__.focusOutEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.focusOutEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.contextMenuEvent = function(...args) 
           
@@ -2289,7 +2296,8 @@
               return this.__PROXY__.contextMenuEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.contextMenuEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.changeEvent = function(...args) 
           
@@ -2299,7 +2307,8 @@
               return this.__PROXY__.changeEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.changeEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.mousePressEvent = function(...args) 
           
@@ -2309,7 +2318,8 @@
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2319,7 +2329,8 @@
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.mouseMoveEvent = function(...args) 
           
@@ -2329,7 +2340,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.paintEvent = function(...args) 
           
@@ -2339,7 +2351,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QDoubleSpinBox.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QDoubleSpinBox.prototype.setPrefix = function(...args) 
           
@@ -2349,7 +2362,7 @@
               return this.__PROXY__.setPrefix(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.suffix = function(...args) 
           
@@ -2359,7 +2372,7 @@
               return this.__PROXY__.suffix(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setSuffix = function(...args) 
           
@@ -2369,7 +2382,7 @@
               return this.__PROXY__.setSuffix(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setSingleStep = function(...args) 
           
@@ -2379,7 +2392,7 @@
               return this.__PROXY__.setSingleStep(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMinimum = function(...args) 
           
@@ -2389,7 +2402,7 @@
               return this.__PROXY__.setMinimum(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setMaximum = function(...args) 
           
@@ -2399,7 +2412,7 @@
               return this.__PROXY__.setMaximum(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setRange = function(...args) 
           
@@ -2409,7 +2422,7 @@
               return this.__PROXY__.setRange(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setStepType = function(...args) 
           
@@ -2419,7 +2432,7 @@
               return this.__PROXY__.setStepType(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setDecimals = function(...args) 
           
@@ -2429,7 +2442,7 @@
               return this.__PROXY__.setDecimals(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.validate = function(...args) 
           
@@ -2439,7 +2452,7 @@
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.valueFromText = function(...args) 
           
@@ -2449,7 +2462,7 @@
               return this.__PROXY__.valueFromText(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.textFromValue = function(...args) 
           
@@ -2459,7 +2472,7 @@
               return this.__PROXY__.textFromValue(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.fixup = function(...args) 
           
@@ -2469,7 +2482,7 @@
               return this.__PROXY__.fixup(...args);
             
         };
-    
+        
         // function 
         QDoubleSpinBox.prototype.setValue = function(...args) 
           
@@ -2479,7 +2492,7 @@
               return this.__PROXY__.setValue(...args);
             
         };
-    
+        
 
       // static functions:
       

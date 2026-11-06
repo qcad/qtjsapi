@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.listen = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.listen(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.close = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.isListening = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.isListening(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.setMaxPendingConnections = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.setMaxPendingConnections(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.maxPendingConnections = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.maxPendingConnections(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.setListenBacklogSize = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.setListenBacklogSize(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.listenBacklogSize = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.listenBacklogSize(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.serverPort = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.serverPort(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.serverAddress = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.serverAddress(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.waitForNewConnection = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.waitForNewConnection(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.hasPendingConnections = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.hasPendingConnections(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.nextPendingConnection = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.nextPendingConnection(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.serverError = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.serverError(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.errorString = function(...args) 
           
@@ -439,7 +439,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.pauseAccepting = function(...args) 
           
@@ -449,7 +449,7 @@
               return this.__PROXY__.pauseAccepting(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.resumeAccepting = function(...args) 
           
@@ -459,7 +459,7 @@
               return this.__PROXY__.resumeAccepting(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.setProxy = function(...args) 
           
@@ -469,7 +469,7 @@
               return this.__PROXY__.setProxy(...args);
             
         };
-    
+        
         // function 
         QTcpServer.prototype.proxy = function(...args) 
           
@@ -479,7 +479,7 @@
               return this.__PROXY__.proxy(...args);
             
         };
-    
+        
 
       // static functions:
       

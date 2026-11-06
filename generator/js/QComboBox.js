@@ -157,7 +157,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isWidgetType = function(...args) 
           
@@ -167,7 +167,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isWindowType = function(...args) 
           
@@ -177,7 +177,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.signalsBlocked = function(...args) 
           
@@ -187,7 +187,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.blockSignals = function(...args) 
           
@@ -197,7 +197,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.findChild = function(...args) 
           
@@ -207,7 +207,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.children = function(...args) 
           
@@ -217,7 +217,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.installEventFilter = function(...args) 
           
@@ -227,7 +227,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.removeEventFilter = function(...args) 
           
@@ -237,7 +237,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.dumpObjectTree = function(...args) 
           
@@ -247,7 +247,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.dumpObjectInfo = function(...args) 
           
@@ -257,7 +257,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setProperty = function(...args) 
           
@@ -267,7 +267,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.property = function(...args) 
           
@@ -277,7 +277,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.dynamicPropertyNames = function(...args) 
           
@@ -287,7 +287,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.parent = function(...args) 
           
@@ -297,7 +297,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.deleteLater = function(...args) 
           
@@ -307,7 +307,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.devType = function(...args) 
           
@@ -317,7 +317,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.createWinId = function(...args) 
           
@@ -327,7 +327,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isWindow = function(...args) 
           
@@ -337,7 +337,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isModal = function(...args) 
           
@@ -347,7 +347,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowModality = function(...args) 
           
@@ -357,7 +357,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isEnabled = function(...args) 
           
@@ -367,7 +367,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isEnabledTo = function(...args) 
           
@@ -377,7 +377,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setEnabled = function(...args) 
           
@@ -387,7 +387,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setDisabled = function(...args) 
           
@@ -397,7 +397,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowModified = function(...args) 
           
@@ -407,7 +407,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMinimumSize = function(...args) 
           
@@ -417,7 +417,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMaximumSize = function(...args) 
           
@@ -427,7 +427,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMinimumWidth = function(...args) 
           
@@ -437,7 +437,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMinimumHeight = function(...args) 
           
@@ -447,7 +447,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMaximumWidth = function(...args) 
           
@@ -457,7 +457,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMaximumHeight = function(...args) 
           
@@ -467,7 +467,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setSizeIncrement = function(...args) 
           
@@ -477,7 +477,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setBaseSize = function(...args) 
           
@@ -487,7 +487,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setFixedSize = function(...args) 
           
@@ -497,7 +497,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setFixedWidth = function(...args) 
           
@@ -507,7 +507,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setFixedHeight = function(...args) 
           
@@ -517,7 +517,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mapToGlobal = function(...args) 
           
@@ -527,7 +527,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mapFromGlobal = function(...args) 
           
@@ -537,7 +537,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mapToParent = function(...args) 
           
@@ -547,7 +547,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mapFromParent = function(...args) 
           
@@ -557,7 +557,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mapTo = function(...args) 
           
@@ -567,7 +567,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mapFrom = function(...args) 
           
@@ -577,7 +577,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.window = function(...args) 
           
@@ -587,7 +587,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.nativeParentWidget = function(...args) 
           
@@ -597,7 +597,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.topLevelWidget = function(...args) 
           
@@ -607,7 +607,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setPalette = function(...args) 
           
@@ -617,7 +617,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setBackgroundRole = function(...args) 
           
@@ -627,7 +627,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.backgroundRole = function(...args) 
           
@@ -637,7 +637,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setForegroundRole = function(...args) 
           
@@ -647,7 +647,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.foregroundRole = function(...args) 
           
@@ -657,7 +657,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setFont = function(...args) 
           
@@ -667,7 +667,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.fontInfo = function(...args) 
           
@@ -677,7 +677,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setCursor = function(...args) 
           
@@ -687,7 +687,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.unsetCursor = function(...args) 
           
@@ -697,7 +697,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMouseTracking = function(...args) 
           
@@ -707,7 +707,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.hasMouseTracking = function(...args) 
           
@@ -717,7 +717,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.underMouse = function(...args) 
           
@@ -727,7 +727,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setTabletTracking = function(...args) 
           
@@ -737,7 +737,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.hasTabletTracking = function(...args) 
           
@@ -747,7 +747,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMask = function(...args) 
           
@@ -757,7 +757,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mask = function(...args) 
           
@@ -767,7 +767,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.clearMask = function(...args) 
           
@@ -777,7 +777,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.grab = function(...args) 
           
@@ -787,7 +787,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.grabGesture = function(...args) 
           
@@ -797,7 +797,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.ungrabGesture = function(...args) 
           
@@ -807,7 +807,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowTitle = function(...args) 
           
@@ -817,7 +817,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setStyleSheet = function(...args) 
           
@@ -827,7 +827,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowIcon = function(...args) 
           
@@ -837,7 +837,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowIconText = function(...args) 
           
@@ -847,7 +847,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowRole = function(...args) 
           
@@ -857,7 +857,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.windowRole = function(...args) 
           
@@ -867,7 +867,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowFilePath = function(...args) 
           
@@ -877,7 +877,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowOpacity = function(...args) 
           
@@ -887,7 +887,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isWindowModified = function(...args) 
           
@@ -897,7 +897,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setToolTip = function(...args) 
           
@@ -907,7 +907,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setToolTipDuration = function(...args) 
           
@@ -917,7 +917,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setStatusTip = function(...args) 
           
@@ -927,7 +927,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWhatsThis = function(...args) 
           
@@ -937,7 +937,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setAccessibleName = function(...args) 
           
@@ -947,7 +947,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setAccessibleDescription = function(...args) 
           
@@ -957,7 +957,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setLayoutDirection = function(...args) 
           
@@ -967,7 +967,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.unsetLayoutDirection = function(...args) 
           
@@ -977,7 +977,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setLocale = function(...args) 
           
@@ -987,7 +987,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.unsetLocale = function(...args) 
           
@@ -997,7 +997,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isRightToLeft = function(...args) 
           
@@ -1007,7 +1007,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isLeftToRight = function(...args) 
           
@@ -1017,7 +1017,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.activateWindow = function(...args) 
           
@@ -1027,7 +1027,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.clearFocus = function(...args) 
           
@@ -1037,7 +1037,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setFocus = function(...args) 
           
@@ -1047,7 +1047,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setFocusPolicy = function(...args) 
           
@@ -1057,7 +1057,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.hasFocus = function(...args) 
           
@@ -1067,7 +1067,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setFocusProxy = function(...args) 
           
@@ -1077,7 +1077,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.focusProxy = function(...args) 
           
@@ -1087,7 +1087,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1097,7 +1097,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.grabMouse = function(...args) 
           
@@ -1107,7 +1107,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.releaseMouse = function(...args) 
           
@@ -1117,7 +1117,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.grabKeyboard = function(...args) 
           
@@ -1127,7 +1127,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.releaseKeyboard = function(...args) 
           
@@ -1137,7 +1137,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.grabShortcut = function(...args) 
           
@@ -1147,7 +1147,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.releaseShortcut = function(...args) 
           
@@ -1157,7 +1157,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setShortcutEnabled = function(...args) 
           
@@ -1167,7 +1167,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1177,7 +1177,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1187,7 +1187,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.update = function(...args) 
           
@@ -1197,7 +1197,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.repaint = function(...args) 
           
@@ -1207,7 +1207,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setVisible = function(...args) 
           
@@ -1217,7 +1217,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setHidden = function(...args) 
           
@@ -1227,7 +1227,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.show = function(...args) 
           
@@ -1237,7 +1237,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.hide = function(...args) 
           
@@ -1247,7 +1247,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.showMinimized = function(...args) 
           
@@ -1257,7 +1257,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.showMaximized = function(...args) 
           
@@ -1267,7 +1267,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.showFullScreen = function(...args) 
           
@@ -1277,7 +1277,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.showNormal = function(...args) 
           
@@ -1287,7 +1287,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.close = function(...args) 
           
@@ -1297,7 +1297,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.raise = function(...args) 
           
@@ -1307,7 +1307,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.lower = function(...args) 
           
@@ -1317,7 +1317,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.stackUnder = function(...args) 
           
@@ -1327,7 +1327,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.move = function(...args) 
           
@@ -1337,7 +1337,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.resize = function(...args) 
           
@@ -1347,7 +1347,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setGeometry = function(...args) 
           
@@ -1357,7 +1357,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.saveGeometry = function(...args) 
           
@@ -1367,7 +1367,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.restoreGeometry = function(...args) 
           
@@ -1377,7 +1377,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.adjustSize = function(...args) 
           
@@ -1387,7 +1387,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isVisible = function(...args) 
           
@@ -1397,7 +1397,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isVisibleTo = function(...args) 
           
@@ -1407,7 +1407,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isHidden = function(...args) 
           
@@ -1417,7 +1417,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isMinimized = function(...args) 
           
@@ -1427,7 +1427,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isMaximized = function(...args) 
           
@@ -1437,7 +1437,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isFullScreen = function(...args) 
           
@@ -1447,7 +1447,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.windowState = function(...args) 
           
@@ -1457,7 +1457,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowState = function(...args) 
           
@@ -1467,7 +1467,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.overrideWindowState = function(...args) 
           
@@ -1477,7 +1477,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setSizePolicy = function(...args) 
           
@@ -1487,7 +1487,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.heightForWidth = function(...args) 
           
@@ -1497,7 +1497,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.hasHeightForWidth = function(...args) 
           
@@ -1507,7 +1507,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.visibleRegion = function(...args) 
           
@@ -1517,7 +1517,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setContentsMargins = function(...args) 
           
@@ -1527,7 +1527,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.contentsMargins = function(...args) 
           
@@ -1537,7 +1537,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.contentsRect = function(...args) 
           
@@ -1547,7 +1547,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.layout = function(...args) 
           
@@ -1557,7 +1557,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setLayout = function(...args) 
           
@@ -1567,7 +1567,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.updateGeometry = function(...args) 
           
@@ -1577,7 +1577,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setParent = function(...args) 
           
@@ -1587,7 +1587,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.scroll = function(...args) 
           
@@ -1597,7 +1597,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.focusWidget = function(...args) 
           
@@ -1607,7 +1607,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.nextInFocusChain = function(...args) 
           
@@ -1617,7 +1617,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.previousInFocusChain = function(...args) 
           
@@ -1627,7 +1627,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setAcceptDrops = function(...args) 
           
@@ -1637,7 +1637,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.addAction = function(...args) 
           
@@ -1647,7 +1647,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.addActions = function(...args) 
           
@@ -1657,7 +1657,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.insertActions = function(...args) 
           
@@ -1667,7 +1667,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.insertAction = function(...args) 
           
@@ -1677,7 +1677,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.removeAction = function(...args) 
           
@@ -1687,7 +1687,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.actions = function(...args) 
           
@@ -1697,7 +1697,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.parentWidget = function(...args) 
           
@@ -1707,7 +1707,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowFlags = function(...args) 
           
@@ -1717,7 +1717,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.windowFlags = function(...args) 
           
@@ -1727,7 +1727,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setWindowFlag = function(...args) 
           
@@ -1737,7 +1737,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.overrideWindowFlags = function(...args) 
           
@@ -1747,7 +1747,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.windowType = function(...args) 
           
@@ -1757,7 +1757,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.childAt = function(...args) 
           
@@ -1767,7 +1767,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setAttribute = function(...args) 
           
@@ -1777,7 +1777,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.testAttribute = function(...args) 
           
@@ -1787,7 +1787,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.ensurePolished = function(...args) 
           
@@ -1797,7 +1797,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isAncestorOf = function(...args) 
           
@@ -1807,7 +1807,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setAutoFillBackground = function(...args) 
           
@@ -1817,7 +1817,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.event = function(...args) 
           
@@ -1827,7 +1827,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1837,7 +1837,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.enterEvent = function(...args) 
           
@@ -1847,7 +1847,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.leaveEvent = function(...args) 
           
@@ -1857,7 +1857,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.moveEvent = function(...args) 
           
@@ -1867,7 +1867,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.closeEvent = function(...args) 
           
@@ -1877,7 +1877,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.tabletEvent = function(...args) 
           
@@ -1887,7 +1887,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.dragEnterEvent = function(...args) 
           
@@ -1897,7 +1897,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.dragMoveEvent = function(...args) 
           
@@ -1907,7 +1907,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.dragLeaveEvent = function(...args) 
           
@@ -1917,7 +1917,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.dropEvent = function(...args) 
           
@@ -1927,7 +1927,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.nativeEvent = function(...args) 
           
@@ -1937,7 +1937,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.metric = function(...args) 
           
@@ -1947,7 +1947,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.initPainter = function(...args) 
           
@@ -1957,7 +1957,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.redirected = function(...args) 
           
@@ -1967,7 +1967,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.sharedPainter = function(...args) 
           
@@ -1977,7 +1977,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setInputMethodHints = function(...args) 
           
@@ -1987,7 +1987,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.updateMicroFocus = function(...args) 
           
@@ -1997,7 +1997,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.create = function(...args) 
           
@@ -2007,7 +2007,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.destroy = function(...args) 
           
@@ -2017,7 +2017,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.focusNextPrevChild = function(...args) 
           
@@ -2027,7 +2027,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.focusNextChild = function(...args) 
           
@@ -2037,7 +2037,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.focusPreviousChild = function(...args) 
           
@@ -2047,7 +2047,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setBackingStore = function(...args) 
           
@@ -2057,7 +2057,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.testAttribute_helper = function(...args) 
           
@@ -2067,7 +2067,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.takeLayout = function(...args) 
           
@@ -2077,7 +2077,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2087,7 +2087,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.qt_qwidget_data = function(...args) 
           
@@ -2097,7 +2097,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.qt_widget_private = function(...args) 
           
@@ -2107,7 +2107,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMaxVisibleItems = function(...args) 
           
@@ -2117,7 +2117,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMaxVisibleItems(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMaxCount = function(...args) 
           
@@ -2127,7 +2127,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMaxCount(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setDuplicatesEnabled = function(...args) 
           
@@ -2137,7 +2137,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setDuplicatesEnabled(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setFrame = function(...args) 
           
@@ -2147,7 +2147,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setFrame(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.hasFrame = function(...args) 
           
@@ -2157,7 +2157,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.hasFrame(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.findText = function(...args) 
           
@@ -2167,7 +2167,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.findText(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.findData = function(...args) 
           
@@ -2177,7 +2177,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.findData(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setInsertPolicy = function(...args) 
           
@@ -2187,7 +2187,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setInsertPolicy(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2197,7 +2197,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setMinimumContentsLength = function(...args) 
           
@@ -2207,7 +2207,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setMinimumContentsLength(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setIconSize = function(...args) 
           
@@ -2217,7 +2217,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setPlaceholderText = function(...args) 
           
@@ -2227,7 +2227,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.isEditable = function(...args) 
           
@@ -2237,7 +2237,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setEditable = function(...args) 
           
@@ -2247,7 +2247,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setEditable(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setLineEdit = function(...args) 
           
@@ -2257,7 +2257,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setLineEdit(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.lineEdit = function(...args) 
           
@@ -2267,7 +2267,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.lineEdit(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setValidator = function(...args) 
           
@@ -2277,7 +2277,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setValidator(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setCompleter = function(...args) 
           
@@ -2287,7 +2287,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setCompleter(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.completer = function(...args) 
           
@@ -2297,7 +2297,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.completer(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.model = function(...args) 
           
@@ -2307,7 +2307,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setModelColumn = function(...args) 
           
@@ -2317,7 +2317,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setModelColumn(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.itemText = function(...args) 
           
@@ -2327,7 +2327,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.itemText(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.itemIcon = function(...args) 
           
@@ -2337,7 +2337,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.itemIcon(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.itemData = function(...args) 
           
@@ -2347,7 +2347,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.itemData(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.addItem = function(...args) 
           
@@ -2357,7 +2357,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.addItems = function(...args) 
           
@@ -2367,7 +2367,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.addItems(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.insertItem = function(...args) 
           
@@ -2377,7 +2377,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.insertItem(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.insertItems = function(...args) 
           
@@ -2387,7 +2387,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.insertItems(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.insertSeparator = function(...args) 
           
@@ -2397,7 +2397,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.insertSeparator(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.removeItem = function(...args) 
           
@@ -2407,7 +2407,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setItemText = function(...args) 
           
@@ -2417,7 +2417,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setItemText(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setItemIcon = function(...args) 
           
@@ -2427,7 +2427,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setItemIcon(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setItemData = function(...args) 
           
@@ -2437,7 +2437,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setItemData(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.view = function(...args) 
           
@@ -2447,7 +2447,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.view(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.showPopup = function(...args) 
           
@@ -2457,7 +2457,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.showPopup(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.hidePopup = function(...args) 
           
@@ -2467,7 +2467,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.hidePopup(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.inputMethodQuery = function(...args) 
           
@@ -2477,7 +2477,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.clear = function(...args) 
           
@@ -2487,7 +2487,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.clearEditText = function(...args) 
           
@@ -2497,7 +2497,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.clearEditText(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setEditText = function(...args) 
           
@@ -2507,7 +2507,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setEditText(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setCurrentIndex = function(...args) 
           
@@ -2517,7 +2517,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.setCurrentText = function(...args) 
           
@@ -2527,7 +2527,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.setCurrentText(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.focusInEvent = function(...args) 
           
@@ -2537,7 +2537,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.focusOutEvent = function(...args) 
           
@@ -2547,7 +2547,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.changeEvent = function(...args) 
           
@@ -2557,7 +2557,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.resizeEvent = function(...args) 
           
@@ -2567,7 +2567,8 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QComboBox.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QComboBox.prototype.paintEvent = function(...args) 
           
@@ -2577,7 +2578,8 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QComboBox.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QComboBox.prototype.showEvent = function(...args) 
           
@@ -2587,7 +2589,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.hideEvent = function(...args) 
           
@@ -2597,7 +2599,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mousePressEvent = function(...args) 
           
@@ -2607,7 +2609,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2617,7 +2619,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.keyPressEvent = function(...args) 
           
@@ -2627,7 +2629,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.keyReleaseEvent = function(...args) 
           
@@ -2637,7 +2639,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.wheelEvent = function(...args) 
           
@@ -2647,7 +2649,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.contextMenuEvent = function(...args) 
           
@@ -2657,7 +2659,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.inputMethodEvent = function(...args) 
           
@@ -2667,7 +2669,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QComboBox.prototype.initStyleOption = function(...args) 
           
@@ -2677,7 +2679,7 @@ QComboBox.AdjustToMinimumContentsLengthWithIcon = QComboBox_Wrapper.AdjustToMini
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
 
       // static functions:
       

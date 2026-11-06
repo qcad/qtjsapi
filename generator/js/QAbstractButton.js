@@ -113,7 +113,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isWidgetType = function(...args) 
           
@@ -123,7 +123,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isWindowType = function(...args) 
           
@@ -133,7 +133,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.signalsBlocked = function(...args) 
           
@@ -143,7 +143,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.blockSignals = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.findChild = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.children = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.installEventFilter = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.removeEventFilter = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.dumpObjectTree = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.dumpObjectInfo = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setProperty = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.property = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.dynamicPropertyNames = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.parent = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.deleteLater = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.devType = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.createWinId = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isWindow = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isModal = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowModality = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isEnabled = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isEnabledTo = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setEnabled = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setDisabled = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowModified = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setMinimumSize = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setMaximumSize = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setMinimumWidth = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setMinimumHeight = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setMaximumWidth = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setMaximumHeight = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setSizeIncrement = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setBaseSize = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setFixedSize = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setFixedWidth = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setFixedHeight = function(...args) 
           
@@ -473,7 +473,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.mapToGlobal = function(...args) 
           
@@ -483,7 +483,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.mapFromGlobal = function(...args) 
           
@@ -493,7 +493,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.mapToParent = function(...args) 
           
@@ -503,7 +503,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.mapFromParent = function(...args) 
           
@@ -513,7 +513,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.mapTo = function(...args) 
           
@@ -523,7 +523,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.mapFrom = function(...args) 
           
@@ -533,7 +533,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.window = function(...args) 
           
@@ -543,7 +543,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.nativeParentWidget = function(...args) 
           
@@ -553,7 +553,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.topLevelWidget = function(...args) 
           
@@ -563,7 +563,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setPalette = function(...args) 
           
@@ -573,7 +573,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setBackgroundRole = function(...args) 
           
@@ -583,7 +583,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.backgroundRole = function(...args) 
           
@@ -593,7 +593,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setForegroundRole = function(...args) 
           
@@ -603,7 +603,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.foregroundRole = function(...args) 
           
@@ -613,7 +613,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setFont = function(...args) 
           
@@ -623,7 +623,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.fontInfo = function(...args) 
           
@@ -633,7 +633,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setCursor = function(...args) 
           
@@ -643,7 +643,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.unsetCursor = function(...args) 
           
@@ -653,7 +653,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setMouseTracking = function(...args) 
           
@@ -663,7 +663,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.hasMouseTracking = function(...args) 
           
@@ -673,7 +673,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.underMouse = function(...args) 
           
@@ -683,7 +683,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setTabletTracking = function(...args) 
           
@@ -693,7 +693,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.hasTabletTracking = function(...args) 
           
@@ -703,7 +703,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setMask = function(...args) 
           
@@ -713,7 +713,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.mask = function(...args) 
           
@@ -723,7 +723,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.clearMask = function(...args) 
           
@@ -733,7 +733,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.grab = function(...args) 
           
@@ -743,7 +743,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.grabGesture = function(...args) 
           
@@ -753,7 +753,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.ungrabGesture = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowTitle = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setStyleSheet = function(...args) 
           
@@ -783,7 +783,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowIcon = function(...args) 
           
@@ -793,7 +793,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowIconText = function(...args) 
           
@@ -803,7 +803,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowRole = function(...args) 
           
@@ -813,7 +813,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.windowRole = function(...args) 
           
@@ -823,7 +823,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowFilePath = function(...args) 
           
@@ -833,7 +833,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowOpacity = function(...args) 
           
@@ -843,7 +843,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isWindowModified = function(...args) 
           
@@ -853,7 +853,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setToolTip = function(...args) 
           
@@ -863,7 +863,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setToolTipDuration = function(...args) 
           
@@ -873,7 +873,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setStatusTip = function(...args) 
           
@@ -883,7 +883,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWhatsThis = function(...args) 
           
@@ -893,7 +893,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAccessibleName = function(...args) 
           
@@ -903,7 +903,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAccessibleDescription = function(...args) 
           
@@ -913,7 +913,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setLayoutDirection = function(...args) 
           
@@ -923,7 +923,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.unsetLayoutDirection = function(...args) 
           
@@ -933,7 +933,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setLocale = function(...args) 
           
@@ -943,7 +943,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.unsetLocale = function(...args) 
           
@@ -953,7 +953,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isRightToLeft = function(...args) 
           
@@ -963,7 +963,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isLeftToRight = function(...args) 
           
@@ -973,7 +973,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.activateWindow = function(...args) 
           
@@ -983,7 +983,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.clearFocus = function(...args) 
           
@@ -993,7 +993,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setFocus = function(...args) 
           
@@ -1003,7 +1003,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setFocusPolicy = function(...args) 
           
@@ -1013,7 +1013,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.hasFocus = function(...args) 
           
@@ -1023,7 +1023,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setFocusProxy = function(...args) 
           
@@ -1033,7 +1033,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.focusProxy = function(...args) 
           
@@ -1043,7 +1043,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1053,7 +1053,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.grabMouse = function(...args) 
           
@@ -1063,7 +1063,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.releaseMouse = function(...args) 
           
@@ -1073,7 +1073,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.grabKeyboard = function(...args) 
           
@@ -1083,7 +1083,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.releaseKeyboard = function(...args) 
           
@@ -1093,7 +1093,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.grabShortcut = function(...args) 
           
@@ -1103,7 +1103,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.releaseShortcut = function(...args) 
           
@@ -1113,7 +1113,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setShortcutEnabled = function(...args) 
           
@@ -1123,7 +1123,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1133,7 +1133,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1143,7 +1143,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.update = function(...args) 
           
@@ -1153,7 +1153,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.repaint = function(...args) 
           
@@ -1163,7 +1163,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setVisible = function(...args) 
           
@@ -1173,7 +1173,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setHidden = function(...args) 
           
@@ -1183,7 +1183,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.show = function(...args) 
           
@@ -1193,7 +1193,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.hide = function(...args) 
           
@@ -1203,7 +1203,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.showMinimized = function(...args) 
           
@@ -1213,7 +1213,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.showMaximized = function(...args) 
           
@@ -1223,7 +1223,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.showFullScreen = function(...args) 
           
@@ -1233,7 +1233,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.showNormal = function(...args) 
           
@@ -1243,7 +1243,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.close = function(...args) 
           
@@ -1253,7 +1253,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.raise = function(...args) 
           
@@ -1263,7 +1263,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.lower = function(...args) 
           
@@ -1273,7 +1273,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.stackUnder = function(...args) 
           
@@ -1283,7 +1283,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.move = function(...args) 
           
@@ -1293,7 +1293,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.resize = function(...args) 
           
@@ -1303,7 +1303,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setGeometry = function(...args) 
           
@@ -1313,7 +1313,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.saveGeometry = function(...args) 
           
@@ -1323,7 +1323,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.restoreGeometry = function(...args) 
           
@@ -1333,7 +1333,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.adjustSize = function(...args) 
           
@@ -1343,7 +1343,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isVisible = function(...args) 
           
@@ -1353,7 +1353,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isVisibleTo = function(...args) 
           
@@ -1363,7 +1363,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isHidden = function(...args) 
           
@@ -1373,7 +1373,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isMinimized = function(...args) 
           
@@ -1383,7 +1383,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isMaximized = function(...args) 
           
@@ -1393,7 +1393,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isFullScreen = function(...args) 
           
@@ -1403,7 +1403,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.windowState = function(...args) 
           
@@ -1413,7 +1413,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowState = function(...args) 
           
@@ -1423,7 +1423,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.overrideWindowState = function(...args) 
           
@@ -1433,7 +1433,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setSizePolicy = function(...args) 
           
@@ -1443,7 +1443,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.heightForWidth = function(...args) 
           
@@ -1453,7 +1453,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.hasHeightForWidth = function(...args) 
           
@@ -1463,7 +1463,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.visibleRegion = function(...args) 
           
@@ -1473,7 +1473,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setContentsMargins = function(...args) 
           
@@ -1483,7 +1483,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.contentsMargins = function(...args) 
           
@@ -1493,7 +1493,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.contentsRect = function(...args) 
           
@@ -1503,7 +1503,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.layout = function(...args) 
           
@@ -1513,7 +1513,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setLayout = function(...args) 
           
@@ -1523,7 +1523,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.updateGeometry = function(...args) 
           
@@ -1533,7 +1533,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setParent = function(...args) 
           
@@ -1543,7 +1543,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.scroll = function(...args) 
           
@@ -1553,7 +1553,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.focusWidget = function(...args) 
           
@@ -1563,7 +1563,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.nextInFocusChain = function(...args) 
           
@@ -1573,7 +1573,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.previousInFocusChain = function(...args) 
           
@@ -1583,7 +1583,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAcceptDrops = function(...args) 
           
@@ -1593,7 +1593,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.addAction = function(...args) 
           
@@ -1603,7 +1603,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.addActions = function(...args) 
           
@@ -1613,7 +1613,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.insertActions = function(...args) 
           
@@ -1623,7 +1623,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.insertAction = function(...args) 
           
@@ -1633,7 +1633,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.removeAction = function(...args) 
           
@@ -1643,7 +1643,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.actions = function(...args) 
           
@@ -1653,7 +1653,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.parentWidget = function(...args) 
           
@@ -1663,7 +1663,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowFlags = function(...args) 
           
@@ -1673,7 +1673,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.windowFlags = function(...args) 
           
@@ -1683,7 +1683,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setWindowFlag = function(...args) 
           
@@ -1693,7 +1693,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.overrideWindowFlags = function(...args) 
           
@@ -1703,7 +1703,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.windowType = function(...args) 
           
@@ -1713,7 +1713,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.childAt = function(...args) 
           
@@ -1723,7 +1723,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAttribute = function(...args) 
           
@@ -1733,7 +1733,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.testAttribute = function(...args) 
           
@@ -1743,7 +1743,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.ensurePolished = function(...args) 
           
@@ -1753,7 +1753,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isAncestorOf = function(...args) 
           
@@ -1763,7 +1763,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAutoFillBackground = function(...args) 
           
@@ -1773,7 +1773,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.event = function(...args) 
           
@@ -1783,7 +1783,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1793,7 +1793,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.wheelEvent = function(...args) 
           
@@ -1803,7 +1803,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.keyPressEvent = function(...args) 
           
@@ -1813,7 +1813,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.keyReleaseEvent = function(...args) 
           
@@ -1823,7 +1823,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.focusInEvent = function(...args) 
           
@@ -1833,7 +1833,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.focusOutEvent = function(...args) 
           
@@ -1843,7 +1843,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.enterEvent = function(...args) 
           
@@ -1853,7 +1853,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.leaveEvent = function(...args) 
           
@@ -1863,7 +1863,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.moveEvent = function(...args) 
           
@@ -1873,7 +1873,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.closeEvent = function(...args) 
           
@@ -1883,7 +1883,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.tabletEvent = function(...args) 
           
@@ -1893,7 +1893,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.dragEnterEvent = function(...args) 
           
@@ -1903,7 +1903,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.dragMoveEvent = function(...args) 
           
@@ -1913,7 +1913,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.dragLeaveEvent = function(...args) 
           
@@ -1923,7 +1923,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.dropEvent = function(...args) 
           
@@ -1933,7 +1933,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.showEvent = function(...args) 
           
@@ -1943,7 +1943,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.hideEvent = function(...args) 
           
@@ -1953,7 +1953,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.nativeEvent = function(...args) 
           
@@ -1963,7 +1963,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.changeEvent = function(...args) 
           
@@ -1973,7 +1973,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.metric = function(...args) 
           
@@ -1983,7 +1983,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.initPainter = function(...args) 
           
@@ -1993,7 +1993,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.redirected = function(...args) 
           
@@ -2003,7 +2003,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.sharedPainter = function(...args) 
           
@@ -2013,7 +2013,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.inputMethodEvent = function(...args) 
           
@@ -2023,7 +2023,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.inputMethodQuery = function(...args) 
           
@@ -2033,7 +2033,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setInputMethodHints = function(...args) 
           
@@ -2043,7 +2043,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.updateMicroFocus = function(...args) 
           
@@ -2053,7 +2053,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.create = function(...args) 
           
@@ -2063,7 +2063,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.destroy = function(...args) 
           
@@ -2073,7 +2073,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.focusNextPrevChild = function(...args) 
           
@@ -2083,7 +2083,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.focusNextChild = function(...args) 
           
@@ -2093,7 +2093,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.focusPreviousChild = function(...args) 
           
@@ -2103,7 +2103,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setBackingStore = function(...args) 
           
@@ -2113,7 +2113,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.testAttribute_helper = function(...args) 
           
@@ -2123,7 +2123,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.takeLayout = function(...args) 
           
@@ -2133,7 +2133,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2143,7 +2143,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.qt_qwidget_data = function(...args) 
           
@@ -2153,7 +2153,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.qt_widget_private = function(...args) 
           
@@ -2163,7 +2163,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setText = function(...args) 
           
@@ -2173,7 +2173,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setIcon = function(...args) 
           
@@ -2183,7 +2183,7 @@
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setShortcut = function(...args) 
           
@@ -2193,7 +2193,7 @@
               return this.__PROXY__.setShortcut(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setCheckable = function(...args) 
           
@@ -2203,7 +2203,7 @@
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isCheckable = function(...args) 
           
@@ -2213,7 +2213,7 @@
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isChecked = function(...args) 
           
@@ -2223,7 +2223,7 @@
               return this.__PROXY__.isChecked(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setDown = function(...args) 
           
@@ -2233,7 +2233,7 @@
               return this.__PROXY__.setDown(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.isDown = function(...args) 
           
@@ -2243,7 +2243,7 @@
               return this.__PROXY__.isDown(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAutoRepeat = function(...args) 
           
@@ -2253,7 +2253,7 @@
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAutoRepeatDelay = function(...args) 
           
@@ -2263,7 +2263,7 @@
               return this.__PROXY__.setAutoRepeatDelay(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAutoRepeatInterval = function(...args) 
           
@@ -2273,7 +2273,7 @@
               return this.__PROXY__.setAutoRepeatInterval(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setAutoExclusive = function(...args) 
           
@@ -2283,7 +2283,7 @@
               return this.__PROXY__.setAutoExclusive(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.group = function(...args) 
           
@@ -2293,7 +2293,7 @@
               return this.__PROXY__.group(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setIconSize = function(...args) 
           
@@ -2303,7 +2303,7 @@
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.animateClick = function(...args) 
           
@@ -2313,7 +2313,7 @@
               return this.__PROXY__.animateClick(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.click = function(...args) 
           
@@ -2323,7 +2323,7 @@
               return this.__PROXY__.click(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.toggle = function(...args) 
           
@@ -2333,7 +2333,7 @@
               return this.__PROXY__.toggle(...args);
             
         };
-    
+        
         // function 
         QAbstractButton.prototype.setChecked = function(...args) 
           
@@ -2343,7 +2343,7 @@
               return this.__PROXY__.setChecked(...args);
             
         };
-    
+        
 
       // static functions:
       

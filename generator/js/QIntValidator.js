@@ -175,7 +175,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.isWidgetType = function(...args) 
           
@@ -185,7 +185,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.isWindowType = function(...args) 
           
@@ -195,7 +195,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.signalsBlocked = function(...args) 
           
@@ -205,7 +205,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.blockSignals = function(...args) 
           
@@ -215,7 +215,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.findChild = function(...args) 
           
@@ -225,7 +225,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.children = function(...args) 
           
@@ -235,7 +235,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.setParent = function(...args) 
           
@@ -245,7 +245,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.installEventFilter = function(...args) 
           
@@ -255,7 +255,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.removeEventFilter = function(...args) 
           
@@ -265,7 +265,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.dumpObjectTree = function(...args) 
           
@@ -275,7 +275,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.dumpObjectInfo = function(...args) 
           
@@ -285,7 +285,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.setProperty = function(...args) 
           
@@ -295,7 +295,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.property = function(...args) 
           
@@ -305,7 +305,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.dynamicPropertyNames = function(...args) 
           
@@ -315,7 +315,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.parent = function(...args) 
           
@@ -325,7 +325,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.deleteLater = function(...args) 
           
@@ -335,7 +335,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.setLocale = function(...args) 
           
@@ -345,7 +345,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.locale = function(...args) 
           
@@ -355,7 +355,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.locale(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.validate = function(...args) 
           
@@ -365,7 +365,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.fixup = function(...args) 
           
@@ -375,7 +375,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.fixup(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.setBottom = function(...args) 
           
@@ -385,7 +385,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.setBottom(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.setTop = function(...args) 
           
@@ -395,7 +395,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.setTop(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.setRange = function(...args) 
           
@@ -405,7 +405,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.setRange(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.bottom = function(...args) 
           
@@ -415,7 +415,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.bottom(...args);
             
         };
-    
+        
         // function 
         QIntValidator.prototype.top = function(...args) 
           
@@ -425,7 +425,7 @@ QIntValidator.Acceptable = QIntValidator_Wrapper.Acceptable;
               return this.__PROXY__.top(...args);
             
         };
-    
+        
 
       // static functions:
       

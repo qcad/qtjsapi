@@ -152,7 +152,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.isWidgetType = function(...args) 
           
@@ -162,7 +162,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.isWindowType = function(...args) 
           
@@ -172,7 +172,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.signalsBlocked = function(...args) 
           
@@ -182,7 +182,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.blockSignals = function(...args) 
           
@@ -192,7 +192,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.findChild = function(...args) 
           
@@ -202,7 +202,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.children = function(...args) 
           
@@ -212,7 +212,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.setParent = function(...args) 
           
@@ -222,7 +222,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.installEventFilter = function(...args) 
           
@@ -232,7 +232,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.removeEventFilter = function(...args) 
           
@@ -242,7 +242,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.dumpObjectTree = function(...args) 
           
@@ -252,7 +252,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.dumpObjectInfo = function(...args) 
           
@@ -262,7 +262,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.setProperty = function(...args) 
           
@@ -272,7 +272,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.property = function(...args) 
           
@@ -282,7 +282,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.dynamicPropertyNames = function(...args) 
           
@@ -292,7 +292,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.deleteLater = function(...args) 
           
@@ -302,7 +302,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.hasIndex = function(...args) 
           
@@ -312,7 +312,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.hasIndex(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.clearItemData = function(...args) 
           
@@ -322,7 +322,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.clearItemData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.supportedDragActions = function(...args) 
           
@@ -332,7 +332,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.supportedDragActions(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.moveRows = function(...args) 
           
@@ -342,7 +342,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.moveRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.moveColumns = function(...args) 
           
@@ -352,7 +352,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.moveColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.insertRow = function(...args) 
           
@@ -362,7 +362,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.insertRow(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.insertColumn = function(...args) 
           
@@ -372,7 +372,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.insertColumn(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.removeRow = function(...args) 
           
@@ -382,7 +382,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.removeRow(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.removeColumn = function(...args) 
           
@@ -392,7 +392,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.removeColumn(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.moveRow = function(...args) 
           
@@ -402,7 +402,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.moveRow(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.moveColumn = function(...args) 
           
@@ -412,7 +412,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.moveColumn(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.roleNames = function(...args) 
           
@@ -422,7 +422,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.roleNames(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.submit = function(...args) 
           
@@ -432,7 +432,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.submit(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.revert = function(...args) 
           
@@ -442,7 +442,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.revert(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.resetInternalData = function(...args) 
           
@@ -452,7 +452,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.resetInternalData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.createIndex = function(...args) 
           
@@ -462,7 +462,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.createIndex(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.encodeData = function(...args) 
           
@@ -472,7 +472,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.encodeData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.decodeData = function(...args) 
           
@@ -482,7 +482,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.decodeData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.beginInsertRows = function(...args) 
           
@@ -492,7 +492,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.beginInsertRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.endInsertRows = function(...args) 
           
@@ -502,7 +502,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.endInsertRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.beginRemoveRows = function(...args) 
           
@@ -512,7 +512,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.beginRemoveRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.endRemoveRows = function(...args) 
           
@@ -522,7 +522,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.endRemoveRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.beginMoveRows = function(...args) 
           
@@ -532,7 +532,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.beginMoveRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.endMoveRows = function(...args) 
           
@@ -542,7 +542,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.endMoveRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.beginInsertColumns = function(...args) 
           
@@ -552,7 +552,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.beginInsertColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.endInsertColumns = function(...args) 
           
@@ -562,7 +562,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.endInsertColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.beginRemoveColumns = function(...args) 
           
@@ -572,7 +572,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.beginRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.endRemoveColumns = function(...args) 
           
@@ -582,7 +582,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.endRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.beginMoveColumns = function(...args) 
           
@@ -592,7 +592,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.beginMoveColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.endMoveColumns = function(...args) 
           
@@ -602,7 +602,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.endMoveColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.beginResetModel = function(...args) 
           
@@ -612,7 +612,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.beginResetModel(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.endResetModel = function(...args) 
           
@@ -622,7 +622,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.endResetModel(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.changePersistentIndex = function(...args) 
           
@@ -632,7 +632,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.changePersistentIndex(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.changePersistentIndexList = function(...args) 
           
@@ -642,7 +642,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.changePersistentIndexList(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.persistentIndexList = function(...args) 
           
@@ -652,7 +652,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.persistentIndexList(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.setSourceModel = function(...args) 
           
@@ -662,7 +662,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setSourceModel(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.setFilterRegularExpression = function(...args) 
           
@@ -672,7 +672,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setFilterRegularExpression(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.setFilterWildcard = function(...args) 
           
@@ -682,7 +682,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setFilterWildcard(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.setFilterFixedString = function(...args) 
           
@@ -692,7 +692,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setFilterFixedString(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.invalidate = function(...args) 
           
@@ -702,7 +702,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.index = function(...args) 
           
@@ -712,7 +712,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.index(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.parent = function(...args) 
           
@@ -722,7 +722,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.sibling = function(...args) 
           
@@ -732,7 +732,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.sibling(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.rowCount = function(...args) 
           
@@ -742,7 +742,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.rowCount(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.columnCount = function(...args) 
           
@@ -752,7 +752,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.columnCount(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.hasChildren = function(...args) 
           
@@ -762,7 +762,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.hasChildren(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.data = function(...args) 
           
@@ -772,7 +772,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.setData = function(...args) 
           
@@ -782,7 +782,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.headerData = function(...args) 
           
@@ -792,7 +792,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.headerData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.setHeaderData = function(...args) 
           
@@ -802,7 +802,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.setHeaderData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.mimeData = function(...args) 
           
@@ -812,7 +812,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.mimeData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.dropMimeData = function(...args) 
           
@@ -822,7 +822,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.dropMimeData(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.insertRows = function(...args) 
           
@@ -832,7 +832,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.insertRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.insertColumns = function(...args) 
           
@@ -842,7 +842,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.insertColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.removeRows = function(...args) 
           
@@ -852,7 +852,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.removeRows(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.removeColumns = function(...args) 
           
@@ -862,7 +862,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.removeColumns(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.fetchMore = function(...args) 
           
@@ -872,7 +872,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.fetchMore(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.canFetchMore = function(...args) 
           
@@ -882,7 +882,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.canFetchMore(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.flags = function(...args) 
           
@@ -892,7 +892,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.buddy = function(...args) 
           
@@ -902,7 +902,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.buddy(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.match = function(...args) 
           
@@ -912,7 +912,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.match(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.span = function(...args) 
           
@@ -922,7 +922,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.span(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.sort = function(...args) 
           
@@ -932,7 +932,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.sort(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.mimeTypes = function(...args) 
           
@@ -942,7 +942,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.mimeTypes(...args);
             
         };
-    
+        
         // function 
         QSortFilterProxyModel.prototype.supportedDropActions = function(...args) 
           
@@ -952,7 +952,7 @@ QSortFilterProxyModel.HorizontalSortHint = QSortFilterProxyModel_Wrapper.Horizon
               return this.__PROXY__.supportedDropActions(...args);
             
         };
-    
+        
 
       // static functions:
       

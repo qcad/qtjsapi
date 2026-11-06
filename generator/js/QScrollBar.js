@@ -184,7 +184,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isWidgetType = function(...args) 
           
@@ -194,7 +194,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isWindowType = function(...args) 
           
@@ -204,7 +204,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.signalsBlocked = function(...args) 
           
@@ -214,7 +214,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.blockSignals = function(...args) 
           
@@ -224,7 +224,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.findChild = function(...args) 
           
@@ -234,7 +234,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.children = function(...args) 
           
@@ -244,7 +244,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.installEventFilter = function(...args) 
           
@@ -254,7 +254,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.removeEventFilter = function(...args) 
           
@@ -264,7 +264,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.dumpObjectTree = function(...args) 
           
@@ -274,7 +274,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.dumpObjectInfo = function(...args) 
           
@@ -284,7 +284,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setProperty = function(...args) 
           
@@ -294,7 +294,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.property = function(...args) 
           
@@ -304,7 +304,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.dynamicPropertyNames = function(...args) 
           
@@ -314,7 +314,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.parent = function(...args) 
           
@@ -324,7 +324,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.deleteLater = function(...args) 
           
@@ -334,7 +334,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.devType = function(...args) 
           
@@ -344,7 +344,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.createWinId = function(...args) 
           
@@ -354,7 +354,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isWindow = function(...args) 
           
@@ -364,7 +364,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isModal = function(...args) 
           
@@ -374,7 +374,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowModality = function(...args) 
           
@@ -384,7 +384,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isEnabled = function(...args) 
           
@@ -394,7 +394,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isEnabledTo = function(...args) 
           
@@ -404,7 +404,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setEnabled = function(...args) 
           
@@ -414,7 +414,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setDisabled = function(...args) 
           
@@ -424,7 +424,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowModified = function(...args) 
           
@@ -434,7 +434,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMinimumSize = function(...args) 
           
@@ -444,7 +444,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMaximumSize = function(...args) 
           
@@ -454,7 +454,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMinimumWidth = function(...args) 
           
@@ -464,7 +464,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMinimumHeight = function(...args) 
           
@@ -474,7 +474,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMaximumWidth = function(...args) 
           
@@ -484,7 +484,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMaximumHeight = function(...args) 
           
@@ -494,7 +494,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setSizeIncrement = function(...args) 
           
@@ -504,7 +504,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setBaseSize = function(...args) 
           
@@ -514,7 +514,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setFixedSize = function(...args) 
           
@@ -524,7 +524,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setFixedWidth = function(...args) 
           
@@ -534,7 +534,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setFixedHeight = function(...args) 
           
@@ -544,7 +544,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mapToGlobal = function(...args) 
           
@@ -554,7 +554,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mapFromGlobal = function(...args) 
           
@@ -564,7 +564,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mapToParent = function(...args) 
           
@@ -574,7 +574,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mapFromParent = function(...args) 
           
@@ -584,7 +584,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mapTo = function(...args) 
           
@@ -594,7 +594,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mapFrom = function(...args) 
           
@@ -604,7 +604,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.window = function(...args) 
           
@@ -614,7 +614,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.nativeParentWidget = function(...args) 
           
@@ -624,7 +624,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.topLevelWidget = function(...args) 
           
@@ -634,7 +634,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setPalette = function(...args) 
           
@@ -644,7 +644,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setBackgroundRole = function(...args) 
           
@@ -654,7 +654,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.backgroundRole = function(...args) 
           
@@ -664,7 +664,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setForegroundRole = function(...args) 
           
@@ -674,7 +674,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.foregroundRole = function(...args) 
           
@@ -684,7 +684,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setFont = function(...args) 
           
@@ -694,7 +694,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.fontInfo = function(...args) 
           
@@ -704,7 +704,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setCursor = function(...args) 
           
@@ -714,7 +714,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.unsetCursor = function(...args) 
           
@@ -724,7 +724,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMouseTracking = function(...args) 
           
@@ -734,7 +734,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.hasMouseTracking = function(...args) 
           
@@ -744,7 +744,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.underMouse = function(...args) 
           
@@ -754,7 +754,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setTabletTracking = function(...args) 
           
@@ -764,7 +764,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.hasTabletTracking = function(...args) 
           
@@ -774,7 +774,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMask = function(...args) 
           
@@ -784,7 +784,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mask = function(...args) 
           
@@ -794,7 +794,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.clearMask = function(...args) 
           
@@ -804,7 +804,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.grab = function(...args) 
           
@@ -814,7 +814,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.grabGesture = function(...args) 
           
@@ -824,7 +824,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.ungrabGesture = function(...args) 
           
@@ -834,7 +834,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowTitle = function(...args) 
           
@@ -844,7 +844,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setStyleSheet = function(...args) 
           
@@ -854,7 +854,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowIcon = function(...args) 
           
@@ -864,7 +864,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowIconText = function(...args) 
           
@@ -874,7 +874,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowRole = function(...args) 
           
@@ -884,7 +884,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.windowRole = function(...args) 
           
@@ -894,7 +894,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowFilePath = function(...args) 
           
@@ -904,7 +904,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowOpacity = function(...args) 
           
@@ -914,7 +914,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isWindowModified = function(...args) 
           
@@ -924,7 +924,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setToolTip = function(...args) 
           
@@ -934,7 +934,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setToolTipDuration = function(...args) 
           
@@ -944,7 +944,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setStatusTip = function(...args) 
           
@@ -954,7 +954,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWhatsThis = function(...args) 
           
@@ -964,7 +964,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setAccessibleName = function(...args) 
           
@@ -974,7 +974,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setAccessibleDescription = function(...args) 
           
@@ -984,7 +984,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setLayoutDirection = function(...args) 
           
@@ -994,7 +994,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1004,7 +1004,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setLocale = function(...args) 
           
@@ -1014,7 +1014,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.unsetLocale = function(...args) 
           
@@ -1024,7 +1024,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isRightToLeft = function(...args) 
           
@@ -1034,7 +1034,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isLeftToRight = function(...args) 
           
@@ -1044,7 +1044,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.activateWindow = function(...args) 
           
@@ -1054,7 +1054,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.clearFocus = function(...args) 
           
@@ -1064,7 +1064,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setFocus = function(...args) 
           
@@ -1074,7 +1074,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setFocusPolicy = function(...args) 
           
@@ -1084,7 +1084,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.hasFocus = function(...args) 
           
@@ -1094,7 +1094,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setFocusProxy = function(...args) 
           
@@ -1104,7 +1104,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.focusProxy = function(...args) 
           
@@ -1114,7 +1114,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1124,7 +1124,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.grabMouse = function(...args) 
           
@@ -1134,7 +1134,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.releaseMouse = function(...args) 
           
@@ -1144,7 +1144,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.grabKeyboard = function(...args) 
           
@@ -1154,7 +1154,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.releaseKeyboard = function(...args) 
           
@@ -1164,7 +1164,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.grabShortcut = function(...args) 
           
@@ -1174,7 +1174,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.releaseShortcut = function(...args) 
           
@@ -1184,7 +1184,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setShortcutEnabled = function(...args) 
           
@@ -1194,7 +1194,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1204,7 +1204,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1214,7 +1214,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.update = function(...args) 
           
@@ -1224,7 +1224,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.repaint = function(...args) 
           
@@ -1234,7 +1234,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setVisible = function(...args) 
           
@@ -1244,7 +1244,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setHidden = function(...args) 
           
@@ -1254,7 +1254,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.show = function(...args) 
           
@@ -1264,7 +1264,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.hide = function(...args) 
           
@@ -1274,7 +1274,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.showMinimized = function(...args) 
           
@@ -1284,7 +1284,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.showMaximized = function(...args) 
           
@@ -1294,7 +1294,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.showFullScreen = function(...args) 
           
@@ -1304,7 +1304,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.showNormal = function(...args) 
           
@@ -1314,7 +1314,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.close = function(...args) 
           
@@ -1324,7 +1324,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.raise = function(...args) 
           
@@ -1334,7 +1334,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.lower = function(...args) 
           
@@ -1344,7 +1344,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.stackUnder = function(...args) 
           
@@ -1354,7 +1354,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.move = function(...args) 
           
@@ -1364,7 +1364,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.resize = function(...args) 
           
@@ -1374,7 +1374,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setGeometry = function(...args) 
           
@@ -1384,7 +1384,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.saveGeometry = function(...args) 
           
@@ -1394,7 +1394,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.restoreGeometry = function(...args) 
           
@@ -1404,7 +1404,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.adjustSize = function(...args) 
           
@@ -1414,7 +1414,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isVisible = function(...args) 
           
@@ -1424,7 +1424,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isVisibleTo = function(...args) 
           
@@ -1434,7 +1434,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isHidden = function(...args) 
           
@@ -1444,7 +1444,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isMinimized = function(...args) 
           
@@ -1454,7 +1454,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isMaximized = function(...args) 
           
@@ -1464,7 +1464,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isFullScreen = function(...args) 
           
@@ -1474,7 +1474,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.windowState = function(...args) 
           
@@ -1484,7 +1484,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowState = function(...args) 
           
@@ -1494,7 +1494,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.overrideWindowState = function(...args) 
           
@@ -1504,7 +1504,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setSizePolicy = function(...args) 
           
@@ -1514,7 +1514,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.heightForWidth = function(...args) 
           
@@ -1524,7 +1524,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.hasHeightForWidth = function(...args) 
           
@@ -1534,7 +1534,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.visibleRegion = function(...args) 
           
@@ -1544,7 +1544,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setContentsMargins = function(...args) 
           
@@ -1554,7 +1554,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.contentsMargins = function(...args) 
           
@@ -1564,7 +1564,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.contentsRect = function(...args) 
           
@@ -1574,7 +1574,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.layout = function(...args) 
           
@@ -1584,7 +1584,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setLayout = function(...args) 
           
@@ -1594,7 +1594,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.updateGeometry = function(...args) 
           
@@ -1604,7 +1604,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setParent = function(...args) 
           
@@ -1614,7 +1614,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.scroll = function(...args) 
           
@@ -1624,7 +1624,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.focusWidget = function(...args) 
           
@@ -1634,7 +1634,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.nextInFocusChain = function(...args) 
           
@@ -1644,7 +1644,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.previousInFocusChain = function(...args) 
           
@@ -1654,7 +1654,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setAcceptDrops = function(...args) 
           
@@ -1664,7 +1664,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.addAction = function(...args) 
           
@@ -1674,7 +1674,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.addActions = function(...args) 
           
@@ -1684,7 +1684,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.insertActions = function(...args) 
           
@@ -1694,7 +1694,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.insertAction = function(...args) 
           
@@ -1704,7 +1704,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.removeAction = function(...args) 
           
@@ -1714,7 +1714,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.actions = function(...args) 
           
@@ -1724,7 +1724,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.parentWidget = function(...args) 
           
@@ -1734,7 +1734,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowFlags = function(...args) 
           
@@ -1744,7 +1744,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.windowFlags = function(...args) 
           
@@ -1754,7 +1754,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setWindowFlag = function(...args) 
           
@@ -1764,7 +1764,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.overrideWindowFlags = function(...args) 
           
@@ -1774,7 +1774,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.windowType = function(...args) 
           
@@ -1784,7 +1784,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.childAt = function(...args) 
           
@@ -1794,7 +1794,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setAttribute = function(...args) 
           
@@ -1804,7 +1804,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.testAttribute = function(...args) 
           
@@ -1814,7 +1814,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.ensurePolished = function(...args) 
           
@@ -1824,7 +1824,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isAncestorOf = function(...args) 
           
@@ -1834,7 +1834,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setAutoFillBackground = function(...args) 
           
@@ -1844,7 +1844,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1854,7 +1854,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.keyReleaseEvent = function(...args) 
           
@@ -1864,7 +1864,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.focusInEvent = function(...args) 
           
@@ -1874,7 +1874,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.focusOutEvent = function(...args) 
           
@@ -1884,7 +1884,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.enterEvent = function(...args) 
           
@@ -1894,7 +1894,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.leaveEvent = function(...args) 
           
@@ -1904,7 +1904,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.moveEvent = function(...args) 
           
@@ -1914,7 +1914,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.closeEvent = function(...args) 
           
@@ -1924,7 +1924,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.tabletEvent = function(...args) 
           
@@ -1934,7 +1934,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.dragEnterEvent = function(...args) 
           
@@ -1944,7 +1944,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.dragMoveEvent = function(...args) 
           
@@ -1954,7 +1954,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.dragLeaveEvent = function(...args) 
           
@@ -1964,7 +1964,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.dropEvent = function(...args) 
           
@@ -1974,7 +1974,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.showEvent = function(...args) 
           
@@ -1984,7 +1984,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.nativeEvent = function(...args) 
           
@@ -1994,7 +1994,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.metric = function(...args) 
           
@@ -2004,7 +2004,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.initPainter = function(...args) 
           
@@ -2014,7 +2014,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.redirected = function(...args) 
           
@@ -2024,7 +2024,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.sharedPainter = function(...args) 
           
@@ -2034,7 +2034,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.inputMethodEvent = function(...args) 
           
@@ -2044,7 +2044,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.inputMethodQuery = function(...args) 
           
@@ -2054,7 +2054,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setInputMethodHints = function(...args) 
           
@@ -2064,7 +2064,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.updateMicroFocus = function(...args) 
           
@@ -2074,7 +2074,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.create = function(...args) 
           
@@ -2084,7 +2084,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.destroy = function(...args) 
           
@@ -2094,7 +2094,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.focusNextPrevChild = function(...args) 
           
@@ -2104,7 +2104,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.focusNextChild = function(...args) 
           
@@ -2114,7 +2114,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.focusPreviousChild = function(...args) 
           
@@ -2124,7 +2124,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setBackingStore = function(...args) 
           
@@ -2134,7 +2134,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.testAttribute_helper = function(...args) 
           
@@ -2144,7 +2144,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.takeLayout = function(...args) 
           
@@ -2154,7 +2154,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2164,7 +2164,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.qt_qwidget_data = function(...args) 
           
@@ -2174,7 +2174,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.qt_widget_private = function(...args) 
           
@@ -2184,7 +2184,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMinimum = function(...args) 
           
@@ -2194,7 +2194,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMinimum(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setMaximum = function(...args) 
           
@@ -2204,7 +2204,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setMaximum(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setSingleStep = function(...args) 
           
@@ -2214,7 +2214,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setSingleStep(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setPageStep = function(...args) 
           
@@ -2224,7 +2224,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setPageStep(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setTracking = function(...args) 
           
@@ -2234,7 +2234,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setTracking(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.hasTracking = function(...args) 
           
@@ -2244,7 +2244,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.hasTracking(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setSliderDown = function(...args) 
           
@@ -2254,7 +2254,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setSliderDown(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.isSliderDown = function(...args) 
           
@@ -2264,7 +2264,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.isSliderDown(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setSliderPosition = function(...args) 
           
@@ -2274,7 +2274,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setSliderPosition(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setInvertedAppearance = function(...args) 
           
@@ -2284,7 +2284,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setInvertedAppearance(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setInvertedControls = function(...args) 
           
@@ -2294,7 +2294,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setInvertedControls(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.triggerAction = function(...args) 
           
@@ -2304,7 +2304,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.triggerAction(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setValue = function(...args) 
           
@@ -2314,7 +2314,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setValue(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setOrientation = function(...args) 
           
@@ -2324,7 +2324,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setRange = function(...args) 
           
@@ -2334,7 +2334,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setRange(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.setRepeatAction = function(...args) 
           
@@ -2344,7 +2344,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.setRepeatAction(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.repeatAction = function(...args) 
           
@@ -2354,7 +2354,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.repeatAction(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.keyPressEvent = function(...args) 
           
@@ -2364,7 +2364,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.timerEvent = function(...args) 
           
@@ -2374,7 +2374,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.timerEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.changeEvent = function(...args) 
           
@@ -2384,7 +2384,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.event = function(...args) 
           
@@ -2394,7 +2394,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.wheelEvent = function(...args) 
           
@@ -2404,7 +2404,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.paintEvent = function(...args) 
           
@@ -2414,7 +2414,8 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QScrollBar.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QScrollBar.prototype.mousePressEvent = function(...args) 
           
@@ -2424,7 +2425,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2434,7 +2435,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.mouseMoveEvent = function(...args) 
           
@@ -2444,7 +2445,8 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QScrollBar.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QScrollBar.prototype.hideEvent = function(...args) 
           
@@ -2454,7 +2456,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.sliderChange = function(...args) 
           
@@ -2464,7 +2466,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.sliderChange(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.contextMenuEvent = function(...args) 
           
@@ -2474,7 +2476,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.initStyleOption = function(...args) 
           
@@ -2484,7 +2486,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QScrollBar.prototype.qt_qscrollbarStyleOption = function(...args) 
           
@@ -2494,7 +2496,7 @@ QScrollBar.SliderMove = QScrollBar_Wrapper.SliderMove;
               return this.__PROXY__.qt_qscrollbarStyleOption(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -227,7 +227,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isWidgetType = function(...args) 
           
@@ -237,7 +237,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isWindowType = function(...args) 
           
@@ -247,7 +247,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.signalsBlocked = function(...args) 
           
@@ -257,7 +257,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.blockSignals = function(...args) 
           
@@ -267,7 +267,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.findChild = function(...args) 
           
@@ -277,7 +277,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.children = function(...args) 
           
@@ -287,7 +287,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.installEventFilter = function(...args) 
           
@@ -297,7 +297,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.removeEventFilter = function(...args) 
           
@@ -307,7 +307,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.dumpObjectTree = function(...args) 
           
@@ -317,7 +317,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.dumpObjectInfo = function(...args) 
           
@@ -327,7 +327,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setProperty = function(...args) 
           
@@ -337,7 +337,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.property = function(...args) 
           
@@ -347,7 +347,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.dynamicPropertyNames = function(...args) 
           
@@ -357,7 +357,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.parent = function(...args) 
           
@@ -367,7 +367,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.deleteLater = function(...args) 
           
@@ -377,7 +377,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.devType = function(...args) 
           
@@ -387,7 +387,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.createWinId = function(...args) 
           
@@ -397,7 +397,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isWindow = function(...args) 
           
@@ -407,7 +407,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isModal = function(...args) 
           
@@ -417,7 +417,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isEnabled = function(...args) 
           
@@ -427,7 +427,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isEnabledTo = function(...args) 
           
@@ -437,7 +437,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setEnabled = function(...args) 
           
@@ -447,7 +447,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setDisabled = function(...args) 
           
@@ -457,7 +457,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowModified = function(...args) 
           
@@ -467,7 +467,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setMinimumSize = function(...args) 
           
@@ -477,7 +477,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setMaximumSize = function(...args) 
           
@@ -487,7 +487,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setMinimumWidth = function(...args) 
           
@@ -497,7 +497,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setMinimumHeight = function(...args) 
           
@@ -507,7 +507,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setMaximumWidth = function(...args) 
           
@@ -517,7 +517,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setMaximumHeight = function(...args) 
           
@@ -527,7 +527,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setSizeIncrement = function(...args) 
           
@@ -537,7 +537,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setBaseSize = function(...args) 
           
@@ -547,7 +547,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setFixedSize = function(...args) 
           
@@ -557,7 +557,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setFixedWidth = function(...args) 
           
@@ -567,7 +567,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setFixedHeight = function(...args) 
           
@@ -577,7 +577,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.mapToGlobal = function(...args) 
           
@@ -587,7 +587,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.mapFromGlobal = function(...args) 
           
@@ -597,7 +597,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.mapToParent = function(...args) 
           
@@ -607,7 +607,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.mapFromParent = function(...args) 
           
@@ -617,7 +617,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.mapTo = function(...args) 
           
@@ -627,7 +627,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.mapFrom = function(...args) 
           
@@ -637,7 +637,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.window = function(...args) 
           
@@ -647,7 +647,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.nativeParentWidget = function(...args) 
           
@@ -657,7 +657,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.topLevelWidget = function(...args) 
           
@@ -667,7 +667,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setPalette = function(...args) 
           
@@ -677,7 +677,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setBackgroundRole = function(...args) 
           
@@ -687,7 +687,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.backgroundRole = function(...args) 
           
@@ -697,7 +697,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setForegroundRole = function(...args) 
           
@@ -707,7 +707,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.foregroundRole = function(...args) 
           
@@ -717,7 +717,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setFont = function(...args) 
           
@@ -727,7 +727,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.fontInfo = function(...args) 
           
@@ -737,7 +737,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setCursor = function(...args) 
           
@@ -747,7 +747,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.unsetCursor = function(...args) 
           
@@ -757,7 +757,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setMouseTracking = function(...args) 
           
@@ -767,7 +767,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.hasMouseTracking = function(...args) 
           
@@ -777,7 +777,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.underMouse = function(...args) 
           
@@ -787,7 +787,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setTabletTracking = function(...args) 
           
@@ -797,7 +797,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.hasTabletTracking = function(...args) 
           
@@ -807,7 +807,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setMask = function(...args) 
           
@@ -817,7 +817,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.mask = function(...args) 
           
@@ -827,7 +827,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.clearMask = function(...args) 
           
@@ -837,7 +837,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.grab = function(...args) 
           
@@ -847,7 +847,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.grabGesture = function(...args) 
           
@@ -857,7 +857,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.ungrabGesture = function(...args) 
           
@@ -867,7 +867,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setStyleSheet = function(...args) 
           
@@ -877,7 +877,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowIcon = function(...args) 
           
@@ -887,7 +887,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowIconText = function(...args) 
           
@@ -897,7 +897,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowRole = function(...args) 
           
@@ -907,7 +907,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.windowRole = function(...args) 
           
@@ -917,7 +917,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowFilePath = function(...args) 
           
@@ -927,7 +927,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowOpacity = function(...args) 
           
@@ -937,7 +937,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isWindowModified = function(...args) 
           
@@ -947,7 +947,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setToolTip = function(...args) 
           
@@ -957,7 +957,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setToolTipDuration = function(...args) 
           
@@ -967,7 +967,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setStatusTip = function(...args) 
           
@@ -977,7 +977,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWhatsThis = function(...args) 
           
@@ -987,7 +987,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setAccessibleName = function(...args) 
           
@@ -997,7 +997,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setAccessibleDescription = function(...args) 
           
@@ -1007,7 +1007,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setLayoutDirection = function(...args) 
           
@@ -1017,7 +1017,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1027,7 +1027,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setLocale = function(...args) 
           
@@ -1037,7 +1037,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.unsetLocale = function(...args) 
           
@@ -1047,7 +1047,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isRightToLeft = function(...args) 
           
@@ -1057,7 +1057,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isLeftToRight = function(...args) 
           
@@ -1067,7 +1067,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.activateWindow = function(...args) 
           
@@ -1077,7 +1077,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.clearFocus = function(...args) 
           
@@ -1087,7 +1087,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setFocus = function(...args) 
           
@@ -1097,7 +1097,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setFocusPolicy = function(...args) 
           
@@ -1107,7 +1107,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.hasFocus = function(...args) 
           
@@ -1117,7 +1117,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setFocusProxy = function(...args) 
           
@@ -1127,7 +1127,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.focusProxy = function(...args) 
           
@@ -1137,7 +1137,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1147,7 +1147,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.grabMouse = function(...args) 
           
@@ -1157,7 +1157,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.releaseMouse = function(...args) 
           
@@ -1167,7 +1167,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.grabKeyboard = function(...args) 
           
@@ -1177,7 +1177,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.releaseKeyboard = function(...args) 
           
@@ -1187,7 +1187,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.grabShortcut = function(...args) 
           
@@ -1197,7 +1197,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.releaseShortcut = function(...args) 
           
@@ -1207,7 +1207,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setShortcutEnabled = function(...args) 
           
@@ -1217,7 +1217,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1227,7 +1227,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1237,7 +1237,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.update = function(...args) 
           
@@ -1247,7 +1247,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.repaint = function(...args) 
           
@@ -1257,7 +1257,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setHidden = function(...args) 
           
@@ -1267,7 +1267,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.show = function(...args) 
           
@@ -1277,7 +1277,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.hide = function(...args) 
           
@@ -1287,7 +1287,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.showMinimized = function(...args) 
           
@@ -1297,7 +1297,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.showMaximized = function(...args) 
           
@@ -1307,7 +1307,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.showFullScreen = function(...args) 
           
@@ -1317,7 +1317,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.showNormal = function(...args) 
           
@@ -1327,7 +1327,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.close = function(...args) 
           
@@ -1337,7 +1337,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.raise = function(...args) 
           
@@ -1347,7 +1347,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.lower = function(...args) 
           
@@ -1357,7 +1357,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.stackUnder = function(...args) 
           
@@ -1367,7 +1367,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.move = function(...args) 
           
@@ -1377,7 +1377,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.resize = function(...args) 
           
@@ -1387,7 +1387,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setGeometry = function(...args) 
           
@@ -1397,7 +1397,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.saveGeometry = function(...args) 
           
@@ -1407,7 +1407,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.restoreGeometry = function(...args) 
           
@@ -1417,7 +1417,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.adjustSize = function(...args) 
           
@@ -1427,7 +1427,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isVisible = function(...args) 
           
@@ -1437,7 +1437,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isVisibleTo = function(...args) 
           
@@ -1447,7 +1447,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isHidden = function(...args) 
           
@@ -1457,7 +1457,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isMinimized = function(...args) 
           
@@ -1467,7 +1467,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isMaximized = function(...args) 
           
@@ -1477,7 +1477,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isFullScreen = function(...args) 
           
@@ -1487,7 +1487,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.windowState = function(...args) 
           
@@ -1497,7 +1497,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowState = function(...args) 
           
@@ -1507,7 +1507,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.overrideWindowState = function(...args) 
           
@@ -1517,7 +1517,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setSizePolicy = function(...args) 
           
@@ -1527,7 +1527,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.heightForWidth = function(...args) 
           
@@ -1537,7 +1537,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.hasHeightForWidth = function(...args) 
           
@@ -1547,7 +1547,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.visibleRegion = function(...args) 
           
@@ -1557,7 +1557,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setContentsMargins = function(...args) 
           
@@ -1567,7 +1567,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.contentsMargins = function(...args) 
           
@@ -1577,7 +1577,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.contentsRect = function(...args) 
           
@@ -1587,7 +1587,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.layout = function(...args) 
           
@@ -1597,7 +1597,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setLayout = function(...args) 
           
@@ -1607,7 +1607,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.updateGeometry = function(...args) 
           
@@ -1617,7 +1617,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setParent = function(...args) 
           
@@ -1627,7 +1627,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.scroll = function(...args) 
           
@@ -1637,7 +1637,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.focusWidget = function(...args) 
           
@@ -1647,7 +1647,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.nextInFocusChain = function(...args) 
           
@@ -1657,7 +1657,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.previousInFocusChain = function(...args) 
           
@@ -1667,7 +1667,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setAcceptDrops = function(...args) 
           
@@ -1677,7 +1677,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.addAction = function(...args) 
           
@@ -1687,7 +1687,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.addActions = function(...args) 
           
@@ -1697,7 +1697,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.insertActions = function(...args) 
           
@@ -1707,7 +1707,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.insertAction = function(...args) 
           
@@ -1717,7 +1717,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.removeAction = function(...args) 
           
@@ -1727,7 +1727,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.actions = function(...args) 
           
@@ -1737,7 +1737,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.parentWidget = function(...args) 
           
@@ -1747,7 +1747,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowFlags = function(...args) 
           
@@ -1757,7 +1757,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.windowFlags = function(...args) 
           
@@ -1767,7 +1767,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowFlag = function(...args) 
           
@@ -1777,7 +1777,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.overrideWindowFlags = function(...args) 
           
@@ -1787,7 +1787,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.windowType = function(...args) 
           
@@ -1797,7 +1797,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.childAt = function(...args) 
           
@@ -1807,7 +1807,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setAttribute = function(...args) 
           
@@ -1817,7 +1817,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.testAttribute = function(...args) 
           
@@ -1827,7 +1827,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.ensurePolished = function(...args) 
           
@@ -1837,7 +1837,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isAncestorOf = function(...args) 
           
@@ -1847,7 +1847,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setAutoFillBackground = function(...args) 
           
@@ -1857,7 +1857,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1867,7 +1867,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.wheelEvent = function(...args) 
           
@@ -1877,7 +1877,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.keyReleaseEvent = function(...args) 
           
@@ -1887,7 +1887,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.focusInEvent = function(...args) 
           
@@ -1897,7 +1897,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.focusOutEvent = function(...args) 
           
@@ -1907,7 +1907,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.enterEvent = function(...args) 
           
@@ -1917,7 +1917,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.leaveEvent = function(...args) 
           
@@ -1927,7 +1927,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.moveEvent = function(...args) 
           
@@ -1937,7 +1937,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.tabletEvent = function(...args) 
           
@@ -1947,7 +1947,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.dragEnterEvent = function(...args) 
           
@@ -1957,7 +1957,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.dragMoveEvent = function(...args) 
           
@@ -1967,7 +1967,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.dragLeaveEvent = function(...args) 
           
@@ -1977,7 +1977,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.dropEvent = function(...args) 
           
@@ -1987,7 +1987,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.hideEvent = function(...args) 
           
@@ -1997,7 +1997,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.nativeEvent = function(...args) 
           
@@ -2007,7 +2007,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.metric = function(...args) 
           
@@ -2017,7 +2017,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.initPainter = function(...args) 
           
@@ -2027,7 +2027,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.redirected = function(...args) 
           
@@ -2037,7 +2037,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.sharedPainter = function(...args) 
           
@@ -2047,7 +2047,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.inputMethodEvent = function(...args) 
           
@@ -2057,7 +2057,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.inputMethodQuery = function(...args) 
           
@@ -2067,7 +2067,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setInputMethodHints = function(...args) 
           
@@ -2077,7 +2077,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.updateMicroFocus = function(...args) 
           
@@ -2087,7 +2087,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.create = function(...args) 
           
@@ -2097,7 +2097,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.destroy = function(...args) 
           
@@ -2107,7 +2107,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.focusNextPrevChild = function(...args) 
           
@@ -2117,7 +2117,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.focusNextChild = function(...args) 
           
@@ -2127,7 +2127,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.focusPreviousChild = function(...args) 
           
@@ -2137,7 +2137,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setBackingStore = function(...args) 
           
@@ -2147,7 +2147,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.testAttribute_helper = function(...args) 
           
@@ -2157,7 +2157,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.takeLayout = function(...args) 
           
@@ -2167,7 +2167,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2177,7 +2177,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.qt_qwidget_data = function(...args) 
           
@@ -2187,7 +2187,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.qt_widget_private = function(...args) 
           
@@ -2197,7 +2197,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.result = function(...args) 
           
@@ -2207,7 +2207,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.result(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setVisible = function(...args) 
           
@@ -2217,7 +2217,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setSizeGripEnabled = function(...args) 
           
@@ -2227,7 +2227,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.isSizeGripEnabled = function(...args) 
           
@@ -2237,7 +2237,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.isSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setModal = function(...args) 
           
@@ -2247,7 +2247,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setModal(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setResult = function(...args) 
           
@@ -2257,7 +2257,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setResult(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.done = function(...args) 
           
@@ -2267,7 +2267,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.done(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.accept = function(...args) 
           
@@ -2277,7 +2277,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.reject = function(...args) 
           
@@ -2287,7 +2287,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.reject(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.contextMenuEvent = function(...args) 
           
@@ -2297,7 +2297,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.eventFilter = function(...args) 
           
@@ -2307,7 +2307,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.adjustPosition = function(...args) 
           
@@ -2317,7 +2317,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.adjustPosition(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.addButton = function(...args) 
           
@@ -2327,7 +2327,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.addButton(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.removeButton = function(...args) 
           
@@ -2337,7 +2337,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.removeButton(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.open = function(...args) 
           
@@ -2347,7 +2347,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.buttons = function(...args) 
           
@@ -2357,7 +2357,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.buttonRole = function(...args) 
           
@@ -2367,7 +2367,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.buttonRole(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setStandardButtons = function(...args) 
           
@@ -2377,7 +2377,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setStandardButtons(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.standardButton = function(...args) 
           
@@ -2387,7 +2387,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.standardButton(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.button = function(...args) 
           
@@ -2397,7 +2397,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.button(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.defaultButton = function(...args) 
           
@@ -2407,7 +2407,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.defaultButton(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setDefaultButton = function(...args) 
           
@@ -2417,7 +2417,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setDefaultButton(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.escapeButton = function(...args) 
           
@@ -2427,7 +2427,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.escapeButton(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setEscapeButton = function(...args) 
           
@@ -2437,7 +2437,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setEscapeButton(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.clickedButton = function(...args) 
           
@@ -2447,7 +2447,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.clickedButton(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setText = function(...args) 
           
@@ -2457,7 +2457,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setIcon = function(...args) 
           
@@ -2467,7 +2467,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setIconPixmap = function(...args) 
           
@@ -2477,7 +2477,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setIconPixmap(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setTextFormat = function(...args) 
           
@@ -2487,7 +2487,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setTextFormat(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setTextInteractionFlags = function(...args) 
           
@@ -2497,7 +2497,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setTextInteractionFlags(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setCheckBox = function(...args) 
           
@@ -2507,7 +2507,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setCheckBox(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.checkBox = function(...args) 
           
@@ -2517,7 +2517,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.checkBox(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.information = function(...args) 
           
@@ -2527,7 +2527,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.information(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.question = function(...args) 
           
@@ -2537,7 +2537,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.question(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.warning = function(...args) 
           
@@ -2547,7 +2547,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.warning(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.critical = function(...args) 
           
@@ -2557,7 +2557,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.critical(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.about = function(...args) 
           
@@ -2567,7 +2567,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.about(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.aboutQt = function(...args) 
           
@@ -2577,7 +2577,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.aboutQt(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setInformativeText = function(...args) 
           
@@ -2587,7 +2587,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setInformativeText(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setDetailedText = function(...args) 
           
@@ -2597,7 +2597,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setDetailedText(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowTitle = function(...args) 
           
@@ -2607,7 +2607,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.setWindowModality = function(...args) 
           
@@ -2617,7 +2617,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.exec = function(...args) 
           
@@ -2627,7 +2627,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.event = function(...args) 
           
@@ -2637,7 +2637,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.resizeEvent = function(...args) 
           
@@ -2647,7 +2647,8 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QMessageBox.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QMessageBox.prototype.showEvent = function(...args) 
           
@@ -2657,7 +2658,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.closeEvent = function(...args) 
           
@@ -2667,7 +2668,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.keyPressEvent = function(...args) 
           
@@ -2677,7 +2678,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QMessageBox.prototype.changeEvent = function(...args) 
           
@@ -2687,7 +2688,7 @@ QMessageBox.ButtonMask = QMessageBox_Wrapper.ButtonMask;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
 
       // static functions:
       

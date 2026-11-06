@@ -162,7 +162,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isWidgetType = function(...args) 
           
@@ -172,7 +172,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isWindowType = function(...args) 
           
@@ -182,7 +182,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.signalsBlocked = function(...args) 
           
@@ -192,7 +192,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.blockSignals = function(...args) 
           
@@ -202,7 +202,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.findChild = function(...args) 
           
@@ -212,7 +212,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.children = function(...args) 
           
@@ -222,7 +222,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.installEventFilter = function(...args) 
           
@@ -232,7 +232,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.removeEventFilter = function(...args) 
           
@@ -242,7 +242,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.dumpObjectTree = function(...args) 
           
@@ -252,7 +252,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.dumpObjectInfo = function(...args) 
           
@@ -262,7 +262,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setProperty = function(...args) 
           
@@ -272,7 +272,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.property = function(...args) 
           
@@ -282,7 +282,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.dynamicPropertyNames = function(...args) 
           
@@ -292,7 +292,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.parent = function(...args) 
           
@@ -302,7 +302,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.deleteLater = function(...args) 
           
@@ -312,7 +312,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.devType = function(...args) 
           
@@ -322,7 +322,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.createWinId = function(...args) 
           
@@ -332,7 +332,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isWindow = function(...args) 
           
@@ -342,7 +342,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isModal = function(...args) 
           
@@ -352,7 +352,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowModality = function(...args) 
           
@@ -362,7 +362,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isEnabled = function(...args) 
           
@@ -372,7 +372,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isEnabledTo = function(...args) 
           
@@ -382,7 +382,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setEnabled = function(...args) 
           
@@ -392,7 +392,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setDisabled = function(...args) 
           
@@ -402,7 +402,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowModified = function(...args) 
           
@@ -412,7 +412,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMinimumSize = function(...args) 
           
@@ -422,7 +422,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMaximumSize = function(...args) 
           
@@ -432,7 +432,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMinimumWidth = function(...args) 
           
@@ -442,7 +442,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMinimumHeight = function(...args) 
           
@@ -452,7 +452,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMaximumWidth = function(...args) 
           
@@ -462,7 +462,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMaximumHeight = function(...args) 
           
@@ -472,7 +472,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setSizeIncrement = function(...args) 
           
@@ -482,7 +482,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setBaseSize = function(...args) 
           
@@ -492,7 +492,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setFixedSize = function(...args) 
           
@@ -502,7 +502,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setFixedWidth = function(...args) 
           
@@ -512,7 +512,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setFixedHeight = function(...args) 
           
@@ -522,7 +522,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.mapToGlobal = function(...args) 
           
@@ -532,7 +532,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.mapFromGlobal = function(...args) 
           
@@ -542,7 +542,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.mapToParent = function(...args) 
           
@@ -552,7 +552,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.mapFromParent = function(...args) 
           
@@ -562,7 +562,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.mapTo = function(...args) 
           
@@ -572,7 +572,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.mapFrom = function(...args) 
           
@@ -582,7 +582,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.window = function(...args) 
           
@@ -592,7 +592,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.nativeParentWidget = function(...args) 
           
@@ -602,7 +602,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.topLevelWidget = function(...args) 
           
@@ -612,7 +612,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setPalette = function(...args) 
           
@@ -622,7 +622,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setBackgroundRole = function(...args) 
           
@@ -632,7 +632,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.backgroundRole = function(...args) 
           
@@ -642,7 +642,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setForegroundRole = function(...args) 
           
@@ -652,7 +652,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.foregroundRole = function(...args) 
           
@@ -662,7 +662,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setFont = function(...args) 
           
@@ -672,7 +672,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.fontInfo = function(...args) 
           
@@ -682,7 +682,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setCursor = function(...args) 
           
@@ -692,7 +692,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.unsetCursor = function(...args) 
           
@@ -702,7 +702,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMouseTracking = function(...args) 
           
@@ -712,7 +712,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.hasMouseTracking = function(...args) 
           
@@ -722,7 +722,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.underMouse = function(...args) 
           
@@ -732,7 +732,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabletTracking = function(...args) 
           
@@ -742,7 +742,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.hasTabletTracking = function(...args) 
           
@@ -752,7 +752,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMask = function(...args) 
           
@@ -762,7 +762,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.mask = function(...args) 
           
@@ -772,7 +772,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.clearMask = function(...args) 
           
@@ -782,7 +782,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.grab = function(...args) 
           
@@ -792,7 +792,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.grabGesture = function(...args) 
           
@@ -802,7 +802,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.ungrabGesture = function(...args) 
           
@@ -812,7 +812,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowTitle = function(...args) 
           
@@ -822,7 +822,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setStyleSheet = function(...args) 
           
@@ -832,7 +832,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowIcon = function(...args) 
           
@@ -842,7 +842,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowIconText = function(...args) 
           
@@ -852,7 +852,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowRole = function(...args) 
           
@@ -862,7 +862,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.windowRole = function(...args) 
           
@@ -872,7 +872,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowFilePath = function(...args) 
           
@@ -882,7 +882,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowOpacity = function(...args) 
           
@@ -892,7 +892,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isWindowModified = function(...args) 
           
@@ -902,7 +902,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setToolTip = function(...args) 
           
@@ -912,7 +912,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setToolTipDuration = function(...args) 
           
@@ -922,7 +922,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setStatusTip = function(...args) 
           
@@ -932,7 +932,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWhatsThis = function(...args) 
           
@@ -942,7 +942,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setAccessibleName = function(...args) 
           
@@ -952,7 +952,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setAccessibleDescription = function(...args) 
           
@@ -962,7 +962,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setLayoutDirection = function(...args) 
           
@@ -972,7 +972,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.unsetLayoutDirection = function(...args) 
           
@@ -982,7 +982,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setLocale = function(...args) 
           
@@ -992,7 +992,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.unsetLocale = function(...args) 
           
@@ -1002,7 +1002,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isRightToLeft = function(...args) 
           
@@ -1012,7 +1012,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isLeftToRight = function(...args) 
           
@@ -1022,7 +1022,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.activateWindow = function(...args) 
           
@@ -1032,7 +1032,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.clearFocus = function(...args) 
           
@@ -1042,7 +1042,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setFocus = function(...args) 
           
@@ -1052,7 +1052,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setFocusPolicy = function(...args) 
           
@@ -1062,7 +1062,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.hasFocus = function(...args) 
           
@@ -1072,7 +1072,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setFocusProxy = function(...args) 
           
@@ -1082,7 +1082,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.focusProxy = function(...args) 
           
@@ -1092,7 +1092,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1102,7 +1102,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.grabMouse = function(...args) 
           
@@ -1112,7 +1112,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.releaseMouse = function(...args) 
           
@@ -1122,7 +1122,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.grabKeyboard = function(...args) 
           
@@ -1132,7 +1132,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.releaseKeyboard = function(...args) 
           
@@ -1142,7 +1142,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.grabShortcut = function(...args) 
           
@@ -1152,7 +1152,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.releaseShortcut = function(...args) 
           
@@ -1162,7 +1162,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setShortcutEnabled = function(...args) 
           
@@ -1172,7 +1172,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1182,7 +1182,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1192,7 +1192,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.update = function(...args) 
           
@@ -1202,7 +1202,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.repaint = function(...args) 
           
@@ -1212,7 +1212,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setVisible = function(...args) 
           
@@ -1222,7 +1222,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setHidden = function(...args) 
           
@@ -1232,7 +1232,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.show = function(...args) 
           
@@ -1242,7 +1242,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.hide = function(...args) 
           
@@ -1252,7 +1252,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.showMinimized = function(...args) 
           
@@ -1262,7 +1262,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.showMaximized = function(...args) 
           
@@ -1272,7 +1272,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.showFullScreen = function(...args) 
           
@@ -1282,7 +1282,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.showNormal = function(...args) 
           
@@ -1292,7 +1292,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.close = function(...args) 
           
@@ -1302,7 +1302,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.raise = function(...args) 
           
@@ -1312,7 +1312,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.lower = function(...args) 
           
@@ -1322,7 +1322,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.stackUnder = function(...args) 
           
@@ -1332,7 +1332,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.move = function(...args) 
           
@@ -1342,7 +1342,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.resize = function(...args) 
           
@@ -1352,7 +1352,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setGeometry = function(...args) 
           
@@ -1362,7 +1362,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.saveGeometry = function(...args) 
           
@@ -1372,7 +1372,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.restoreGeometry = function(...args) 
           
@@ -1382,7 +1382,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.adjustSize = function(...args) 
           
@@ -1392,7 +1392,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isVisible = function(...args) 
           
@@ -1402,7 +1402,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isVisibleTo = function(...args) 
           
@@ -1412,7 +1412,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isHidden = function(...args) 
           
@@ -1422,7 +1422,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isMinimized = function(...args) 
           
@@ -1432,7 +1432,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isMaximized = function(...args) 
           
@@ -1442,7 +1442,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isFullScreen = function(...args) 
           
@@ -1452,7 +1452,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.windowState = function(...args) 
           
@@ -1462,7 +1462,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowState = function(...args) 
           
@@ -1472,7 +1472,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.overrideWindowState = function(...args) 
           
@@ -1482,7 +1482,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setSizePolicy = function(...args) 
           
@@ -1492,7 +1492,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.heightForWidth = function(...args) 
           
@@ -1502,7 +1502,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.hasHeightForWidth = function(...args) 
           
@@ -1512,7 +1512,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.visibleRegion = function(...args) 
           
@@ -1522,7 +1522,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setContentsMargins = function(...args) 
           
@@ -1532,7 +1532,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.contentsMargins = function(...args) 
           
@@ -1542,7 +1542,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.contentsRect = function(...args) 
           
@@ -1552,7 +1552,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.layout = function(...args) 
           
@@ -1562,7 +1562,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setLayout = function(...args) 
           
@@ -1572,7 +1572,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.updateGeometry = function(...args) 
           
@@ -1582,7 +1582,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setParent = function(...args) 
           
@@ -1592,7 +1592,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.scroll = function(...args) 
           
@@ -1602,7 +1602,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.focusWidget = function(...args) 
           
@@ -1612,7 +1612,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.nextInFocusChain = function(...args) 
           
@@ -1622,7 +1622,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.previousInFocusChain = function(...args) 
           
@@ -1632,7 +1632,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setAcceptDrops = function(...args) 
           
@@ -1642,7 +1642,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.addAction = function(...args) 
           
@@ -1652,7 +1652,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.addActions = function(...args) 
           
@@ -1662,7 +1662,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.insertActions = function(...args) 
           
@@ -1672,7 +1672,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.insertAction = function(...args) 
           
@@ -1682,7 +1682,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.removeAction = function(...args) 
           
@@ -1692,7 +1692,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.actions = function(...args) 
           
@@ -1702,7 +1702,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.parentWidget = function(...args) 
           
@@ -1712,7 +1712,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowFlags = function(...args) 
           
@@ -1722,7 +1722,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.windowFlags = function(...args) 
           
@@ -1732,7 +1732,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setWindowFlag = function(...args) 
           
@@ -1742,7 +1742,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.overrideWindowFlags = function(...args) 
           
@@ -1752,7 +1752,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.windowType = function(...args) 
           
@@ -1762,7 +1762,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.childAt = function(...args) 
           
@@ -1772,7 +1772,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setAttribute = function(...args) 
           
@@ -1782,7 +1782,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.testAttribute = function(...args) 
           
@@ -1792,7 +1792,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.ensurePolished = function(...args) 
           
@@ -1802,7 +1802,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isAncestorOf = function(...args) 
           
@@ -1812,7 +1812,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setAutoFillBackground = function(...args) 
           
@@ -1822,7 +1822,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.event = function(...args) 
           
@@ -1832,7 +1832,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1842,7 +1842,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.wheelEvent = function(...args) 
           
@@ -1852,7 +1852,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.keyPressEvent = function(...args) 
           
@@ -1862,7 +1862,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.keyReleaseEvent = function(...args) 
           
@@ -1872,7 +1872,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.focusInEvent = function(...args) 
           
@@ -1882,7 +1882,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.focusOutEvent = function(...args) 
           
@@ -1892,7 +1892,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.enterEvent = function(...args) 
           
@@ -1902,7 +1902,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.leaveEvent = function(...args) 
           
@@ -1912,7 +1912,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.moveEvent = function(...args) 
           
@@ -1922,7 +1922,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.closeEvent = function(...args) 
           
@@ -1932,7 +1932,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabletEvent = function(...args) 
           
@@ -1942,7 +1942,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.dragEnterEvent = function(...args) 
           
@@ -1952,7 +1952,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.dragMoveEvent = function(...args) 
           
@@ -1962,7 +1962,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.dragLeaveEvent = function(...args) 
           
@@ -1972,7 +1972,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.dropEvent = function(...args) 
           
@@ -1982,7 +1982,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.showEvent = function(...args) 
           
@@ -1992,7 +1992,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.hideEvent = function(...args) 
           
@@ -2002,7 +2002,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.nativeEvent = function(...args) 
           
@@ -2012,7 +2012,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.changeEvent = function(...args) 
           
@@ -2022,7 +2022,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.metric = function(...args) 
           
@@ -2032,7 +2032,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.initPainter = function(...args) 
           
@@ -2042,7 +2042,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.redirected = function(...args) 
           
@@ -2052,7 +2052,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.sharedPainter = function(...args) 
           
@@ -2062,7 +2062,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.inputMethodEvent = function(...args) 
           
@@ -2072,7 +2072,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.inputMethodQuery = function(...args) 
           
@@ -2082,7 +2082,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setInputMethodHints = function(...args) 
           
@@ -2092,7 +2092,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.updateMicroFocus = function(...args) 
           
@@ -2102,7 +2102,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.create = function(...args) 
           
@@ -2112,7 +2112,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.destroy = function(...args) 
           
@@ -2122,7 +2122,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.focusNextPrevChild = function(...args) 
           
@@ -2132,7 +2132,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.focusNextChild = function(...args) 
           
@@ -2142,7 +2142,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.focusPreviousChild = function(...args) 
           
@@ -2152,7 +2152,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setBackingStore = function(...args) 
           
@@ -2162,7 +2162,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.testAttribute_helper = function(...args) 
           
@@ -2172,7 +2172,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.takeLayout = function(...args) 
           
@@ -2182,7 +2182,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2192,7 +2192,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.qt_qwidget_data = function(...args) 
           
@@ -2202,7 +2202,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.qt_widget_private = function(...args) 
           
@@ -2212,7 +2212,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setShape = function(...args) 
           
@@ -2222,7 +2222,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setShape(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.addTab = function(...args) 
           
@@ -2232,7 +2232,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.addTab(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.insertTab = function(...args) 
           
@@ -2242,7 +2242,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.insertTab(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.removeTab = function(...args) 
           
@@ -2252,7 +2252,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.removeTab(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.moveTab = function(...args) 
           
@@ -2262,7 +2262,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.moveTab(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isTabEnabled = function(...args) 
           
@@ -2272,7 +2272,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isTabEnabled(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabEnabled = function(...args) 
           
@@ -2282,7 +2282,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabEnabled(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isTabVisible = function(...args) 
           
@@ -2292,7 +2292,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isTabVisible(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabVisible = function(...args) 
           
@@ -2302,7 +2302,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabVisible(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabText = function(...args) 
           
@@ -2312,7 +2312,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabText(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabText = function(...args) 
           
@@ -2322,7 +2322,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabText(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabTextColor = function(...args) 
           
@@ -2332,7 +2332,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabTextColor(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabTextColor = function(...args) 
           
@@ -2342,7 +2342,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabTextColor(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabIcon = function(...args) 
           
@@ -2352,7 +2352,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabIcon(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabIcon = function(...args) 
           
@@ -2362,7 +2362,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabIcon(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setElideMode = function(...args) 
           
@@ -2372,7 +2372,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setElideMode(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabToolTip = function(...args) 
           
@@ -2382,7 +2382,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabToolTip(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabToolTip = function(...args) 
           
@@ -2392,7 +2392,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabToolTip(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabWhatsThis = function(...args) 
           
@@ -2402,7 +2402,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabWhatsThis = function(...args) 
           
@@ -2412,7 +2412,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabData = function(...args) 
           
@@ -2422,7 +2422,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabData(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabData = function(...args) 
           
@@ -2432,7 +2432,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabData(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabRect = function(...args) 
           
@@ -2442,7 +2442,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabRect(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabAt = function(...args) 
           
@@ -2452,7 +2452,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabAt(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setDrawBase = function(...args) 
           
@@ -2462,7 +2462,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setDrawBase(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setIconSize = function(...args) 
           
@@ -2472,7 +2472,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setUsesScrollButtons = function(...args) 
           
@@ -2482,7 +2482,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setUsesScrollButtons(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabsClosable = function(...args) 
           
@@ -2492,7 +2492,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabsClosable(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setTabButton = function(...args) 
           
@@ -2502,7 +2502,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setTabButton(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabButton = function(...args) 
           
@@ -2512,7 +2512,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabButton(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setSelectionBehaviorOnRemove = function(...args) 
           
@@ -2522,7 +2522,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setSelectionBehaviorOnRemove(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setExpanding = function(...args) 
           
@@ -2532,7 +2532,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setExpanding(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.isMovable = function(...args) 
           
@@ -2542,7 +2542,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.isMovable(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setMovable = function(...args) 
           
@@ -2552,7 +2552,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setMovable(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setDocumentMode = function(...args) 
           
@@ -2562,7 +2562,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setDocumentMode(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setAutoHide = function(...args) 
           
@@ -2572,7 +2572,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setAutoHide(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setChangeCurrentOnDrag = function(...args) 
           
@@ -2582,7 +2582,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setChangeCurrentOnDrag(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.accessibleTabName = function(...args) 
           
@@ -2592,7 +2592,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.accessibleTabName(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setAccessibleTabName = function(...args) 
           
@@ -2602,7 +2602,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setAccessibleTabName(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.setCurrentIndex = function(...args) 
           
@@ -2612,7 +2612,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabSizeHint = function(...args) 
           
@@ -2622,7 +2622,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabSizeHint(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.minimumTabSizeHint = function(...args) 
           
@@ -2632,7 +2632,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.minimumTabSizeHint(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabInserted = function(...args) 
           
@@ -2642,7 +2642,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabInserted(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabRemoved = function(...args) 
           
@@ -2652,7 +2652,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabRemoved(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.tabLayoutChange = function(...args) 
           
@@ -2662,7 +2662,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.tabLayoutChange(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.initStyleOption = function(...args) 
           
@@ -2672,7 +2672,7 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QTabBar.prototype.paintEvent = function(...args) 
           
@@ -2682,7 +2682,8 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QTabBar.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QTabBar.prototype.mouseMoveEvent = function(...args) 
           
@@ -2692,7 +2693,8 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QTabBar.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QTabBar.prototype.resizeEvent = function(...args) 
           
@@ -2702,7 +2704,8 @@ QTabBar.SelectPreviousTab = QTabBar_Wrapper.SelectPreviousTab;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QTabBar.prototype.resizeEvent.__SUPER__ = true;
+        
 
       // static functions:
       

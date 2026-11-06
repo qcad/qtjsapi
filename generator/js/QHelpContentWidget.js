@@ -194,7 +194,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isWidgetType = function(...args) 
           
@@ -204,7 +204,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isWindowType = function(...args) 
           
@@ -214,7 +214,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.signalsBlocked = function(...args) 
           
@@ -224,7 +224,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.blockSignals = function(...args) 
           
@@ -234,7 +234,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.findChild = function(...args) 
           
@@ -244,7 +244,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.children = function(...args) 
           
@@ -254,7 +254,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.installEventFilter = function(...args) 
           
@@ -264,7 +264,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.removeEventFilter = function(...args) 
           
@@ -274,7 +274,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -284,7 +284,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -294,7 +294,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setProperty = function(...args) 
           
@@ -304,7 +304,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.property = function(...args) 
           
@@ -314,7 +314,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -324,7 +324,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.parent = function(...args) 
           
@@ -334,7 +334,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.deleteLater = function(...args) 
           
@@ -344,7 +344,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.paintingActive = function(...args) 
           
@@ -354,7 +354,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.paintEngine = function(...args) 
           
@@ -364,7 +364,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.widthMM = function(...args) 
           
@@ -374,7 +374,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.heightMM = function(...args) 
           
@@ -384,7 +384,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.logicalDpiX = function(...args) 
           
@@ -394,7 +394,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.logicalDpiY = function(...args) 
           
@@ -404,7 +404,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.physicalDpiX = function(...args) 
           
@@ -414,7 +414,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.physicalDpiY = function(...args) 
           
@@ -424,7 +424,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.devicePixelRatio = function(...args) 
           
@@ -434,7 +434,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.devicePixelRatioF = function(...args) 
           
@@ -444,7 +444,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.colorCount = function(...args) 
           
@@ -454,7 +454,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.depth = function(...args) 
           
@@ -464,7 +464,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.qt_paint_device_metric = function(...args) 
           
@@ -474,7 +474,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.devType = function(...args) 
           
@@ -484,7 +484,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.createWinId = function(...args) 
           
@@ -494,7 +494,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isWindow = function(...args) 
           
@@ -504,7 +504,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isModal = function(...args) 
           
@@ -514,7 +514,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowModality = function(...args) 
           
@@ -524,7 +524,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isEnabled = function(...args) 
           
@@ -534,7 +534,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isEnabledTo = function(...args) 
           
@@ -544,7 +544,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setEnabled = function(...args) 
           
@@ -554,7 +554,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setDisabled = function(...args) 
           
@@ -564,7 +564,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowModified = function(...args) 
           
@@ -574,7 +574,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMinimumSize = function(...args) 
           
@@ -584,7 +584,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMaximumSize = function(...args) 
           
@@ -594,7 +594,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -604,7 +604,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -614,7 +614,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -624,7 +624,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -634,7 +634,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -644,7 +644,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setBaseSize = function(...args) 
           
@@ -654,7 +654,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFixedSize = function(...args) 
           
@@ -664,7 +664,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFixedWidth = function(...args) 
           
@@ -674,7 +674,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFixedHeight = function(...args) 
           
@@ -684,7 +684,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mapToGlobal = function(...args) 
           
@@ -694,7 +694,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -704,7 +704,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mapToParent = function(...args) 
           
@@ -714,7 +714,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mapFromParent = function(...args) 
           
@@ -724,7 +724,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mapTo = function(...args) 
           
@@ -734,7 +734,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mapFrom = function(...args) 
           
@@ -744,7 +744,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.window = function(...args) 
           
@@ -754,7 +754,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -764,7 +764,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.topLevelWidget = function(...args) 
           
@@ -774,7 +774,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setPalette = function(...args) 
           
@@ -784,7 +784,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -794,7 +794,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.backgroundRole = function(...args) 
           
@@ -804,7 +804,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setForegroundRole = function(...args) 
           
@@ -814,7 +814,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.foregroundRole = function(...args) 
           
@@ -824,7 +824,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFont = function(...args) 
           
@@ -834,7 +834,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.fontInfo = function(...args) 
           
@@ -844,7 +844,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setCursor = function(...args) 
           
@@ -854,7 +854,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.unsetCursor = function(...args) 
           
@@ -864,7 +864,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMouseTracking = function(...args) 
           
@@ -874,7 +874,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -884,7 +884,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.underMouse = function(...args) 
           
@@ -894,7 +894,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setTabletTracking = function(...args) 
           
@@ -904,7 +904,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -914,7 +914,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMask = function(...args) 
           
@@ -924,7 +924,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mask = function(...args) 
           
@@ -934,7 +934,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.clearMask = function(...args) 
           
@@ -944,7 +944,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.grab = function(...args) 
           
@@ -954,7 +954,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.grabGesture = function(...args) 
           
@@ -964,7 +964,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.ungrabGesture = function(...args) 
           
@@ -974,7 +974,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowTitle = function(...args) 
           
@@ -984,7 +984,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setStyleSheet = function(...args) 
           
@@ -994,7 +994,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowIcon = function(...args) 
           
@@ -1004,7 +1004,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowIconText = function(...args) 
           
@@ -1014,7 +1014,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowRole = function(...args) 
           
@@ -1024,7 +1024,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.windowRole = function(...args) 
           
@@ -1034,7 +1034,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -1044,7 +1044,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -1054,7 +1054,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isWindowModified = function(...args) 
           
@@ -1064,7 +1064,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setToolTip = function(...args) 
           
@@ -1074,7 +1074,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -1084,7 +1084,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setStatusTip = function(...args) 
           
@@ -1094,7 +1094,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWhatsThis = function(...args) 
           
@@ -1104,7 +1104,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAccessibleName = function(...args) 
           
@@ -1114,7 +1114,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -1124,7 +1124,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -1134,7 +1134,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1144,7 +1144,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setLocale = function(...args) 
           
@@ -1154,7 +1154,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.unsetLocale = function(...args) 
           
@@ -1164,7 +1164,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1174,7 +1174,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1184,7 +1184,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.activateWindow = function(...args) 
           
@@ -1194,7 +1194,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.clearFocus = function(...args) 
           
@@ -1204,7 +1204,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFocus = function(...args) 
           
@@ -1214,7 +1214,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1224,7 +1224,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.hasFocus = function(...args) 
           
@@ -1234,7 +1234,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1244,7 +1244,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.focusProxy = function(...args) 
           
@@ -1254,7 +1254,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1264,7 +1264,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.grabMouse = function(...args) 
           
@@ -1274,7 +1274,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.releaseMouse = function(...args) 
           
@@ -1284,7 +1284,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1294,7 +1294,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1304,7 +1304,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.grabShortcut = function(...args) 
           
@@ -1314,7 +1314,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1324,7 +1324,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1334,7 +1334,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1344,7 +1344,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1354,7 +1354,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.repaint = function(...args) 
           
@@ -1364,7 +1364,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setVisible = function(...args) 
           
@@ -1374,7 +1374,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setHidden = function(...args) 
           
@@ -1384,7 +1384,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.show = function(...args) 
           
@@ -1394,7 +1394,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.hide = function(...args) 
           
@@ -1404,7 +1404,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.showMinimized = function(...args) 
           
@@ -1414,7 +1414,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.showMaximized = function(...args) 
           
@@ -1424,7 +1424,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.showFullScreen = function(...args) 
           
@@ -1434,7 +1434,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.showNormal = function(...args) 
           
@@ -1444,7 +1444,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.close = function(...args) 
           
@@ -1454,7 +1454,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.raise = function(...args) 
           
@@ -1464,7 +1464,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.lower = function(...args) 
           
@@ -1474,7 +1474,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.stackUnder = function(...args) 
           
@@ -1484,7 +1484,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.move = function(...args) 
           
@@ -1494,7 +1494,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.resize = function(...args) 
           
@@ -1504,7 +1504,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setGeometry = function(...args) 
           
@@ -1514,7 +1514,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.saveGeometry = function(...args) 
           
@@ -1524,7 +1524,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1534,7 +1534,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.adjustSize = function(...args) 
           
@@ -1544,7 +1544,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isVisible = function(...args) 
           
@@ -1554,7 +1554,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1564,7 +1564,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isHidden = function(...args) 
           
@@ -1574,7 +1574,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isMinimized = function(...args) 
           
@@ -1584,7 +1584,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isMaximized = function(...args) 
           
@@ -1594,7 +1594,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isFullScreen = function(...args) 
           
@@ -1604,7 +1604,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.windowState = function(...args) 
           
@@ -1614,7 +1614,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowState = function(...args) 
           
@@ -1624,7 +1624,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1634,7 +1634,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1644,7 +1644,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.heightForWidth = function(...args) 
           
@@ -1654,7 +1654,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1664,7 +1664,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.visibleRegion = function(...args) 
           
@@ -1674,7 +1674,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1684,7 +1684,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.contentsMargins = function(...args) 
           
@@ -1694,7 +1694,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.contentsRect = function(...args) 
           
@@ -1704,7 +1704,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.layout = function(...args) 
           
@@ -1714,7 +1714,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setLayout = function(...args) 
           
@@ -1724,7 +1724,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.updateGeometry = function(...args) 
           
@@ -1734,7 +1734,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setParent = function(...args) 
           
@@ -1744,7 +1744,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.scroll = function(...args) 
           
@@ -1754,7 +1754,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.focusWidget = function(...args) 
           
@@ -1764,7 +1764,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1774,7 +1774,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1784,7 +1784,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1794,7 +1794,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.addAction = function(...args) 
           
@@ -1804,7 +1804,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.addActions = function(...args) 
           
@@ -1814,7 +1814,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.insertActions = function(...args) 
           
@@ -1824,7 +1824,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.insertAction = function(...args) 
           
@@ -1834,7 +1834,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.removeAction = function(...args) 
           
@@ -1844,7 +1844,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.actions = function(...args) 
           
@@ -1854,7 +1854,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.parentWidget = function(...args) 
           
@@ -1864,7 +1864,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1874,7 +1874,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.windowFlags = function(...args) 
           
@@ -1884,7 +1884,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1894,7 +1894,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1904,7 +1904,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.windowType = function(...args) 
           
@@ -1914,7 +1914,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.childAt = function(...args) 
           
@@ -1924,7 +1924,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAttribute = function(...args) 
           
@@ -1934,7 +1934,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.testAttribute = function(...args) 
           
@@ -1944,7 +1944,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.ensurePolished = function(...args) 
           
@@ -1954,7 +1954,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1964,7 +1964,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1974,7 +1974,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.event = function(...args) 
           
@@ -1984,7 +1984,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.wheelEvent = function(...args) 
           
@@ -1994,7 +1994,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -2004,7 +2004,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.focusInEvent = function(...args) 
           
@@ -2014,7 +2014,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.focusOutEvent = function(...args) 
           
@@ -2024,7 +2024,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.enterEvent = function(...args) 
           
@@ -2034,7 +2034,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.leaveEvent = function(...args) 
           
@@ -2044,7 +2044,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.moveEvent = function(...args) 
           
@@ -2054,7 +2054,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.closeEvent = function(...args) 
           
@@ -2064,7 +2064,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.tabletEvent = function(...args) 
           
@@ -2074,7 +2074,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -2084,7 +2084,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -2094,7 +2094,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.dropEvent = function(...args) 
           
@@ -2104,7 +2104,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.showEvent = function(...args) 
           
@@ -2114,7 +2114,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.hideEvent = function(...args) 
           
@@ -2124,7 +2124,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.nativeEvent = function(...args) 
           
@@ -2134,7 +2134,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.metric = function(...args) 
           
@@ -2144,7 +2144,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.initPainter = function(...args) 
           
@@ -2154,7 +2154,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.redirected = function(...args) 
           
@@ -2164,7 +2164,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.sharedPainter = function(...args) 
           
@@ -2174,7 +2174,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2184,7 +2184,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2194,7 +2194,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2204,7 +2204,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.create = function(...args) 
           
@@ -2214,7 +2214,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.destroy = function(...args) 
           
@@ -2224,7 +2224,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2234,7 +2234,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.focusNextChild = function(...args) 
           
@@ -2244,7 +2244,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2254,7 +2254,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setBackingStore = function(...args) 
           
@@ -2264,7 +2264,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2274,7 +2274,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.takeLayout = function(...args) 
           
@@ -2284,7 +2284,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2294,7 +2294,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2304,7 +2304,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2314,7 +2314,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.frameStyle = function(...args) 
           
@@ -2324,7 +2324,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFrameStyle = function(...args) 
           
@@ -2334,7 +2334,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFrameShape = function(...args) 
           
@@ -2344,7 +2344,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFrameShadow = function(...args) 
           
@@ -2354,7 +2354,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setLineWidth = function(...args) 
           
@@ -2364,7 +2364,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setMidLineWidth = function(...args) 
           
@@ -2374,7 +2374,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFrameRect = function(...args) 
           
@@ -2384,7 +2384,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.drawFrame = function(...args) 
           
@@ -2394,7 +2394,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.initStyleOption = function(...args) 
           
@@ -2404,7 +2404,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2414,7 +2414,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2424,7 +2424,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.verticalScrollBar = function(...args) 
           
@@ -2434,7 +2434,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2444,7 +2444,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2454,7 +2454,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2464,7 +2464,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.horizontalScrollBar = function(...args) 
           
@@ -2474,7 +2474,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2484,7 +2484,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.cornerWidget = function(...args) 
           
@@ -2494,7 +2494,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setCornerWidget = function(...args) 
           
@@ -2504,7 +2504,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.addScrollBarWidget = function(...args) 
           
@@ -2514,7 +2514,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.viewport = function(...args) 
           
@@ -2524,7 +2524,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setViewport = function(...args) 
           
@@ -2534,7 +2534,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.maximumViewportSize = function(...args) 
           
@@ -2544,7 +2544,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setupViewport = function(...args) 
           
@@ -2554,7 +2554,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2564,7 +2564,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2574,7 +2574,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setModel = function(...args) 
           
@@ -2584,7 +2584,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setModel(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.model = function(...args) 
           
@@ -2594,7 +2594,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setSelectionModel = function(...args) 
           
@@ -2604,7 +2604,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionModel(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.selectionModel = function(...args) 
           
@@ -2614,7 +2614,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectionModel(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setItemDelegate = function(...args) 
           
@@ -2624,7 +2624,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setItemDelegate(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setSelectionMode = function(...args) 
           
@@ -2634,7 +2634,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionMode(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setSelectionBehavior = function(...args) 
           
@@ -2644,7 +2644,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionBehavior(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.currentIndex = function(...args) 
           
@@ -2654,7 +2654,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.rootIndex = function(...args) 
           
@@ -2664,7 +2664,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.rootIndex(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setEditTriggers = function(...args) 
           
@@ -2674,7 +2674,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setEditTriggers(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setVerticalScrollMode = function(...args) 
           
@@ -2684,7 +2684,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.resetVerticalScrollMode = function(...args) 
           
@@ -2694,7 +2694,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.resetVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setHorizontalScrollMode = function(...args) 
           
@@ -2704,7 +2704,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.resetHorizontalScrollMode = function(...args) 
           
@@ -2714,7 +2714,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.resetHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAutoScroll = function(...args) 
           
@@ -2724,7 +2724,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoScroll(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.hasAutoScroll = function(...args) 
           
@@ -2734,7 +2734,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasAutoScroll(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAutoScrollMargin = function(...args) 
           
@@ -2744,7 +2744,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoScrollMargin(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setTabKeyNavigation = function(...args) 
           
@@ -2754,7 +2754,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTabKeyNavigation(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setDropIndicatorShown = function(...args) 
           
@@ -2764,7 +2764,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDropIndicatorShown(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setDragEnabled = function(...args) 
           
@@ -2774,7 +2774,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setDragDropOverwriteMode = function(...args) 
           
@@ -2784,7 +2784,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragDropOverwriteMode(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setDragDropMode = function(...args) 
           
@@ -2794,7 +2794,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragDropMode(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setDefaultDropAction = function(...args) 
           
@@ -2804,7 +2804,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDefaultDropAction(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAlternatingRowColors = function(...args) 
           
@@ -2814,7 +2814,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAlternatingRowColors(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setIconSize = function(...args) 
           
@@ -2824,7 +2824,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setTextElideMode = function(...args) 
           
@@ -2834,7 +2834,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTextElideMode(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isPersistentEditorOpen = function(...args) 
           
@@ -2844,7 +2844,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isPersistentEditorOpen(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setIndexWidget = function(...args) 
           
@@ -2854,7 +2854,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setIndexWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.indexWidget = function(...args) 
           
@@ -2864,7 +2864,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexWidget(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2874,7 +2874,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.edit = function(...args) 
           
@@ -2884,7 +2884,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.edit(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.clearSelection = function(...args) 
           
@@ -2894,7 +2894,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setCurrentIndex = function(...args) 
           
@@ -2904,7 +2904,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.scrollToTop = function(...args) 
           
@@ -2914,7 +2914,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollToTop(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.scrollToBottom = function(...args) 
           
@@ -2924,7 +2924,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollToBottom(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.update = function(...args) 
           
@@ -2934,7 +2934,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.eventFilter = function(...args) 
           
@@ -2944,7 +2944,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setRootIndex = function(...args) 
           
@@ -2954,7 +2954,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRootIndex(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.header = function(...args) 
           
@@ -2964,7 +2964,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.header(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setHeader = function(...args) 
           
@@ -2974,7 +2974,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHeader(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.autoExpandDelay = function(...args) 
           
@@ -2984,7 +2984,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.autoExpandDelay(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAutoExpandDelay = function(...args) 
           
@@ -2994,7 +2994,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoExpandDelay(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setIndentation = function(...args) 
           
@@ -3004,7 +3004,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setIndentation(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.resetIndentation = function(...args) 
           
@@ -3014,7 +3014,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.resetIndentation(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setRootIsDecorated = function(...args) 
           
@@ -3024,7 +3024,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRootIsDecorated(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setUniformRowHeights = function(...args) 
           
@@ -3034,7 +3034,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setUniformRowHeights(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setItemsExpandable = function(...args) 
           
@@ -3044,7 +3044,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setItemsExpandable(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setExpandsOnDoubleClick = function(...args) 
           
@@ -3054,7 +3054,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setExpandsOnDoubleClick(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.columnViewportPosition = function(...args) 
           
@@ -3064,7 +3064,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnViewportPosition(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.columnWidth = function(...args) 
           
@@ -3074,7 +3074,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setColumnWidth = function(...args) 
           
@@ -3084,7 +3084,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setColumnWidth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.columnAt = function(...args) 
           
@@ -3094,7 +3094,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnAt(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isColumnHidden = function(...args) 
           
@@ -3104,7 +3104,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isColumnHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setColumnHidden = function(...args) 
           
@@ -3114,7 +3114,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setColumnHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isHeaderHidden = function(...args) 
           
@@ -3124,7 +3124,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isHeaderHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setHeaderHidden = function(...args) 
           
@@ -3134,7 +3134,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHeaderHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isRowHidden = function(...args) 
           
@@ -3144,7 +3144,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isRowHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setRowHidden = function(...args) 
           
@@ -3154,7 +3154,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRowHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isFirstColumnSpanned = function(...args) 
           
@@ -3164,7 +3164,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isFirstColumnSpanned(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setFirstColumnSpanned = function(...args) 
           
@@ -3174,7 +3174,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFirstColumnSpanned(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isExpanded = function(...args) 
           
@@ -3184,7 +3184,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isExpanded(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setExpanded = function(...args) 
           
@@ -3194,7 +3194,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setExpanded(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setSortingEnabled = function(...args) 
           
@@ -3204,7 +3204,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSortingEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isSortingEnabled = function(...args) 
           
@@ -3214,7 +3214,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isSortingEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAnimated = function(...args) 
           
@@ -3224,7 +3224,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAnimated(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isAnimated = function(...args) 
           
@@ -3234,7 +3234,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isAnimated(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setAllColumnsShowFocus = function(...args) 
           
@@ -3244,7 +3244,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAllColumnsShowFocus(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setWordWrap = function(...args) 
           
@@ -3254,7 +3254,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWordWrap(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setTreePosition = function(...args) 
           
@@ -3264,7 +3264,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTreePosition(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.treePosition = function(...args) 
           
@@ -3274,7 +3274,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.treePosition(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.keyboardSearch = function(...args) 
           
@@ -3284,7 +3284,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyboardSearch(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.visualRect = function(...args) 
           
@@ -3294,7 +3294,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualRect(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.scrollTo = function(...args) 
           
@@ -3304,7 +3304,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollTo(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.indexAt = function(...args) 
           
@@ -3314,7 +3314,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexAt(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.indexAbove = function(...args) 
           
@@ -3324,7 +3324,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexAbove(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.indexBelow = function(...args) 
           
@@ -3334,7 +3334,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexBelow(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.doItemsLayout = function(...args) 
           
@@ -3344,7 +3344,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.doItemsLayout(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.reset = function(...args) 
           
@@ -3354,7 +3354,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.dataChanged = function(...args) 
           
@@ -3364,7 +3364,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.dataChanged(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.selectAll = function(...args) 
           
@@ -3374,7 +3374,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.hideColumn = function(...args) 
           
@@ -3384,7 +3384,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.hideColumn(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.showColumn = function(...args) 
           
@@ -3394,7 +3394,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.showColumn(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.expand = function(...args) 
           
@@ -3404,7 +3404,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.expand(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.collapse = function(...args) 
           
@@ -3414,7 +3414,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.collapse(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.resizeColumnToContents = function(...args) 
           
@@ -3424,7 +3424,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.resizeColumnToContents(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.sortByColumn = function(...args) 
           
@@ -3434,7 +3434,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.sortByColumn(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.expandAll = function(...args) 
           
@@ -3444,7 +3444,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.expandAll(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.expandRecursively = function(...args) 
           
@@ -3454,7 +3454,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.expandRecursively(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.collapseAll = function(...args) 
           
@@ -3464,7 +3464,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.collapseAll(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.expandToDepth = function(...args) 
           
@@ -3474,7 +3474,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.expandToDepth(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.columnResized = function(...args) 
           
@@ -3484,7 +3484,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnResized(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.columnCountChanged = function(...args) 
           
@@ -3494,7 +3494,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnCountChanged(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.columnMoved = function(...args) 
           
@@ -3504,7 +3504,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnMoved(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.reexpand = function(...args) 
           
@@ -3514,7 +3514,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.reexpand(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.rowsRemoved = function(...args) 
           
@@ -3524,7 +3524,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowsRemoved(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.verticalScrollbarValueChanged = function(...args) 
           
@@ -3534,7 +3534,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollbarValueChanged(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.scrollContentsBy = function(...args) 
           
@@ -3544,7 +3544,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollContentsBy(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.rowsInserted = function(...args) 
           
@@ -3554,7 +3554,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowsInserted(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.rowsAboutToBeRemoved = function(...args) 
           
@@ -3564,7 +3564,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowsAboutToBeRemoved(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.moveCursor = function(...args) 
           
@@ -3574,7 +3574,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.moveCursor(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.horizontalOffset = function(...args) 
           
@@ -3584,7 +3584,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalOffset(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.verticalOffset = function(...args) 
           
@@ -3594,7 +3594,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalOffset(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.setSelection = function(...args) 
           
@@ -3604,7 +3604,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelection(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.visualRegionForSelection = function(...args) 
           
@@ -3614,7 +3614,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualRegionForSelection(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.selectedIndexes = function(...args) 
           
@@ -3624,7 +3624,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectedIndexes(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.changeEvent = function(...args) 
           
@@ -3634,7 +3634,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.timerEvent = function(...args) 
           
@@ -3644,7 +3644,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.timerEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.drawTree = function(...args) 
           
@@ -3654,7 +3654,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawTree(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.drawRow = function(...args) 
           
@@ -3664,7 +3664,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawRow(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.drawBranches = function(...args) 
           
@@ -3674,7 +3674,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawBranches(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mousePressEvent = function(...args) 
           
@@ -3684,7 +3684,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mouseReleaseEvent = function(...args) 
           
@@ -3694,7 +3694,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -3704,7 +3704,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.keyPressEvent = function(...args) 
           
@@ -3714,7 +3714,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -3724,7 +3724,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.viewportEvent = function(...args) 
           
@@ -3734,7 +3734,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewportEvent(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.updateGeometries = function(...args) 
           
@@ -3744,7 +3744,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateGeometries(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.viewportSizeHint = function(...args) 
           
@@ -3754,7 +3754,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewportSizeHint(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.indexRowSizeHint = function(...args) 
           
@@ -3764,7 +3764,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexRowSizeHint(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.rowHeight = function(...args) 
           
@@ -3774,7 +3774,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowHeight(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.horizontalScrollbarAction = function(...args) 
           
@@ -3784,7 +3784,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollbarAction(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.isIndexHidden = function(...args) 
           
@@ -3794,7 +3794,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.isIndexHidden(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.selectionChanged = function(...args) 
           
@@ -3804,7 +3804,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectionChanged(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.currentChanged = function(...args) 
           
@@ -3814,7 +3814,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentChanged(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.visualIndex = function(...args) 
           
@@ -3824,7 +3824,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualIndex(...args);
             
         };
-    
+        
         // function 
         QHelpContentWidget.prototype.indexOf = function(...args) 
           
@@ -3834,7 +3834,7 @@ QHelpContentWidget.InternalMove = QHelpContentWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexOf(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -288,7 +288,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.merge = function(...args) 
           
@@ -298,7 +298,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.merge(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isEmpty = function(...args) 
           
@@ -308,7 +308,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.type = function(...args) 
           
@@ -318,7 +318,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.objectIndex = function(...args) 
           
@@ -328,7 +328,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.objectIndex(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setObjectIndex = function(...args) 
           
@@ -338,7 +338,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setObjectIndex(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.property = function(...args) 
           
@@ -348,7 +348,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setProperty = function(...args) 
           
@@ -358,7 +358,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.clearProperty = function(...args) 
           
@@ -368,7 +368,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.clearProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.hasProperty = function(...args) 
           
@@ -378,7 +378,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.hasProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.boolProperty = function(...args) 
           
@@ -388,7 +388,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.boolProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.intProperty = function(...args) 
           
@@ -398,7 +398,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.intProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.doubleProperty = function(...args) 
           
@@ -408,7 +408,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.doubleProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.stringProperty = function(...args) 
           
@@ -418,7 +418,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.stringProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.colorProperty = function(...args) 
           
@@ -428,7 +428,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.colorProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.penProperty = function(...args) 
           
@@ -438,7 +438,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.penProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.brushProperty = function(...args) 
           
@@ -448,7 +448,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.brushProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.lengthProperty = function(...args) 
           
@@ -458,7 +458,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.lengthProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.lengthVectorProperty = function(...args) 
           
@@ -468,7 +468,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.lengthVectorProperty(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.propertyCount = function(...args) 
           
@@ -478,7 +478,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.propertyCount(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setObjectType = function(...args) 
           
@@ -488,7 +488,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setObjectType(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.objectType = function(...args) 
           
@@ -498,7 +498,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.objectType(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isCharFormat = function(...args) 
           
@@ -508,7 +508,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isBlockFormat = function(...args) 
           
@@ -518,7 +518,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isListFormat = function(...args) 
           
@@ -528,7 +528,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isListFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isFrameFormat = function(...args) 
           
@@ -538,7 +538,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isImageFormat = function(...args) 
           
@@ -548,7 +548,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isTableFormat = function(...args) 
           
@@ -558,7 +558,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isTableCellFormat = function(...args) 
           
@@ -568,7 +568,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.toBlockFormat = function(...args) 
           
@@ -578,7 +578,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.toBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.toCharFormat = function(...args) 
           
@@ -588,7 +588,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.toCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.toListFormat = function(...args) 
           
@@ -598,7 +598,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.toListFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.toTableFormat = function(...args) 
           
@@ -608,7 +608,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.toTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.toFrameFormat = function(...args) 
           
@@ -618,7 +618,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.toFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.toImageFormat = function(...args) 
           
@@ -628,7 +628,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.toImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.toTableCellFormat = function(...args) 
           
@@ -638,7 +638,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.toTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setLayoutDirection = function(...args) 
           
@@ -648,7 +648,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.layoutDirection = function(...args) 
           
@@ -658,7 +658,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.layoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setBackground = function(...args) 
           
@@ -668,7 +668,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.background = function(...args) 
           
@@ -678,7 +678,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.clearBackground = function(...args) 
           
@@ -688,7 +688,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.clearBackground(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setForeground = function(...args) 
           
@@ -698,7 +698,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setForeground(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.foreground = function(...args) 
           
@@ -708,7 +708,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.foreground(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.clearForeground = function(...args) 
           
@@ -718,7 +718,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.clearForeground(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.isValid = function(...args) 
           
@@ -728,7 +728,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setPosition = function(...args) 
           
@@ -738,7 +738,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.position = function(...args) 
           
@@ -748,7 +748,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setBorder = function(...args) 
           
@@ -758,7 +758,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBorder(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.border = function(...args) 
           
@@ -768,7 +768,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.border(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setBorderBrush = function(...args) 
           
@@ -778,7 +778,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.borderBrush = function(...args) 
           
@@ -788,7 +788,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.borderBrush(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setBorderStyle = function(...args) 
           
@@ -798,7 +798,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.borderStyle = function(...args) 
           
@@ -808,7 +808,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.borderStyle(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setMargin = function(...args) 
           
@@ -818,7 +818,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.margin = function(...args) 
           
@@ -828,7 +828,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.margin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setTopMargin = function(...args) 
           
@@ -838,7 +838,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setTopMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.topMargin = function(...args) 
           
@@ -848,7 +848,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.topMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setBottomMargin = function(...args) 
           
@@ -858,7 +858,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBottomMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.bottomMargin = function(...args) 
           
@@ -868,7 +868,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.bottomMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setLeftMargin = function(...args) 
           
@@ -878,7 +878,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setLeftMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.leftMargin = function(...args) 
           
@@ -888,7 +888,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.leftMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setRightMargin = function(...args) 
           
@@ -898,7 +898,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setRightMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.rightMargin = function(...args) 
           
@@ -908,7 +908,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.rightMargin(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setPadding = function(...args) 
           
@@ -918,7 +918,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setPadding(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.padding = function(...args) 
           
@@ -928,7 +928,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.padding(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setWidth = function(...args) 
           
@@ -938,7 +938,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.width = function(...args) 
           
@@ -948,7 +948,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setHeight = function(...args) 
           
@@ -958,7 +958,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.height = function(...args) 
           
@@ -968,7 +968,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.setPageBreakPolicy = function(...args) 
           
@@ -978,7 +978,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setPageBreakPolicy(...args);
             
         };
-    
+        
         // function 
         QTextFrameFormat.prototype.pageBreakPolicy = function(...args) 
           
@@ -988,7 +988,7 @@ QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.pageBreakPolicy(...args);
             
         };
-    
+        
 
       // static functions:
       QTextFrameFormat.prototype.isNullWrapper = function() {

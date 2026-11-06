@@ -240,15 +240,21 @@ QBoxLayout::Direction a1_cpp;
 
                 // set handler for wrapped base object:
                 //((QBoxLayout_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QBoxLayout_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QBoxLayout_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       
@@ -6203,15 +6209,21 @@ QHBoxLayout_Wrapper::QHBoxLayout_Wrapper
 
                 // set handler for wrapped base object:
                 //((QHBoxLayout_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QHBoxLayout_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QHBoxLayout_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       
@@ -6233,15 +6245,21 @@ QHBoxLayout_Wrapper::QHBoxLayout_Wrapper
 
                 // set handler for wrapped base object:
                 //((QHBoxLayout_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QHBoxLayout_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QHBoxLayout_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       
@@ -12195,15 +12213,21 @@ QVBoxLayout_Wrapper::QVBoxLayout_Wrapper
 
                 // set handler for wrapped base object:
                 //((QVBoxLayout_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QVBoxLayout_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QVBoxLayout_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       
@@ -12225,15 +12249,21 @@ QVBoxLayout_Wrapper::QVBoxLayout_Wrapper
 
                 // set handler for wrapped base object:
                 //((QVBoxLayout_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QVBoxLayout_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QVBoxLayout_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       

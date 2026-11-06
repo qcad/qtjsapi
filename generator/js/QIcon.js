@@ -222,7 +222,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.pixmap = function(...args) 
           
@@ -232,7 +232,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.pixmap(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.actualSize = function(...args) 
           
@@ -242,7 +242,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.actualSize(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.name = function(...args) 
           
@@ -252,7 +252,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.paint = function(...args) 
           
@@ -262,7 +262,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.paint(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.isNull = function(...args) 
           
@@ -272,7 +272,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.isDetached = function(...args) 
           
@@ -282,7 +282,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.detach = function(...args) 
           
@@ -292,7 +292,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.cacheKey = function(...args) 
           
@@ -302,7 +302,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.cacheKey(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.addPixmap = function(...args) 
           
@@ -312,7 +312,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.addPixmap(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.addFile = function(...args) 
           
@@ -322,7 +322,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.addFile(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.availableSizes = function(...args) 
           
@@ -332,7 +332,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.availableSizes(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.setIsMask = function(...args) 
           
@@ -342,7 +342,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.setIsMask(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.isMask = function(...args) 
           
@@ -352,7 +352,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.isMask(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.fromTheme = function(...args) 
           
@@ -362,7 +362,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.fromTheme(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.hasThemeIcon = function(...args) 
           
@@ -372,7 +372,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.hasThemeIcon(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.themeSearchPaths = function(...args) 
           
@@ -382,7 +382,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.themeSearchPaths(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.setThemeSearchPaths = function(...args) 
           
@@ -392,7 +392,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.setThemeSearchPaths(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.fallbackSearchPaths = function(...args) 
           
@@ -402,7 +402,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.fallbackSearchPaths(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.setFallbackSearchPaths = function(...args) 
           
@@ -412,7 +412,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.setFallbackSearchPaths(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.themeName = function(...args) 
           
@@ -422,7 +422,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.themeName(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.setThemeName = function(...args) 
           
@@ -432,7 +432,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.setThemeName(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.fallbackThemeName = function(...args) 
           
@@ -442,7 +442,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.fallbackThemeName(...args);
             
         };
-    
+        
         // function 
         QIcon.prototype.setFallbackThemeName = function(...args) 
           
@@ -452,7 +452,7 @@ QIcon.Off = QIcon_Wrapper.Off;
               return this.__PROXY__.setFallbackThemeName(...args);
             
         };
-    
+        
 
       // static functions:
       

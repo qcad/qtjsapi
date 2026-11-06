@@ -184,7 +184,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.isWidgetType = function(...args) 
           
@@ -194,7 +194,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.isWindowType = function(...args) 
           
@@ -204,7 +204,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.signalsBlocked = function(...args) 
           
@@ -214,7 +214,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.blockSignals = function(...args) 
           
@@ -224,7 +224,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.findChild = function(...args) 
           
@@ -234,7 +234,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.children = function(...args) 
           
@@ -244,7 +244,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setParent = function(...args) 
           
@@ -254,7 +254,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.installEventFilter = function(...args) 
           
@@ -264,7 +264,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.removeEventFilter = function(...args) 
           
@@ -274,7 +274,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.dumpObjectTree = function(...args) 
           
@@ -284,7 +284,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.dumpObjectInfo = function(...args) 
           
@@ -294,7 +294,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setProperty = function(...args) 
           
@@ -304,7 +304,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.property = function(...args) 
           
@@ -314,7 +314,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.dynamicPropertyNames = function(...args) 
           
@@ -324,7 +324,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.parent = function(...args) 
           
@@ -334,7 +334,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.deleteLater = function(...args) 
           
@@ -344,7 +344,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.widget = function(...args) 
           
@@ -354,7 +354,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.spacerItem = function(...args) 
           
@@ -364,7 +364,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.spacerItem(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.alignment = function(...args) 
           
@@ -374,7 +374,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setContentsMargins = function(...args) 
           
@@ -384,7 +384,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.contentsMargins = function(...args) 
           
@@ -394,7 +394,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.contentsRect = function(...args) 
           
@@ -404,7 +404,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setAlignment = function(...args) 
           
@@ -414,7 +414,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setSizeConstraint = function(...args) 
           
@@ -424,7 +424,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setSizeConstraint(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.sizeConstraint = function(...args) 
           
@@ -434,7 +434,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.sizeConstraint(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setMenuBar = function(...args) 
           
@@ -444,7 +444,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setMenuBar(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.menuBar = function(...args) 
           
@@ -454,7 +454,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.menuBar(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.parentWidget = function(...args) 
           
@@ -464,7 +464,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.geometry = function(...args) 
           
@@ -474,7 +474,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.activate = function(...args) 
           
@@ -484,7 +484,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.activate(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.update = function(...args) 
           
@@ -494,7 +494,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.removeWidget = function(...args) 
           
@@ -504,7 +504,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.removeWidget(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.removeItem = function(...args) 
           
@@ -514,7 +514,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.indexOf = function(...args) 
           
@@ -524,7 +524,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.indexOf(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.isEmpty = function(...args) 
           
@@ -534,7 +534,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.controlTypes = function(...args) 
           
@@ -544,7 +544,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.controlTypes(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.totalHeightForWidth = function(...args) 
           
@@ -554,7 +554,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.totalHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.totalMinimumSize = function(...args) 
           
@@ -564,7 +564,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.totalMinimumSize(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.totalMaximumSize = function(...args) 
           
@@ -574,7 +574,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.totalMaximumSize(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.totalSizeHint = function(...args) 
           
@@ -584,7 +584,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.totalSizeHint(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.layout = function(...args) 
           
@@ -594,7 +594,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setEnabled = function(...args) 
           
@@ -604,7 +604,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.isEnabled = function(...args) 
           
@@ -614,7 +614,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.widgetEvent = function(...args) 
           
@@ -624,7 +624,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.widgetEvent(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.childEvent = function(...args) 
           
@@ -634,7 +634,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.childEvent(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addChildLayout = function(...args) 
           
@@ -644,7 +644,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addChildLayout(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addChildWidget = function(...args) 
           
@@ -654,7 +654,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addChildWidget(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.adoptLayout = function(...args) 
           
@@ -664,7 +664,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.adoptLayout(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.alignmentRect = function(...args) 
           
@@ -674,7 +674,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.alignmentRect(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.Q_DECLARE_PRIVATE = function(...args) 
           
@@ -684,7 +684,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.direction = function(...args) 
           
@@ -694,7 +694,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.direction(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setDirection = function(...args) 
           
@@ -704,7 +704,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setDirection(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addSpacing = function(...args) 
           
@@ -714,7 +714,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addSpacing(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addStretch = function(...args) 
           
@@ -724,7 +724,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addStretch(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addSpacerItem = function(...args) 
           
@@ -734,7 +734,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addSpacerItem(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addWidget = function(...args) 
           
@@ -744,7 +744,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addWidget(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addLayout = function(...args) 
           
@@ -754,7 +754,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addLayout(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addStrut = function(...args) 
           
@@ -764,7 +764,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addStrut(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.addItem = function(...args) 
           
@@ -774,7 +774,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.insertSpacing = function(...args) 
           
@@ -784,7 +784,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.insertSpacing(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.insertStretch = function(...args) 
           
@@ -794,7 +794,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.insertStretch(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.insertSpacerItem = function(...args) 
           
@@ -804,7 +804,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.insertSpacerItem(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.insertWidget = function(...args) 
           
@@ -814,7 +814,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.insertWidget(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.insertLayout = function(...args) 
           
@@ -824,7 +824,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.insertLayout(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.insertItem = function(...args) 
           
@@ -834,7 +834,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.insertItem(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setSpacing = function(...args) 
           
@@ -844,7 +844,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setSpacing(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setStretchFactor = function(...args) 
           
@@ -854,7 +854,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setStretchFactor(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setStretch = function(...args) 
           
@@ -864,7 +864,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setStretch(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.stretch = function(...args) 
           
@@ -874,7 +874,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.sizeHint = function(...args) 
           
@@ -884,7 +884,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.sizeHint(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.minimumSize = function(...args) 
           
@@ -894,7 +894,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.minimumSize(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.maximumSize = function(...args) 
           
@@ -904,7 +904,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.maximumSize(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.hasHeightForWidth = function(...args) 
           
@@ -914,7 +914,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.heightForWidth = function(...args) 
           
@@ -924,7 +924,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.minimumHeightForWidth = function(...args) 
           
@@ -934,7 +934,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.minimumHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.expandingDirections = function(...args) 
           
@@ -944,7 +944,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.expandingDirections(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.invalidate = function(...args) 
           
@@ -954,7 +954,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.itemAt = function(...args) 
           
@@ -964,7 +964,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.itemAt(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.takeAt = function(...args) 
           
@@ -974,7 +974,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.takeAt(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.count = function(...args) 
           
@@ -984,7 +984,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QVBoxLayout.prototype.setGeometry = function(...args) 
           
@@ -994,7 +994,7 @@ QVBoxLayout.Up = QVBoxLayout_Wrapper.Up;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
 
       // static functions:
       

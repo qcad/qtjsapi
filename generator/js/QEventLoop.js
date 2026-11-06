@@ -149,7 +149,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.isWidgetType = function(...args) 
           
@@ -159,7 +159,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.isWindowType = function(...args) 
           
@@ -169,7 +169,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.signalsBlocked = function(...args) 
           
@@ -179,7 +179,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.blockSignals = function(...args) 
           
@@ -189,7 +189,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.findChild = function(...args) 
           
@@ -199,7 +199,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.children = function(...args) 
           
@@ -209,7 +209,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.setParent = function(...args) 
           
@@ -219,7 +219,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.installEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.removeEventFilter = function(...args) 
           
@@ -239,7 +239,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.dumpObjectTree = function(...args) 
           
@@ -249,7 +249,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.dumpObjectInfo = function(...args) 
           
@@ -259,7 +259,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.setProperty = function(...args) 
           
@@ -269,7 +269,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.property = function(...args) 
           
@@ -279,7 +279,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.dynamicPropertyNames = function(...args) 
           
@@ -289,7 +289,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.parent = function(...args) 
           
@@ -299,7 +299,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.deleteLater = function(...args) 
           
@@ -309,7 +309,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.processEvents = function(...args) 
           
@@ -319,7 +319,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.processEvents(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.exec = function(...args) 
           
@@ -329,7 +329,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.isRunning = function(...args) 
           
@@ -339,7 +339,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.isRunning(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.wakeUp = function(...args) 
           
@@ -349,7 +349,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.wakeUp(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.event = function(...args) 
           
@@ -359,7 +359,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.exit = function(...args) 
           
@@ -369,7 +369,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.exit(...args);
             
         };
-    
+        
         // function 
         QEventLoop.prototype.quit = function(...args) 
           
@@ -379,7 +379,7 @@ QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
               return this.__PROXY__.quit(...args);
             
         };
-    
+        
 
       // static functions:
       

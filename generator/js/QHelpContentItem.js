@@ -105,7 +105,7 @@
               return this.__PROXY__.child(...args);
             
         };
-    
+        
         // function 
         QHelpContentItem.prototype.childCount = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.childCount(...args);
             
         };
-    
+        
         // function 
         QHelpContentItem.prototype.title = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.title(...args);
             
         };
-    
+        
         // function 
         QHelpContentItem.prototype.url = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.url(...args);
             
         };
-    
+        
         // function 
         QHelpContentItem.prototype.row = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.row(...args);
             
         };
-    
+        
         // function 
         QHelpContentItem.prototype.parent = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QHelpContentItem.prototype.childPosition = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.childPosition(...args);
             
         };
-    
+        
 
       // static functions:
       QHelpContentItem.prototype.isNullWrapper = function() {

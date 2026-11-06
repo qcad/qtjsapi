@@ -228,7 +228,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.type = function(...args) 
           
@@ -238,7 +238,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.setLatitude = function(...args) 
           
@@ -248,7 +248,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.setLatitude(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.latitude = function(...args) 
           
@@ -258,7 +258,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.latitude(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.setLongitude = function(...args) 
           
@@ -268,7 +268,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.setLongitude(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.longitude = function(...args) 
           
@@ -278,7 +278,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.longitude(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.setAltitude = function(...args) 
           
@@ -288,7 +288,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.setAltitude(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.altitude = function(...args) 
           
@@ -298,7 +298,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.altitude(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.distanceTo = function(...args) 
           
@@ -308,7 +308,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.distanceTo(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.azimuthTo = function(...args) 
           
@@ -318,7 +318,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.azimuthTo(...args);
             
         };
-    
+        
         // function 
         QGeoCoordinate.prototype.atDistanceAndAzimuth = function(...args) 
           
@@ -328,7 +328,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
               return this.__PROXY__.atDistanceAndAzimuth(...args);
             
         };
-    
+        
 
       // static functions:
       QGeoCoordinate.prototype.isNullWrapper = function() {

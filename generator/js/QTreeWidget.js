@@ -190,7 +190,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isWidgetType = function(...args) 
           
@@ -200,7 +200,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isWindowType = function(...args) 
           
@@ -210,7 +210,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.signalsBlocked = function(...args) 
           
@@ -220,7 +220,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.blockSignals = function(...args) 
           
@@ -230,7 +230,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.findChild = function(...args) 
           
@@ -240,7 +240,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.children = function(...args) 
           
@@ -250,7 +250,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.installEventFilter = function(...args) 
           
@@ -260,7 +260,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.removeEventFilter = function(...args) 
           
@@ -270,7 +270,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -280,7 +280,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -290,7 +290,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setProperty = function(...args) 
           
@@ -300,7 +300,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.property = function(...args) 
           
@@ -310,7 +310,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -320,7 +320,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.parent = function(...args) 
           
@@ -330,7 +330,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.deleteLater = function(...args) 
           
@@ -340,7 +340,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.devType = function(...args) 
           
@@ -350,7 +350,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.createWinId = function(...args) 
           
@@ -360,7 +360,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isWindow = function(...args) 
           
@@ -370,7 +370,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isModal = function(...args) 
           
@@ -380,7 +380,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowModality = function(...args) 
           
@@ -390,7 +390,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isEnabled = function(...args) 
           
@@ -400,7 +400,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isEnabledTo = function(...args) 
           
@@ -410,7 +410,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setEnabled = function(...args) 
           
@@ -420,7 +420,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setDisabled = function(...args) 
           
@@ -430,7 +430,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowModified = function(...args) 
           
@@ -440,7 +440,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMinimumSize = function(...args) 
           
@@ -450,7 +450,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMaximumSize = function(...args) 
           
@@ -460,7 +460,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -470,7 +470,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -480,7 +480,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -490,7 +490,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -500,7 +500,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -510,7 +510,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setBaseSize = function(...args) 
           
@@ -520,7 +520,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFixedSize = function(...args) 
           
@@ -530,7 +530,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFixedWidth = function(...args) 
           
@@ -540,7 +540,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFixedHeight = function(...args) 
           
@@ -550,7 +550,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mapToGlobal = function(...args) 
           
@@ -560,7 +560,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -570,7 +570,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mapToParent = function(...args) 
           
@@ -580,7 +580,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mapFromParent = function(...args) 
           
@@ -590,7 +590,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mapTo = function(...args) 
           
@@ -600,7 +600,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mapFrom = function(...args) 
           
@@ -610,7 +610,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.window = function(...args) 
           
@@ -620,7 +620,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -630,7 +630,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.topLevelWidget = function(...args) 
           
@@ -640,7 +640,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setPalette = function(...args) 
           
@@ -650,7 +650,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -660,7 +660,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.backgroundRole = function(...args) 
           
@@ -670,7 +670,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setForegroundRole = function(...args) 
           
@@ -680,7 +680,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.foregroundRole = function(...args) 
           
@@ -690,7 +690,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFont = function(...args) 
           
@@ -700,7 +700,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.fontInfo = function(...args) 
           
@@ -710,7 +710,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setCursor = function(...args) 
           
@@ -720,7 +720,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.unsetCursor = function(...args) 
           
@@ -730,7 +730,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMouseTracking = function(...args) 
           
@@ -740,7 +740,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -750,7 +750,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.underMouse = function(...args) 
           
@@ -760,7 +760,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setTabletTracking = function(...args) 
           
@@ -770,7 +770,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -780,7 +780,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMask = function(...args) 
           
@@ -790,7 +790,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mask = function(...args) 
           
@@ -800,7 +800,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.clearMask = function(...args) 
           
@@ -810,7 +810,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.grab = function(...args) 
           
@@ -820,7 +820,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.grabGesture = function(...args) 
           
@@ -830,7 +830,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.ungrabGesture = function(...args) 
           
@@ -840,7 +840,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowTitle = function(...args) 
           
@@ -850,7 +850,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setStyleSheet = function(...args) 
           
@@ -860,7 +860,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowIcon = function(...args) 
           
@@ -870,7 +870,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowIconText = function(...args) 
           
@@ -880,7 +880,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowRole = function(...args) 
           
@@ -890,7 +890,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.windowRole = function(...args) 
           
@@ -900,7 +900,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -910,7 +910,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -920,7 +920,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isWindowModified = function(...args) 
           
@@ -930,7 +930,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setToolTip = function(...args) 
           
@@ -940,7 +940,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -950,7 +950,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setStatusTip = function(...args) 
           
@@ -960,7 +960,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWhatsThis = function(...args) 
           
@@ -970,7 +970,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAccessibleName = function(...args) 
           
@@ -980,7 +980,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -990,7 +990,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -1000,7 +1000,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1010,7 +1010,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setLocale = function(...args) 
           
@@ -1020,7 +1020,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.unsetLocale = function(...args) 
           
@@ -1030,7 +1030,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1040,7 +1040,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1050,7 +1050,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.activateWindow = function(...args) 
           
@@ -1060,7 +1060,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.clearFocus = function(...args) 
           
@@ -1070,7 +1070,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFocus = function(...args) 
           
@@ -1080,7 +1080,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1090,7 +1090,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.hasFocus = function(...args) 
           
@@ -1100,7 +1100,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1110,7 +1110,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.focusProxy = function(...args) 
           
@@ -1120,7 +1120,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1130,7 +1130,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.grabMouse = function(...args) 
           
@@ -1140,7 +1140,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.releaseMouse = function(...args) 
           
@@ -1150,7 +1150,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1160,7 +1160,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1170,7 +1170,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.grabShortcut = function(...args) 
           
@@ -1180,7 +1180,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1190,7 +1190,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1200,7 +1200,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1210,7 +1210,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1220,7 +1220,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.repaint = function(...args) 
           
@@ -1230,7 +1230,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setVisible = function(...args) 
           
@@ -1240,7 +1240,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHidden = function(...args) 
           
@@ -1250,7 +1250,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.show = function(...args) 
           
@@ -1260,7 +1260,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.hide = function(...args) 
           
@@ -1270,7 +1270,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.showMinimized = function(...args) 
           
@@ -1280,7 +1280,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.showMaximized = function(...args) 
           
@@ -1290,7 +1290,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.showFullScreen = function(...args) 
           
@@ -1300,7 +1300,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.showNormal = function(...args) 
           
@@ -1310,7 +1310,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.close = function(...args) 
           
@@ -1320,7 +1320,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.raise = function(...args) 
           
@@ -1330,7 +1330,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.lower = function(...args) 
           
@@ -1340,7 +1340,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.stackUnder = function(...args) 
           
@@ -1350,7 +1350,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.move = function(...args) 
           
@@ -1360,7 +1360,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.resize = function(...args) 
           
@@ -1370,7 +1370,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setGeometry = function(...args) 
           
@@ -1380,7 +1380,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.saveGeometry = function(...args) 
           
@@ -1390,7 +1390,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1400,7 +1400,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.adjustSize = function(...args) 
           
@@ -1410,7 +1410,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isVisible = function(...args) 
           
@@ -1420,7 +1420,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1430,7 +1430,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isHidden = function(...args) 
           
@@ -1440,7 +1440,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isMinimized = function(...args) 
           
@@ -1450,7 +1450,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isMaximized = function(...args) 
           
@@ -1460,7 +1460,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isFullScreen = function(...args) 
           
@@ -1470,7 +1470,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.windowState = function(...args) 
           
@@ -1480,7 +1480,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowState = function(...args) 
           
@@ -1490,7 +1490,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1500,7 +1500,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1510,7 +1510,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.heightForWidth = function(...args) 
           
@@ -1520,7 +1520,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1530,7 +1530,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.visibleRegion = function(...args) 
           
@@ -1540,7 +1540,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1550,7 +1550,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.contentsMargins = function(...args) 
           
@@ -1560,7 +1560,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.contentsRect = function(...args) 
           
@@ -1570,7 +1570,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.layout = function(...args) 
           
@@ -1580,7 +1580,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setLayout = function(...args) 
           
@@ -1590,7 +1590,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.updateGeometry = function(...args) 
           
@@ -1600,7 +1600,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setParent = function(...args) 
           
@@ -1610,7 +1610,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.scroll = function(...args) 
           
@@ -1620,7 +1620,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.focusWidget = function(...args) 
           
@@ -1630,7 +1630,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1640,7 +1640,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1650,7 +1650,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1660,7 +1660,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.addAction = function(...args) 
           
@@ -1670,7 +1670,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.addActions = function(...args) 
           
@@ -1680,7 +1680,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.insertActions = function(...args) 
           
@@ -1690,7 +1690,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.insertAction = function(...args) 
           
@@ -1700,7 +1700,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.removeAction = function(...args) 
           
@@ -1710,7 +1710,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.actions = function(...args) 
           
@@ -1720,7 +1720,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.parentWidget = function(...args) 
           
@@ -1730,7 +1730,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1740,7 +1740,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.windowFlags = function(...args) 
           
@@ -1750,7 +1750,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1760,7 +1760,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1770,7 +1770,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.windowType = function(...args) 
           
@@ -1780,7 +1780,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.childAt = function(...args) 
           
@@ -1790,7 +1790,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAttribute = function(...args) 
           
@@ -1800,7 +1800,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.testAttribute = function(...args) 
           
@@ -1810,7 +1810,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.ensurePolished = function(...args) 
           
@@ -1820,7 +1820,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1830,7 +1830,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1840,7 +1840,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.wheelEvent = function(...args) 
           
@@ -1850,7 +1850,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1860,7 +1860,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.focusInEvent = function(...args) 
           
@@ -1870,7 +1870,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1880,7 +1880,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.enterEvent = function(...args) 
           
@@ -1890,7 +1890,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.leaveEvent = function(...args) 
           
@@ -1900,7 +1900,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.moveEvent = function(...args) 
           
@@ -1910,7 +1910,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.closeEvent = function(...args) 
           
@@ -1920,7 +1920,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.tabletEvent = function(...args) 
           
@@ -1930,7 +1930,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -1940,7 +1940,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -1950,7 +1950,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.showEvent = function(...args) 
           
@@ -1960,7 +1960,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.hideEvent = function(...args) 
           
@@ -1970,7 +1970,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.nativeEvent = function(...args) 
           
@@ -1980,7 +1980,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.metric = function(...args) 
           
@@ -1990,7 +1990,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.initPainter = function(...args) 
           
@@ -2000,7 +2000,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.redirected = function(...args) 
           
@@ -2010,7 +2010,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.sharedPainter = function(...args) 
           
@@ -2020,7 +2020,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2030,7 +2030,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2040,7 +2040,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2050,7 +2050,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.create = function(...args) 
           
@@ -2060,7 +2060,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.destroy = function(...args) 
           
@@ -2070,7 +2070,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2080,7 +2080,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.focusNextChild = function(...args) 
           
@@ -2090,7 +2090,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2100,7 +2100,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setBackingStore = function(...args) 
           
@@ -2110,7 +2110,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2120,7 +2120,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.takeLayout = function(...args) 
           
@@ -2130,7 +2130,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2140,7 +2140,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2150,7 +2150,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2160,7 +2160,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.frameStyle = function(...args) 
           
@@ -2170,7 +2170,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFrameStyle = function(...args) 
           
@@ -2180,7 +2180,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFrameShape = function(...args) 
           
@@ -2190,7 +2190,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFrameShadow = function(...args) 
           
@@ -2200,7 +2200,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setLineWidth = function(...args) 
           
@@ -2210,7 +2210,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setMidLineWidth = function(...args) 
           
@@ -2220,7 +2220,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFrameRect = function(...args) 
           
@@ -2230,7 +2230,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.drawFrame = function(...args) 
           
@@ -2240,7 +2240,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.initStyleOption = function(...args) 
           
@@ -2250,7 +2250,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2260,7 +2260,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2270,7 +2270,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.verticalScrollBar = function(...args) 
           
@@ -2280,7 +2280,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2290,7 +2290,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2300,7 +2300,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2310,7 +2310,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.horizontalScrollBar = function(...args) 
           
@@ -2320,7 +2320,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2330,7 +2330,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.cornerWidget = function(...args) 
           
@@ -2340,7 +2340,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setCornerWidget = function(...args) 
           
@@ -2350,7 +2350,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.addScrollBarWidget = function(...args) 
           
@@ -2360,7 +2360,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.viewport = function(...args) 
           
@@ -2370,7 +2370,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setViewport = function(...args) 
           
@@ -2380,7 +2380,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.maximumViewportSize = function(...args) 
           
@@ -2390,7 +2390,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setupViewport = function(...args) 
           
@@ -2400,7 +2400,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2410,7 +2410,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2420,7 +2420,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.model = function(...args) 
           
@@ -2430,7 +2430,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setSelectionModel = function(...args) 
           
@@ -2440,7 +2440,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionModel(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.selectionModel = function(...args) 
           
@@ -2450,7 +2450,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectionModel(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setItemDelegate = function(...args) 
           
@@ -2460,7 +2460,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setItemDelegate(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setSelectionMode = function(...args) 
           
@@ -2470,7 +2470,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionMode(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setSelectionBehavior = function(...args) 
           
@@ -2480,7 +2480,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionBehavior(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.currentIndex = function(...args) 
           
@@ -2490,7 +2490,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.rootIndex = function(...args) 
           
@@ -2500,7 +2500,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.rootIndex(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setEditTriggers = function(...args) 
           
@@ -2510,7 +2510,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setEditTriggers(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setVerticalScrollMode = function(...args) 
           
@@ -2520,7 +2520,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.resetVerticalScrollMode = function(...args) 
           
@@ -2530,7 +2530,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.resetVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHorizontalScrollMode = function(...args) 
           
@@ -2540,7 +2540,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.resetHorizontalScrollMode = function(...args) 
           
@@ -2550,7 +2550,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.resetHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAutoScroll = function(...args) 
           
@@ -2560,7 +2560,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoScroll(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.hasAutoScroll = function(...args) 
           
@@ -2570,7 +2570,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasAutoScroll(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAutoScrollMargin = function(...args) 
           
@@ -2580,7 +2580,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoScrollMargin(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setTabKeyNavigation = function(...args) 
           
@@ -2590,7 +2590,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTabKeyNavigation(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setDropIndicatorShown = function(...args) 
           
@@ -2600,7 +2600,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDropIndicatorShown(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setDragEnabled = function(...args) 
           
@@ -2610,7 +2610,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setDragDropOverwriteMode = function(...args) 
           
@@ -2620,7 +2620,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragDropOverwriteMode(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setDragDropMode = function(...args) 
           
@@ -2630,7 +2630,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragDropMode(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setDefaultDropAction = function(...args) 
           
@@ -2640,7 +2640,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDefaultDropAction(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAlternatingRowColors = function(...args) 
           
@@ -2650,7 +2650,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAlternatingRowColors(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setIconSize = function(...args) 
           
@@ -2660,7 +2660,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setTextElideMode = function(...args) 
           
@@ -2670,7 +2670,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTextElideMode(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setIndexWidget = function(...args) 
           
@@ -2680,7 +2680,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setIndexWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.indexWidget = function(...args) 
           
@@ -2690,7 +2690,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2700,7 +2700,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.edit = function(...args) 
           
@@ -2710,7 +2710,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.edit(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.clearSelection = function(...args) 
           
@@ -2720,7 +2720,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setCurrentIndex = function(...args) 
           
@@ -2730,7 +2730,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.scrollToTop = function(...args) 
           
@@ -2740,7 +2740,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollToTop(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.scrollToBottom = function(...args) 
           
@@ -2750,7 +2750,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollToBottom(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.update = function(...args) 
           
@@ -2760,7 +2760,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.eventFilter = function(...args) 
           
@@ -2770,7 +2770,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setRootIndex = function(...args) 
           
@@ -2780,7 +2780,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRootIndex(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.header = function(...args) 
           
@@ -2790,7 +2790,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.header(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHeader = function(...args) 
           
@@ -2800,7 +2800,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHeader(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.autoExpandDelay = function(...args) 
           
@@ -2810,7 +2810,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.autoExpandDelay(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAutoExpandDelay = function(...args) 
           
@@ -2820,7 +2820,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoExpandDelay(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setIndentation = function(...args) 
           
@@ -2830,7 +2830,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setIndentation(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.resetIndentation = function(...args) 
           
@@ -2840,7 +2840,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.resetIndentation(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setRootIsDecorated = function(...args) 
           
@@ -2850,7 +2850,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRootIsDecorated(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setUniformRowHeights = function(...args) 
           
@@ -2860,7 +2860,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setUniformRowHeights(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setItemsExpandable = function(...args) 
           
@@ -2870,7 +2870,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setItemsExpandable(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setExpandsOnDoubleClick = function(...args) 
           
@@ -2880,7 +2880,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setExpandsOnDoubleClick(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.columnViewportPosition = function(...args) 
           
@@ -2890,7 +2890,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnViewportPosition(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.columnWidth = function(...args) 
           
@@ -2900,7 +2900,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setColumnWidth = function(...args) 
           
@@ -2910,7 +2910,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setColumnWidth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.columnAt = function(...args) 
           
@@ -2920,7 +2920,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnAt(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isColumnHidden = function(...args) 
           
@@ -2930,7 +2930,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isColumnHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setColumnHidden = function(...args) 
           
@@ -2940,7 +2940,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setColumnHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isHeaderHidden = function(...args) 
           
@@ -2950,7 +2950,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isHeaderHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHeaderHidden = function(...args) 
           
@@ -2960,7 +2960,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHeaderHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isRowHidden = function(...args) 
           
@@ -2970,7 +2970,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isRowHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setRowHidden = function(...args) 
           
@@ -2980,7 +2980,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRowHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isFirstColumnSpanned = function(...args) 
           
@@ -2990,7 +2990,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isFirstColumnSpanned(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setFirstColumnSpanned = function(...args) 
           
@@ -3000,7 +3000,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFirstColumnSpanned(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isExpanded = function(...args) 
           
@@ -3010,7 +3010,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isExpanded(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setExpanded = function(...args) 
           
@@ -3020,7 +3020,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setExpanded(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setSortingEnabled = function(...args) 
           
@@ -3030,7 +3030,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSortingEnabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isSortingEnabled = function(...args) 
           
@@ -3040,7 +3040,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isSortingEnabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAnimated = function(...args) 
           
@@ -3050,7 +3050,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAnimated(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isAnimated = function(...args) 
           
@@ -3060,7 +3060,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isAnimated(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setAllColumnsShowFocus = function(...args) 
           
@@ -3070,7 +3070,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAllColumnsShowFocus(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setWordWrap = function(...args) 
           
@@ -3080,7 +3080,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWordWrap(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setTreePosition = function(...args) 
           
@@ -3090,7 +3090,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTreePosition(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.treePosition = function(...args) 
           
@@ -3100,7 +3100,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.treePosition(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.keyboardSearch = function(...args) 
           
@@ -3110,7 +3110,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyboardSearch(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.visualRect = function(...args) 
           
@@ -3120,7 +3120,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualRect(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.scrollTo = function(...args) 
           
@@ -3130,7 +3130,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollTo(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.indexAt = function(...args) 
           
@@ -3140,7 +3140,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexAt(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.indexAbove = function(...args) 
           
@@ -3150,7 +3150,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexAbove(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.indexBelow = function(...args) 
           
@@ -3160,7 +3160,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexBelow(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.doItemsLayout = function(...args) 
           
@@ -3170,7 +3170,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.doItemsLayout(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.reset = function(...args) 
           
@@ -3180,7 +3180,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dataChanged = function(...args) 
           
@@ -3190,7 +3190,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dataChanged(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.selectAll = function(...args) 
           
@@ -3200,7 +3200,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.hideColumn = function(...args) 
           
@@ -3210,7 +3210,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.hideColumn(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.showColumn = function(...args) 
           
@@ -3220,7 +3220,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.showColumn(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.expand = function(...args) 
           
@@ -3230,7 +3230,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.expand(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.collapse = function(...args) 
           
@@ -3240,7 +3240,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.collapse(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.resizeColumnToContents = function(...args) 
           
@@ -3250,7 +3250,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.resizeColumnToContents(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.sortByColumn = function(...args) 
           
@@ -3260,7 +3260,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.sortByColumn(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.expandAll = function(...args) 
           
@@ -3270,7 +3270,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.expandAll(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.expandRecursively = function(...args) 
           
@@ -3280,7 +3280,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.expandRecursively(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.collapseAll = function(...args) 
           
@@ -3290,7 +3290,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.collapseAll(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.expandToDepth = function(...args) 
           
@@ -3300,7 +3300,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.expandToDepth(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.columnResized = function(...args) 
           
@@ -3310,7 +3310,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnResized(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.columnCountChanged = function(...args) 
           
@@ -3320,7 +3320,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnCountChanged(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.columnMoved = function(...args) 
           
@@ -3330,7 +3330,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnMoved(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.reexpand = function(...args) 
           
@@ -3340,7 +3340,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.reexpand(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.rowsRemoved = function(...args) 
           
@@ -3350,7 +3350,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowsRemoved(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.verticalScrollbarValueChanged = function(...args) 
           
@@ -3360,7 +3360,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollbarValueChanged(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.scrollContentsBy = function(...args) 
           
@@ -3370,7 +3370,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollContentsBy(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.rowsInserted = function(...args) 
           
@@ -3380,7 +3380,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowsInserted(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.rowsAboutToBeRemoved = function(...args) 
           
@@ -3390,7 +3390,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowsAboutToBeRemoved(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.moveCursor = function(...args) 
           
@@ -3400,7 +3400,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.moveCursor(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.horizontalOffset = function(...args) 
           
@@ -3410,7 +3410,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalOffset(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.verticalOffset = function(...args) 
           
@@ -3420,7 +3420,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalOffset(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setSelection = function(...args) 
           
@@ -3430,7 +3430,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelection(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.visualRegionForSelection = function(...args) 
           
@@ -3440,7 +3440,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualRegionForSelection(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.selectedIndexes = function(...args) 
           
@@ -3450,7 +3450,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectedIndexes(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.changeEvent = function(...args) 
           
@@ -3460,7 +3460,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.timerEvent = function(...args) 
           
@@ -3470,7 +3470,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.timerEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.drawTree = function(...args) 
           
@@ -3480,7 +3480,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawTree(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.drawRow = function(...args) 
           
@@ -3490,7 +3490,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawRow(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.drawBranches = function(...args) 
           
@@ -3500,7 +3500,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawBranches(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mousePressEvent = function(...args) 
           
@@ -3510,7 +3510,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mouseReleaseEvent = function(...args) 
           
@@ -3520,7 +3520,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -3530,7 +3530,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.keyPressEvent = function(...args) 
           
@@ -3540,7 +3540,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -3550,7 +3550,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.viewportEvent = function(...args) 
           
@@ -3560,7 +3560,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewportEvent(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.updateGeometries = function(...args) 
           
@@ -3570,7 +3570,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateGeometries(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.viewportSizeHint = function(...args) 
           
@@ -3580,7 +3580,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewportSizeHint(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.indexRowSizeHint = function(...args) 
           
@@ -3590,7 +3590,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexRowSizeHint(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.rowHeight = function(...args) 
           
@@ -3600,7 +3600,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowHeight(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.horizontalScrollbarAction = function(...args) 
           
@@ -3610,7 +3610,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollbarAction(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isIndexHidden = function(...args) 
           
@@ -3620,7 +3620,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isIndexHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.selectionChanged = function(...args) 
           
@@ -3630,7 +3630,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectionChanged(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.currentChanged = function(...args) 
           
@@ -3640,7 +3640,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentChanged(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.visualIndex = function(...args) 
           
@@ -3650,7 +3650,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualIndex(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setColumnCount = function(...args) 
           
@@ -3660,7 +3660,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setColumnCount(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.invisibleRootItem = function(...args) 
           
@@ -3670,7 +3670,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.invisibleRootItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.topLevelItem = function(...args) 
           
@@ -3680,7 +3680,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.topLevelItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.insertTopLevelItem = function(...args) 
           
@@ -3690,7 +3690,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertTopLevelItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.addTopLevelItem = function(...args) 
           
@@ -3700,7 +3700,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.addTopLevelItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.takeTopLevelItem = function(...args) 
           
@@ -3710,7 +3710,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.takeTopLevelItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.indexOfTopLevelItem = function(...args) 
           
@@ -3720,7 +3720,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexOfTopLevelItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.insertTopLevelItems = function(...args) 
           
@@ -3730,7 +3730,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertTopLevelItems(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.addTopLevelItems = function(...args) 
           
@@ -3740,7 +3740,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.addTopLevelItems(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.headerItem = function(...args) 
           
@@ -3750,7 +3750,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.headerItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHeaderItem = function(...args) 
           
@@ -3760,7 +3760,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHeaderItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHeaderLabels = function(...args) 
           
@@ -3770,7 +3770,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHeaderLabels(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setHeaderLabel = function(...args) 
           
@@ -3780,7 +3780,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHeaderLabel(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.currentItem = function(...args) 
           
@@ -3790,7 +3790,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.currentColumn = function(...args) 
           
@@ -3800,7 +3800,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentColumn(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setCurrentItem = function(...args) 
           
@@ -3810,7 +3810,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCurrentItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.itemAt = function(...args) 
           
@@ -3820,7 +3820,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.itemAt(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.visualItemRect = function(...args) 
           
@@ -3830,7 +3830,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualItemRect(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.sortColumn = function(...args) 
           
@@ -3840,7 +3840,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.sortColumn(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.sortItems = function(...args) 
           
@@ -3850,7 +3850,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.sortItems(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.editItem = function(...args) 
           
@@ -3860,7 +3860,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.editItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.isPersistentEditorOpen = function(...args) 
           
@@ -3870,7 +3870,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.isPersistentEditorOpen(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.itemWidget = function(...args) 
           
@@ -3880,7 +3880,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.itemWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.setItemWidget = function(...args) 
           
@@ -3890,7 +3890,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.setItemWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.removeItemWidget = function(...args) 
           
@@ -3900,7 +3900,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeItemWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.selectedItems = function(...args) 
           
@@ -3910,7 +3910,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectedItems(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.findItems = function(...args) 
           
@@ -3920,7 +3920,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.findItems(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.itemAbove = function(...args) 
           
@@ -3930,7 +3930,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.itemAbove(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.itemBelow = function(...args) 
           
@@ -3940,7 +3940,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.itemBelow(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.indexFromItem = function(...args) 
           
@@ -3950,7 +3950,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexFromItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.itemFromIndex = function(...args) 
           
@@ -3960,7 +3960,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.itemFromIndex(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.scrollToItem = function(...args) 
           
@@ -3970,7 +3970,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollToItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.expandItem = function(...args) 
           
@@ -3980,7 +3980,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.expandItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.collapseItem = function(...args) 
           
@@ -3990,7 +3990,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.collapseItem(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.clear = function(...args) 
           
@@ -4000,7 +4000,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.event = function(...args) 
           
@@ -4010,7 +4010,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mimeTypes = function(...args) 
           
@@ -4020,7 +4020,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mimeTypes(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.mimeData = function(...args) 
           
@@ -4030,7 +4030,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.mimeData(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dropMimeData = function(...args) 
           
@@ -4040,7 +4040,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dropMimeData(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.supportedDropActions = function(...args) 
           
@@ -4050,7 +4050,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.supportedDropActions(...args);
             
         };
-    
+        
         // function 
         QTreeWidget.prototype.dropEvent = function(...args) 
           
@@ -4060,7 +4060,7 @@ QTreeWidget.InternalMove = QTreeWidget_Wrapper.InternalMove;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -210,7 +210,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.openMode(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.setTextModeEnabled = function(...args) 
           
@@ -220,7 +220,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.isTextModeEnabled = function(...args) 
           
@@ -230,7 +230,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.isOpen = function(...args) 
           
@@ -240,7 +240,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.isReadable = function(...args) 
           
@@ -250,7 +250,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.isWritable = function(...args) 
           
@@ -260,7 +260,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.readChannelCount = function(...args) 
           
@@ -270,7 +270,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.readChannelCount(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.writeChannelCount = function(...args) 
           
@@ -280,7 +280,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.writeChannelCount(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.currentReadChannel = function(...args) 
           
@@ -290,7 +290,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.currentReadChannel(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.setCurrentReadChannel = function(...args) 
           
@@ -300,7 +300,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setCurrentReadChannel(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.currentWriteChannel = function(...args) 
           
@@ -310,7 +310,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.currentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.setCurrentWriteChannel = function(...args) 
           
@@ -320,7 +320,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setCurrentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.open = function(...args) 
           
@@ -330,7 +330,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.pos = function(...args) 
           
@@ -340,7 +340,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.size = function(...args) 
           
@@ -350,7 +350,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.seek = function(...args) 
           
@@ -360,7 +360,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.atEnd = function(...args) 
           
@@ -370,7 +370,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.reset = function(...args) 
           
@@ -380,7 +380,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.readAll = function(...args) 
           
@@ -390,7 +390,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.canReadLine = function(...args) 
           
@@ -400,7 +400,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.canReadLine(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.startTransaction = function(...args) 
           
@@ -410,7 +410,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.startTransaction(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.commitTransaction = function(...args) 
           
@@ -420,7 +420,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.rollbackTransaction = function(...args) 
           
@@ -430,7 +430,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.isTransactionStarted = function(...args) 
           
@@ -440,7 +440,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isTransactionStarted(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.write = function(...args) 
           
@@ -450,7 +450,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.skip = function(...args) 
           
@@ -460,7 +460,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.skip(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.ungetChar = function(...args) 
           
@@ -470,7 +470,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.ungetChar(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.putChar = function(...args) 
           
@@ -480,7 +480,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.putChar(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.errorString = function(...args) 
           
@@ -490,7 +490,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.resume = function(...args) 
           
@@ -500,7 +500,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.resume(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.bind = function(...args) 
           
@@ -510,7 +510,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.bind(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.connectToHost = function(...args) 
           
@@ -520,7 +520,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.connectToHost(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.disconnectFromHost = function(...args) 
           
@@ -530,7 +530,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.disconnectFromHost(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.isValid = function(...args) 
           
@@ -540,7 +540,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.bytesAvailable = function(...args) 
           
@@ -550,7 +550,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.bytesAvailable(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.bytesToWrite = function(...args) 
           
@@ -560,7 +560,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.bytesToWrite(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.localPort = function(...args) 
           
@@ -570,7 +570,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.localPort(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.localAddress = function(...args) 
           
@@ -580,7 +580,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.localAddress(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.peerPort = function(...args) 
           
@@ -590,7 +590,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.peerPort(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.peerAddress = function(...args) 
           
@@ -600,7 +600,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.peerAddress(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.peerName = function(...args) 
           
@@ -610,7 +610,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.peerName(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.readBufferSize = function(...args) 
           
@@ -620,7 +620,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.readBufferSize(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.setReadBufferSize = function(...args) 
           
@@ -630,7 +630,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setReadBufferSize(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.abort = function(...args) 
           
@@ -640,7 +640,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.abort(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.setSocketOption = function(...args) 
           
@@ -650,7 +650,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setSocketOption(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.socketOption = function(...args) 
           
@@ -660,7 +660,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.socketOption(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.socketType = function(...args) 
           
@@ -670,7 +670,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.socketType(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.state = function(...args) 
           
@@ -680,7 +680,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.state(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.error = function(...args) 
           
@@ -690,7 +690,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.close = function(...args) 
           
@@ -700,7 +700,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.isSequential = function(...args) 
           
@@ -710,7 +710,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isSequential(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.flush = function(...args) 
           
@@ -720,7 +720,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.flush(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.waitForConnected = function(...args) 
           
@@ -730,7 +730,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.waitForConnected(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.waitForReadyRead = function(...args) 
           
@@ -740,7 +740,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.waitForReadyRead(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.waitForBytesWritten = function(...args) 
           
@@ -750,7 +750,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.waitForBytesWritten(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.waitForDisconnected = function(...args) 
           
@@ -760,7 +760,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.waitForDisconnected(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.setProxy = function(...args) 
           
@@ -770,7 +770,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setProxy(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.proxy = function(...args) 
           
@@ -780,7 +780,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.proxy(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.protocolTag = function(...args) 
           
@@ -790,7 +790,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.protocolTag(...args);
             
         };
-    
+        
         // function 
         QTcpSocket.prototype.setProtocolTag = function(...args) 
           
@@ -800,7 +800,7 @@ QTcpSocket.PauseOnSslErrors = QTcpSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setProtocolTag(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -287,7 +287,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.spontaneous = function(...args) 
           
@@ -297,7 +297,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.isAccepted = function(...args) 
           
@@ -307,7 +307,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.accept = function(...args) 
           
@@ -317,7 +317,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.ignore = function(...args) 
           
@@ -327,7 +327,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.isInputEvent = function(...args) 
           
@@ -337,7 +337,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.isPointerEvent = function(...args) 
           
@@ -347,7 +347,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -357,7 +357,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.setSpontaneous = function(...args) 
           
@@ -367,7 +367,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.modifiers = function(...args) 
           
@@ -377,7 +377,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.modifiers(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.setModifiers = function(...args) 
           
@@ -387,7 +387,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModifiers(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.timestamp = function(...args) 
           
@@ -397,7 +397,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.timestamp(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.clone = function(...args) 
           
@@ -407,7 +407,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.setTimestamp = function(...args) 
           
@@ -417,7 +417,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.setTimestamp(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.pointCount = function(...args) 
           
@@ -427,7 +427,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointCount(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.point = function(...args) 
           
@@ -437,7 +437,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.point(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.pointById = function(...args) 
           
@@ -447,7 +447,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointById(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.allPointsGrabbed = function(...args) 
           
@@ -457,7 +457,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsGrabbed(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.isBeginEvent = function(...args) 
           
@@ -467,7 +467,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.isBeginEvent(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.isUpdateEvent = function(...args) 
           
@@ -477,7 +477,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.isUpdateEvent(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.isEndEvent = function(...args) 
           
@@ -487,7 +487,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.isEndEvent(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.allPointsAccepted = function(...args) 
           
@@ -497,7 +497,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsAccepted(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.setAccepted = function(...args) 
           
@@ -507,7 +507,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.exclusiveGrabber = function(...args) 
           
@@ -517,7 +517,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.setExclusiveGrabber = function(...args) 
           
@@ -527,7 +527,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.clearPassiveGrabbers = function(...args) 
           
@@ -537,7 +537,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.clearPassiveGrabbers(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.addPassiveGrabber = function(...args) 
           
@@ -547,7 +547,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.addPassiveGrabber(...args);
             
         };
-    
+        
         // function 
         QPointerEvent.prototype.removePassiveGrabber = function(...args) 
           
@@ -557,7 +557,7 @@ QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
               return this.__PROXY__.removePassiveGrabber(...args);
             
         };
-    
+        
 
       // static functions:
       QPointerEvent.prototype.isNullWrapper = function() {

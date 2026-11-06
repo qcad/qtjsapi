@@ -202,7 +202,7 @@ QStyleOptionToolBar.Movable = QStyleOptionToolBar_Wrapper.Movable;
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionToolBar.prototype.operator_assign = function(...args) 
           
@@ -212,7 +212,7 @@ QStyleOptionToolBar.Movable = QStyleOptionToolBar_Wrapper.Movable;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionToolBar.prototype.isNullWrapper = function() {

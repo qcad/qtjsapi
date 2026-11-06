@@ -105,7 +105,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.paintingActive = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.paintEngine = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.width = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.height = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.widthMM = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.heightMM = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.logicalDpiX = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.logicalDpiY = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.physicalDpiX = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.physicalDpiY = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.devicePixelRatio = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.devicePixelRatioF = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.colorCount = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.depth = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.devicePixelRatioFScale = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.devicePixelRatioFScale(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.metric = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.initPainter = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.redirected = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.sharedPainter = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QPaintDevice.prototype.qt_paint_device_metric = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
 
       // static functions:
       

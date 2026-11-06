@@ -165,7 +165,8 @@
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        QShortcut.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         QShortcut.prototype.setObjectName = function(...args) 
           
@@ -175,7 +176,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.isWidgetType = function(...args) 
           
@@ -185,7 +186,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.isWindowType = function(...args) 
           
@@ -195,7 +196,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.signalsBlocked = function(...args) 
           
@@ -205,7 +206,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.blockSignals = function(...args) 
           
@@ -215,7 +216,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.findChild = function(...args) 
           
@@ -225,7 +226,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.children = function(...args) 
           
@@ -235,7 +236,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.setParent = function(...args) 
           
@@ -245,7 +246,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.installEventFilter = function(...args) 
           
@@ -255,7 +256,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.removeEventFilter = function(...args) 
           
@@ -265,7 +266,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.dumpObjectTree = function(...args) 
           
@@ -275,7 +276,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.dumpObjectInfo = function(...args) 
           
@@ -285,7 +286,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.setProperty = function(...args) 
           
@@ -295,7 +296,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.property = function(...args) 
           
@@ -305,7 +306,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.dynamicPropertyNames = function(...args) 
           
@@ -315,7 +316,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.parent = function(...args) 
           
@@ -325,7 +326,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.deleteLater = function(...args) 
           
@@ -335,7 +336,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.setKey = function(...args) 
           
@@ -345,7 +346,7 @@
               return this.__PROXY__.setKey(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.setKeys = function(...args) 
           
@@ -355,7 +356,7 @@
               return this.__PROXY__.setKeys(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.keys = function(...args) 
           
@@ -365,7 +366,7 @@
               return this.__PROXY__.keys(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.setEnabled = function(...args) 
           
@@ -375,7 +376,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.isEnabled = function(...args) 
           
@@ -385,7 +386,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.setContext = function(...args) 
           
@@ -395,7 +396,7 @@
               return this.__PROXY__.setContext(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.setAutoRepeat = function(...args) 
           
@@ -405,7 +406,7 @@
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.setWhatsThis = function(...args) 
           
@@ -415,7 +416,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.whatsThis = function(...args) 
           
@@ -425,7 +426,7 @@
               return this.__PROXY__.whatsThis(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.parentWidget = function(...args) 
           
@@ -435,7 +436,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QShortcut.prototype.event = function(...args) 
           
@@ -445,7 +446,8 @@
               return this.__PROXY__.eventSuper(...args);
             
         };
-    
+        QShortcut.prototype.event.__SUPER__ = true;
+        
 
       // static functions:
       

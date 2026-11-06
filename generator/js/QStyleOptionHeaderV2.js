@@ -181,7 +181,7 @@ QStyleOptionHeaderV2.SortDown = QStyleOptionHeaderV2_Wrapper.SortDown;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionHeaderV2.prototype.isNullWrapper = function() {

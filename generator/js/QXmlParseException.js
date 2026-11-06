@@ -161,7 +161,7 @@
               return this.__PROXY__.columnNumber(...args);
             
         };
-    
+        
         // function 
         QXmlParseException.prototype.lineNumber = function(...args) 
           
@@ -171,7 +171,7 @@
               return this.__PROXY__.lineNumber(...args);
             
         };
-    
+        
         // function 
         QXmlParseException.prototype.publicId = function(...args) 
           
@@ -181,7 +181,7 @@
               return this.__PROXY__.publicId(...args);
             
         };
-    
+        
         // function 
         QXmlParseException.prototype.systemId = function(...args) 
           
@@ -191,7 +191,7 @@
               return this.__PROXY__.systemId(...args);
             
         };
-    
+        
         // function 
         QXmlParseException.prototype.message = function(...args) 
           
@@ -201,7 +201,7 @@
               return this.__PROXY__.message(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlParseException.prototype.isNullWrapper = function() {

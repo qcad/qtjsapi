@@ -160,7 +160,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.x = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.x(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.y = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.y(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.setX = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.setX(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.setY = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.setY(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.manhattanLength = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.manhattanLength(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.transposed = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.transposed(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.rx = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.rx(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.ry = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.ry(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.operator_add_assign = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.operator_add_assign(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.operator_subtract_assign = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.operator_subtract_assign(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.operator_multiply_assign = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.operator_multiply_assign(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.operator_divide_assign = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.operator_divide_assign(...args);
             
         };
-    
+        
         // function 
         QPoint.prototype.dotProduct = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.dotProduct(...args);
             
         };
-    
+        
 
       // static functions:
       

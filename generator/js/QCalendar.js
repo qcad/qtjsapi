@@ -134,7 +134,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.daysInMonth = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.daysInMonth(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.daysInYear = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.daysInYear(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.monthsInYear = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.monthsInYear(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.isDateValid = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.isDateValid(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.isLeapYear = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.isLeapYear(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.isGregorian = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.isGregorian(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.isLunar = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.isLunar(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.isLuniSolar = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.isLuniSolar(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.isSolar = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.isSolar(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.isProleptic = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.isProleptic(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.hasYearZero = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.hasYearZero(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.maximumDaysInMonth = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.maximumDaysInMonth(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.minimumDaysInMonth = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.minimumDaysInMonth(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.maximumMonthsInYear = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.maximumMonthsInYear(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.name = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.dayOfWeek = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.dayOfWeek(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.monthName = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.monthName(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.standaloneMonthName = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.standaloneMonthName(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.weekDayName = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.weekDayName(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.standaloneWeekDayName = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.standaloneWeekDayName(...args);
             
         };
-    
+        
         // function 
         QCalendar.prototype.availableCalendars = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.availableCalendars(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -194,7 +194,7 @@ QDirIterator.Subdirectories = QDirIterator_Wrapper.Subdirectories;
               return this.__PROXY__.next(...args);
             
         };
-    
+        
         // function 
         QDirIterator.prototype.nextFileInfo = function(...args) 
           
@@ -204,7 +204,7 @@ QDirIterator.Subdirectories = QDirIterator_Wrapper.Subdirectories;
               return this.__PROXY__.nextFileInfo(...args);
             
         };
-    
+        
         // function 
         QDirIterator.prototype.hasNext = function(...args) 
           
@@ -214,7 +214,7 @@ QDirIterator.Subdirectories = QDirIterator_Wrapper.Subdirectories;
               return this.__PROXY__.hasNext(...args);
             
         };
-    
+        
         // function 
         QDirIterator.prototype.fileName = function(...args) 
           
@@ -224,7 +224,7 @@ QDirIterator.Subdirectories = QDirIterator_Wrapper.Subdirectories;
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QDirIterator.prototype.filePath = function(...args) 
           
@@ -234,7 +234,7 @@ QDirIterator.Subdirectories = QDirIterator_Wrapper.Subdirectories;
               return this.__PROXY__.filePath(...args);
             
         };
-    
+        
         // function 
         QDirIterator.prototype.fileInfo = function(...args) 
           
@@ -244,7 +244,7 @@ QDirIterator.Subdirectories = QDirIterator_Wrapper.Subdirectories;
               return this.__PROXY__.fileInfo(...args);
             
         };
-    
+        
         // function 
         QDirIterator.prototype.path = function(...args) 
           
@@ -254,7 +254,7 @@ QDirIterator.Subdirectories = QDirIterator_Wrapper.Subdirectories;
               return this.__PROXY__.path(...args);
             
         };
-    
+        
 
       // static functions:
       QDirIterator.prototype.isNullWrapper = function() {

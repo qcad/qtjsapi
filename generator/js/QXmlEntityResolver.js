@@ -105,7 +105,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlEntityResolver.prototype.isNullWrapper = function() {

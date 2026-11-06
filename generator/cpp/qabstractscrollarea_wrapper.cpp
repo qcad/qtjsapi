@@ -247,15 +247,21 @@ QAbstractScrollArea_Wrapper::QAbstractScrollArea_Wrapper
 
                 // set handler for wrapped base object:
                 //((QAbstractScrollArea_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QAbstractScrollArea_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QAbstractScrollArea_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       

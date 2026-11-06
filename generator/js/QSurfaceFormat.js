@@ -214,7 +214,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setDepthBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.depthBufferSize = function(...args) 
           
@@ -224,7 +224,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.depthBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setStencilBufferSize = function(...args) 
           
@@ -234,7 +234,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setStencilBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.stencilBufferSize = function(...args) 
           
@@ -244,7 +244,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.stencilBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setRedBufferSize = function(...args) 
           
@@ -254,7 +254,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setRedBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.redBufferSize = function(...args) 
           
@@ -264,7 +264,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.redBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setGreenBufferSize = function(...args) 
           
@@ -274,7 +274,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setGreenBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.greenBufferSize = function(...args) 
           
@@ -284,7 +284,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.greenBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setBlueBufferSize = function(...args) 
           
@@ -294,7 +294,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setBlueBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.blueBufferSize = function(...args) 
           
@@ -304,7 +304,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.blueBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setAlphaBufferSize = function(...args) 
           
@@ -314,7 +314,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setAlphaBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.alphaBufferSize = function(...args) 
           
@@ -324,7 +324,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.alphaBufferSize(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setSamples = function(...args) 
           
@@ -334,7 +334,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setSamples(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.samples = function(...args) 
           
@@ -344,7 +344,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.samples(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setSwapBehavior = function(...args) 
           
@@ -354,7 +354,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setSwapBehavior(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.swapBehavior = function(...args) 
           
@@ -364,7 +364,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.swapBehavior(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.hasAlpha = function(...args) 
           
@@ -374,7 +374,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.hasAlpha(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setProfile = function(...args) 
           
@@ -384,7 +384,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setProfile(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.profile = function(...args) 
           
@@ -394,7 +394,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.profile(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setRenderableType = function(...args) 
           
@@ -404,7 +404,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setRenderableType(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.renderableType = function(...args) 
           
@@ -414,7 +414,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.renderableType(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setMajorVersion = function(...args) 
           
@@ -424,7 +424,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setMajorVersion(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.majorVersion = function(...args) 
           
@@ -434,7 +434,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.majorVersion(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setMinorVersion = function(...args) 
           
@@ -444,7 +444,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setMinorVersion(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.minorVersion = function(...args) 
           
@@ -454,7 +454,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.minorVersion(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setVersion = function(...args) 
           
@@ -464,7 +464,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setVersion(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.stereo = function(...args) 
           
@@ -474,7 +474,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.stereo(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setStereo = function(...args) 
           
@@ -484,7 +484,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setStereo(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setOptions = function(...args) 
           
@@ -494,7 +494,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setOptions(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setOption = function(...args) 
           
@@ -504,7 +504,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.testOption = function(...args) 
           
@@ -514,7 +514,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.testOption(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.options = function(...args) 
           
@@ -524,7 +524,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.options(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.swapInterval = function(...args) 
           
@@ -534,7 +534,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.swapInterval(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setSwapInterval = function(...args) 
           
@@ -544,7 +544,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setSwapInterval(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.setDefaultFormat = function(...args) 
           
@@ -554,7 +554,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.setDefaultFormat(...args);
             
         };
-    
+        
         // function 
         QSurfaceFormat.prototype.defaultFormat = function(...args) 
           
@@ -564,7 +564,7 @@ QSurfaceFormat.sRGBColorSpace = QSurfaceFormat_Wrapper.sRGBColorSpace;
               return this.__PROXY__.defaultFormat(...args);
             
         };
-    
+        
 
       // static functions:
       

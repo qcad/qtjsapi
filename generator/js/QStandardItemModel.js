@@ -175,7 +175,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.isWidgetType = function(...args) 
           
@@ -185,7 +185,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.isWindowType = function(...args) 
           
@@ -195,7 +195,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.signalsBlocked = function(...args) 
           
@@ -205,7 +205,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.blockSignals = function(...args) 
           
@@ -215,7 +215,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.findChild = function(...args) 
           
@@ -225,7 +225,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.children = function(...args) 
           
@@ -235,7 +235,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setParent = function(...args) 
           
@@ -245,7 +245,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.installEventFilter = function(...args) 
           
@@ -255,7 +255,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.removeEventFilter = function(...args) 
           
@@ -265,7 +265,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.dumpObjectTree = function(...args) 
           
@@ -275,7 +275,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.dumpObjectInfo = function(...args) 
           
@@ -285,7 +285,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setProperty = function(...args) 
           
@@ -295,7 +295,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.property = function(...args) 
           
@@ -305,7 +305,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.dynamicPropertyNames = function(...args) 
           
@@ -315,7 +315,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.deleteLater = function(...args) 
           
@@ -325,7 +325,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.hasIndex = function(...args) 
           
@@ -335,7 +335,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.hasIndex(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.sibling = function(...args) 
           
@@ -345,7 +345,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.sibling(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.supportedDragActions = function(...args) 
           
@@ -355,7 +355,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.supportedDragActions(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.moveRows = function(...args) 
           
@@ -365,7 +365,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.moveRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.moveColumns = function(...args) 
           
@@ -375,7 +375,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.moveColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.removeRow = function(...args) 
           
@@ -385,7 +385,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeRow(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.removeColumn = function(...args) 
           
@@ -395,7 +395,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.moveRow = function(...args) 
           
@@ -405,7 +405,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.moveRow(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.moveColumn = function(...args) 
           
@@ -415,7 +415,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.moveColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.fetchMore = function(...args) 
           
@@ -425,7 +425,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.fetchMore(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.canFetchMore = function(...args) 
           
@@ -435,7 +435,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.canFetchMore(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.buddy = function(...args) 
           
@@ -445,7 +445,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.buddy(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.span = function(...args) 
           
@@ -455,7 +455,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.span(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.roleNames = function(...args) 
           
@@ -465,7 +465,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.roleNames(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.submit = function(...args) 
           
@@ -475,7 +475,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.submit(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.revert = function(...args) 
           
@@ -485,7 +485,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.revert(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.resetInternalData = function(...args) 
           
@@ -495,7 +495,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.resetInternalData(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.createIndex = function(...args) 
           
@@ -505,7 +505,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.createIndex(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.encodeData = function(...args) 
           
@@ -515,7 +515,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.encodeData(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.decodeData = function(...args) 
           
@@ -525,7 +525,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.decodeData(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.beginInsertRows = function(...args) 
           
@@ -535,7 +535,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginInsertRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.endInsertRows = function(...args) 
           
@@ -545,7 +545,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endInsertRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.beginRemoveRows = function(...args) 
           
@@ -555,7 +555,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginRemoveRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.endRemoveRows = function(...args) 
           
@@ -565,7 +565,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endRemoveRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.beginMoveRows = function(...args) 
           
@@ -575,7 +575,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginMoveRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.endMoveRows = function(...args) 
           
@@ -585,7 +585,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endMoveRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.beginInsertColumns = function(...args) 
           
@@ -595,7 +595,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginInsertColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.endInsertColumns = function(...args) 
           
@@ -605,7 +605,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endInsertColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.beginRemoveColumns = function(...args) 
           
@@ -615,7 +615,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.endRemoveColumns = function(...args) 
           
@@ -625,7 +625,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.beginMoveColumns = function(...args) 
           
@@ -635,7 +635,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginMoveColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.endMoveColumns = function(...args) 
           
@@ -645,7 +645,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endMoveColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.beginResetModel = function(...args) 
           
@@ -655,7 +655,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginResetModel(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.endResetModel = function(...args) 
           
@@ -665,7 +665,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endResetModel(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.changePersistentIndex = function(...args) 
           
@@ -675,7 +675,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.changePersistentIndex(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.changePersistentIndexList = function(...args) 
           
@@ -685,7 +685,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.changePersistentIndexList(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.persistentIndexList = function(...args) 
           
@@ -695,7 +695,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.persistentIndexList(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.index = function(...args) 
           
@@ -705,7 +705,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.index(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.parent = function(...args) 
           
@@ -715,7 +715,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.rowCount = function(...args) 
           
@@ -725,7 +725,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.rowCount(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.columnCount = function(...args) 
           
@@ -735,7 +735,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.columnCount(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.hasChildren = function(...args) 
           
@@ -745,7 +745,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.hasChildren(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.data = function(...args) 
           
@@ -755,7 +755,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setData = function(...args) 
           
@@ -765,7 +765,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.clearItemData = function(...args) 
           
@@ -775,7 +775,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.clearItemData(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.headerData = function(...args) 
           
@@ -785,7 +785,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.headerData(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setHeaderData = function(...args) 
           
@@ -795,7 +795,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setHeaderData(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.insertRows = function(...args) 
           
@@ -805,7 +805,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.insertRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.insertColumns = function(...args) 
           
@@ -815,7 +815,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.insertColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.removeRows = function(...args) 
           
@@ -825,7 +825,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeRows(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.removeColumns = function(...args) 
           
@@ -835,7 +835,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.flags = function(...args) 
           
@@ -845,7 +845,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.supportedDropActions = function(...args) 
           
@@ -855,7 +855,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.supportedDropActions(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.clear = function(...args) 
           
@@ -865,7 +865,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.sort = function(...args) 
           
@@ -875,7 +875,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.sort(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.itemFromIndex = function(...args) 
           
@@ -885,7 +885,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.itemFromIndex(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.indexFromItem = function(...args) 
           
@@ -895,7 +895,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.indexFromItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.item = function(...args) 
           
@@ -905,7 +905,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.item(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setItem = function(...args) 
           
@@ -915,7 +915,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.invisibleRootItem = function(...args) 
           
@@ -925,7 +925,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.invisibleRootItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.horizontalHeaderItem = function(...args) 
           
@@ -935,7 +935,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.horizontalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setHorizontalHeaderItem = function(...args) 
           
@@ -945,7 +945,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setHorizontalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.verticalHeaderItem = function(...args) 
           
@@ -955,7 +955,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.verticalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setVerticalHeaderItem = function(...args) 
           
@@ -965,7 +965,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setVerticalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setHorizontalHeaderLabels = function(...args) 
           
@@ -975,7 +975,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setHorizontalHeaderLabels(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setVerticalHeaderLabels = function(...args) 
           
@@ -985,7 +985,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setVerticalHeaderLabels(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setRowCount = function(...args) 
           
@@ -995,7 +995,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setRowCount(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setColumnCount = function(...args) 
           
@@ -1005,7 +1005,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setColumnCount(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.appendRow = function(...args) 
           
@@ -1015,7 +1015,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.appendRow(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.appendColumn = function(...args) 
           
@@ -1025,7 +1025,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.appendColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.insertRow = function(...args) 
           
@@ -1035,7 +1035,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.insertRow(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.insertColumn = function(...args) 
           
@@ -1045,7 +1045,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.insertColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.takeItem = function(...args) 
           
@@ -1055,7 +1055,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.takeItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.takeRow = function(...args) 
           
@@ -1065,7 +1065,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.takeRow(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.takeColumn = function(...args) 
           
@@ -1075,7 +1075,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.takeColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.takeHorizontalHeaderItem = function(...args) 
           
@@ -1085,7 +1085,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.takeHorizontalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.takeVerticalHeaderItem = function(...args) 
           
@@ -1095,7 +1095,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.takeVerticalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setItemPrototype = function(...args) 
           
@@ -1105,7 +1105,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setItemPrototype(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.findItems = function(...args) 
           
@@ -1115,7 +1115,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.findItems(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.sortRole = function(...args) 
           
@@ -1125,7 +1125,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.sortRole(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.setSortRole = function(...args) 
           
@@ -1135,7 +1135,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setSortRole(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.mimeTypes = function(...args) 
           
@@ -1145,7 +1145,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.mimeTypes(...args);
             
         };
-    
+        
         // function 
         QStandardItemModel.prototype.dropMimeData = function(...args) 
           
@@ -1155,7 +1155,7 @@ QStandardItemModel.HorizontalSortHint = QStandardItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.dropMimeData(...args);
             
         };
-    
+        
 
       // static functions:
       

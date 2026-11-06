@@ -135,7 +135,8 @@
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        QObject.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         QObject.prototype.tr = function(...args) 
           
@@ -145,7 +146,7 @@
               return this.__PROXY__.tr(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.setObjectName = function(...args) 
           
@@ -155,7 +156,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.isWidgetType = function(...args) 
           
@@ -165,7 +166,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.isWindowType = function(...args) 
           
@@ -175,7 +176,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.signalsBlocked = function(...args) 
           
@@ -185,7 +186,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.blockSignals = function(...args) 
           
@@ -195,7 +196,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.findChild = function(...args) 
           
@@ -205,7 +206,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.children = function(...args) 
           
@@ -215,7 +216,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.setParent = function(...args) 
           
@@ -225,7 +226,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.installEventFilter = function(...args) 
           
@@ -235,7 +236,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.removeEventFilter = function(...args) 
           
@@ -245,7 +246,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.dumpObjectTree = function(...args) 
           
@@ -255,7 +256,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.dumpObjectInfo = function(...args) 
           
@@ -265,7 +266,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.setProperty = function(...args) 
           
@@ -275,7 +276,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.property = function(...args) 
           
@@ -285,7 +286,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.dynamicPropertyNames = function(...args) 
           
@@ -295,7 +296,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.parent = function(...args) 
           
@@ -305,7 +306,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QObject.prototype.deleteLater = function(...args) 
           
@@ -315,7 +316,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
 
       // static functions:
       

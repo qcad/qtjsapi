@@ -109,7 +109,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.isWidgetType = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.isWindowType = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.signalsBlocked = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.blockSignals = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.findChild = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.children = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.setParent = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.installEventFilter = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.removeEventFilter = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.dumpObjectTree = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.dumpObjectInfo = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.setProperty = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.property = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.dynamicPropertyNames = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.parent = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.deleteLater = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.isValid = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.engine = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.engine(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.parentContext = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.parentContext(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.contextObject = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.contextObject(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.setContextObject = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.setContextObject(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.contextProperty = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.contextProperty(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.setContextProperty = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.setContextProperty(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.nameForObject = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.nameForObject(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.objectForName = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.objectForName(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.resolvedUrl = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.resolvedUrl(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.setBaseUrl = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.setBaseUrl(...args);
             
         };
-    
+        
         // function 
         QQmlContext.prototype.baseUrl = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.baseUrl(...args);
             
         };
-    
+        
 
       // static functions:
       

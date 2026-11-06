@@ -105,7 +105,7 @@
               return this.__PROXY__.queryProxy(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyFactory.prototype.usesSystemConfiguration = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.usesSystemConfiguration(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyFactory.prototype.setUseSystemConfiguration = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.setUseSystemConfiguration(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyFactory.prototype.setApplicationProxyFactory = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.setApplicationProxyFactory(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyFactory.prototype.proxyForQuery = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.proxyForQuery(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyFactory.prototype.systemProxyForQuery = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.systemProxyForQuery(...args);
             
         };
-    
+        
 
       // static functions:
       

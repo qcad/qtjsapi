@@ -116,7 +116,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.isWidgetType = function(...args) 
           
@@ -126,7 +126,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.isWindowType = function(...args) 
           
@@ -136,7 +136,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.signalsBlocked = function(...args) 
           
@@ -146,7 +146,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.blockSignals = function(...args) 
           
@@ -156,7 +156,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.findChild = function(...args) 
           
@@ -166,7 +166,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.children = function(...args) 
           
@@ -176,7 +176,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.setParent = function(...args) 
           
@@ -186,7 +186,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.installEventFilter = function(...args) 
           
@@ -196,7 +196,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.removeEventFilter = function(...args) 
           
@@ -206,7 +206,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.dumpObjectTree = function(...args) 
           
@@ -216,7 +216,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.dumpObjectInfo = function(...args) 
           
@@ -226,7 +226,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.setProperty = function(...args) 
           
@@ -236,7 +236,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.property = function(...args) 
           
@@ -246,7 +246,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.dynamicPropertyNames = function(...args) 
           
@@ -256,7 +256,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.parent = function(...args) 
           
@@ -266,7 +266,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.deleteLater = function(...args) 
           
@@ -276,7 +276,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.destroyEditor = function(...args) 
           
@@ -286,7 +286,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.destroyEditor(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.setEditorData = function(...args) 
           
@@ -296,7 +296,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.setEditorData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.setModelData = function(...args) 
           
@@ -306,7 +306,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.setModelData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemDelegate.prototype.paintingRoles = function(...args) 
           
@@ -316,7 +316,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
               return this.__PROXY__.paintingRoles(...args);
             
         };
-    
+        
 
       // static functions:
       

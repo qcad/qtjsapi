@@ -290,7 +290,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.isEmpty = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.isValid = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.width = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.height = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.setWidth = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.setHeight = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.transpose = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.transpose(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.transposed = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.transposed(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.scale = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.scaled = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.scaled(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.expandedTo = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.expandedTo(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.boundedTo = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.boundedTo(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.grownBy = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.grownBy(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.shrunkBy = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.shrunkBy(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.rwidth = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.rwidth(...args);
             
         };
-    
+        
         // function 
         QSize.prototype.rheight = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.rheight(...args);
             
         };
-    
+        
 
       // static functions:
       QSize.prototype.isNullWrapper = function() {

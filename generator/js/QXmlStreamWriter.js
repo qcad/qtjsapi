@@ -160,7 +160,7 @@
               return this.__PROXY__.setDevice(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.device = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.device(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.setAutoFormatting = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.setAutoFormatting(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.autoFormatting = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.autoFormatting(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.setAutoFormattingIndent = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.setAutoFormattingIndent(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.autoFormattingIndent = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.autoFormattingIndent(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeAttribute = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.writeAttribute(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeAttributes = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.writeAttributes(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeCDATA = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.writeCDATA(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeCharacters = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.writeCharacters(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeComment = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.writeComment(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeDTD = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.writeDTD(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeEmptyElement = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.writeEmptyElement(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeTextElement = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.writeTextElement(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeEndDocument = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.writeEndDocument(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeEndElement = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.writeEndElement(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeEntityReference = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.writeEntityReference(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeNamespace = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.writeNamespace(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeDefaultNamespace = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.writeDefaultNamespace(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeProcessingInstruction = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.writeProcessingInstruction(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeStartDocument = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.writeStartDocument(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeStartElement = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.writeStartElement(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.writeCurrentToken = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.writeCurrentToken(...args);
             
         };
-    
+        
         // function 
         QXmlStreamWriter.prototype.hasError = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.hasError(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlStreamWriter.prototype.isNullWrapper = function() {

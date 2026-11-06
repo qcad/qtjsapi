@@ -160,7 +160,7 @@
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.width = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.setCapStyle = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.setCapStyle(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.capStyle = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.capStyle(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.setJoinStyle = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.setJoinStyle(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.joinStyle = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.joinStyle(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.setMiterLimit = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.setMiterLimit(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.miterLimit = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.miterLimit(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.setCurveThreshold = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.setCurveThreshold(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.curveThreshold = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.curveThreshold(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.setDashPattern = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.setDashPattern(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.dashPattern = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.dashPattern(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.setDashOffset = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.setDashOffset(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.dashOffset = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.dashOffset(...args);
             
         };
-    
+        
         // function 
         QPainterPathStroker.prototype.createStroke = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.createStroke(...args);
             
         };
-    
+        
 
       // static functions:
       QPainterPathStroker.prototype.isNullWrapper = function() {

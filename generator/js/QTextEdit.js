@@ -212,7 +212,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isWidgetType = function(...args) 
           
@@ -222,7 +222,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isWindowType = function(...args) 
           
@@ -232,7 +232,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.signalsBlocked = function(...args) 
           
@@ -242,7 +242,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.blockSignals = function(...args) 
           
@@ -252,7 +252,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.findChild = function(...args) 
           
@@ -262,7 +262,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.children = function(...args) 
           
@@ -272,7 +272,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.installEventFilter = function(...args) 
           
@@ -282,7 +282,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.removeEventFilter = function(...args) 
           
@@ -292,7 +292,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.dumpObjectTree = function(...args) 
           
@@ -302,7 +302,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.dumpObjectInfo = function(...args) 
           
@@ -312,7 +312,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setProperty = function(...args) 
           
@@ -322,7 +322,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.property = function(...args) 
           
@@ -332,7 +332,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.dynamicPropertyNames = function(...args) 
           
@@ -342,7 +342,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.parent = function(...args) 
           
@@ -352,7 +352,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.deleteLater = function(...args) 
           
@@ -362,7 +362,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.devType = function(...args) 
           
@@ -372,7 +372,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.createWinId = function(...args) 
           
@@ -382,7 +382,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isWindow = function(...args) 
           
@@ -392,7 +392,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isModal = function(...args) 
           
@@ -402,7 +402,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowModality = function(...args) 
           
@@ -412,7 +412,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isEnabled = function(...args) 
           
@@ -422,7 +422,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isEnabledTo = function(...args) 
           
@@ -432,7 +432,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setEnabled = function(...args) 
           
@@ -442,7 +442,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setDisabled = function(...args) 
           
@@ -452,7 +452,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowModified = function(...args) 
           
@@ -462,7 +462,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMinimumSize = function(...args) 
           
@@ -472,7 +472,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMaximumSize = function(...args) 
           
@@ -482,7 +482,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMinimumWidth = function(...args) 
           
@@ -492,7 +492,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMinimumHeight = function(...args) 
           
@@ -502,7 +502,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMaximumWidth = function(...args) 
           
@@ -512,7 +512,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMaximumHeight = function(...args) 
           
@@ -522,7 +522,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setSizeIncrement = function(...args) 
           
@@ -532,7 +532,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setBaseSize = function(...args) 
           
@@ -542,7 +542,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFixedSize = function(...args) 
           
@@ -552,7 +552,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFixedWidth = function(...args) 
           
@@ -562,7 +562,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFixedHeight = function(...args) 
           
@@ -572,7 +572,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mapToGlobal = function(...args) 
           
@@ -582,7 +582,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mapFromGlobal = function(...args) 
           
@@ -592,7 +592,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mapToParent = function(...args) 
           
@@ -602,7 +602,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mapFromParent = function(...args) 
           
@@ -612,7 +612,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mapTo = function(...args) 
           
@@ -622,7 +622,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mapFrom = function(...args) 
           
@@ -632,7 +632,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.window = function(...args) 
           
@@ -642,7 +642,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.nativeParentWidget = function(...args) 
           
@@ -652,7 +652,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.topLevelWidget = function(...args) 
           
@@ -662,7 +662,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setPalette = function(...args) 
           
@@ -672,7 +672,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setBackgroundRole = function(...args) 
           
@@ -682,7 +682,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.backgroundRole = function(...args) 
           
@@ -692,7 +692,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setForegroundRole = function(...args) 
           
@@ -702,7 +702,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.foregroundRole = function(...args) 
           
@@ -712,7 +712,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFont = function(...args) 
           
@@ -722,7 +722,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.fontInfo = function(...args) 
           
@@ -732,7 +732,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setCursor = function(...args) 
           
@@ -742,7 +742,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.unsetCursor = function(...args) 
           
@@ -752,7 +752,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMouseTracking = function(...args) 
           
@@ -762,7 +762,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.hasMouseTracking = function(...args) 
           
@@ -772,7 +772,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.underMouse = function(...args) 
           
@@ -782,7 +782,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setTabletTracking = function(...args) 
           
@@ -792,7 +792,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.hasTabletTracking = function(...args) 
           
@@ -802,7 +802,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMask = function(...args) 
           
@@ -812,7 +812,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mask = function(...args) 
           
@@ -822,7 +822,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.clearMask = function(...args) 
           
@@ -832,7 +832,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.grab = function(...args) 
           
@@ -842,7 +842,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.grabGesture = function(...args) 
           
@@ -852,7 +852,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.ungrabGesture = function(...args) 
           
@@ -862,7 +862,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowTitle = function(...args) 
           
@@ -872,7 +872,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setStyleSheet = function(...args) 
           
@@ -882,7 +882,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowIcon = function(...args) 
           
@@ -892,7 +892,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowIconText = function(...args) 
           
@@ -902,7 +902,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowRole = function(...args) 
           
@@ -912,7 +912,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.windowRole = function(...args) 
           
@@ -922,7 +922,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowFilePath = function(...args) 
           
@@ -932,7 +932,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowOpacity = function(...args) 
           
@@ -942,7 +942,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isWindowModified = function(...args) 
           
@@ -952,7 +952,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setToolTip = function(...args) 
           
@@ -962,7 +962,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setToolTipDuration = function(...args) 
           
@@ -972,7 +972,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setStatusTip = function(...args) 
           
@@ -982,7 +982,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWhatsThis = function(...args) 
           
@@ -992,7 +992,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setAccessibleName = function(...args) 
           
@@ -1002,7 +1002,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setAccessibleDescription = function(...args) 
           
@@ -1012,7 +1012,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setLayoutDirection = function(...args) 
           
@@ -1022,7 +1022,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1032,7 +1032,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setLocale = function(...args) 
           
@@ -1042,7 +1042,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.unsetLocale = function(...args) 
           
@@ -1052,7 +1052,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isRightToLeft = function(...args) 
           
@@ -1062,7 +1062,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isLeftToRight = function(...args) 
           
@@ -1072,7 +1072,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.activateWindow = function(...args) 
           
@@ -1082,7 +1082,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.clearFocus = function(...args) 
           
@@ -1092,7 +1092,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFocus = function(...args) 
           
@@ -1102,7 +1102,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFocusPolicy = function(...args) 
           
@@ -1112,7 +1112,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.hasFocus = function(...args) 
           
@@ -1122,7 +1122,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFocusProxy = function(...args) 
           
@@ -1132,7 +1132,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.focusProxy = function(...args) 
           
@@ -1142,7 +1142,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1152,7 +1152,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.grabMouse = function(...args) 
           
@@ -1162,7 +1162,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.releaseMouse = function(...args) 
           
@@ -1172,7 +1172,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.grabKeyboard = function(...args) 
           
@@ -1182,7 +1182,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.releaseKeyboard = function(...args) 
           
@@ -1192,7 +1192,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.grabShortcut = function(...args) 
           
@@ -1202,7 +1202,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.releaseShortcut = function(...args) 
           
@@ -1212,7 +1212,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setShortcutEnabled = function(...args) 
           
@@ -1222,7 +1222,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1232,7 +1232,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1242,7 +1242,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.update = function(...args) 
           
@@ -1252,7 +1252,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.repaint = function(...args) 
           
@@ -1262,7 +1262,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setVisible = function(...args) 
           
@@ -1272,7 +1272,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setHidden = function(...args) 
           
@@ -1282,7 +1282,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.show = function(...args) 
           
@@ -1292,7 +1292,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.hide = function(...args) 
           
@@ -1302,7 +1302,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.showMinimized = function(...args) 
           
@@ -1312,7 +1312,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.showMaximized = function(...args) 
           
@@ -1322,7 +1322,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.showFullScreen = function(...args) 
           
@@ -1332,7 +1332,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.showNormal = function(...args) 
           
@@ -1342,7 +1342,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.close = function(...args) 
           
@@ -1352,7 +1352,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.raise = function(...args) 
           
@@ -1362,7 +1362,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.lower = function(...args) 
           
@@ -1372,7 +1372,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.stackUnder = function(...args) 
           
@@ -1382,7 +1382,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.move = function(...args) 
           
@@ -1392,7 +1392,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.resize = function(...args) 
           
@@ -1402,7 +1402,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setGeometry = function(...args) 
           
@@ -1412,7 +1412,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.saveGeometry = function(...args) 
           
@@ -1422,7 +1422,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.restoreGeometry = function(...args) 
           
@@ -1432,7 +1432,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.adjustSize = function(...args) 
           
@@ -1442,7 +1442,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isVisible = function(...args) 
           
@@ -1452,7 +1452,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isVisibleTo = function(...args) 
           
@@ -1462,7 +1462,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isHidden = function(...args) 
           
@@ -1472,7 +1472,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isMinimized = function(...args) 
           
@@ -1482,7 +1482,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isMaximized = function(...args) 
           
@@ -1492,7 +1492,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isFullScreen = function(...args) 
           
@@ -1502,7 +1502,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.windowState = function(...args) 
           
@@ -1512,7 +1512,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowState = function(...args) 
           
@@ -1522,7 +1522,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.overrideWindowState = function(...args) 
           
@@ -1532,7 +1532,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setSizePolicy = function(...args) 
           
@@ -1542,7 +1542,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.heightForWidth = function(...args) 
           
@@ -1552,7 +1552,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.hasHeightForWidth = function(...args) 
           
@@ -1562,7 +1562,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.visibleRegion = function(...args) 
           
@@ -1572,7 +1572,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setContentsMargins = function(...args) 
           
@@ -1582,7 +1582,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.contentsMargins = function(...args) 
           
@@ -1592,7 +1592,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.contentsRect = function(...args) 
           
@@ -1602,7 +1602,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.layout = function(...args) 
           
@@ -1612,7 +1612,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setLayout = function(...args) 
           
@@ -1622,7 +1622,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.updateGeometry = function(...args) 
           
@@ -1632,7 +1632,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setParent = function(...args) 
           
@@ -1642,7 +1642,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.scroll = function(...args) 
           
@@ -1652,7 +1652,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.focusWidget = function(...args) 
           
@@ -1662,7 +1662,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.nextInFocusChain = function(...args) 
           
@@ -1672,7 +1672,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.previousInFocusChain = function(...args) 
           
@@ -1682,7 +1682,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setAcceptDrops = function(...args) 
           
@@ -1692,7 +1692,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.addAction = function(...args) 
           
@@ -1702,7 +1702,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.addActions = function(...args) 
           
@@ -1712,7 +1712,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.insertActions = function(...args) 
           
@@ -1722,7 +1722,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.insertAction = function(...args) 
           
@@ -1732,7 +1732,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.removeAction = function(...args) 
           
@@ -1742,7 +1742,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.actions = function(...args) 
           
@@ -1752,7 +1752,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.parentWidget = function(...args) 
           
@@ -1762,7 +1762,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowFlags = function(...args) 
           
@@ -1772,7 +1772,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.windowFlags = function(...args) 
           
@@ -1782,7 +1782,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWindowFlag = function(...args) 
           
@@ -1792,7 +1792,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.overrideWindowFlags = function(...args) 
           
@@ -1802,7 +1802,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.windowType = function(...args) 
           
@@ -1812,7 +1812,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.childAt = function(...args) 
           
@@ -1822,7 +1822,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setAttribute = function(...args) 
           
@@ -1832,7 +1832,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.testAttribute = function(...args) 
           
@@ -1842,7 +1842,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.ensurePolished = function(...args) 
           
@@ -1852,7 +1852,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isAncestorOf = function(...args) 
           
@@ -1862,7 +1862,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setAutoFillBackground = function(...args) 
           
@@ -1872,7 +1872,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.enterEvent = function(...args) 
           
@@ -1882,7 +1882,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.leaveEvent = function(...args) 
           
@@ -1892,7 +1892,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.moveEvent = function(...args) 
           
@@ -1902,7 +1902,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.closeEvent = function(...args) 
           
@@ -1912,7 +1912,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.tabletEvent = function(...args) 
           
@@ -1922,7 +1922,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.hideEvent = function(...args) 
           
@@ -1932,7 +1932,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.nativeEvent = function(...args) 
           
@@ -1942,7 +1942,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.metric = function(...args) 
           
@@ -1952,7 +1952,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.initPainter = function(...args) 
           
@@ -1962,7 +1962,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.redirected = function(...args) 
           
@@ -1972,7 +1972,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.sharedPainter = function(...args) 
           
@@ -1982,7 +1982,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setInputMethodHints = function(...args) 
           
@@ -1992,7 +1992,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.updateMicroFocus = function(...args) 
           
@@ -2002,7 +2002,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.create = function(...args) 
           
@@ -2012,7 +2012,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.destroy = function(...args) 
           
@@ -2022,7 +2022,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.focusNextChild = function(...args) 
           
@@ -2032,7 +2032,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.focusPreviousChild = function(...args) 
           
@@ -2042,7 +2042,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setBackingStore = function(...args) 
           
@@ -2052,7 +2052,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.testAttribute_helper = function(...args) 
           
@@ -2062,7 +2062,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.takeLayout = function(...args) 
           
@@ -2072,7 +2072,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2082,7 +2082,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.qt_qwidget_data = function(...args) 
           
@@ -2092,7 +2092,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.qt_widget_private = function(...args) 
           
@@ -2102,7 +2102,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.frameStyle = function(...args) 
           
@@ -2112,7 +2112,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFrameStyle = function(...args) 
           
@@ -2122,7 +2122,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFrameShape = function(...args) 
           
@@ -2132,7 +2132,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFrameShadow = function(...args) 
           
@@ -2142,7 +2142,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setLineWidth = function(...args) 
           
@@ -2152,7 +2152,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMidLineWidth = function(...args) 
           
@@ -2162,7 +2162,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFrameRect = function(...args) 
           
@@ -2172,7 +2172,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.drawFrame = function(...args) 
           
@@ -2182,7 +2182,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.initStyleOption = function(...args) 
           
@@ -2192,7 +2192,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2202,7 +2202,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2212,7 +2212,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.verticalScrollBar = function(...args) 
           
@@ -2222,7 +2222,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2232,7 +2232,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2242,7 +2242,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2252,7 +2252,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.horizontalScrollBar = function(...args) 
           
@@ -2262,7 +2262,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2272,7 +2272,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.cornerWidget = function(...args) 
           
@@ -2282,7 +2282,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setCornerWidget = function(...args) 
           
@@ -2292,7 +2292,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.addScrollBarWidget = function(...args) 
           
@@ -2302,7 +2302,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.viewport = function(...args) 
           
@@ -2312,7 +2312,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setViewport = function(...args) 
           
@@ -2322,7 +2322,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.maximumViewportSize = function(...args) 
           
@@ -2332,7 +2332,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setupViewport = function(...args) 
           
@@ -2342,7 +2342,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2352,7 +2352,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2362,7 +2362,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.eventFilter = function(...args) 
           
@@ -2372,7 +2372,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.Q_DECLARE_PRIVATE = function(...args) 
           
@@ -2382,7 +2382,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setDocument = function(...args) 
           
@@ -2392,7 +2392,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setPlaceholderText = function(...args) 
           
@@ -2402,7 +2402,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setTextCursor = function(...args) 
           
@@ -2412,7 +2412,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTextCursor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.textCursor = function(...args) 
           
@@ -2422,7 +2422,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.textCursor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isReadOnly = function(...args) 
           
@@ -2432,7 +2432,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setReadOnly = function(...args) 
           
@@ -2442,7 +2442,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setTextInteractionFlags = function(...args) 
           
@@ -2452,7 +2452,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTextInteractionFlags(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.fontPointSize = function(...args) 
           
@@ -2462,7 +2462,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.fontFamily = function(...args) 
           
@@ -2472,7 +2472,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontFamily(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.fontWeight = function(...args) 
           
@@ -2482,7 +2482,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontWeight(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.fontUnderline = function(...args) 
           
@@ -2492,7 +2492,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.fontItalic = function(...args) 
           
@@ -2502,7 +2502,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.fontItalic(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.textColor = function(...args) 
           
@@ -2512,7 +2512,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.textColor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.textBackgroundColor = function(...args) 
           
@@ -2522,7 +2522,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.textBackgroundColor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.currentFont = function(...args) 
           
@@ -2532,7 +2532,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.currentFont(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.alignment = function(...args) 
           
@@ -2542,7 +2542,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mergeCurrentCharFormat = function(...args) 
           
@@ -2552,7 +2552,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mergeCurrentCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setCurrentCharFormat = function(...args) 
           
@@ -2562,7 +2562,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCurrentCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.currentCharFormat = function(...args) 
           
@@ -2572,7 +2572,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.currentCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setAutoFormatting = function(...args) 
           
@@ -2582,7 +2582,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAutoFormatting(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setTabChangesFocus = function(...args) 
           
@@ -2592,7 +2592,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTabChangesFocus(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setDocumentTitle = function(...args) 
           
@@ -2602,7 +2602,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setDocumentTitle(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.isUndoRedoEnabled = function(...args) 
           
@@ -2612,7 +2612,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.isUndoRedoEnabled(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setUndoRedoEnabled = function(...args) 
           
@@ -2622,7 +2622,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setUndoRedoEnabled(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setLineWrapMode = function(...args) 
           
@@ -2632,7 +2632,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLineWrapMode(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setLineWrapColumnOrWidth = function(...args) 
           
@@ -2642,7 +2642,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setLineWrapColumnOrWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.wordWrapMode = function(...args) 
           
@@ -2652,7 +2652,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.wordWrapMode(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setWordWrapMode = function(...args) 
           
@@ -2662,7 +2662,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setWordWrapMode(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.toPlainText = function(...args) 
           
@@ -2672,7 +2672,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.toPlainText(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.toHtml = function(...args) 
           
@@ -2682,7 +2682,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.toHtml(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.ensureCursorVisible = function(...args) 
           
@@ -2692,7 +2692,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.ensureCursorVisible(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.loadResource = function(...args) 
           
@@ -2702,7 +2702,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.loadResource(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.createStandardContextMenu = function(...args) 
           
@@ -2712,7 +2712,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.createStandardContextMenu(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.cursorRect = function(...args) 
           
@@ -2722,7 +2722,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.cursorRect(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.anchorAt = function(...args) 
           
@@ -2732,7 +2732,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.anchorAt(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setOverwriteMode = function(...args) 
           
@@ -2742,7 +2742,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setOverwriteMode(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setTabStopDistance = function(...args) 
           
@@ -2752,7 +2752,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTabStopDistance(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setCursorWidth = function(...args) 
           
@@ -2762,7 +2762,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCursorWidth(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setAcceptRichText = function(...args) 
           
@@ -2772,7 +2772,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAcceptRichText(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.moveCursor = function(...args) 
           
@@ -2782,7 +2782,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.moveCursor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.canPaste = function(...args) 
           
@@ -2792,7 +2792,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.canPaste(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.inputMethodQuery = function(...args) 
           
@@ -2802,7 +2802,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFontPointSize = function(...args) 
           
@@ -2812,7 +2812,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFontFamily = function(...args) 
           
@@ -2822,7 +2822,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontFamily(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFontWeight = function(...args) 
           
@@ -2832,7 +2832,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontWeight(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFontUnderline = function(...args) 
           
@@ -2842,7 +2842,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setFontItalic = function(...args) 
           
@@ -2852,7 +2852,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setFontItalic(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setTextColor = function(...args) 
           
@@ -2862,7 +2862,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTextColor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setTextBackgroundColor = function(...args) 
           
@@ -2872,7 +2872,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setTextBackgroundColor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setCurrentFont = function(...args) 
           
@@ -2882,7 +2882,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setCurrentFont(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setAlignment = function(...args) 
           
@@ -2892,7 +2892,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setPlainText = function(...args) 
           
@@ -2902,7 +2902,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setPlainText(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setHtml = function(...args) 
           
@@ -2912,7 +2912,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setHtml(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setMarkdown = function(...args) 
           
@@ -2922,7 +2922,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setMarkdown(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.setText = function(...args) 
           
@@ -2932,7 +2932,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.cut = function(...args) 
           
@@ -2942,7 +2942,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.cut(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.copy = function(...args) 
           
@@ -2952,7 +2952,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.paste = function(...args) 
           
@@ -2962,7 +2962,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.paste(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.undo = function(...args) 
           
@@ -2972,7 +2972,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.redo = function(...args) 
           
@@ -2982,7 +2982,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.clear = function(...args) 
           
@@ -2992,7 +2992,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.selectAll = function(...args) 
           
@@ -3002,7 +3002,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.insertPlainText = function(...args) 
           
@@ -3012,7 +3012,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertPlainText(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.insertHtml = function(...args) 
           
@@ -3022,7 +3022,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertHtml(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.append = function(...args) 
           
@@ -3032,7 +3032,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.append(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.scrollToAnchor = function(...args) 
           
@@ -3042,7 +3042,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.scrollToAnchor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.zoomIn = function(...args) 
           
@@ -3052,7 +3052,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.zoomIn(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.zoomOut = function(...args) 
           
@@ -3062,7 +3062,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.zoomOut(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.event = function(...args) 
           
@@ -3072,7 +3072,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.timerEvent = function(...args) 
           
@@ -3082,7 +3082,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.timerEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.keyPressEvent = function(...args) 
           
@@ -3092,7 +3092,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.keyReleaseEvent = function(...args) 
           
@@ -3102,7 +3102,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.resizeEvent = function(...args) 
           
@@ -3112,7 +3112,8 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QTextEdit.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QTextEdit.prototype.paintEvent = function(...args) 
           
@@ -3122,7 +3123,8 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QTextEdit.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QTextEdit.prototype.mousePressEvent = function(...args) 
           
@@ -3132,7 +3134,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mouseMoveEvent = function(...args) 
           
@@ -3142,7 +3144,8 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QTextEdit.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QTextEdit.prototype.mouseReleaseEvent = function(...args) 
           
@@ -3152,7 +3155,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -3162,7 +3165,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.focusNextPrevChild = function(...args) 
           
@@ -3172,7 +3175,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.contextMenuEvent = function(...args) 
           
@@ -3182,7 +3185,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.dragEnterEvent = function(...args) 
           
@@ -3192,7 +3195,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.dragLeaveEvent = function(...args) 
           
@@ -3202,7 +3205,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.dragMoveEvent = function(...args) 
           
@@ -3212,7 +3215,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.dropEvent = function(...args) 
           
@@ -3222,7 +3225,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.focusInEvent = function(...args) 
           
@@ -3232,7 +3235,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.focusOutEvent = function(...args) 
           
@@ -3242,7 +3245,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.showEvent = function(...args) 
           
@@ -3252,7 +3255,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.changeEvent = function(...args) 
           
@@ -3262,7 +3265,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.wheelEvent = function(...args) 
           
@@ -3272,7 +3275,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.createMimeDataFromSelection = function(...args) 
           
@@ -3282,7 +3285,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.createMimeDataFromSelection(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.canInsertFromMimeData = function(...args) 
           
@@ -3292,7 +3295,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.canInsertFromMimeData(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.insertFromMimeData = function(...args) 
           
@@ -3302,7 +3305,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.insertFromMimeData(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.inputMethodEvent = function(...args) 
           
@@ -3312,7 +3315,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.scrollContentsBy = function(...args) 
           
@@ -3322,7 +3325,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.scrollContentsBy(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.doSetTextCursor = function(...args) 
           
@@ -3332,7 +3335,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.doSetTextCursor(...args);
             
         };
-    
+        
         // function 
         QTextEdit.prototype.zoomInF = function(...args) 
           
@@ -3342,7 +3345,7 @@ QTextEdit.AutoAll = QTextEdit_Wrapper.AutoAll;
               return this.__PROXY__.zoomInF(...args);
             
         };
-    
+        
 
       // static functions:
       

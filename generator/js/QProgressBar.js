@@ -147,7 +147,8 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        QProgressBar.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         QProgressBar.prototype.setObjectName = function(...args) 
           
@@ -157,7 +158,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isWidgetType = function(...args) 
           
@@ -167,7 +168,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isWindowType = function(...args) 
           
@@ -177,7 +178,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.signalsBlocked = function(...args) 
           
@@ -187,7 +188,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.blockSignals = function(...args) 
           
@@ -197,7 +198,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.findChild = function(...args) 
           
@@ -207,7 +208,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.children = function(...args) 
           
@@ -217,7 +218,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.installEventFilter = function(...args) 
           
@@ -227,7 +228,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.removeEventFilter = function(...args) 
           
@@ -237,7 +238,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.dumpObjectTree = function(...args) 
           
@@ -247,7 +248,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.dumpObjectInfo = function(...args) 
           
@@ -257,7 +258,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setProperty = function(...args) 
           
@@ -267,7 +268,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.property = function(...args) 
           
@@ -277,7 +278,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.dynamicPropertyNames = function(...args) 
           
@@ -287,7 +288,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.parent = function(...args) 
           
@@ -297,7 +298,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.deleteLater = function(...args) 
           
@@ -307,7 +308,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.devType = function(...args) 
           
@@ -317,7 +318,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.createWinId = function(...args) 
           
@@ -327,7 +328,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isWindow = function(...args) 
           
@@ -337,7 +338,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isModal = function(...args) 
           
@@ -347,7 +348,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowModality = function(...args) 
           
@@ -357,7 +358,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isEnabled = function(...args) 
           
@@ -367,7 +368,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isEnabledTo = function(...args) 
           
@@ -377,7 +378,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setEnabled = function(...args) 
           
@@ -387,7 +388,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setDisabled = function(...args) 
           
@@ -397,7 +398,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowModified = function(...args) 
           
@@ -407,7 +408,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMinimumSize = function(...args) 
           
@@ -417,7 +418,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMaximumSize = function(...args) 
           
@@ -427,7 +428,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMinimumWidth = function(...args) 
           
@@ -437,7 +438,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMinimumHeight = function(...args) 
           
@@ -447,7 +448,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMaximumWidth = function(...args) 
           
@@ -457,7 +458,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMaximumHeight = function(...args) 
           
@@ -467,7 +468,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setSizeIncrement = function(...args) 
           
@@ -477,7 +478,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setBaseSize = function(...args) 
           
@@ -487,7 +488,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setFixedSize = function(...args) 
           
@@ -497,7 +498,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setFixedWidth = function(...args) 
           
@@ -507,7 +508,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setFixedHeight = function(...args) 
           
@@ -517,7 +518,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mapToGlobal = function(...args) 
           
@@ -527,7 +528,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mapFromGlobal = function(...args) 
           
@@ -537,7 +538,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mapToParent = function(...args) 
           
@@ -547,7 +548,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mapFromParent = function(...args) 
           
@@ -557,7 +558,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mapTo = function(...args) 
           
@@ -567,7 +568,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mapFrom = function(...args) 
           
@@ -577,7 +578,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.window = function(...args) 
           
@@ -587,7 +588,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.nativeParentWidget = function(...args) 
           
@@ -597,7 +598,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.topLevelWidget = function(...args) 
           
@@ -607,7 +608,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setPalette = function(...args) 
           
@@ -617,7 +618,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setBackgroundRole = function(...args) 
           
@@ -627,7 +628,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.backgroundRole = function(...args) 
           
@@ -637,7 +638,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setForegroundRole = function(...args) 
           
@@ -647,7 +648,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.foregroundRole = function(...args) 
           
@@ -657,7 +658,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setFont = function(...args) 
           
@@ -667,7 +668,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.fontInfo = function(...args) 
           
@@ -677,7 +678,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setCursor = function(...args) 
           
@@ -687,7 +688,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.unsetCursor = function(...args) 
           
@@ -697,7 +698,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMouseTracking = function(...args) 
           
@@ -707,7 +708,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.hasMouseTracking = function(...args) 
           
@@ -717,7 +718,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.underMouse = function(...args) 
           
@@ -727,7 +728,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setTabletTracking = function(...args) 
           
@@ -737,7 +738,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.hasTabletTracking = function(...args) 
           
@@ -747,7 +748,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMask = function(...args) 
           
@@ -757,7 +758,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mask = function(...args) 
           
@@ -767,7 +768,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.clearMask = function(...args) 
           
@@ -777,7 +778,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.grab = function(...args) 
           
@@ -787,7 +788,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.grabGesture = function(...args) 
           
@@ -797,7 +798,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.ungrabGesture = function(...args) 
           
@@ -807,7 +808,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowTitle = function(...args) 
           
@@ -817,7 +818,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setStyleSheet = function(...args) 
           
@@ -827,7 +828,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowIcon = function(...args) 
           
@@ -837,7 +838,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowIconText = function(...args) 
           
@@ -847,7 +848,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowRole = function(...args) 
           
@@ -857,7 +858,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.windowRole = function(...args) 
           
@@ -867,7 +868,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowFilePath = function(...args) 
           
@@ -877,7 +878,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowOpacity = function(...args) 
           
@@ -887,7 +888,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isWindowModified = function(...args) 
           
@@ -897,7 +898,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setToolTip = function(...args) 
           
@@ -907,7 +908,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setToolTipDuration = function(...args) 
           
@@ -917,7 +918,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setStatusTip = function(...args) 
           
@@ -927,7 +928,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWhatsThis = function(...args) 
           
@@ -937,7 +938,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setAccessibleName = function(...args) 
           
@@ -947,7 +948,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setAccessibleDescription = function(...args) 
           
@@ -957,7 +958,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setLayoutDirection = function(...args) 
           
@@ -967,7 +968,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.unsetLayoutDirection = function(...args) 
           
@@ -977,7 +978,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setLocale = function(...args) 
           
@@ -987,7 +988,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.unsetLocale = function(...args) 
           
@@ -997,7 +998,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isRightToLeft = function(...args) 
           
@@ -1007,7 +1008,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isLeftToRight = function(...args) 
           
@@ -1017,7 +1018,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.activateWindow = function(...args) 
           
@@ -1027,7 +1028,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.clearFocus = function(...args) 
           
@@ -1037,7 +1038,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setFocus = function(...args) 
           
@@ -1047,7 +1048,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setFocusPolicy = function(...args) 
           
@@ -1057,7 +1058,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.hasFocus = function(...args) 
           
@@ -1067,7 +1068,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setFocusProxy = function(...args) 
           
@@ -1077,7 +1078,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.focusProxy = function(...args) 
           
@@ -1087,7 +1088,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1097,7 +1098,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.grabMouse = function(...args) 
           
@@ -1107,7 +1108,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.releaseMouse = function(...args) 
           
@@ -1117,7 +1118,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.grabKeyboard = function(...args) 
           
@@ -1127,7 +1128,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.releaseKeyboard = function(...args) 
           
@@ -1137,7 +1138,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.grabShortcut = function(...args) 
           
@@ -1147,7 +1148,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.releaseShortcut = function(...args) 
           
@@ -1157,7 +1158,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setShortcutEnabled = function(...args) 
           
@@ -1167,7 +1168,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1177,7 +1178,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1187,7 +1188,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.update = function(...args) 
           
@@ -1197,7 +1198,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.repaint = function(...args) 
           
@@ -1207,7 +1208,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setVisible = function(...args) 
           
@@ -1217,7 +1218,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setHidden = function(...args) 
           
@@ -1227,7 +1228,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.show = function(...args) 
           
@@ -1237,7 +1238,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.hide = function(...args) 
           
@@ -1247,7 +1248,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.showMinimized = function(...args) 
           
@@ -1257,7 +1258,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.showMaximized = function(...args) 
           
@@ -1267,7 +1268,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.showFullScreen = function(...args) 
           
@@ -1277,7 +1278,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.showNormal = function(...args) 
           
@@ -1287,7 +1288,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.close = function(...args) 
           
@@ -1297,7 +1298,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.raise = function(...args) 
           
@@ -1307,7 +1308,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.lower = function(...args) 
           
@@ -1317,7 +1318,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.stackUnder = function(...args) 
           
@@ -1327,7 +1328,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.move = function(...args) 
           
@@ -1337,7 +1338,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.resize = function(...args) 
           
@@ -1347,7 +1348,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setGeometry = function(...args) 
           
@@ -1357,7 +1358,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.saveGeometry = function(...args) 
           
@@ -1367,7 +1368,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.restoreGeometry = function(...args) 
           
@@ -1377,7 +1378,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.adjustSize = function(...args) 
           
@@ -1387,7 +1388,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isVisible = function(...args) 
           
@@ -1397,7 +1398,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isVisibleTo = function(...args) 
           
@@ -1407,7 +1408,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isHidden = function(...args) 
           
@@ -1417,7 +1418,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isMinimized = function(...args) 
           
@@ -1427,7 +1428,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isMaximized = function(...args) 
           
@@ -1437,7 +1438,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isFullScreen = function(...args) 
           
@@ -1447,7 +1448,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.windowState = function(...args) 
           
@@ -1457,7 +1458,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowState = function(...args) 
           
@@ -1467,7 +1468,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.overrideWindowState = function(...args) 
           
@@ -1477,7 +1478,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setSizePolicy = function(...args) 
           
@@ -1487,7 +1488,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.heightForWidth = function(...args) 
           
@@ -1497,7 +1498,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.hasHeightForWidth = function(...args) 
           
@@ -1507,7 +1508,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.visibleRegion = function(...args) 
           
@@ -1517,7 +1518,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setContentsMargins = function(...args) 
           
@@ -1527,7 +1528,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.contentsMargins = function(...args) 
           
@@ -1537,7 +1538,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.contentsRect = function(...args) 
           
@@ -1547,7 +1548,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.layout = function(...args) 
           
@@ -1557,7 +1558,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setLayout = function(...args) 
           
@@ -1567,7 +1568,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.updateGeometry = function(...args) 
           
@@ -1577,7 +1578,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setParent = function(...args) 
           
@@ -1587,7 +1588,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.scroll = function(...args) 
           
@@ -1597,7 +1598,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.focusWidget = function(...args) 
           
@@ -1607,7 +1608,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.nextInFocusChain = function(...args) 
           
@@ -1617,7 +1618,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.previousInFocusChain = function(...args) 
           
@@ -1627,7 +1628,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setAcceptDrops = function(...args) 
           
@@ -1637,7 +1638,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.addAction = function(...args) 
           
@@ -1647,7 +1648,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.addActions = function(...args) 
           
@@ -1657,7 +1658,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.insertActions = function(...args) 
           
@@ -1667,7 +1668,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.insertAction = function(...args) 
           
@@ -1677,7 +1678,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.removeAction = function(...args) 
           
@@ -1687,7 +1688,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.actions = function(...args) 
           
@@ -1697,7 +1698,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.parentWidget = function(...args) 
           
@@ -1707,7 +1708,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowFlags = function(...args) 
           
@@ -1717,7 +1718,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.windowFlags = function(...args) 
           
@@ -1727,7 +1728,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setWindowFlag = function(...args) 
           
@@ -1737,7 +1738,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.overrideWindowFlags = function(...args) 
           
@@ -1747,7 +1748,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.windowType = function(...args) 
           
@@ -1757,7 +1758,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.childAt = function(...args) 
           
@@ -1767,7 +1768,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setAttribute = function(...args) 
           
@@ -1777,7 +1778,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.testAttribute = function(...args) 
           
@@ -1787,7 +1788,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.ensurePolished = function(...args) 
           
@@ -1797,7 +1798,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isAncestorOf = function(...args) 
           
@@ -1807,7 +1808,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setAutoFillBackground = function(...args) 
           
@@ -1817,7 +1818,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mousePressEvent = function(...args) 
           
@@ -1827,7 +1828,8 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        QProgressBar.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         QProgressBar.prototype.mouseReleaseEvent = function(...args) 
           
@@ -1837,7 +1839,8 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        QProgressBar.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         QProgressBar.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1847,7 +1850,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.mouseMoveEvent = function(...args) 
           
@@ -1857,7 +1860,8 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QProgressBar.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QProgressBar.prototype.wheelEvent = function(...args) 
           
@@ -1867,7 +1871,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.keyPressEvent = function(...args) 
           
@@ -1877,7 +1881,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.keyReleaseEvent = function(...args) 
           
@@ -1887,7 +1891,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.focusInEvent = function(...args) 
           
@@ -1897,7 +1901,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.focusOutEvent = function(...args) 
           
@@ -1907,7 +1911,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.enterEvent = function(...args) 
           
@@ -1917,7 +1921,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.leaveEvent = function(...args) 
           
@@ -1927,7 +1931,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.moveEvent = function(...args) 
           
@@ -1937,7 +1941,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.resizeEvent = function(...args) 
           
@@ -1947,7 +1951,8 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QProgressBar.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QProgressBar.prototype.closeEvent = function(...args) 
           
@@ -1957,7 +1962,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.tabletEvent = function(...args) 
           
@@ -1967,7 +1972,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       QProgressBar.prototype.actionEvent = function() 
         
@@ -2009,7 +2014,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.dragMoveEvent = function(...args) 
           
@@ -2019,7 +2024,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.dragLeaveEvent = function(...args) 
           
@@ -2029,7 +2034,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.dropEvent = function(...args) 
           
@@ -2039,7 +2044,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.showEvent = function(...args) 
           
@@ -2049,7 +2054,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.hideEvent = function(...args) 
           
@@ -2059,7 +2064,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.nativeEvent = function(...args) 
           
@@ -2069,7 +2074,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.changeEvent = function(...args) 
           
@@ -2079,7 +2084,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.metric = function(...args) 
           
@@ -2089,7 +2094,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.initPainter = function(...args) 
           
@@ -2099,7 +2104,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.redirected = function(...args) 
           
@@ -2109,7 +2114,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.sharedPainter = function(...args) 
           
@@ -2119,7 +2124,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.inputMethodEvent = function(...args) 
           
@@ -2129,7 +2134,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.inputMethodQuery = function(...args) 
           
@@ -2139,7 +2144,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setInputMethodHints = function(...args) 
           
@@ -2149,7 +2154,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.updateMicroFocus = function(...args) 
           
@@ -2159,7 +2164,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.create = function(...args) 
           
@@ -2169,7 +2174,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.destroy = function(...args) 
           
@@ -2179,7 +2184,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.focusNextPrevChild = function(...args) 
           
@@ -2189,7 +2194,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.focusNextChild = function(...args) 
           
@@ -2199,7 +2204,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.focusPreviousChild = function(...args) 
           
@@ -2209,7 +2214,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setBackingStore = function(...args) 
           
@@ -2219,7 +2224,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.testAttribute_helper = function(...args) 
           
@@ -2229,7 +2234,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.takeLayout = function(...args) 
           
@@ -2239,7 +2244,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2249,7 +2254,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.qt_qwidget_data = function(...args) 
           
@@ -2259,7 +2264,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.qt_widget_private = function(...args) 
           
@@ -2269,7 +2274,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.minimum = function(...args) 
           
@@ -2279,7 +2284,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.minimum(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setTextVisible = function(...args) 
           
@@ -2289,7 +2294,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setTextVisible(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.isTextVisible = function(...args) 
           
@@ -2299,7 +2304,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.isTextVisible(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setAlignment = function(...args) 
           
@@ -2309,7 +2314,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setInvertedAppearance = function(...args) 
           
@@ -2319,7 +2324,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setInvertedAppearance(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setTextDirection = function(...args) 
           
@@ -2329,7 +2334,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setTextDirection(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setFormat = function(...args) 
           
@@ -2339,7 +2344,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setFormat(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.resetFormat = function(...args) 
           
@@ -2349,7 +2354,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.resetFormat(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.reset = function(...args) 
           
@@ -2359,7 +2364,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setRange = function(...args) 
           
@@ -2369,7 +2374,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setRange(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMinimum = function(...args) 
           
@@ -2379,7 +2384,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMinimum(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setMaximum = function(...args) 
           
@@ -2389,7 +2394,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setMaximum(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setValue = function(...args) 
           
@@ -2399,7 +2404,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setValue(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.setOrientation = function(...args) 
           
@@ -2409,7 +2414,7 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         QProgressBar.prototype.event = function(...args) 
           
@@ -2419,7 +2424,8 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.eventSuper(...args);
             
         };
-    
+        QProgressBar.prototype.event.__SUPER__ = true;
+        
         // function 
         QProgressBar.prototype.paintEvent = function(...args) 
           
@@ -2429,7 +2435,8 @@ QProgressBar.BottomToTop = QProgressBar_Wrapper.BottomToTop;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QProgressBar.prototype.paintEvent.__SUPER__ = true;
+        
 
       // static functions:
       

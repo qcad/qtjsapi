@@ -105,7 +105,7 @@
               return this.__PROXY__.columnNumber(...args);
             
         };
-    
+        
         // function 
         QXmlLocator.prototype.lineNumber = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.lineNumber(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlLocator.prototype.isNullWrapper = function() {

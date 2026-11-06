@@ -202,7 +202,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.isWidgetType = function(...args) 
           
@@ -212,7 +212,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.isWindowType = function(...args) 
           
@@ -222,7 +222,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.signalsBlocked = function(...args) 
           
@@ -232,7 +232,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.blockSignals = function(...args) 
           
@@ -242,7 +242,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.findChild = function(...args) 
           
@@ -252,7 +252,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.children = function(...args) 
           
@@ -262,7 +262,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setParent = function(...args) 
           
@@ -272,7 +272,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.installEventFilter = function(...args) 
           
@@ -282,7 +282,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.removeEventFilter = function(...args) 
           
@@ -292,7 +292,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.dumpObjectTree = function(...args) 
           
@@ -302,7 +302,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.dumpObjectInfo = function(...args) 
           
@@ -312,7 +312,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setProperty = function(...args) 
           
@@ -322,7 +322,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.property = function(...args) 
           
@@ -332,7 +332,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.dynamicPropertyNames = function(...args) 
           
@@ -342,7 +342,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.parent = function(...args) 
           
@@ -352,7 +352,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.deleteLater = function(...args) 
           
@@ -362,7 +362,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.minimumHeightForWidth = function(...args) 
           
@@ -372,7 +372,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.minimumHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.spacerItem = function(...args) 
           
@@ -382,7 +382,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.spacerItem(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.alignment = function(...args) 
           
@@ -392,7 +392,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setSpacing = function(...args) 
           
@@ -402,7 +402,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setSpacing(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setContentsMargins = function(...args) 
           
@@ -412,7 +412,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.contentsMargins = function(...args) 
           
@@ -422,7 +422,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.contentsRect = function(...args) 
           
@@ -432,7 +432,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setAlignment = function(...args) 
           
@@ -442,7 +442,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setSizeConstraint = function(...args) 
           
@@ -452,7 +452,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setSizeConstraint(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.sizeConstraint = function(...args) 
           
@@ -462,7 +462,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.sizeConstraint(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setMenuBar = function(...args) 
           
@@ -472,7 +472,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setMenuBar(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.menuBar = function(...args) 
           
@@ -482,7 +482,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.menuBar(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.parentWidget = function(...args) 
           
@@ -492,7 +492,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.invalidate = function(...args) 
           
@@ -502,7 +502,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.geometry = function(...args) 
           
@@ -512,7 +512,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.activate = function(...args) 
           
@@ -522,7 +522,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.activate(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.update = function(...args) 
           
@@ -532,7 +532,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.removeWidget = function(...args) 
           
@@ -542,7 +542,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.removeWidget(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.removeItem = function(...args) 
           
@@ -552,7 +552,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.expandingDirections = function(...args) 
           
@@ -562,7 +562,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.expandingDirections(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.maximumSize = function(...args) 
           
@@ -572,7 +572,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.maximumSize(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.indexOf = function(...args) 
           
@@ -582,7 +582,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.indexOf(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.isEmpty = function(...args) 
           
@@ -592,7 +592,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.controlTypes = function(...args) 
           
@@ -602,7 +602,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.controlTypes(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.totalHeightForWidth = function(...args) 
           
@@ -612,7 +612,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.totalHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.totalMinimumSize = function(...args) 
           
@@ -622,7 +622,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.totalMinimumSize(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.totalMaximumSize = function(...args) 
           
@@ -632,7 +632,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.totalMaximumSize(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.totalSizeHint = function(...args) 
           
@@ -642,7 +642,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.totalSizeHint(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.layout = function(...args) 
           
@@ -652,7 +652,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setEnabled = function(...args) 
           
@@ -662,7 +662,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.isEnabled = function(...args) 
           
@@ -672,7 +672,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.widgetEvent = function(...args) 
           
@@ -682,7 +682,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.widgetEvent(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.childEvent = function(...args) 
           
@@ -692,7 +692,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.childEvent(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.addChildLayout = function(...args) 
           
@@ -702,7 +702,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.addChildLayout(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.addChildWidget = function(...args) 
           
@@ -712,7 +712,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.addChildWidget(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.adoptLayout = function(...args) 
           
@@ -722,7 +722,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.adoptLayout(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.alignmentRect = function(...args) 
           
@@ -732,7 +732,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.alignmentRect(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.addWidget = function(...args) 
           
@@ -742,7 +742,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.addWidget(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.insertWidget = function(...args) 
           
@@ -752,7 +752,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.insertWidget(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.currentWidget = function(...args) 
           
@@ -762,7 +762,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.currentWidget(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.widget = function(...args) 
           
@@ -772,7 +772,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.count = function(...args) 
           
@@ -782,7 +782,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setStackingMode = function(...args) 
           
@@ -792,7 +792,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setStackingMode(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.addItem = function(...args) 
           
@@ -802,7 +802,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.sizeHint = function(...args) 
           
@@ -812,7 +812,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.sizeHint(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.minimumSize = function(...args) 
           
@@ -822,7 +822,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.minimumSize(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.itemAt = function(...args) 
           
@@ -832,7 +832,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.itemAt(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.takeAt = function(...args) 
           
@@ -842,7 +842,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.takeAt(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setGeometry = function(...args) 
           
@@ -852,7 +852,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.hasHeightForWidth = function(...args) 
           
@@ -862,7 +862,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.heightForWidth = function(...args) 
           
@@ -872,7 +872,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setCurrentIndex = function(...args) 
           
@@ -882,7 +882,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QStackedLayout.prototype.setCurrentWidget = function(...args) 
           
@@ -892,7 +892,7 @@ QStackedLayout.StackAll = QStackedLayout_Wrapper.StackAll;
               return this.__PROXY__.setCurrentWidget(...args);
             
         };
-    
+        
 
       // static functions:
       

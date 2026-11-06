@@ -160,7 +160,7 @@
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QXmlInputSource.prototype.fetchData = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.fetchData(...args);
             
         };
-    
+        
         // function 
         QXmlInputSource.prototype.data = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QXmlInputSource.prototype.next = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.next(...args);
             
         };
-    
+        
         // function 
         QXmlInputSource.prototype.reset = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QXmlInputSource.prototype.fromRawData = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.fromRawData(...args);
             
         };
-    
+        
         // function 
         QXmlInputSource.prototype.init = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlInputSource.prototype.isNullWrapper = function() {

@@ -143,7 +143,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.isWidgetType = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.isWindowType = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.signalsBlocked = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.blockSignals = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.findChild = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.children = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.setParent = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.installEventFilter = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.removeEventFilter = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.dumpObjectTree = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.dumpObjectInfo = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.setProperty = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.property = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.dynamicPropertyNames = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.parent = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.deleteLater = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
       // function 
       QLayout.prototype.sizeHint = function() 
         
@@ -345,7 +345,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.heightForWidth = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.minimumHeightForWidth = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.minimumHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.widget = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.spacerItem = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.spacerItem(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.alignment = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.setSpacing = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.setSpacing(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.setContentsMargins = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.contentsMargins = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.contentsRect = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.setAlignment = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.setSizeConstraint = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.setSizeConstraint(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.sizeConstraint = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.sizeConstraint(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.setMenuBar = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.setMenuBar(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.menuBar = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.menuBar(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.parentWidget = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.invalidate = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.geometry = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.activate = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.activate(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.update = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.addWidget = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.addWidget(...args);
             
         };
-    
+        
       // function 
       QLayout.prototype.addItem = function() 
         
@@ -587,7 +587,7 @@
               return this.__PROXY__.removeWidget(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.removeItem = function(...args) 
           
@@ -597,7 +597,7 @@
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.expandingDirections = function(...args) 
           
@@ -607,7 +607,7 @@
               return this.__PROXY__.expandingDirections(...args);
             
         };
-    
+        
       // function 
       QLayout.prototype.minimumSize = function() 
         
@@ -649,7 +649,7 @@
               return this.__PROXY__.maximumSize(...args);
             
         };
-    
+        
       // function 
       QLayout.prototype.setGeometry = function() 
         
@@ -755,7 +755,7 @@
               return this.__PROXY__.indexOf(...args);
             
         };
-    
+        
       // function 
       QLayout.prototype.count = function() 
         
@@ -797,7 +797,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.controlTypes = function(...args) 
           
@@ -807,7 +807,7 @@
               return this.__PROXY__.controlTypes(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.totalHeightForWidth = function(...args) 
           
@@ -817,7 +817,7 @@
               return this.__PROXY__.totalHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.totalMinimumSize = function(...args) 
           
@@ -827,7 +827,7 @@
               return this.__PROXY__.totalMinimumSize(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.totalMaximumSize = function(...args) 
           
@@ -837,7 +837,7 @@
               return this.__PROXY__.totalMaximumSize(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.totalSizeHint = function(...args) 
           
@@ -847,7 +847,7 @@
               return this.__PROXY__.totalSizeHint(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.layout = function(...args) 
           
@@ -857,7 +857,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.setEnabled = function(...args) 
           
@@ -867,7 +867,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.isEnabled = function(...args) 
           
@@ -877,7 +877,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.closestAcceptableSize = function(...args) 
           
@@ -887,7 +887,7 @@
               return this.__PROXY__.closestAcceptableSize(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.widgetEvent = function(...args) 
           
@@ -897,7 +897,7 @@
               return this.__PROXY__.widgetEvent(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.childEvent = function(...args) 
           
@@ -907,7 +907,7 @@
               return this.__PROXY__.childEvent(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.addChildLayout = function(...args) 
           
@@ -917,7 +917,7 @@
               return this.__PROXY__.addChildLayout(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.addChildWidget = function(...args) 
           
@@ -927,7 +927,7 @@
               return this.__PROXY__.addChildWidget(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.adoptLayout = function(...args) 
           
@@ -937,7 +937,7 @@
               return this.__PROXY__.adoptLayout(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.alignmentRect = function(...args) 
           
@@ -947,7 +947,7 @@
               return this.__PROXY__.alignmentRect(...args);
             
         };
-    
+        
         // function 
         QLayout.prototype.activateRecursiveHelper = function(...args) 
           
@@ -957,7 +957,7 @@
               return this.__PROXY__.activateRecursiveHelper(...args);
             
         };
-    
+        
 
       // static functions:
       

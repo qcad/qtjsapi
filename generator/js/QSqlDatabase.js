@@ -134,7 +134,7 @@
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.close = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.isOpen = function(...args) 
           
@@ -154,7 +154,7 @@
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.isOpenError = function(...args) 
           
@@ -164,7 +164,7 @@
               return this.__PROXY__.isOpenError(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.tables = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.tables(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.record = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.record(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.lastError = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.lastError(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.isValid = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.transaction = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.transaction(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.commit = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.commit(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.rollback = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.rollback(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.setDatabaseName = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.setDatabaseName(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.setUserName = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.setUserName(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.setPassword = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.setPassword(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.setHostName = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.setHostName(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.setPort = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.setPort(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.setConnectOptions = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.setConnectOptions(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.databaseName = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.databaseName(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.userName = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.userName(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.password = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.password(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.hostName = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.hostName(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.driverName = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.driverName(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.port = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.port(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.connectOptions = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.connectOptions(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.connectionName = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.connectionName(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.addDatabase = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.addDatabase(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.database = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.database(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.removeDatabase = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.removeDatabase(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.contains = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.drivers = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.drivers(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.connectionNames = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.connectionNames(...args);
             
         };
-    
+        
         // function 
         QSqlDatabase.prototype.isDriverAvailable = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.isDriverAvailable(...args);
             
         };
-    
+        
 
       // static functions:
       

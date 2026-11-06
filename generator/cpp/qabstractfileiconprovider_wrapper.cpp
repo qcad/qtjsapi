@@ -180,6 +180,8 @@ QAbstractFileIconProvider_Wrapper::QAbstractFileIconProvider_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

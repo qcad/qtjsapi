@@ -166,7 +166,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.isWidgetType = function(...args) 
           
@@ -176,7 +176,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.isWindowType = function(...args) 
           
@@ -186,7 +186,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.signalsBlocked = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.blockSignals = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.findChild = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.children = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.setParent = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.installEventFilter = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.removeEventFilter = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.dumpObjectTree = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.dumpObjectInfo = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.setProperty = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.property = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.dynamicPropertyNames = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.parent = function(...args) 
           
@@ -316,7 +316,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.deleteLater = function(...args) 
           
@@ -326,7 +326,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.addPath = function(...args) 
           
@@ -336,7 +336,7 @@
               return this.__PROXY__.addPath(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.addPaths = function(...args) 
           
@@ -346,7 +346,7 @@
               return this.__PROXY__.addPaths(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.removePath = function(...args) 
           
@@ -356,7 +356,7 @@
               return this.__PROXY__.removePath(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.removePaths = function(...args) 
           
@@ -366,7 +366,7 @@
               return this.__PROXY__.removePaths(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.files = function(...args) 
           
@@ -376,7 +376,7 @@
               return this.__PROXY__.files(...args);
             
         };
-    
+        
         // function 
         QFileSystemWatcher.prototype.directories = function(...args) 
           
@@ -386,7 +386,7 @@
               return this.__PROXY__.directories(...args);
             
         };
-    
+        
 
       // static functions:
       

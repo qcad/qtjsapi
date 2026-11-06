@@ -204,7 +204,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.swap = function(...args) 
           
@@ -214,7 +214,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.equals = function(...args) 
           
@@ -224,7 +224,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.operator_not_assign = function(...args) 
           
@@ -234,7 +234,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.setType = function(...args) 
           
@@ -244,7 +244,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.setType(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.type = function(...args) 
           
@@ -254,7 +254,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.setCapabilities = function(...args) 
           
@@ -264,7 +264,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.setCapabilities(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.capabilities = function(...args) 
           
@@ -274,7 +274,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.capabilities(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.isCachingProxy = function(...args) 
           
@@ -284,7 +284,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.isCachingProxy(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.isTransparentProxy = function(...args) 
           
@@ -294,7 +294,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.isTransparentProxy(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.setUser = function(...args) 
           
@@ -304,7 +304,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.setUser(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.user = function(...args) 
           
@@ -314,7 +314,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.user(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.setPassword = function(...args) 
           
@@ -324,7 +324,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.setPassword(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.password = function(...args) 
           
@@ -334,7 +334,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.password(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.setHostName = function(...args) 
           
@@ -344,7 +344,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.setHostName(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.hostName = function(...args) 
           
@@ -354,7 +354,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.hostName(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.setPort = function(...args) 
           
@@ -364,7 +364,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.setPort(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.port = function(...args) 
           
@@ -374,7 +374,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.port(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.setApplicationProxy = function(...args) 
           
@@ -384,7 +384,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.setApplicationProxy(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.applicationProxy = function(...args) 
           
@@ -394,7 +394,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.applicationProxy(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.hasRawHeader = function(...args) 
           
@@ -404,7 +404,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.hasRawHeader(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.rawHeaderList = function(...args) 
           
@@ -414,7 +414,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.rawHeaderList(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.rawHeader = function(...args) 
           
@@ -424,7 +424,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.rawHeader(...args);
             
         };
-    
+        
         // function 
         QNetworkProxy.prototype.setRawHeader = function(...args) 
           
@@ -434,7 +434,7 @@ QNetworkProxy.SctpListeningCapability = QNetworkProxy_Wrapper.SctpListeningCapab
               return this.__PROXY__.setRawHeader(...args);
             
         };
-    
+        
 
       // static functions:
       

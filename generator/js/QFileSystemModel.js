@@ -159,7 +159,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.isWidgetType = function(...args) 
           
@@ -169,7 +169,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.isWindowType = function(...args) 
           
@@ -179,7 +179,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.signalsBlocked = function(...args) 
           
@@ -189,7 +189,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.blockSignals = function(...args) 
           
@@ -199,7 +199,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.findChild = function(...args) 
           
@@ -209,7 +209,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.children = function(...args) 
           
@@ -219,7 +219,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setParent = function(...args) 
           
@@ -229,7 +229,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.installEventFilter = function(...args) 
           
@@ -239,7 +239,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.removeEventFilter = function(...args) 
           
@@ -249,7 +249,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.dumpObjectTree = function(...args) 
           
@@ -259,7 +259,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.dumpObjectInfo = function(...args) 
           
@@ -269,7 +269,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setProperty = function(...args) 
           
@@ -279,7 +279,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.property = function(...args) 
           
@@ -289,7 +289,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.dynamicPropertyNames = function(...args) 
           
@@ -299,7 +299,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.deleteLater = function(...args) 
           
@@ -309,7 +309,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.hasIndex = function(...args) 
           
@@ -319,7 +319,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.hasIndex(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setHeaderData = function(...args) 
           
@@ -329,7 +329,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setHeaderData(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.clearItemData = function(...args) 
           
@@ -339,7 +339,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.clearItemData(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.supportedDragActions = function(...args) 
           
@@ -349,7 +349,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.supportedDragActions(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.insertRows = function(...args) 
           
@@ -359,7 +359,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.insertRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.insertColumns = function(...args) 
           
@@ -369,7 +369,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.insertColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.removeRows = function(...args) 
           
@@ -379,7 +379,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.removeRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.removeColumns = function(...args) 
           
@@ -389,7 +389,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.removeColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.moveRows = function(...args) 
           
@@ -399,7 +399,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.moveRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.moveColumns = function(...args) 
           
@@ -409,7 +409,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.moveColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.insertRow = function(...args) 
           
@@ -419,7 +419,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.insertRow(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.insertColumn = function(...args) 
           
@@ -429,7 +429,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.insertColumn(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.removeRow = function(...args) 
           
@@ -439,7 +439,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.removeRow(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.removeColumn = function(...args) 
           
@@ -449,7 +449,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.removeColumn(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.moveRow = function(...args) 
           
@@ -459,7 +459,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.moveRow(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.moveColumn = function(...args) 
           
@@ -469,7 +469,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.moveColumn(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.buddy = function(...args) 
           
@@ -479,7 +479,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.buddy(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.span = function(...args) 
           
@@ -489,7 +489,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.span(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.roleNames = function(...args) 
           
@@ -499,7 +499,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.roleNames(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.submit = function(...args) 
           
@@ -509,7 +509,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.submit(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.revert = function(...args) 
           
@@ -519,7 +519,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.revert(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.resetInternalData = function(...args) 
           
@@ -529,7 +529,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.resetInternalData(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.createIndex = function(...args) 
           
@@ -539,7 +539,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.createIndex(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.encodeData = function(...args) 
           
@@ -549,7 +549,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.encodeData(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.decodeData = function(...args) 
           
@@ -559,7 +559,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.decodeData(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.beginInsertRows = function(...args) 
           
@@ -569,7 +569,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.beginInsertRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.endInsertRows = function(...args) 
           
@@ -579,7 +579,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.endInsertRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.beginRemoveRows = function(...args) 
           
@@ -589,7 +589,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.beginRemoveRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.endRemoveRows = function(...args) 
           
@@ -599,7 +599,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.endRemoveRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.beginMoveRows = function(...args) 
           
@@ -609,7 +609,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.beginMoveRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.endMoveRows = function(...args) 
           
@@ -619,7 +619,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.endMoveRows(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.beginInsertColumns = function(...args) 
           
@@ -629,7 +629,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.beginInsertColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.endInsertColumns = function(...args) 
           
@@ -639,7 +639,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.endInsertColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.beginRemoveColumns = function(...args) 
           
@@ -649,7 +649,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.beginRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.endRemoveColumns = function(...args) 
           
@@ -659,7 +659,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.endRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.beginMoveColumns = function(...args) 
           
@@ -669,7 +669,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.beginMoveColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.endMoveColumns = function(...args) 
           
@@ -679,7 +679,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.endMoveColumns(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.beginResetModel = function(...args) 
           
@@ -689,7 +689,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.beginResetModel(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.endResetModel = function(...args) 
           
@@ -699,7 +699,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.endResetModel(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.changePersistentIndex = function(...args) 
           
@@ -709,7 +709,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.changePersistentIndex(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.changePersistentIndexList = function(...args) 
           
@@ -719,7 +719,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.changePersistentIndexList(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.persistentIndexList = function(...args) 
           
@@ -729,7 +729,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.persistentIndexList(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.rootPathChanged = function(...args) 
           
@@ -739,7 +739,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.rootPathChanged(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.fileRenamed = function(...args) 
           
@@ -749,7 +749,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.fileRenamed(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.directoryLoaded = function(...args) 
           
@@ -759,7 +759,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.directoryLoaded(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.index = function(...args) 
           
@@ -769,7 +769,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.index(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.parent = function(...args) 
           
@@ -779,7 +779,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.sibling = function(...args) 
           
@@ -789,7 +789,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.sibling(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.hasChildren = function(...args) 
           
@@ -799,7 +799,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.hasChildren(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.canFetchMore = function(...args) 
           
@@ -809,7 +809,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.canFetchMore(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.fetchMore = function(...args) 
           
@@ -819,7 +819,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.fetchMore(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.rowCount = function(...args) 
           
@@ -829,7 +829,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.rowCount(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.columnCount = function(...args) 
           
@@ -839,7 +839,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.columnCount(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.myComputer = function(...args) 
           
@@ -849,7 +849,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.myComputer(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.data = function(...args) 
           
@@ -859,7 +859,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setData = function(...args) 
           
@@ -869,7 +869,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.headerData = function(...args) 
           
@@ -879,7 +879,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.headerData(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.flags = function(...args) 
           
@@ -889,7 +889,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.sort = function(...args) 
           
@@ -899,7 +899,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.sort(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.mimeTypes = function(...args) 
           
@@ -909,7 +909,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.mimeTypes(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.dropMimeData = function(...args) 
           
@@ -919,7 +919,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.dropMimeData(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.supportedDropActions = function(...args) 
           
@@ -929,7 +929,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.supportedDropActions(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setRootPath = function(...args) 
           
@@ -939,7 +939,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setRootPath(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.rootPath = function(...args) 
           
@@ -949,7 +949,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.rootPath(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.rootDirectory = function(...args) 
           
@@ -959,7 +959,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.rootDirectory(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setIconProvider = function(...args) 
           
@@ -969,7 +969,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setIconProvider(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.iconProvider = function(...args) 
           
@@ -979,7 +979,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.iconProvider(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setFilter = function(...args) 
           
@@ -989,7 +989,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setFilter(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.filter = function(...args) 
           
@@ -999,7 +999,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.filter(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setResolveSymlinks = function(...args) 
           
@@ -1009,7 +1009,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setResolveSymlinks(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.resolveSymlinks = function(...args) 
           
@@ -1019,7 +1019,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.resolveSymlinks(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setReadOnly = function(...args) 
           
@@ -1029,7 +1029,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.isReadOnly = function(...args) 
           
@@ -1039,7 +1039,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setNameFilterDisables = function(...args) 
           
@@ -1049,7 +1049,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setNameFilterDisables(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setNameFilters = function(...args) 
           
@@ -1059,7 +1059,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setNameFilters(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.nameFilters = function(...args) 
           
@@ -1069,7 +1069,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.nameFilters(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setOption = function(...args) 
           
@@ -1079,7 +1079,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.testOption = function(...args) 
           
@@ -1089,7 +1089,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.testOption(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.setOptions = function(...args) 
           
@@ -1099,7 +1099,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.setOptions(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.filePath = function(...args) 
           
@@ -1109,7 +1109,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.filePath(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.isDir = function(...args) 
           
@@ -1119,7 +1119,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.isDir(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.size = function(...args) 
           
@@ -1129,7 +1129,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.type = function(...args) 
           
@@ -1139,7 +1139,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.lastModified = function(...args) 
           
@@ -1149,7 +1149,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.lastModified(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.mkdir = function(...args) 
           
@@ -1159,7 +1159,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.mkdir(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.rmdir = function(...args) 
           
@@ -1169,7 +1169,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.rmdir(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.fileName = function(...args) 
           
@@ -1179,7 +1179,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.fileIcon = function(...args) 
           
@@ -1189,7 +1189,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.fileIcon(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.permissions = function(...args) 
           
@@ -1199,7 +1199,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.permissions(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.fileInfo = function(...args) 
           
@@ -1209,7 +1209,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.fileInfo(...args);
             
         };
-    
+        
         // function 
         QFileSystemModel.prototype.remove = function(...args) 
           
@@ -1219,7 +1219,7 @@ QFileSystemModel.DontUseCustomDirectoryIcons = QFileSystemModel_Wrapper.DontUseC
               return this.__PROXY__.remove(...args);
             
         };
-    
+        
 
       // static functions:
       

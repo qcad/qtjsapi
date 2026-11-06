@@ -140,7 +140,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.clear = function(...args) 
           
@@ -150,7 +150,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.reserve = function(...args) 
           
@@ -160,7 +160,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.reserve(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.capacity = function(...args) 
           
@@ -170,7 +170,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.capacity(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.closeSubpath = function(...args) 
           
@@ -180,7 +180,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.closeSubpath(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.moveTo = function(...args) 
           
@@ -190,7 +190,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.moveTo(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.lineTo = function(...args) 
           
@@ -200,7 +200,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.lineTo(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.arcMoveTo = function(...args) 
           
@@ -210,7 +210,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.arcMoveTo(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.arcTo = function(...args) 
           
@@ -220,7 +220,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.arcTo(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.cubicTo = function(...args) 
           
@@ -230,7 +230,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.cubicTo(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.quadTo = function(...args) 
           
@@ -240,7 +240,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.quadTo(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.currentPosition = function(...args) 
           
@@ -250,7 +250,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.currentPosition(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.addRect = function(...args) 
           
@@ -260,7 +260,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addRect(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.addEllipse = function(...args) 
           
@@ -270,7 +270,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addEllipse(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.addPolygon = function(...args) 
           
@@ -280,7 +280,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addPolygon(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.addText = function(...args) 
           
@@ -290,7 +290,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addText(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.addPath = function(...args) 
           
@@ -300,7 +300,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addPath(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.addRegion = function(...args) 
           
@@ -310,7 +310,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addRegion(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.addRoundedRect = function(...args) 
           
@@ -320,7 +320,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.addRoundedRect(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.connectPath = function(...args) 
           
@@ -330,7 +330,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.connectPath(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.contains = function(...args) 
           
@@ -340,7 +340,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.intersects = function(...args) 
           
@@ -350,7 +350,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.intersects(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.translate = function(...args) 
           
@@ -360,7 +360,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.translated = function(...args) 
           
@@ -370,7 +370,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.boundingRect = function(...args) 
           
@@ -380,7 +380,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.controlPointRect = function(...args) 
           
@@ -390,7 +390,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.controlPointRect(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.fillRule = function(...args) 
           
@@ -400,7 +400,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.fillRule(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.setFillRule = function(...args) 
           
@@ -410,7 +410,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setFillRule(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.isEmpty = function(...args) 
           
@@ -420,7 +420,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.toReversed = function(...args) 
           
@@ -430,7 +430,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.toReversed(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.toSubpathPolygons = function(...args) 
           
@@ -440,7 +440,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.toSubpathPolygons(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.toFillPolygons = function(...args) 
           
@@ -450,7 +450,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.toFillPolygons(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.toFillPolygon = function(...args) 
           
@@ -460,7 +460,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.toFillPolygon(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.elementCount = function(...args) 
           
@@ -470,7 +470,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.elementCount(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.setElementPositionAt = function(...args) 
           
@@ -480,7 +480,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setElementPositionAt(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.length = function(...args) 
           
@@ -490,7 +490,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.percentAtLength = function(...args) 
           
@@ -500,7 +500,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.percentAtLength(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.pointAtPercent = function(...args) 
           
@@ -510,7 +510,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.pointAtPercent(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.angleAtPercent = function(...args) 
           
@@ -520,7 +520,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.angleAtPercent(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.slopeAtPercent = function(...args) 
           
@@ -530,7 +530,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.slopeAtPercent(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.united = function(...args) 
           
@@ -540,7 +540,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.united(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.intersected = function(...args) 
           
@@ -550,7 +550,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.intersected(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.subtracted = function(...args) 
           
@@ -560,7 +560,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.subtracted(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.simplified = function(...args) 
           
@@ -570,7 +570,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.simplified(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.ensureData = function(...args) 
           
@@ -580,7 +580,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.ensureData(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.ensureData_helper = function(...args) 
           
@@ -590,7 +590,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.ensureData_helper(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.detach = function(...args) 
           
@@ -600,7 +600,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.setDirty = function(...args) 
           
@@ -610,7 +610,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.setDirty(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.computeBoundingRect = function(...args) 
           
@@ -620,7 +620,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.computeBoundingRect(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.computeControlPointRect = function(...args) 
           
@@ -630,7 +630,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.computeControlPointRect(...args);
             
         };
-    
+        
         // function 
         QPainterPath.prototype.d_func = function(...args) 
           
@@ -640,7 +640,7 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
               return this.__PROXY__.d_func(...args);
             
         };
-    
+        
 
       // static functions:
       QPainterPath.prototype.isNullWrapper = function() {

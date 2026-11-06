@@ -186,7 +186,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.index = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.index(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.length = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.count = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.localName = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.localName(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.qName = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.qName(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.uri = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.uri(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.type = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.value = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.value(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.clear = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QXmlAttributes.prototype.append = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.append(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlAttributes.prototype.isNullWrapper = function() {

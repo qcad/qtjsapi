@@ -1878,6 +1878,8 @@ QGraphicsColorizeEffect_Wrapper::QGraphicsColorizeEffect_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -2680,6 +2682,8 @@ QGraphicsBlurEffect_Wrapper::QGraphicsBlurEffect_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -4668,6 +4672,8 @@ QGraphicsDropShadowEffect_Wrapper::QGraphicsDropShadowEffect_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -5907,6 +5913,8 @@ QGraphicsOpacityEffect_Wrapper::QGraphicsOpacityEffect_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

@@ -985,7 +985,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.language = function(...args) 
           
@@ -995,7 +995,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.language(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.script = function(...args) 
           
@@ -1005,7 +1005,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.script(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.territory = function(...args) 
           
@@ -1015,7 +1015,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.territory(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.country = function(...args) 
           
@@ -1025,7 +1025,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.country(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.name = function(...args) 
           
@@ -1035,7 +1035,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.bcp47Name = function(...args) 
           
@@ -1045,7 +1045,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.bcp47Name(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.nativeLanguageName = function(...args) 
           
@@ -1055,7 +1055,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.nativeLanguageName(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.nativeTerritoryName = function(...args) 
           
@@ -1065,7 +1065,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.nativeTerritoryName(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.nativeCountryName = function(...args) 
           
@@ -1075,7 +1075,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.nativeCountryName(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toShort = function(...args) 
           
@@ -1085,7 +1085,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toShort(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toUShort = function(...args) 
           
@@ -1095,7 +1095,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toUShort(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toInt = function(...args) 
           
@@ -1105,7 +1105,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toInt(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toUInt = function(...args) 
           
@@ -1115,7 +1115,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toUInt(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toLong = function(...args) 
           
@@ -1125,7 +1125,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toLong(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toULong = function(...args) 
           
@@ -1135,7 +1135,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toULong(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toLongLong = function(...args) 
           
@@ -1145,7 +1145,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toLongLong(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toULongLong = function(...args) 
           
@@ -1155,7 +1155,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toULongLong(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toFloat = function(...args) 
           
@@ -1165,7 +1165,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toFloat(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toDouble = function(...args) 
           
@@ -1175,7 +1175,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toDouble(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toString = function(...args) 
           
@@ -1185,7 +1185,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toString(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.dateFormat = function(...args) 
           
@@ -1195,7 +1195,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.dateFormat(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.timeFormat = function(...args) 
           
@@ -1205,7 +1205,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.timeFormat(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.dateTimeFormat = function(...args) 
           
@@ -1215,7 +1215,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.dateTimeFormat(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toDate = function(...args) 
           
@@ -1225,7 +1225,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toDate(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toTime = function(...args) 
           
@@ -1235,7 +1235,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toTime(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toDateTime = function(...args) 
           
@@ -1245,7 +1245,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toDateTime(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.decimalPoint = function(...args) 
           
@@ -1255,7 +1255,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.decimalPoint(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.groupSeparator = function(...args) 
           
@@ -1265,7 +1265,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.groupSeparator(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.percent = function(...args) 
           
@@ -1275,7 +1275,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.percent(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.zeroDigit = function(...args) 
           
@@ -1285,7 +1285,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.zeroDigit(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.negativeSign = function(...args) 
           
@@ -1295,7 +1295,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.negativeSign(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.positiveSign = function(...args) 
           
@@ -1305,7 +1305,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.positiveSign(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.exponential = function(...args) 
           
@@ -1315,7 +1315,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.exponential(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.monthName = function(...args) 
           
@@ -1325,7 +1325,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.monthName(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.standaloneMonthName = function(...args) 
           
@@ -1335,7 +1335,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.standaloneMonthName(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.dayName = function(...args) 
           
@@ -1345,7 +1345,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.dayName(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.standaloneDayName = function(...args) 
           
@@ -1355,7 +1355,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.standaloneDayName(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.firstDayOfWeek = function(...args) 
           
@@ -1365,7 +1365,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.firstDayOfWeek(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.weekdays = function(...args) 
           
@@ -1375,7 +1375,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.weekdays(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.amText = function(...args) 
           
@@ -1385,7 +1385,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.amText(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.pmText = function(...args) 
           
@@ -1395,7 +1395,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.pmText(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.measurementSystem = function(...args) 
           
@@ -1405,7 +1405,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.measurementSystem(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.collation = function(...args) 
           
@@ -1415,7 +1415,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.collation(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.textDirection = function(...args) 
           
@@ -1425,7 +1425,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.textDirection(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toUpper = function(...args) 
           
@@ -1435,7 +1435,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toUpper(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toLower = function(...args) 
           
@@ -1445,7 +1445,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toLower(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.currencySymbol = function(...args) 
           
@@ -1455,7 +1455,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.currencySymbol(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.toCurrencyString = function(...args) 
           
@@ -1465,7 +1465,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.toCurrencyString(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.formattedDataSize = function(...args) 
           
@@ -1475,7 +1475,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.formattedDataSize(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.uiLanguages = function(...args) 
           
@@ -1485,7 +1485,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.uiLanguages(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.languageToCode = function(...args) 
           
@@ -1495,7 +1495,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.languageToCode(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.territoryToCode = function(...args) 
           
@@ -1505,7 +1505,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.territoryToCode(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.countryToCode = function(...args) 
           
@@ -1515,7 +1515,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.countryToCode(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.scriptToCode = function(...args) 
           
@@ -1525,7 +1525,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.scriptToCode(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.languageToString = function(...args) 
           
@@ -1535,7 +1535,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.languageToString(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.territoryToString = function(...args) 
           
@@ -1545,7 +1545,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.territoryToString(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.countryToString = function(...args) 
           
@@ -1555,7 +1555,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.countryToString(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.scriptToString = function(...args) 
           
@@ -1565,7 +1565,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.scriptToString(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.setDefault = function(...args) 
           
@@ -1575,7 +1575,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.setDefault(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.c = function(...args) 
           
@@ -1585,7 +1585,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.c(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.system = function(...args) 
           
@@ -1595,7 +1595,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.system(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.matchingLocales = function(...args) 
           
@@ -1605,7 +1605,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.matchingLocales(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.countriesForLanguage = function(...args) 
           
@@ -1615,7 +1615,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.countriesForLanguage(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.setNumberOptions = function(...args) 
           
@@ -1625,7 +1625,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.setNumberOptions(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.numberOptions = function(...args) 
           
@@ -1635,7 +1635,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.numberOptions(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.quoteString = function(...args) 
           
@@ -1645,7 +1645,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.quoteString(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.createSeparatedList = function(...args) 
           
@@ -1655,7 +1655,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.createSeparatedList(...args);
             
         };
-    
+        
         // function 
         QLocale.prototype.equals = function(...args) 
           
@@ -1665,7 +1665,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
 
       // static functions:
       

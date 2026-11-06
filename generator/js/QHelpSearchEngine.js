@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.queryWidget = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.queryWidget(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.resultWidget = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.resultWidget(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.searchResultCount = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.searchResultCount(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.searchResults = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.searchResults(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.searchInput = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.searchInput(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.reindexDocumentation = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.reindexDocumentation(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.cancelIndexing = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.cancelIndexing(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.search = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.search(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.cancelSearching = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.cancelSearching(...args);
             
         };
-    
+        
         // function 
         QHelpSearchEngine.prototype.scheduleIndexDocumentation = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.scheduleIndexDocumentation(...args);
             
         };
-    
+        
 
       // static functions:
       

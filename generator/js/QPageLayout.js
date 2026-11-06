@@ -203,7 +203,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.isEquivalentTo = function(...args) 
           
@@ -213,7 +213,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.isEquivalentTo(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.isValid = function(...args) 
           
@@ -223,7 +223,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setMode = function(...args) 
           
@@ -233,7 +233,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setMode(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.mode = function(...args) 
           
@@ -243,7 +243,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.mode(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setPageSize = function(...args) 
           
@@ -253,7 +253,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setPageSize(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.pageSize = function(...args) 
           
@@ -263,7 +263,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.pageSize(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setOrientation = function(...args) 
           
@@ -273,7 +273,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.orientation = function(...args) 
           
@@ -283,7 +283,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.orientation(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setUnits = function(...args) 
           
@@ -293,7 +293,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setUnits(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.units = function(...args) 
           
@@ -303,7 +303,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.units(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setMargins = function(...args) 
           
@@ -313,7 +313,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setMargins(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setLeftMargin = function(...args) 
           
@@ -323,7 +323,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setLeftMargin(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setRightMargin = function(...args) 
           
@@ -333,7 +333,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setRightMargin(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setTopMargin = function(...args) 
           
@@ -343,7 +343,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setTopMargin(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setBottomMargin = function(...args) 
           
@@ -353,7 +353,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setBottomMargin(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.margins = function(...args) 
           
@@ -363,7 +363,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.margins(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.marginsPoints = function(...args) 
           
@@ -373,7 +373,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.marginsPoints(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.marginsPixels = function(...args) 
           
@@ -383,7 +383,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.marginsPixels(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.setMinimumMargins = function(...args) 
           
@@ -393,7 +393,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.setMinimumMargins(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.minimumMargins = function(...args) 
           
@@ -403,7 +403,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.minimumMargins(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.maximumMargins = function(...args) 
           
@@ -413,7 +413,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.maximumMargins(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.fullRect = function(...args) 
           
@@ -423,7 +423,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.fullRect(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.fullRectPoints = function(...args) 
           
@@ -433,7 +433,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.fullRectPoints(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.fullRectPixels = function(...args) 
           
@@ -443,7 +443,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.fullRectPixels(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.paintRect = function(...args) 
           
@@ -453,7 +453,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.paintRect(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.paintRectPoints = function(...args) 
           
@@ -463,7 +463,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.paintRectPoints(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.paintRectPixels = function(...args) 
           
@@ -473,7 +473,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.paintRectPixels(...args);
             
         };
-    
+        
         // function 
         QPageLayout.prototype.equals = function(...args) 
           
@@ -483,7 +483,7 @@ QPageLayout.FullPageMode = QPageLayout_Wrapper.FullPageMode;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
 
       // static functions:
       QPageLayout.prototype.isNullWrapper = function() {

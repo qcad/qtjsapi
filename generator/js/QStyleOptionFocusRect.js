@@ -192,7 +192,7 @@ QStyleOptionFocusRect.SO_ComplexCustomBase = QStyleOptionFocusRect_Wrapper.SO_Co
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionFocusRect.prototype.operator_assign = function(...args) 
           
@@ -202,7 +202,7 @@ QStyleOptionFocusRect.SO_ComplexCustomBase = QStyleOptionFocusRect_Wrapper.SO_Co
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionFocusRect.prototype.isNullWrapper = function() {

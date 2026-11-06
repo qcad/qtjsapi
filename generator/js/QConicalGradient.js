@@ -382,7 +382,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.setSpread = function(...args) 
           
@@ -392,7 +392,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.setSpread(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.spread = function(...args) 
           
@@ -402,7 +402,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.spread(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.setColorAt = function(...args) 
           
@@ -412,7 +412,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.setColorAt(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.coordinateMode = function(...args) 
           
@@ -422,7 +422,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.coordinateMode(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.setCoordinateMode = function(...args) 
           
@@ -432,7 +432,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.setCoordinateMode(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.interpolationMode = function(...args) 
           
@@ -442,7 +442,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.interpolationMode(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.setInterpolationMode = function(...args) 
           
@@ -452,7 +452,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.setInterpolationMode(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.center = function(...args) 
           
@@ -462,7 +462,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.center(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.setCenter = function(...args) 
           
@@ -472,7 +472,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.angle = function(...args) 
           
@@ -482,7 +482,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.angle(...args);
             
         };
-    
+        
         // function 
         QConicalGradient.prototype.setAngle = function(...args) 
           
@@ -492,7 +492,7 @@ QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
               return this.__PROXY__.setAngle(...args);
             
         };
-    
+        
 
       // static functions:
       QConicalGradient.prototype.isNullWrapper = function() {

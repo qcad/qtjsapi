@@ -109,7 +109,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.isWidgetType = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.isWindowType = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.signalsBlocked = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.blockSignals = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.findChild = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.children = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.setParent = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.installEventFilter = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.removeEventFilter = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.dumpObjectTree = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.dumpObjectInfo = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.setProperty = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.property = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.dynamicPropertyNames = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.parent = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.deleteLater = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.name = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.manufacturer = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.manufacturer(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.model = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.serialNumber = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.serialNumber(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.depth = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.size = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.geometry = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.physicalSize = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.physicalSize(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.physicalDotsPerInchX = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.physicalDotsPerInchX(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.physicalDotsPerInchY = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.physicalDotsPerInchY(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.physicalDotsPerInch = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.physicalDotsPerInch(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.logicalDotsPerInchX = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.logicalDotsPerInchX(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.logicalDotsPerInchY = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.logicalDotsPerInchY(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.logicalDotsPerInch = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.logicalDotsPerInch(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.devicePixelRatio = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.availableSize = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.availableSize(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.availableGeometry = function(...args) 
           
@@ -439,7 +439,7 @@
               return this.__PROXY__.availableGeometry(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.virtualSiblings = function(...args) 
           
@@ -449,7 +449,7 @@
               return this.__PROXY__.virtualSiblings(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.virtualSiblingAt = function(...args) 
           
@@ -459,7 +459,7 @@
               return this.__PROXY__.virtualSiblingAt(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.virtualSize = function(...args) 
           
@@ -469,7 +469,7 @@
               return this.__PROXY__.virtualSize(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.virtualGeometry = function(...args) 
           
@@ -479,7 +479,7 @@
               return this.__PROXY__.virtualGeometry(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.availableVirtualSize = function(...args) 
           
@@ -489,7 +489,7 @@
               return this.__PROXY__.availableVirtualSize(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.availableVirtualGeometry = function(...args) 
           
@@ -499,7 +499,7 @@
               return this.__PROXY__.availableVirtualGeometry(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.primaryOrientation = function(...args) 
           
@@ -509,7 +509,7 @@
               return this.__PROXY__.primaryOrientation(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.orientation = function(...args) 
           
@@ -519,7 +519,7 @@
               return this.__PROXY__.orientation(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.nativeOrientation = function(...args) 
           
@@ -529,7 +529,7 @@
               return this.__PROXY__.nativeOrientation(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.angleBetween = function(...args) 
           
@@ -539,7 +539,7 @@
               return this.__PROXY__.angleBetween(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.transformBetween = function(...args) 
           
@@ -549,7 +549,7 @@
               return this.__PROXY__.transformBetween(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.mapBetween = function(...args) 
           
@@ -559,7 +559,7 @@
               return this.__PROXY__.mapBetween(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.isPortrait = function(...args) 
           
@@ -569,7 +569,7 @@
               return this.__PROXY__.isPortrait(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.isLandscape = function(...args) 
           
@@ -579,7 +579,7 @@
               return this.__PROXY__.isLandscape(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.grabWindow = function(...args) 
           
@@ -589,7 +589,7 @@
               return this.__PROXY__.grabWindow(...args);
             
         };
-    
+        
         // function 
         QScreen.prototype.refreshRate = function(...args) 
           
@@ -599,7 +599,7 @@
               return this.__PROXY__.refreshRate(...args);
             
         };
-    
+        
 
       // static functions:
       

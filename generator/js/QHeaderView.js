@@ -227,7 +227,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isWidgetType = function(...args) 
           
@@ -237,7 +237,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isWindowType = function(...args) 
           
@@ -247,7 +247,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.signalsBlocked = function(...args) 
           
@@ -257,7 +257,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.blockSignals = function(...args) 
           
@@ -267,7 +267,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.findChild = function(...args) 
           
@@ -277,7 +277,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.children = function(...args) 
           
@@ -287,7 +287,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.installEventFilter = function(...args) 
           
@@ -297,7 +297,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.removeEventFilter = function(...args) 
           
@@ -307,7 +307,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.dumpObjectTree = function(...args) 
           
@@ -317,7 +317,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.dumpObjectInfo = function(...args) 
           
@@ -327,7 +327,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setProperty = function(...args) 
           
@@ -337,7 +337,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.property = function(...args) 
           
@@ -347,7 +347,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.dynamicPropertyNames = function(...args) 
           
@@ -357,7 +357,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.parent = function(...args) 
           
@@ -367,7 +367,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.deleteLater = function(...args) 
           
@@ -377,7 +377,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.paintingActive = function(...args) 
           
@@ -387,7 +387,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.paintEngine = function(...args) 
           
@@ -397,7 +397,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.widthMM = function(...args) 
           
@@ -407,7 +407,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.heightMM = function(...args) 
           
@@ -417,7 +417,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.logicalDpiX = function(...args) 
           
@@ -427,7 +427,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.logicalDpiY = function(...args) 
           
@@ -437,7 +437,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.physicalDpiX = function(...args) 
           
@@ -447,7 +447,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.physicalDpiY = function(...args) 
           
@@ -457,7 +457,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.devicePixelRatio = function(...args) 
           
@@ -467,7 +467,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.devicePixelRatioF = function(...args) 
           
@@ -477,7 +477,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.colorCount = function(...args) 
           
@@ -487,7 +487,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.depth = function(...args) 
           
@@ -497,7 +497,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.qt_paint_device_metric = function(...args) 
           
@@ -507,7 +507,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.devType = function(...args) 
           
@@ -517,7 +517,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.createWinId = function(...args) 
           
@@ -527,7 +527,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isWindow = function(...args) 
           
@@ -537,7 +537,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isModal = function(...args) 
           
@@ -547,7 +547,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowModality = function(...args) 
           
@@ -557,7 +557,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isEnabled = function(...args) 
           
@@ -567,7 +567,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isEnabledTo = function(...args) 
           
@@ -577,7 +577,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setEnabled = function(...args) 
           
@@ -587,7 +587,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setDisabled = function(...args) 
           
@@ -597,7 +597,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowModified = function(...args) 
           
@@ -607,7 +607,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMinimumSize = function(...args) 
           
@@ -617,7 +617,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMaximumSize = function(...args) 
           
@@ -627,7 +627,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMinimumWidth = function(...args) 
           
@@ -637,7 +637,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMinimumHeight = function(...args) 
           
@@ -647,7 +647,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMaximumWidth = function(...args) 
           
@@ -657,7 +657,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMaximumHeight = function(...args) 
           
@@ -667,7 +667,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSizeIncrement = function(...args) 
           
@@ -677,7 +677,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setBaseSize = function(...args) 
           
@@ -687,7 +687,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFixedSize = function(...args) 
           
@@ -697,7 +697,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFixedWidth = function(...args) 
           
@@ -707,7 +707,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFixedHeight = function(...args) 
           
@@ -717,7 +717,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mapToGlobal = function(...args) 
           
@@ -727,7 +727,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mapFromGlobal = function(...args) 
           
@@ -737,7 +737,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mapToParent = function(...args) 
           
@@ -747,7 +747,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mapFromParent = function(...args) 
           
@@ -757,7 +757,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mapTo = function(...args) 
           
@@ -767,7 +767,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mapFrom = function(...args) 
           
@@ -777,7 +777,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.window = function(...args) 
           
@@ -787,7 +787,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.nativeParentWidget = function(...args) 
           
@@ -797,7 +797,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.topLevelWidget = function(...args) 
           
@@ -807,7 +807,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setPalette = function(...args) 
           
@@ -817,7 +817,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setBackgroundRole = function(...args) 
           
@@ -827,7 +827,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.backgroundRole = function(...args) 
           
@@ -837,7 +837,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setForegroundRole = function(...args) 
           
@@ -847,7 +847,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.foregroundRole = function(...args) 
           
@@ -857,7 +857,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFont = function(...args) 
           
@@ -867,7 +867,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.fontInfo = function(...args) 
           
@@ -877,7 +877,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setCursor = function(...args) 
           
@@ -887,7 +887,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.unsetCursor = function(...args) 
           
@@ -897,7 +897,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMouseTracking = function(...args) 
           
@@ -907,7 +907,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hasMouseTracking = function(...args) 
           
@@ -917,7 +917,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.underMouse = function(...args) 
           
@@ -927,7 +927,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setTabletTracking = function(...args) 
           
@@ -937,7 +937,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hasTabletTracking = function(...args) 
           
@@ -947,7 +947,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMask = function(...args) 
           
@@ -957,7 +957,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mask = function(...args) 
           
@@ -967,7 +967,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.clearMask = function(...args) 
           
@@ -977,7 +977,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.grab = function(...args) 
           
@@ -987,7 +987,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.grabGesture = function(...args) 
           
@@ -997,7 +997,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.ungrabGesture = function(...args) 
           
@@ -1007,7 +1007,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowTitle = function(...args) 
           
@@ -1017,7 +1017,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setStyleSheet = function(...args) 
           
@@ -1027,7 +1027,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowIcon = function(...args) 
           
@@ -1037,7 +1037,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowIconText = function(...args) 
           
@@ -1047,7 +1047,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowRole = function(...args) 
           
@@ -1057,7 +1057,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.windowRole = function(...args) 
           
@@ -1067,7 +1067,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowFilePath = function(...args) 
           
@@ -1077,7 +1077,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowOpacity = function(...args) 
           
@@ -1087,7 +1087,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isWindowModified = function(...args) 
           
@@ -1097,7 +1097,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setToolTip = function(...args) 
           
@@ -1107,7 +1107,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setToolTipDuration = function(...args) 
           
@@ -1117,7 +1117,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setStatusTip = function(...args) 
           
@@ -1127,7 +1127,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWhatsThis = function(...args) 
           
@@ -1137,7 +1137,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setAccessibleName = function(...args) 
           
@@ -1147,7 +1147,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setAccessibleDescription = function(...args) 
           
@@ -1157,7 +1157,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setLayoutDirection = function(...args) 
           
@@ -1167,7 +1167,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1177,7 +1177,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setLocale = function(...args) 
           
@@ -1187,7 +1187,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.unsetLocale = function(...args) 
           
@@ -1197,7 +1197,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isRightToLeft = function(...args) 
           
@@ -1207,7 +1207,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isLeftToRight = function(...args) 
           
@@ -1217,7 +1217,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.activateWindow = function(...args) 
           
@@ -1227,7 +1227,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.clearFocus = function(...args) 
           
@@ -1237,7 +1237,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFocus = function(...args) 
           
@@ -1247,7 +1247,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFocusPolicy = function(...args) 
           
@@ -1257,7 +1257,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hasFocus = function(...args) 
           
@@ -1267,7 +1267,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFocusProxy = function(...args) 
           
@@ -1277,7 +1277,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.focusProxy = function(...args) 
           
@@ -1287,7 +1287,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1297,7 +1297,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.grabMouse = function(...args) 
           
@@ -1307,7 +1307,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.releaseMouse = function(...args) 
           
@@ -1317,7 +1317,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.grabKeyboard = function(...args) 
           
@@ -1327,7 +1327,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.releaseKeyboard = function(...args) 
           
@@ -1337,7 +1337,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.grabShortcut = function(...args) 
           
@@ -1347,7 +1347,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.releaseShortcut = function(...args) 
           
@@ -1357,7 +1357,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setShortcutEnabled = function(...args) 
           
@@ -1367,7 +1367,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1377,7 +1377,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1387,7 +1387,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.repaint = function(...args) 
           
@@ -1397,7 +1397,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setHidden = function(...args) 
           
@@ -1407,7 +1407,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.show = function(...args) 
           
@@ -1417,7 +1417,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hide = function(...args) 
           
@@ -1427,7 +1427,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.showMinimized = function(...args) 
           
@@ -1437,7 +1437,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.showMaximized = function(...args) 
           
@@ -1447,7 +1447,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.showFullScreen = function(...args) 
           
@@ -1457,7 +1457,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.showNormal = function(...args) 
           
@@ -1467,7 +1467,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.close = function(...args) 
           
@@ -1477,7 +1477,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.raise = function(...args) 
           
@@ -1487,7 +1487,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.lower = function(...args) 
           
@@ -1497,7 +1497,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.stackUnder = function(...args) 
           
@@ -1507,7 +1507,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.move = function(...args) 
           
@@ -1517,7 +1517,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.resize = function(...args) 
           
@@ -1527,7 +1527,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setGeometry = function(...args) 
           
@@ -1537,7 +1537,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.saveGeometry = function(...args) 
           
@@ -1547,7 +1547,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.restoreGeometry = function(...args) 
           
@@ -1557,7 +1557,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.adjustSize = function(...args) 
           
@@ -1567,7 +1567,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isVisible = function(...args) 
           
@@ -1577,7 +1577,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isVisibleTo = function(...args) 
           
@@ -1587,7 +1587,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isHidden = function(...args) 
           
@@ -1597,7 +1597,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isMinimized = function(...args) 
           
@@ -1607,7 +1607,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isMaximized = function(...args) 
           
@@ -1617,7 +1617,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isFullScreen = function(...args) 
           
@@ -1627,7 +1627,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.windowState = function(...args) 
           
@@ -1637,7 +1637,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowState = function(...args) 
           
@@ -1647,7 +1647,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.overrideWindowState = function(...args) 
           
@@ -1657,7 +1657,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSizePolicy = function(...args) 
           
@@ -1667,7 +1667,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.heightForWidth = function(...args) 
           
@@ -1677,7 +1677,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hasHeightForWidth = function(...args) 
           
@@ -1687,7 +1687,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.visibleRegion = function(...args) 
           
@@ -1697,7 +1697,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setContentsMargins = function(...args) 
           
@@ -1707,7 +1707,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.contentsMargins = function(...args) 
           
@@ -1717,7 +1717,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.contentsRect = function(...args) 
           
@@ -1727,7 +1727,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.layout = function(...args) 
           
@@ -1737,7 +1737,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setLayout = function(...args) 
           
@@ -1747,7 +1747,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.updateGeometry = function(...args) 
           
@@ -1757,7 +1757,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setParent = function(...args) 
           
@@ -1767,7 +1767,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.scroll = function(...args) 
           
@@ -1777,7 +1777,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.focusWidget = function(...args) 
           
@@ -1787,7 +1787,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.nextInFocusChain = function(...args) 
           
@@ -1797,7 +1797,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.previousInFocusChain = function(...args) 
           
@@ -1807,7 +1807,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setAcceptDrops = function(...args) 
           
@@ -1817,7 +1817,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.addAction = function(...args) 
           
@@ -1827,7 +1827,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.addActions = function(...args) 
           
@@ -1837,7 +1837,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.insertActions = function(...args) 
           
@@ -1847,7 +1847,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.insertAction = function(...args) 
           
@@ -1857,7 +1857,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.removeAction = function(...args) 
           
@@ -1867,7 +1867,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.actions = function(...args) 
           
@@ -1877,7 +1877,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.parentWidget = function(...args) 
           
@@ -1887,7 +1887,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowFlags = function(...args) 
           
@@ -1897,7 +1897,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.windowFlags = function(...args) 
           
@@ -1907,7 +1907,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setWindowFlag = function(...args) 
           
@@ -1917,7 +1917,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.overrideWindowFlags = function(...args) 
           
@@ -1927,7 +1927,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.windowType = function(...args) 
           
@@ -1937,7 +1937,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.childAt = function(...args) 
           
@@ -1947,7 +1947,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setAttribute = function(...args) 
           
@@ -1957,7 +1957,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.testAttribute = function(...args) 
           
@@ -1967,7 +1967,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.ensurePolished = function(...args) 
           
@@ -1977,7 +1977,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isAncestorOf = function(...args) 
           
@@ -1987,7 +1987,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setAutoFillBackground = function(...args) 
           
@@ -1997,7 +1997,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.wheelEvent = function(...args) 
           
@@ -2007,7 +2007,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.keyPressEvent = function(...args) 
           
@@ -2017,7 +2017,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.keyReleaseEvent = function(...args) 
           
@@ -2027,7 +2027,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.focusInEvent = function(...args) 
           
@@ -2037,7 +2037,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.focusOutEvent = function(...args) 
           
@@ -2047,7 +2047,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.enterEvent = function(...args) 
           
@@ -2057,7 +2057,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.leaveEvent = function(...args) 
           
@@ -2067,7 +2067,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.moveEvent = function(...args) 
           
@@ -2077,7 +2077,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.closeEvent = function(...args) 
           
@@ -2087,7 +2087,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.tabletEvent = function(...args) 
           
@@ -2097,7 +2097,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.dragEnterEvent = function(...args) 
           
@@ -2107,7 +2107,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.dragMoveEvent = function(...args) 
           
@@ -2117,7 +2117,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.dragLeaveEvent = function(...args) 
           
@@ -2127,7 +2127,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.dropEvent = function(...args) 
           
@@ -2137,7 +2137,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.showEvent = function(...args) 
           
@@ -2147,7 +2147,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hideEvent = function(...args) 
           
@@ -2157,7 +2157,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.nativeEvent = function(...args) 
           
@@ -2167,7 +2167,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.changeEvent = function(...args) 
           
@@ -2177,7 +2177,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.metric = function(...args) 
           
@@ -2187,7 +2187,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.initPainter = function(...args) 
           
@@ -2197,7 +2197,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.redirected = function(...args) 
           
@@ -2207,7 +2207,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sharedPainter = function(...args) 
           
@@ -2217,7 +2217,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.inputMethodEvent = function(...args) 
           
@@ -2227,7 +2227,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setInputMethodHints = function(...args) 
           
@@ -2237,7 +2237,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.updateMicroFocus = function(...args) 
           
@@ -2247,7 +2247,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.create = function(...args) 
           
@@ -2257,7 +2257,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.destroy = function(...args) 
           
@@ -2267,7 +2267,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.focusNextPrevChild = function(...args) 
           
@@ -2277,7 +2277,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.focusNextChild = function(...args) 
           
@@ -2287,7 +2287,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.focusPreviousChild = function(...args) 
           
@@ -2297,7 +2297,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setBackingStore = function(...args) 
           
@@ -2307,7 +2307,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.testAttribute_helper = function(...args) 
           
@@ -2317,7 +2317,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.takeLayout = function(...args) 
           
@@ -2327,7 +2327,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2337,7 +2337,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.qt_qwidget_data = function(...args) 
           
@@ -2347,7 +2347,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.qt_widget_private = function(...args) 
           
@@ -2357,7 +2357,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.frameStyle = function(...args) 
           
@@ -2367,7 +2367,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFrameStyle = function(...args) 
           
@@ -2377,7 +2377,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFrameShape = function(...args) 
           
@@ -2387,7 +2387,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFrameShadow = function(...args) 
           
@@ -2397,7 +2397,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setLineWidth = function(...args) 
           
@@ -2407,7 +2407,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMidLineWidth = function(...args) 
           
@@ -2417,7 +2417,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFrameRect = function(...args) 
           
@@ -2427,7 +2427,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.drawFrame = function(...args) 
           
@@ -2437,7 +2437,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2447,7 +2447,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2457,7 +2457,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.verticalScrollBar = function(...args) 
           
@@ -2467,7 +2467,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2477,7 +2477,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2487,7 +2487,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2497,7 +2497,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.horizontalScrollBar = function(...args) 
           
@@ -2507,7 +2507,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2517,7 +2517,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.cornerWidget = function(...args) 
           
@@ -2527,7 +2527,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setCornerWidget = function(...args) 
           
@@ -2537,7 +2537,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.addScrollBarWidget = function(...args) 
           
@@ -2547,7 +2547,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.viewport = function(...args) 
           
@@ -2557,7 +2557,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setViewport = function(...args) 
           
@@ -2567,7 +2567,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.maximumViewportSize = function(...args) 
           
@@ -2577,7 +2577,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setupViewport = function(...args) 
           
@@ -2587,7 +2587,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2597,7 +2597,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2607,7 +2607,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setModel = function(...args) 
           
@@ -2617,7 +2617,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setModel(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.model = function(...args) 
           
@@ -2627,7 +2627,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSelectionModel = function(...args) 
           
@@ -2637,7 +2637,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSelectionModel(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.selectionModel = function(...args) 
           
@@ -2647,7 +2647,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.selectionModel(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setItemDelegate = function(...args) 
           
@@ -2657,7 +2657,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setItemDelegate(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSelectionMode = function(...args) 
           
@@ -2667,7 +2667,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSelectionMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSelectionBehavior = function(...args) 
           
@@ -2677,7 +2677,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSelectionBehavior(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.currentIndex = function(...args) 
           
@@ -2687,7 +2687,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.rootIndex = function(...args) 
           
@@ -2697,7 +2697,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.rootIndex(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setEditTriggers = function(...args) 
           
@@ -2707,7 +2707,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setEditTriggers(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setVerticalScrollMode = function(...args) 
           
@@ -2717,7 +2717,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.resetVerticalScrollMode = function(...args) 
           
@@ -2727,7 +2727,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.resetVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setHorizontalScrollMode = function(...args) 
           
@@ -2737,7 +2737,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.resetHorizontalScrollMode = function(...args) 
           
@@ -2747,7 +2747,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.resetHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setAutoScroll = function(...args) 
           
@@ -2757,7 +2757,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setAutoScroll(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hasAutoScroll = function(...args) 
           
@@ -2767,7 +2767,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hasAutoScroll(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setAutoScrollMargin = function(...args) 
           
@@ -2777,7 +2777,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setAutoScrollMargin(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setTabKeyNavigation = function(...args) 
           
@@ -2787,7 +2787,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setTabKeyNavigation(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setDropIndicatorShown = function(...args) 
           
@@ -2797,7 +2797,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setDropIndicatorShown(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setDragEnabled = function(...args) 
           
@@ -2807,7 +2807,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setDragDropOverwriteMode = function(...args) 
           
@@ -2817,7 +2817,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setDragDropOverwriteMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setDragDropMode = function(...args) 
           
@@ -2827,7 +2827,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setDragDropMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setDefaultDropAction = function(...args) 
           
@@ -2837,7 +2837,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setDefaultDropAction(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setAlternatingRowColors = function(...args) 
           
@@ -2847,7 +2847,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setAlternatingRowColors(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setIconSize = function(...args) 
           
@@ -2857,7 +2857,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setTextElideMode = function(...args) 
           
@@ -2867,7 +2867,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setTextElideMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.keyboardSearch = function(...args) 
           
@@ -2877,7 +2877,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.keyboardSearch(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isPersistentEditorOpen = function(...args) 
           
@@ -2887,7 +2887,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isPersistentEditorOpen(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setIndexWidget = function(...args) 
           
@@ -2897,7 +2897,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setIndexWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.indexWidget = function(...args) 
           
@@ -2907,7 +2907,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.indexWidget(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.inputMethodQuery = function(...args) 
           
@@ -2917,7 +2917,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setRootIndex = function(...args) 
           
@@ -2927,7 +2927,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setRootIndex(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.selectAll = function(...args) 
           
@@ -2937,7 +2937,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.edit = function(...args) 
           
@@ -2947,7 +2947,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.edit(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.clearSelection = function(...args) 
           
@@ -2957,7 +2957,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setCurrentIndex = function(...args) 
           
@@ -2967,7 +2967,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.scrollToTop = function(...args) 
           
@@ -2977,7 +2977,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.scrollToTop(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.scrollToBottom = function(...args) 
           
@@ -2987,7 +2987,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.scrollToBottom(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.update = function(...args) 
           
@@ -2997,7 +2997,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.eventFilter = function(...args) 
           
@@ -3007,7 +3007,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.orientation = function(...args) 
           
@@ -3017,7 +3017,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.orientation(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.offset = function(...args) 
           
@@ -3027,7 +3027,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.offset(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.length = function(...args) 
           
@@ -3037,7 +3037,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setVisible = function(...args) 
           
@@ -3047,7 +3047,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionSizeHint = function(...args) 
           
@@ -3057,7 +3057,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionSizeHint(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.visualIndexAt = function(...args) 
           
@@ -3067,7 +3067,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.visualIndexAt(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.logicalIndexAt = function(...args) 
           
@@ -3077,7 +3077,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.logicalIndexAt(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionSize = function(...args) 
           
@@ -3087,7 +3087,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionPosition = function(...args) 
           
@@ -3097,7 +3097,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionPosition(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionViewportPosition = function(...args) 
           
@@ -3107,7 +3107,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionViewportPosition(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.moveSection = function(...args) 
           
@@ -3117,7 +3117,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.moveSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.swapSections = function(...args) 
           
@@ -3127,7 +3127,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.swapSections(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.resizeSection = function(...args) 
           
@@ -3137,7 +3137,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.resizeSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isSectionHidden = function(...args) 
           
@@ -3147,7 +3147,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isSectionHidden(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSectionHidden = function(...args) 
           
@@ -3157,7 +3157,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSectionHidden(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hiddenSectionCount = function(...args) 
           
@@ -3167,7 +3167,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hiddenSectionCount(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.hideSection = function(...args) 
           
@@ -3177,7 +3177,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.hideSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.showSection = function(...args) 
           
@@ -3187,7 +3187,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.showSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.count = function(...args) 
           
@@ -3197,7 +3197,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.visualIndex = function(...args) 
           
@@ -3207,7 +3207,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.visualIndex(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.logicalIndex = function(...args) 
           
@@ -3217,7 +3217,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.logicalIndex(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSectionsMovable = function(...args) 
           
@@ -3227,7 +3227,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSectionsMovable(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionsMovable = function(...args) 
           
@@ -3237,7 +3237,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionsMovable(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setFirstSectionMovable = function(...args) 
           
@@ -3247,7 +3247,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setFirstSectionMovable(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isFirstSectionMovable = function(...args) 
           
@@ -3257,7 +3257,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isFirstSectionMovable(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSectionsClickable = function(...args) 
           
@@ -3267,7 +3267,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSectionsClickable(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionsClickable = function(...args) 
           
@@ -3277,7 +3277,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionsClickable(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setHighlightSections = function(...args) 
           
@@ -3287,7 +3287,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setHighlightSections(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionResizeMode = function(...args) 
           
@@ -3297,7 +3297,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionResizeMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSectionResizeMode = function(...args) 
           
@@ -3307,7 +3307,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSectionResizeMode(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setResizeContentsPrecision = function(...args) 
           
@@ -3317,7 +3317,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setResizeContentsPrecision(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.resizeContentsPrecision = function(...args) 
           
@@ -3327,7 +3327,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.resizeContentsPrecision(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.stretchSectionCount = function(...args) 
           
@@ -3337,7 +3337,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.stretchSectionCount(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSortIndicatorShown = function(...args) 
           
@@ -3347,7 +3347,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSortIndicatorShown(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isSortIndicatorShown = function(...args) 
           
@@ -3357,7 +3357,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isSortIndicatorShown(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSortIndicator = function(...args) 
           
@@ -3367,7 +3367,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSortIndicator(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sortIndicatorSection = function(...args) 
           
@@ -3377,7 +3377,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sortIndicatorSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sortIndicatorOrder = function(...args) 
           
@@ -3387,7 +3387,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sortIndicatorOrder(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSortIndicatorClearable = function(...args) 
           
@@ -3397,7 +3397,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSortIndicatorClearable(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isSortIndicatorClearable = function(...args) 
           
@@ -3407,7 +3407,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isSortIndicatorClearable(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setStretchLastSection = function(...args) 
           
@@ -3417,7 +3417,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setStretchLastSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setCascadingSectionResizes = function(...args) 
           
@@ -3427,7 +3427,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setCascadingSectionResizes(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setDefaultSectionSize = function(...args) 
           
@@ -3437,7 +3437,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setDefaultSectionSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.resetDefaultSectionSize = function(...args) 
           
@@ -3447,7 +3447,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.resetDefaultSectionSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMinimumSectionSize = function(...args) 
           
@@ -3457,7 +3457,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMinimumSectionSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setMaximumSectionSize = function(...args) 
           
@@ -3467,7 +3467,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setMaximumSectionSize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setDefaultAlignment = function(...args) 
           
@@ -3477,7 +3477,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setDefaultAlignment(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.doItemsLayout = function(...args) 
           
@@ -3487,7 +3487,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.doItemsLayout(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionsMoved = function(...args) 
           
@@ -3497,7 +3497,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionsMoved(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionsHidden = function(...args) 
           
@@ -3507,7 +3507,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionsHidden(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.saveState = function(...args) 
           
@@ -3517,7 +3517,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.saveState(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.restoreState = function(...args) 
           
@@ -3527,7 +3527,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.restoreState(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.reset = function(...args) 
           
@@ -3537,7 +3537,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setOffset = function(...args) 
           
@@ -3547,7 +3547,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setOffset(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setOffsetToSectionPosition = function(...args) 
           
@@ -3557,7 +3557,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setOffsetToSectionPosition(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setOffsetToLastSection = function(...args) 
           
@@ -3567,7 +3567,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setOffsetToLastSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.headerDataChanged = function(...args) 
           
@@ -3577,7 +3577,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.headerDataChanged(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.updateSection = function(...args) 
           
@@ -3587,7 +3587,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.updateSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.resizeSections = function(...args) 
           
@@ -3597,7 +3597,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.resizeSections(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionsInserted = function(...args) 
           
@@ -3607,7 +3607,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionsInserted(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionsAboutToBeRemoved = function(...args) 
           
@@ -3617,7 +3617,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionsAboutToBeRemoved(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.initialize = function(...args) 
           
@@ -3627,7 +3627,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.initialize(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.initializeSections = function(...args) 
           
@@ -3637,7 +3637,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.initializeSections(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.currentChanged = function(...args) 
           
@@ -3647,7 +3647,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.currentChanged(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.event = function(...args) 
           
@@ -3657,7 +3657,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.paintEvent = function(...args) 
           
@@ -3667,7 +3667,8 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QHeaderView.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QHeaderView.prototype.mousePressEvent = function(...args) 
           
@@ -3677,7 +3678,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mouseMoveEvent = function(...args) 
           
@@ -3687,7 +3688,8 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QHeaderView.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QHeaderView.prototype.mouseReleaseEvent = function(...args) 
           
@@ -3697,7 +3699,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -3707,7 +3709,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.viewportEvent = function(...args) 
           
@@ -3717,7 +3719,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.viewportEvent(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.paintSection = function(...args) 
           
@@ -3727,7 +3729,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.paintSection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.sectionSizeFromContents = function(...args) 
           
@@ -3737,7 +3739,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.sectionSizeFromContents(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.horizontalOffset = function(...args) 
           
@@ -3747,7 +3749,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.horizontalOffset(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.verticalOffset = function(...args) 
           
@@ -3757,7 +3759,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.verticalOffset(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.updateGeometries = function(...args) 
           
@@ -3767,7 +3769,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.updateGeometries(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.scrollContentsBy = function(...args) 
           
@@ -3777,7 +3779,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.scrollContentsBy(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.dataChanged = function(...args) 
           
@@ -3787,7 +3789,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.dataChanged(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.rowsInserted = function(...args) 
           
@@ -3797,7 +3799,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.rowsInserted(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.isIndexHidden = function(...args) 
           
@@ -3807,7 +3809,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.isIndexHidden(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.moveCursor = function(...args) 
           
@@ -3817,7 +3819,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.moveCursor(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.setSelection = function(...args) 
           
@@ -3827,7 +3829,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.setSelection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.visualRegionForSelection = function(...args) 
           
@@ -3837,7 +3839,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.visualRegionForSelection(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.initStyleOptionForIndex = function(...args) 
           
@@ -3847,7 +3849,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.initStyleOptionForIndex(...args);
             
         };
-    
+        
         // function 
         QHeaderView.prototype.initStyleOption = function(...args) 
           
@@ -3857,7 +3859,7 @@ QHeaderView.Custom = QHeaderView_Wrapper.Custom;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -150,7 +150,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.isEnabled = function(...args) 
           
@@ -160,7 +160,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.setEnabled = function(...args) 
           
@@ -170,7 +170,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.update = function(...args) 
           
@@ -180,7 +180,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.boundingRectFor = function(...args) 
           
@@ -190,7 +190,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.boundingRectFor(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.offset = function(...args) 
           
@@ -200,7 +200,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.offset(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.setOffset = function(...args) 
           
@@ -210,7 +210,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.setOffset(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.setXOffset = function(...args) 
           
@@ -220,7 +220,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.setXOffset(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.setYOffset = function(...args) 
           
@@ -230,7 +230,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.setYOffset(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.setBlurRadius = function(...args) 
           
@@ -240,7 +240,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.setBlurRadius(...args);
             
         };
-    
+        
         // function 
         QGraphicsDropShadowEffect.prototype.setColor = function(...args) 
           
@@ -250,7 +250,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
 
       // static functions:
       

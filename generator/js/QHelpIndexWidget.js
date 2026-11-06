@@ -211,7 +211,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isWidgetType = function(...args) 
           
@@ -221,7 +221,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isWindowType = function(...args) 
           
@@ -231,7 +231,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.signalsBlocked = function(...args) 
           
@@ -241,7 +241,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.blockSignals = function(...args) 
           
@@ -251,7 +251,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.findChild = function(...args) 
           
@@ -261,7 +261,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.children = function(...args) 
           
@@ -271,7 +271,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.installEventFilter = function(...args) 
           
@@ -281,7 +281,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.removeEventFilter = function(...args) 
           
@@ -291,7 +291,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -301,7 +301,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -311,7 +311,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setProperty = function(...args) 
           
@@ -321,7 +321,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.property = function(...args) 
           
@@ -331,7 +331,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -341,7 +341,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.parent = function(...args) 
           
@@ -351,7 +351,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.deleteLater = function(...args) 
           
@@ -361,7 +361,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.devType = function(...args) 
           
@@ -371,7 +371,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.createWinId = function(...args) 
           
@@ -381,7 +381,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isWindow = function(...args) 
           
@@ -391,7 +391,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isModal = function(...args) 
           
@@ -401,7 +401,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowModality = function(...args) 
           
@@ -411,7 +411,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isEnabled = function(...args) 
           
@@ -421,7 +421,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isEnabledTo = function(...args) 
           
@@ -431,7 +431,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setEnabled = function(...args) 
           
@@ -441,7 +441,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setDisabled = function(...args) 
           
@@ -451,7 +451,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowModified = function(...args) 
           
@@ -461,7 +461,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMinimumSize = function(...args) 
           
@@ -471,7 +471,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMaximumSize = function(...args) 
           
@@ -481,7 +481,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -491,7 +491,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -501,7 +501,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -511,7 +511,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -521,7 +521,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -531,7 +531,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setBaseSize = function(...args) 
           
@@ -541,7 +541,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFixedSize = function(...args) 
           
@@ -551,7 +551,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFixedWidth = function(...args) 
           
@@ -561,7 +561,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFixedHeight = function(...args) 
           
@@ -571,7 +571,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.mapToGlobal = function(...args) 
           
@@ -581,7 +581,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -591,7 +591,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.mapToParent = function(...args) 
           
@@ -601,7 +601,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.mapFromParent = function(...args) 
           
@@ -611,7 +611,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.mapTo = function(...args) 
           
@@ -621,7 +621,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.mapFrom = function(...args) 
           
@@ -631,7 +631,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.window = function(...args) 
           
@@ -641,7 +641,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -651,7 +651,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.topLevelWidget = function(...args) 
           
@@ -661,7 +661,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setPalette = function(...args) 
           
@@ -671,7 +671,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -681,7 +681,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.backgroundRole = function(...args) 
           
@@ -691,7 +691,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setForegroundRole = function(...args) 
           
@@ -701,7 +701,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.foregroundRole = function(...args) 
           
@@ -711,7 +711,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFont = function(...args) 
           
@@ -721,7 +721,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.fontInfo = function(...args) 
           
@@ -731,7 +731,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setCursor = function(...args) 
           
@@ -741,7 +741,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.unsetCursor = function(...args) 
           
@@ -751,7 +751,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMouseTracking = function(...args) 
           
@@ -761,7 +761,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -771,7 +771,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.underMouse = function(...args) 
           
@@ -781,7 +781,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setTabletTracking = function(...args) 
           
@@ -791,7 +791,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -801,7 +801,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMask = function(...args) 
           
@@ -811,7 +811,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.mask = function(...args) 
           
@@ -821,7 +821,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.clearMask = function(...args) 
           
@@ -831,7 +831,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.grab = function(...args) 
           
@@ -841,7 +841,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.grabGesture = function(...args) 
           
@@ -851,7 +851,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.ungrabGesture = function(...args) 
           
@@ -861,7 +861,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowTitle = function(...args) 
           
@@ -871,7 +871,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setStyleSheet = function(...args) 
           
@@ -881,7 +881,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowIcon = function(...args) 
           
@@ -891,7 +891,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowIconText = function(...args) 
           
@@ -901,7 +901,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowRole = function(...args) 
           
@@ -911,7 +911,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.windowRole = function(...args) 
           
@@ -921,7 +921,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -931,7 +931,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -941,7 +941,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isWindowModified = function(...args) 
           
@@ -951,7 +951,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setToolTip = function(...args) 
           
@@ -961,7 +961,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -971,7 +971,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setStatusTip = function(...args) 
           
@@ -981,7 +981,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWhatsThis = function(...args) 
           
@@ -991,7 +991,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setAccessibleName = function(...args) 
           
@@ -1001,7 +1001,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -1011,7 +1011,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -1021,7 +1021,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1031,7 +1031,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setLocale = function(...args) 
           
@@ -1041,7 +1041,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.unsetLocale = function(...args) 
           
@@ -1051,7 +1051,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1061,7 +1061,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1071,7 +1071,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.activateWindow = function(...args) 
           
@@ -1081,7 +1081,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.clearFocus = function(...args) 
           
@@ -1091,7 +1091,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFocus = function(...args) 
           
@@ -1101,7 +1101,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1111,7 +1111,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.hasFocus = function(...args) 
           
@@ -1121,7 +1121,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1131,7 +1131,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.focusProxy = function(...args) 
           
@@ -1141,7 +1141,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1151,7 +1151,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.grabMouse = function(...args) 
           
@@ -1161,7 +1161,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.releaseMouse = function(...args) 
           
@@ -1171,7 +1171,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1181,7 +1181,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1191,7 +1191,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.grabShortcut = function(...args) 
           
@@ -1201,7 +1201,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1211,7 +1211,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1221,7 +1221,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1231,7 +1231,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1241,7 +1241,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.repaint = function(...args) 
           
@@ -1251,7 +1251,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setVisible = function(...args) 
           
@@ -1261,7 +1261,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setHidden = function(...args) 
           
@@ -1271,7 +1271,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.show = function(...args) 
           
@@ -1281,7 +1281,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.hide = function(...args) 
           
@@ -1291,7 +1291,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.showMinimized = function(...args) 
           
@@ -1301,7 +1301,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.showMaximized = function(...args) 
           
@@ -1311,7 +1311,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.showFullScreen = function(...args) 
           
@@ -1321,7 +1321,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.showNormal = function(...args) 
           
@@ -1331,7 +1331,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.close = function(...args) 
           
@@ -1341,7 +1341,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.raise = function(...args) 
           
@@ -1351,7 +1351,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.lower = function(...args) 
           
@@ -1361,7 +1361,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.stackUnder = function(...args) 
           
@@ -1371,7 +1371,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.move = function(...args) 
           
@@ -1381,7 +1381,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.resize = function(...args) 
           
@@ -1391,7 +1391,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setGeometry = function(...args) 
           
@@ -1401,7 +1401,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.saveGeometry = function(...args) 
           
@@ -1411,7 +1411,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1421,7 +1421,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.adjustSize = function(...args) 
           
@@ -1431,7 +1431,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isVisible = function(...args) 
           
@@ -1441,7 +1441,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1451,7 +1451,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isHidden = function(...args) 
           
@@ -1461,7 +1461,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isMinimized = function(...args) 
           
@@ -1471,7 +1471,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isMaximized = function(...args) 
           
@@ -1481,7 +1481,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isFullScreen = function(...args) 
           
@@ -1491,7 +1491,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.windowState = function(...args) 
           
@@ -1501,7 +1501,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowState = function(...args) 
           
@@ -1511,7 +1511,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1521,7 +1521,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1531,7 +1531,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.heightForWidth = function(...args) 
           
@@ -1541,7 +1541,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1551,7 +1551,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.visibleRegion = function(...args) 
           
@@ -1561,7 +1561,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1571,7 +1571,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.contentsMargins = function(...args) 
           
@@ -1581,7 +1581,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.contentsRect = function(...args) 
           
@@ -1591,7 +1591,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.layout = function(...args) 
           
@@ -1601,7 +1601,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setLayout = function(...args) 
           
@@ -1611,7 +1611,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.updateGeometry = function(...args) 
           
@@ -1621,7 +1621,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setParent = function(...args) 
           
@@ -1631,7 +1631,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.scroll = function(...args) 
           
@@ -1641,7 +1641,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.focusWidget = function(...args) 
           
@@ -1651,7 +1651,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1661,7 +1661,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1671,7 +1671,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1681,7 +1681,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.addAction = function(...args) 
           
@@ -1691,7 +1691,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.addActions = function(...args) 
           
@@ -1701,7 +1701,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.insertActions = function(...args) 
           
@@ -1711,7 +1711,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.insertAction = function(...args) 
           
@@ -1721,7 +1721,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.removeAction = function(...args) 
           
@@ -1731,7 +1731,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.actions = function(...args) 
           
@@ -1741,7 +1741,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.parentWidget = function(...args) 
           
@@ -1751,7 +1751,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1761,7 +1761,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.windowFlags = function(...args) 
           
@@ -1771,7 +1771,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1781,7 +1781,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1791,7 +1791,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.windowType = function(...args) 
           
@@ -1801,7 +1801,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.childAt = function(...args) 
           
@@ -1811,7 +1811,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setAttribute = function(...args) 
           
@@ -1821,7 +1821,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.testAttribute = function(...args) 
           
@@ -1831,7 +1831,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.ensurePolished = function(...args) 
           
@@ -1841,7 +1841,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1851,7 +1851,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1861,7 +1861,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.event = function(...args) 
           
@@ -1871,7 +1871,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1881,7 +1881,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.wheelEvent = function(...args) 
           
@@ -1891,7 +1891,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.keyPressEvent = function(...args) 
           
@@ -1901,7 +1901,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1911,7 +1911,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.focusInEvent = function(...args) 
           
@@ -1921,7 +1921,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1931,7 +1931,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.enterEvent = function(...args) 
           
@@ -1941,7 +1941,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.leaveEvent = function(...args) 
           
@@ -1951,7 +1951,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.moveEvent = function(...args) 
           
@@ -1961,7 +1961,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.closeEvent = function(...args) 
           
@@ -1971,7 +1971,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.tabletEvent = function(...args) 
           
@@ -1981,7 +1981,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -1991,7 +1991,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -2001,7 +2001,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -2011,7 +2011,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.dropEvent = function(...args) 
           
@@ -2021,7 +2021,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.showEvent = function(...args) 
           
@@ -2031,7 +2031,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.hideEvent = function(...args) 
           
@@ -2041,7 +2041,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.nativeEvent = function(...args) 
           
@@ -2051,7 +2051,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.changeEvent = function(...args) 
           
@@ -2061,7 +2061,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.metric = function(...args) 
           
@@ -2071,7 +2071,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.initPainter = function(...args) 
           
@@ -2081,7 +2081,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.redirected = function(...args) 
           
@@ -2091,7 +2091,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.sharedPainter = function(...args) 
           
@@ -2101,7 +2101,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2111,7 +2111,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2121,7 +2121,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2131,7 +2131,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.create = function(...args) 
           
@@ -2141,7 +2141,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.destroy = function(...args) 
           
@@ -2151,7 +2151,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2161,7 +2161,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.focusNextChild = function(...args) 
           
@@ -2171,7 +2171,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2181,7 +2181,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setBackingStore = function(...args) 
           
@@ -2191,7 +2191,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2201,7 +2201,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.takeLayout = function(...args) 
           
@@ -2211,7 +2211,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2221,7 +2221,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2231,7 +2231,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2241,7 +2241,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.frameStyle = function(...args) 
           
@@ -2251,7 +2251,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFrameStyle = function(...args) 
           
@@ -2261,7 +2261,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFrameShape = function(...args) 
           
@@ -2271,7 +2271,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFrameShadow = function(...args) 
           
@@ -2281,7 +2281,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setLineWidth = function(...args) 
           
@@ -2291,7 +2291,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMidLineWidth = function(...args) 
           
@@ -2301,7 +2301,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFrameRect = function(...args) 
           
@@ -2311,7 +2311,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.drawFrame = function(...args) 
           
@@ -2321,7 +2321,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.initStyleOption = function(...args) 
           
@@ -2331,7 +2331,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2341,7 +2341,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2351,7 +2351,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.verticalScrollBar = function(...args) 
           
@@ -2361,7 +2361,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2371,7 +2371,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2381,7 +2381,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2391,7 +2391,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.horizontalScrollBar = function(...args) 
           
@@ -2401,7 +2401,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2411,7 +2411,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.cornerWidget = function(...args) 
           
@@ -2421,7 +2421,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setCornerWidget = function(...args) 
           
@@ -2431,7 +2431,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.addScrollBarWidget = function(...args) 
           
@@ -2441,7 +2441,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.viewport = function(...args) 
           
@@ -2451,7 +2451,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setViewport = function(...args) 
           
@@ -2461,7 +2461,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.maximumViewportSize = function(...args) 
           
@@ -2471,7 +2471,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setupViewport = function(...args) 
           
@@ -2481,7 +2481,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2491,7 +2491,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2501,7 +2501,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setModel = function(...args) 
           
@@ -2511,7 +2511,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setModel(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.model = function(...args) 
           
@@ -2521,7 +2521,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setSelectionModel = function(...args) 
           
@@ -2531,7 +2531,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setSelectionModel(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.selectionModel = function(...args) 
           
@@ -2541,7 +2541,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.selectionModel(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setItemDelegate = function(...args) 
           
@@ -2551,7 +2551,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setItemDelegate(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setSelectionMode = function(...args) 
           
@@ -2561,7 +2561,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setSelectionMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setSelectionBehavior = function(...args) 
           
@@ -2571,7 +2571,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setSelectionBehavior(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.currentIndex = function(...args) 
           
@@ -2581,7 +2581,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.rootIndex = function(...args) 
           
@@ -2591,7 +2591,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.rootIndex(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setEditTriggers = function(...args) 
           
@@ -2601,7 +2601,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setEditTriggers(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setVerticalScrollMode = function(...args) 
           
@@ -2611,7 +2611,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.resetVerticalScrollMode = function(...args) 
           
@@ -2621,7 +2621,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.resetVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setHorizontalScrollMode = function(...args) 
           
@@ -2631,7 +2631,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.resetHorizontalScrollMode = function(...args) 
           
@@ -2641,7 +2641,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.resetHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setAutoScroll = function(...args) 
           
@@ -2651,7 +2651,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setAutoScroll(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.hasAutoScroll = function(...args) 
           
@@ -2661,7 +2661,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.hasAutoScroll(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setAutoScrollMargin = function(...args) 
           
@@ -2671,7 +2671,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setAutoScrollMargin(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setTabKeyNavigation = function(...args) 
           
@@ -2681,7 +2681,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setTabKeyNavigation(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setDropIndicatorShown = function(...args) 
           
@@ -2691,7 +2691,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setDropIndicatorShown(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setDragEnabled = function(...args) 
           
@@ -2701,7 +2701,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setDragDropOverwriteMode = function(...args) 
           
@@ -2711,7 +2711,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setDragDropOverwriteMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setDragDropMode = function(...args) 
           
@@ -2721,7 +2721,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setDragDropMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setDefaultDropAction = function(...args) 
           
@@ -2731,7 +2731,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setDefaultDropAction(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setAlternatingRowColors = function(...args) 
           
@@ -2741,7 +2741,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setAlternatingRowColors(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setIconSize = function(...args) 
           
@@ -2751,7 +2751,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setTextElideMode = function(...args) 
           
@@ -2761,7 +2761,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setTextElideMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.keyboardSearch = function(...args) 
           
@@ -2771,7 +2771,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.keyboardSearch(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isPersistentEditorOpen = function(...args) 
           
@@ -2781,7 +2781,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isPersistentEditorOpen(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setIndexWidget = function(...args) 
           
@@ -2791,7 +2791,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setIndexWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.indexWidget = function(...args) 
           
@@ -2801,7 +2801,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.indexWidget(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2811,7 +2811,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.selectAll = function(...args) 
           
@@ -2821,7 +2821,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.edit = function(...args) 
           
@@ -2831,7 +2831,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.edit(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.clearSelection = function(...args) 
           
@@ -2841,7 +2841,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setCurrentIndex = function(...args) 
           
@@ -2851,7 +2851,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.scrollToTop = function(...args) 
           
@@ -2861,7 +2861,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.scrollToTop(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.scrollToBottom = function(...args) 
           
@@ -2871,7 +2871,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.scrollToBottom(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.update = function(...args) 
           
@@ -2881,7 +2881,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.eventFilter = function(...args) 
           
@@ -2891,7 +2891,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setMovement = function(...args) 
           
@@ -2901,7 +2901,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setMovement(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setFlow = function(...args) 
           
@@ -2911,7 +2911,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setFlow(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWrapping = function(...args) 
           
@@ -2921,7 +2921,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWrapping(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setResizeMode = function(...args) 
           
@@ -2931,7 +2931,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setResizeMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setLayoutMode = function(...args) 
           
@@ -2941,7 +2941,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setLayoutMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setSpacing = function(...args) 
           
@@ -2951,7 +2951,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setSpacing(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setBatchSize = function(...args) 
           
@@ -2961,7 +2961,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setBatchSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setGridSize = function(...args) 
           
@@ -2971,7 +2971,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setGridSize(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setViewMode = function(...args) 
           
@@ -2981,7 +2981,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setViewMode(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.clearPropertyFlags = function(...args) 
           
@@ -2991,7 +2991,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.clearPropertyFlags(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isRowHidden = function(...args) 
           
@@ -3001,7 +3001,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isRowHidden(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setRowHidden = function(...args) 
           
@@ -3011,7 +3011,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setRowHidden(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setModelColumn = function(...args) 
           
@@ -3021,7 +3021,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setModelColumn(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setUniformItemSizes = function(...args) 
           
@@ -3031,7 +3031,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setUniformItemSizes(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setWordWrap = function(...args) 
           
@@ -3041,7 +3041,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setWordWrap(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setSelectionRectVisible = function(...args) 
           
@@ -3051,7 +3051,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setSelectionRectVisible(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.isSelectionRectVisible = function(...args) 
           
@@ -3061,7 +3061,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.isSelectionRectVisible(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setItemAlignment = function(...args) 
           
@@ -3071,7 +3071,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setItemAlignment(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.visualRect = function(...args) 
           
@@ -3081,7 +3081,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.visualRect(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.scrollTo = function(...args) 
           
@@ -3091,7 +3091,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.scrollTo(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.indexAt = function(...args) 
           
@@ -3101,7 +3101,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.indexAt(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.doItemsLayout = function(...args) 
           
@@ -3111,7 +3111,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.doItemsLayout(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.reset = function(...args) 
           
@@ -3121,7 +3121,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.setRootIndex = function(...args) 
           
@@ -3131,7 +3131,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.setRootIndex(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.visualIndex = function(...args) 
           
@@ -3141,7 +3141,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.visualIndex(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.filterIndices = function(...args) 
           
@@ -3151,7 +3151,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.filterIndices(...args);
             
         };
-    
+        
         // function 
         QHelpIndexWidget.prototype.activateCurrentItem = function(...args) 
           
@@ -3161,7 +3161,7 @@ QHelpIndexWidget.IconMode = QHelpIndexWidget_Wrapper.IconMode;
               return this.__PROXY__.activateCurrentItem(...args);
             
         };
-    
+        
 
       // static functions:
       

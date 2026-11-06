@@ -252,7 +252,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.isValid = function(...args) 
           
@@ -262,7 +262,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.isEmpty = function(...args) 
           
@@ -272,7 +272,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.contains = function(...args) 
           
@@ -282,7 +282,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.boundingGeoRectangle = function(...args) 
           
@@ -292,7 +292,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.boundingGeoRectangle(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.center = function(...args) 
           
@@ -302,7 +302,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.center(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.setPath = function(...args) 
           
@@ -312,7 +312,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.setPath(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.path = function(...args) 
           
@@ -322,7 +322,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.path(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.clearPath = function(...args) 
           
@@ -332,7 +332,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.clearPath(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.setWidth = function(...args) 
           
@@ -342,7 +342,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.width = function(...args) 
           
@@ -352,7 +352,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.translated = function(...args) 
           
@@ -362,7 +362,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.translate = function(...args) 
           
@@ -372,7 +372,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.length = function(...args) 
           
@@ -382,7 +382,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.size = function(...args) 
           
@@ -392,7 +392,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.addCoordinate = function(...args) 
           
@@ -402,7 +402,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.addCoordinate(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.insertCoordinate = function(...args) 
           
@@ -412,7 +412,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.insertCoordinate(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.replaceCoordinate = function(...args) 
           
@@ -422,7 +422,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.replaceCoordinate(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.coordinateAt = function(...args) 
           
@@ -432,7 +432,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.coordinateAt(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.containsCoordinate = function(...args) 
           
@@ -442,7 +442,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.containsCoordinate(...args);
             
         };
-    
+        
         // function 
         QGeoPath.prototype.removeCoordinate = function(...args) 
           
@@ -452,7 +452,7 @@ QGeoPath.PolygonType = QGeoPath_Wrapper.PolygonType;
               return this.__PROXY__.removeCoordinate(...args);
             
         };
-    
+        
 
       // static functions:
       QGeoPath.prototype.isNullWrapper = function() {

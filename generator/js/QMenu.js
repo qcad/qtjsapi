@@ -170,7 +170,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isWidgetType = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isWindowType = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.signalsBlocked = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.blockSignals = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.findChild = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.children = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.installEventFilter = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.removeEventFilter = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.dumpObjectTree = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.dumpObjectInfo = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setProperty = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.property = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.dynamicPropertyNames = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.parent = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.deleteLater = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.devType = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.createWinId = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isWindow = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isModal = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowModality = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isEnabled = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isEnabledTo = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setEnabled = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setDisabled = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowModified = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setMinimumSize = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setMaximumSize = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setMinimumWidth = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setMinimumHeight = function(...args) 
           
@@ -460,7 +460,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setMaximumWidth = function(...args) 
           
@@ -470,7 +470,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setMaximumHeight = function(...args) 
           
@@ -480,7 +480,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setSizeIncrement = function(...args) 
           
@@ -490,7 +490,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setBaseSize = function(...args) 
           
@@ -500,7 +500,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setFixedSize = function(...args) 
           
@@ -510,7 +510,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setFixedWidth = function(...args) 
           
@@ -520,7 +520,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setFixedHeight = function(...args) 
           
@@ -530,7 +530,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mapToGlobal = function(...args) 
           
@@ -540,7 +540,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mapFromGlobal = function(...args) 
           
@@ -550,7 +550,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mapToParent = function(...args) 
           
@@ -560,7 +560,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mapFromParent = function(...args) 
           
@@ -570,7 +570,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mapTo = function(...args) 
           
@@ -580,7 +580,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mapFrom = function(...args) 
           
@@ -590,7 +590,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.window = function(...args) 
           
@@ -600,7 +600,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.nativeParentWidget = function(...args) 
           
@@ -610,7 +610,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.topLevelWidget = function(...args) 
           
@@ -620,7 +620,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setPalette = function(...args) 
           
@@ -630,7 +630,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setBackgroundRole = function(...args) 
           
@@ -640,7 +640,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.backgroundRole = function(...args) 
           
@@ -650,7 +650,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setForegroundRole = function(...args) 
           
@@ -660,7 +660,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.foregroundRole = function(...args) 
           
@@ -670,7 +670,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setFont = function(...args) 
           
@@ -680,7 +680,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.fontInfo = function(...args) 
           
@@ -690,7 +690,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setCursor = function(...args) 
           
@@ -700,7 +700,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.unsetCursor = function(...args) 
           
@@ -710,7 +710,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setMouseTracking = function(...args) 
           
@@ -720,7 +720,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.hasMouseTracking = function(...args) 
           
@@ -730,7 +730,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.underMouse = function(...args) 
           
@@ -740,7 +740,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setTabletTracking = function(...args) 
           
@@ -750,7 +750,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.hasTabletTracking = function(...args) 
           
@@ -760,7 +760,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setMask = function(...args) 
           
@@ -770,7 +770,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mask = function(...args) 
           
@@ -780,7 +780,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.clearMask = function(...args) 
           
@@ -790,7 +790,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.grab = function(...args) 
           
@@ -800,7 +800,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.grabGesture = function(...args) 
           
@@ -810,7 +810,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.ungrabGesture = function(...args) 
           
@@ -820,7 +820,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowTitle = function(...args) 
           
@@ -830,7 +830,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setStyleSheet = function(...args) 
           
@@ -840,7 +840,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowIcon = function(...args) 
           
@@ -850,7 +850,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowIconText = function(...args) 
           
@@ -860,7 +860,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowRole = function(...args) 
           
@@ -870,7 +870,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.windowRole = function(...args) 
           
@@ -880,7 +880,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowFilePath = function(...args) 
           
@@ -890,7 +890,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowOpacity = function(...args) 
           
@@ -900,7 +900,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isWindowModified = function(...args) 
           
@@ -910,7 +910,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setToolTip = function(...args) 
           
@@ -920,7 +920,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setToolTipDuration = function(...args) 
           
@@ -930,7 +930,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setStatusTip = function(...args) 
           
@@ -940,7 +940,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWhatsThis = function(...args) 
           
@@ -950,7 +950,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setAccessibleName = function(...args) 
           
@@ -960,7 +960,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setAccessibleDescription = function(...args) 
           
@@ -970,7 +970,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setLayoutDirection = function(...args) 
           
@@ -980,7 +980,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.unsetLayoutDirection = function(...args) 
           
@@ -990,7 +990,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setLocale = function(...args) 
           
@@ -1000,7 +1000,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.unsetLocale = function(...args) 
           
@@ -1010,7 +1010,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isRightToLeft = function(...args) 
           
@@ -1020,7 +1020,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isLeftToRight = function(...args) 
           
@@ -1030,7 +1030,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.activateWindow = function(...args) 
           
@@ -1040,7 +1040,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.clearFocus = function(...args) 
           
@@ -1050,7 +1050,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setFocus = function(...args) 
           
@@ -1060,7 +1060,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setFocusPolicy = function(...args) 
           
@@ -1070,7 +1070,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.hasFocus = function(...args) 
           
@@ -1080,7 +1080,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setFocusProxy = function(...args) 
           
@@ -1090,7 +1090,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.focusProxy = function(...args) 
           
@@ -1100,7 +1100,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1110,7 +1110,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.grabMouse = function(...args) 
           
@@ -1120,7 +1120,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.releaseMouse = function(...args) 
           
@@ -1130,7 +1130,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.grabKeyboard = function(...args) 
           
@@ -1140,7 +1140,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.releaseKeyboard = function(...args) 
           
@@ -1150,7 +1150,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.grabShortcut = function(...args) 
           
@@ -1160,7 +1160,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.releaseShortcut = function(...args) 
           
@@ -1170,7 +1170,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setShortcutEnabled = function(...args) 
           
@@ -1180,7 +1180,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1190,7 +1190,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1200,7 +1200,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.update = function(...args) 
           
@@ -1210,7 +1210,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.repaint = function(...args) 
           
@@ -1220,7 +1220,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setVisible = function(...args) 
           
@@ -1230,7 +1230,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setHidden = function(...args) 
           
@@ -1240,7 +1240,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.show = function(...args) 
           
@@ -1250,7 +1250,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.hide = function(...args) 
           
@@ -1260,7 +1260,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.showMinimized = function(...args) 
           
@@ -1270,7 +1270,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.showMaximized = function(...args) 
           
@@ -1280,7 +1280,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.showFullScreen = function(...args) 
           
@@ -1290,7 +1290,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.showNormal = function(...args) 
           
@@ -1300,7 +1300,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.close = function(...args) 
           
@@ -1310,7 +1310,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.raise = function(...args) 
           
@@ -1320,7 +1320,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.lower = function(...args) 
           
@@ -1330,7 +1330,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.stackUnder = function(...args) 
           
@@ -1340,7 +1340,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.move = function(...args) 
           
@@ -1350,7 +1350,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.resize = function(...args) 
           
@@ -1360,7 +1360,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setGeometry = function(...args) 
           
@@ -1370,7 +1370,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.saveGeometry = function(...args) 
           
@@ -1380,7 +1380,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.restoreGeometry = function(...args) 
           
@@ -1390,7 +1390,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.adjustSize = function(...args) 
           
@@ -1400,7 +1400,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isVisible = function(...args) 
           
@@ -1410,7 +1410,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isVisibleTo = function(...args) 
           
@@ -1420,7 +1420,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isHidden = function(...args) 
           
@@ -1430,7 +1430,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isMinimized = function(...args) 
           
@@ -1440,7 +1440,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isMaximized = function(...args) 
           
@@ -1450,7 +1450,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isFullScreen = function(...args) 
           
@@ -1460,7 +1460,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.windowState = function(...args) 
           
@@ -1470,7 +1470,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowState = function(...args) 
           
@@ -1480,7 +1480,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.overrideWindowState = function(...args) 
           
@@ -1490,7 +1490,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setSizePolicy = function(...args) 
           
@@ -1500,7 +1500,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.heightForWidth = function(...args) 
           
@@ -1510,7 +1510,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.hasHeightForWidth = function(...args) 
           
@@ -1520,7 +1520,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.visibleRegion = function(...args) 
           
@@ -1530,7 +1530,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setContentsMargins = function(...args) 
           
@@ -1540,7 +1540,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.contentsMargins = function(...args) 
           
@@ -1550,7 +1550,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.contentsRect = function(...args) 
           
@@ -1560,7 +1560,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.layout = function(...args) 
           
@@ -1570,7 +1570,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setLayout = function(...args) 
           
@@ -1580,7 +1580,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.updateGeometry = function(...args) 
           
@@ -1590,7 +1590,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setParent = function(...args) 
           
@@ -1600,7 +1600,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.scroll = function(...args) 
           
@@ -1610,7 +1610,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.focusWidget = function(...args) 
           
@@ -1620,7 +1620,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.nextInFocusChain = function(...args) 
           
@@ -1630,7 +1630,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.previousInFocusChain = function(...args) 
           
@@ -1640,7 +1640,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setAcceptDrops = function(...args) 
           
@@ -1650,7 +1650,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.addActions = function(...args) 
           
@@ -1660,7 +1660,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.insertActions = function(...args) 
           
@@ -1670,7 +1670,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.insertAction = function(...args) 
           
@@ -1680,7 +1680,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.removeAction = function(...args) 
           
@@ -1690,7 +1690,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.actions = function(...args) 
           
@@ -1700,7 +1700,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.parentWidget = function(...args) 
           
@@ -1710,7 +1710,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowFlags = function(...args) 
           
@@ -1720,7 +1720,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.windowFlags = function(...args) 
           
@@ -1730,7 +1730,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setWindowFlag = function(...args) 
           
@@ -1740,7 +1740,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.overrideWindowFlags = function(...args) 
           
@@ -1750,7 +1750,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.windowType = function(...args) 
           
@@ -1760,7 +1760,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.childAt = function(...args) 
           
@@ -1770,7 +1770,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setAttribute = function(...args) 
           
@@ -1780,7 +1780,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.testAttribute = function(...args) 
           
@@ -1790,7 +1790,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.ensurePolished = function(...args) 
           
@@ -1800,7 +1800,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isAncestorOf = function(...args) 
           
@@ -1810,7 +1810,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setAutoFillBackground = function(...args) 
           
@@ -1820,7 +1820,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.event = function(...args) 
           
@@ -1830,7 +1830,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1840,7 +1840,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.keyReleaseEvent = function(...args) 
           
@@ -1850,7 +1850,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.focusInEvent = function(...args) 
           
@@ -1860,7 +1860,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.focusOutEvent = function(...args) 
           
@@ -1870,7 +1870,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.moveEvent = function(...args) 
           
@@ -1880,7 +1880,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.closeEvent = function(...args) 
           
@@ -1890,7 +1890,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.tabletEvent = function(...args) 
           
@@ -1900,7 +1900,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.dragEnterEvent = function(...args) 
           
@@ -1910,7 +1910,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.dragMoveEvent = function(...args) 
           
@@ -1920,7 +1920,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.dragLeaveEvent = function(...args) 
           
@@ -1930,7 +1930,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.dropEvent = function(...args) 
           
@@ -1940,7 +1940,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.showEvent = function(...args) 
           
@@ -1950,7 +1950,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.nativeEvent = function(...args) 
           
@@ -1960,7 +1960,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.metric = function(...args) 
           
@@ -1970,7 +1970,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.initPainter = function(...args) 
           
@@ -1980,7 +1980,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.redirected = function(...args) 
           
@@ -1990,7 +1990,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.sharedPainter = function(...args) 
           
@@ -2000,7 +2000,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.inputMethodEvent = function(...args) 
           
@@ -2010,7 +2010,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.inputMethodQuery = function(...args) 
           
@@ -2020,7 +2020,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setInputMethodHints = function(...args) 
           
@@ -2030,7 +2030,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.updateMicroFocus = function(...args) 
           
@@ -2040,7 +2040,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.create = function(...args) 
           
@@ -2050,7 +2050,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.destroy = function(...args) 
           
@@ -2060,7 +2060,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.focusNextPrevChild = function(...args) 
           
@@ -2070,7 +2070,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.focusNextChild = function(...args) 
           
@@ -2080,7 +2080,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.focusPreviousChild = function(...args) 
           
@@ -2090,7 +2090,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setBackingStore = function(...args) 
           
@@ -2100,7 +2100,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.testAttribute_helper = function(...args) 
           
@@ -2110,7 +2110,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.takeLayout = function(...args) 
           
@@ -2120,7 +2120,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2130,7 +2130,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.qt_qwidget_data = function(...args) 
           
@@ -2140,7 +2140,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.qt_widget_private = function(...args) 
           
@@ -2150,7 +2150,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.addAction = function(...args) 
           
@@ -2160,7 +2160,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.resizeEvent = function(...args) 
           
@@ -2170,7 +2170,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QMenu.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QMenu.prototype.addMenu = function(...args) 
           
@@ -2180,7 +2181,7 @@
               return this.__PROXY__.addMenu(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.addSeparator = function(...args) 
           
@@ -2190,7 +2191,7 @@
               return this.__PROXY__.addSeparator(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.addSection = function(...args) 
           
@@ -2200,7 +2201,7 @@
               return this.__PROXY__.addSection(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.insertMenu = function(...args) 
           
@@ -2210,7 +2211,7 @@
               return this.__PROXY__.insertMenu(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.insertSeparator = function(...args) 
           
@@ -2220,7 +2221,7 @@
               return this.__PROXY__.insertSeparator(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.insertSection = function(...args) 
           
@@ -2230,7 +2231,7 @@
               return this.__PROXY__.insertSection(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isEmpty = function(...args) 
           
@@ -2240,7 +2241,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.clear = function(...args) 
           
@@ -2250,7 +2251,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setTearOffEnabled = function(...args) 
           
@@ -2260,7 +2261,7 @@
               return this.__PROXY__.setTearOffEnabled(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isTearOffEnabled = function(...args) 
           
@@ -2270,7 +2271,7 @@
               return this.__PROXY__.isTearOffEnabled(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.isTearOffMenuVisible = function(...args) 
           
@@ -2280,7 +2281,7 @@
               return this.__PROXY__.isTearOffMenuVisible(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.showTearOffMenu = function(...args) 
           
@@ -2290,7 +2291,7 @@
               return this.__PROXY__.showTearOffMenu(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.hideTearOffMenu = function(...args) 
           
@@ -2300,7 +2301,7 @@
               return this.__PROXY__.hideTearOffMenu(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setDefaultAction = function(...args) 
           
@@ -2310,7 +2311,7 @@
               return this.__PROXY__.setDefaultAction(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.defaultAction = function(...args) 
           
@@ -2320,7 +2321,7 @@
               return this.__PROXY__.defaultAction(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setActiveAction = function(...args) 
           
@@ -2330,7 +2331,7 @@
               return this.__PROXY__.setActiveAction(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.activeAction = function(...args) 
           
@@ -2340,7 +2341,7 @@
               return this.__PROXY__.activeAction(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.popup = function(...args) 
           
@@ -2350,7 +2351,7 @@
               return this.__PROXY__.popup(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.exec = function(...args) 
           
@@ -2360,7 +2361,7 @@
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.actionGeometry = function(...args) 
           
@@ -2370,7 +2371,7 @@
               return this.__PROXY__.actionGeometry(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.actionAt = function(...args) 
           
@@ -2380,7 +2381,7 @@
               return this.__PROXY__.actionAt(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.menuAction = function(...args) 
           
@@ -2390,7 +2391,7 @@
               return this.__PROXY__.menuAction(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setTitle = function(...args) 
           
@@ -2400,7 +2401,7 @@
               return this.__PROXY__.setTitle(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setIcon = function(...args) 
           
@@ -2410,7 +2411,7 @@
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setNoReplayFor = function(...args) 
           
@@ -2420,7 +2421,7 @@
               return this.__PROXY__.setNoReplayFor(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setAsDockMenu = function(...args) 
           
@@ -2430,7 +2431,7 @@
               return this.__PROXY__.setAsDockMenu(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setSeparatorsCollapsible = function(...args) 
           
@@ -2440,7 +2441,7 @@
               return this.__PROXY__.setSeparatorsCollapsible(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.setToolTipsVisible = function(...args) 
           
@@ -2450,7 +2451,7 @@
               return this.__PROXY__.setToolTipsVisible(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.columnCount = function(...args) 
           
@@ -2460,7 +2461,7 @@
               return this.__PROXY__.columnCount(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.changeEvent = function(...args) 
           
@@ -2470,7 +2471,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.keyPressEvent = function(...args) 
           
@@ -2480,7 +2481,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2490,7 +2491,7 @@
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mousePressEvent = function(...args) 
           
@@ -2500,7 +2501,7 @@
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.mouseMoveEvent = function(...args) 
           
@@ -2510,7 +2511,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QMenu.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QMenu.prototype.wheelEvent = function(...args) 
           
@@ -2520,7 +2522,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.enterEvent = function(...args) 
           
@@ -2530,7 +2532,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.leaveEvent = function(...args) 
           
@@ -2540,7 +2542,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.hideEvent = function(...args) 
           
@@ -2550,7 +2552,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QMenu.prototype.paintEvent = function(...args) 
           
@@ -2560,7 +2562,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QMenu.prototype.paintEvent.__SUPER__ = true;
+        
 
       // static functions:
       

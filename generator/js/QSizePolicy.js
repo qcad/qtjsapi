@@ -193,7 +193,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.horizontalPolicy(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.verticalPolicy = function(...args) 
           
@@ -203,7 +203,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.verticalPolicy(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.controlType = function(...args) 
           
@@ -213,7 +213,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.controlType(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.setHorizontalPolicy = function(...args) 
           
@@ -223,7 +223,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.setHorizontalPolicy(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.setVerticalPolicy = function(...args) 
           
@@ -233,7 +233,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.setVerticalPolicy(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.setControlType = function(...args) 
           
@@ -243,7 +243,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.setControlType(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.expandingDirections = function(...args) 
           
@@ -253,7 +253,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.expandingDirections(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.setHeightForWidth = function(...args) 
           
@@ -263,7 +263,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.setHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.hasHeightForWidth = function(...args) 
           
@@ -273,7 +273,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.setWidthForHeight = function(...args) 
           
@@ -283,7 +283,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.setWidthForHeight(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.hasWidthForHeight = function(...args) 
           
@@ -293,7 +293,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.hasWidthForHeight(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.horizontalStretch = function(...args) 
           
@@ -303,7 +303,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.horizontalStretch(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.verticalStretch = function(...args) 
           
@@ -313,7 +313,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.verticalStretch(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.setHorizontalStretch = function(...args) 
           
@@ -323,7 +323,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.setHorizontalStretch(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.setVerticalStretch = function(...args) 
           
@@ -333,7 +333,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.setVerticalStretch(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.retainSizeWhenHidden = function(...args) 
           
@@ -343,7 +343,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.retainSizeWhenHidden(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.setRetainSizeWhenHidden = function(...args) 
           
@@ -353,7 +353,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.setRetainSizeWhenHidden(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.transpose = function(...args) 
           
@@ -363,7 +363,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.transpose(...args);
             
         };
-    
+        
         // function 
         QSizePolicy.prototype.transposed = function(...args) 
           
@@ -373,7 +373,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
               return this.__PROXY__.transposed(...args);
             
         };
-    
+        
 
       // static functions:
       QSizePolicy.prototype.isNullWrapper = function() {

@@ -325,7 +325,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.spontaneous = function(...args) 
           
@@ -335,7 +335,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.isAccepted = function(...args) 
           
@@ -345,7 +345,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.accept = function(...args) 
           
@@ -355,7 +355,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.ignore = function(...args) 
           
@@ -365,7 +365,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.isInputEvent = function(...args) 
           
@@ -375,7 +375,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.isPointerEvent = function(...args) 
           
@@ -385,7 +385,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -395,7 +395,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.setSpontaneous = function(...args) 
           
@@ -405,7 +405,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.modifiers = function(...args) 
           
@@ -415,7 +415,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.modifiers(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.setModifiers = function(...args) 
           
@@ -425,7 +425,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModifiers(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.timestamp = function(...args) 
           
@@ -435,7 +435,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.timestamp(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.setTimestamp = function(...args) 
           
@@ -445,7 +445,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setTimestamp(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.pointCount = function(...args) 
           
@@ -455,7 +455,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointCount(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.point = function(...args) 
           
@@ -465,7 +465,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.point(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.pointById = function(...args) 
           
@@ -475,7 +475,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointById(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.allPointsGrabbed = function(...args) 
           
@@ -485,7 +485,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsGrabbed(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.allPointsAccepted = function(...args) 
           
@@ -495,7 +495,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsAccepted(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.setAccepted = function(...args) 
           
@@ -505,7 +505,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.exclusiveGrabber = function(...args) 
           
@@ -515,7 +515,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.setExclusiveGrabber = function(...args) 
           
@@ -525,7 +525,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.clearPassiveGrabbers = function(...args) 
           
@@ -535,7 +535,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.clearPassiveGrabbers(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.addPassiveGrabber = function(...args) 
           
@@ -545,7 +545,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.addPassiveGrabber(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.removePassiveGrabber = function(...args) 
           
@@ -555,7 +555,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.removePassiveGrabber(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.button = function(...args) 
           
@@ -565,7 +565,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.button(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.buttons = function(...args) 
           
@@ -575,7 +575,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.position = function(...args) 
           
@@ -585,7 +585,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.scenePosition = function(...args) 
           
@@ -595,7 +595,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.scenePosition(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.globalPosition = function(...args) 
           
@@ -605,7 +605,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.globalPosition(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.exclusivePointGrabber = function(...args) 
           
@@ -615,7 +615,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusivePointGrabber(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.setExclusivePointGrabber = function(...args) 
           
@@ -625,7 +625,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusivePointGrabber(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.clone = function(...args) 
           
@@ -635,7 +635,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.isInverted = function(...args) 
           
@@ -645,7 +645,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInverted(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.hasPixelDelta = function(...args) 
           
@@ -655,7 +655,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.hasPixelDelta(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.isBeginEvent = function(...args) 
           
@@ -665,7 +665,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isBeginEvent(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.isUpdateEvent = function(...args) 
           
@@ -675,7 +675,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isUpdateEvent(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.isEndEvent = function(...args) 
           
@@ -685,7 +685,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.isEndEvent(...args);
             
         };
-    
+        
         // function 
         QWheelEvent.prototype.source = function(...args) 
           
@@ -695,7 +695,7 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
 
       // static functions:
       

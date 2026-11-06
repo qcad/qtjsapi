@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.pluginPaths = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.pluginPaths(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.clearPluginPaths = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.clearPluginPaths(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.addPluginPath = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.addPluginPath(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.load = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.load(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.availableWidgets = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.availableWidgets(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.availableLayouts = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.availableLayouts(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.createWidget = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.createWidget(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.createLayout = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.createLayout(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.createActionGroup = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.createActionGroup(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.createAction = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.createAction(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.setWorkingDirectory = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.setWorkingDirectory(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.workingDirectory = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.workingDirectory(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.setLanguageChangeEnabled = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.setLanguageChangeEnabled(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.isLanguageChangeEnabled = function(...args) 
           
@@ -439,7 +439,7 @@
               return this.__PROXY__.isLanguageChangeEnabled(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.setTranslationEnabled = function(...args) 
           
@@ -449,7 +449,7 @@
               return this.__PROXY__.setTranslationEnabled(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.isTranslationEnabled = function(...args) 
           
@@ -459,7 +459,7 @@
               return this.__PROXY__.isTranslationEnabled(...args);
             
         };
-    
+        
         // function 
         QUiLoader.prototype.errorString = function(...args) 
           
@@ -469,7 +469,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
 
       // static functions:
       

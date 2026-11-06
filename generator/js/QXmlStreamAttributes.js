@@ -134,7 +134,7 @@
               return this.__PROXY__.append(...args);
             
         };
-    
+        
         // function 
         QXmlStreamAttributes.prototype.hasAttribute = function(...args) 
           
@@ -144,7 +144,7 @@
               return this.__PROXY__.hasAttribute(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlStreamAttributes.prototype.isNullWrapper = function() {

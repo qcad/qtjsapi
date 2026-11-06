@@ -148,7 +148,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.isWidgetType = function(...args) 
           
@@ -158,7 +158,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.isWindowType = function(...args) 
           
@@ -168,7 +168,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.signalsBlocked = function(...args) 
           
@@ -178,7 +178,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.blockSignals = function(...args) 
           
@@ -188,7 +188,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.findChild = function(...args) 
           
@@ -198,7 +198,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.children = function(...args) 
           
@@ -208,7 +208,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setParent = function(...args) 
           
@@ -218,7 +218,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.installEventFilter = function(...args) 
           
@@ -228,7 +228,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.removeEventFilter = function(...args) 
           
@@ -238,7 +238,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.dumpObjectTree = function(...args) 
           
@@ -248,7 +248,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.dumpObjectInfo = function(...args) 
           
@@ -258,7 +258,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setProperty = function(...args) 
           
@@ -268,7 +268,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.property = function(...args) 
           
@@ -278,7 +278,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.dynamicPropertyNames = function(...args) 
           
@@ -288,7 +288,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.parent = function(...args) 
           
@@ -298,7 +298,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.deleteLater = function(...args) 
           
@@ -308,7 +308,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setHotSpot = function(...args) 
           
@@ -318,7 +318,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setHotSpot(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.unsetHotSpot = function(...args) 
           
@@ -328,7 +328,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.unsetHotSpot(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setGestureCancelPolicy = function(...args) 
           
@@ -338,7 +338,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setGestureCancelPolicy(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setTotalChangeFlags = function(...args) 
           
@@ -348,7 +348,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setTotalChangeFlags(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setChangeFlags = function(...args) 
           
@@ -358,7 +358,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setChangeFlags(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setStartCenterPoint = function(...args) 
           
@@ -368,7 +368,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setStartCenterPoint(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setLastCenterPoint = function(...args) 
           
@@ -378,7 +378,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setLastCenterPoint(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setCenterPoint = function(...args) 
           
@@ -388,7 +388,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setCenterPoint(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setTotalScaleFactor = function(...args) 
           
@@ -398,7 +398,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setTotalScaleFactor(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setLastScaleFactor = function(...args) 
           
@@ -408,7 +408,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setLastScaleFactor(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setScaleFactor = function(...args) 
           
@@ -418,7 +418,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setScaleFactor(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setTotalRotationAngle = function(...args) 
           
@@ -428,7 +428,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setTotalRotationAngle(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setLastRotationAngle = function(...args) 
           
@@ -438,7 +438,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setLastRotationAngle(...args);
             
         };
-    
+        
         // function 
         QPinchGesture.prototype.setRotationAngle = function(...args) 
           
@@ -448,7 +448,7 @@ QPinchGesture.CenterPointChanged = QPinchGesture_Wrapper.CenterPointChanged;
               return this.__PROXY__.setRotationAngle(...args);
             
         };
-    
+        
 
       // static functions:
       

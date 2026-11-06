@@ -208,7 +208,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.swap = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.isEmpty = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.isDetached = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.clear = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.query = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.query(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.setQuery = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.setQuery(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.toString = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.toString(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.setQueryDelimiters = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setQueryDelimiters(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.queryValueDelimiter = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.queryValueDelimiter(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.queryPairDelimiter = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.queryPairDelimiter(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.setQueryItems = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.setQueryItems(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.queryItems = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.queryItems(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.hasQueryItem = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.hasQueryItem(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.addQueryItem = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.addQueryItem(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.removeQueryItem = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.removeQueryItem(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.queryItemValue = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.queryItemValue(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.allQueryItemValues = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.allQueryItemValues(...args);
             
         };
-    
+        
         // function 
         QUrlQuery.prototype.removeAllQueryItems = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.removeAllQueryItems(...args);
             
         };
-    
+        
 
       // static functions:
       QUrlQuery.prototype.isNullWrapper = function() {

@@ -207,7 +207,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isWidgetType = function(...args) 
           
@@ -217,7 +217,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isWindowType = function(...args) 
           
@@ -227,7 +227,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.signalsBlocked = function(...args) 
           
@@ -237,7 +237,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.blockSignals = function(...args) 
           
@@ -247,7 +247,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.findChild = function(...args) 
           
@@ -257,7 +257,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.children = function(...args) 
           
@@ -267,7 +267,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.installEventFilter = function(...args) 
           
@@ -277,7 +277,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.removeEventFilter = function(...args) 
           
@@ -287,7 +287,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.dumpObjectTree = function(...args) 
           
@@ -297,7 +297,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.dumpObjectInfo = function(...args) 
           
@@ -307,7 +307,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setProperty = function(...args) 
           
@@ -317,7 +317,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.property = function(...args) 
           
@@ -327,7 +327,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.dynamicPropertyNames = function(...args) 
           
@@ -337,7 +337,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.parent = function(...args) 
           
@@ -347,7 +347,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.deleteLater = function(...args) 
           
@@ -357,7 +357,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.devType = function(...args) 
           
@@ -367,7 +367,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.createWinId = function(...args) 
           
@@ -377,7 +377,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isWindow = function(...args) 
           
@@ -387,7 +387,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isModal = function(...args) 
           
@@ -397,7 +397,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowModality = function(...args) 
           
@@ -407,7 +407,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isEnabled = function(...args) 
           
@@ -417,7 +417,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isEnabledTo = function(...args) 
           
@@ -427,7 +427,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setEnabled = function(...args) 
           
@@ -437,7 +437,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setDisabled = function(...args) 
           
@@ -447,7 +447,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowModified = function(...args) 
           
@@ -457,7 +457,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMinimumSize = function(...args) 
           
@@ -467,7 +467,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMaximumSize = function(...args) 
           
@@ -477,7 +477,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMinimumWidth = function(...args) 
           
@@ -487,7 +487,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMinimumHeight = function(...args) 
           
@@ -497,7 +497,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMaximumWidth = function(...args) 
           
@@ -507,7 +507,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMaximumHeight = function(...args) 
           
@@ -517,7 +517,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setSizeIncrement = function(...args) 
           
@@ -527,7 +527,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setBaseSize = function(...args) 
           
@@ -537,7 +537,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFixedSize = function(...args) 
           
@@ -547,7 +547,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFixedWidth = function(...args) 
           
@@ -557,7 +557,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFixedHeight = function(...args) 
           
@@ -567,7 +567,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mapToGlobal = function(...args) 
           
@@ -577,7 +577,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mapFromGlobal = function(...args) 
           
@@ -587,7 +587,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mapToParent = function(...args) 
           
@@ -597,7 +597,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mapFromParent = function(...args) 
           
@@ -607,7 +607,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mapTo = function(...args) 
           
@@ -617,7 +617,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mapFrom = function(...args) 
           
@@ -627,7 +627,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.window = function(...args) 
           
@@ -637,7 +637,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.nativeParentWidget = function(...args) 
           
@@ -647,7 +647,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.topLevelWidget = function(...args) 
           
@@ -657,7 +657,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setPalette = function(...args) 
           
@@ -667,7 +667,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setBackgroundRole = function(...args) 
           
@@ -677,7 +677,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.backgroundRole = function(...args) 
           
@@ -687,7 +687,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setForegroundRole = function(...args) 
           
@@ -697,7 +697,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.foregroundRole = function(...args) 
           
@@ -707,7 +707,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFont = function(...args) 
           
@@ -717,7 +717,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.fontInfo = function(...args) 
           
@@ -727,7 +727,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setCursor = function(...args) 
           
@@ -737,7 +737,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.unsetCursor = function(...args) 
           
@@ -747,7 +747,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMouseTracking = function(...args) 
           
@@ -757,7 +757,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.hasMouseTracking = function(...args) 
           
@@ -767,7 +767,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.underMouse = function(...args) 
           
@@ -777,7 +777,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setTabletTracking = function(...args) 
           
@@ -787,7 +787,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.hasTabletTracking = function(...args) 
           
@@ -797,7 +797,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMask = function(...args) 
           
@@ -807,7 +807,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mask = function(...args) 
           
@@ -817,7 +817,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.clearMask = function(...args) 
           
@@ -827,7 +827,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.grab = function(...args) 
           
@@ -837,7 +837,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.grabGesture = function(...args) 
           
@@ -847,7 +847,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.ungrabGesture = function(...args) 
           
@@ -857,7 +857,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowTitle = function(...args) 
           
@@ -867,7 +867,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setStyleSheet = function(...args) 
           
@@ -877,7 +877,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowIcon = function(...args) 
           
@@ -887,7 +887,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowIconText = function(...args) 
           
@@ -897,7 +897,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowRole = function(...args) 
           
@@ -907,7 +907,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.windowRole = function(...args) 
           
@@ -917,7 +917,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowFilePath = function(...args) 
           
@@ -927,7 +927,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowOpacity = function(...args) 
           
@@ -937,7 +937,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isWindowModified = function(...args) 
           
@@ -947,7 +947,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setToolTip = function(...args) 
           
@@ -957,7 +957,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setToolTipDuration = function(...args) 
           
@@ -967,7 +967,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setStatusTip = function(...args) 
           
@@ -977,7 +977,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWhatsThis = function(...args) 
           
@@ -987,7 +987,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setAccessibleName = function(...args) 
           
@@ -997,7 +997,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setAccessibleDescription = function(...args) 
           
@@ -1007,7 +1007,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setLayoutDirection = function(...args) 
           
@@ -1017,7 +1017,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1027,7 +1027,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setLocale = function(...args) 
           
@@ -1037,7 +1037,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.unsetLocale = function(...args) 
           
@@ -1047,7 +1047,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isRightToLeft = function(...args) 
           
@@ -1057,7 +1057,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isLeftToRight = function(...args) 
           
@@ -1067,7 +1067,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.activateWindow = function(...args) 
           
@@ -1077,7 +1077,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.clearFocus = function(...args) 
           
@@ -1087,7 +1087,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFocus = function(...args) 
           
@@ -1097,7 +1097,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFocusPolicy = function(...args) 
           
@@ -1107,7 +1107,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.hasFocus = function(...args) 
           
@@ -1117,7 +1117,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFocusProxy = function(...args) 
           
@@ -1127,7 +1127,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.focusProxy = function(...args) 
           
@@ -1137,7 +1137,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1147,7 +1147,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.grabMouse = function(...args) 
           
@@ -1157,7 +1157,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.releaseMouse = function(...args) 
           
@@ -1167,7 +1167,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.grabKeyboard = function(...args) 
           
@@ -1177,7 +1177,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.releaseKeyboard = function(...args) 
           
@@ -1187,7 +1187,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.grabShortcut = function(...args) 
           
@@ -1197,7 +1197,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.releaseShortcut = function(...args) 
           
@@ -1207,7 +1207,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setShortcutEnabled = function(...args) 
           
@@ -1217,7 +1217,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1227,7 +1227,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1237,7 +1237,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.update = function(...args) 
           
@@ -1247,7 +1247,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.repaint = function(...args) 
           
@@ -1257,7 +1257,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setHidden = function(...args) 
           
@@ -1267,7 +1267,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.show = function(...args) 
           
@@ -1277,7 +1277,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.hide = function(...args) 
           
@@ -1287,7 +1287,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.showMinimized = function(...args) 
           
@@ -1297,7 +1297,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.showMaximized = function(...args) 
           
@@ -1307,7 +1307,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.showFullScreen = function(...args) 
           
@@ -1317,7 +1317,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.showNormal = function(...args) 
           
@@ -1327,7 +1327,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.close = function(...args) 
           
@@ -1337,7 +1337,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.raise = function(...args) 
           
@@ -1347,7 +1347,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.lower = function(...args) 
           
@@ -1357,7 +1357,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.stackUnder = function(...args) 
           
@@ -1367,7 +1367,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.move = function(...args) 
           
@@ -1377,7 +1377,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.resize = function(...args) 
           
@@ -1387,7 +1387,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setGeometry = function(...args) 
           
@@ -1397,7 +1397,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.saveGeometry = function(...args) 
           
@@ -1407,7 +1407,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.restoreGeometry = function(...args) 
           
@@ -1417,7 +1417,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.adjustSize = function(...args) 
           
@@ -1427,7 +1427,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isVisible = function(...args) 
           
@@ -1437,7 +1437,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isVisibleTo = function(...args) 
           
@@ -1447,7 +1447,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isHidden = function(...args) 
           
@@ -1457,7 +1457,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isMinimized = function(...args) 
           
@@ -1467,7 +1467,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isMaximized = function(...args) 
           
@@ -1477,7 +1477,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isFullScreen = function(...args) 
           
@@ -1487,7 +1487,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.windowState = function(...args) 
           
@@ -1497,7 +1497,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowState = function(...args) 
           
@@ -1507,7 +1507,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.overrideWindowState = function(...args) 
           
@@ -1517,7 +1517,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setSizePolicy = function(...args) 
           
@@ -1527,7 +1527,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.heightForWidth = function(...args) 
           
@@ -1537,7 +1537,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.hasHeightForWidth = function(...args) 
           
@@ -1547,7 +1547,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.visibleRegion = function(...args) 
           
@@ -1557,7 +1557,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setContentsMargins = function(...args) 
           
@@ -1567,7 +1567,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.contentsMargins = function(...args) 
           
@@ -1577,7 +1577,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.contentsRect = function(...args) 
           
@@ -1587,7 +1587,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.layout = function(...args) 
           
@@ -1597,7 +1597,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setLayout = function(...args) 
           
@@ -1607,7 +1607,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.updateGeometry = function(...args) 
           
@@ -1617,7 +1617,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setParent = function(...args) 
           
@@ -1627,7 +1627,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.scroll = function(...args) 
           
@@ -1637,7 +1637,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.focusWidget = function(...args) 
           
@@ -1647,7 +1647,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.nextInFocusChain = function(...args) 
           
@@ -1657,7 +1657,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.previousInFocusChain = function(...args) 
           
@@ -1667,7 +1667,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setAcceptDrops = function(...args) 
           
@@ -1677,7 +1677,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.addAction = function(...args) 
           
@@ -1687,7 +1687,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.addActions = function(...args) 
           
@@ -1697,7 +1697,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.insertActions = function(...args) 
           
@@ -1707,7 +1707,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.insertAction = function(...args) 
           
@@ -1717,7 +1717,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.removeAction = function(...args) 
           
@@ -1727,7 +1727,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.actions = function(...args) 
           
@@ -1737,7 +1737,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.parentWidget = function(...args) 
           
@@ -1747,7 +1747,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowFlags = function(...args) 
           
@@ -1757,7 +1757,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.windowFlags = function(...args) 
           
@@ -1767,7 +1767,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setWindowFlag = function(...args) 
           
@@ -1777,7 +1777,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.overrideWindowFlags = function(...args) 
           
@@ -1787,7 +1787,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.windowType = function(...args) 
           
@@ -1797,7 +1797,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.childAt = function(...args) 
           
@@ -1807,7 +1807,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setAttribute = function(...args) 
           
@@ -1817,7 +1817,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.testAttribute = function(...args) 
           
@@ -1827,7 +1827,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.ensurePolished = function(...args) 
           
@@ -1837,7 +1837,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isAncestorOf = function(...args) 
           
@@ -1847,7 +1847,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setAutoFillBackground = function(...args) 
           
@@ -1857,7 +1857,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.event = function(...args) 
           
@@ -1867,7 +1867,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1877,7 +1877,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.wheelEvent = function(...args) 
           
@@ -1887,7 +1887,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.keyReleaseEvent = function(...args) 
           
@@ -1897,7 +1897,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.focusInEvent = function(...args) 
           
@@ -1907,7 +1907,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.focusOutEvent = function(...args) 
           
@@ -1917,7 +1917,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.enterEvent = function(...args) 
           
@@ -1927,7 +1927,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.leaveEvent = function(...args) 
           
@@ -1937,7 +1937,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.moveEvent = function(...args) 
           
@@ -1947,7 +1947,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.tabletEvent = function(...args) 
           
@@ -1957,7 +1957,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.dragEnterEvent = function(...args) 
           
@@ -1967,7 +1967,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.dragMoveEvent = function(...args) 
           
@@ -1977,7 +1977,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.dragLeaveEvent = function(...args) 
           
@@ -1987,7 +1987,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.dropEvent = function(...args) 
           
@@ -1997,7 +1997,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.hideEvent = function(...args) 
           
@@ -2007,7 +2007,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.nativeEvent = function(...args) 
           
@@ -2017,7 +2017,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.metric = function(...args) 
           
@@ -2027,7 +2027,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.initPainter = function(...args) 
           
@@ -2037,7 +2037,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.redirected = function(...args) 
           
@@ -2047,7 +2047,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.sharedPainter = function(...args) 
           
@@ -2057,7 +2057,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.inputMethodEvent = function(...args) 
           
@@ -2067,7 +2067,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.inputMethodQuery = function(...args) 
           
@@ -2077,7 +2077,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setInputMethodHints = function(...args) 
           
@@ -2087,7 +2087,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.updateMicroFocus = function(...args) 
           
@@ -2097,7 +2097,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.create = function(...args) 
           
@@ -2107,7 +2107,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.destroy = function(...args) 
           
@@ -2117,7 +2117,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.focusNextPrevChild = function(...args) 
           
@@ -2127,7 +2127,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.focusNextChild = function(...args) 
           
@@ -2137,7 +2137,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.focusPreviousChild = function(...args) 
           
@@ -2147,7 +2147,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setBackingStore = function(...args) 
           
@@ -2157,7 +2157,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.testAttribute_helper = function(...args) 
           
@@ -2167,7 +2167,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.takeLayout = function(...args) 
           
@@ -2177,7 +2177,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2187,7 +2187,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.qt_qwidget_data = function(...args) 
           
@@ -2197,7 +2197,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.qt_widget_private = function(...args) 
           
@@ -2207,7 +2207,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.result = function(...args) 
           
@@ -2217,7 +2217,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.result(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setSizeGripEnabled = function(...args) 
           
@@ -2227,7 +2227,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.isSizeGripEnabled = function(...args) 
           
@@ -2237,7 +2237,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.isSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setModal = function(...args) 
           
@@ -2247,7 +2247,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setModal(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setResult = function(...args) 
           
@@ -2257,7 +2257,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setResult(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.exec = function(...args) 
           
@@ -2267,7 +2267,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.reject = function(...args) 
           
@@ -2277,7 +2277,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.reject(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.keyPressEvent = function(...args) 
           
@@ -2287,7 +2287,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.closeEvent = function(...args) 
           
@@ -2297,7 +2297,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.showEvent = function(...args) 
           
@@ -2307,7 +2307,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.contextMenuEvent = function(...args) 
           
@@ -2317,7 +2317,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.eventFilter = function(...args) 
           
@@ -2327,7 +2327,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.adjustPosition = function(...args) 
           
@@ -2337,7 +2337,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.adjustPosition(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setDirectory = function(...args) 
           
@@ -2347,7 +2347,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setDirectory(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.directory = function(...args) 
           
@@ -2357,7 +2357,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.directory(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setDirectoryUrl = function(...args) 
           
@@ -2367,7 +2367,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setDirectoryUrl(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.directoryUrl = function(...args) 
           
@@ -2377,7 +2377,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.directoryUrl(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.selectFile = function(...args) 
           
@@ -2387,7 +2387,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.selectFile(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.selectedFiles = function(...args) 
           
@@ -2397,7 +2397,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.selectedFiles(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.selectUrl = function(...args) 
           
@@ -2407,7 +2407,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.selectUrl(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.selectedUrls = function(...args) 
           
@@ -2417,7 +2417,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.selectedUrls(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setNameFilter = function(...args) 
           
@@ -2427,7 +2427,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setNameFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setNameFilters = function(...args) 
           
@@ -2437,7 +2437,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setNameFilters(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.nameFilters = function(...args) 
           
@@ -2447,7 +2447,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.nameFilters(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.selectNameFilter = function(...args) 
           
@@ -2457,7 +2457,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.selectNameFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.selectedMimeTypeFilter = function(...args) 
           
@@ -2467,7 +2467,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.selectedMimeTypeFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.selectedNameFilter = function(...args) 
           
@@ -2477,7 +2477,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.selectedNameFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setMimeTypeFilters = function(...args) 
           
@@ -2487,7 +2487,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setMimeTypeFilters(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.mimeTypeFilters = function(...args) 
           
@@ -2497,7 +2497,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.mimeTypeFilters(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.selectMimeTypeFilter = function(...args) 
           
@@ -2507,7 +2507,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.selectMimeTypeFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.filter = function(...args) 
           
@@ -2517,7 +2517,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.filter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFilter = function(...args) 
           
@@ -2527,7 +2527,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFilter(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setViewMode = function(...args) 
           
@@ -2537,7 +2537,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setViewMode(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.viewMode = function(...args) 
           
@@ -2547,7 +2547,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.viewMode(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setFileMode = function(...args) 
           
@@ -2557,7 +2557,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setFileMode(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setAcceptMode = function(...args) 
           
@@ -2567,7 +2567,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setAcceptMode(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setSidebarUrls = function(...args) 
           
@@ -2577,7 +2577,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setSidebarUrls(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.sidebarUrls = function(...args) 
           
@@ -2587,7 +2587,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.sidebarUrls(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.saveState = function(...args) 
           
@@ -2597,7 +2597,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.saveState(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.restoreState = function(...args) 
           
@@ -2607,7 +2607,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.restoreState(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setDefaultSuffix = function(...args) 
           
@@ -2617,7 +2617,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setDefaultSuffix(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setHistory = function(...args) 
           
@@ -2627,7 +2627,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setHistory(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.history = function(...args) 
           
@@ -2637,7 +2637,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.history(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setLabelText = function(...args) 
           
@@ -2647,7 +2647,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setLabelText(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.labelText = function(...args) 
           
@@ -2657,7 +2657,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.labelText(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setSupportedSchemes = function(...args) 
           
@@ -2667,7 +2667,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setSupportedSchemes(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setOption = function(...args) 
           
@@ -2677,7 +2677,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.testOption = function(...args) 
           
@@ -2687,7 +2687,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.testOption(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setOptions = function(...args) 
           
@@ -2697,7 +2697,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setOptions(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.open = function(...args) 
           
@@ -2707,7 +2707,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.setVisible = function(...args) 
           
@@ -2717,7 +2717,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.getOpenFileName = function(...args) 
           
@@ -2727,7 +2727,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.getOpenFileName(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.getOpenFileUrl = function(...args) 
           
@@ -2737,7 +2737,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.getOpenFileUrl(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.getSaveFileName = function(...args) 
           
@@ -2747,7 +2747,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.getSaveFileName(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.getSaveFileUrl = function(...args) 
           
@@ -2757,7 +2757,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.getSaveFileUrl(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.getExistingDirectory = function(...args) 
           
@@ -2767,7 +2767,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.getExistingDirectory(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.getExistingDirectoryUrl = function(...args) 
           
@@ -2777,7 +2777,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.getExistingDirectoryUrl(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.getOpenFileNames = function(...args) 
           
@@ -2787,7 +2787,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.getOpenFileNames(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.getOpenFileUrls = function(...args) 
           
@@ -2797,7 +2797,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.getOpenFileUrls(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.saveFileContent = function(...args) 
           
@@ -2807,7 +2807,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.saveFileContent(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.done = function(...args) 
           
@@ -2817,7 +2817,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.done(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.accept = function(...args) 
           
@@ -2827,7 +2827,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QFileDialog.prototype.changeEvent = function(...args) 
           
@@ -2837,7 +2837,7 @@ QFileDialog.DontUseCustomDirectoryIcons = QFileDialog_Wrapper.DontUseCustomDirec
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
 
       // static functions:
       

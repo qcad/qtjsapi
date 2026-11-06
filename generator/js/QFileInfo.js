@@ -212,7 +212,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.setFile = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.setFile(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.exists = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.exists(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.refresh = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.refresh(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.filePath = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.filePath(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.absoluteFilePath = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.absoluteFilePath(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.canonicalFilePath = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.canonicalFilePath(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.fileName = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.baseName = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.baseName(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.completeBaseName = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.completeBaseName(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.suffix = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.suffix(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.bundleName = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.bundleName(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.completeSuffix = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.completeSuffix(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.path = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.path(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.absolutePath = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.absolutePath(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.canonicalPath = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.canonicalPath(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.dir = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.dir(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.absoluteDir = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.absoluteDir(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isReadable = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isWritable = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isExecutable = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.isExecutable(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isHidden = function(...args) 
           
@@ -422,7 +422,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isNativePath = function(...args) 
           
@@ -432,7 +432,7 @@
               return this.__PROXY__.isNativePath(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isRelative = function(...args) 
           
@@ -442,7 +442,7 @@
               return this.__PROXY__.isRelative(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isAbsolute = function(...args) 
           
@@ -452,7 +452,7 @@
               return this.__PROXY__.isAbsolute(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.makeAbsolute = function(...args) 
           
@@ -462,7 +462,7 @@
               return this.__PROXY__.makeAbsolute(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isFile = function(...args) 
           
@@ -472,7 +472,7 @@
               return this.__PROXY__.isFile(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isDir = function(...args) 
           
@@ -482,7 +482,7 @@
               return this.__PROXY__.isDir(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isSymLink = function(...args) 
           
@@ -492,7 +492,7 @@
               return this.__PROXY__.isSymLink(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isSymbolicLink = function(...args) 
           
@@ -502,7 +502,7 @@
               return this.__PROXY__.isSymbolicLink(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isShortcut = function(...args) 
           
@@ -512,7 +512,7 @@
               return this.__PROXY__.isShortcut(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isJunction = function(...args) 
           
@@ -522,7 +522,7 @@
               return this.__PROXY__.isJunction(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isRoot = function(...args) 
           
@@ -532,7 +532,7 @@
               return this.__PROXY__.isRoot(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.isBundle = function(...args) 
           
@@ -542,7 +542,7 @@
               return this.__PROXY__.isBundle(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.symLinkTarget = function(...args) 
           
@@ -552,7 +552,7 @@
               return this.__PROXY__.symLinkTarget(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.owner = function(...args) 
           
@@ -562,7 +562,7 @@
               return this.__PROXY__.owner(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.ownerId = function(...args) 
           
@@ -572,7 +572,7 @@
               return this.__PROXY__.ownerId(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.group = function(...args) 
           
@@ -582,7 +582,7 @@
               return this.__PROXY__.group(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.groupId = function(...args) 
           
@@ -592,7 +592,7 @@
               return this.__PROXY__.groupId(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.permission = function(...args) 
           
@@ -602,7 +602,7 @@
               return this.__PROXY__.permission(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.permissions = function(...args) 
           
@@ -612,7 +612,7 @@
               return this.__PROXY__.permissions(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.size = function(...args) 
           
@@ -622,7 +622,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.birthTime = function(...args) 
           
@@ -632,7 +632,7 @@
               return this.__PROXY__.birthTime(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.metadataChangeTime = function(...args) 
           
@@ -642,7 +642,7 @@
               return this.__PROXY__.metadataChangeTime(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.lastModified = function(...args) 
           
@@ -652,7 +652,7 @@
               return this.__PROXY__.lastModified(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.lastRead = function(...args) 
           
@@ -662,7 +662,7 @@
               return this.__PROXY__.lastRead(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.fileTime = function(...args) 
           
@@ -672,7 +672,7 @@
               return this.__PROXY__.fileTime(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.caching = function(...args) 
           
@@ -682,7 +682,7 @@
               return this.__PROXY__.caching(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.setCaching = function(...args) 
           
@@ -692,7 +692,7 @@
               return this.__PROXY__.setCaching(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.stat = function(...args) 
           
@@ -702,7 +702,7 @@
               return this.__PROXY__.stat(...args);
             
         };
-    
+        
         // function 
         QFileInfo.prototype.d_func = function(...args) 
           
@@ -712,7 +712,7 @@
               return this.__PROXY__.d_func(...args);
             
         };
-    
+        
 
       // static functions:
       QFileInfo.prototype.isNullWrapper = function() {

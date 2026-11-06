@@ -247,7 +247,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isWidgetType = function(...args) 
           
@@ -257,7 +257,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isWindowType = function(...args) 
           
@@ -267,7 +267,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.signalsBlocked = function(...args) 
           
@@ -277,7 +277,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.blockSignals = function(...args) 
           
@@ -287,7 +287,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.findChild = function(...args) 
           
@@ -297,7 +297,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.children = function(...args) 
           
@@ -307,7 +307,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.installEventFilter = function(...args) 
           
@@ -317,7 +317,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.removeEventFilter = function(...args) 
           
@@ -327,7 +327,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -337,7 +337,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -347,7 +347,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setProperty = function(...args) 
           
@@ -357,7 +357,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.property = function(...args) 
           
@@ -367,7 +367,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -377,7 +377,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.parent = function(...args) 
           
@@ -387,7 +387,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.deleteLater = function(...args) 
           
@@ -397,7 +397,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.devType = function(...args) 
           
@@ -407,7 +407,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.createWinId = function(...args) 
           
@@ -417,7 +417,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isWindow = function(...args) 
           
@@ -427,7 +427,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isModal = function(...args) 
           
@@ -437,7 +437,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowModality = function(...args) 
           
@@ -447,7 +447,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isEnabled = function(...args) 
           
@@ -457,7 +457,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isEnabledTo = function(...args) 
           
@@ -467,7 +467,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setEnabled = function(...args) 
           
@@ -477,7 +477,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setDisabled = function(...args) 
           
@@ -487,7 +487,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowModified = function(...args) 
           
@@ -497,7 +497,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMinimumSize = function(...args) 
           
@@ -507,7 +507,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMaximumSize = function(...args) 
           
@@ -517,7 +517,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -527,7 +527,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -537,7 +537,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -547,7 +547,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -557,7 +557,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -567,7 +567,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setBaseSize = function(...args) 
           
@@ -577,7 +577,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFixedSize = function(...args) 
           
@@ -587,7 +587,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFixedWidth = function(...args) 
           
@@ -597,7 +597,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFixedHeight = function(...args) 
           
@@ -607,7 +607,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.mapToGlobal = function(...args) 
           
@@ -617,7 +617,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -627,7 +627,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.mapToParent = function(...args) 
           
@@ -637,7 +637,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.mapFromParent = function(...args) 
           
@@ -647,7 +647,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.mapTo = function(...args) 
           
@@ -657,7 +657,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.mapFrom = function(...args) 
           
@@ -667,7 +667,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.window = function(...args) 
           
@@ -677,7 +677,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -687,7 +687,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.topLevelWidget = function(...args) 
           
@@ -697,7 +697,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setPalette = function(...args) 
           
@@ -707,7 +707,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -717,7 +717,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.backgroundRole = function(...args) 
           
@@ -727,7 +727,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setForegroundRole = function(...args) 
           
@@ -737,7 +737,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.foregroundRole = function(...args) 
           
@@ -747,7 +747,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFont = function(...args) 
           
@@ -757,7 +757,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.fontInfo = function(...args) 
           
@@ -767,7 +767,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setCursor = function(...args) 
           
@@ -777,7 +777,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.unsetCursor = function(...args) 
           
@@ -787,7 +787,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMouseTracking = function(...args) 
           
@@ -797,7 +797,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -807,7 +807,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.underMouse = function(...args) 
           
@@ -817,7 +817,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setTabletTracking = function(...args) 
           
@@ -827,7 +827,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -837,7 +837,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMask = function(...args) 
           
@@ -847,7 +847,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.mask = function(...args) 
           
@@ -857,7 +857,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.clearMask = function(...args) 
           
@@ -867,7 +867,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.grab = function(...args) 
           
@@ -877,7 +877,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.grabGesture = function(...args) 
           
@@ -887,7 +887,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.ungrabGesture = function(...args) 
           
@@ -897,7 +897,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowTitle = function(...args) 
           
@@ -907,7 +907,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setStyleSheet = function(...args) 
           
@@ -917,7 +917,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowIcon = function(...args) 
           
@@ -927,7 +927,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowIconText = function(...args) 
           
@@ -937,7 +937,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowRole = function(...args) 
           
@@ -947,7 +947,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.windowRole = function(...args) 
           
@@ -957,7 +957,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -967,7 +967,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -977,7 +977,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isWindowModified = function(...args) 
           
@@ -987,7 +987,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setToolTip = function(...args) 
           
@@ -997,7 +997,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -1007,7 +1007,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setStatusTip = function(...args) 
           
@@ -1017,7 +1017,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWhatsThis = function(...args) 
           
@@ -1027,7 +1027,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setAccessibleName = function(...args) 
           
@@ -1037,7 +1037,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -1047,7 +1047,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -1057,7 +1057,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1067,7 +1067,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setLocale = function(...args) 
           
@@ -1077,7 +1077,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.unsetLocale = function(...args) 
           
@@ -1087,7 +1087,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1097,7 +1097,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1107,7 +1107,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.activateWindow = function(...args) 
           
@@ -1117,7 +1117,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.clearFocus = function(...args) 
           
@@ -1127,7 +1127,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFocus = function(...args) 
           
@@ -1137,7 +1137,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1147,7 +1147,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hasFocus = function(...args) 
           
@@ -1157,7 +1157,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1167,7 +1167,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.focusProxy = function(...args) 
           
@@ -1177,7 +1177,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1187,7 +1187,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.grabMouse = function(...args) 
           
@@ -1197,7 +1197,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.releaseMouse = function(...args) 
           
@@ -1207,7 +1207,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1217,7 +1217,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1227,7 +1227,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.grabShortcut = function(...args) 
           
@@ -1237,7 +1237,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1247,7 +1247,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1257,7 +1257,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1267,7 +1267,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1277,7 +1277,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.repaint = function(...args) 
           
@@ -1287,7 +1287,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setVisible = function(...args) 
           
@@ -1297,7 +1297,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setHidden = function(...args) 
           
@@ -1307,7 +1307,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.show = function(...args) 
           
@@ -1317,7 +1317,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hide = function(...args) 
           
@@ -1327,7 +1327,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.showMinimized = function(...args) 
           
@@ -1337,7 +1337,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.showMaximized = function(...args) 
           
@@ -1347,7 +1347,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.showFullScreen = function(...args) 
           
@@ -1357,7 +1357,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.showNormal = function(...args) 
           
@@ -1367,7 +1367,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.close = function(...args) 
           
@@ -1377,7 +1377,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.raise = function(...args) 
           
@@ -1387,7 +1387,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.lower = function(...args) 
           
@@ -1397,7 +1397,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.stackUnder = function(...args) 
           
@@ -1407,7 +1407,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.move = function(...args) 
           
@@ -1417,7 +1417,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.resize = function(...args) 
           
@@ -1427,7 +1427,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setGeometry = function(...args) 
           
@@ -1437,7 +1437,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.saveGeometry = function(...args) 
           
@@ -1447,7 +1447,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1457,7 +1457,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.adjustSize = function(...args) 
           
@@ -1467,7 +1467,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isVisible = function(...args) 
           
@@ -1477,7 +1477,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1487,7 +1487,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isHidden = function(...args) 
           
@@ -1497,7 +1497,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isMinimized = function(...args) 
           
@@ -1507,7 +1507,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isMaximized = function(...args) 
           
@@ -1517,7 +1517,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isFullScreen = function(...args) 
           
@@ -1527,7 +1527,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.windowState = function(...args) 
           
@@ -1537,7 +1537,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowState = function(...args) 
           
@@ -1547,7 +1547,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1557,7 +1557,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1567,7 +1567,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.heightForWidth = function(...args) 
           
@@ -1577,7 +1577,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1587,7 +1587,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.visibleRegion = function(...args) 
           
@@ -1597,7 +1597,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1607,7 +1607,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.contentsMargins = function(...args) 
           
@@ -1617,7 +1617,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.contentsRect = function(...args) 
           
@@ -1627,7 +1627,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.layout = function(...args) 
           
@@ -1637,7 +1637,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setLayout = function(...args) 
           
@@ -1647,7 +1647,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.updateGeometry = function(...args) 
           
@@ -1657,7 +1657,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setParent = function(...args) 
           
@@ -1667,7 +1667,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.scroll = function(...args) 
           
@@ -1677,7 +1677,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.focusWidget = function(...args) 
           
@@ -1687,7 +1687,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1697,7 +1697,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1707,7 +1707,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1717,7 +1717,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.addAction = function(...args) 
           
@@ -1727,7 +1727,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.addActions = function(...args) 
           
@@ -1737,7 +1737,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.insertActions = function(...args) 
           
@@ -1747,7 +1747,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.insertAction = function(...args) 
           
@@ -1757,7 +1757,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.removeAction = function(...args) 
           
@@ -1767,7 +1767,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.actions = function(...args) 
           
@@ -1777,7 +1777,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.parentWidget = function(...args) 
           
@@ -1787,7 +1787,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1797,7 +1797,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.windowFlags = function(...args) 
           
@@ -1807,7 +1807,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1817,7 +1817,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1827,7 +1827,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.windowType = function(...args) 
           
@@ -1837,7 +1837,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.childAt = function(...args) 
           
@@ -1847,7 +1847,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setAttribute = function(...args) 
           
@@ -1857,7 +1857,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.testAttribute = function(...args) 
           
@@ -1867,7 +1867,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.ensurePolished = function(...args) 
           
@@ -1877,7 +1877,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1887,7 +1887,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1897,7 +1897,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1907,7 +1907,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.focusInEvent = function(...args) 
           
@@ -1917,7 +1917,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1927,7 +1927,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.enterEvent = function(...args) 
           
@@ -1937,7 +1937,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.leaveEvent = function(...args) 
           
@@ -1947,7 +1947,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.moveEvent = function(...args) 
           
@@ -1957,7 +1957,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.closeEvent = function(...args) 
           
@@ -1967,7 +1967,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.tabletEvent = function(...args) 
           
@@ -1977,7 +1977,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       QTableWidget.prototype.actionEvent = function() 
         
@@ -2019,7 +2019,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -2029,7 +2029,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.dropEvent = function(...args) 
           
@@ -2039,7 +2039,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.showEvent = function(...args) 
           
@@ -2049,7 +2049,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hideEvent = function(...args) 
           
@@ -2059,7 +2059,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.nativeEvent = function(...args) 
           
@@ -2069,7 +2069,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.changeEvent = function(...args) 
           
@@ -2079,7 +2079,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.metric = function(...args) 
           
@@ -2089,7 +2089,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.initPainter = function(...args) 
           
@@ -2099,7 +2099,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.redirected = function(...args) 
           
@@ -2109,7 +2109,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.sharedPainter = function(...args) 
           
@@ -2119,7 +2119,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2129,7 +2129,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2139,7 +2139,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2149,7 +2149,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.create = function(...args) 
           
@@ -2159,7 +2159,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.destroy = function(...args) 
           
@@ -2169,7 +2169,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2179,7 +2179,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.focusNextChild = function(...args) 
           
@@ -2189,7 +2189,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2199,7 +2199,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setBackingStore = function(...args) 
           
@@ -2209,7 +2209,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2219,7 +2219,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.takeLayout = function(...args) 
           
@@ -2229,7 +2229,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2239,7 +2239,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2249,7 +2249,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2259,7 +2259,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.frameStyle = function(...args) 
           
@@ -2269,7 +2269,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFrameStyle = function(...args) 
           
@@ -2279,7 +2279,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFrameShape = function(...args) 
           
@@ -2289,7 +2289,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFrameShadow = function(...args) 
           
@@ -2299,7 +2299,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setLineWidth = function(...args) 
           
@@ -2309,7 +2309,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setMidLineWidth = function(...args) 
           
@@ -2319,7 +2319,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setFrameRect = function(...args) 
           
@@ -2329,7 +2329,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.drawFrame = function(...args) 
           
@@ -2339,7 +2339,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.initStyleOption = function(...args) 
           
@@ -2349,7 +2349,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2359,7 +2359,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2369,7 +2369,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.verticalScrollBar = function(...args) 
           
@@ -2379,7 +2379,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2389,7 +2389,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2399,7 +2399,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2409,7 +2409,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.horizontalScrollBar = function(...args) 
           
@@ -2419,7 +2419,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2429,7 +2429,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.cornerWidget = function(...args) 
           
@@ -2439,7 +2439,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setCornerWidget = function(...args) 
           
@@ -2449,7 +2449,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.addScrollBarWidget = function(...args) 
           
@@ -2459,7 +2459,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.viewport = function(...args) 
           
@@ -2469,7 +2469,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setViewport = function(...args) 
           
@@ -2479,7 +2479,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.maximumViewportSize = function(...args) 
           
@@ -2489,7 +2489,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setupViewport = function(...args) 
           
@@ -2499,7 +2499,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2509,7 +2509,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2519,7 +2519,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setViewportMargins = function(...args) 
           
@@ -2529,7 +2529,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setViewportMarginsSuper(...args);
             
         };
-    
+        QTableWidget.prototype.setViewportMargins.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.viewportMargins = function(...args) 
           
@@ -2539,7 +2540,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewportMarginsSuper(...args);
             
         };
-    
+        QTableWidget.prototype.viewportMargins.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.event = function(...args) 
           
@@ -2549,7 +2551,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.eventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.event.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.viewportEvent = function(...args) 
           
@@ -2559,7 +2562,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewportEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.viewportEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.mousePressEvent = function(...args) 
           
@@ -2569,7 +2573,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2579,7 +2584,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2589,7 +2595,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mouseDoubleClickEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.mouseDoubleClickEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.wheelEvent = function(...args) 
           
@@ -2599,7 +2606,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.wheelEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.wheelEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -2609,7 +2617,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.dragEnterEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.dragEnterEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.keyPressEvent = function(...args) 
           
@@ -2619,7 +2628,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyPressEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.keyPressEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.model = function(...args) 
           
@@ -2629,7 +2639,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.selectionModel = function(...args) 
           
@@ -2639,7 +2649,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectionModel(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setItemDelegate = function(...args) 
           
@@ -2649,7 +2659,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setItemDelegate(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setSelectionMode = function(...args) 
           
@@ -2659,7 +2669,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionMode(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setSelectionBehavior = function(...args) 
           
@@ -2669,7 +2679,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionBehavior(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.currentIndex = function(...args) 
           
@@ -2679,7 +2689,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.rootIndex = function(...args) 
           
@@ -2689,7 +2699,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.rootIndex(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setEditTriggers = function(...args) 
           
@@ -2699,7 +2709,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setEditTriggers(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setVerticalScrollMode = function(...args) 
           
@@ -2709,7 +2719,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.resetVerticalScrollMode = function(...args) 
           
@@ -2719,7 +2729,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.resetVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setHorizontalScrollMode = function(...args) 
           
@@ -2729,7 +2739,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.resetHorizontalScrollMode = function(...args) 
           
@@ -2739,7 +2749,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.resetHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setAutoScroll = function(...args) 
           
@@ -2749,7 +2759,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoScroll(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hasAutoScroll = function(...args) 
           
@@ -2759,7 +2769,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hasAutoScroll(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setAutoScrollMargin = function(...args) 
           
@@ -2769,7 +2779,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAutoScrollMargin(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setTabKeyNavigation = function(...args) 
           
@@ -2779,7 +2789,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTabKeyNavigation(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setDropIndicatorShown = function(...args) 
           
@@ -2789,7 +2799,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDropIndicatorShown(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setDragEnabled = function(...args) 
           
@@ -2799,7 +2809,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setDragDropOverwriteMode = function(...args) 
           
@@ -2809,7 +2819,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragDropOverwriteMode(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setDragDropMode = function(...args) 
           
@@ -2819,7 +2829,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDragDropMode(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setDefaultDropAction = function(...args) 
           
@@ -2829,7 +2839,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setDefaultDropAction(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setAlternatingRowColors = function(...args) 
           
@@ -2839,7 +2849,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setAlternatingRowColors(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setIconSize = function(...args) 
           
@@ -2849,7 +2859,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setTextElideMode = function(...args) 
           
@@ -2859,7 +2869,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setTextElideMode(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.keyboardSearch = function(...args) 
           
@@ -2869,7 +2879,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.keyboardSearch(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setIndexWidget = function(...args) 
           
@@ -2879,7 +2889,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setIndexWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.indexWidget = function(...args) 
           
@@ -2889,7 +2899,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2899,7 +2909,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.reset = function(...args) 
           
@@ -2909,7 +2919,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.selectAll = function(...args) 
           
@@ -2919,7 +2929,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.edit = function(...args) 
           
@@ -2929,7 +2939,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.edit(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.clearSelection = function(...args) 
           
@@ -2939,7 +2949,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setCurrentIndex = function(...args) 
           
@@ -2949,7 +2959,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.scrollToTop = function(...args) 
           
@@ -2959,7 +2969,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollToTop(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.scrollToBottom = function(...args) 
           
@@ -2969,7 +2979,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollToBottom(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.update = function(...args) 
           
@@ -2979,7 +2989,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.mouseMoveEvent = function(...args) 
           
@@ -2989,7 +2999,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.resizeEvent = function(...args) 
           
@@ -2999,7 +3010,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.eventFilter = function(...args) 
           
@@ -3009,7 +3021,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setRootIndex = function(...args) 
           
@@ -3019,7 +3031,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRootIndex(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setSelectionModel = function(...args) 
           
@@ -3029,7 +3041,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionModel(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.doItemsLayout = function(...args) 
           
@@ -3039,7 +3051,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.doItemsLayout(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.horizontalHeader = function(...args) 
           
@@ -3049,7 +3061,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalHeader(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.verticalHeader = function(...args) 
           
@@ -3059,7 +3071,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalHeader(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setHorizontalHeader = function(...args) 
           
@@ -3069,7 +3081,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalHeader(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setVerticalHeader = function(...args) 
           
@@ -3079,7 +3091,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalHeader(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.rowViewportPosition = function(...args) 
           
@@ -3089,7 +3101,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowViewportPosition(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.rowAt = function(...args) 
           
@@ -3099,7 +3111,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowAt(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setRowHeight = function(...args) 
           
@@ -3109,7 +3121,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRowHeight(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.rowHeight = function(...args) 
           
@@ -3119,7 +3131,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowHeight(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.columnViewportPosition = function(...args) 
           
@@ -3129,7 +3141,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnViewportPosition(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.columnAt = function(...args) 
           
@@ -3139,7 +3151,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnAt(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setColumnWidth = function(...args) 
           
@@ -3149,7 +3161,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setColumnWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.columnWidth = function(...args) 
           
@@ -3159,7 +3171,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnWidth(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isRowHidden = function(...args) 
           
@@ -3169,7 +3181,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isRowHidden(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setRowHidden = function(...args) 
           
@@ -3179,7 +3191,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRowHidden(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isColumnHidden = function(...args) 
           
@@ -3189,7 +3201,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isColumnHidden(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setColumnHidden = function(...args) 
           
@@ -3199,7 +3211,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setColumnHidden(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.showGrid = function(...args) 
           
@@ -3209,7 +3221,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.showGrid(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setGridStyle = function(...args) 
           
@@ -3219,7 +3231,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setGridStyle(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setWordWrap = function(...args) 
           
@@ -3229,7 +3241,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setWordWrap(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setCornerButtonEnabled = function(...args) 
           
@@ -3239,7 +3251,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCornerButtonEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isCornerButtonEnabled = function(...args) 
           
@@ -3249,7 +3261,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isCornerButtonEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.visualRect = function(...args) 
           
@@ -3259,7 +3271,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualRect(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.scrollTo = function(...args) 
           
@@ -3269,7 +3281,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollTo(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.indexAt = function(...args) 
           
@@ -3279,7 +3291,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexAt(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setSpan = function(...args) 
           
@@ -3289,7 +3301,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSpan(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.rowSpan = function(...args) 
           
@@ -3299,7 +3311,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowSpan(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.columnSpan = function(...args) 
           
@@ -3309,7 +3321,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnSpan(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.clearSpans = function(...args) 
           
@@ -3319,7 +3331,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearSpans(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.selectRow = function(...args) 
           
@@ -3329,7 +3341,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectRow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.selectColumn = function(...args) 
           
@@ -3339,7 +3351,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectColumn(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hideRow = function(...args) 
           
@@ -3349,7 +3361,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hideRow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.hideColumn = function(...args) 
           
@@ -3359,7 +3371,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.hideColumn(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.showRow = function(...args) 
           
@@ -3369,7 +3381,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.showRow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.showColumn = function(...args) 
           
@@ -3379,7 +3391,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.showColumn(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.resizeRowToContents = function(...args) 
           
@@ -3389,7 +3401,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.resizeRowToContents(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.resizeRowsToContents = function(...args) 
           
@@ -3399,7 +3411,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.resizeRowsToContents(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.resizeColumnToContents = function(...args) 
           
@@ -3409,7 +3421,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.resizeColumnToContents(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.resizeColumnsToContents = function(...args) 
           
@@ -3419,7 +3431,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.resizeColumnsToContents(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.sortByColumn = function(...args) 
           
@@ -3429,7 +3441,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.sortByColumn(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setShowGrid = function(...args) 
           
@@ -3439,7 +3451,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setShowGrid(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.rowMoved = function(...args) 
           
@@ -3449,7 +3461,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowMovedSuper(...args);
             
         };
-    
+        QTableWidget.prototype.rowMoved.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.columnMoved = function(...args) 
           
@@ -3459,7 +3472,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnMovedSuper(...args);
             
         };
-    
+        QTableWidget.prototype.columnMoved.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.rowResized = function(...args) 
           
@@ -3469,7 +3483,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowResizedSuper(...args);
             
         };
-    
+        QTableWidget.prototype.rowResized.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.columnResized = function(...args) 
           
@@ -3479,7 +3494,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnResizedSuper(...args);
             
         };
-    
+        QTableWidget.prototype.columnResized.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.rowCountChanged = function(...args) 
           
@@ -3489,7 +3505,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.rowCountChangedSuper(...args);
             
         };
-    
+        QTableWidget.prototype.rowCountChanged.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.columnCountChanged = function(...args) 
           
@@ -3499,7 +3516,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.columnCountChangedSuper(...args);
             
         };
-    
+        QTableWidget.prototype.columnCountChanged.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.scrollContentsBy = function(...args) 
           
@@ -3509,7 +3527,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollContentsBySuper(...args);
             
         };
-    
+        QTableWidget.prototype.scrollContentsBy.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.paintEvent = function(...args) 
           
@@ -3519,7 +3538,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QTableWidget.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.horizontalOffset = function(...args) 
           
@@ -3529,7 +3549,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalOffsetSuper(...args);
             
         };
-    
+        QTableWidget.prototype.horizontalOffset.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.verticalOffset = function(...args) 
           
@@ -3539,7 +3560,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalOffsetSuper(...args);
             
         };
-    
+        QTableWidget.prototype.verticalOffset.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.setSelection = function(...args) 
           
@@ -3549,7 +3571,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSelectionSuper(...args);
             
         };
-    
+        QTableWidget.prototype.setSelection.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.visualRegionForSelection = function(...args) 
           
@@ -3559,7 +3582,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualRegionForSelectionSuper(...args);
             
         };
-    
+        QTableWidget.prototype.visualRegionForSelection.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.updateGeometries = function(...args) 
           
@@ -3569,7 +3593,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.updateGeometriesSuper(...args);
             
         };
-    
+        QTableWidget.prototype.updateGeometries.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.viewportSizeHint = function(...args) 
           
@@ -3579,7 +3604,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.viewportSizeHintSuper(...args);
             
         };
-    
+        QTableWidget.prototype.viewportSizeHint.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.verticalScrollbarAction = function(...args) 
           
@@ -3589,7 +3615,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalScrollbarActionSuper(...args);
             
         };
-    
+        QTableWidget.prototype.verticalScrollbarAction.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.horizontalScrollbarAction = function(...args) 
           
@@ -3599,7 +3626,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalScrollbarActionSuper(...args);
             
         };
-    
+        QTableWidget.prototype.horizontalScrollbarAction.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.isIndexHidden = function(...args) 
           
@@ -3609,7 +3637,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isIndexHiddenSuper(...args);
             
         };
-    
+        QTableWidget.prototype.isIndexHidden.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.selectionChanged = function(...args) 
           
@@ -3619,7 +3648,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectionChangedSuper(...args);
             
         };
-    
+        QTableWidget.prototype.selectionChanged.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.currentChanged = function(...args) 
           
@@ -3629,7 +3659,8 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentChangedSuper(...args);
             
         };
-    
+        QTableWidget.prototype.currentChanged.__SUPER__ = true;
+        
         // function 
         QTableWidget.prototype.visualIndex = function(...args) 
           
@@ -3639,7 +3670,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualIndex(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setRowCount = function(...args) 
           
@@ -3649,7 +3680,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setRowCount(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setColumnCount = function(...args) 
           
@@ -3659,7 +3690,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setColumnCount(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.row = function(...args) 
           
@@ -3669,7 +3700,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.row(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.column = function(...args) 
           
@@ -3679,7 +3710,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.column(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.item = function(...args) 
           
@@ -3689,7 +3720,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.item(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setItem = function(...args) 
           
@@ -3699,7 +3730,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.takeItem = function(...args) 
           
@@ -3709,7 +3740,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.takeItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.indexFromItem = function(...args) 
           
@@ -3719,7 +3750,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.indexFromItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.itemFromIndex = function(...args) 
           
@@ -3729,7 +3760,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.itemFromIndex(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.verticalHeaderItem = function(...args) 
           
@@ -3739,7 +3770,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.verticalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setVerticalHeaderItem = function(...args) 
           
@@ -3749,7 +3780,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.takeVerticalHeaderItem = function(...args) 
           
@@ -3759,7 +3790,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.takeVerticalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.horizontalHeaderItem = function(...args) 
           
@@ -3769,7 +3800,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.horizontalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setHorizontalHeaderItem = function(...args) 
           
@@ -3779,7 +3810,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.takeHorizontalHeaderItem = function(...args) 
           
@@ -3789,7 +3820,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.takeHorizontalHeaderItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setVerticalHeaderLabels = function(...args) 
           
@@ -3799,7 +3830,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setVerticalHeaderLabels(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setHorizontalHeaderLabels = function(...args) 
           
@@ -3809,7 +3840,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setHorizontalHeaderLabels(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.currentRow = function(...args) 
           
@@ -3819,7 +3850,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentRow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.currentColumn = function(...args) 
           
@@ -3829,7 +3860,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentColumn(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.currentItem = function(...args) 
           
@@ -3839,7 +3870,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.currentItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setCurrentItem = function(...args) 
           
@@ -3849,7 +3880,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCurrentItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setCurrentCell = function(...args) 
           
@@ -3859,7 +3890,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCurrentCell(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.sortItems = function(...args) 
           
@@ -3869,7 +3900,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.sortItems(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setSortingEnabled = function(...args) 
           
@@ -3879,7 +3910,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setSortingEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isSortingEnabled = function(...args) 
           
@@ -3889,7 +3920,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isSortingEnabled(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.editItem = function(...args) 
           
@@ -3899,7 +3930,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.editItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.openPersistentEditor = function(...args) 
           
@@ -3909,7 +3940,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.openPersistentEditor(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.closePersistentEditor = function(...args) 
           
@@ -3919,7 +3950,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.closePersistentEditor(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.isPersistentEditorOpen = function(...args) 
           
@@ -3929,7 +3960,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.isPersistentEditorOpen(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.cellWidget = function(...args) 
           
@@ -3939,7 +3970,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.cellWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setCellWidget = function(...args) 
           
@@ -3949,7 +3980,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setCellWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.removeCellWidget = function(...args) 
           
@@ -3959,7 +3990,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeCellWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.selectedItems = function(...args) 
           
@@ -3969,7 +4000,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.selectedItems(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.visualRow = function(...args) 
           
@@ -3979,7 +4010,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualRow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.visualColumn = function(...args) 
           
@@ -3989,7 +4020,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualColumn(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.itemAt = function(...args) 
           
@@ -3999,7 +4030,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.itemAt(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.visualItemRect = function(...args) 
           
@@ -4009,7 +4040,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.visualItemRect(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setItemPrototype = function(...args) 
           
@@ -4019,7 +4050,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setItemPrototype(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.scrollToItem = function(...args) 
           
@@ -4029,7 +4060,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.scrollToItem(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.insertRow = function(...args) 
           
@@ -4039,7 +4070,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertRow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.insertColumn = function(...args) 
           
@@ -4049,7 +4080,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.insertColumn(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.removeRow = function(...args) 
           
@@ -4059,7 +4090,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeRow(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.removeColumn = function(...args) 
           
@@ -4069,7 +4100,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.removeColumn(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.clear = function(...args) 
           
@@ -4079,7 +4110,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.clearContents = function(...args) 
           
@@ -4089,7 +4120,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.clearContents(...args);
             
         };
-    
+        
         // function 
         QTableWidget.prototype.setModel = function(...args) 
           
@@ -4099,7 +4130,7 @@ QTableWidget.InternalMove = QTableWidget_Wrapper.InternalMove;
               return this.__PROXY__.setModel(...args);
             
         };
-    
+        
 
       // static functions:
       

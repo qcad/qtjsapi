@@ -164,7 +164,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.isWidgetType = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.isWindowType = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.signalsBlocked = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.blockSignals = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.findChild = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.children = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.setParent = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.installEventFilter = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.removeEventFilter = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.dumpObjectTree = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.dumpObjectInfo = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.setProperty = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.property = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.dynamicPropertyNames = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.parent = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.deleteLater = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.evaluate = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.evaluate(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.collectGarbage = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.collectGarbage(...args);
             
         };
-    
+        
         // function 
         QJSEngine.prototype.setUiLanguage = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.setUiLanguage(...args);
             
         };
-    
+        
 
       // static functions:
       

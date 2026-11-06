@@ -237,7 +237,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isWidgetType = function(...args) 
           
@@ -247,7 +247,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isWindowType = function(...args) 
           
@@ -257,7 +257,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.signalsBlocked = function(...args) 
           
@@ -267,7 +267,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.blockSignals = function(...args) 
           
@@ -277,7 +277,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.findChild = function(...args) 
           
@@ -287,7 +287,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.children = function(...args) 
           
@@ -297,7 +297,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.installEventFilter = function(...args) 
           
@@ -307,7 +307,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.removeEventFilter = function(...args) 
           
@@ -317,7 +317,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.dumpObjectTree = function(...args) 
           
@@ -327,7 +327,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.dumpObjectInfo = function(...args) 
           
@@ -337,7 +337,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setProperty = function(...args) 
           
@@ -347,7 +347,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.property = function(...args) 
           
@@ -357,7 +357,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.dynamicPropertyNames = function(...args) 
           
@@ -367,7 +367,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.parent = function(...args) 
           
@@ -377,7 +377,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.deleteLater = function(...args) 
           
@@ -387,7 +387,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.devType = function(...args) 
           
@@ -397,7 +397,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.createWinId = function(...args) 
           
@@ -407,7 +407,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isWindow = function(...args) 
           
@@ -417,7 +417,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isModal = function(...args) 
           
@@ -427,7 +427,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowModality = function(...args) 
           
@@ -437,7 +437,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isEnabled = function(...args) 
           
@@ -447,7 +447,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isEnabledTo = function(...args) 
           
@@ -457,7 +457,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setEnabled = function(...args) 
           
@@ -467,7 +467,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setDisabled = function(...args) 
           
@@ -477,7 +477,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowModified = function(...args) 
           
@@ -487,7 +487,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMinimumSize = function(...args) 
           
@@ -497,7 +497,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMaximumSize = function(...args) 
           
@@ -507,7 +507,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMinimumWidth = function(...args) 
           
@@ -517,7 +517,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMinimumHeight = function(...args) 
           
@@ -527,7 +527,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMaximumWidth = function(...args) 
           
@@ -537,7 +537,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMaximumHeight = function(...args) 
           
@@ -547,7 +547,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setSizeIncrement = function(...args) 
           
@@ -557,7 +557,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setBaseSize = function(...args) 
           
@@ -567,7 +567,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFixedSize = function(...args) 
           
@@ -577,7 +577,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFixedWidth = function(...args) 
           
@@ -587,7 +587,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFixedHeight = function(...args) 
           
@@ -597,7 +597,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.mapToGlobal = function(...args) 
           
@@ -607,7 +607,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.mapFromGlobal = function(...args) 
           
@@ -617,7 +617,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.mapToParent = function(...args) 
           
@@ -627,7 +627,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.mapFromParent = function(...args) 
           
@@ -637,7 +637,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.mapTo = function(...args) 
           
@@ -647,7 +647,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.mapFrom = function(...args) 
           
@@ -657,7 +657,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.window = function(...args) 
           
@@ -667,7 +667,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.nativeParentWidget = function(...args) 
           
@@ -677,7 +677,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.topLevelWidget = function(...args) 
           
@@ -687,7 +687,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setPalette = function(...args) 
           
@@ -697,7 +697,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setBackgroundRole = function(...args) 
           
@@ -707,7 +707,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.backgroundRole = function(...args) 
           
@@ -717,7 +717,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setForegroundRole = function(...args) 
           
@@ -727,7 +727,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.foregroundRole = function(...args) 
           
@@ -737,7 +737,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFont = function(...args) 
           
@@ -747,7 +747,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.fontInfo = function(...args) 
           
@@ -757,7 +757,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setCursor = function(...args) 
           
@@ -767,7 +767,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.unsetCursor = function(...args) 
           
@@ -777,7 +777,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMouseTracking = function(...args) 
           
@@ -787,7 +787,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.hasMouseTracking = function(...args) 
           
@@ -797,7 +797,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.underMouse = function(...args) 
           
@@ -807,7 +807,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setTabletTracking = function(...args) 
           
@@ -817,7 +817,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.hasTabletTracking = function(...args) 
           
@@ -827,7 +827,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMask = function(...args) 
           
@@ -837,7 +837,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.mask = function(...args) 
           
@@ -847,7 +847,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.clearMask = function(...args) 
           
@@ -857,7 +857,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.grab = function(...args) 
           
@@ -867,7 +867,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.grabGesture = function(...args) 
           
@@ -877,7 +877,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.ungrabGesture = function(...args) 
           
@@ -887,7 +887,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowTitle = function(...args) 
           
@@ -897,7 +897,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setStyleSheet = function(...args) 
           
@@ -907,7 +907,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowIcon = function(...args) 
           
@@ -917,7 +917,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowIconText = function(...args) 
           
@@ -927,7 +927,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowRole = function(...args) 
           
@@ -937,7 +937,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.windowRole = function(...args) 
           
@@ -947,7 +947,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowFilePath = function(...args) 
           
@@ -957,7 +957,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowOpacity = function(...args) 
           
@@ -967,7 +967,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isWindowModified = function(...args) 
           
@@ -977,7 +977,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setToolTip = function(...args) 
           
@@ -987,7 +987,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setToolTipDuration = function(...args) 
           
@@ -997,7 +997,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setStatusTip = function(...args) 
           
@@ -1007,7 +1007,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWhatsThis = function(...args) 
           
@@ -1017,7 +1017,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setAccessibleName = function(...args) 
           
@@ -1027,7 +1027,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setAccessibleDescription = function(...args) 
           
@@ -1037,7 +1037,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setLayoutDirection = function(...args) 
           
@@ -1047,7 +1047,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1057,7 +1057,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setLocale = function(...args) 
           
@@ -1067,7 +1067,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.unsetLocale = function(...args) 
           
@@ -1077,7 +1077,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isRightToLeft = function(...args) 
           
@@ -1087,7 +1087,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isLeftToRight = function(...args) 
           
@@ -1097,7 +1097,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.activateWindow = function(...args) 
           
@@ -1107,7 +1107,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.clearFocus = function(...args) 
           
@@ -1117,7 +1117,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFocus = function(...args) 
           
@@ -1127,7 +1127,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFocusPolicy = function(...args) 
           
@@ -1137,7 +1137,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.hasFocus = function(...args) 
           
@@ -1147,7 +1147,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFocusProxy = function(...args) 
           
@@ -1157,7 +1157,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.focusProxy = function(...args) 
           
@@ -1167,7 +1167,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1177,7 +1177,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.grabMouse = function(...args) 
           
@@ -1187,7 +1187,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.releaseMouse = function(...args) 
           
@@ -1197,7 +1197,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.grabKeyboard = function(...args) 
           
@@ -1207,7 +1207,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.releaseKeyboard = function(...args) 
           
@@ -1217,7 +1217,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.grabShortcut = function(...args) 
           
@@ -1227,7 +1227,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.releaseShortcut = function(...args) 
           
@@ -1237,7 +1237,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setShortcutEnabled = function(...args) 
           
@@ -1247,7 +1247,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1257,7 +1257,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1267,7 +1267,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.repaint = function(...args) 
           
@@ -1277,7 +1277,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setVisible = function(...args) 
           
@@ -1287,7 +1287,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setHidden = function(...args) 
           
@@ -1297,7 +1297,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.show = function(...args) 
           
@@ -1307,7 +1307,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.hide = function(...args) 
           
@@ -1317,7 +1317,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.showMinimized = function(...args) 
           
@@ -1327,7 +1327,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.showMaximized = function(...args) 
           
@@ -1337,7 +1337,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.showFullScreen = function(...args) 
           
@@ -1347,7 +1347,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.showNormal = function(...args) 
           
@@ -1357,7 +1357,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.close = function(...args) 
           
@@ -1367,7 +1367,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.raise = function(...args) 
           
@@ -1377,7 +1377,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.lower = function(...args) 
           
@@ -1387,7 +1387,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.stackUnder = function(...args) 
           
@@ -1397,7 +1397,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.move = function(...args) 
           
@@ -1407,7 +1407,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.resize = function(...args) 
           
@@ -1417,7 +1417,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setGeometry = function(...args) 
           
@@ -1427,7 +1427,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.saveGeometry = function(...args) 
           
@@ -1437,7 +1437,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.restoreGeometry = function(...args) 
           
@@ -1447,7 +1447,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.adjustSize = function(...args) 
           
@@ -1457,7 +1457,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isVisible = function(...args) 
           
@@ -1467,7 +1467,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isVisibleTo = function(...args) 
           
@@ -1477,7 +1477,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isHidden = function(...args) 
           
@@ -1487,7 +1487,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isMinimized = function(...args) 
           
@@ -1497,7 +1497,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isMaximized = function(...args) 
           
@@ -1507,7 +1507,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isFullScreen = function(...args) 
           
@@ -1517,7 +1517,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.windowState = function(...args) 
           
@@ -1527,7 +1527,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowState = function(...args) 
           
@@ -1537,7 +1537,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.overrideWindowState = function(...args) 
           
@@ -1547,7 +1547,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setSizePolicy = function(...args) 
           
@@ -1557,7 +1557,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.heightForWidth = function(...args) 
           
@@ -1567,7 +1567,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.hasHeightForWidth = function(...args) 
           
@@ -1577,7 +1577,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.visibleRegion = function(...args) 
           
@@ -1587,7 +1587,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setContentsMargins = function(...args) 
           
@@ -1597,7 +1597,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.contentsMargins = function(...args) 
           
@@ -1607,7 +1607,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.contentsRect = function(...args) 
           
@@ -1617,7 +1617,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.layout = function(...args) 
           
@@ -1627,7 +1627,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setLayout = function(...args) 
           
@@ -1637,7 +1637,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.updateGeometry = function(...args) 
           
@@ -1647,7 +1647,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setParent = function(...args) 
           
@@ -1657,7 +1657,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.scroll = function(...args) 
           
@@ -1667,7 +1667,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.focusWidget = function(...args) 
           
@@ -1677,7 +1677,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.nextInFocusChain = function(...args) 
           
@@ -1687,7 +1687,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.previousInFocusChain = function(...args) 
           
@@ -1697,7 +1697,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setAcceptDrops = function(...args) 
           
@@ -1707,7 +1707,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.addAction = function(...args) 
           
@@ -1717,7 +1717,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.addActions = function(...args) 
           
@@ -1727,7 +1727,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.insertActions = function(...args) 
           
@@ -1737,7 +1737,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.insertAction = function(...args) 
           
@@ -1747,7 +1747,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.removeAction = function(...args) 
           
@@ -1757,7 +1757,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.actions = function(...args) 
           
@@ -1767,7 +1767,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.parentWidget = function(...args) 
           
@@ -1777,7 +1777,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowFlags = function(...args) 
           
@@ -1787,7 +1787,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.windowFlags = function(...args) 
           
@@ -1797,7 +1797,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWindowFlag = function(...args) 
           
@@ -1807,7 +1807,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.overrideWindowFlags = function(...args) 
           
@@ -1817,7 +1817,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.windowType = function(...args) 
           
@@ -1827,7 +1827,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.childAt = function(...args) 
           
@@ -1837,7 +1837,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setAttribute = function(...args) 
           
@@ -1847,7 +1847,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.testAttribute = function(...args) 
           
@@ -1857,7 +1857,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.ensurePolished = function(...args) 
           
@@ -1867,7 +1867,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isAncestorOf = function(...args) 
           
@@ -1877,7 +1877,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setAutoFillBackground = function(...args) 
           
@@ -1887,7 +1887,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.keyReleaseEvent = function(...args) 
           
@@ -1897,7 +1897,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.focusInEvent = function(...args) 
           
@@ -1907,7 +1907,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.focusOutEvent = function(...args) 
           
@@ -1917,7 +1917,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.enterEvent = function(...args) 
           
@@ -1927,7 +1927,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.leaveEvent = function(...args) 
           
@@ -1937,7 +1937,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.moveEvent = function(...args) 
           
@@ -1947,7 +1947,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.closeEvent = function(...args) 
           
@@ -1957,7 +1957,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.tabletEvent = function(...args) 
           
@@ -1967,7 +1967,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       QListView.prototype.actionEvent = function() 
         
@@ -2009,7 +2009,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.dragLeaveEvent = function(...args) 
           
@@ -2019,7 +2019,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.showEvent = function(...args) 
           
@@ -2029,7 +2029,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.hideEvent = function(...args) 
           
@@ -2039,7 +2039,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.nativeEvent = function(...args) 
           
@@ -2049,7 +2049,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.changeEvent = function(...args) 
           
@@ -2059,7 +2059,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.metric = function(...args) 
           
@@ -2069,7 +2069,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.initPainter = function(...args) 
           
@@ -2079,7 +2079,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.redirected = function(...args) 
           
@@ -2089,7 +2089,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.sharedPainter = function(...args) 
           
@@ -2099,7 +2099,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.inputMethodEvent = function(...args) 
           
@@ -2109,7 +2109,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setInputMethodHints = function(...args) 
           
@@ -2119,7 +2119,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.updateMicroFocus = function(...args) 
           
@@ -2129,7 +2129,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.create = function(...args) 
           
@@ -2139,7 +2139,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.destroy = function(...args) 
           
@@ -2149,7 +2149,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.focusNextPrevChild = function(...args) 
           
@@ -2159,7 +2159,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.focusNextChild = function(...args) 
           
@@ -2169,7 +2169,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.focusPreviousChild = function(...args) 
           
@@ -2179,7 +2179,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setBackingStore = function(...args) 
           
@@ -2189,7 +2189,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.testAttribute_helper = function(...args) 
           
@@ -2199,7 +2199,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.takeLayout = function(...args) 
           
@@ -2209,7 +2209,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2219,7 +2219,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.qt_qwidget_data = function(...args) 
           
@@ -2229,7 +2229,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.qt_widget_private = function(...args) 
           
@@ -2239,7 +2239,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.frameStyle = function(...args) 
           
@@ -2249,7 +2249,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFrameStyle = function(...args) 
           
@@ -2259,7 +2259,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFrameShape = function(...args) 
           
@@ -2269,7 +2269,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFrameShadow = function(...args) 
           
@@ -2279,7 +2279,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setLineWidth = function(...args) 
           
@@ -2289,7 +2289,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMidLineWidth = function(...args) 
           
@@ -2299,7 +2299,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFrameRect = function(...args) 
           
@@ -2309,7 +2309,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.drawFrame = function(...args) 
           
@@ -2319,7 +2319,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.initStyleOption = function(...args) 
           
@@ -2329,7 +2329,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2339,7 +2339,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2349,7 +2349,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.verticalScrollBar = function(...args) 
           
@@ -2359,7 +2359,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2369,7 +2369,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2379,7 +2379,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2389,7 +2389,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.horizontalScrollBar = function(...args) 
           
@@ -2399,7 +2399,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2409,7 +2409,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.cornerWidget = function(...args) 
           
@@ -2419,7 +2419,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setCornerWidget = function(...args) 
           
@@ -2429,7 +2429,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.addScrollBarWidget = function(...args) 
           
@@ -2439,7 +2439,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.viewport = function(...args) 
           
@@ -2449,7 +2449,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setViewport = function(...args) 
           
@@ -2459,7 +2459,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.maximumViewportSize = function(...args) 
           
@@ -2469,7 +2469,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setupViewport = function(...args) 
           
@@ -2479,7 +2479,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2489,7 +2489,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2499,7 +2499,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setViewportMargins = function(...args) 
           
@@ -2509,7 +2509,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setViewportMarginsSuper(...args);
             
         };
-    
+        QListView.prototype.setViewportMargins.__SUPER__ = true;
+        
         // function 
         QListView.prototype.viewportMargins = function(...args) 
           
@@ -2519,7 +2520,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.viewportMarginsSuper(...args);
             
         };
-    
+        QListView.prototype.viewportMargins.__SUPER__ = true;
+        
         // function 
         QListView.prototype.viewportEvent = function(...args) 
           
@@ -2529,7 +2531,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.viewportEventSuper(...args);
             
         };
-    
+        QListView.prototype.viewportEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.mousePressEvent = function(...args) 
           
@@ -2539,7 +2542,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        QListView.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2549,7 +2553,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mouseDoubleClickEventSuper(...args);
             
         };
-    
+        QListView.prototype.mouseDoubleClickEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.dragEnterEvent = function(...args) 
           
@@ -2559,7 +2564,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.dragEnterEventSuper(...args);
             
         };
-    
+        QListView.prototype.dragEnterEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.keyPressEvent = function(...args) 
           
@@ -2569,7 +2575,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.keyPressEventSuper(...args);
             
         };
-    
+        QListView.prototype.keyPressEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.setModel = function(...args) 
           
@@ -2579,7 +2586,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setModel(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.model = function(...args) 
           
@@ -2589,7 +2596,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setSelectionModel = function(...args) 
           
@@ -2599,7 +2606,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setSelectionModel(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.selectionModel = function(...args) 
           
@@ -2609,7 +2616,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.selectionModel(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setItemDelegate = function(...args) 
           
@@ -2619,7 +2626,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setItemDelegate(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setSelectionMode = function(...args) 
           
@@ -2629,7 +2636,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setSelectionMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setSelectionBehavior = function(...args) 
           
@@ -2639,7 +2646,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setSelectionBehavior(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.currentIndex = function(...args) 
           
@@ -2649,7 +2656,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.rootIndex = function(...args) 
           
@@ -2659,7 +2666,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.rootIndex(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setEditTriggers = function(...args) 
           
@@ -2669,7 +2676,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setEditTriggers(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setVerticalScrollMode = function(...args) 
           
@@ -2679,7 +2686,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.resetVerticalScrollMode = function(...args) 
           
@@ -2689,7 +2696,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.resetVerticalScrollMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setHorizontalScrollMode = function(...args) 
           
@@ -2699,7 +2706,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.resetHorizontalScrollMode = function(...args) 
           
@@ -2709,7 +2716,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.resetHorizontalScrollMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setAutoScroll = function(...args) 
           
@@ -2719,7 +2726,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setAutoScroll(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.hasAutoScroll = function(...args) 
           
@@ -2729,7 +2736,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.hasAutoScroll(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setAutoScrollMargin = function(...args) 
           
@@ -2739,7 +2746,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setAutoScrollMargin(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setTabKeyNavigation = function(...args) 
           
@@ -2749,7 +2756,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setTabKeyNavigation(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setDropIndicatorShown = function(...args) 
           
@@ -2759,7 +2766,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setDropIndicatorShown(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setDragEnabled = function(...args) 
           
@@ -2769,7 +2776,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setDragDropOverwriteMode = function(...args) 
           
@@ -2779,7 +2786,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setDragDropOverwriteMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setDragDropMode = function(...args) 
           
@@ -2789,7 +2796,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setDragDropMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setDefaultDropAction = function(...args) 
           
@@ -2799,7 +2806,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setDefaultDropAction(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setAlternatingRowColors = function(...args) 
           
@@ -2809,7 +2816,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setAlternatingRowColors(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setIconSize = function(...args) 
           
@@ -2819,7 +2826,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setTextElideMode = function(...args) 
           
@@ -2829,7 +2836,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setTextElideMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.keyboardSearch = function(...args) 
           
@@ -2839,7 +2846,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.keyboardSearch(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isPersistentEditorOpen = function(...args) 
           
@@ -2849,7 +2856,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isPersistentEditorOpen(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setIndexWidget = function(...args) 
           
@@ -2859,7 +2866,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setIndexWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.indexWidget = function(...args) 
           
@@ -2869,7 +2876,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.indexWidget(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.inputMethodQuery = function(...args) 
           
@@ -2879,7 +2886,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.selectAll = function(...args) 
           
@@ -2889,7 +2896,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.edit = function(...args) 
           
@@ -2899,7 +2906,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.edit(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.clearSelection = function(...args) 
           
@@ -2909,7 +2916,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setCurrentIndex = function(...args) 
           
@@ -2919,7 +2926,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.scrollToTop = function(...args) 
           
@@ -2929,7 +2936,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.scrollToTop(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.scrollToBottom = function(...args) 
           
@@ -2939,7 +2946,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.scrollToBottom(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.update = function(...args) 
           
@@ -2949,7 +2956,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.eventFilter = function(...args) 
           
@@ -2959,7 +2966,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setMovement = function(...args) 
           
@@ -2969,7 +2976,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setMovement(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setFlow = function(...args) 
           
@@ -2979,7 +2986,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setFlow(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWrapping = function(...args) 
           
@@ -2989,7 +2996,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWrapping(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setResizeMode = function(...args) 
           
@@ -2999,7 +3006,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setResizeMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setLayoutMode = function(...args) 
           
@@ -3009,7 +3016,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setLayoutMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setSpacing = function(...args) 
           
@@ -3019,7 +3026,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setSpacing(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setBatchSize = function(...args) 
           
@@ -3029,7 +3036,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setBatchSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setGridSize = function(...args) 
           
@@ -3039,7 +3046,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setGridSize(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setViewMode = function(...args) 
           
@@ -3049,7 +3056,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setViewMode(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.clearPropertyFlags = function(...args) 
           
@@ -3059,7 +3066,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.clearPropertyFlags(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isRowHidden = function(...args) 
           
@@ -3069,7 +3076,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isRowHidden(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setRowHidden = function(...args) 
           
@@ -3079,7 +3086,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setRowHidden(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setModelColumn = function(...args) 
           
@@ -3089,7 +3096,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setModelColumn(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setUniformItemSizes = function(...args) 
           
@@ -3099,7 +3106,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setUniformItemSizes(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setWordWrap = function(...args) 
           
@@ -3109,7 +3116,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setWordWrap(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setSelectionRectVisible = function(...args) 
           
@@ -3119,7 +3126,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setSelectionRectVisible(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.isSelectionRectVisible = function(...args) 
           
@@ -3129,7 +3136,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isSelectionRectVisible(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setItemAlignment = function(...args) 
           
@@ -3139,7 +3146,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setItemAlignment(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.visualRect = function(...args) 
           
@@ -3149,7 +3156,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.visualRect(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.scrollTo = function(...args) 
           
@@ -3159,7 +3166,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.scrollTo(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.indexAt = function(...args) 
           
@@ -3169,7 +3176,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.indexAt(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.doItemsLayout = function(...args) 
           
@@ -3179,7 +3186,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.doItemsLayout(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.reset = function(...args) 
           
@@ -3189,7 +3196,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.setRootIndex = function(...args) 
           
@@ -3199,7 +3206,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setRootIndex(...args);
             
         };
-    
+        
         // function 
         QListView.prototype.event = function(...args) 
           
@@ -3209,7 +3216,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.eventSuper(...args);
             
         };
-    
+        QListView.prototype.event.__SUPER__ = true;
+        
         // function 
         QListView.prototype.scrollContentsBy = function(...args) 
           
@@ -3219,7 +3227,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.scrollContentsBySuper(...args);
             
         };
-    
+        QListView.prototype.scrollContentsBy.__SUPER__ = true;
+        
         // function 
         QListView.prototype.resizeContents = function(...args) 
           
@@ -3229,7 +3238,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.resizeContentsSuper(...args);
             
         };
-    
+        QListView.prototype.resizeContents.__SUPER__ = true;
+        
         // function 
         QListView.prototype.contentsSize = function(...args) 
           
@@ -3239,7 +3249,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.contentsSizeSuper(...args);
             
         };
-    
+        QListView.prototype.contentsSize.__SUPER__ = true;
+        
         // function 
         QListView.prototype.dataChanged = function(...args) 
           
@@ -3249,7 +3260,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.dataChangedSuper(...args);
             
         };
-    
+        QListView.prototype.dataChanged.__SUPER__ = true;
+        
         // function 
         QListView.prototype.rowsInserted = function(...args) 
           
@@ -3259,7 +3271,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.rowsInsertedSuper(...args);
             
         };
-    
+        QListView.prototype.rowsInserted.__SUPER__ = true;
+        
         // function 
         QListView.prototype.rowsAboutToBeRemoved = function(...args) 
           
@@ -3269,7 +3282,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.rowsAboutToBeRemovedSuper(...args);
             
         };
-    
+        QListView.prototype.rowsAboutToBeRemoved.__SUPER__ = true;
+        
         // function 
         QListView.prototype.mouseMoveEvent = function(...args) 
           
@@ -3279,7 +3293,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QListView.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.mouseReleaseEvent = function(...args) 
           
@@ -3289,7 +3304,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        QListView.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.wheelEvent = function(...args) 
           
@@ -3299,7 +3315,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.wheelEventSuper(...args);
             
         };
-    
+        QListView.prototype.wheelEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.resizeEvent = function(...args) 
           
@@ -3309,7 +3326,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QListView.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.dropEvent = function(...args) 
           
@@ -3319,7 +3337,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.dropEventSuper(...args);
             
         };
-    
+        QListView.prototype.dropEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.startDrag = function(...args) 
           
@@ -3329,7 +3348,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.startDragSuper(...args);
             
         };
-    
+        QListView.prototype.startDrag.__SUPER__ = true;
+        
         // function 
         QListView.prototype.paintEvent = function(...args) 
           
@@ -3339,7 +3359,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QListView.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QListView.prototype.horizontalOffset = function(...args) 
           
@@ -3349,7 +3370,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.horizontalOffsetSuper(...args);
             
         };
-    
+        QListView.prototype.horizontalOffset.__SUPER__ = true;
+        
         // function 
         QListView.prototype.verticalOffset = function(...args) 
           
@@ -3359,7 +3381,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.verticalOffsetSuper(...args);
             
         };
-    
+        QListView.prototype.verticalOffset.__SUPER__ = true;
+        
         // function 
         QListView.prototype.rectForIndex = function(...args) 
           
@@ -3369,7 +3392,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.rectForIndexSuper(...args);
             
         };
-    
+        QListView.prototype.rectForIndex.__SUPER__ = true;
+        
         // function 
         QListView.prototype.setPositionForIndex = function(...args) 
           
@@ -3379,7 +3403,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.setPositionForIndexSuper(...args);
             
         };
-    
+        QListView.prototype.setPositionForIndex.__SUPER__ = true;
+        
         // function 
         QListView.prototype.updateGeometries = function(...args) 
           
@@ -3389,7 +3414,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.updateGeometriesSuper(...args);
             
         };
-    
+        QListView.prototype.updateGeometries.__SUPER__ = true;
+        
         // function 
         QListView.prototype.isIndexHidden = function(...args) 
           
@@ -3399,7 +3425,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.isIndexHiddenSuper(...args);
             
         };
-    
+        QListView.prototype.isIndexHidden.__SUPER__ = true;
+        
         // function 
         QListView.prototype.currentChanged = function(...args) 
           
@@ -3409,7 +3436,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.currentChangedSuper(...args);
             
         };
-    
+        QListView.prototype.currentChanged.__SUPER__ = true;
+        
         // function 
         QListView.prototype.viewportSizeHint = function(...args) 
           
@@ -3419,7 +3447,8 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.viewportSizeHintSuper(...args);
             
         };
-    
+        QListView.prototype.viewportSizeHint.__SUPER__ = true;
+        
         // function 
         QListView.prototype.visualIndex = function(...args) 
           
@@ -3429,7 +3458,7 @@ QListView.IconMode = QListView_Wrapper.IconMode;
               return this.__PROXY__.visualIndex(...args);
             
         };
-    
+        
 
       // static functions:
       

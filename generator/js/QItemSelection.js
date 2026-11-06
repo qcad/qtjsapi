@@ -160,7 +160,7 @@
               return this.__PROXY__.select(...args);
             
         };
-    
+        
         // function 
         QItemSelection.prototype.contains = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QItemSelection.prototype.indexes = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.indexes(...args);
             
         };
-    
+        
         // function 
         QItemSelection.prototype.merge = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.merge(...args);
             
         };
-    
+        
 
       // static functions:
       QItemSelection.prototype.isNullWrapper = function() {

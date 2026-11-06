@@ -141,7 +141,7 @@ QSqlError.UnknownError = QSqlError_Wrapper.UnknownError;
               return this.__PROXY__.driverText(...args);
             
         };
-    
+        
         // function 
         QSqlError.prototype.databaseText = function(...args) 
           
@@ -151,7 +151,7 @@ QSqlError.UnknownError = QSqlError_Wrapper.UnknownError;
               return this.__PROXY__.databaseText(...args);
             
         };
-    
+        
         // function 
         QSqlError.prototype.type = function(...args) 
           
@@ -161,7 +161,7 @@ QSqlError.UnknownError = QSqlError_Wrapper.UnknownError;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QSqlError.prototype.nativeErrorCode = function(...args) 
           
@@ -171,7 +171,7 @@ QSqlError.UnknownError = QSqlError_Wrapper.UnknownError;
               return this.__PROXY__.nativeErrorCode(...args);
             
         };
-    
+        
         // function 
         QSqlError.prototype.text = function(...args) 
           
@@ -181,7 +181,7 @@ QSqlError.UnknownError = QSqlError_Wrapper.UnknownError;
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QSqlError.prototype.isValid = function(...args) 
           
@@ -191,7 +191,7 @@ QSqlError.UnknownError = QSqlError_Wrapper.UnknownError;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
 
       // static functions:
       QSqlError.prototype.isNullWrapper = function() {

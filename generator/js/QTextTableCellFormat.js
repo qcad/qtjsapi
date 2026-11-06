@@ -161,7 +161,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.font = function(...args) 
           
@@ -171,7 +171,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontFamilies = function(...args) 
           
@@ -181,7 +181,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontFamilies(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontFamilies = function(...args) 
           
@@ -191,7 +191,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontFamilies(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontStyleName = function(...args) 
           
@@ -201,7 +201,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontStyleName(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontStyleName = function(...args) 
           
@@ -211,7 +211,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontStyleName(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontPointSize = function(...args) 
           
@@ -221,7 +221,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontPointSize = function(...args) 
           
@@ -231,7 +231,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontWeight = function(...args) 
           
@@ -241,7 +241,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontWeight(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontWeight = function(...args) 
           
@@ -251,7 +251,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontWeight(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontItalic = function(...args) 
           
@@ -261,7 +261,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontItalic(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontItalic = function(...args) 
           
@@ -271,7 +271,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontItalic(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontCapitalization = function(...args) 
           
@@ -281,7 +281,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontCapitalization(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontCapitalization = function(...args) 
           
@@ -291,7 +291,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontCapitalization(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontLetterSpacingType = function(...args) 
           
@@ -301,7 +301,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontLetterSpacingType(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontLetterSpacingType = function(...args) 
           
@@ -311,7 +311,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontLetterSpacingType(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontLetterSpacing = function(...args) 
           
@@ -321,7 +321,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontLetterSpacing(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontLetterSpacing = function(...args) 
           
@@ -331,7 +331,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontLetterSpacing(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontWordSpacing = function(...args) 
           
@@ -341,7 +341,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontWordSpacing(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontWordSpacing = function(...args) 
           
@@ -351,7 +351,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontWordSpacing(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontUnderline = function(...args) 
           
@@ -361,7 +361,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontUnderline = function(...args) 
           
@@ -371,7 +371,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontOverline = function(...args) 
           
@@ -381,7 +381,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontOverline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontOverline = function(...args) 
           
@@ -391,7 +391,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontOverline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontStrikeOut = function(...args) 
           
@@ -401,7 +401,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontStrikeOut(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontStrikeOut = function(...args) 
           
@@ -411,7 +411,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontStrikeOut(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setUnderlineColor = function(...args) 
           
@@ -421,7 +421,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setUnderlineColor(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.underlineColor = function(...args) 
           
@@ -431,7 +431,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.underlineColor(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontFixedPitch = function(...args) 
           
@@ -441,7 +441,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontFixedPitch(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontFixedPitch = function(...args) 
           
@@ -451,7 +451,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontFixedPitch(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontStretch = function(...args) 
           
@@ -461,7 +461,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontStretch(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontStretch = function(...args) 
           
@@ -471,7 +471,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontStretch(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontStyleHint = function(...args) 
           
@@ -481,7 +481,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontStyleHint(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontStyleStrategy = function(...args) 
           
@@ -491,7 +491,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontStyleStrategy(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontStyleHint = function(...args) 
           
@@ -501,7 +501,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontStyleHint(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontStyleStrategy = function(...args) 
           
@@ -511,7 +511,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontStyleStrategy(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontHintingPreference = function(...args) 
           
@@ -521,7 +521,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontHintingPreference(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontHintingPreference = function(...args) 
           
@@ -531,7 +531,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontHintingPreference(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setFontKerning = function(...args) 
           
@@ -541,7 +541,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setFontKerning(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.fontKerning = function(...args) 
           
@@ -551,7 +551,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.fontKerning(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setUnderlineStyle = function(...args) 
           
@@ -561,7 +561,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setUnderlineStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.underlineStyle = function(...args) 
           
@@ -571,7 +571,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.underlineStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setVerticalAlignment = function(...args) 
           
@@ -581,7 +581,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setVerticalAlignment(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.verticalAlignment = function(...args) 
           
@@ -591,7 +591,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.verticalAlignment(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setTextOutline = function(...args) 
           
@@ -601,7 +601,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setTextOutline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.textOutline = function(...args) 
           
@@ -611,7 +611,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.textOutline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setToolTip = function(...args) 
           
@@ -621,7 +621,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.toolTip = function(...args) 
           
@@ -631,7 +631,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.toolTip(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setSuperScriptBaseline = function(...args) 
           
@@ -641,7 +641,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setSuperScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.superScriptBaseline = function(...args) 
           
@@ -651,7 +651,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.superScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setSubScriptBaseline = function(...args) 
           
@@ -661,7 +661,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setSubScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.subScriptBaseline = function(...args) 
           
@@ -671,7 +671,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.subScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setBaselineOffset = function(...args) 
           
@@ -681,7 +681,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setBaselineOffset(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.baselineOffset = function(...args) 
           
@@ -691,7 +691,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.baselineOffset(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setAnchor = function(...args) 
           
@@ -701,7 +701,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setAnchor(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.isAnchor = function(...args) 
           
@@ -711,7 +711,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.isAnchor(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setAnchorHref = function(...args) 
           
@@ -721,7 +721,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setAnchorHref(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.anchorHref = function(...args) 
           
@@ -731,7 +731,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.anchorHref(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setAnchorNames = function(...args) 
           
@@ -741,7 +741,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setAnchorNames(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.anchorNames = function(...args) 
           
@@ -751,7 +751,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.anchorNames(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setTableCellRowSpan = function(...args) 
           
@@ -761,7 +761,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setTableCellRowSpan(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.tableCellRowSpan = function(...args) 
           
@@ -771,7 +771,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.tableCellRowSpan(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setTableCellColumnSpan = function(...args) 
           
@@ -781,7 +781,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setTableCellColumnSpan(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.tableCellColumnSpan = function(...args) 
           
@@ -791,7 +791,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.tableCellColumnSpan(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.isValid = function(...args) 
           
@@ -801,7 +801,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setTopPadding = function(...args) 
           
@@ -811,7 +811,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setTopPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.topPadding = function(...args) 
           
@@ -821,7 +821,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.topPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setBottomPadding = function(...args) 
           
@@ -831,7 +831,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setBottomPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.bottomPadding = function(...args) 
           
@@ -841,7 +841,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.bottomPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setLeftPadding = function(...args) 
           
@@ -851,7 +851,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setLeftPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.leftPadding = function(...args) 
           
@@ -861,7 +861,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.leftPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setRightPadding = function(...args) 
           
@@ -871,7 +871,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setRightPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.rightPadding = function(...args) 
           
@@ -881,7 +881,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.rightPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setPadding = function(...args) 
           
@@ -891,7 +891,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setTopBorder = function(...args) 
           
@@ -901,7 +901,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setTopBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.topBorder = function(...args) 
           
@@ -911,7 +911,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.topBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setBottomBorder = function(...args) 
           
@@ -921,7 +921,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setBottomBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.bottomBorder = function(...args) 
           
@@ -931,7 +931,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.bottomBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setLeftBorder = function(...args) 
           
@@ -941,7 +941,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setLeftBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.leftBorder = function(...args) 
           
@@ -951,7 +951,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.leftBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setRightBorder = function(...args) 
           
@@ -961,7 +961,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setRightBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.rightBorder = function(...args) 
           
@@ -971,7 +971,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.rightBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setBorder = function(...args) 
           
@@ -981,7 +981,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setTopBorderStyle = function(...args) 
           
@@ -991,7 +991,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setTopBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.topBorderStyle = function(...args) 
           
@@ -1001,7 +1001,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.topBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setBottomBorderStyle = function(...args) 
           
@@ -1011,7 +1011,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setBottomBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.bottomBorderStyle = function(...args) 
           
@@ -1021,7 +1021,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.bottomBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setLeftBorderStyle = function(...args) 
           
@@ -1031,7 +1031,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setLeftBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.leftBorderStyle = function(...args) 
           
@@ -1041,7 +1041,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.leftBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setRightBorderStyle = function(...args) 
           
@@ -1051,7 +1051,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setRightBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.rightBorderStyle = function(...args) 
           
@@ -1061,7 +1061,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.rightBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setBorderStyle = function(...args) 
           
@@ -1071,7 +1071,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setTopBorderBrush = function(...args) 
           
@@ -1081,7 +1081,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setTopBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.topBorderBrush = function(...args) 
           
@@ -1091,7 +1091,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.topBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setBottomBorderBrush = function(...args) 
           
@@ -1101,7 +1101,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setBottomBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.bottomBorderBrush = function(...args) 
           
@@ -1111,7 +1111,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.bottomBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setLeftBorderBrush = function(...args) 
           
@@ -1121,7 +1121,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setLeftBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.leftBorderBrush = function(...args) 
           
@@ -1131,7 +1131,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.leftBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setRightBorderBrush = function(...args) 
           
@@ -1141,7 +1141,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setRightBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.rightBorderBrush = function(...args) 
           
@@ -1151,7 +1151,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.rightBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableCellFormat.prototype.setBorderBrush = function(...args) 
           
@@ -1161,7 +1161,7 @@ QTextTableCellFormat.FontPropertiesAll = QTextTableCellFormat_Wrapper.FontProper
               return this.__PROXY__.setBorderBrush(...args);
             
         };
-    
+        
 
       // static functions:
       QTextTableCellFormat.prototype.isNullWrapper = function() {

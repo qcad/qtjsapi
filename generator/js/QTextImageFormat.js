@@ -161,7 +161,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.font = function(...args) 
           
@@ -171,7 +171,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontFamilies = function(...args) 
           
@@ -181,7 +181,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontFamilies(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontFamilies = function(...args) 
           
@@ -191,7 +191,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontFamilies(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontStyleName = function(...args) 
           
@@ -201,7 +201,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStyleName(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontStyleName = function(...args) 
           
@@ -211,7 +211,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStyleName(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontPointSize = function(...args) 
           
@@ -221,7 +221,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontPointSize = function(...args) 
           
@@ -231,7 +231,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontWeight = function(...args) 
           
@@ -241,7 +241,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontWeight(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontWeight = function(...args) 
           
@@ -251,7 +251,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontWeight(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontItalic = function(...args) 
           
@@ -261,7 +261,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontItalic(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontItalic = function(...args) 
           
@@ -271,7 +271,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontItalic(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontCapitalization = function(...args) 
           
@@ -281,7 +281,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontCapitalization(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontCapitalization = function(...args) 
           
@@ -291,7 +291,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontCapitalization(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontLetterSpacingType = function(...args) 
           
@@ -301,7 +301,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontLetterSpacingType(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontLetterSpacingType = function(...args) 
           
@@ -311,7 +311,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontLetterSpacingType(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontLetterSpacing = function(...args) 
           
@@ -321,7 +321,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontLetterSpacing(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontLetterSpacing = function(...args) 
           
@@ -331,7 +331,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontLetterSpacing(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontWordSpacing = function(...args) 
           
@@ -341,7 +341,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontWordSpacing(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontWordSpacing = function(...args) 
           
@@ -351,7 +351,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontWordSpacing(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontUnderline = function(...args) 
           
@@ -361,7 +361,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontUnderline = function(...args) 
           
@@ -371,7 +371,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontOverline = function(...args) 
           
@@ -381,7 +381,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontOverline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontOverline = function(...args) 
           
@@ -391,7 +391,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontOverline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontStrikeOut = function(...args) 
           
@@ -401,7 +401,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStrikeOut(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontStrikeOut = function(...args) 
           
@@ -411,7 +411,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStrikeOut(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setUnderlineColor = function(...args) 
           
@@ -421,7 +421,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setUnderlineColor(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.underlineColor = function(...args) 
           
@@ -431,7 +431,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.underlineColor(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontFixedPitch = function(...args) 
           
@@ -441,7 +441,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontFixedPitch(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontFixedPitch = function(...args) 
           
@@ -451,7 +451,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontFixedPitch(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontStretch = function(...args) 
           
@@ -461,7 +461,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStretch(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontStretch = function(...args) 
           
@@ -471,7 +471,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStretch(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontStyleHint = function(...args) 
           
@@ -481,7 +481,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStyleHint(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontStyleStrategy = function(...args) 
           
@@ -491,7 +491,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStyleStrategy(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontStyleHint = function(...args) 
           
@@ -501,7 +501,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStyleHint(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontStyleStrategy = function(...args) 
           
@@ -511,7 +511,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStyleStrategy(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontHintingPreference = function(...args) 
           
@@ -521,7 +521,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontHintingPreference(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontHintingPreference = function(...args) 
           
@@ -531,7 +531,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontHintingPreference(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setFontKerning = function(...args) 
           
@@ -541,7 +541,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontKerning(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.fontKerning = function(...args) 
           
@@ -551,7 +551,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontKerning(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setUnderlineStyle = function(...args) 
           
@@ -561,7 +561,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setUnderlineStyle(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.underlineStyle = function(...args) 
           
@@ -571,7 +571,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.underlineStyle(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setVerticalAlignment = function(...args) 
           
@@ -581,7 +581,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setVerticalAlignment(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.verticalAlignment = function(...args) 
           
@@ -591,7 +591,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.verticalAlignment(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setTextOutline = function(...args) 
           
@@ -601,7 +601,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setTextOutline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.textOutline = function(...args) 
           
@@ -611,7 +611,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.textOutline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setToolTip = function(...args) 
           
@@ -621,7 +621,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.toolTip = function(...args) 
           
@@ -631,7 +631,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toolTip(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setSuperScriptBaseline = function(...args) 
           
@@ -641,7 +641,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setSuperScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.superScriptBaseline = function(...args) 
           
@@ -651,7 +651,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.superScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setSubScriptBaseline = function(...args) 
           
@@ -661,7 +661,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setSubScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.subScriptBaseline = function(...args) 
           
@@ -671,7 +671,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.subScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setBaselineOffset = function(...args) 
           
@@ -681,7 +681,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setBaselineOffset(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.baselineOffset = function(...args) 
           
@@ -691,7 +691,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.baselineOffset(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setAnchor = function(...args) 
           
@@ -701,7 +701,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setAnchor(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.isAnchor = function(...args) 
           
@@ -711,7 +711,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isAnchor(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setAnchorHref = function(...args) 
           
@@ -721,7 +721,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setAnchorHref(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.anchorHref = function(...args) 
           
@@ -731,7 +731,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.anchorHref(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setAnchorNames = function(...args) 
           
@@ -741,7 +741,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setAnchorNames(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.anchorNames = function(...args) 
           
@@ -751,7 +751,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.anchorNames(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setTableCellRowSpan = function(...args) 
           
@@ -761,7 +761,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setTableCellRowSpan(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.tableCellRowSpan = function(...args) 
           
@@ -771,7 +771,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.tableCellRowSpan(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setTableCellColumnSpan = function(...args) 
           
@@ -781,7 +781,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setTableCellColumnSpan(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.tableCellColumnSpan = function(...args) 
           
@@ -791,7 +791,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.tableCellColumnSpan(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.isValid = function(...args) 
           
@@ -801,7 +801,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setName = function(...args) 
           
@@ -811,7 +811,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setName(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.name = function(...args) 
           
@@ -821,7 +821,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setWidth = function(...args) 
           
@@ -831,7 +831,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.width = function(...args) 
           
@@ -841,7 +841,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setHeight = function(...args) 
           
@@ -851,7 +851,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.height = function(...args) 
           
@@ -861,7 +861,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.setQuality = function(...args) 
           
@@ -871,7 +871,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setQuality(...args);
             
         };
-    
+        
         // function 
         QTextImageFormat.prototype.quality = function(...args) 
           
@@ -881,7 +881,7 @@ QTextImageFormat.FontPropertiesAll = QTextImageFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.quality(...args);
             
         };
-    
+        
 
       // static functions:
       QTextImageFormat.prototype.isNullWrapper = function() {

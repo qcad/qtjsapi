@@ -180,7 +180,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isWidgetType = function(...args) 
           
@@ -190,7 +190,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isWindowType = function(...args) 
           
@@ -200,7 +200,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.signalsBlocked = function(...args) 
           
@@ -210,7 +210,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.blockSignals = function(...args) 
           
@@ -220,7 +220,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.findChild = function(...args) 
           
@@ -230,7 +230,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.children = function(...args) 
           
@@ -240,7 +240,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.installEventFilter = function(...args) 
           
@@ -250,7 +250,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.removeEventFilter = function(...args) 
           
@@ -260,7 +260,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.dumpObjectTree = function(...args) 
           
@@ -270,7 +270,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.dumpObjectInfo = function(...args) 
           
@@ -280,7 +280,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setProperty = function(...args) 
           
@@ -290,7 +290,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.property = function(...args) 
           
@@ -300,7 +300,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.dynamicPropertyNames = function(...args) 
           
@@ -310,7 +310,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.parent = function(...args) 
           
@@ -320,7 +320,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.deleteLater = function(...args) 
           
@@ -330,7 +330,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.devType = function(...args) 
           
@@ -340,7 +340,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.createWinId = function(...args) 
           
@@ -350,7 +350,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isWindow = function(...args) 
           
@@ -360,7 +360,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isModal = function(...args) 
           
@@ -370,7 +370,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowModality = function(...args) 
           
@@ -380,7 +380,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isEnabled = function(...args) 
           
@@ -390,7 +390,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isEnabledTo = function(...args) 
           
@@ -400,7 +400,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setEnabled = function(...args) 
           
@@ -410,7 +410,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setDisabled = function(...args) 
           
@@ -420,7 +420,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowModified = function(...args) 
           
@@ -430,7 +430,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMinimumSize = function(...args) 
           
@@ -440,7 +440,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMaximumSize = function(...args) 
           
@@ -450,7 +450,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMinimumWidth = function(...args) 
           
@@ -460,7 +460,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMinimumHeight = function(...args) 
           
@@ -470,7 +470,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMaximumWidth = function(...args) 
           
@@ -480,7 +480,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMaximumHeight = function(...args) 
           
@@ -490,7 +490,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setSizeIncrement = function(...args) 
           
@@ -500,7 +500,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setBaseSize = function(...args) 
           
@@ -510,7 +510,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFixedSize = function(...args) 
           
@@ -520,7 +520,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFixedWidth = function(...args) 
           
@@ -530,7 +530,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFixedHeight = function(...args) 
           
@@ -540,7 +540,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mapToGlobal = function(...args) 
           
@@ -550,7 +550,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mapFromGlobal = function(...args) 
           
@@ -560,7 +560,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mapToParent = function(...args) 
           
@@ -570,7 +570,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mapFromParent = function(...args) 
           
@@ -580,7 +580,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mapTo = function(...args) 
           
@@ -590,7 +590,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mapFrom = function(...args) 
           
@@ -600,7 +600,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.window = function(...args) 
           
@@ -610,7 +610,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.nativeParentWidget = function(...args) 
           
@@ -620,7 +620,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.topLevelWidget = function(...args) 
           
@@ -630,7 +630,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setPalette = function(...args) 
           
@@ -640,7 +640,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setBackgroundRole = function(...args) 
           
@@ -650,7 +650,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.backgroundRole = function(...args) 
           
@@ -660,7 +660,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setForegroundRole = function(...args) 
           
@@ -670,7 +670,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.foregroundRole = function(...args) 
           
@@ -680,7 +680,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFont = function(...args) 
           
@@ -690,7 +690,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.fontInfo = function(...args) 
           
@@ -700,7 +700,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setCursor = function(...args) 
           
@@ -710,7 +710,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.unsetCursor = function(...args) 
           
@@ -720,7 +720,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMouseTracking = function(...args) 
           
@@ -730,7 +730,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.hasMouseTracking = function(...args) 
           
@@ -740,7 +740,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.underMouse = function(...args) 
           
@@ -750,7 +750,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setTabletTracking = function(...args) 
           
@@ -760,7 +760,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.hasTabletTracking = function(...args) 
           
@@ -770,7 +770,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMask = function(...args) 
           
@@ -780,7 +780,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mask = function(...args) 
           
@@ -790,7 +790,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.clearMask = function(...args) 
           
@@ -800,7 +800,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.grab = function(...args) 
           
@@ -810,7 +810,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.grabGesture = function(...args) 
           
@@ -820,7 +820,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.ungrabGesture = function(...args) 
           
@@ -830,7 +830,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowTitle = function(...args) 
           
@@ -840,7 +840,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setStyleSheet = function(...args) 
           
@@ -850,7 +850,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowIcon = function(...args) 
           
@@ -860,7 +860,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowIconText = function(...args) 
           
@@ -870,7 +870,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowRole = function(...args) 
           
@@ -880,7 +880,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.windowRole = function(...args) 
           
@@ -890,7 +890,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowFilePath = function(...args) 
           
@@ -900,7 +900,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowOpacity = function(...args) 
           
@@ -910,7 +910,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isWindowModified = function(...args) 
           
@@ -920,7 +920,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setToolTip = function(...args) 
           
@@ -930,7 +930,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setToolTipDuration = function(...args) 
           
@@ -940,7 +940,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setStatusTip = function(...args) 
           
@@ -950,7 +950,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWhatsThis = function(...args) 
           
@@ -960,7 +960,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setAccessibleName = function(...args) 
           
@@ -970,7 +970,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setAccessibleDescription = function(...args) 
           
@@ -980,7 +980,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setLayoutDirection = function(...args) 
           
@@ -990,7 +990,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1000,7 +1000,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setLocale = function(...args) 
           
@@ -1010,7 +1010,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.unsetLocale = function(...args) 
           
@@ -1020,7 +1020,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isRightToLeft = function(...args) 
           
@@ -1030,7 +1030,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isLeftToRight = function(...args) 
           
@@ -1040,7 +1040,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.activateWindow = function(...args) 
           
@@ -1050,7 +1050,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.clearFocus = function(...args) 
           
@@ -1060,7 +1060,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFocus = function(...args) 
           
@@ -1070,7 +1070,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFocusPolicy = function(...args) 
           
@@ -1080,7 +1080,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.hasFocus = function(...args) 
           
@@ -1090,7 +1090,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFocusProxy = function(...args) 
           
@@ -1100,7 +1100,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.focusProxy = function(...args) 
           
@@ -1110,7 +1110,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1120,7 +1120,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.grabMouse = function(...args) 
           
@@ -1130,7 +1130,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.releaseMouse = function(...args) 
           
@@ -1140,7 +1140,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.grabKeyboard = function(...args) 
           
@@ -1150,7 +1150,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.releaseKeyboard = function(...args) 
           
@@ -1160,7 +1160,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.grabShortcut = function(...args) 
           
@@ -1170,7 +1170,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.releaseShortcut = function(...args) 
           
@@ -1180,7 +1180,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setShortcutEnabled = function(...args) 
           
@@ -1190,7 +1190,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1200,7 +1200,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1210,7 +1210,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.update = function(...args) 
           
@@ -1220,7 +1220,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.repaint = function(...args) 
           
@@ -1230,7 +1230,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setVisible = function(...args) 
           
@@ -1240,7 +1240,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setHidden = function(...args) 
           
@@ -1250,7 +1250,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.show = function(...args) 
           
@@ -1260,7 +1260,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.hide = function(...args) 
           
@@ -1270,7 +1270,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.showMinimized = function(...args) 
           
@@ -1280,7 +1280,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.showMaximized = function(...args) 
           
@@ -1290,7 +1290,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.showFullScreen = function(...args) 
           
@@ -1300,7 +1300,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.showNormal = function(...args) 
           
@@ -1310,7 +1310,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.close = function(...args) 
           
@@ -1320,7 +1320,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.raise = function(...args) 
           
@@ -1330,7 +1330,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.lower = function(...args) 
           
@@ -1340,7 +1340,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.stackUnder = function(...args) 
           
@@ -1350,7 +1350,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.move = function(...args) 
           
@@ -1360,7 +1360,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.resize = function(...args) 
           
@@ -1370,7 +1370,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setGeometry = function(...args) 
           
@@ -1380,7 +1380,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.saveGeometry = function(...args) 
           
@@ -1390,7 +1390,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.restoreGeometry = function(...args) 
           
@@ -1400,7 +1400,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.adjustSize = function(...args) 
           
@@ -1410,7 +1410,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isVisible = function(...args) 
           
@@ -1420,7 +1420,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isVisibleTo = function(...args) 
           
@@ -1430,7 +1430,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isHidden = function(...args) 
           
@@ -1440,7 +1440,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isMinimized = function(...args) 
           
@@ -1450,7 +1450,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isMaximized = function(...args) 
           
@@ -1460,7 +1460,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isFullScreen = function(...args) 
           
@@ -1470,7 +1470,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.windowState = function(...args) 
           
@@ -1480,7 +1480,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowState = function(...args) 
           
@@ -1490,7 +1490,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.overrideWindowState = function(...args) 
           
@@ -1500,7 +1500,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setSizePolicy = function(...args) 
           
@@ -1510,7 +1510,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.heightForWidth = function(...args) 
           
@@ -1520,7 +1520,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.hasHeightForWidth = function(...args) 
           
@@ -1530,7 +1530,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.visibleRegion = function(...args) 
           
@@ -1540,7 +1540,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setContentsMargins = function(...args) 
           
@@ -1550,7 +1550,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.contentsMargins = function(...args) 
           
@@ -1560,7 +1560,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.contentsRect = function(...args) 
           
@@ -1570,7 +1570,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.layout = function(...args) 
           
@@ -1580,7 +1580,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setLayout = function(...args) 
           
@@ -1590,7 +1590,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.updateGeometry = function(...args) 
           
@@ -1600,7 +1600,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setParent = function(...args) 
           
@@ -1610,7 +1610,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.scroll = function(...args) 
           
@@ -1620,7 +1620,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.focusWidget = function(...args) 
           
@@ -1630,7 +1630,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.nextInFocusChain = function(...args) 
           
@@ -1640,7 +1640,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.previousInFocusChain = function(...args) 
           
@@ -1650,7 +1650,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setAcceptDrops = function(...args) 
           
@@ -1660,7 +1660,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.addAction = function(...args) 
           
@@ -1670,7 +1670,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.addActions = function(...args) 
           
@@ -1680,7 +1680,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.insertActions = function(...args) 
           
@@ -1690,7 +1690,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.insertAction = function(...args) 
           
@@ -1700,7 +1700,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.removeAction = function(...args) 
           
@@ -1710,7 +1710,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.actions = function(...args) 
           
@@ -1720,7 +1720,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.parentWidget = function(...args) 
           
@@ -1730,7 +1730,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowFlags = function(...args) 
           
@@ -1740,7 +1740,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.windowFlags = function(...args) 
           
@@ -1750,7 +1750,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWindowFlag = function(...args) 
           
@@ -1760,7 +1760,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.overrideWindowFlags = function(...args) 
           
@@ -1770,7 +1770,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.windowType = function(...args) 
           
@@ -1780,7 +1780,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.childAt = function(...args) 
           
@@ -1790,7 +1790,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setAttribute = function(...args) 
           
@@ -1800,7 +1800,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.testAttribute = function(...args) 
           
@@ -1810,7 +1810,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.ensurePolished = function(...args) 
           
@@ -1820,7 +1820,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isAncestorOf = function(...args) 
           
@@ -1830,7 +1830,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setAutoFillBackground = function(...args) 
           
@@ -1840,7 +1840,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.enterEvent = function(...args) 
           
@@ -1850,7 +1850,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.leaveEvent = function(...args) 
           
@@ -1860,7 +1860,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.moveEvent = function(...args) 
           
@@ -1870,7 +1870,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.closeEvent = function(...args) 
           
@@ -1880,7 +1880,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.tabletEvent = function(...args) 
           
@@ -1890,7 +1890,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.hideEvent = function(...args) 
           
@@ -1900,7 +1900,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.nativeEvent = function(...args) 
           
@@ -1910,7 +1910,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.metric = function(...args) 
           
@@ -1920,7 +1920,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.initPainter = function(...args) 
           
@@ -1930,7 +1930,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.redirected = function(...args) 
           
@@ -1940,7 +1940,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.sharedPainter = function(...args) 
           
@@ -1950,7 +1950,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setInputMethodHints = function(...args) 
           
@@ -1960,7 +1960,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.updateMicroFocus = function(...args) 
           
@@ -1970,7 +1970,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.create = function(...args) 
           
@@ -1980,7 +1980,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.destroy = function(...args) 
           
@@ -1990,7 +1990,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.focusNextChild = function(...args) 
           
@@ -2000,7 +2000,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.focusPreviousChild = function(...args) 
           
@@ -2010,7 +2010,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setBackingStore = function(...args) 
           
@@ -2020,7 +2020,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.testAttribute_helper = function(...args) 
           
@@ -2030,7 +2030,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.takeLayout = function(...args) 
           
@@ -2040,7 +2040,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2050,7 +2050,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.qt_qwidget_data = function(...args) 
           
@@ -2060,7 +2060,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.qt_widget_private = function(...args) 
           
@@ -2070,7 +2070,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.frameStyle = function(...args) 
           
@@ -2080,7 +2080,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFrameStyle = function(...args) 
           
@@ -2090,7 +2090,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFrameShape = function(...args) 
           
@@ -2100,7 +2100,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFrameShadow = function(...args) 
           
@@ -2110,7 +2110,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setLineWidth = function(...args) 
           
@@ -2120,7 +2120,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMidLineWidth = function(...args) 
           
@@ -2130,7 +2130,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFrameRect = function(...args) 
           
@@ -2140,7 +2140,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.drawFrame = function(...args) 
           
@@ -2150,7 +2150,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.initStyleOption = function(...args) 
           
@@ -2160,7 +2160,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.Q_DECLARE_PRIVATE = function(...args) 
           
@@ -2170,7 +2170,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setDocument = function(...args) 
           
@@ -2180,7 +2180,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setDocument(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setPlaceholderText = function(...args) 
           
@@ -2190,7 +2190,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setTextCursor = function(...args) 
           
@@ -2200,7 +2200,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setTextCursor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.textCursor = function(...args) 
           
@@ -2210,7 +2210,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.textCursor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isReadOnly = function(...args) 
           
@@ -2220,7 +2220,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setReadOnly = function(...args) 
           
@@ -2230,7 +2230,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setTextInteractionFlags = function(...args) 
           
@@ -2240,7 +2240,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setTextInteractionFlags(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.fontPointSize = function(...args) 
           
@@ -2250,7 +2250,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.fontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.fontFamily = function(...args) 
           
@@ -2260,7 +2260,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.fontFamily(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.fontWeight = function(...args) 
           
@@ -2270,7 +2270,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.fontWeight(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.fontUnderline = function(...args) 
           
@@ -2280,7 +2280,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.fontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.fontItalic = function(...args) 
           
@@ -2290,7 +2290,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.fontItalic(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.textColor = function(...args) 
           
@@ -2300,7 +2300,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.textColor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.textBackgroundColor = function(...args) 
           
@@ -2310,7 +2310,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.textBackgroundColor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.currentFont = function(...args) 
           
@@ -2320,7 +2320,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.currentFont(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.alignment = function(...args) 
           
@@ -2330,7 +2330,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mergeCurrentCharFormat = function(...args) 
           
@@ -2340,7 +2340,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mergeCurrentCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setCurrentCharFormat = function(...args) 
           
@@ -2350,7 +2350,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setCurrentCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.currentCharFormat = function(...args) 
           
@@ -2360,7 +2360,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.currentCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setAutoFormatting = function(...args) 
           
@@ -2370,7 +2370,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setAutoFormatting(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setTabChangesFocus = function(...args) 
           
@@ -2380,7 +2380,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setTabChangesFocus(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setDocumentTitle = function(...args) 
           
@@ -2390,7 +2390,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setDocumentTitle(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isUndoRedoEnabled = function(...args) 
           
@@ -2400,7 +2400,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isUndoRedoEnabled(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setUndoRedoEnabled = function(...args) 
           
@@ -2410,7 +2410,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setUndoRedoEnabled(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setLineWrapMode = function(...args) 
           
@@ -2420,7 +2420,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setLineWrapMode(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setLineWrapColumnOrWidth = function(...args) 
           
@@ -2430,7 +2430,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setLineWrapColumnOrWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.wordWrapMode = function(...args) 
           
@@ -2440,7 +2440,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.wordWrapMode(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setWordWrapMode = function(...args) 
           
@@ -2450,7 +2450,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setWordWrapMode(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.toPlainText = function(...args) 
           
@@ -2460,7 +2460,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.toPlainText(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.toHtml = function(...args) 
           
@@ -2470,7 +2470,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.toHtml(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.ensureCursorVisible = function(...args) 
           
@@ -2480,7 +2480,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.ensureCursorVisible(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.createStandardContextMenu = function(...args) 
           
@@ -2490,7 +2490,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.createStandardContextMenu(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.cursorRect = function(...args) 
           
@@ -2500,7 +2500,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.cursorRect(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.anchorAt = function(...args) 
           
@@ -2510,7 +2510,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.anchorAt(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setOverwriteMode = function(...args) 
           
@@ -2520,7 +2520,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setOverwriteMode(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setTabStopDistance = function(...args) 
           
@@ -2530,7 +2530,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setTabStopDistance(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setCursorWidth = function(...args) 
           
@@ -2540,7 +2540,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setCursorWidth(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setAcceptRichText = function(...args) 
           
@@ -2550,7 +2550,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setAcceptRichText(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.moveCursor = function(...args) 
           
@@ -2560,7 +2560,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.moveCursor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.canPaste = function(...args) 
           
@@ -2570,7 +2570,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.canPaste(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.inputMethodQuery = function(...args) 
           
@@ -2580,7 +2580,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFontPointSize = function(...args) 
           
@@ -2590,7 +2590,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFontFamily = function(...args) 
           
@@ -2600,7 +2600,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFontFamily(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFontWeight = function(...args) 
           
@@ -2610,7 +2610,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFontWeight(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFontUnderline = function(...args) 
           
@@ -2620,7 +2620,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setFontItalic = function(...args) 
           
@@ -2630,7 +2630,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setFontItalic(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setTextColor = function(...args) 
           
@@ -2640,7 +2640,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setTextColor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setTextBackgroundColor = function(...args) 
           
@@ -2650,7 +2650,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setTextBackgroundColor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setCurrentFont = function(...args) 
           
@@ -2660,7 +2660,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setCurrentFont(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setAlignment = function(...args) 
           
@@ -2670,7 +2670,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setPlainText = function(...args) 
           
@@ -2680,7 +2680,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setPlainText(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setHtml = function(...args) 
           
@@ -2690,7 +2690,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setHtml(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setMarkdown = function(...args) 
           
@@ -2700,7 +2700,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setMarkdown(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setText = function(...args) 
           
@@ -2710,7 +2710,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.cut = function(...args) 
           
@@ -2720,7 +2720,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.cut(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.copy = function(...args) 
           
@@ -2730,7 +2730,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.paste = function(...args) 
           
@@ -2740,7 +2740,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.paste(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.undo = function(...args) 
           
@@ -2750,7 +2750,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.redo = function(...args) 
           
@@ -2760,7 +2760,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.clear = function(...args) 
           
@@ -2770,7 +2770,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.selectAll = function(...args) 
           
@@ -2780,7 +2780,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.insertPlainText = function(...args) 
           
@@ -2790,7 +2790,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.insertPlainText(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.insertHtml = function(...args) 
           
@@ -2800,7 +2800,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.insertHtml(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.append = function(...args) 
           
@@ -2810,7 +2810,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.append(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.scrollToAnchor = function(...args) 
           
@@ -2820,7 +2820,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.scrollToAnchor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.zoomIn = function(...args) 
           
@@ -2830,7 +2830,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.zoomIn(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.zoomOut = function(...args) 
           
@@ -2840,7 +2840,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.zoomOut(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.timerEvent = function(...args) 
           
@@ -2850,7 +2850,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.timerEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.keyReleaseEvent = function(...args) 
           
@@ -2860,7 +2860,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2870,7 +2870,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.contextMenuEvent = function(...args) 
           
@@ -2880,7 +2880,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.dragEnterEvent = function(...args) 
           
@@ -2890,7 +2890,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.dragLeaveEvent = function(...args) 
           
@@ -2900,7 +2900,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.dragMoveEvent = function(...args) 
           
@@ -2910,7 +2910,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.dropEvent = function(...args) 
           
@@ -2920,7 +2920,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.focusInEvent = function(...args) 
           
@@ -2930,7 +2930,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.showEvent = function(...args) 
           
@@ -2940,7 +2940,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.changeEvent = function(...args) 
           
@@ -2950,7 +2950,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.wheelEvent = function(...args) 
           
@@ -2960,7 +2960,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.createMimeDataFromSelection = function(...args) 
           
@@ -2970,7 +2970,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.createMimeDataFromSelection(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.canInsertFromMimeData = function(...args) 
           
@@ -2980,7 +2980,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.canInsertFromMimeData(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.insertFromMimeData = function(...args) 
           
@@ -2990,7 +2990,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.insertFromMimeData(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.inputMethodEvent = function(...args) 
           
@@ -3000,7 +3000,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.scrollContentsBy = function(...args) 
           
@@ -3010,7 +3010,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.scrollContentsBy(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.doSetTextCursor = function(...args) 
           
@@ -3020,7 +3020,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.doSetTextCursor(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.zoomInF = function(...args) 
           
@@ -3030,7 +3030,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.zoomInF(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.source = function(...args) 
           
@@ -3040,7 +3040,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setSearchPaths = function(...args) 
           
@@ -3050,7 +3050,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setSearchPaths(...args);
             
         };
-    
+        
       // function 
       QTextBrowser.prototype.loadResource = function() 
         
@@ -3092,7 +3092,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isBackwardAvailable(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.isForwardAvailable = function(...args) 
           
@@ -3102,7 +3102,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.isForwardAvailable(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.clearHistory = function(...args) 
           
@@ -3112,7 +3112,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.clearHistory(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.historyTitle = function(...args) 
           
@@ -3122,7 +3122,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.historyTitle(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.historyUrl = function(...args) 
           
@@ -3132,7 +3132,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.historyUrl(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.backwardHistoryCount = function(...args) 
           
@@ -3142,7 +3142,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.backwardHistoryCount(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.forwardHistoryCount = function(...args) 
           
@@ -3152,7 +3152,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.forwardHistoryCount(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setOpenExternalLinks = function(...args) 
           
@@ -3162,7 +3162,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setOpenExternalLinks(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setOpenLinks = function(...args) 
           
@@ -3172,7 +3172,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setOpenLinks(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.setSource = function(...args) 
           
@@ -3182,7 +3182,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.setSource(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.backward = function(...args) 
           
@@ -3192,7 +3192,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.backward(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.forward = function(...args) 
           
@@ -3202,7 +3202,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.forward(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.home = function(...args) 
           
@@ -3212,7 +3212,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.home(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.reload = function(...args) 
           
@@ -3222,7 +3222,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.reload(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.event = function(...args) 
           
@@ -3232,7 +3232,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.eventFilter = function(...args) 
           
@@ -3242,7 +3242,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.keyPressEvent = function(...args) 
           
@@ -3252,7 +3252,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mouseMoveEvent = function(...args) 
           
@@ -3262,7 +3262,8 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QTextBrowser.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QTextBrowser.prototype.mousePressEvent = function(...args) 
           
@@ -3272,7 +3273,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.mouseReleaseEvent = function(...args) 
           
@@ -3282,7 +3283,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.focusOutEvent = function(...args) 
           
@@ -3292,7 +3293,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.focusNextPrevChild = function(...args) 
           
@@ -3302,7 +3303,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QTextBrowser.prototype.paintEvent = function(...args) 
           
@@ -3312,7 +3313,8 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QTextBrowser.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QTextBrowser.prototype.doSetSource = function(...args) 
           
@@ -3322,7 +3324,7 @@ QTextBrowser.AutoAll = QTextBrowser_Wrapper.AutoAll;
               return this.__PROXY__.doSetSource(...args);
             
         };
-    
+        
 
       // static functions:
       

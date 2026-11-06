@@ -178,7 +178,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.isWidgetType = function(...args) 
           
@@ -188,7 +188,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.isWindowType = function(...args) 
           
@@ -198,7 +198,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.signalsBlocked = function(...args) 
           
@@ -208,7 +208,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.blockSignals = function(...args) 
           
@@ -218,7 +218,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.findChild = function(...args) 
           
@@ -228,7 +228,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.children = function(...args) 
           
@@ -238,7 +238,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.setParent = function(...args) 
           
@@ -248,7 +248,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.installEventFilter = function(...args) 
           
@@ -258,7 +258,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.removeEventFilter = function(...args) 
           
@@ -268,7 +268,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.dumpObjectTree = function(...args) 
           
@@ -278,7 +278,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.dumpObjectInfo = function(...args) 
           
@@ -288,7 +288,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.setProperty = function(...args) 
           
@@ -298,7 +298,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.property = function(...args) 
           
@@ -308,7 +308,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.dynamicPropertyNames = function(...args) 
           
@@ -318,7 +318,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.parent = function(...args) 
           
@@ -328,7 +328,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.deleteLater = function(...args) 
           
@@ -338,7 +338,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.currentIndex = function(...args) 
           
@@ -348,7 +348,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.isSelected = function(...args) 
           
@@ -358,7 +358,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.isRowSelected = function(...args) 
           
@@ -368,7 +368,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.isRowSelected(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.isColumnSelected = function(...args) 
           
@@ -378,7 +378,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.isColumnSelected(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.rowIntersectsSelection = function(...args) 
           
@@ -388,7 +388,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.rowIntersectsSelection(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.columnIntersectsSelection = function(...args) 
           
@@ -398,7 +398,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.columnIntersectsSelection(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.hasSelection = function(...args) 
           
@@ -408,7 +408,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.hasSelection(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.selectedRows = function(...args) 
           
@@ -418,7 +418,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.selectedRows(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.selectedColumns = function(...args) 
           
@@ -428,7 +428,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.selectedColumns(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.selection = function(...args) 
           
@@ -438,7 +438,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.selection(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.model = function(...args) 
           
@@ -448,7 +448,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.setModel = function(...args) 
           
@@ -458,7 +458,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.setModel(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.setCurrentIndex = function(...args) 
           
@@ -468,7 +468,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.select = function(...args) 
           
@@ -478,7 +478,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.select(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.clear = function(...args) 
           
@@ -488,7 +488,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.reset = function(...args) 
           
@@ -498,7 +498,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.clearSelection = function(...args) 
           
@@ -508,7 +508,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         QItemSelectionModel.prototype.clearCurrentIndex = function(...args) 
           
@@ -518,7 +518,7 @@ QItemSelectionModel.ClearAndSelect = QItemSelectionModel_Wrapper.ClearAndSelect;
               return this.__PROXY__.clearCurrentIndex(...args);
             
         };
-    
+        
 
       // static functions:
       

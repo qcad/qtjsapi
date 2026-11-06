@@ -155,7 +155,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.isWidgetType = function(...args) 
           
@@ -165,7 +165,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.isWindowType = function(...args) 
           
@@ -175,7 +175,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.signalsBlocked = function(...args) 
           
@@ -185,7 +185,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.blockSignals = function(...args) 
           
@@ -195,7 +195,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.findChild = function(...args) 
           
@@ -205,7 +205,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.children = function(...args) 
           
@@ -215,7 +215,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.installEventFilter = function(...args) 
           
@@ -225,7 +225,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.removeEventFilter = function(...args) 
           
@@ -235,7 +235,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.dumpObjectTree = function(...args) 
           
@@ -245,7 +245,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.dumpObjectInfo = function(...args) 
           
@@ -255,7 +255,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setProperty = function(...args) 
           
@@ -265,7 +265,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.property = function(...args) 
           
@@ -275,7 +275,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.dynamicPropertyNames = function(...args) 
           
@@ -285,7 +285,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.deleteLater = function(...args) 
           
@@ -295,7 +295,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.isVisible = function(...args) 
           
@@ -305,7 +305,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setVisibility = function(...args) 
           
@@ -315,7 +315,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setVisibility(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.create = function(...args) 
           
@@ -325,7 +325,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.parent = function(...args) 
           
@@ -335,7 +335,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setParent = function(...args) 
           
@@ -345,7 +345,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.isTopLevel = function(...args) 
           
@@ -355,7 +355,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.isTopLevel(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.isModal = function(...args) 
           
@@ -365,7 +365,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setModality = function(...args) 
           
@@ -375,7 +375,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setModality(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setFlags = function(...args) 
           
@@ -385,7 +385,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setFlags(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setFlag = function(...args) 
           
@@ -395,7 +395,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setFlag(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.type = function(...args) 
           
@@ -405,7 +405,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setOpacity = function(...args) 
           
@@ -415,7 +415,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setOpacity(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setMask = function(...args) 
           
@@ -425,7 +425,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.mask = function(...args) 
           
@@ -435,7 +435,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.isActive = function(...args) 
           
@@ -445,7 +445,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.isActive(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.reportContentOrientationChange = function(...args) 
           
@@ -455,7 +455,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.reportContentOrientationChange(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.devicePixelRatio = function(...args) 
           
@@ -465,7 +465,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.windowState = function(...args) 
           
@@ -475,7 +475,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.windowStates = function(...args) 
           
@@ -485,7 +485,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.windowStates(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setWindowState = function(...args) 
           
@@ -495,7 +495,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setWindowStates = function(...args) 
           
@@ -505,7 +505,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setWindowStates(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setTransientParent = function(...args) 
           
@@ -515,7 +515,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setTransientParent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.isAncestorOf = function(...args) 
           
@@ -525,7 +525,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.isExposed = function(...args) 
           
@@ -535,7 +535,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.isExposed(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.minimumSize = function(...args) 
           
@@ -545,7 +545,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.minimumSize(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.maximumSize = function(...args) 
           
@@ -555,7 +555,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.maximumSize(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.baseSize = function(...args) 
           
@@ -565,7 +565,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.baseSize(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.sizeIncrement = function(...args) 
           
@@ -575,7 +575,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.sizeIncrement(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setMinimumSize = function(...args) 
           
@@ -585,7 +585,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setMaximumSize = function(...args) 
           
@@ -595,7 +595,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setBaseSize = function(...args) 
           
@@ -605,7 +605,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setSizeIncrement = function(...args) 
           
@@ -615,7 +615,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.geometry = function(...args) 
           
@@ -625,7 +625,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.frameMargins = function(...args) 
           
@@ -635,7 +635,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.frameMargins(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.frameGeometry = function(...args) 
           
@@ -645,7 +645,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.frameGeometry(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.framePosition = function(...args) 
           
@@ -655,7 +655,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.framePosition(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setFramePosition = function(...args) 
           
@@ -665,7 +665,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setFramePosition(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.size = function(...args) 
           
@@ -675,7 +675,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.position = function(...args) 
           
@@ -685,7 +685,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setPosition = function(...args) 
           
@@ -695,7 +695,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.resize = function(...args) 
           
@@ -705,7 +705,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setFilePath = function(...args) 
           
@@ -715,7 +715,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setFilePath(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.filePath = function(...args) 
           
@@ -725,7 +725,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.filePath(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setIcon = function(...args) 
           
@@ -735,7 +735,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.icon = function(...args) 
           
@@ -745,7 +745,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.icon(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.destroy = function(...args) 
           
@@ -755,7 +755,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setKeyboardGrabEnabled = function(...args) 
           
@@ -765,7 +765,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setKeyboardGrabEnabled(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setMouseGrabEnabled = function(...args) 
           
@@ -775,7 +775,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setMouseGrabEnabled(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.screen = function(...args) 
           
@@ -785,7 +785,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.screen(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setScreen = function(...args) 
           
@@ -795,7 +795,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setScreen(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.focusObject = function(...args) 
           
@@ -805,7 +805,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.focusObject(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.mapToGlobal = function(...args) 
           
@@ -815,7 +815,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.mapFromGlobal = function(...args) 
           
@@ -825,7 +825,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.cursor = function(...args) 
           
@@ -835,7 +835,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.cursor(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setCursor = function(...args) 
           
@@ -845,7 +845,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.unsetCursor = function(...args) 
           
@@ -855,7 +855,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.requestActivate = function(...args) 
           
@@ -865,7 +865,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.requestActivate(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setVisible = function(...args) 
           
@@ -875,7 +875,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.show = function(...args) 
           
@@ -885,7 +885,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.hide = function(...args) 
           
@@ -895,7 +895,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.showMinimized = function(...args) 
           
@@ -905,7 +905,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.showMaximized = function(...args) 
           
@@ -915,7 +915,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.showFullScreen = function(...args) 
           
@@ -925,7 +925,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.showNormal = function(...args) 
           
@@ -935,7 +935,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.close = function(...args) 
           
@@ -945,7 +945,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.raise = function(...args) 
           
@@ -955,7 +955,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.lower = function(...args) 
           
@@ -965,7 +965,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.startSystemResize = function(...args) 
           
@@ -975,7 +975,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.startSystemResize(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.startSystemMove = function(...args) 
           
@@ -985,7 +985,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.startSystemMove(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setTitle = function(...args) 
           
@@ -995,7 +995,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setTitle(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setX = function(...args) 
           
@@ -1005,7 +1005,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setX(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setY = function(...args) 
           
@@ -1015,7 +1015,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setY(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setWidth = function(...args) 
           
@@ -1025,7 +1025,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setHeight = function(...args) 
           
@@ -1035,7 +1035,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setGeometry = function(...args) 
           
@@ -1045,7 +1045,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setMinimumWidth = function(...args) 
           
@@ -1055,7 +1055,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setMinimumHeight = function(...args) 
           
@@ -1065,7 +1065,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setMaximumWidth = function(...args) 
           
@@ -1075,7 +1075,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.setMaximumHeight = function(...args) 
           
@@ -1085,7 +1085,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.alert = function(...args) 
           
@@ -1095,7 +1095,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.alert(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.requestUpdate = function(...args) 
           
@@ -1105,7 +1105,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.requestUpdate(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.exposeEvent = function(...args) 
           
@@ -1115,7 +1115,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.exposeEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.resizeEvent = function(...args) 
           
@@ -1125,7 +1125,8 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QWindow.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QWindow.prototype.paintEvent = function(...args) 
           
@@ -1135,7 +1136,8 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QWindow.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QWindow.prototype.moveEvent = function(...args) 
           
@@ -1145,7 +1147,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.focusInEvent = function(...args) 
           
@@ -1155,7 +1157,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.focusOutEvent = function(...args) 
           
@@ -1165,7 +1167,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.showEvent = function(...args) 
           
@@ -1175,7 +1177,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.hideEvent = function(...args) 
           
@@ -1185,7 +1187,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.closeEvent = function(...args) 
           
@@ -1195,7 +1197,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.event = function(...args) 
           
@@ -1205,7 +1207,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.keyPressEvent = function(...args) 
           
@@ -1215,7 +1217,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.keyReleaseEvent = function(...args) 
           
@@ -1225,7 +1227,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.mousePressEvent = function(...args) 
           
@@ -1235,7 +1237,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.mouseReleaseEvent = function(...args) 
           
@@ -1245,7 +1247,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1255,7 +1257,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.mouseMoveEvent = function(...args) 
           
@@ -1265,7 +1267,8 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QWindow.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QWindow.prototype.wheelEvent = function(...args) 
           
@@ -1275,7 +1278,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.touchEvent = function(...args) 
           
@@ -1285,7 +1288,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.touchEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.tabletEvent = function(...args) 
           
@@ -1295,7 +1298,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.nativeEvent = function(...args) 
           
@@ -1305,7 +1308,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QWindow.prototype.surfaceHandle = function(...args) 
           
@@ -1315,7 +1318,7 @@ QWindow.IncludeTransients = QWindow_Wrapper.IncludeTransients;
               return this.__PROXY__.surfaceHandle(...args);
             
         };
-    
+        
 
       // static functions:
       

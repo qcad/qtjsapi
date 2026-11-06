@@ -146,7 +146,7 @@ QAbstractFileIconProvider.DontUseCustomDirectoryIcons = QAbstractFileIconProvide
               return this.__PROXY__.icon(...args);
             
         };
-    
+        
         // function 
         QAbstractFileIconProvider.prototype.type = function(...args) 
           
@@ -156,7 +156,7 @@ QAbstractFileIconProvider.DontUseCustomDirectoryIcons = QAbstractFileIconProvide
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QAbstractFileIconProvider.prototype.setOptions = function(...args) 
           
@@ -166,7 +166,7 @@ QAbstractFileIconProvider.DontUseCustomDirectoryIcons = QAbstractFileIconProvide
               return this.__PROXY__.setOptions(...args);
             
         };
-    
+        
         // function 
         QAbstractFileIconProvider.prototype.options = function(...args) 
           
@@ -176,7 +176,7 @@ QAbstractFileIconProvider.DontUseCustomDirectoryIcons = QAbstractFileIconProvide
               return this.__PROXY__.options(...args);
             
         };
-    
+        
 
       // static functions:
       QAbstractFileIconProvider.prototype.isNullWrapper = function() {

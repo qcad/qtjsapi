@@ -150,7 +150,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
               return this.__PROXY__.boundingRectFor(...args);
             
         };
-    
+        
         // function 
         QGraphicsOpacityEffect.prototype.boundingRect = function(...args) 
           
@@ -160,7 +160,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QGraphicsOpacityEffect.prototype.isEnabled = function(...args) 
           
@@ -170,7 +170,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsOpacityEffect.prototype.setEnabled = function(...args) 
           
@@ -180,7 +180,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsOpacityEffect.prototype.update = function(...args) 
           
@@ -190,7 +190,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QGraphicsOpacityEffect.prototype.opacity = function(...args) 
           
@@ -200,7 +200,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
               return this.__PROXY__.opacity(...args);
             
         };
-    
+        
         // function 
         QGraphicsOpacityEffect.prototype.setOpacity = function(...args) 
           
@@ -210,7 +210,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
               return this.__PROXY__.setOpacity(...args);
             
         };
-    
+        
         // function 
         QGraphicsOpacityEffect.prototype.setOpacityMask = function(...args) 
           
@@ -220,7 +220,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
               return this.__PROXY__.setOpacityMask(...args);
             
         };
-    
+        
 
       // static functions:
       

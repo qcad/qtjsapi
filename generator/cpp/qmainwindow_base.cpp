@@ -99,7 +99,9 @@
 
       //QJSValue f = self.prototype().property("contextMenuEvent");
       QJSValue f = self.property("contextMenuEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -152,7 +154,9 @@ event
 
       //QJSValue f = self.prototype().property("event");
       QJSValue f = self.property("event");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 

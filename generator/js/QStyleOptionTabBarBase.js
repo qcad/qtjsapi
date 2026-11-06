@@ -192,7 +192,7 @@ QStyleOptionTabBarBase.SO_ComplexCustomBase = QStyleOptionTabBarBase_Wrapper.SO_
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionTabBarBase.prototype.operator_assign = function(...args) 
           
@@ -202,7 +202,7 @@ QStyleOptionTabBarBase.SO_ComplexCustomBase = QStyleOptionTabBarBase_Wrapper.SO_
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionTabBarBase.prototype.isNullWrapper = function() {

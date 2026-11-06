@@ -164,7 +164,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.isWidgetType = function(...args) 
           
@@ -174,7 +174,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.isWindowType = function(...args) 
           
@@ -184,7 +184,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.signalsBlocked = function(...args) 
           
@@ -194,7 +194,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.blockSignals = function(...args) 
           
@@ -204,7 +204,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.findChild = function(...args) 
           
@@ -214,7 +214,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.children = function(...args) 
           
@@ -224,7 +224,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setParent = function(...args) 
           
@@ -234,7 +234,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.installEventFilter = function(...args) 
           
@@ -244,7 +244,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.removeEventFilter = function(...args) 
           
@@ -254,7 +254,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.dumpObjectTree = function(...args) 
           
@@ -264,7 +264,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.dumpObjectInfo = function(...args) 
           
@@ -274,7 +274,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setProperty = function(...args) 
           
@@ -284,7 +284,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.property = function(...args) 
           
@@ -294,7 +294,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.dynamicPropertyNames = function(...args) 
           
@@ -304,7 +304,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.parent = function(...args) 
           
@@ -314,7 +314,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.deleteLater = function(...args) 
           
@@ -324,7 +324,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.parentItem = function(...args) 
           
@@ -334,7 +334,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.parentItem(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setParentItem = function(...args) 
           
@@ -344,7 +344,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setParentItem(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.stackBefore = function(...args) 
           
@@ -354,7 +354,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.stackBefore(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.stackAfter = function(...args) 
           
@@ -364,7 +364,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.stackAfter(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.childrenRect = function(...args) 
           
@@ -374,7 +374,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.childrenRect(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.clip = function(...args) 
           
@@ -384,7 +384,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.clip(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setClip = function(...args) 
           
@@ -394,7 +394,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setClip(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.state = function(...args) 
           
@@ -404,7 +404,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.state(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setState = function(...args) 
           
@@ -414,7 +414,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setState(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.baselineOffset = function(...args) 
           
@@ -424,7 +424,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.baselineOffset(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setBaselineOffset = function(...args) 
           
@@ -434,7 +434,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setBaselineOffset(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.x = function(...args) 
           
@@ -444,7 +444,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.x(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.y = function(...args) 
           
@@ -454,7 +454,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.y(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.position = function(...args) 
           
@@ -464,7 +464,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setX = function(...args) 
           
@@ -474,7 +474,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setX(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setY = function(...args) 
           
@@ -484,7 +484,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setY(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setPosition = function(...args) 
           
@@ -494,7 +494,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setWidth = function(...args) 
           
@@ -504,7 +504,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.resetWidth = function(...args) 
           
@@ -514,7 +514,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.resetWidth(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setImplicitWidth = function(...args) 
           
@@ -524,7 +524,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setImplicitWidth(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.implicitWidth = function(...args) 
           
@@ -534,7 +534,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.implicitWidth(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setHeight = function(...args) 
           
@@ -544,7 +544,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.resetHeight = function(...args) 
           
@@ -554,7 +554,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.resetHeight(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setImplicitHeight = function(...args) 
           
@@ -564,7 +564,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setImplicitHeight(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.implicitHeight = function(...args) 
           
@@ -574,7 +574,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.implicitHeight(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.size = function(...args) 
           
@@ -584,7 +584,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setSize = function(...args) 
           
@@ -594,7 +594,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setSize(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.transformOrigin = function(...args) 
           
@@ -604,7 +604,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.transformOrigin(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setTransformOrigin = function(...args) 
           
@@ -614,7 +614,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setTransformOrigin(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.transformOriginPoint = function(...args) 
           
@@ -624,7 +624,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.transformOriginPoint(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setTransformOriginPoint = function(...args) 
           
@@ -634,7 +634,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setTransformOriginPoint(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.z = function(...args) 
           
@@ -644,7 +644,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.z(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setZ = function(...args) 
           
@@ -654,7 +654,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setZ(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.rotation = function(...args) 
           
@@ -664,7 +664,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.rotation(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setRotation = function(...args) 
           
@@ -674,7 +674,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setRotation(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.scale = function(...args) 
           
@@ -684,7 +684,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setScale = function(...args) 
           
@@ -694,7 +694,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setScale(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.opacity = function(...args) 
           
@@ -704,7 +704,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.opacity(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setOpacity = function(...args) 
           
@@ -714,7 +714,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setOpacity(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.isVisible = function(...args) 
           
@@ -724,7 +724,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setVisible = function(...args) 
           
@@ -734,7 +734,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.isEnabled = function(...args) 
           
@@ -744,7 +744,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setEnabled = function(...args) 
           
@@ -754,7 +754,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.smooth = function(...args) 
           
@@ -764,7 +764,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.smooth(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setSmooth = function(...args) 
           
@@ -774,7 +774,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setSmooth(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.activeFocusOnTab = function(...args) 
           
@@ -784,7 +784,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.activeFocusOnTab(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setActiveFocusOnTab = function(...args) 
           
@@ -794,7 +794,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setActiveFocusOnTab(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.antialiasing = function(...args) 
           
@@ -804,7 +804,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.antialiasing(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setAntialiasing = function(...args) 
           
@@ -814,7 +814,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setAntialiasing(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.resetAntialiasing = function(...args) 
           
@@ -824,7 +824,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.resetAntialiasing(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.boundingRect = function(...args) 
           
@@ -834,7 +834,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.clipRect = function(...args) 
           
@@ -844,7 +844,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.clipRect(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.viewportItem = function(...args) 
           
@@ -854,7 +854,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.viewportItem(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.hasActiveFocus = function(...args) 
           
@@ -864,7 +864,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.hasActiveFocus(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.hasFocus = function(...args) 
           
@@ -874,7 +874,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setFocus = function(...args) 
           
@@ -884,7 +884,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.isFocusScope = function(...args) 
           
@@ -894,7 +894,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.isFocusScope(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.scopedFocusItem = function(...args) 
           
@@ -904,7 +904,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.scopedFocusItem(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.focusPolicy = function(...args) 
           
@@ -914,7 +914,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.focusPolicy(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setFocusPolicy = function(...args) 
           
@@ -924,7 +924,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.isAncestorOf = function(...args) 
           
@@ -934,7 +934,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.acceptedMouseButtons = function(...args) 
           
@@ -944,7 +944,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.acceptedMouseButtons(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setAcceptedMouseButtons = function(...args) 
           
@@ -954,7 +954,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setAcceptedMouseButtons(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.acceptHoverEvents = function(...args) 
           
@@ -964,7 +964,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.acceptHoverEvents(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setAcceptHoverEvents = function(...args) 
           
@@ -974,7 +974,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setAcceptHoverEvents(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.acceptTouchEvents = function(...args) 
           
@@ -984,7 +984,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.acceptTouchEvents(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setAcceptTouchEvents = function(...args) 
           
@@ -994,7 +994,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setAcceptTouchEvents(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.cursor = function(...args) 
           
@@ -1004,7 +1004,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.cursor(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setCursor = function(...args) 
           
@@ -1014,7 +1014,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.unsetCursor = function(...args) 
           
@@ -1024,7 +1024,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.isUnderMouse = function(...args) 
           
@@ -1034,7 +1034,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.isUnderMouse(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.grabMouse = function(...args) 
           
@@ -1044,7 +1044,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.ungrabMouse = function(...args) 
           
@@ -1054,7 +1054,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.ungrabMouse(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.keepMouseGrab = function(...args) 
           
@@ -1064,7 +1064,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.keepMouseGrab(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setKeepMouseGrab = function(...args) 
           
@@ -1074,7 +1074,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setKeepMouseGrab(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.filtersChildMouseEvents = function(...args) 
           
@@ -1084,7 +1084,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.filtersChildMouseEvents(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setFiltersChildMouseEvents = function(...args) 
           
@@ -1094,7 +1094,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setFiltersChildMouseEvents(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.grabTouchPoints = function(...args) 
           
@@ -1104,7 +1104,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.grabTouchPoints(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.ungrabTouchPoints = function(...args) 
           
@@ -1114,7 +1114,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.ungrabTouchPoints(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.keepTouchGrab = function(...args) 
           
@@ -1124,7 +1124,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.keepTouchGrab(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setKeepTouchGrab = function(...args) 
           
@@ -1134,7 +1134,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setKeepTouchGrab(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.contains = function(...args) 
           
@@ -1144,7 +1144,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.containmentMask = function(...args) 
           
@@ -1154,7 +1154,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.containmentMask(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.setContainmentMask = function(...args) 
           
@@ -1164,7 +1164,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.setContainmentMask(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.mapToScene = function(...args) 
           
@@ -1174,7 +1174,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.mapToScene(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.mapRectToItem = function(...args) 
           
@@ -1184,7 +1184,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.mapRectToItem(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.mapRectToScene = function(...args) 
           
@@ -1194,7 +1194,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.mapRectToScene(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.mapFromScene = function(...args) 
           
@@ -1204,7 +1204,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.mapFromScene(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.mapRectFromItem = function(...args) 
           
@@ -1214,7 +1214,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.mapRectFromItem(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.mapRectFromScene = function(...args) 
           
@@ -1224,7 +1224,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.mapRectFromScene(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.polish = function(...args) 
           
@@ -1234,7 +1234,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.polish(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.forceActiveFocus = function(...args) 
           
@@ -1244,7 +1244,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.forceActiveFocus(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.nextItemInFocusChain = function(...args) 
           
@@ -1254,7 +1254,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.nextItemInFocusChain(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.childAt = function(...args) 
           
@@ -1264,7 +1264,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.ensurePolished = function(...args) 
           
@@ -1274,7 +1274,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.dumpItemTree = function(...args) 
           
@@ -1284,7 +1284,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.dumpItemTree(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.inputMethodQuery = function(...args) 
           
@@ -1294,7 +1294,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.isTextureProvider = function(...args) 
           
@@ -1304,7 +1304,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.isTextureProvider(...args);
             
         };
-    
+        
         // function 
         QQuickItem.prototype.update = function(...args) 
           
@@ -1314,7 +1314,7 @@ QQuickItem.BottomRight = QQuickItem_Wrapper.BottomRight;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
 
       // static functions:
       

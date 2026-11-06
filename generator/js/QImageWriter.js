@@ -193,7 +193,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setFormat(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.format = function(...args) 
           
@@ -203,7 +203,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.format(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setDevice = function(...args) 
           
@@ -213,7 +213,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setDevice(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.device = function(...args) 
           
@@ -223,7 +223,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.device(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setFileName = function(...args) 
           
@@ -233,7 +233,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setFileName(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.fileName = function(...args) 
           
@@ -243,7 +243,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setQuality = function(...args) 
           
@@ -253,7 +253,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setQuality(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.quality = function(...args) 
           
@@ -263,7 +263,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.quality(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setCompression = function(...args) 
           
@@ -273,7 +273,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setCompression(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.compression = function(...args) 
           
@@ -283,7 +283,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.compression(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setSubType = function(...args) 
           
@@ -293,7 +293,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setSubType(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.subType = function(...args) 
           
@@ -303,7 +303,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.subType(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.supportedSubTypes = function(...args) 
           
@@ -313,7 +313,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.supportedSubTypes(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setOptimizedWrite = function(...args) 
           
@@ -323,7 +323,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setOptimizedWrite(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.optimizedWrite = function(...args) 
           
@@ -333,7 +333,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.optimizedWrite(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setProgressiveScanWrite = function(...args) 
           
@@ -343,7 +343,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setProgressiveScanWrite(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.progressiveScanWrite = function(...args) 
           
@@ -353,7 +353,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.progressiveScanWrite(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.transformation = function(...args) 
           
@@ -363,7 +363,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.transformation(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setTransformation = function(...args) 
           
@@ -373,7 +373,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setTransformation(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.setText = function(...args) 
           
@@ -383,7 +383,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.canWrite = function(...args) 
           
@@ -393,7 +393,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.canWrite(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.write = function(...args) 
           
@@ -403,7 +403,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.error = function(...args) 
           
@@ -413,7 +413,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.errorString = function(...args) 
           
@@ -423,7 +423,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.supportsOption = function(...args) 
           
@@ -433,7 +433,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.supportsOption(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.supportedImageFormats = function(...args) 
           
@@ -443,7 +443,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.supportedImageFormats(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.supportedMimeTypes = function(...args) 
           
@@ -453,7 +453,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.supportedMimeTypes(...args);
             
         };
-    
+        
         // function 
         QImageWriter.prototype.imageFormatsForMimeType = function(...args) 
           
@@ -463,7 +463,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
               return this.__PROXY__.imageFormatsForMimeType(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -214,7 +214,7 @@ QStyleOptionTab.MinimumSizeHint = QStyleOptionTab_Wrapper.MinimumSizeHint; // C+
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionTab.prototype.operator_assign = function(...args) 
           
@@ -224,7 +224,7 @@ QStyleOptionTab.MinimumSizeHint = QStyleOptionTab_Wrapper.MinimumSizeHint; // C+
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionTab.prototype.isNullWrapper = function() {

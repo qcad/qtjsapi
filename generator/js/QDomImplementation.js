@@ -165,7 +165,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QDomImplementation.prototype.operator_equal = function(...args) 
           
@@ -175,7 +175,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.operator_equal(...args);
             
         };
-    
+        
         // function 
         QDomImplementation.prototype.operator_unequal = function(...args) 
           
@@ -185,7 +185,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.operator_unequal(...args);
             
         };
-    
+        
         // function 
         QDomImplementation.prototype.hasFeature = function(...args) 
           
@@ -195,7 +195,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.hasFeature(...args);
             
         };
-    
+        
         // function 
         QDomImplementation.prototype.createDocumentType = function(...args) 
           
@@ -205,7 +205,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.createDocumentType(...args);
             
         };
-    
+        
         // function 
         QDomImplementation.prototype.createDocument = function(...args) 
           
@@ -215,7 +215,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.createDocument(...args);
             
         };
-    
+        
         // function 
         QDomImplementation.prototype.invalidDataPolicy = function(...args) 
           
@@ -225,7 +225,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.invalidDataPolicy(...args);
             
         };
-    
+        
         // function 
         QDomImplementation.prototype.setInvalidDataPolicy = function(...args) 
           
@@ -235,7 +235,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.setInvalidDataPolicy(...args);
             
         };
-    
+        
         // function 
         QDomImplementation.prototype.isNull = function(...args) 
           
@@ -245,7 +245,7 @@ QDomImplementation.ReturnNullNode = QDomImplementation_Wrapper.ReturnNullNode;
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
 
       // static functions:
       

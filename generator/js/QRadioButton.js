@@ -174,7 +174,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isWidgetType = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isWindowType = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.signalsBlocked = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.blockSignals = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.findChild = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.children = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.installEventFilter = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.removeEventFilter = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.dumpObjectTree = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.dumpObjectInfo = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setProperty = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.property = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.dynamicPropertyNames = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.parent = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.deleteLater = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.devType = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.createWinId = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isWindow = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isModal = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowModality = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isEnabled = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isEnabledTo = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setEnabled = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setDisabled = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowModified = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setMinimumSize = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setMaximumSize = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setMinimumWidth = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setMinimumHeight = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setMaximumWidth = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setMaximumHeight = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setSizeIncrement = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setBaseSize = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setFixedSize = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setFixedWidth = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setFixedHeight = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.mapToGlobal = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.mapFromGlobal = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.mapToParent = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.mapFromParent = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.mapTo = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.mapFrom = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.window = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.nativeParentWidget = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.topLevelWidget = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setPalette = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setBackgroundRole = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.backgroundRole = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setForegroundRole = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.foregroundRole = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setFont = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.fontInfo = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setCursor = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.unsetCursor = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setMouseTracking = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.hasMouseTracking = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.underMouse = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setTabletTracking = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.hasTabletTracking = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setMask = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.mask = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.clearMask = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.grab = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.grabGesture = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.ungrabGesture = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowTitle = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setStyleSheet = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowIcon = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowIconText = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowRole = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.windowRole = function(...args) 
           
@@ -884,7 +884,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowFilePath = function(...args) 
           
@@ -894,7 +894,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowOpacity = function(...args) 
           
@@ -904,7 +904,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isWindowModified = function(...args) 
           
@@ -914,7 +914,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setToolTip = function(...args) 
           
@@ -924,7 +924,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setToolTipDuration = function(...args) 
           
@@ -934,7 +934,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setStatusTip = function(...args) 
           
@@ -944,7 +944,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWhatsThis = function(...args) 
           
@@ -954,7 +954,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAccessibleName = function(...args) 
           
@@ -964,7 +964,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAccessibleDescription = function(...args) 
           
@@ -974,7 +974,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setLayoutDirection = function(...args) 
           
@@ -984,7 +984,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.unsetLayoutDirection = function(...args) 
           
@@ -994,7 +994,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setLocale = function(...args) 
           
@@ -1004,7 +1004,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.unsetLocale = function(...args) 
           
@@ -1014,7 +1014,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isRightToLeft = function(...args) 
           
@@ -1024,7 +1024,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isLeftToRight = function(...args) 
           
@@ -1034,7 +1034,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.activateWindow = function(...args) 
           
@@ -1044,7 +1044,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.clearFocus = function(...args) 
           
@@ -1054,7 +1054,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setFocus = function(...args) 
           
@@ -1064,7 +1064,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setFocusPolicy = function(...args) 
           
@@ -1074,7 +1074,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.hasFocus = function(...args) 
           
@@ -1084,7 +1084,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setFocusProxy = function(...args) 
           
@@ -1094,7 +1094,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.focusProxy = function(...args) 
           
@@ -1104,7 +1104,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1114,7 +1114,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.grabMouse = function(...args) 
           
@@ -1124,7 +1124,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.releaseMouse = function(...args) 
           
@@ -1134,7 +1134,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.grabKeyboard = function(...args) 
           
@@ -1144,7 +1144,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.releaseKeyboard = function(...args) 
           
@@ -1154,7 +1154,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.grabShortcut = function(...args) 
           
@@ -1164,7 +1164,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.releaseShortcut = function(...args) 
           
@@ -1174,7 +1174,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setShortcutEnabled = function(...args) 
           
@@ -1184,7 +1184,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1194,7 +1194,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1204,7 +1204,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.update = function(...args) 
           
@@ -1214,7 +1214,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.repaint = function(...args) 
           
@@ -1224,7 +1224,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setVisible = function(...args) 
           
@@ -1234,7 +1234,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setHidden = function(...args) 
           
@@ -1244,7 +1244,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.show = function(...args) 
           
@@ -1254,7 +1254,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.hide = function(...args) 
           
@@ -1264,7 +1264,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.showMinimized = function(...args) 
           
@@ -1274,7 +1274,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.showMaximized = function(...args) 
           
@@ -1284,7 +1284,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.showFullScreen = function(...args) 
           
@@ -1294,7 +1294,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.showNormal = function(...args) 
           
@@ -1304,7 +1304,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.close = function(...args) 
           
@@ -1314,7 +1314,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.raise = function(...args) 
           
@@ -1324,7 +1324,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.lower = function(...args) 
           
@@ -1334,7 +1334,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.stackUnder = function(...args) 
           
@@ -1344,7 +1344,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.move = function(...args) 
           
@@ -1354,7 +1354,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.resize = function(...args) 
           
@@ -1364,7 +1364,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setGeometry = function(...args) 
           
@@ -1374,7 +1374,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.saveGeometry = function(...args) 
           
@@ -1384,7 +1384,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.restoreGeometry = function(...args) 
           
@@ -1394,7 +1394,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.adjustSize = function(...args) 
           
@@ -1404,7 +1404,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isVisible = function(...args) 
           
@@ -1414,7 +1414,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isVisibleTo = function(...args) 
           
@@ -1424,7 +1424,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isHidden = function(...args) 
           
@@ -1434,7 +1434,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isMinimized = function(...args) 
           
@@ -1444,7 +1444,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isMaximized = function(...args) 
           
@@ -1454,7 +1454,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isFullScreen = function(...args) 
           
@@ -1464,7 +1464,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.windowState = function(...args) 
           
@@ -1474,7 +1474,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowState = function(...args) 
           
@@ -1484,7 +1484,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.overrideWindowState = function(...args) 
           
@@ -1494,7 +1494,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setSizePolicy = function(...args) 
           
@@ -1504,7 +1504,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.heightForWidth = function(...args) 
           
@@ -1514,7 +1514,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.hasHeightForWidth = function(...args) 
           
@@ -1524,7 +1524,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.visibleRegion = function(...args) 
           
@@ -1534,7 +1534,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setContentsMargins = function(...args) 
           
@@ -1544,7 +1544,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.contentsMargins = function(...args) 
           
@@ -1554,7 +1554,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.contentsRect = function(...args) 
           
@@ -1564,7 +1564,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.layout = function(...args) 
           
@@ -1574,7 +1574,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setLayout = function(...args) 
           
@@ -1584,7 +1584,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.updateGeometry = function(...args) 
           
@@ -1594,7 +1594,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setParent = function(...args) 
           
@@ -1604,7 +1604,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.scroll = function(...args) 
           
@@ -1614,7 +1614,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.focusWidget = function(...args) 
           
@@ -1624,7 +1624,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.nextInFocusChain = function(...args) 
           
@@ -1634,7 +1634,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.previousInFocusChain = function(...args) 
           
@@ -1644,7 +1644,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAcceptDrops = function(...args) 
           
@@ -1654,7 +1654,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.addAction = function(...args) 
           
@@ -1664,7 +1664,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.addActions = function(...args) 
           
@@ -1674,7 +1674,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.insertActions = function(...args) 
           
@@ -1684,7 +1684,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.insertAction = function(...args) 
           
@@ -1694,7 +1694,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.removeAction = function(...args) 
           
@@ -1704,7 +1704,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.actions = function(...args) 
           
@@ -1714,7 +1714,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.parentWidget = function(...args) 
           
@@ -1724,7 +1724,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowFlags = function(...args) 
           
@@ -1734,7 +1734,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.windowFlags = function(...args) 
           
@@ -1744,7 +1744,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setWindowFlag = function(...args) 
           
@@ -1754,7 +1754,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.overrideWindowFlags = function(...args) 
           
@@ -1764,7 +1764,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.windowType = function(...args) 
           
@@ -1774,7 +1774,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.childAt = function(...args) 
           
@@ -1784,7 +1784,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAttribute = function(...args) 
           
@@ -1794,7 +1794,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.testAttribute = function(...args) 
           
@@ -1804,7 +1804,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.ensurePolished = function(...args) 
           
@@ -1814,7 +1814,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isAncestorOf = function(...args) 
           
@@ -1824,7 +1824,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAutoFillBackground = function(...args) 
           
@@ -1834,7 +1834,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1844,7 +1844,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.wheelEvent = function(...args) 
           
@@ -1854,7 +1854,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.keyPressEvent = function(...args) 
           
@@ -1864,7 +1864,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.keyReleaseEvent = function(...args) 
           
@@ -1874,7 +1874,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.focusInEvent = function(...args) 
           
@@ -1884,7 +1884,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.focusOutEvent = function(...args) 
           
@@ -1894,7 +1894,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.enterEvent = function(...args) 
           
@@ -1904,7 +1904,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.leaveEvent = function(...args) 
           
@@ -1914,7 +1914,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.moveEvent = function(...args) 
           
@@ -1924,7 +1924,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.closeEvent = function(...args) 
           
@@ -1934,7 +1934,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.tabletEvent = function(...args) 
           
@@ -1944,7 +1944,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.dragEnterEvent = function(...args) 
           
@@ -1954,7 +1954,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.dragMoveEvent = function(...args) 
           
@@ -1964,7 +1964,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.dragLeaveEvent = function(...args) 
           
@@ -1974,7 +1974,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.dropEvent = function(...args) 
           
@@ -1984,7 +1984,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.showEvent = function(...args) 
           
@@ -1994,7 +1994,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.hideEvent = function(...args) 
           
@@ -2004,7 +2004,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.nativeEvent = function(...args) 
           
@@ -2014,7 +2014,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.changeEvent = function(...args) 
           
@@ -2024,7 +2024,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.metric = function(...args) 
           
@@ -2034,7 +2034,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.initPainter = function(...args) 
           
@@ -2044,7 +2044,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.redirected = function(...args) 
           
@@ -2054,7 +2054,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.sharedPainter = function(...args) 
           
@@ -2064,7 +2064,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.inputMethodEvent = function(...args) 
           
@@ -2074,7 +2074,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.inputMethodQuery = function(...args) 
           
@@ -2084,7 +2084,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setInputMethodHints = function(...args) 
           
@@ -2094,7 +2094,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.updateMicroFocus = function(...args) 
           
@@ -2104,7 +2104,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.create = function(...args) 
           
@@ -2114,7 +2114,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.destroy = function(...args) 
           
@@ -2124,7 +2124,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.focusNextPrevChild = function(...args) 
           
@@ -2134,7 +2134,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.focusNextChild = function(...args) 
           
@@ -2144,7 +2144,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.focusPreviousChild = function(...args) 
           
@@ -2154,7 +2154,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setBackingStore = function(...args) 
           
@@ -2164,7 +2164,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.testAttribute_helper = function(...args) 
           
@@ -2174,7 +2174,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.takeLayout = function(...args) 
           
@@ -2184,7 +2184,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2194,7 +2194,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.qt_qwidget_data = function(...args) 
           
@@ -2204,7 +2204,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.qt_widget_private = function(...args) 
           
@@ -2214,7 +2214,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setText = function(...args) 
           
@@ -2224,7 +2224,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setIcon = function(...args) 
           
@@ -2234,7 +2234,7 @@
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setShortcut = function(...args) 
           
@@ -2244,7 +2244,7 @@
               return this.__PROXY__.setShortcut(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setCheckable = function(...args) 
           
@@ -2254,7 +2254,7 @@
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isCheckable = function(...args) 
           
@@ -2264,7 +2264,7 @@
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isChecked = function(...args) 
           
@@ -2274,7 +2274,7 @@
               return this.__PROXY__.isChecked(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setDown = function(...args) 
           
@@ -2284,7 +2284,7 @@
               return this.__PROXY__.setDown(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.isDown = function(...args) 
           
@@ -2294,7 +2294,7 @@
               return this.__PROXY__.isDown(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAutoRepeat = function(...args) 
           
@@ -2304,7 +2304,7 @@
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAutoRepeatDelay = function(...args) 
           
@@ -2314,7 +2314,7 @@
               return this.__PROXY__.setAutoRepeatDelay(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAutoRepeatInterval = function(...args) 
           
@@ -2324,7 +2324,7 @@
               return this.__PROXY__.setAutoRepeatInterval(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setAutoExclusive = function(...args) 
           
@@ -2334,7 +2334,7 @@
               return this.__PROXY__.setAutoExclusive(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.group = function(...args) 
           
@@ -2344,7 +2344,7 @@
               return this.__PROXY__.group(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setIconSize = function(...args) 
           
@@ -2354,7 +2354,7 @@
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.animateClick = function(...args) 
           
@@ -2364,7 +2364,7 @@
               return this.__PROXY__.animateClick(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.click = function(...args) 
           
@@ -2374,7 +2374,7 @@
               return this.__PROXY__.click(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.toggle = function(...args) 
           
@@ -2384,7 +2384,7 @@
               return this.__PROXY__.toggle(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.setChecked = function(...args) 
           
@@ -2394,7 +2394,7 @@
               return this.__PROXY__.setChecked(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.event = function(...args) 
           
@@ -2404,7 +2404,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.hitButton = function(...args) 
           
@@ -2414,7 +2414,7 @@
               return this.__PROXY__.hitButton(...args);
             
         };
-    
+        
         // function 
         QRadioButton.prototype.paintEvent = function(...args) 
           
@@ -2424,7 +2424,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QRadioButton.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QRadioButton.prototype.mouseMoveEvent = function(...args) 
           
@@ -2434,7 +2435,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QRadioButton.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QRadioButton.prototype.initStyleOption = function(...args) 
           
@@ -2444,7 +2446,7 @@
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
 
       // static functions:
       

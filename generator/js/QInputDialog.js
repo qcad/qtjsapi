@@ -161,7 +161,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isWidgetType = function(...args) 
           
@@ -171,7 +171,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isWindowType = function(...args) 
           
@@ -181,7 +181,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.signalsBlocked = function(...args) 
           
@@ -191,7 +191,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.blockSignals = function(...args) 
           
@@ -201,7 +201,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.findChild = function(...args) 
           
@@ -211,7 +211,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.children = function(...args) 
           
@@ -221,7 +221,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.installEventFilter = function(...args) 
           
@@ -231,7 +231,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.removeEventFilter = function(...args) 
           
@@ -241,7 +241,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.dumpObjectTree = function(...args) 
           
@@ -251,7 +251,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.dumpObjectInfo = function(...args) 
           
@@ -261,7 +261,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setProperty = function(...args) 
           
@@ -271,7 +271,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.property = function(...args) 
           
@@ -281,7 +281,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.dynamicPropertyNames = function(...args) 
           
@@ -291,7 +291,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.parent = function(...args) 
           
@@ -301,7 +301,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.deleteLater = function(...args) 
           
@@ -311,7 +311,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.devType = function(...args) 
           
@@ -321,7 +321,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.createWinId = function(...args) 
           
@@ -331,7 +331,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isWindow = function(...args) 
           
@@ -341,7 +341,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isModal = function(...args) 
           
@@ -351,7 +351,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowModality = function(...args) 
           
@@ -361,7 +361,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isEnabled = function(...args) 
           
@@ -371,7 +371,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isEnabledTo = function(...args) 
           
@@ -381,7 +381,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setEnabled = function(...args) 
           
@@ -391,7 +391,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setDisabled = function(...args) 
           
@@ -401,7 +401,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowModified = function(...args) 
           
@@ -411,7 +411,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setMinimumSize = function(...args) 
           
@@ -421,7 +421,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setMaximumSize = function(...args) 
           
@@ -431,7 +431,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setMinimumWidth = function(...args) 
           
@@ -441,7 +441,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setMinimumHeight = function(...args) 
           
@@ -451,7 +451,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setMaximumWidth = function(...args) 
           
@@ -461,7 +461,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setMaximumHeight = function(...args) 
           
@@ -471,7 +471,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setSizeIncrement = function(...args) 
           
@@ -481,7 +481,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setBaseSize = function(...args) 
           
@@ -491,7 +491,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setFixedSize = function(...args) 
           
@@ -501,7 +501,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setFixedWidth = function(...args) 
           
@@ -511,7 +511,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setFixedHeight = function(...args) 
           
@@ -521,7 +521,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.mapToGlobal = function(...args) 
           
@@ -531,7 +531,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.mapFromGlobal = function(...args) 
           
@@ -541,7 +541,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.mapToParent = function(...args) 
           
@@ -551,7 +551,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.mapFromParent = function(...args) 
           
@@ -561,7 +561,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.mapTo = function(...args) 
           
@@ -571,7 +571,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.mapFrom = function(...args) 
           
@@ -581,7 +581,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.window = function(...args) 
           
@@ -591,7 +591,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.nativeParentWidget = function(...args) 
           
@@ -601,7 +601,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.topLevelWidget = function(...args) 
           
@@ -611,7 +611,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setPalette = function(...args) 
           
@@ -621,7 +621,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setBackgroundRole = function(...args) 
           
@@ -631,7 +631,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.backgroundRole = function(...args) 
           
@@ -641,7 +641,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setForegroundRole = function(...args) 
           
@@ -651,7 +651,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.foregroundRole = function(...args) 
           
@@ -661,7 +661,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setFont = function(...args) 
           
@@ -671,7 +671,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.fontInfo = function(...args) 
           
@@ -681,7 +681,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setCursor = function(...args) 
           
@@ -691,7 +691,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.unsetCursor = function(...args) 
           
@@ -701,7 +701,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setMouseTracking = function(...args) 
           
@@ -711,7 +711,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.hasMouseTracking = function(...args) 
           
@@ -721,7 +721,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.underMouse = function(...args) 
           
@@ -731,7 +731,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setTabletTracking = function(...args) 
           
@@ -741,7 +741,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.hasTabletTracking = function(...args) 
           
@@ -751,7 +751,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setMask = function(...args) 
           
@@ -761,7 +761,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.mask = function(...args) 
           
@@ -771,7 +771,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.clearMask = function(...args) 
           
@@ -781,7 +781,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.grab = function(...args) 
           
@@ -791,7 +791,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.grabGesture = function(...args) 
           
@@ -801,7 +801,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.ungrabGesture = function(...args) 
           
@@ -811,7 +811,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowTitle = function(...args) 
           
@@ -821,7 +821,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setStyleSheet = function(...args) 
           
@@ -831,7 +831,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowIcon = function(...args) 
           
@@ -841,7 +841,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowIconText = function(...args) 
           
@@ -851,7 +851,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowRole = function(...args) 
           
@@ -861,7 +861,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.windowRole = function(...args) 
           
@@ -871,7 +871,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowFilePath = function(...args) 
           
@@ -881,7 +881,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowOpacity = function(...args) 
           
@@ -891,7 +891,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isWindowModified = function(...args) 
           
@@ -901,7 +901,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setToolTip = function(...args) 
           
@@ -911,7 +911,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setToolTipDuration = function(...args) 
           
@@ -921,7 +921,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setStatusTip = function(...args) 
           
@@ -931,7 +931,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWhatsThis = function(...args) 
           
@@ -941,7 +941,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setAccessibleName = function(...args) 
           
@@ -951,7 +951,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setAccessibleDescription = function(...args) 
           
@@ -961,7 +961,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setLayoutDirection = function(...args) 
           
@@ -971,7 +971,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.unsetLayoutDirection = function(...args) 
           
@@ -981,7 +981,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setLocale = function(...args) 
           
@@ -991,7 +991,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.unsetLocale = function(...args) 
           
@@ -1001,7 +1001,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isRightToLeft = function(...args) 
           
@@ -1011,7 +1011,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isLeftToRight = function(...args) 
           
@@ -1021,7 +1021,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.activateWindow = function(...args) 
           
@@ -1031,7 +1031,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.clearFocus = function(...args) 
           
@@ -1041,7 +1041,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setFocus = function(...args) 
           
@@ -1051,7 +1051,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setFocusPolicy = function(...args) 
           
@@ -1061,7 +1061,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.hasFocus = function(...args) 
           
@@ -1071,7 +1071,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setFocusProxy = function(...args) 
           
@@ -1081,7 +1081,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.focusProxy = function(...args) 
           
@@ -1091,7 +1091,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1101,7 +1101,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.grabMouse = function(...args) 
           
@@ -1111,7 +1111,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.releaseMouse = function(...args) 
           
@@ -1121,7 +1121,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.grabKeyboard = function(...args) 
           
@@ -1131,7 +1131,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.releaseKeyboard = function(...args) 
           
@@ -1141,7 +1141,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.grabShortcut = function(...args) 
           
@@ -1151,7 +1151,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.releaseShortcut = function(...args) 
           
@@ -1161,7 +1161,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setShortcutEnabled = function(...args) 
           
@@ -1171,7 +1171,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1181,7 +1181,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1191,7 +1191,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.update = function(...args) 
           
@@ -1201,7 +1201,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.repaint = function(...args) 
           
@@ -1211,7 +1211,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setHidden = function(...args) 
           
@@ -1221,7 +1221,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.show = function(...args) 
           
@@ -1231,7 +1231,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.hide = function(...args) 
           
@@ -1241,7 +1241,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.showMinimized = function(...args) 
           
@@ -1251,7 +1251,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.showMaximized = function(...args) 
           
@@ -1261,7 +1261,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.showFullScreen = function(...args) 
           
@@ -1271,7 +1271,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.showNormal = function(...args) 
           
@@ -1281,7 +1281,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.close = function(...args) 
           
@@ -1291,7 +1291,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.raise = function(...args) 
           
@@ -1301,7 +1301,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.lower = function(...args) 
           
@@ -1311,7 +1311,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.stackUnder = function(...args) 
           
@@ -1321,7 +1321,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.move = function(...args) 
           
@@ -1331,7 +1331,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.resize = function(...args) 
           
@@ -1341,7 +1341,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setGeometry = function(...args) 
           
@@ -1351,7 +1351,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.saveGeometry = function(...args) 
           
@@ -1361,7 +1361,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.restoreGeometry = function(...args) 
           
@@ -1371,7 +1371,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.adjustSize = function(...args) 
           
@@ -1381,7 +1381,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isVisible = function(...args) 
           
@@ -1391,7 +1391,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isVisibleTo = function(...args) 
           
@@ -1401,7 +1401,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isHidden = function(...args) 
           
@@ -1411,7 +1411,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isMinimized = function(...args) 
           
@@ -1421,7 +1421,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isMaximized = function(...args) 
           
@@ -1431,7 +1431,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isFullScreen = function(...args) 
           
@@ -1441,7 +1441,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.windowState = function(...args) 
           
@@ -1451,7 +1451,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowState = function(...args) 
           
@@ -1461,7 +1461,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.overrideWindowState = function(...args) 
           
@@ -1471,7 +1471,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setSizePolicy = function(...args) 
           
@@ -1481,7 +1481,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.heightForWidth = function(...args) 
           
@@ -1491,7 +1491,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.hasHeightForWidth = function(...args) 
           
@@ -1501,7 +1501,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.visibleRegion = function(...args) 
           
@@ -1511,7 +1511,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setContentsMargins = function(...args) 
           
@@ -1521,7 +1521,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.contentsMargins = function(...args) 
           
@@ -1531,7 +1531,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.contentsRect = function(...args) 
           
@@ -1541,7 +1541,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.layout = function(...args) 
           
@@ -1551,7 +1551,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setLayout = function(...args) 
           
@@ -1561,7 +1561,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.updateGeometry = function(...args) 
           
@@ -1571,7 +1571,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setParent = function(...args) 
           
@@ -1581,7 +1581,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.scroll = function(...args) 
           
@@ -1591,7 +1591,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.focusWidget = function(...args) 
           
@@ -1601,7 +1601,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.nextInFocusChain = function(...args) 
           
@@ -1611,7 +1611,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.previousInFocusChain = function(...args) 
           
@@ -1621,7 +1621,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setAcceptDrops = function(...args) 
           
@@ -1631,7 +1631,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.addAction = function(...args) 
           
@@ -1641,7 +1641,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.addActions = function(...args) 
           
@@ -1651,7 +1651,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.insertActions = function(...args) 
           
@@ -1661,7 +1661,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.insertAction = function(...args) 
           
@@ -1671,7 +1671,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.removeAction = function(...args) 
           
@@ -1681,7 +1681,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.actions = function(...args) 
           
@@ -1691,7 +1691,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.parentWidget = function(...args) 
           
@@ -1701,7 +1701,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowFlags = function(...args) 
           
@@ -1711,7 +1711,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.windowFlags = function(...args) 
           
@@ -1721,7 +1721,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setWindowFlag = function(...args) 
           
@@ -1731,7 +1731,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.overrideWindowFlags = function(...args) 
           
@@ -1741,7 +1741,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.windowType = function(...args) 
           
@@ -1751,7 +1751,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.childAt = function(...args) 
           
@@ -1761,7 +1761,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setAttribute = function(...args) 
           
@@ -1771,7 +1771,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.testAttribute = function(...args) 
           
@@ -1781,7 +1781,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.ensurePolished = function(...args) 
           
@@ -1791,7 +1791,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isAncestorOf = function(...args) 
           
@@ -1801,7 +1801,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setAutoFillBackground = function(...args) 
           
@@ -1811,7 +1811,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.event = function(...args) 
           
@@ -1821,7 +1821,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1831,7 +1831,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.wheelEvent = function(...args) 
           
@@ -1841,7 +1841,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.keyReleaseEvent = function(...args) 
           
@@ -1851,7 +1851,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.focusInEvent = function(...args) 
           
@@ -1861,7 +1861,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.focusOutEvent = function(...args) 
           
@@ -1871,7 +1871,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.enterEvent = function(...args) 
           
@@ -1881,7 +1881,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.leaveEvent = function(...args) 
           
@@ -1891,7 +1891,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.moveEvent = function(...args) 
           
@@ -1901,7 +1901,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.tabletEvent = function(...args) 
           
@@ -1911,7 +1911,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.dragEnterEvent = function(...args) 
           
@@ -1921,7 +1921,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.dragMoveEvent = function(...args) 
           
@@ -1931,7 +1931,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.dragLeaveEvent = function(...args) 
           
@@ -1941,7 +1941,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.dropEvent = function(...args) 
           
@@ -1951,7 +1951,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.hideEvent = function(...args) 
           
@@ -1961,7 +1961,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.nativeEvent = function(...args) 
           
@@ -1971,7 +1971,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.changeEvent = function(...args) 
           
@@ -1981,7 +1981,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.metric = function(...args) 
           
@@ -1991,7 +1991,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.initPainter = function(...args) 
           
@@ -2001,7 +2001,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.redirected = function(...args) 
           
@@ -2011,7 +2011,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.sharedPainter = function(...args) 
           
@@ -2021,7 +2021,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.inputMethodEvent = function(...args) 
           
@@ -2031,7 +2031,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.inputMethodQuery = function(...args) 
           
@@ -2041,7 +2041,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setInputMethodHints = function(...args) 
           
@@ -2051,7 +2051,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.updateMicroFocus = function(...args) 
           
@@ -2061,7 +2061,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.create = function(...args) 
           
@@ -2071,7 +2071,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.destroy = function(...args) 
           
@@ -2081,7 +2081,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.focusNextPrevChild = function(...args) 
           
@@ -2091,7 +2091,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.focusNextChild = function(...args) 
           
@@ -2101,7 +2101,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.focusPreviousChild = function(...args) 
           
@@ -2111,7 +2111,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setBackingStore = function(...args) 
           
@@ -2121,7 +2121,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.testAttribute_helper = function(...args) 
           
@@ -2131,7 +2131,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.takeLayout = function(...args) 
           
@@ -2141,7 +2141,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2151,7 +2151,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.qt_qwidget_data = function(...args) 
           
@@ -2161,7 +2161,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.qt_widget_private = function(...args) 
           
@@ -2171,7 +2171,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.result = function(...args) 
           
@@ -2181,7 +2181,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.result(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setSizeGripEnabled = function(...args) 
           
@@ -2191,7 +2191,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isSizeGripEnabled = function(...args) 
           
@@ -2201,7 +2201,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setModal = function(...args) 
           
@@ -2211,7 +2211,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setModal(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setResult = function(...args) 
           
@@ -2221,7 +2221,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setResult(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.exec = function(...args) 
           
@@ -2231,7 +2231,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.accept = function(...args) 
           
@@ -2241,7 +2241,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.reject = function(...args) 
           
@@ -2251,7 +2251,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.reject(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.keyPressEvent = function(...args) 
           
@@ -2261,7 +2261,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.closeEvent = function(...args) 
           
@@ -2271,7 +2271,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.showEvent = function(...args) 
           
@@ -2281,7 +2281,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.contextMenuEvent = function(...args) 
           
@@ -2291,7 +2291,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.eventFilter = function(...args) 
           
@@ -2301,7 +2301,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.adjustPosition = function(...args) 
           
@@ -2311,7 +2311,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.adjustPosition(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setInputMode = function(...args) 
           
@@ -2321,7 +2321,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setInputMode(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.inputMode = function(...args) 
           
@@ -2331,7 +2331,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.inputMode(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setLabelText = function(...args) 
           
@@ -2341,7 +2341,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setLabelText(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.labelText = function(...args) 
           
@@ -2351,7 +2351,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.labelText(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setOption = function(...args) 
           
@@ -2361,7 +2361,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.testOption = function(...args) 
           
@@ -2371,7 +2371,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.testOption(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setOptions = function(...args) 
           
@@ -2381,7 +2381,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setOptions(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.options = function(...args) 
           
@@ -2391,7 +2391,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.options(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setTextValue = function(...args) 
           
@@ -2401,7 +2401,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setTextValue(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.textValue = function(...args) 
           
@@ -2411,7 +2411,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.textValue(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setTextEchoMode = function(...args) 
           
@@ -2421,7 +2421,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setTextEchoMode(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.textEchoMode = function(...args) 
           
@@ -2431,7 +2431,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.textEchoMode(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setComboBoxEditable = function(...args) 
           
@@ -2441,7 +2441,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setComboBoxEditable(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.isComboBoxEditable = function(...args) 
           
@@ -2451,7 +2451,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.isComboBoxEditable(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setComboBoxItems = function(...args) 
           
@@ -2461,7 +2461,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setComboBoxItems(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.comboBoxItems = function(...args) 
           
@@ -2471,7 +2471,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.comboBoxItems(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setIntValue = function(...args) 
           
@@ -2481,7 +2481,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setIntValue(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.intValue = function(...args) 
           
@@ -2491,7 +2491,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.intValue(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setIntMinimum = function(...args) 
           
@@ -2501,7 +2501,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setIntMinimum(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.intMinimum = function(...args) 
           
@@ -2511,7 +2511,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.intMinimum(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setIntMaximum = function(...args) 
           
@@ -2521,7 +2521,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setIntMaximum(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.intMaximum = function(...args) 
           
@@ -2531,7 +2531,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.intMaximum(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setIntRange = function(...args) 
           
@@ -2541,7 +2541,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setIntRange(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setIntStep = function(...args) 
           
@@ -2551,7 +2551,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setIntStep(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.intStep = function(...args) 
           
@@ -2561,7 +2561,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.intStep(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setDoubleValue = function(...args) 
           
@@ -2571,7 +2571,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setDoubleValue(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.doubleValue = function(...args) 
           
@@ -2581,7 +2581,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.doubleValue(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setDoubleMinimum = function(...args) 
           
@@ -2591,7 +2591,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setDoubleMinimum(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.doubleMinimum = function(...args) 
           
@@ -2601,7 +2601,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.doubleMinimum(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setDoubleMaximum = function(...args) 
           
@@ -2611,7 +2611,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setDoubleMaximum(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.doubleMaximum = function(...args) 
           
@@ -2621,7 +2621,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.doubleMaximum(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setDoubleRange = function(...args) 
           
@@ -2631,7 +2631,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setDoubleRange(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setDoubleDecimals = function(...args) 
           
@@ -2641,7 +2641,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setDoubleDecimals(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.doubleDecimals = function(...args) 
           
@@ -2651,7 +2651,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.doubleDecimals(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setOkButtonText = function(...args) 
           
@@ -2661,7 +2661,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setOkButtonText(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.okButtonText = function(...args) 
           
@@ -2671,7 +2671,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.okButtonText(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setCancelButtonText = function(...args) 
           
@@ -2681,7 +2681,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setCancelButtonText(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.cancelButtonText = function(...args) 
           
@@ -2691,7 +2691,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.cancelButtonText(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.open = function(...args) 
           
@@ -2701,7 +2701,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setVisible = function(...args) 
           
@@ -2711,7 +2711,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.getMultiLineText = function(...args) 
           
@@ -2721,7 +2721,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.getMultiLineText(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.getItem = function(...args) 
           
@@ -2731,7 +2731,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.getItem(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.getInt = function(...args) 
           
@@ -2741,7 +2741,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.getInt(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.getDouble = function(...args) 
           
@@ -2751,7 +2751,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.getDouble(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.setDoubleStep = function(...args) 
           
@@ -2761,7 +2761,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.setDoubleStep(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.doubleStep = function(...args) 
           
@@ -2771,7 +2771,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.doubleStep(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.done = function(...args) 
           
@@ -2781,7 +2781,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.done(...args);
             
         };
-    
+        
         // function 
         QInputDialog.prototype.getText = function(...args) 
           
@@ -2791,7 +2791,7 @@ QInputDialog.DoubleInput = QInputDialog_Wrapper.DoubleInput;
               return this.__PROXY__.getText(...args);
             
         };
-    
+        
 
       // static functions:
       

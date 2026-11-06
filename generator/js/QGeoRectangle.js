@@ -278,7 +278,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.isValid = function(...args) 
           
@@ -288,7 +288,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.isEmpty = function(...args) 
           
@@ -298,7 +298,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.boundingGeoRectangle = function(...args) 
           
@@ -308,7 +308,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.boundingGeoRectangle(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.contains = function(...args) 
           
@@ -318,7 +318,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.setTopLeft = function(...args) 
           
@@ -328,7 +328,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.setTopLeft(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.topLeft = function(...args) 
           
@@ -338,7 +338,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.topLeft(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.setTopRight = function(...args) 
           
@@ -348,7 +348,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.setTopRight(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.topRight = function(...args) 
           
@@ -358,7 +358,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.topRight(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.setBottomLeft = function(...args) 
           
@@ -368,7 +368,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.setBottomLeft(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.bottomLeft = function(...args) 
           
@@ -378,7 +378,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.bottomLeft(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.setBottomRight = function(...args) 
           
@@ -388,7 +388,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.setBottomRight(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.bottomRight = function(...args) 
           
@@ -398,7 +398,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.bottomRight(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.setCenter = function(...args) 
           
@@ -408,7 +408,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.center = function(...args) 
           
@@ -418,7 +418,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.center(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.setWidth = function(...args) 
           
@@ -428,7 +428,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.width = function(...args) 
           
@@ -438,7 +438,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.setHeight = function(...args) 
           
@@ -448,7 +448,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.height = function(...args) 
           
@@ -458,7 +458,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.intersects = function(...args) 
           
@@ -468,7 +468,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.intersects(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.translate = function(...args) 
           
@@ -478,7 +478,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.translated = function(...args) 
           
@@ -488,7 +488,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.extendRectangle = function(...args) 
           
@@ -498,7 +498,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.extendRectangle(...args);
             
         };
-    
+        
         // function 
         QGeoRectangle.prototype.united = function(...args) 
           
@@ -508,7 +508,7 @@ QGeoRectangle.PolygonType = QGeoRectangle_Wrapper.PolygonType;
               return this.__PROXY__.united(...args);
             
         };
-    
+        
 
       // static functions:
       QGeoRectangle.prototype.isNullWrapper = function() {

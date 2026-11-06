@@ -225,7 +225,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.swap = function(...args) 
           
@@ -235,7 +235,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.equals = function(...args) 
           
@@ -245,7 +245,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.operator_not_assign = function(...args) 
           
@@ -255,7 +255,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.isNull = function(...args) 
           
@@ -265,7 +265,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.isBlacklisted = function(...args) 
           
@@ -275,7 +275,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.isBlacklisted(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.isSelfSigned = function(...args) 
           
@@ -285,7 +285,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.isSelfSigned(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.clear = function(...args) 
           
@@ -295,7 +295,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.version = function(...args) 
           
@@ -305,7 +305,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.version(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.serialNumber = function(...args) 
           
@@ -315,7 +315,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.serialNumber(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.digest = function(...args) 
           
@@ -325,7 +325,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.digest(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.issuerInfo = function(...args) 
           
@@ -335,7 +335,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.issuerInfo(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.subjectInfo = function(...args) 
           
@@ -345,7 +345,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.subjectInfo(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.issuerDisplayName = function(...args) 
           
@@ -355,7 +355,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.issuerDisplayName(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.subjectDisplayName = function(...args) 
           
@@ -365,7 +365,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.subjectDisplayName(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.subjectInfoAttributes = function(...args) 
           
@@ -375,7 +375,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.subjectInfoAttributes(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.issuerInfoAttributes = function(...args) 
           
@@ -385,7 +385,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.issuerInfoAttributes(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.effectiveDate = function(...args) 
           
@@ -395,7 +395,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.effectiveDate(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.expiryDate = function(...args) 
           
@@ -405,7 +405,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.expiryDate(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.publicKey = function(...args) 
           
@@ -415,7 +415,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.publicKey(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.extensions = function(...args) 
           
@@ -425,7 +425,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.extensions(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.toPem = function(...args) 
           
@@ -435,7 +435,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.toPem(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.toDer = function(...args) 
           
@@ -445,7 +445,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.toDer(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.toText = function(...args) 
           
@@ -455,7 +455,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.toText(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.fromPath = function(...args) 
           
@@ -465,7 +465,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.fromPath(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.fromDevice = function(...args) 
           
@@ -475,7 +475,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.fromDevice(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.fromData = function(...args) 
           
@@ -485,7 +485,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.fromData(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.fromFile = function(...args) 
           
@@ -495,7 +495,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.fromFile(...args);
             
         };
-    
+        
         // function 
         QSslCertificate.prototype.verify = function(...args) 
           
@@ -505,7 +505,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
               return this.__PROXY__.verify(...args);
             
         };
-    
+        
 
       // static functions:
       

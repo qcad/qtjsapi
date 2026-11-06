@@ -129,7 +129,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.isWidgetType = function(...args) 
           
@@ -139,7 +139,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.isWindowType = function(...args) 
           
@@ -149,7 +149,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.signalsBlocked = function(...args) 
           
@@ -159,7 +159,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.blockSignals = function(...args) 
           
@@ -169,7 +169,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.findChild = function(...args) 
           
@@ -179,7 +179,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.children = function(...args) 
           
@@ -189,7 +189,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.setParent = function(...args) 
           
@@ -199,7 +199,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.installEventFilter = function(...args) 
           
@@ -209,7 +209,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.removeEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.dumpObjectTree = function(...args) 
           
@@ -229,7 +229,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.dumpObjectInfo = function(...args) 
           
@@ -239,7 +239,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.setProperty = function(...args) 
           
@@ -249,7 +249,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.property = function(...args) 
           
@@ -259,7 +259,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.dynamicPropertyNames = function(...args) 
           
@@ -269,7 +269,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.parent = function(...args) 
           
@@ -279,7 +279,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.deleteLater = function(...args) 
           
@@ -289,7 +289,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.openMode = function(...args) 
           
@@ -299,7 +299,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.openMode(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.setTextModeEnabled = function(...args) 
           
@@ -309,7 +309,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.isTextModeEnabled = function(...args) 
           
@@ -319,7 +319,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.isOpen = function(...args) 
           
@@ -329,7 +329,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.isReadable = function(...args) 
           
@@ -339,7 +339,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.isWritable = function(...args) 
           
@@ -349,7 +349,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.readChannelCount = function(...args) 
           
@@ -359,7 +359,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.readChannelCount(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.writeChannelCount = function(...args) 
           
@@ -369,7 +369,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.writeChannelCount(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.currentReadChannel = function(...args) 
           
@@ -379,7 +379,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.currentReadChannel(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.setCurrentReadChannel = function(...args) 
           
@@ -389,7 +389,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setCurrentReadChannel(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.currentWriteChannel = function(...args) 
           
@@ -399,7 +399,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.currentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.setCurrentWriteChannel = function(...args) 
           
@@ -409,7 +409,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setCurrentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.open = function(...args) 
           
@@ -419,7 +419,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.reset = function(...args) 
           
@@ -429,7 +429,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.bytesAvailable = function(...args) 
           
@@ -439,7 +439,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.bytesAvailable(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.bytesToWrite = function(...args) 
           
@@ -449,7 +449,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.bytesToWrite(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.readAll = function(...args) 
           
@@ -459,7 +459,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.canReadLine = function(...args) 
           
@@ -469,7 +469,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.canReadLine(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.startTransaction = function(...args) 
           
@@ -479,7 +479,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.startTransaction(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.commitTransaction = function(...args) 
           
@@ -489,7 +489,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.rollbackTransaction = function(...args) 
           
@@ -499,7 +499,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.isTransactionStarted = function(...args) 
           
@@ -509,7 +509,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isTransactionStarted(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.write = function(...args) 
           
@@ -519,7 +519,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.skip = function(...args) 
           
@@ -529,7 +529,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.skip(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.waitForReadyRead = function(...args) 
           
@@ -539,7 +539,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.waitForReadyRead(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.waitForBytesWritten = function(...args) 
           
@@ -549,7 +549,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.waitForBytesWritten(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.ungetChar = function(...args) 
           
@@ -559,7 +559,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.ungetChar(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.putChar = function(...args) 
           
@@ -569,7 +569,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.putChar(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.errorString = function(...args) 
           
@@ -579,7 +579,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.error = function(...args) 
           
@@ -589,7 +589,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.unsetError = function(...args) 
           
@@ -599,7 +599,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.unsetError(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.close = function(...args) 
           
@@ -609,7 +609,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.isSequential = function(...args) 
           
@@ -619,7 +619,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isSequential(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.handle = function(...args) 
           
@@ -629,7 +629,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.handle(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.fileName = function(...args) 
           
@@ -639,7 +639,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.pos = function(...args) 
           
@@ -649,7 +649,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.seek = function(...args) 
           
@@ -659,7 +659,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.atEnd = function(...args) 
           
@@ -669,7 +669,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.flush = function(...args) 
           
@@ -679,7 +679,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.flush(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.size = function(...args) 
           
@@ -689,7 +689,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.resize = function(...args) 
           
@@ -699,7 +699,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.permissions = function(...args) 
           
@@ -709,7 +709,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.permissions(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.setPermissions = function(...args) 
           
@@ -719,7 +719,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setPermissions(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.fileTime = function(...args) 
           
@@ -729,7 +729,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.fileTime(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.setFileTime = function(...args) 
           
@@ -739,7 +739,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setFileTime(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.readData = function(...args) 
           
@@ -749,7 +749,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.readData(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.writeData = function(...args) 
           
@@ -759,7 +759,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.writeData(...args);
             
         };
-    
+        
         // function 
         QFileDevice.prototype.readLineData = function(...args) 
           
@@ -769,7 +769,7 @@ QFileDevice.ExistingOnly = QFileDevice_Wrapper.ExistingOnly;
               return this.__PROXY__.readLineData(...args);
             
         };
-    
+        
 
       // static functions:
       

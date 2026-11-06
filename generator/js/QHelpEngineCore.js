@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.isReadOnly = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setReadOnly = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.filterEngine = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.filterEngine(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setupData = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.setupData(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.collectionFile = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.collectionFile(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setCollectionFile = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.setCollectionFile(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.copyCollectionFile = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.copyCollectionFile(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.namespaceName = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.namespaceName(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.registerDocumentation = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.registerDocumentation(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.unregisterDocumentation = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.unregisterDocumentation(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.documentationFileName = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.documentationFileName(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.registeredDocumentations = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.registeredDocumentations(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.fileData = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.fileData(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.customFilters = function(...args) 
           
@@ -439,7 +439,7 @@
               return this.__PROXY__.customFilters(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.removeCustomFilter = function(...args) 
           
@@ -449,7 +449,7 @@
               return this.__PROXY__.removeCustomFilter(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.addCustomFilter = function(...args) 
           
@@ -459,7 +459,7 @@
               return this.__PROXY__.addCustomFilter(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.filterAttributes = function(...args) 
           
@@ -469,7 +469,7 @@
               return this.__PROXY__.filterAttributes(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.currentFilter = function(...args) 
           
@@ -479,7 +479,7 @@
               return this.__PROXY__.currentFilter(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setCurrentFilter = function(...args) 
           
@@ -489,7 +489,7 @@
               return this.__PROXY__.setCurrentFilter(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.files = function(...args) 
           
@@ -499,7 +499,7 @@
               return this.__PROXY__.files(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.findFile = function(...args) 
           
@@ -509,7 +509,7 @@
               return this.__PROXY__.findFile(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.documentsForIdentifier = function(...args) 
           
@@ -519,7 +519,7 @@
               return this.__PROXY__.documentsForIdentifier(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.documentsForKeyword = function(...args) 
           
@@ -529,7 +529,7 @@
               return this.__PROXY__.documentsForKeyword(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.removeCustomValue = function(...args) 
           
@@ -539,7 +539,7 @@
               return this.__PROXY__.removeCustomValue(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.customValue = function(...args) 
           
@@ -549,7 +549,7 @@
               return this.__PROXY__.customValue(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setCustomValue = function(...args) 
           
@@ -559,7 +559,7 @@
               return this.__PROXY__.setCustomValue(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.metaData = function(...args) 
           
@@ -569,7 +569,7 @@
               return this.__PROXY__.metaData(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.error = function(...args) 
           
@@ -579,7 +579,7 @@
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setAutoSaveFilter = function(...args) 
           
@@ -589,7 +589,7 @@
               return this.__PROXY__.setAutoSaveFilter(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.autoSaveFilter = function(...args) 
           
@@ -599,7 +599,7 @@
               return this.__PROXY__.autoSaveFilter(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.setUsesFilterEngine = function(...args) 
           
@@ -609,7 +609,7 @@
               return this.__PROXY__.setUsesFilterEngine(...args);
             
         };
-    
+        
         // function 
         QHelpEngineCore.prototype.usesFilterEngine = function(...args) 
           
@@ -619,7 +619,7 @@
               return this.__PROXY__.usesFilterEngine(...args);
             
         };
-    
+        
 
       // static functions:
       

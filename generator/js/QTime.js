@@ -157,7 +157,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.isValid = function(...args) 
           
@@ -167,7 +167,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.hour = function(...args) 
           
@@ -177,7 +177,7 @@
               return this.__PROXY__.hour(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.minute = function(...args) 
           
@@ -187,7 +187,7 @@
               return this.__PROXY__.minute(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.second = function(...args) 
           
@@ -197,7 +197,7 @@
               return this.__PROXY__.second(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.msec = function(...args) 
           
@@ -207,7 +207,7 @@
               return this.__PROXY__.msec(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.toString = function(...args) 
           
@@ -217,7 +217,7 @@
               return this.__PROXY__.toString(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.setHMS = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.setHMS(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.addSecs = function(...args) 
           
@@ -237,7 +237,7 @@
               return this.__PROXY__.addSecs(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.secsTo = function(...args) 
           
@@ -247,7 +247,7 @@
               return this.__PROXY__.secsTo(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.addMSecs = function(...args) 
           
@@ -257,7 +257,7 @@
               return this.__PROXY__.addMSecs(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.msecsTo = function(...args) 
           
@@ -267,7 +267,7 @@
               return this.__PROXY__.msecsTo(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.fromMSecsSinceStartOfDay = function(...args) 
           
@@ -277,7 +277,7 @@
               return this.__PROXY__.fromMSecsSinceStartOfDay(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.msecsSinceStartOfDay = function(...args) 
           
@@ -287,7 +287,7 @@
               return this.__PROXY__.msecsSinceStartOfDay(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.currentTime = function(...args) 
           
@@ -297,7 +297,7 @@
               return this.__PROXY__.currentTime(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.fromString = function(...args) 
           
@@ -307,7 +307,7 @@
               return this.__PROXY__.fromString(...args);
             
         };
-    
+        
         // function 
         QTime.prototype.operator_lessthan = function(...args) 
           
@@ -317,7 +317,7 @@
               return this.__PROXY__.operator_lessthan(...args);
             
         };
-    
+        
 
       // static functions:
       

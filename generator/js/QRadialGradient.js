@@ -486,7 +486,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setSpread = function(...args) 
           
@@ -496,7 +496,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setSpread(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.spread = function(...args) 
           
@@ -506,7 +506,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.spread(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setColorAt = function(...args) 
           
@@ -516,7 +516,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setColorAt(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.coordinateMode = function(...args) 
           
@@ -526,7 +526,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.coordinateMode(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setCoordinateMode = function(...args) 
           
@@ -536,7 +536,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setCoordinateMode(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.interpolationMode = function(...args) 
           
@@ -546,7 +546,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.interpolationMode(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setInterpolationMode = function(...args) 
           
@@ -556,7 +556,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setInterpolationMode(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.center = function(...args) 
           
@@ -566,7 +566,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.center(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setCenter = function(...args) 
           
@@ -576,7 +576,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.focalPoint = function(...args) 
           
@@ -586,7 +586,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.focalPoint(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setFocalPoint = function(...args) 
           
@@ -596,7 +596,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setFocalPoint(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.radius = function(...args) 
           
@@ -606,7 +606,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.radius(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setRadius = function(...args) 
           
@@ -616,7 +616,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setRadius(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.centerRadius = function(...args) 
           
@@ -626,7 +626,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.centerRadius(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setCenterRadius = function(...args) 
           
@@ -636,7 +636,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setCenterRadius(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.focalRadius = function(...args) 
           
@@ -646,7 +646,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.focalRadius(...args);
             
         };
-    
+        
         // function 
         QRadialGradient.prototype.setFocalRadius = function(...args) 
           
@@ -656,7 +656,7 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
               return this.__PROXY__.setFocalRadius(...args);
             
         };
-    
+        
 
       // static functions:
       QRadialGradient.prototype.isNullWrapper = function() {

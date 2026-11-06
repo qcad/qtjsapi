@@ -349,7 +349,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.currentColorGroup = function(...args) 
           
@@ -359,7 +359,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.currentColorGroup(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.setCurrentColorGroup = function(...args) 
           
@@ -369,7 +369,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.setCurrentColorGroup(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.color = function(...args) 
           
@@ -379,7 +379,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.color(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.brush = function(...args) 
           
@@ -389,7 +389,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.brush(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.setColor = function(...args) 
           
@@ -399,7 +399,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.setBrush = function(...args) 
           
@@ -409,7 +409,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.setBrush(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.isBrushSet = function(...args) 
           
@@ -419,7 +419,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.isBrushSet(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.setColorGroup = function(...args) 
           
@@ -429,7 +429,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.setColorGroup(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.isEqual = function(...args) 
           
@@ -439,7 +439,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.isEqual(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.windowText = function(...args) 
           
@@ -449,7 +449,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.windowText(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.button = function(...args) 
           
@@ -459,7 +459,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.button(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.light = function(...args) 
           
@@ -469,7 +469,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.light(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.dark = function(...args) 
           
@@ -479,7 +479,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.dark(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.mid = function(...args) 
           
@@ -489,7 +489,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.mid(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.text = function(...args) 
           
@@ -499,7 +499,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.base = function(...args) 
           
@@ -509,7 +509,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.base(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.alternateBase = function(...args) 
           
@@ -519,7 +519,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.alternateBase(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.toolTipBase = function(...args) 
           
@@ -529,7 +529,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.toolTipBase(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.toolTipText = function(...args) 
           
@@ -539,7 +539,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.toolTipText(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.window = function(...args) 
           
@@ -549,7 +549,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.midlight = function(...args) 
           
@@ -559,7 +559,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.midlight(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.brightText = function(...args) 
           
@@ -569,7 +569,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.brightText(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.buttonText = function(...args) 
           
@@ -579,7 +579,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.buttonText(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.shadow = function(...args) 
           
@@ -589,7 +589,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.shadow(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.highlight = function(...args) 
           
@@ -599,7 +599,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.highlight(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.highlightedText = function(...args) 
           
@@ -609,7 +609,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.highlightedText(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.link = function(...args) 
           
@@ -619,7 +619,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.link(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.linkVisited = function(...args) 
           
@@ -629,7 +629,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.linkVisited(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.placeholderText = function(...args) 
           
@@ -639,7 +639,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.placeholderText(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.isCopyOf = function(...args) 
           
@@ -649,7 +649,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.isCopyOf(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.cacheKey = function(...args) 
           
@@ -659,7 +659,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.cacheKey(...args);
             
         };
-    
+        
         // function 
         QPalette.prototype.resolve = function(...args) 
           
@@ -669,7 +669,7 @@ QPalette.NColorRoles = QPalette_Wrapper.NColorRoles;
               return this.__PROXY__.resolve(...args);
             
         };
-    
+        
 
       // static functions:
       QPalette.prototype.isNullWrapper = function() {

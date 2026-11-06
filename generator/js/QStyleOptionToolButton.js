@@ -172,7 +172,7 @@ QStyleOptionToolButton.HasMenu = QStyleOptionToolButton_Wrapper.HasMenu;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionToolButton.prototype.isNullWrapper = function() {
