@@ -723,7 +723,12 @@
     </xsl:choose>
   </xsl:variable>
 
-  <xsl:value-of select="$name"/>.<xsl:value-of select="text()"/> = <xsl:value-of select="$name"/>_Wrapper.<xsl:value-of select="text()"/>;
+  <xsl:value-of select="$name"/>.<xsl:value-of select="text()"/> = <xsl:value-of select="$name"/>_Wrapper.<xsl:value-of select="text()"/><xsl:text>;</xsl:text>
+  <!-- no preprocessor in JS: value is undefined if not compiled in, note the condition as comment -->
+  <xsl:if test="@preproc">
+    <xsl:text> // C++: </xsl:text><xsl:value-of select="qc:preproc-directive(@preproc)" />
+  </xsl:if>
+  <xsl:text>&#10;</xsl:text>
 </xsl:template>
 
 <func:function name="qc:default-value-to-js">

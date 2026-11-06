@@ -52,8 +52,8 @@
       <key>ItemAntialiasingHasChanged</key>
       <key>ItemDevicePixelRatioHasChanged</key>
       <key>ItemEnabledHasChanged</key>
-      <key>ItemScaleHasChanged</key>
-      <key>ItemTransformHasChanged</key>
+      <key preproc="if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)">ItemScaleHasChanged</key>
+      <key preproc="if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)">ItemTransformHasChanged</key>
     </enum>
     <constructor>
       <variant>

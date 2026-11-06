@@ -140,7 +140,8 @@
               
               ;
             
-#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+#if QT_VERSION>=QT_VERSION_CHECK(6,10,0)
+
     // Class: QSslCertificate
     // Function: fromFile
     // Source: 
@@ -169,6 +170,7 @@
               ;
             
 #endif
+
 #ifndef QT_NO_SSL
 
     // Class: QSslCertificate
@@ -341,6 +343,10 @@ EmailAddress = QSslCertificate::EmailAddress,
               ;
             
 #ifndef QT_NO_SSL
+
+#endif
+
+#if QT_VERSION>=QT_VERSION_CHECK(6,10,0)
 
 #endif
 
@@ -881,6 +887,10 @@ EmailAddress = QSslCertificate::EmailAddress,
               
               ;
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,10,0)
+
+#endif
+
 #ifndef QT_NO_SSL
 
 #endif

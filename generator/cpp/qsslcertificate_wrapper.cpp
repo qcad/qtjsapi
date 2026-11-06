@@ -271,7 +271,8 @@ QSsl::EncodingFormat a2_cpp;
                 
               }
             
-#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+#if QT_VERSION>=QT_VERSION_CHECK(6,10,0)
+
     // Class: QSslCertificate
     // Function: fromFile
     // Source: 
@@ -356,6 +357,7 @@ QSsl::EncodingFormat a2_cpp;
               }
             
 #endif
+
 #ifndef QT_NO_SSL
 
     // Class: QSslCertificate
@@ -834,6 +836,10 @@ QSslCertificate a1_cpp;
               }
             
 #ifndef QT_NO_SSL
+
+#endif
+
+#if QT_VERSION>=QT_VERSION_CHECK(6,10,0)
 
 #endif
 
@@ -2424,6 +2430,10 @@ QByteArray a1_cpp;
                 
               }
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,10,0)
+
+#endif
+
 #ifndef QT_NO_SSL
 
 #endif

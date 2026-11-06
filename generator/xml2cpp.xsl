@@ -2656,10 +2656,24 @@
   Q_ENUM(<xsl:value-of select="@name"/>)
 </xsl:template>
 
+<!--
+  Enum keys may carry a 'preproc' attribute to wrap the key in a preprocessor
+  directive, e.g.:
+    <key preproc="if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)">ItemScaleHasChanged</key>
+  Adjacent keys with the same 'preproc' attribute share one #if / #endif block.
+-->
 <xsl:template match="qsrc:enum/qsrc:key">
+  <xsl:if test="@preproc and not(preceding-sibling::qsrc:key[1]/@preproc = @preproc)">
+    <xsl:text>&#xa;</xsl:text>
+    <xsl:value-of select="qc:preproc-directive(@preproc)" />
+    <xsl:text>&#xa;</xsl:text>
+  </xsl:if>
   <xsl:value-of select="./text()"/> = <xsl:value-of select="(ancestor::qsrc:class|ancestor::qsrc:namespace)/@name"/>::<xsl:value-of select="./text()"/>
   <xsl:if test="position() &lt; last()">,</xsl:if>
   <xsl:text>&#xa;</xsl:text>
+  <xsl:if test="@preproc and not(following-sibling::qsrc:key[1]/@preproc = @preproc)">
+    <xsl:text>#endif&#xa;</xsl:text>
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="qsrc:property" mode="declaration">

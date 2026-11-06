@@ -53,6 +53,26 @@
   </func:result>
 </func:function>
 
+<!--
+  Returns the given preprocessor condition as a full directive line,
+  i.e. prefixed with '#' unless it already starts with '#'.
+  "if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)" -> "#if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)"
+-->
+<func:function name="qc:preproc-directive">
+  <xsl:param name="condition"/>
+  <func:result>
+    <xsl:variable name="c" select="normalize-space($condition)"/>
+    <xsl:choose>
+      <xsl:when test="starts-with($c, '#')">
+        <xsl:value-of select="$c"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="concat('#', $c)"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </func:result>
+</func:function>
+
 <func:function name="qc:replace">
   <xsl:param name="text"/>
   <xsl:param name="from"/>

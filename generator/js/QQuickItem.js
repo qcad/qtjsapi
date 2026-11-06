@@ -138,8 +138,8 @@ QQuickItem.ItemRotationHasChanged = QQuickItem_Wrapper.ItemRotationHasChanged;
 QQuickItem.ItemAntialiasingHasChanged = QQuickItem_Wrapper.ItemAntialiasingHasChanged;
 QQuickItem.ItemDevicePixelRatioHasChanged = QQuickItem_Wrapper.ItemDevicePixelRatioHasChanged;
 QQuickItem.ItemEnabledHasChanged = QQuickItem_Wrapper.ItemEnabledHasChanged;
-QQuickItem.ItemScaleHasChanged = QQuickItem_Wrapper.ItemScaleHasChanged;
-QQuickItem.ItemTransformHasChanged = QQuickItem_Wrapper.ItemTransformHasChanged;
+QQuickItem.ItemScaleHasChanged = QQuickItem_Wrapper.ItemScaleHasChanged; // C++: #if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+QQuickItem.ItemTransformHasChanged = QQuickItem_Wrapper.ItemTransformHasChanged; // C++: #if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
 
   // enum: TransformOrigin
 QQuickItem.TopLeft = QQuickItem_Wrapper.TopLeft;
