@@ -2861,6 +2861,7 @@ RightCornerWidget = QStyleOptionTab::RightCornerWidget,
   enum TabFeature {
     None = QStyleOptionTab::None,
 HasFrame = QStyleOptionTab::HasFrame,
+
 #if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
 MinimumSizeHint = QStyleOptionTab::MinimumSizeHint,
 #endif
@@ -4566,6 +4567,7 @@ Alternate = QStyleOptionViewItem::Alternate,
 HasCheckIndicator = QStyleOptionViewItem::HasCheckIndicator,
 HasDisplay = QStyleOptionViewItem::HasDisplay,
 HasDecoration = QStyleOptionViewItem::HasDecoration,
+
 #if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
 IsDecoratedRootColumn = QStyleOptionViewItem::IsDecoratedRootColumn,
 IsDecorationForRootColumn = QStyleOptionViewItem::IsDecorationForRootColumn,

@@ -200,7 +200,7 @@ QStyleOptionTab.RightCornerWidget = QStyleOptionTab_Wrapper.RightCornerWidget;
   // enum: TabFeature
 QStyleOptionTab.None = QStyleOptionTab_Wrapper.None;
 QStyleOptionTab.HasFrame = QStyleOptionTab_Wrapper.HasFrame;
-QStyleOptionTab.MinimumSizeHint = QStyleOptionTab_Wrapper.MinimumSizeHint;
+QStyleOptionTab.MinimumSizeHint = QStyleOptionTab_Wrapper.MinimumSizeHint; // C++: #if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
 
 
       // functions:

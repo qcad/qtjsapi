@@ -193,8 +193,8 @@ QStyleOptionViewItem.Alternate = QStyleOptionViewItem_Wrapper.Alternate;
 QStyleOptionViewItem.HasCheckIndicator = QStyleOptionViewItem_Wrapper.HasCheckIndicator;
 QStyleOptionViewItem.HasDisplay = QStyleOptionViewItem_Wrapper.HasDisplay;
 QStyleOptionViewItem.HasDecoration = QStyleOptionViewItem_Wrapper.HasDecoration;
-QStyleOptionViewItem.IsDecoratedRootColumn = QStyleOptionViewItem_Wrapper.IsDecoratedRootColumn;
-QStyleOptionViewItem.IsDecorationForRootColumn = QStyleOptionViewItem_Wrapper.IsDecorationForRootColumn;
+QStyleOptionViewItem.IsDecoratedRootColumn = QStyleOptionViewItem_Wrapper.IsDecoratedRootColumn; // C++: #if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
+QStyleOptionViewItem.IsDecorationForRootColumn = QStyleOptionViewItem_Wrapper.IsDecorationForRootColumn; // C++: #if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)
 
   // enum: ViewItemPosition
 QStyleOptionViewItem.Invalid = QStyleOptionViewItem_Wrapper.Invalid;

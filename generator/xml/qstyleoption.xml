@@ -356,7 +356,7 @@
     <enum name="TabFeature">
       <key>None</key>
       <key>HasFrame</key>
-      <key>MinimumSizeHint</key>
+      <key preproc="if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)">MinimumSizeHint</key>
     </enum>
     <constructor>
       <variant>
@@ -556,8 +556,8 @@
       <key>HasCheckIndicator</key>
       <key>HasDisplay</key>
       <key>HasDecoration</key>
-      <key>IsDecoratedRootColumn</key>
-      <key>IsDecorationForRootColumn</key>
+      <key preproc="if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)">IsDecoratedRootColumn</key>
+      <key preproc="if QT_VERSION >= QT_VERSION_CHECK(6, 9, 0)">IsDecorationForRootColumn</key>
     </enum>
     <enum name="ViewItemPosition">
       <key>Invalid</key>
