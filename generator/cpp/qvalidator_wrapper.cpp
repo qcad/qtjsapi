@@ -1661,6 +1661,13 @@ QString a1_cpp;
               QValidator_Wrapper::changedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QValidator_Wrapper::staticMetaObject.indexOfSignal("changed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3365,6 +3372,13 @@ QLocale a1_cpp;
               QIntValidator_Wrapper::changedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QIntValidator_Wrapper::staticMetaObject.indexOfSignal("changed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QIntValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3855,6 +3869,13 @@ int a2_cpp;
               QIntValidator_Wrapper::bottomChangedEmitter(
                 int bottom
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QIntValidator_Wrapper::staticMetaObject.indexOfSignal("bottomChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QIntValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: bottom (int)
@@ -3884,6 +3905,13 @@ int a2_cpp;
               QIntValidator_Wrapper::topChangedEmitter(
                 int top
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QIntValidator_Wrapper::staticMetaObject.indexOfSignal("topChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QIntValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: top (int)
@@ -5690,6 +5718,13 @@ QString a1_cpp;
               QDoubleValidator_Wrapper::changedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDoubleValidator_Wrapper::staticMetaObject.indexOfSignal("changed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDoubleValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -6376,6 +6411,13 @@ QDoubleValidator::Notation a1_cpp;
               QDoubleValidator_Wrapper::bottomChangedEmitter(
                 double bottom
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDoubleValidator_Wrapper::staticMetaObject.indexOfSignal("bottomChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDoubleValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: bottom (double)
@@ -6405,6 +6447,13 @@ QDoubleValidator::Notation a1_cpp;
               QDoubleValidator_Wrapper::topChangedEmitter(
                 double top
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDoubleValidator_Wrapper::staticMetaObject.indexOfSignal("topChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDoubleValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: top (double)
@@ -6434,6 +6483,13 @@ QDoubleValidator::Notation a1_cpp;
               QDoubleValidator_Wrapper::decimalsChangedEmitter(
                 int decimals
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDoubleValidator_Wrapper::staticMetaObject.indexOfSignal("decimalsChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDoubleValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: decimals (int)
@@ -6463,6 +6519,13 @@ QDoubleValidator::Notation a1_cpp;
               QDoubleValidator_Wrapper::notationChangedEmitter(
                 QDoubleValidator::Notation notation
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDoubleValidator_Wrapper::staticMetaObject.indexOfSignal("notationChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDoubleValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: notation (QDoubleValidator::Notation)
@@ -8222,6 +8285,13 @@ QString a1_cpp;
               QRegularExpressionValidator_Wrapper::changedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QRegularExpressionValidator_Wrapper::staticMetaObject.indexOfSignal("changed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QRegularExpressionValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8449,6 +8519,13 @@ QRegularExpression a1_cpp;
               QRegularExpressionValidator_Wrapper::regularExpressionChangedEmitter(
                 const QRegularExpression& re
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QRegularExpressionValidator_Wrapper::staticMetaObject.indexOfSignal("regularExpressionChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QRegularExpressionValidator_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: re (QRegularExpression)

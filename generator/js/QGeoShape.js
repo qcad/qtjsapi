@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGeoShape);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoShape);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoShape);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,9 +110,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
@@ -120,11 +120,12 @@
       //QGeoShape.prototype = new QGeoShape_Wrapper(engine);
       QGeoShape.prototype = new Object();
 
+
       
         // function with alias name in CPP wrapper:
         QGeoShape.prototype.toString = function() {
           
-              return this.toStr.apply(this, arguments);
+              return this.__PROXY__.toStr.apply(this, arguments);
             
         }
       QGeoShape.getObjectType = function() {
@@ -160,8 +161,78 @@ QGeoShape.PolygonType = QGeoShape_Wrapper.PolygonType;
 
       // functions:
       
+        // function 
+        QGeoShape.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QGeoShape.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QGeoShape.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QGeoShape.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QGeoShape.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QGeoShape.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QGeoShape.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QGeoShape.prototype.contains");
+          
+              return this.__PROXY__.contains(...args);
+            
+        };
+    
+        // function 
+        QGeoShape.prototype.boundingGeoRectangle = function(...args) 
+          
+        {
+          //print("JS: QGeoShape.prototype.boundingGeoRectangle");
+          
+              return this.__PROXY__.boundingGeoRectangle(...args);
+            
+        };
+    
+        // function 
+        QGeoShape.prototype.center = function(...args) 
+          
+        {
+          //print("JS: QGeoShape.prototype.center");
+          
+              return this.__PROXY__.center(...args);
+            
+        };
+    
 
       // static functions:
+      QGeoShape.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGeoShape.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGeoShape.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -180,4 +251,7 @@ QGeoShape.PolygonType = QGeoShape_Wrapper.PolygonType;
       //  return this.wrapper.destr();
       //};
 
+      QGeoShape.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

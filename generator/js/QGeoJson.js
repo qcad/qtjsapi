@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGeoJson);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,9 +55,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
@@ -65,11 +65,12 @@
       //QGeoJson.prototype = new QGeoJson_Wrapper(engine);
       QGeoJson.prototype = new Object();
 
+
       
         // function with alias name in CPP wrapper:
         QGeoJson.prototype.toString = function() {
           
-              return this.toStr.apply(this, arguments);
+              return this.__PROXY__.toStr.apply(this, arguments);
             
         }
       QGeoJson.getObjectType = function() {
@@ -98,6 +99,46 @@
 
       // functions:
       
+        // function 
+        QGeoJson.prototype.importGeoJson = function(...args) 
+          
+        {
+          //print("JS: QGeoJson.prototype.importGeoJson");
+          
+              return this.__PROXY__.importGeoJson(...args);
+            
+        };
+    
+        // function 
+        QGeoJson.prototype.importGeoJsonPlain = function(...args) 
+          
+        {
+          //print("JS: QGeoJson.prototype.importGeoJsonPlain");
+          
+              return this.__PROXY__.importGeoJsonPlain(...args);
+            
+        };
+    
+        // function 
+        QGeoJson.prototype.toPlain = function(...args) 
+          
+        {
+          //print("JS: QGeoJson.prototype.toPlain");
+          
+              return this.__PROXY__.toPlain(...args);
+            
+        };
+    
+        // function 
+        QGeoJson.prototype.exportGeoJson = function(...args) 
+          
+        {
+          //print("JS: QGeoJson.prototype.exportGeoJson");
+          
+              return this.__PROXY__.exportGeoJson(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -240,6 +281,16 @@
   }
   
         };
+      QGeoJson.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGeoJson.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGeoJson.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -258,4 +309,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QGeoJson.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

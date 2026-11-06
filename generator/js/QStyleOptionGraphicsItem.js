@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionGraphicsItem);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionGraphicsItem);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionGraphicsItem);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionGraphicsItem.prototype = new QStyleOptionGraphicsItem_BaseJs(engine);
       //QStyleOptionGraphicsItem.prototype = new QStyleOptionGraphicsItem_Wrapper(engine);
       QStyleOptionGraphicsItem.prototype = new Object();
+
 
       QStyleOptionGraphicsItem.prototype.toString = function() {
           //return "QStyleOptionGraphicsItem [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -182,6 +183,36 @@ QStyleOptionGraphicsItem.SO_ComplexCustomBase = QStyleOptionGraphicsItem_Wrapper
 
       // functions:
       
+        // function 
+        QStyleOptionGraphicsItem.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionGraphicsItem.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionGraphicsItem.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionGraphicsItem.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionGraphicsItem.prototype.levelOfDetailFromTransform = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionGraphicsItem.prototype.levelOfDetailFromTransform");
+          
+              return this.__PROXY__.levelOfDetailFromTransform(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -212,6 +243,16 @@ QStyleOptionGraphicsItem.SO_ComplexCustomBase = QStyleOptionGraphicsItem_Wrapper
   }
   
         };
+      QStyleOptionGraphicsItem.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionGraphicsItem.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionGraphicsItem.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -230,4 +271,7 @@ QStyleOptionGraphicsItem.SO_ComplexCustomBase = QStyleOptionGraphicsItem_Wrapper
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionGraphicsItem.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

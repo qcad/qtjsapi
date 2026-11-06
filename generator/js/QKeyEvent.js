@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QKeyEvent.prototype = new QKeyEvent_BaseJs(engine);
       //QKeyEvent.prototype = new QKeyEvent_Wrapper(engine);
       QKeyEvent.prototype = new Object();
+
 
       QKeyEvent.prototype.toString = function() {
           //return "QKeyEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -312,7 +313,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -320,7 +323,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -328,7 +333,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -336,7 +343,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -344,7 +353,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -352,7 +363,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -360,7 +373,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -368,7 +383,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -376,7 +393,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -384,7 +403,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -392,7 +413,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.setModifiers");
-          return this.__PROXY__.setModifiers(...args);
+          
+              return this.__PROXY__.setModifiers(...args);
+            
         };
     
         // function 
@@ -400,7 +423,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.timestamp");
-          return this.__PROXY__.timestamp(...args);
+          
+              return this.__PROXY__.timestamp(...args);
+            
         };
     
         // function 
@@ -408,7 +433,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.setTimestamp");
-          return this.__PROXY__.setTimestamp(...args);
+          
+              return this.__PROXY__.setTimestamp(...args);
+            
         };
     
         // function 
@@ -416,7 +443,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -424,7 +453,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.key");
-          return this.__PROXY__.key(...args);
+          
+              return this.__PROXY__.key(...args);
+            
         };
     
         // function 
@@ -432,7 +463,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.matches");
-          return this.__PROXY__.matches(...args);
+          
+              return this.__PROXY__.matches(...args);
+            
         };
     
         // function 
@@ -440,7 +473,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.modifiers");
-          return this.__PROXY__.modifiers(...args);
+          
+              return this.__PROXY__.modifiers(...args);
+            
         };
     
         // function 
@@ -448,7 +483,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.text");
-          return this.__PROXY__.text(...args);
+          
+              return this.__PROXY__.text(...args);
+            
         };
     
         // function 
@@ -456,7 +493,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.isAutoRepeat");
-          return this.__PROXY__.isAutoRepeat(...args);
+          
+              return this.__PROXY__.isAutoRepeat(...args);
+            
         };
     
         // function 
@@ -464,7 +503,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.count");
-          return this.__PROXY__.count(...args);
+          
+              return this.__PROXY__.count(...args);
+            
         };
     
         // function 
@@ -472,7 +513,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.nativeScanCode");
-          return this.__PROXY__.nativeScanCode(...args);
+          
+              return this.__PROXY__.nativeScanCode(...args);
+            
         };
     
         // function 
@@ -480,7 +523,9 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.nativeVirtualKey");
-          return this.__PROXY__.nativeVirtualKey(...args);
+          
+              return this.__PROXY__.nativeVirtualKey(...args);
+            
         };
     
         // function 
@@ -488,11 +533,23 @@ QKeyEvent.MaxUser = QKeyEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QKeyEvent.prototype.nativeModifiers");
-          return this.__PROXY__.nativeModifiers(...args);
+          
+              return this.__PROXY__.nativeModifiers(...args);
+            
         };
     
 
       // static functions:
+      QKeyEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QKeyEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QKeyEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

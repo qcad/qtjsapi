@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QDate.prototype = new QDate_BaseJs(engine);
       //QDate.prototype = new QDate_Wrapper(engine);
       QDate.prototype = new Object();
+
 
       QDate.getObjectType = function() {
         return RJSType_QDate.getIdStatic();
@@ -151,7 +152,9 @@
           
         {
           //print("JS: QDate.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -159,7 +162,9 @@
           
         {
           //print("JS: QDate.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -167,7 +172,9 @@
           
         {
           //print("JS: QDate.prototype.year");
-          return this.__PROXY__.year(...args);
+          
+              return this.__PROXY__.year(...args);
+            
         };
     
         // function 
@@ -175,7 +182,9 @@
           
         {
           //print("JS: QDate.prototype.month");
-          return this.__PROXY__.month(...args);
+          
+              return this.__PROXY__.month(...args);
+            
         };
     
         // function 
@@ -183,7 +192,9 @@
           
         {
           //print("JS: QDate.prototype.day");
-          return this.__PROXY__.day(...args);
+          
+              return this.__PROXY__.day(...args);
+            
         };
     
         // function 
@@ -191,7 +202,9 @@
           
         {
           //print("JS: QDate.prototype.dayOfWeek");
-          return this.__PROXY__.dayOfWeek(...args);
+          
+              return this.__PROXY__.dayOfWeek(...args);
+            
         };
     
         // function 
@@ -199,7 +212,9 @@
           
         {
           //print("JS: QDate.prototype.dayOfYear");
-          return this.__PROXY__.dayOfYear(...args);
+          
+              return this.__PROXY__.dayOfYear(...args);
+            
         };
     
         // function 
@@ -207,7 +222,9 @@
           
         {
           //print("JS: QDate.prototype.daysInMonth");
-          return this.__PROXY__.daysInMonth(...args);
+          
+              return this.__PROXY__.daysInMonth(...args);
+            
         };
     
         // function 
@@ -215,7 +232,9 @@
           
         {
           //print("JS: QDate.prototype.daysInYear");
-          return this.__PROXY__.daysInYear(...args);
+          
+              return this.__PROXY__.daysInYear(...args);
+            
         };
     
         // function 
@@ -223,7 +242,9 @@
           
         {
           //print("JS: QDate.prototype.startOfDay");
-          return this.__PROXY__.startOfDay(...args);
+          
+              return this.__PROXY__.startOfDay(...args);
+            
         };
     
         // function 
@@ -231,7 +252,9 @@
           
         {
           //print("JS: QDate.prototype.endOfDay");
-          return this.__PROXY__.endOfDay(...args);
+          
+              return this.__PROXY__.endOfDay(...args);
+            
         };
     
         // function 
@@ -239,7 +262,9 @@
           
         {
           //print("JS: QDate.prototype.toString");
-          return this.__PROXY__.toString(...args);
+          
+              return this.__PROXY__.toString(...args);
+            
         };
     
         // function 
@@ -247,7 +272,9 @@
           
         {
           //print("JS: QDate.prototype.setDate");
-          return this.__PROXY__.setDate(...args);
+          
+              return this.__PROXY__.setDate(...args);
+            
         };
     
         // function 
@@ -255,7 +282,9 @@
           
         {
           //print("JS: QDate.prototype.addDays");
-          return this.__PROXY__.addDays(...args);
+          
+              return this.__PROXY__.addDays(...args);
+            
         };
     
         // function 
@@ -263,7 +292,9 @@
           
         {
           //print("JS: QDate.prototype.addMonths");
-          return this.__PROXY__.addMonths(...args);
+          
+              return this.__PROXY__.addMonths(...args);
+            
         };
     
         // function 
@@ -271,7 +302,9 @@
           
         {
           //print("JS: QDate.prototype.addYears");
-          return this.__PROXY__.addYears(...args);
+          
+              return this.__PROXY__.addYears(...args);
+            
         };
     
         // function 
@@ -279,7 +312,9 @@
           
         {
           //print("JS: QDate.prototype.daysTo");
-          return this.__PROXY__.daysTo(...args);
+          
+              return this.__PROXY__.daysTo(...args);
+            
         };
     
         // function 
@@ -287,7 +322,9 @@
           
         {
           //print("JS: QDate.prototype.currentDate");
-          return this.__PROXY__.currentDate(...args);
+          
+              return this.__PROXY__.currentDate(...args);
+            
         };
     
         // function 
@@ -295,7 +332,9 @@
           
         {
           //print("JS: QDate.prototype.fromString");
-          return this.__PROXY__.fromString(...args);
+          
+              return this.__PROXY__.fromString(...args);
+            
         };
     
         // function 
@@ -303,7 +342,9 @@
           
         {
           //print("JS: QDate.prototype.isLeapYear");
-          return this.__PROXY__.isLeapYear(...args);
+          
+              return this.__PROXY__.isLeapYear(...args);
+            
         };
     
         // function 
@@ -311,7 +352,9 @@
           
         {
           //print("JS: QDate.prototype.fromJulianDay");
-          return this.__PROXY__.fromJulianDay(...args);
+          
+              return this.__PROXY__.fromJulianDay(...args);
+            
         };
     
         // function 
@@ -319,7 +362,9 @@
           
         {
           //print("JS: QDate.prototype.toJulianDay");
-          return this.__PROXY__.toJulianDay(...args);
+          
+              return this.__PROXY__.toJulianDay(...args);
+            
         };
     
         // function 
@@ -327,7 +372,9 @@
           
         {
           //print("JS: QDate.prototype.nullJd");
-          return this.__PROXY__.nullJd(...args);
+          
+              return this.__PROXY__.nullJd(...args);
+            
         };
     
         // function 
@@ -335,7 +382,9 @@
           
         {
           //print("JS: QDate.prototype.minJd");
-          return this.__PROXY__.minJd(...args);
+          
+              return this.__PROXY__.minJd(...args);
+            
         };
     
         // function 
@@ -343,7 +392,9 @@
           
         {
           //print("JS: QDate.prototype.maxJd");
-          return this.__PROXY__.maxJd(...args);
+          
+              return this.__PROXY__.maxJd(...args);
+            
         };
     
 
@@ -502,6 +553,16 @@
           //print("JS: QDate.maxJd");
           
         };
+      QDate.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QDate.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QDate.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

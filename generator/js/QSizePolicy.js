@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSizePolicy);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSizePolicy);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSizePolicy);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSizePolicy.prototype = new QSizePolicy_BaseJs(engine);
       //QSizePolicy.prototype = new QSizePolicy_Wrapper(engine);
       QSizePolicy.prototype = new Object();
+
 
       QSizePolicy.prototype.toString = function() {
           //return "QSizePolicy [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -183,8 +184,208 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
 
       // functions:
       
+        // function 
+        QSizePolicy.prototype.horizontalPolicy = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.horizontalPolicy");
+          
+              return this.__PROXY__.horizontalPolicy(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.verticalPolicy = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.verticalPolicy");
+          
+              return this.__PROXY__.verticalPolicy(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.controlType = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.controlType");
+          
+              return this.__PROXY__.controlType(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.setHorizontalPolicy = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.setHorizontalPolicy");
+          
+              return this.__PROXY__.setHorizontalPolicy(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.setVerticalPolicy = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.setVerticalPolicy");
+          
+              return this.__PROXY__.setVerticalPolicy(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.setControlType = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.setControlType");
+          
+              return this.__PROXY__.setControlType(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.expandingDirections = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.expandingDirections");
+          
+              return this.__PROXY__.expandingDirections(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.setHeightForWidth = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.setHeightForWidth");
+          
+              return this.__PROXY__.setHeightForWidth(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.hasHeightForWidth = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.hasHeightForWidth");
+          
+              return this.__PROXY__.hasHeightForWidth(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.setWidthForHeight = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.setWidthForHeight");
+          
+              return this.__PROXY__.setWidthForHeight(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.hasWidthForHeight = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.hasWidthForHeight");
+          
+              return this.__PROXY__.hasWidthForHeight(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.horizontalStretch = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.horizontalStretch");
+          
+              return this.__PROXY__.horizontalStretch(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.verticalStretch = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.verticalStretch");
+          
+              return this.__PROXY__.verticalStretch(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.setHorizontalStretch = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.setHorizontalStretch");
+          
+              return this.__PROXY__.setHorizontalStretch(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.setVerticalStretch = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.setVerticalStretch");
+          
+              return this.__PROXY__.setVerticalStretch(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.retainSizeWhenHidden = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.retainSizeWhenHidden");
+          
+              return this.__PROXY__.retainSizeWhenHidden(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.setRetainSizeWhenHidden = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.setRetainSizeWhenHidden");
+          
+              return this.__PROXY__.setRetainSizeWhenHidden(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.transpose = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.transpose");
+          
+              return this.__PROXY__.transpose(...args);
+            
+        };
+    
+        // function 
+        QSizePolicy.prototype.transposed = function(...args) 
+          
+        {
+          //print("JS: QSizePolicy.prototype.transposed");
+          
+              return this.__PROXY__.transposed(...args);
+            
+        };
+    
 
       // static functions:
+      QSizePolicy.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSizePolicy.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSizePolicy.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -203,4 +404,7 @@ QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
       //  return this.wrapper.destr();
       //};
 
+      QSizePolicy.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

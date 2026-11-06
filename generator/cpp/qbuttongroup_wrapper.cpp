@@ -2346,6 +2346,13 @@ int a2_cpp;
               QButtonGroup_Wrapper::buttonClickedEmitter(
                 QAbstractButton* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QButtonGroup_Wrapper::staticMetaObject.indexOfSignal("buttonClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QButtonGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAbstractButton)
@@ -2375,6 +2382,13 @@ int a2_cpp;
               QButtonGroup_Wrapper::buttonPressedEmitter(
                 QAbstractButton* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QButtonGroup_Wrapper::staticMetaObject.indexOfSignal("buttonPressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QButtonGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAbstractButton)
@@ -2404,6 +2418,13 @@ int a2_cpp;
               QButtonGroup_Wrapper::buttonReleasedEmitter(
                 QAbstractButton* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QButtonGroup_Wrapper::staticMetaObject.indexOfSignal("buttonReleased(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QButtonGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAbstractButton)
@@ -2433,6 +2454,13 @@ int a2_cpp;
               QButtonGroup_Wrapper::buttonToggledEmitter(
                 QAbstractButton* a1, bool a2
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QButtonGroup_Wrapper::staticMetaObject.indexOfSignal("buttonToggled(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QButtonGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAbstractButton)
@@ -2471,6 +2499,13 @@ int a2_cpp;
               QButtonGroup_Wrapper::idClickedEmitter(
                 int a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QButtonGroup_Wrapper::staticMetaObject.indexOfSignal("idClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QButtonGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (int)
@@ -2500,6 +2535,13 @@ int a2_cpp;
               QButtonGroup_Wrapper::idPressedEmitter(
                 int a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QButtonGroup_Wrapper::staticMetaObject.indexOfSignal("idPressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QButtonGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (int)
@@ -2529,6 +2571,13 @@ int a2_cpp;
               QButtonGroup_Wrapper::idReleasedEmitter(
                 int a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QButtonGroup_Wrapper::staticMetaObject.indexOfSignal("idReleased(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QButtonGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (int)
@@ -2558,6 +2607,13 @@ int a2_cpp;
               QButtonGroup_Wrapper::idToggledEmitter(
                 int a1, bool a2
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QButtonGroup_Wrapper::staticMetaObject.indexOfSignal("idToggled(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QButtonGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (int)

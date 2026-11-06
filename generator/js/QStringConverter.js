@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStringConverter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStringConverter.prototype = new QStringConverter_BaseJs(engine);
       //QStringConverter.prototype = new QStringConverter_Wrapper(engine);
       QStringConverter.prototype = new Object();
+
 
       QStringConverter.prototype.toString = function() {
           //return "QStringConverter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -111,6 +112,56 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
 
       // functions:
       
+        // function 
+        QStringConverter.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QStringConverter.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QStringConverter.prototype.resetState = function(...args) 
+          
+        {
+          //print("JS: QStringConverter.prototype.resetState");
+          
+              return this.__PROXY__.resetState(...args);
+            
+        };
+    
+        // function 
+        QStringConverter.prototype.hasError = function(...args) 
+          
+        {
+          //print("JS: QStringConverter.prototype.hasError");
+          
+              return this.__PROXY__.hasError(...args);
+            
+        };
+    
+        // function 
+        QStringConverter.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QStringConverter.prototype.name");
+          
+              return this.__PROXY__.name(...args);
+            
+        };
+    
+        // function 
+        QStringConverter.prototype.nameForEncoding = function(...args) 
+          
+        {
+          //print("JS: QStringConverter.prototype.nameForEncoding");
+          
+              return this.__PROXY__.nameForEncoding(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -141,6 +192,16 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
   }
   
         };
+      QStringConverter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStringConverter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStringConverter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -159,4 +220,7 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
       //  return this.wrapper.destr();
       //};
 
+      QStringConverter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

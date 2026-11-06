@@ -15814,6 +15814,13 @@ bool a1_cpp;
               QDialog_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialog_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -16566,6 +16573,13 @@ int a1_cpp;
               QDialog_Wrapper::finishedEmitter(
                 int result
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialog_Wrapper::staticMetaObject.indexOfSignal("finished(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: result (int)
@@ -16595,6 +16609,13 @@ int a1_cpp;
               QDialog_Wrapper::acceptedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialog_Wrapper::staticMetaObject.indexOfSignal("accepted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -16615,6 +16636,13 @@ int a1_cpp;
               QDialog_Wrapper::rejectedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialog_Wrapper::staticMetaObject.indexOfSignal("rejected()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

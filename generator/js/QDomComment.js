@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QDomComment.prototype = new QDomComment_BaseJs(engine);
       //QDomComment.prototype = new QDomComment_Wrapper(engine);
       QDomComment.prototype = new Object();
+
 
       QDomComment.prototype.toString = function() {
           //return "QDomComment [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -159,7 +160,9 @@
           
         {
           //print("JS: QDomComment.prototype.substringData");
-          return this.__PROXY__.substringData(...args);
+          
+              return this.__PROXY__.substringData(...args);
+            
         };
     
         // function 
@@ -167,7 +170,9 @@
           
         {
           //print("JS: QDomComment.prototype.appendData");
-          return this.__PROXY__.appendData(...args);
+          
+              return this.__PROXY__.appendData(...args);
+            
         };
     
         // function 
@@ -175,7 +180,9 @@
           
         {
           //print("JS: QDomComment.prototype.insertData");
-          return this.__PROXY__.insertData(...args);
+          
+              return this.__PROXY__.insertData(...args);
+            
         };
     
         // function 
@@ -183,7 +190,9 @@
           
         {
           //print("JS: QDomComment.prototype.deleteData");
-          return this.__PROXY__.deleteData(...args);
+          
+              return this.__PROXY__.deleteData(...args);
+            
         };
     
         // function 
@@ -191,7 +200,9 @@
           
         {
           //print("JS: QDomComment.prototype.replaceData");
-          return this.__PROXY__.replaceData(...args);
+          
+              return this.__PROXY__.replaceData(...args);
+            
         };
     
         // function 
@@ -199,7 +210,9 @@
           
         {
           //print("JS: QDomComment.prototype.length");
-          return this.__PROXY__.length(...args);
+          
+              return this.__PROXY__.length(...args);
+            
         };
     
         // function 
@@ -207,7 +220,9 @@
           
         {
           //print("JS: QDomComment.prototype.data");
-          return this.__PROXY__.data(...args);
+          
+              return this.__PROXY__.data(...args);
+            
         };
     
         // function 
@@ -215,7 +230,9 @@
           
         {
           //print("JS: QDomComment.prototype.setData");
-          return this.__PROXY__.setData(...args);
+          
+              return this.__PROXY__.setData(...args);
+            
         };
     
         // function 
@@ -223,7 +240,9 @@
           
         {
           //print("JS: QDomComment.prototype.operator_assign");
-          return this.__PROXY__.operator_assign(...args);
+          
+              return this.__PROXY__.operator_assign(...args);
+            
         };
     
         // function 
@@ -231,11 +250,23 @@
           
         {
           //print("JS: QDomComment.prototype.nodeType");
-          return this.__PROXY__.nodeType(...args);
+          
+              return this.__PROXY__.nodeType(...args);
+            
         };
     
 
       // static functions:
+      QDomComment.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QDomComment.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QDomComment.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

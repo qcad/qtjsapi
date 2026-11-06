@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGraphicsDropShadowEffect);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGraphicsDropShadowEffect);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QGraphicsDropShadowEffect.prototype = new QGraphicsDropShadowEffect_BaseJs(engine);
       //QGraphicsDropShadowEffect.prototype = new QGraphicsDropShadowEffect_Wrapper(engine);
       QGraphicsDropShadowEffect.prototype = new Object();
+
 
       QGraphicsDropShadowEffect.prototype.toString = function() {
           //return "QGraphicsDropShadowEffect [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -140,8 +141,188 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
 
       // functions:
       
+        // function 
+        QGraphicsDropShadowEffect.prototype.boundingRect = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.boundingRect");
+          
+              return this.__PROXY__.boundingRect(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.isEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.isEnabled");
+          
+              return this.__PROXY__.isEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.setEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.setEnabled");
+          
+              return this.__PROXY__.setEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.update = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.update");
+          
+              return this.__PROXY__.update(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.boundingRectFor = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.boundingRectFor");
+          
+              return this.__PROXY__.boundingRectFor(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.offset = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.offset");
+          
+              return this.__PROXY__.offset(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.setOffset = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.setOffset");
+          
+              return this.__PROXY__.setOffset(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.setXOffset = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.setXOffset");
+          
+              return this.__PROXY__.setXOffset(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.setYOffset = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.setYOffset");
+          
+              return this.__PROXY__.setYOffset(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.setBlurRadius = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.setBlurRadius");
+          
+              return this.__PROXY__.setBlurRadius(...args);
+            
+        };
+    
+        // function 
+        QGraphicsDropShadowEffect.prototype.setColor = function(...args) 
+          
+        {
+          //print("JS: QGraphicsDropShadowEffect.prototype.setColor");
+          
+              return this.__PROXY__.setColor(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QGraphicsDropShadowEffect.prototype, 'xOffset', {
+              get: function() {
+                  
+                      return this.__PROXY__.xOffset;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setXOffset(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGraphicsDropShadowEffect.prototype, 'yOffset', {
+              get: function() {
+                  
+                      return this.__PROXY__.yOffset;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setYOffset(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGraphicsDropShadowEffect.prototype, 'blurRadius', {
+              get: function() {
+                  
+                      return this.__PROXY__.blurRadius;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setBlurRadius(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGraphicsDropShadowEffect.prototype, 'color', {
+              get: function() {
+                  
+                      return this.__PROXY__.color;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setColor(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QGraphicsDropShadowEffect.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGraphicsDropShadowEffect.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGraphicsDropShadowEffect.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -160,4 +341,7 @@ QGraphicsDropShadowEffect.PadToEffectiveBoundingRect = QGraphicsDropShadowEffect
       //  return this.wrapper.destr();
       //};
 
+      QGraphicsDropShadowEffect.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

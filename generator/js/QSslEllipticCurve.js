@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSslEllipticCurve);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslEllipticCurve);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSslEllipticCurve.prototype = new QSslEllipticCurve_BaseJs(engine);
       //QSslEllipticCurve.prototype = new QSslEllipticCurve_Wrapper(engine);
       QSslEllipticCurve.prototype = new Object();
+
 
       QSslEllipticCurve.prototype.toString = function() {
           //return "QSslEllipticCurve [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,86 @@
 
       // functions:
       
+        // function 
+        QSslEllipticCurve.prototype.fromShortName = function(...args) 
+          
+        {
+          //print("JS: QSslEllipticCurve.prototype.fromShortName");
+          
+              return this.__PROXY__.fromShortName(...args);
+            
+        };
+    
+        // function 
+        QSslEllipticCurve.prototype.fromLongName = function(...args) 
+          
+        {
+          //print("JS: QSslEllipticCurve.prototype.fromLongName");
+          
+              return this.__PROXY__.fromLongName(...args);
+            
+        };
+    
+        // function 
+        QSslEllipticCurve.prototype.shortName = function(...args) 
+          
+        {
+          //print("JS: QSslEllipticCurve.prototype.shortName");
+          
+              return this.__PROXY__.shortName(...args);
+            
+        };
+    
+        // function 
+        QSslEllipticCurve.prototype.longName = function(...args) 
+          
+        {
+          //print("JS: QSslEllipticCurve.prototype.longName");
+          
+              return this.__PROXY__.longName(...args);
+            
+        };
+    
+        // function 
+        QSslEllipticCurve.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QSslEllipticCurve.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QSslEllipticCurve.prototype.isTlsNamedCurve = function(...args) 
+          
+        {
+          //print("JS: QSslEllipticCurve.prototype.isTlsNamedCurve");
+          
+              return this.__PROXY__.isTlsNamedCurve(...args);
+            
+        };
+    
+        // function 
+        QSslEllipticCurve.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QSslEllipticCurve.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        QSslEllipticCurve.prototype.operator_not_assign = function(...args) 
+          
+        {
+          //print("JS: QSslEllipticCurve.prototype.operator_not_assign");
+          
+              return this.__PROXY__.operator_not_assign(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -238,6 +319,16 @@
   }
   
         };
+      QSslEllipticCurve.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSslEllipticCurve.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSslEllipticCurve.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -256,4 +347,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QSslEllipticCurve.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

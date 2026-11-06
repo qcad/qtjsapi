@@ -17165,6 +17165,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17849,6 +17856,13 @@ int a1_cpp;
               QFileDialog_Wrapper::finishedEmitter(
                 int result
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("finished(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: result (int)
@@ -17878,6 +17892,13 @@ int a1_cpp;
               QFileDialog_Wrapper::acceptedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("accepted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -17898,6 +17919,13 @@ int a1_cpp;
               QFileDialog_Wrapper::rejectedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("rejected()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -20959,6 +20987,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::fileSelectedEmitter(
                 const QString& file
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("fileSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: file (QString)
@@ -20988,6 +21023,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::filesSelectedEmitter(
                 const QStringList& files
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("filesSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: files (QStringList)
@@ -21017,6 +21059,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::currentChangedEmitter(
                 const QString& path
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("currentChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: path (QString)
@@ -21046,6 +21095,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::directoryEnteredEmitter(
                 const QString& directory
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("directoryEntered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: directory (QString)
@@ -21075,6 +21131,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::urlSelectedEmitter(
                 const QUrl& url
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("urlSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: url (QUrl)
@@ -21104,6 +21167,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::urlsSelectedEmitter(
                 const QList<QUrl>& urls
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("urlsSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: urls (QList<QUrl>)
@@ -21133,6 +21203,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::currentUrlChangedEmitter(
                 const QUrl& url
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("currentUrlChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: url (QUrl)
@@ -21162,6 +21239,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::directoryUrlEnteredEmitter(
                 const QUrl& directory
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("directoryUrlEntered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: directory (QUrl)
@@ -21191,6 +21275,13 @@ bool a1_cpp;
               QFileDialog_Wrapper::filterSelectedEmitter(
                 const QString& filter
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDialog_Wrapper::staticMetaObject.indexOfSignal("filterSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: filter (QString)

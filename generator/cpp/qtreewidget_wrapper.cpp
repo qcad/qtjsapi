@@ -19792,6 +19792,13 @@ bool a1_cpp;
               QTreeWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -25203,6 +25210,13 @@ QModelIndex a1_cpp;
               QTreeWidget_Wrapper::pressedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("pressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -25232,6 +25246,13 @@ QModelIndex a1_cpp;
               QTreeWidget_Wrapper::clickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("clicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -25261,6 +25282,13 @@ QModelIndex a1_cpp;
               QTreeWidget_Wrapper::doubleClickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("doubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -25290,6 +25318,13 @@ QModelIndex a1_cpp;
               QTreeWidget_Wrapper::activatedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("activated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -25319,6 +25354,13 @@ QModelIndex a1_cpp;
               QTreeWidget_Wrapper::enteredEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("entered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -28864,6 +28906,13 @@ QList<int> a3_cpp;
               QTreeWidget_Wrapper::expandedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("expanded(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -28893,6 +28942,13 @@ QList<int> a3_cpp;
               QTreeWidget_Wrapper::collapsedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("collapsed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -32574,6 +32630,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemPressedEmitter(
                 QTreeWidgetItem* item, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemPressed(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTreeWidgetItem)
@@ -32612,6 +32675,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemClickedEmitter(
                 QTreeWidgetItem* item, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemClicked(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTreeWidgetItem)
@@ -32650,6 +32720,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemDoubleClickedEmitter(
                 QTreeWidgetItem* item, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemDoubleClicked(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTreeWidgetItem)
@@ -32688,6 +32765,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemActivatedEmitter(
                 QTreeWidgetItem* item, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemActivated(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTreeWidgetItem)
@@ -32726,6 +32810,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemEnteredEmitter(
                 QTreeWidgetItem* item, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemEntered(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTreeWidgetItem)
@@ -32764,6 +32855,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemChangedEmitter(
                 QTreeWidgetItem* item, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTreeWidgetItem)
@@ -32802,6 +32900,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemExpandedEmitter(
                 QTreeWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemExpanded(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTreeWidgetItem)
@@ -32831,6 +32936,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemCollapsedEmitter(
                 QTreeWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemCollapsed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTreeWidgetItem)
@@ -32860,6 +32972,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::currentItemChangedEmitter(
                 QTreeWidgetItem* current, QTreeWidgetItem* previous
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("currentItemChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: current (QTreeWidgetItem)
@@ -32898,6 +33017,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               QTreeWidget_Wrapper::itemSelectionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTreeWidget_Wrapper::staticMetaObject.indexOfSignal("itemSelectionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTreeWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QInputEvent.prototype = new QInputEvent_BaseJs(engine);
       //QInputEvent.prototype = new QInputEvent_Wrapper(engine);
       QInputEvent.prototype = new Object();
+
 
       QInputEvent.prototype.toString = function() {
           //return "QInputEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -278,7 +279,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -286,7 +289,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -294,7 +299,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -302,7 +309,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -310,7 +319,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -318,7 +329,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -326,7 +339,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -334,7 +349,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -342,7 +359,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -350,7 +369,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -358,7 +379,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -366,7 +389,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.modifiers");
-          return this.__PROXY__.modifiers(...args);
+          
+              return this.__PROXY__.modifiers(...args);
+            
         };
     
         // function 
@@ -374,7 +399,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.setModifiers");
-          return this.__PROXY__.setModifiers(...args);
+          
+              return this.__PROXY__.setModifiers(...args);
+            
         };
     
         // function 
@@ -382,7 +409,9 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.timestamp");
-          return this.__PROXY__.timestamp(...args);
+          
+              return this.__PROXY__.timestamp(...args);
+            
         };
     
         // function 
@@ -390,11 +419,23 @@ QInputEvent.MaxUser = QInputEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QInputEvent.prototype.setTimestamp");
-          return this.__PROXY__.setTimestamp(...args);
+          
+              return this.__PROXY__.setTimestamp(...args);
+            
         };
     
 
       // static functions:
+      QInputEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QInputEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QInputEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

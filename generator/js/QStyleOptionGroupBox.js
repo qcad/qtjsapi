@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionGroupBox);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionGroupBox);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionGroupBox);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionGroupBox.prototype = new QStyleOptionGroupBox_BaseJs(engine);
       //QStyleOptionGroupBox.prototype = new QStyleOptionGroupBox_Wrapper(engine);
       QStyleOptionGroupBox.prototype = new Object();
+
 
       QStyleOptionGroupBox.prototype.toString = function() {
           //return "QStyleOptionGroupBox [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -154,8 +155,28 @@
 
       // functions:
       
+        // function 
+        QStyleOptionGroupBox.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionGroupBox.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionGroupBox.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionGroupBox.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionGroupBox.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -174,4 +195,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionGroupBox.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

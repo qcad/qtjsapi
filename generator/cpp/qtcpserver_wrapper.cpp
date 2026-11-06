@@ -2587,6 +2587,13 @@ QNetworkProxy a1_cpp;
               QTcpServer_Wrapper::newConnectionEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTcpServer_Wrapper::staticMetaObject.indexOfSignal("newConnection()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTcpServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2607,6 +2614,13 @@ QNetworkProxy a1_cpp;
               QTcpServer_Wrapper::acceptErrorEmitter(
                 QAbstractSocket::SocketError socketError
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTcpServer_Wrapper::staticMetaObject.indexOfSignal("acceptError(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTcpServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: socketError (QAbstractSocket::SocketError)

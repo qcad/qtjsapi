@@ -3800,6 +3800,13 @@ int a5_cpp;
               QScreen_Wrapper::geometryChangedEmitter(
                 const QRect& geometry
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("geometryChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: geometry (QRect)
@@ -3829,6 +3836,13 @@ int a5_cpp;
               QScreen_Wrapper::availableGeometryChangedEmitter(
                 const QRect& geometry
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("availableGeometryChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: geometry (QRect)
@@ -3858,6 +3872,13 @@ int a5_cpp;
               QScreen_Wrapper::physicalSizeChangedEmitter(
                 const QSizeF& size
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("physicalSizeChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: size (QSizeF)
@@ -3887,6 +3908,13 @@ int a5_cpp;
               QScreen_Wrapper::physicalDotsPerInchChangedEmitter(
                 qreal dpi
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("physicalDotsPerInchChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: dpi (qreal)
@@ -3916,6 +3944,13 @@ int a5_cpp;
               QScreen_Wrapper::logicalDotsPerInchChangedEmitter(
                 qreal dpi
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("logicalDotsPerInchChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: dpi (qreal)
@@ -3945,6 +3980,13 @@ int a5_cpp;
               QScreen_Wrapper::virtualGeometryChangedEmitter(
                 const QRect& rect
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("virtualGeometryChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: rect (QRect)
@@ -3974,6 +4016,13 @@ int a5_cpp;
               QScreen_Wrapper::primaryOrientationChangedEmitter(
                 Qt::ScreenOrientation orientation
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("primaryOrientationChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::ScreenOrientation)
@@ -4003,6 +4052,13 @@ int a5_cpp;
               QScreen_Wrapper::orientationChangedEmitter(
                 Qt::ScreenOrientation orientation
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("orientationChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::ScreenOrientation)
@@ -4032,6 +4088,13 @@ int a5_cpp;
               QScreen_Wrapper::refreshRateChangedEmitter(
                 qreal refreshRate
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScreen_Wrapper::staticMetaObject.indexOfSignal("refreshRateChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: refreshRate (qreal)

@@ -4532,6 +4532,13 @@ char a1_cpp;
               QProcess_Wrapper::readyReadEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("readyRead()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4552,6 +4559,13 @@ char a1_cpp;
               QProcess_Wrapper::channelReadyReadEmitter(
                 int channel
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("channelReadyRead(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: channel (int)
@@ -4581,6 +4595,13 @@ char a1_cpp;
               QProcess_Wrapper::bytesWrittenEmitter(
                 qint64 bytes
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("bytesWritten(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: bytes (qint64)
@@ -4610,6 +4631,13 @@ char a1_cpp;
               QProcess_Wrapper::channelBytesWrittenEmitter(
                 int channel, qint64 bytes
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("channelBytesWritten(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: channel (int)
@@ -4648,6 +4676,13 @@ char a1_cpp;
               QProcess_Wrapper::aboutToCloseEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("aboutToClose()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4668,6 +4703,13 @@ char a1_cpp;
               QProcess_Wrapper::readChannelFinishedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("readChannelFinished()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -7539,6 +7581,13 @@ int a1_cpp;
               QProcess_Wrapper::finishedEmitter(
                 int exitCode, QProcess::ExitStatus exitStatus
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("finished(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: exitCode (int)
@@ -7577,6 +7626,13 @@ int a1_cpp;
               QProcess_Wrapper::errorOccurredEmitter(
                 QProcess::ProcessError error
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("errorOccurred(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: error (QProcess::ProcessError)
@@ -7606,6 +7662,13 @@ int a1_cpp;
               QProcess_Wrapper::readyReadStandardOutputEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("readyReadStandardOutput()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -7626,6 +7689,13 @@ int a1_cpp;
               QProcess_Wrapper::readyReadStandardErrorEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QProcess_Wrapper::staticMetaObject.indexOfSignal("readyReadStandardError()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QProcess_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

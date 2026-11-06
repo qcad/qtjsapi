@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionComplex);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionComplex);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionComplex);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionComplex.prototype = new QStyleOptionComplex_BaseJs(engine);
       //QStyleOptionComplex.prototype = new QStyleOptionComplex_Wrapper(engine);
       QStyleOptionComplex.prototype = new Object();
+
 
       QStyleOptionComplex.prototype.toString = function() {
           //return "QStyleOptionComplex [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -183,8 +184,38 @@ QStyleOptionComplex.SO_ComplexCustomBase = QStyleOptionComplex_Wrapper.SO_Comple
 
       // functions:
       
+        // function 
+        QStyleOptionComplex.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionComplex.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionComplex.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionComplex.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionComplex.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionComplex.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionComplex.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -203,4 +234,7 @@ QStyleOptionComplex.SO_ComplexCustomBase = QStyleOptionComplex_Wrapper.SO_Comple
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionComplex.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

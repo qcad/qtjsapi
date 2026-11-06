@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionToolBar);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionToolBar);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionToolBar);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionToolBar.prototype = new QStyleOptionToolBar_BaseJs(engine);
       //QStyleOptionToolBar.prototype = new QStyleOptionToolBar_Wrapper(engine);
       QStyleOptionToolBar.prototype = new Object();
+
 
       QStyleOptionToolBar.prototype.toString = function() {
           //return "QStyleOptionToolBar [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -192,8 +193,38 @@ QStyleOptionToolBar.Movable = QStyleOptionToolBar_Wrapper.Movable;
 
       // functions:
       
+        // function 
+        QStyleOptionToolBar.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionToolBar.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionToolBar.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionToolBar.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionToolBar.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionToolBar.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionToolBar.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -212,4 +243,7 @@ QStyleOptionToolBar.Movable = QStyleOptionToolBar_Wrapper.Movable;
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionToolBar.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

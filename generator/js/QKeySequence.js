@@ -190,15 +190,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QKeySequence.prototype = new QKeySequence_BaseJs(engine);
       //QKeySequence.prototype = new QKeySequence_Wrapper(engine);
       QKeySequence.prototype = new Object();
+
 
       
         // function with alias name in CPP wrapper:
@@ -320,7 +321,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.count");
-          return this.__PROXY__.count(...args);
+          
+              return this.__PROXY__.count(...args);
+            
         };
     
         // function 
@@ -328,7 +331,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.isEmpty");
-          return this.__PROXY__.isEmpty(...args);
+          
+              return this.__PROXY__.isEmpty(...args);
+            
         };
     
         // function 
@@ -336,7 +341,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.fromString");
-          return this.__PROXY__.fromString(...args);
+          
+              return this.__PROXY__.fromString(...args);
+            
         };
     
         // function 
@@ -344,7 +351,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.listFromString");
-          return this.__PROXY__.listFromString(...args);
+          
+              return this.__PROXY__.listFromString(...args);
+            
         };
     
         // function 
@@ -352,7 +361,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.listToString");
-          return this.__PROXY__.listToString(...args);
+          
+              return this.__PROXY__.listToString(...args);
+            
         };
     
         // function 
@@ -360,7 +371,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.matches");
-          return this.__PROXY__.matches(...args);
+          
+              return this.__PROXY__.matches(...args);
+            
         };
     
         // function 
@@ -368,7 +381,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.mnemonic");
-          return this.__PROXY__.mnemonic(...args);
+          
+              return this.__PROXY__.mnemonic(...args);
+            
         };
     
         // function 
@@ -376,7 +391,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.keyBindings");
-          return this.__PROXY__.keyBindings(...args);
+          
+              return this.__PROXY__.keyBindings(...args);
+            
         };
     
         // function 
@@ -384,7 +401,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -392,7 +411,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.isDetached");
-          return this.__PROXY__.isDetached(...args);
+          
+              return this.__PROXY__.isDetached(...args);
+            
         };
     
         // function 
@@ -400,7 +421,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.decodeString");
-          return this.__PROXY__.decodeString(...args);
+          
+              return this.__PROXY__.decodeString(...args);
+            
         };
     
         // function 
@@ -408,7 +431,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.encodeString");
-          return this.__PROXY__.encodeString(...args);
+          
+              return this.__PROXY__.encodeString(...args);
+            
         };
     
         // function 
@@ -416,7 +441,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.assign");
-          return this.__PROXY__.assign(...args);
+          
+              return this.__PROXY__.assign(...args);
+            
         };
     
         // function 
@@ -424,7 +451,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.setKey");
-          return this.__PROXY__.setKey(...args);
+          
+              return this.__PROXY__.setKey(...args);
+            
         };
     
         // function 
@@ -432,7 +461,9 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           
         {
           //print("JS: QKeySequence.prototype.operator");
-          return this.__PROXY__.operator(...args);
+          
+              return this.__PROXY__.operator(...args);
+            
         };
     
 
@@ -598,6 +629,16 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
           //print("JS: QKeySequence.encodeString");
           
         };
+      QKeySequence.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QKeySequence.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QKeySequence.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

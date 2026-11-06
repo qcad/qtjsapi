@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSwipeGesture);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSwipeGesture);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSwipeGesture.prototype = new QSwipeGesture_BaseJs(engine);
       //QSwipeGesture.prototype = new QSwipeGesture_Wrapper(engine);
       QSwipeGesture.prototype = new Object();
+
 
       QSwipeGesture.prototype.toString = function() {
           //return "QSwipeGesture [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,8 +130,161 @@
 
       // functions:
       
+        // function 
+        QSwipeGesture.prototype.setHotSpot = function(...args) 
+          
+        {
+          //print("JS: QSwipeGesture.prototype.setHotSpot");
+          
+              return this.__PROXY__.setHotSpot(...args);
+            
+        };
+    
+        // function 
+        QSwipeGesture.prototype.unsetHotSpot = function(...args) 
+          
+        {
+          //print("JS: QSwipeGesture.prototype.unsetHotSpot");
+          
+              return this.__PROXY__.unsetHotSpot(...args);
+            
+        };
+    
+        // function 
+        QSwipeGesture.prototype.setGestureCancelPolicy = function(...args) 
+          
+        {
+          //print("JS: QSwipeGesture.prototype.setGestureCancelPolicy");
+          
+              return this.__PROXY__.setGestureCancelPolicy(...args);
+            
+        };
+    
+        // function 
+        QSwipeGesture.prototype.Q_DECLARE_PRIVATE = function(...args) 
+          
+        {
+          //print("JS: QSwipeGesture.prototype.Q_DECLARE_PRIVATE");
+          
+              return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
+            
+        };
+    
+        // function 
+        QSwipeGesture.prototype.horizontalDirection = function(...args) 
+          
+        {
+          //print("JS: QSwipeGesture.prototype.horizontalDirection");
+          
+              return this.__PROXY__.horizontalDirection(...args);
+            
+        };
+    
+        // function 
+        QSwipeGesture.prototype.verticalDirection = function(...args) 
+          
+        {
+          //print("JS: QSwipeGesture.prototype.verticalDirection");
+          
+              return this.__PROXY__.verticalDirection(...args);
+            
+        };
+    
+        // function 
+        QSwipeGesture.prototype.swipeAngle = function(...args) 
+          
+        {
+          //print("JS: QSwipeGesture.prototype.swipeAngle");
+          
+              return this.__PROXY__.swipeAngle(...args);
+            
+        };
+    
+        // function 
+        QSwipeGesture.prototype.setSwipeAngle = function(...args) 
+          
+        {
+          //print("JS: QSwipeGesture.prototype.setSwipeAngle");
+          
+              return this.__PROXY__.setSwipeAngle(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QSwipeGesture.prototype, 'state', {
+              get: function() {
+                  
+                      return this.__PROXY__.state;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QSwipeGesture.prototype, 'gestureType', {
+              get: function() {
+                  
+                      return this.__PROXY__.gestureType;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QSwipeGesture.prototype, 'gestureCancelPolicy', {
+              get: function() {
+                  
+                      return this.__PROXY__.gestureCancelPolicy;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setGestureCancelPolicy(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QSwipeGesture.prototype, 'hotSpot', {
+              get: function() {
+                  
+                      return this.__PROXY__.hotSpot;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setHotSpot(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QSwipeGesture.prototype, 'hasHotSpot', {
+              get: function() {
+                  
+                      return this.__PROXY__.hasHotSpot;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QSwipeGesture.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSwipeGesture.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSwipeGesture.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -149,4 +303,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QSwipeGesture.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

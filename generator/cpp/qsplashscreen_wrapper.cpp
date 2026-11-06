@@ -15860,6 +15860,13 @@ bool a1_cpp;
               QSplashScreen_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSplashScreen_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSplashScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -16569,6 +16576,13 @@ QColor a3_cpp;
               QSplashScreen_Wrapper::messageChangedEmitter(
                 const QString& message
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSplashScreen_Wrapper::staticMetaObject.indexOfSignal("messageChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSplashScreen_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: message (QString)

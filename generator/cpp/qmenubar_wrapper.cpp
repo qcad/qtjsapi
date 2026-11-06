@@ -15639,6 +15639,13 @@ bool a1_cpp;
               QMenuBar_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMenuBar_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMenuBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17530,6 +17537,13 @@ bool a1_cpp;
               QMenuBar_Wrapper::triggeredEmitter(
                 QAction* action
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMenuBar_Wrapper::staticMetaObject.indexOfSignal("triggered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMenuBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: action (QAction)
@@ -17559,6 +17573,13 @@ bool a1_cpp;
               QMenuBar_Wrapper::hoveredEmitter(
                 QAction* action
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMenuBar_Wrapper::staticMetaObject.indexOfSignal("hovered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMenuBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: action (QAction)

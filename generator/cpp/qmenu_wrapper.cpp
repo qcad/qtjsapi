@@ -16065,6 +16065,13 @@ bool a1_cpp;
               QMenu_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMenu_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMenu_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -19200,6 +19207,13 @@ bool a1_cpp;
               QMenu_Wrapper::aboutToShowEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMenu_Wrapper::staticMetaObject.indexOfSignal("aboutToShow()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMenu_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -19220,6 +19234,13 @@ bool a1_cpp;
               QMenu_Wrapper::aboutToHideEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMenu_Wrapper::staticMetaObject.indexOfSignal("aboutToHide()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMenu_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -19240,6 +19261,13 @@ bool a1_cpp;
               QMenu_Wrapper::triggeredEmitter(
                 QAction* action
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMenu_Wrapper::staticMetaObject.indexOfSignal("triggered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMenu_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: action (QAction)
@@ -19269,6 +19297,13 @@ bool a1_cpp;
               QMenu_Wrapper::hoveredEmitter(
                 QAction* action
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMenu_Wrapper::staticMetaObject.indexOfSignal("hovered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMenu_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: action (QAction)

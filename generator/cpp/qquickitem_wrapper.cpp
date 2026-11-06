@@ -7947,6 +7947,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::childrenRectChangedEmitter(
                 const QRectF& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("childrenRectChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QRectF)
@@ -7976,6 +7983,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::baselineOffsetChangedEmitter(
                 qreal a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("baselineOffsetChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (qreal)
@@ -8005,6 +8019,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::stateChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("stateChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -8034,6 +8055,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::focusChangedEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("focusChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)
@@ -8063,6 +8091,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::activeFocusChangedEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("activeFocusChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)
@@ -8092,6 +8127,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::focusPolicyChangedEmitter(
                 Qt::FocusPolicy a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("focusPolicyChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (Qt::FocusPolicy)
@@ -8121,6 +8163,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::activeFocusOnTabChangedEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("activeFocusOnTabChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)
@@ -8150,6 +8199,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::parentChangedEmitter(
                 QQuickItem* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("parentChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QQuickItem)
@@ -8179,6 +8235,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::transformOriginChangedEmitter(
                 QQuickItem::TransformOrigin a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("transformOriginChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QQuickItem::TransformOrigin)
@@ -8208,6 +8271,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::smoothChangedEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("smoothChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)
@@ -8237,6 +8307,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::antialiasingChangedEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("antialiasingChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)
@@ -8266,6 +8343,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::clipChangedEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("clipChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)
@@ -8295,6 +8379,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::childrenChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("childrenChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8315,6 +8406,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::opacityChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("opacityChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8335,6 +8433,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::enabledChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("enabledChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8355,6 +8460,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::visibleChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("visibleChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8375,6 +8487,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::visibleChildrenChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("visibleChildrenChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8395,6 +8514,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::rotationChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("rotationChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8415,6 +8541,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::scaleChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("scaleChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8435,6 +8568,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::xChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("xChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8455,6 +8595,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::yChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("yChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8475,6 +8622,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::widthChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("widthChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8495,6 +8649,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::heightChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("heightChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8515,6 +8676,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::zChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("zChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8535,6 +8703,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::implicitWidthChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("implicitWidthChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8555,6 +8730,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::implicitHeightChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("implicitHeightChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8575,6 +8757,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::containmentMaskChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("containmentMaskChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8595,6 +8784,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::paletteChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("paletteChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8615,6 +8811,13 @@ Qt::InputMethodQuery a1_cpp;
               QQuickItem_Wrapper::paletteCreatedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickItem_Wrapper::staticMetaObject.indexOfSignal("paletteCreated()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickItem_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

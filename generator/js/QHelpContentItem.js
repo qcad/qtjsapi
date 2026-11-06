@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QHelpContentItem);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QHelpContentItem.prototype = new QHelpContentItem_BaseJs(engine);
       //QHelpContentItem.prototype = new QHelpContentItem_Wrapper(engine);
       QHelpContentItem.prototype = new Object();
+
 
       QHelpContentItem.prototype.toString = function() {
           //return "QHelpContentItem [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,88 @@
 
       // functions:
       
+        // function 
+        QHelpContentItem.prototype.child = function(...args) 
+          
+        {
+          //print("JS: QHelpContentItem.prototype.child");
+          
+              return this.__PROXY__.child(...args);
+            
+        };
+    
+        // function 
+        QHelpContentItem.prototype.childCount = function(...args) 
+          
+        {
+          //print("JS: QHelpContentItem.prototype.childCount");
+          
+              return this.__PROXY__.childCount(...args);
+            
+        };
+    
+        // function 
+        QHelpContentItem.prototype.title = function(...args) 
+          
+        {
+          //print("JS: QHelpContentItem.prototype.title");
+          
+              return this.__PROXY__.title(...args);
+            
+        };
+    
+        // function 
+        QHelpContentItem.prototype.url = function(...args) 
+          
+        {
+          //print("JS: QHelpContentItem.prototype.url");
+          
+              return this.__PROXY__.url(...args);
+            
+        };
+    
+        // function 
+        QHelpContentItem.prototype.row = function(...args) 
+          
+        {
+          //print("JS: QHelpContentItem.prototype.row");
+          
+              return this.__PROXY__.row(...args);
+            
+        };
+    
+        // function 
+        QHelpContentItem.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QHelpContentItem.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QHelpContentItem.prototype.childPosition = function(...args) 
+          
+        {
+          //print("JS: QHelpContentItem.prototype.childPosition");
+          
+              return this.__PROXY__.childPosition(...args);
+            
+        };
+    
 
       // static functions:
+      QHelpContentItem.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QHelpContentItem.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QHelpContentItem.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +196,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QHelpContentItem.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionToolBox);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionToolBox);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionToolBox);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionToolBox.prototype = new QStyleOptionToolBox_BaseJs(engine);
       //QStyleOptionToolBox.prototype = new QStyleOptionToolBox_Wrapper(engine);
       QStyleOptionToolBox.prototype = new Object();
+
 
       QStyleOptionToolBox.prototype.toString = function() {
           //return "QStyleOptionToolBox [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -193,8 +194,38 @@ QStyleOptionToolBox.PreviousIsSelected = QStyleOptionToolBox_Wrapper.PreviousIsS
 
       // functions:
       
+        // function 
+        QStyleOptionToolBox.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionToolBox.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionToolBox.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionToolBox.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionToolBox.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionToolBox.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionToolBox.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -213,4 +244,7 @@ QStyleOptionToolBox.PreviousIsSelected = QStyleOptionToolBox_Wrapper.PreviousIsS
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionToolBox.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

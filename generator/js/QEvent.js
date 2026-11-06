@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QEvent.prototype = new QEvent_BaseJs(engine);
       //QEvent.prototype = new QEvent_Wrapper(engine);
       QEvent.prototype = new Object();
+
 
       QEvent.prototype.toString = function() {
           //return "QEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -298,6 +299,126 @@ QEvent.MaxUser = QEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        QEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.spontaneous");
+          
+              return this.__PROXY__.spontaneous(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.setAccepted");
+          
+              return this.__PROXY__.setAccepted(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.isAccepted");
+          
+              return this.__PROXY__.isAccepted(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.accept");
+          
+              return this.__PROXY__.accept(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.ignore");
+          
+              return this.__PROXY__.ignore(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.isInputEvent");
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.isPointerEvent");
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.isSinglePointEvent");
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.registerEventType = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.registerEventType");
+          
+              return this.__PROXY__.registerEventType(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.clone");
+          
+              return this.__PROXY__.clone(...args);
+            
+        };
+    
+        // function 
+        QEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: QEvent.prototype.setSpontaneous");
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -329,6 +450,16 @@ QEvent.MaxUser = QEvent_Wrapper.MaxUser;
   }
   
         };
+      QEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -347,4 +478,7 @@ QEvent.MaxUser = QEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      QEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

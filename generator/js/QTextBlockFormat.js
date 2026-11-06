@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QTextBlockFormat);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QTextBlockFormat);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QTextBlockFormat.prototype = new QTextBlockFormat_BaseJs(engine);
       //QTextBlockFormat.prototype = new QTextBlockFormat_Wrapper(engine);
       QTextBlockFormat.prototype = new Object();
+
 
       QTextBlockFormat.prototype.toString = function() {
           //return "QTextBlockFormat [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -267,8 +268,698 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
 
       // functions:
       
+        // function 
+        QTextBlockFormat.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.merge = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.merge");
+          
+              return this.__PROXY__.merge(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.objectIndex = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.objectIndex");
+          
+              return this.__PROXY__.objectIndex(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setObjectIndex = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setObjectIndex");
+          
+              return this.__PROXY__.setObjectIndex(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.clearProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.clearProperty");
+          
+              return this.__PROXY__.clearProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.hasProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.hasProperty");
+          
+              return this.__PROXY__.hasProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.boolProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.boolProperty");
+          
+              return this.__PROXY__.boolProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.intProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.intProperty");
+          
+              return this.__PROXY__.intProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.doubleProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.doubleProperty");
+          
+              return this.__PROXY__.doubleProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.stringProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.stringProperty");
+          
+              return this.__PROXY__.stringProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.colorProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.colorProperty");
+          
+              return this.__PROXY__.colorProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.penProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.penProperty");
+          
+              return this.__PROXY__.penProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.brushProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.brushProperty");
+          
+              return this.__PROXY__.brushProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.lengthProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.lengthProperty");
+          
+              return this.__PROXY__.lengthProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.lengthVectorProperty = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.lengthVectorProperty");
+          
+              return this.__PROXY__.lengthVectorProperty(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.propertyCount = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.propertyCount");
+          
+              return this.__PROXY__.propertyCount(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setObjectType = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setObjectType");
+          
+              return this.__PROXY__.setObjectType(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.objectType = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.objectType");
+          
+              return this.__PROXY__.objectType(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isCharFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isCharFormat");
+          
+              return this.__PROXY__.isCharFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isBlockFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isBlockFormat");
+          
+              return this.__PROXY__.isBlockFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isListFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isListFormat");
+          
+              return this.__PROXY__.isListFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isFrameFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isFrameFormat");
+          
+              return this.__PROXY__.isFrameFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isImageFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isImageFormat");
+          
+              return this.__PROXY__.isImageFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isTableFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isTableFormat");
+          
+              return this.__PROXY__.isTableFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isTableCellFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isTableCellFormat");
+          
+              return this.__PROXY__.isTableCellFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.toBlockFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.toBlockFormat");
+          
+              return this.__PROXY__.toBlockFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.toCharFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.toCharFormat");
+          
+              return this.__PROXY__.toCharFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.toListFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.toListFormat");
+          
+              return this.__PROXY__.toListFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.toTableFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.toTableFormat");
+          
+              return this.__PROXY__.toTableFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.toFrameFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.toFrameFormat");
+          
+              return this.__PROXY__.toFrameFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.toImageFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.toImageFormat");
+          
+              return this.__PROXY__.toImageFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.toTableCellFormat = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.toTableCellFormat");
+          
+              return this.__PROXY__.toTableCellFormat(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setLayoutDirection = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setLayoutDirection");
+          
+              return this.__PROXY__.setLayoutDirection(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.layoutDirection = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.layoutDirection");
+          
+              return this.__PROXY__.layoutDirection(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setBackground = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setBackground");
+          
+              return this.__PROXY__.setBackground(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.background = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.background");
+          
+              return this.__PROXY__.background(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.clearBackground = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.clearBackground");
+          
+              return this.__PROXY__.clearBackground(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setForeground = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setForeground");
+          
+              return this.__PROXY__.setForeground(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.foreground = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.foreground");
+          
+              return this.__PROXY__.foreground(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.clearForeground = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.clearForeground");
+          
+              return this.__PROXY__.clearForeground(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setAlignment = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setAlignment");
+          
+              return this.__PROXY__.setAlignment(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.alignment = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.alignment");
+          
+              return this.__PROXY__.alignment(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setTopMargin = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setTopMargin");
+          
+              return this.__PROXY__.setTopMargin(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.topMargin = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.topMargin");
+          
+              return this.__PROXY__.topMargin(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setBottomMargin = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setBottomMargin");
+          
+              return this.__PROXY__.setBottomMargin(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.bottomMargin = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.bottomMargin");
+          
+              return this.__PROXY__.bottomMargin(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setLeftMargin = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setLeftMargin");
+          
+              return this.__PROXY__.setLeftMargin(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.leftMargin = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.leftMargin");
+          
+              return this.__PROXY__.leftMargin(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setRightMargin = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setRightMargin");
+          
+              return this.__PROXY__.setRightMargin(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.rightMargin = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.rightMargin");
+          
+              return this.__PROXY__.rightMargin(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setTextIndent = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setTextIndent");
+          
+              return this.__PROXY__.setTextIndent(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.textIndent = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.textIndent");
+          
+              return this.__PROXY__.textIndent(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setIndent = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setIndent");
+          
+              return this.__PROXY__.setIndent(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.indent = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.indent");
+          
+              return this.__PROXY__.indent(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setHeadingLevel = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setHeadingLevel");
+          
+              return this.__PROXY__.setHeadingLevel(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.headingLevel = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.headingLevel");
+          
+              return this.__PROXY__.headingLevel(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setLineHeight = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setLineHeight");
+          
+              return this.__PROXY__.setLineHeight(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.lineHeight = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.lineHeight");
+          
+              return this.__PROXY__.lineHeight(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.lineHeightType = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.lineHeightType");
+          
+              return this.__PROXY__.lineHeightType(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setNonBreakableLines = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setNonBreakableLines");
+          
+              return this.__PROXY__.setNonBreakableLines(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.nonBreakableLines = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.nonBreakableLines");
+          
+              return this.__PROXY__.nonBreakableLines(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.setPageBreakPolicy = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.setPageBreakPolicy");
+          
+              return this.__PROXY__.setPageBreakPolicy(...args);
+            
+        };
+    
+        // function 
+        QTextBlockFormat.prototype.pageBreakPolicy = function(...args) 
+          
+        {
+          //print("JS: QTextBlockFormat.prototype.pageBreakPolicy");
+          
+              return this.__PROXY__.pageBreakPolicy(...args);
+            
+        };
+    
 
       // static functions:
+      QTextBlockFormat.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QTextBlockFormat.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QTextBlockFormat.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -287,4 +978,7 @@ QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeigh
       //  return this.wrapper.destr();
       //};
 
+      QTextBlockFormat.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

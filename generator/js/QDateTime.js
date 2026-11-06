@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QDateTime.prototype = new QDateTime_BaseJs(engine);
       //QDateTime.prototype = new QDateTime_Wrapper(engine);
       QDateTime.prototype = new Object();
+
 
       QDateTime.getObjectType = function() {
         return RJSType_QDateTime.getIdStatic();
@@ -125,7 +126,9 @@
           
         {
           //print("JS: QDateTime.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -133,7 +136,9 @@
           
         {
           //print("JS: QDateTime.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -141,7 +146,9 @@
           
         {
           //print("JS: QDateTime.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -149,7 +156,9 @@
           
         {
           //print("JS: QDateTime.prototype.date");
-          return this.__PROXY__.date(...args);
+          
+              return this.__PROXY__.date(...args);
+            
         };
     
         // function 
@@ -157,7 +166,9 @@
           
         {
           //print("JS: QDateTime.prototype.time");
-          return this.__PROXY__.time(...args);
+          
+              return this.__PROXY__.time(...args);
+            
         };
     
         // function 
@@ -165,7 +176,9 @@
           
         {
           //print("JS: QDateTime.prototype.timeSpec");
-          return this.__PROXY__.timeSpec(...args);
+          
+              return this.__PROXY__.timeSpec(...args);
+            
         };
     
         // function 
@@ -173,7 +186,9 @@
           
         {
           //print("JS: QDateTime.prototype.offsetFromUtc");
-          return this.__PROXY__.offsetFromUtc(...args);
+          
+              return this.__PROXY__.offsetFromUtc(...args);
+            
         };
     
         // function 
@@ -181,7 +196,9 @@
           
         {
           //print("JS: QDateTime.prototype.timeZone");
-          return this.__PROXY__.timeZone(...args);
+          
+              return this.__PROXY__.timeZone(...args);
+            
         };
     
         // function 
@@ -189,7 +206,9 @@
           
         {
           //print("JS: QDateTime.prototype.timeZoneAbbreviation");
-          return this.__PROXY__.timeZoneAbbreviation(...args);
+          
+              return this.__PROXY__.timeZoneAbbreviation(...args);
+            
         };
     
         // function 
@@ -197,7 +216,9 @@
           
         {
           //print("JS: QDateTime.prototype.isDaylightTime");
-          return this.__PROXY__.isDaylightTime(...args);
+          
+              return this.__PROXY__.isDaylightTime(...args);
+            
         };
     
         // function 
@@ -205,7 +226,9 @@
           
         {
           //print("JS: QDateTime.prototype.toMSecsSinceEpoch");
-          return this.__PROXY__.toMSecsSinceEpoch(...args);
+          
+              return this.__PROXY__.toMSecsSinceEpoch(...args);
+            
         };
     
         // function 
@@ -213,7 +236,9 @@
           
         {
           //print("JS: QDateTime.prototype.toSecsSinceEpoch");
-          return this.__PROXY__.toSecsSinceEpoch(...args);
+          
+              return this.__PROXY__.toSecsSinceEpoch(...args);
+            
         };
     
         // function 
@@ -221,7 +246,9 @@
           
         {
           //print("JS: QDateTime.prototype.setDate");
-          return this.__PROXY__.setDate(...args);
+          
+              return this.__PROXY__.setDate(...args);
+            
         };
     
         // function 
@@ -229,7 +256,9 @@
           
         {
           //print("JS: QDateTime.prototype.setTime");
-          return this.__PROXY__.setTime(...args);
+          
+              return this.__PROXY__.setTime(...args);
+            
         };
     
         // function 
@@ -237,7 +266,9 @@
           
         {
           //print("JS: QDateTime.prototype.setTimeSpec");
-          return this.__PROXY__.setTimeSpec(...args);
+          
+              return this.__PROXY__.setTimeSpec(...args);
+            
         };
     
         // function 
@@ -245,7 +276,9 @@
           
         {
           //print("JS: QDateTime.prototype.setTimeZone");
-          return this.__PROXY__.setTimeZone(...args);
+          
+              return this.__PROXY__.setTimeZone(...args);
+            
         };
     
         // function 
@@ -253,7 +286,9 @@
           
         {
           //print("JS: QDateTime.prototype.setMSecsSinceEpoch");
-          return this.__PROXY__.setMSecsSinceEpoch(...args);
+          
+              return this.__PROXY__.setMSecsSinceEpoch(...args);
+            
         };
     
         // function 
@@ -261,7 +296,9 @@
           
         {
           //print("JS: QDateTime.prototype.setSecsSinceEpoch");
-          return this.__PROXY__.setSecsSinceEpoch(...args);
+          
+              return this.__PROXY__.setSecsSinceEpoch(...args);
+            
         };
     
         // function 
@@ -269,7 +306,9 @@
           
         {
           //print("JS: QDateTime.prototype.toString");
-          return this.__PROXY__.toString(...args);
+          
+              return this.__PROXY__.toString(...args);
+            
         };
     
         // function 
@@ -277,7 +316,9 @@
           
         {
           //print("JS: QDateTime.prototype.addDays");
-          return this.__PROXY__.addDays(...args);
+          
+              return this.__PROXY__.addDays(...args);
+            
         };
     
         // function 
@@ -285,7 +326,9 @@
           
         {
           //print("JS: QDateTime.prototype.addMonths");
-          return this.__PROXY__.addMonths(...args);
+          
+              return this.__PROXY__.addMonths(...args);
+            
         };
     
         // function 
@@ -293,7 +336,9 @@
           
         {
           //print("JS: QDateTime.prototype.addYears");
-          return this.__PROXY__.addYears(...args);
+          
+              return this.__PROXY__.addYears(...args);
+            
         };
     
         // function 
@@ -301,7 +346,9 @@
           
         {
           //print("JS: QDateTime.prototype.addSecs");
-          return this.__PROXY__.addSecs(...args);
+          
+              return this.__PROXY__.addSecs(...args);
+            
         };
     
         // function 
@@ -309,7 +356,9 @@
           
         {
           //print("JS: QDateTime.prototype.addMSecs");
-          return this.__PROXY__.addMSecs(...args);
+          
+              return this.__PROXY__.addMSecs(...args);
+            
         };
     
         // function 
@@ -317,7 +366,9 @@
           
         {
           //print("JS: QDateTime.prototype.toLocalTime");
-          return this.__PROXY__.toLocalTime(...args);
+          
+              return this.__PROXY__.toLocalTime(...args);
+            
         };
     
         // function 
@@ -325,7 +376,9 @@
           
         {
           //print("JS: QDateTime.prototype.toUTC");
-          return this.__PROXY__.toUTC(...args);
+          
+              return this.__PROXY__.toUTC(...args);
+            
         };
     
         // function 
@@ -333,7 +386,9 @@
           
         {
           //print("JS: QDateTime.prototype.toOffsetFromUtc");
-          return this.__PROXY__.toOffsetFromUtc(...args);
+          
+              return this.__PROXY__.toOffsetFromUtc(...args);
+            
         };
     
         // function 
@@ -341,7 +396,9 @@
           
         {
           //print("JS: QDateTime.prototype.toTimeZone");
-          return this.__PROXY__.toTimeZone(...args);
+          
+              return this.__PROXY__.toTimeZone(...args);
+            
         };
     
         // function 
@@ -349,7 +406,9 @@
           
         {
           //print("JS: QDateTime.prototype.daysTo");
-          return this.__PROXY__.daysTo(...args);
+          
+              return this.__PROXY__.daysTo(...args);
+            
         };
     
         // function 
@@ -357,7 +416,9 @@
           
         {
           //print("JS: QDateTime.prototype.secsTo");
-          return this.__PROXY__.secsTo(...args);
+          
+              return this.__PROXY__.secsTo(...args);
+            
         };
     
         // function 
@@ -365,7 +426,9 @@
           
         {
           //print("JS: QDateTime.prototype.msecsTo");
-          return this.__PROXY__.msecsTo(...args);
+          
+              return this.__PROXY__.msecsTo(...args);
+            
         };
     
         // function 
@@ -373,7 +436,9 @@
           
         {
           //print("JS: QDateTime.prototype.currentDateTime");
-          return this.__PROXY__.currentDateTime(...args);
+          
+              return this.__PROXY__.currentDateTime(...args);
+            
         };
     
         // function 
@@ -381,7 +446,9 @@
           
         {
           //print("JS: QDateTime.prototype.currentDateTimeUtc");
-          return this.__PROXY__.currentDateTimeUtc(...args);
+          
+              return this.__PROXY__.currentDateTimeUtc(...args);
+            
         };
     
         // function 
@@ -389,7 +456,9 @@
           
         {
           //print("JS: QDateTime.prototype.fromString");
-          return this.__PROXY__.fromString(...args);
+          
+              return this.__PROXY__.fromString(...args);
+            
         };
     
         // function 
@@ -397,7 +466,9 @@
           
         {
           //print("JS: QDateTime.prototype.fromMSecsSinceEpoch");
-          return this.__PROXY__.fromMSecsSinceEpoch(...args);
+          
+              return this.__PROXY__.fromMSecsSinceEpoch(...args);
+            
         };
     
         // function 
@@ -405,7 +476,9 @@
           
         {
           //print("JS: QDateTime.prototype.currentMSecsSinceEpoch");
-          return this.__PROXY__.currentMSecsSinceEpoch(...args);
+          
+              return this.__PROXY__.currentMSecsSinceEpoch(...args);
+            
         };
     
         // function 
@@ -413,7 +486,9 @@
           
         {
           //print("JS: QDateTime.prototype.currentSecsSinceEpoch");
-          return this.__PROXY__.currentSecsSinceEpoch(...args);
+          
+              return this.__PROXY__.currentSecsSinceEpoch(...args);
+            
         };
     
         // function 
@@ -421,7 +496,9 @@
           
         {
           //print("JS: QDateTime.prototype.operator_lessthan");
-          return this.__PROXY__.operator_lessthan(...args);
+          
+              return this.__PROXY__.operator_lessthan(...args);
+            
         };
     
 
@@ -666,6 +743,16 @@
   }
   
         };
+      QDateTime.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QDateTime.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QDateTime.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

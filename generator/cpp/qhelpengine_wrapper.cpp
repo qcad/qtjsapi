@@ -3818,6 +3818,13 @@ bool a1_cpp;
               QHelpEngine_Wrapper::setupStartedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpEngine_Wrapper::staticMetaObject.indexOfSignal("setupStarted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3838,6 +3845,13 @@ bool a1_cpp;
               QHelpEngine_Wrapper::setupFinishedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpEngine_Wrapper::staticMetaObject.indexOfSignal("setupFinished()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3858,6 +3872,13 @@ bool a1_cpp;
               QHelpEngine_Wrapper::warningEmitter(
                 const QString& msg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpEngine_Wrapper::staticMetaObject.indexOfSignal("warning(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: msg (QString)
@@ -3887,6 +3908,13 @@ bool a1_cpp;
               QHelpEngine_Wrapper::currentFilterChangedEmitter(
                 const QString& newFilter
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpEngine_Wrapper::staticMetaObject.indexOfSignal("currentFilterChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: newFilter (QString)
@@ -3916,6 +3944,13 @@ bool a1_cpp;
               QHelpEngine_Wrapper::readersAboutToBeInvalidatedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpEngine_Wrapper::staticMetaObject.indexOfSignal("readersAboutToBeInvalidated()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

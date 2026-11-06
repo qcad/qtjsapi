@@ -240,15 +240,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QRectF.prototype = new QRectF_BaseJs(engine);
       //QRectF.prototype = new QRectF_Wrapper(engine);
       QRectF.prototype = new Object();
+
 
       QRectF.prototype.toString = function() {
           //return "QRectF [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -285,7 +286,9 @@
           
         {
           //print("JS: QRectF.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -293,7 +296,9 @@
           
         {
           //print("JS: QRectF.prototype.isEmpty");
-          return this.__PROXY__.isEmpty(...args);
+          
+              return this.__PROXY__.isEmpty(...args);
+            
         };
     
         // function 
@@ -301,7 +306,9 @@
           
         {
           //print("JS: QRectF.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -309,7 +316,9 @@
           
         {
           //print("JS: QRectF.prototype.normalized");
-          return this.__PROXY__.normalized(...args);
+          
+              return this.__PROXY__.normalized(...args);
+            
         };
     
         // function 
@@ -317,7 +326,9 @@
           
         {
           //print("JS: QRectF.prototype.left");
-          return this.__PROXY__.left(...args);
+          
+              return this.__PROXY__.left(...args);
+            
         };
     
         // function 
@@ -325,7 +336,9 @@
           
         {
           //print("JS: QRectF.prototype.top");
-          return this.__PROXY__.top(...args);
+          
+              return this.__PROXY__.top(...args);
+            
         };
     
         // function 
@@ -333,7 +346,9 @@
           
         {
           //print("JS: QRectF.prototype.right");
-          return this.__PROXY__.right(...args);
+          
+              return this.__PROXY__.right(...args);
+            
         };
     
         // function 
@@ -341,7 +356,9 @@
           
         {
           //print("JS: QRectF.prototype.bottom");
-          return this.__PROXY__.bottom(...args);
+          
+              return this.__PROXY__.bottom(...args);
+            
         };
     
         // function 
@@ -349,7 +366,9 @@
           
         {
           //print("JS: QRectF.prototype.x");
-          return this.__PROXY__.x(...args);
+          
+              return this.__PROXY__.x(...args);
+            
         };
     
         // function 
@@ -357,7 +376,9 @@
           
         {
           //print("JS: QRectF.prototype.y");
-          return this.__PROXY__.y(...args);
+          
+              return this.__PROXY__.y(...args);
+            
         };
     
         // function 
@@ -365,7 +386,9 @@
           
         {
           //print("JS: QRectF.prototype.setLeft");
-          return this.__PROXY__.setLeft(...args);
+          
+              return this.__PROXY__.setLeft(...args);
+            
         };
     
         // function 
@@ -373,7 +396,9 @@
           
         {
           //print("JS: QRectF.prototype.setTop");
-          return this.__PROXY__.setTop(...args);
+          
+              return this.__PROXY__.setTop(...args);
+            
         };
     
         // function 
@@ -381,7 +406,9 @@
           
         {
           //print("JS: QRectF.prototype.setRight");
-          return this.__PROXY__.setRight(...args);
+          
+              return this.__PROXY__.setRight(...args);
+            
         };
     
         // function 
@@ -389,7 +416,9 @@
           
         {
           //print("JS: QRectF.prototype.setBottom");
-          return this.__PROXY__.setBottom(...args);
+          
+              return this.__PROXY__.setBottom(...args);
+            
         };
     
         // function 
@@ -397,7 +426,9 @@
           
         {
           //print("JS: QRectF.prototype.setX");
-          return this.__PROXY__.setX(...args);
+          
+              return this.__PROXY__.setX(...args);
+            
         };
     
         // function 
@@ -405,7 +436,9 @@
           
         {
           //print("JS: QRectF.prototype.setY");
-          return this.__PROXY__.setY(...args);
+          
+              return this.__PROXY__.setY(...args);
+            
         };
     
         // function 
@@ -413,7 +446,9 @@
           
         {
           //print("JS: QRectF.prototype.topLeft");
-          return this.__PROXY__.topLeft(...args);
+          
+              return this.__PROXY__.topLeft(...args);
+            
         };
     
         // function 
@@ -421,7 +456,9 @@
           
         {
           //print("JS: QRectF.prototype.bottomRight");
-          return this.__PROXY__.bottomRight(...args);
+          
+              return this.__PROXY__.bottomRight(...args);
+            
         };
     
         // function 
@@ -429,7 +466,9 @@
           
         {
           //print("JS: QRectF.prototype.topRight");
-          return this.__PROXY__.topRight(...args);
+          
+              return this.__PROXY__.topRight(...args);
+            
         };
     
         // function 
@@ -437,7 +476,9 @@
           
         {
           //print("JS: QRectF.prototype.bottomLeft");
-          return this.__PROXY__.bottomLeft(...args);
+          
+              return this.__PROXY__.bottomLeft(...args);
+            
         };
     
         // function 
@@ -445,7 +486,9 @@
           
         {
           //print("JS: QRectF.prototype.center");
-          return this.__PROXY__.center(...args);
+          
+              return this.__PROXY__.center(...args);
+            
         };
     
         // function 
@@ -453,7 +496,9 @@
           
         {
           //print("JS: QRectF.prototype.setTopLeft");
-          return this.__PROXY__.setTopLeft(...args);
+          
+              return this.__PROXY__.setTopLeft(...args);
+            
         };
     
         // function 
@@ -461,7 +506,9 @@
           
         {
           //print("JS: QRectF.prototype.setBottomRight");
-          return this.__PROXY__.setBottomRight(...args);
+          
+              return this.__PROXY__.setBottomRight(...args);
+            
         };
     
         // function 
@@ -469,7 +516,9 @@
           
         {
           //print("JS: QRectF.prototype.setTopRight");
-          return this.__PROXY__.setTopRight(...args);
+          
+              return this.__PROXY__.setTopRight(...args);
+            
         };
     
         // function 
@@ -477,7 +526,9 @@
           
         {
           //print("JS: QRectF.prototype.setBottomLeft");
-          return this.__PROXY__.setBottomLeft(...args);
+          
+              return this.__PROXY__.setBottomLeft(...args);
+            
         };
     
         // function 
@@ -485,7 +536,9 @@
           
         {
           //print("JS: QRectF.prototype.moveLeft");
-          return this.__PROXY__.moveLeft(...args);
+          
+              return this.__PROXY__.moveLeft(...args);
+            
         };
     
         // function 
@@ -493,7 +546,9 @@
           
         {
           //print("JS: QRectF.prototype.moveTop");
-          return this.__PROXY__.moveTop(...args);
+          
+              return this.__PROXY__.moveTop(...args);
+            
         };
     
         // function 
@@ -501,7 +556,9 @@
           
         {
           //print("JS: QRectF.prototype.moveRight");
-          return this.__PROXY__.moveRight(...args);
+          
+              return this.__PROXY__.moveRight(...args);
+            
         };
     
         // function 
@@ -509,7 +566,9 @@
           
         {
           //print("JS: QRectF.prototype.moveBottom");
-          return this.__PROXY__.moveBottom(...args);
+          
+              return this.__PROXY__.moveBottom(...args);
+            
         };
     
         // function 
@@ -517,7 +576,9 @@
           
         {
           //print("JS: QRectF.prototype.moveTopLeft");
-          return this.__PROXY__.moveTopLeft(...args);
+          
+              return this.__PROXY__.moveTopLeft(...args);
+            
         };
     
         // function 
@@ -525,7 +586,9 @@
           
         {
           //print("JS: QRectF.prototype.moveBottomRight");
-          return this.__PROXY__.moveBottomRight(...args);
+          
+              return this.__PROXY__.moveBottomRight(...args);
+            
         };
     
         // function 
@@ -533,7 +596,9 @@
           
         {
           //print("JS: QRectF.prototype.moveTopRight");
-          return this.__PROXY__.moveTopRight(...args);
+          
+              return this.__PROXY__.moveTopRight(...args);
+            
         };
     
         // function 
@@ -541,7 +606,9 @@
           
         {
           //print("JS: QRectF.prototype.moveBottomLeft");
-          return this.__PROXY__.moveBottomLeft(...args);
+          
+              return this.__PROXY__.moveBottomLeft(...args);
+            
         };
     
         // function 
@@ -549,7 +616,9 @@
           
         {
           //print("JS: QRectF.prototype.moveCenter");
-          return this.__PROXY__.moveCenter(...args);
+          
+              return this.__PROXY__.moveCenter(...args);
+            
         };
     
         // function 
@@ -557,7 +626,9 @@
           
         {
           //print("JS: QRectF.prototype.translate");
-          return this.__PROXY__.translate(...args);
+          
+              return this.__PROXY__.translate(...args);
+            
         };
     
         // function 
@@ -565,7 +636,9 @@
           
         {
           //print("JS: QRectF.prototype.translated");
-          return this.__PROXY__.translated(...args);
+          
+              return this.__PROXY__.translated(...args);
+            
         };
     
         // function 
@@ -573,7 +646,9 @@
           
         {
           //print("JS: QRectF.prototype.transposed");
-          return this.__PROXY__.transposed(...args);
+          
+              return this.__PROXY__.transposed(...args);
+            
         };
     
         // function 
@@ -581,7 +656,9 @@
           
         {
           //print("JS: QRectF.prototype.moveTo");
-          return this.__PROXY__.moveTo(...args);
+          
+              return this.__PROXY__.moveTo(...args);
+            
         };
     
         // function 
@@ -589,7 +666,9 @@
           
         {
           //print("JS: QRectF.prototype.setRect");
-          return this.__PROXY__.setRect(...args);
+          
+              return this.__PROXY__.setRect(...args);
+            
         };
     
         // function 
@@ -597,7 +676,9 @@
           
         {
           //print("JS: QRectF.prototype.setCoords");
-          return this.__PROXY__.setCoords(...args);
+          
+              return this.__PROXY__.setCoords(...args);
+            
         };
     
         // function 
@@ -605,7 +686,9 @@
           
         {
           //print("JS: QRectF.prototype.adjust");
-          return this.__PROXY__.adjust(...args);
+          
+              return this.__PROXY__.adjust(...args);
+            
         };
     
         // function 
@@ -613,7 +696,9 @@
           
         {
           //print("JS: QRectF.prototype.adjusted");
-          return this.__PROXY__.adjusted(...args);
+          
+              return this.__PROXY__.adjusted(...args);
+            
         };
     
         // function 
@@ -621,7 +706,9 @@
           
         {
           //print("JS: QRectF.prototype.size");
-          return this.__PROXY__.size(...args);
+          
+              return this.__PROXY__.size(...args);
+            
         };
     
         // function 
@@ -629,7 +716,9 @@
           
         {
           //print("JS: QRectF.prototype.width");
-          return this.__PROXY__.width(...args);
+          
+              return this.__PROXY__.width(...args);
+            
         };
     
         // function 
@@ -637,7 +726,9 @@
           
         {
           //print("JS: QRectF.prototype.height");
-          return this.__PROXY__.height(...args);
+          
+              return this.__PROXY__.height(...args);
+            
         };
     
         // function 
@@ -645,7 +736,9 @@
           
         {
           //print("JS: QRectF.prototype.setWidth");
-          return this.__PROXY__.setWidth(...args);
+          
+              return this.__PROXY__.setWidth(...args);
+            
         };
     
         // function 
@@ -653,7 +746,9 @@
           
         {
           //print("JS: QRectF.prototype.setHeight");
-          return this.__PROXY__.setHeight(...args);
+          
+              return this.__PROXY__.setHeight(...args);
+            
         };
     
         // function 
@@ -661,7 +756,9 @@
           
         {
           //print("JS: QRectF.prototype.setSize");
-          return this.__PROXY__.setSize(...args);
+          
+              return this.__PROXY__.setSize(...args);
+            
         };
     
         // function 
@@ -669,7 +766,9 @@
           
         {
           //print("JS: QRectF.prototype.contains");
-          return this.__PROXY__.contains(...args);
+          
+              return this.__PROXY__.contains(...args);
+            
         };
     
         // function 
@@ -677,7 +776,9 @@
           
         {
           //print("JS: QRectF.prototype.united");
-          return this.__PROXY__.united(...args);
+          
+              return this.__PROXY__.united(...args);
+            
         };
     
         // function 
@@ -685,7 +786,9 @@
           
         {
           //print("JS: QRectF.prototype.intersected");
-          return this.__PROXY__.intersected(...args);
+          
+              return this.__PROXY__.intersected(...args);
+            
         };
     
         // function 
@@ -693,7 +796,9 @@
           
         {
           //print("JS: QRectF.prototype.intersects");
-          return this.__PROXY__.intersects(...args);
+          
+              return this.__PROXY__.intersects(...args);
+            
         };
     
         // function 
@@ -701,7 +806,9 @@
           
         {
           //print("JS: QRectF.prototype.marginsAdded");
-          return this.__PROXY__.marginsAdded(...args);
+          
+              return this.__PROXY__.marginsAdded(...args);
+            
         };
     
         // function 
@@ -709,7 +816,9 @@
           
         {
           //print("JS: QRectF.prototype.marginsRemoved");
-          return this.__PROXY__.marginsRemoved(...args);
+          
+              return this.__PROXY__.marginsRemoved(...args);
+            
         };
     
         // function 
@@ -717,7 +826,9 @@
           
         {
           //print("JS: QRectF.prototype.toRect");
-          return this.__PROXY__.toRect(...args);
+          
+              return this.__PROXY__.toRect(...args);
+            
         };
     
         // function 
@@ -725,11 +836,23 @@
           
         {
           //print("JS: QRectF.prototype.toAlignedRect");
-          return this.__PROXY__.toAlignedRect(...args);
+          
+              return this.__PROXY__.toAlignedRect(...args);
+            
         };
     
 
       // static functions:
+      QRectF.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QRectF.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QRectF.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

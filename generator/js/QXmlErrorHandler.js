@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlErrorHandler);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlErrorHandler.prototype = new QXmlErrorHandler_BaseJs(engine);
       //QXmlErrorHandler.prototype = new QXmlErrorHandler_Wrapper(engine);
       QXmlErrorHandler.prototype = new Object();
+
 
       QXmlErrorHandler.prototype.toString = function() {
           //return "QXmlErrorHandler [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,58 @@
 
       // functions:
       
+        // function 
+        QXmlErrorHandler.prototype.warning = function(...args) 
+          
+        {
+          //print("JS: QXmlErrorHandler.prototype.warning");
+          
+              return this.__PROXY__.warning(...args);
+            
+        };
+    
+        // function 
+        QXmlErrorHandler.prototype.error = function(...args) 
+          
+        {
+          //print("JS: QXmlErrorHandler.prototype.error");
+          
+              return this.__PROXY__.error(...args);
+            
+        };
+    
+        // function 
+        QXmlErrorHandler.prototype.fatalError = function(...args) 
+          
+        {
+          //print("JS: QXmlErrorHandler.prototype.fatalError");
+          
+              return this.__PROXY__.fatalError(...args);
+            
+        };
+    
+        // function 
+        QXmlErrorHandler.prototype.errorString = function(...args) 
+          
+        {
+          //print("JS: QXmlErrorHandler.prototype.errorString");
+          
+              return this.__PROXY__.errorString(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlErrorHandler.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlErrorHandler.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlErrorHandler.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +166,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlErrorHandler.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

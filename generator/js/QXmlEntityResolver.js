@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlEntityResolver);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlEntityResolver.prototype = new QXmlEntityResolver_BaseJs(engine);
       //QXmlEntityResolver.prototype = new QXmlEntityResolver_Wrapper(engine);
       QXmlEntityResolver.prototype = new Object();
+
 
       QXmlEntityResolver.prototype.toString = function() {
           //return "QXmlEntityResolver [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,28 @@
 
       // functions:
       
+        // function 
+        QXmlEntityResolver.prototype.errorString = function(...args) 
+          
+        {
+          //print("JS: QXmlEntityResolver.prototype.errorString");
+          
+              return this.__PROXY__.errorString(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlEntityResolver.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlEntityResolver.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlEntityResolver.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +136,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlEntityResolver.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

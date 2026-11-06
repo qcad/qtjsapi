@@ -163,15 +163,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QColor.prototype = new QColor_BaseJs(engine);
       //QColor.prototype = new QColor_Wrapper(engine);
       QColor.prototype = new Object();
+
 
       QColor.prototype.toString = function() {
           //return "QColor [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -208,7 +209,9 @@
           
         {
           //print("JS: QColor.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -216,7 +219,9 @@
           
         {
           //print("JS: QColor.prototype.name");
-          return this.__PROXY__.name(...args);
+          
+              return this.__PROXY__.name(...args);
+            
         };
     
         // function 
@@ -224,7 +229,9 @@
           
         {
           //print("JS: QColor.prototype.colorNames");
-          return this.__PROXY__.colorNames(...args);
+          
+              return this.__PROXY__.colorNames(...args);
+            
         };
     
         // function 
@@ -232,7 +239,9 @@
           
         {
           //print("JS: QColor.prototype.spec");
-          return this.__PROXY__.spec(...args);
+          
+              return this.__PROXY__.spec(...args);
+            
         };
     
         // function 
@@ -240,7 +249,9 @@
           
         {
           //print("JS: QColor.prototype.alpha");
-          return this.__PROXY__.alpha(...args);
+          
+              return this.__PROXY__.alpha(...args);
+            
         };
     
         // function 
@@ -248,7 +259,9 @@
           
         {
           //print("JS: QColor.prototype.setAlpha");
-          return this.__PROXY__.setAlpha(...args);
+          
+              return this.__PROXY__.setAlpha(...args);
+            
         };
     
         // function 
@@ -256,7 +269,9 @@
           
         {
           //print("JS: QColor.prototype.alphaF");
-          return this.__PROXY__.alphaF(...args);
+          
+              return this.__PROXY__.alphaF(...args);
+            
         };
     
         // function 
@@ -264,7 +279,9 @@
           
         {
           //print("JS: QColor.prototype.setAlphaF");
-          return this.__PROXY__.setAlphaF(...args);
+          
+              return this.__PROXY__.setAlphaF(...args);
+            
         };
     
         // function 
@@ -272,7 +289,9 @@
           
         {
           //print("JS: QColor.prototype.red");
-          return this.__PROXY__.red(...args);
+          
+              return this.__PROXY__.red(...args);
+            
         };
     
         // function 
@@ -280,7 +299,9 @@
           
         {
           //print("JS: QColor.prototype.green");
-          return this.__PROXY__.green(...args);
+          
+              return this.__PROXY__.green(...args);
+            
         };
     
         // function 
@@ -288,7 +309,9 @@
           
         {
           //print("JS: QColor.prototype.blue");
-          return this.__PROXY__.blue(...args);
+          
+              return this.__PROXY__.blue(...args);
+            
         };
     
         // function 
@@ -296,7 +319,9 @@
           
         {
           //print("JS: QColor.prototype.setRed");
-          return this.__PROXY__.setRed(...args);
+          
+              return this.__PROXY__.setRed(...args);
+            
         };
     
         // function 
@@ -304,7 +329,9 @@
           
         {
           //print("JS: QColor.prototype.setGreen");
-          return this.__PROXY__.setGreen(...args);
+          
+              return this.__PROXY__.setGreen(...args);
+            
         };
     
         // function 
@@ -312,7 +339,9 @@
           
         {
           //print("JS: QColor.prototype.setBlue");
-          return this.__PROXY__.setBlue(...args);
+          
+              return this.__PROXY__.setBlue(...args);
+            
         };
     
         // function 
@@ -320,7 +349,9 @@
           
         {
           //print("JS: QColor.prototype.redF");
-          return this.__PROXY__.redF(...args);
+          
+              return this.__PROXY__.redF(...args);
+            
         };
     
         // function 
@@ -328,7 +359,9 @@
           
         {
           //print("JS: QColor.prototype.greenF");
-          return this.__PROXY__.greenF(...args);
+          
+              return this.__PROXY__.greenF(...args);
+            
         };
     
         // function 
@@ -336,7 +369,9 @@
           
         {
           //print("JS: QColor.prototype.blueF");
-          return this.__PROXY__.blueF(...args);
+          
+              return this.__PROXY__.blueF(...args);
+            
         };
     
         // function 
@@ -344,7 +379,9 @@
           
         {
           //print("JS: QColor.prototype.setRedF");
-          return this.__PROXY__.setRedF(...args);
+          
+              return this.__PROXY__.setRedF(...args);
+            
         };
     
         // function 
@@ -352,7 +389,9 @@
           
         {
           //print("JS: QColor.prototype.setGreenF");
-          return this.__PROXY__.setGreenF(...args);
+          
+              return this.__PROXY__.setGreenF(...args);
+            
         };
     
         // function 
@@ -360,7 +399,9 @@
           
         {
           //print("JS: QColor.prototype.setBlueF");
-          return this.__PROXY__.setBlueF(...args);
+          
+              return this.__PROXY__.setBlueF(...args);
+            
         };
     
         // function 
@@ -368,7 +409,9 @@
           
         {
           //print("JS: QColor.prototype.setRgb");
-          return this.__PROXY__.setRgb(...args);
+          
+              return this.__PROXY__.setRgb(...args);
+            
         };
     
         // function 
@@ -376,7 +419,9 @@
           
         {
           //print("JS: QColor.prototype.setRgbF");
-          return this.__PROXY__.setRgbF(...args);
+          
+              return this.__PROXY__.setRgbF(...args);
+            
         };
     
         // function 
@@ -384,7 +429,9 @@
           
         {
           //print("JS: QColor.prototype.hue");
-          return this.__PROXY__.hue(...args);
+          
+              return this.__PROXY__.hue(...args);
+            
         };
     
         // function 
@@ -392,7 +439,9 @@
           
         {
           //print("JS: QColor.prototype.saturation");
-          return this.__PROXY__.saturation(...args);
+          
+              return this.__PROXY__.saturation(...args);
+            
         };
     
         // function 
@@ -400,7 +449,9 @@
           
         {
           //print("JS: QColor.prototype.hsvHue");
-          return this.__PROXY__.hsvHue(...args);
+          
+              return this.__PROXY__.hsvHue(...args);
+            
         };
     
         // function 
@@ -408,7 +459,9 @@
           
         {
           //print("JS: QColor.prototype.hsvSaturation");
-          return this.__PROXY__.hsvSaturation(...args);
+          
+              return this.__PROXY__.hsvSaturation(...args);
+            
         };
     
         // function 
@@ -416,7 +469,9 @@
           
         {
           //print("JS: QColor.prototype.value");
-          return this.__PROXY__.value(...args);
+          
+              return this.__PROXY__.value(...args);
+            
         };
     
         // function 
@@ -424,7 +479,9 @@
           
         {
           //print("JS: QColor.prototype.hueF");
-          return this.__PROXY__.hueF(...args);
+          
+              return this.__PROXY__.hueF(...args);
+            
         };
     
         // function 
@@ -432,7 +489,9 @@
           
         {
           //print("JS: QColor.prototype.saturationF");
-          return this.__PROXY__.saturationF(...args);
+          
+              return this.__PROXY__.saturationF(...args);
+            
         };
     
         // function 
@@ -440,7 +499,9 @@
           
         {
           //print("JS: QColor.prototype.hsvHueF");
-          return this.__PROXY__.hsvHueF(...args);
+          
+              return this.__PROXY__.hsvHueF(...args);
+            
         };
     
         // function 
@@ -448,7 +509,9 @@
           
         {
           //print("JS: QColor.prototype.hsvSaturationF");
-          return this.__PROXY__.hsvSaturationF(...args);
+          
+              return this.__PROXY__.hsvSaturationF(...args);
+            
         };
     
         // function 
@@ -456,7 +519,9 @@
           
         {
           //print("JS: QColor.prototype.valueF");
-          return this.__PROXY__.valueF(...args);
+          
+              return this.__PROXY__.valueF(...args);
+            
         };
     
         // function 
@@ -464,7 +529,9 @@
           
         {
           //print("JS: QColor.prototype.setHsv");
-          return this.__PROXY__.setHsv(...args);
+          
+              return this.__PROXY__.setHsv(...args);
+            
         };
     
         // function 
@@ -472,7 +539,9 @@
           
         {
           //print("JS: QColor.prototype.setHsvF");
-          return this.__PROXY__.setHsvF(...args);
+          
+              return this.__PROXY__.setHsvF(...args);
+            
         };
     
         // function 
@@ -480,7 +549,9 @@
           
         {
           //print("JS: QColor.prototype.cyan");
-          return this.__PROXY__.cyan(...args);
+          
+              return this.__PROXY__.cyan(...args);
+            
         };
     
         // function 
@@ -488,7 +559,9 @@
           
         {
           //print("JS: QColor.prototype.magenta");
-          return this.__PROXY__.magenta(...args);
+          
+              return this.__PROXY__.magenta(...args);
+            
         };
     
         // function 
@@ -496,7 +569,9 @@
           
         {
           //print("JS: QColor.prototype.yellow");
-          return this.__PROXY__.yellow(...args);
+          
+              return this.__PROXY__.yellow(...args);
+            
         };
     
         // function 
@@ -504,7 +579,9 @@
           
         {
           //print("JS: QColor.prototype.black");
-          return this.__PROXY__.black(...args);
+          
+              return this.__PROXY__.black(...args);
+            
         };
     
         // function 
@@ -512,7 +589,9 @@
           
         {
           //print("JS: QColor.prototype.cyanF");
-          return this.__PROXY__.cyanF(...args);
+          
+              return this.__PROXY__.cyanF(...args);
+            
         };
     
         // function 
@@ -520,7 +599,9 @@
           
         {
           //print("JS: QColor.prototype.magentaF");
-          return this.__PROXY__.magentaF(...args);
+          
+              return this.__PROXY__.magentaF(...args);
+            
         };
     
         // function 
@@ -528,7 +609,9 @@
           
         {
           //print("JS: QColor.prototype.yellowF");
-          return this.__PROXY__.yellowF(...args);
+          
+              return this.__PROXY__.yellowF(...args);
+            
         };
     
         // function 
@@ -536,7 +619,9 @@
           
         {
           //print("JS: QColor.prototype.blackF");
-          return this.__PROXY__.blackF(...args);
+          
+              return this.__PROXY__.blackF(...args);
+            
         };
     
         // function 
@@ -544,7 +629,9 @@
           
         {
           //print("JS: QColor.prototype.setCmyk");
-          return this.__PROXY__.setCmyk(...args);
+          
+              return this.__PROXY__.setCmyk(...args);
+            
         };
     
         // function 
@@ -552,7 +639,9 @@
           
         {
           //print("JS: QColor.prototype.setCmykF");
-          return this.__PROXY__.setCmykF(...args);
+          
+              return this.__PROXY__.setCmykF(...args);
+            
         };
     
         // function 
@@ -560,7 +649,9 @@
           
         {
           //print("JS: QColor.prototype.hslHue");
-          return this.__PROXY__.hslHue(...args);
+          
+              return this.__PROXY__.hslHue(...args);
+            
         };
     
         // function 
@@ -568,7 +659,9 @@
           
         {
           //print("JS: QColor.prototype.hslSaturation");
-          return this.__PROXY__.hslSaturation(...args);
+          
+              return this.__PROXY__.hslSaturation(...args);
+            
         };
     
         // function 
@@ -576,7 +669,9 @@
           
         {
           //print("JS: QColor.prototype.lightness");
-          return this.__PROXY__.lightness(...args);
+          
+              return this.__PROXY__.lightness(...args);
+            
         };
     
         // function 
@@ -584,7 +679,9 @@
           
         {
           //print("JS: QColor.prototype.hslHueF");
-          return this.__PROXY__.hslHueF(...args);
+          
+              return this.__PROXY__.hslHueF(...args);
+            
         };
     
         // function 
@@ -592,7 +689,9 @@
           
         {
           //print("JS: QColor.prototype.hslSaturationF");
-          return this.__PROXY__.hslSaturationF(...args);
+          
+              return this.__PROXY__.hslSaturationF(...args);
+            
         };
     
         // function 
@@ -600,7 +699,9 @@
           
         {
           //print("JS: QColor.prototype.lightnessF");
-          return this.__PROXY__.lightnessF(...args);
+          
+              return this.__PROXY__.lightnessF(...args);
+            
         };
     
         // function 
@@ -608,7 +709,9 @@
           
         {
           //print("JS: QColor.prototype.setHsl");
-          return this.__PROXY__.setHsl(...args);
+          
+              return this.__PROXY__.setHsl(...args);
+            
         };
     
         // function 
@@ -616,7 +719,9 @@
           
         {
           //print("JS: QColor.prototype.setHslF");
-          return this.__PROXY__.setHslF(...args);
+          
+              return this.__PROXY__.setHslF(...args);
+            
         };
     
         // function 
@@ -624,7 +729,9 @@
           
         {
           //print("JS: QColor.prototype.toRgb");
-          return this.__PROXY__.toRgb(...args);
+          
+              return this.__PROXY__.toRgb(...args);
+            
         };
     
         // function 
@@ -632,7 +739,9 @@
           
         {
           //print("JS: QColor.prototype.toHsv");
-          return this.__PROXY__.toHsv(...args);
+          
+              return this.__PROXY__.toHsv(...args);
+            
         };
     
         // function 
@@ -640,7 +749,9 @@
           
         {
           //print("JS: QColor.prototype.toCmyk");
-          return this.__PROXY__.toCmyk(...args);
+          
+              return this.__PROXY__.toCmyk(...args);
+            
         };
     
         // function 
@@ -648,7 +759,9 @@
           
         {
           //print("JS: QColor.prototype.toHsl");
-          return this.__PROXY__.toHsl(...args);
+          
+              return this.__PROXY__.toHsl(...args);
+            
         };
     
         // function 
@@ -656,7 +769,9 @@
           
         {
           //print("JS: QColor.prototype.toExtendedRgb");
-          return this.__PROXY__.toExtendedRgb(...args);
+          
+              return this.__PROXY__.toExtendedRgb(...args);
+            
         };
     
         // function 
@@ -664,7 +779,9 @@
           
         {
           //print("JS: QColor.prototype.convertTo");
-          return this.__PROXY__.convertTo(...args);
+          
+              return this.__PROXY__.convertTo(...args);
+            
         };
     
         // function 
@@ -672,7 +789,9 @@
           
         {
           //print("JS: QColor.prototype.fromRgb");
-          return this.__PROXY__.fromRgb(...args);
+          
+              return this.__PROXY__.fromRgb(...args);
+            
         };
     
         // function 
@@ -680,7 +799,9 @@
           
         {
           //print("JS: QColor.prototype.fromRgbF");
-          return this.__PROXY__.fromRgbF(...args);
+          
+              return this.__PROXY__.fromRgbF(...args);
+            
         };
     
         // function 
@@ -688,7 +809,9 @@
           
         {
           //print("JS: QColor.prototype.fromHsv");
-          return this.__PROXY__.fromHsv(...args);
+          
+              return this.__PROXY__.fromHsv(...args);
+            
         };
     
         // function 
@@ -696,7 +819,9 @@
           
         {
           //print("JS: QColor.prototype.fromHsvF");
-          return this.__PROXY__.fromHsvF(...args);
+          
+              return this.__PROXY__.fromHsvF(...args);
+            
         };
     
         // function 
@@ -704,7 +829,9 @@
           
         {
           //print("JS: QColor.prototype.fromCmyk");
-          return this.__PROXY__.fromCmyk(...args);
+          
+              return this.__PROXY__.fromCmyk(...args);
+            
         };
     
         // function 
@@ -712,7 +839,9 @@
           
         {
           //print("JS: QColor.prototype.fromCmykF");
-          return this.__PROXY__.fromCmykF(...args);
+          
+              return this.__PROXY__.fromCmykF(...args);
+            
         };
     
         // function 
@@ -720,7 +849,9 @@
           
         {
           //print("JS: QColor.prototype.fromHsl");
-          return this.__PROXY__.fromHsl(...args);
+          
+              return this.__PROXY__.fromHsl(...args);
+            
         };
     
         // function 
@@ -728,7 +859,9 @@
           
         {
           //print("JS: QColor.prototype.fromHslF");
-          return this.__PROXY__.fromHslF(...args);
+          
+              return this.__PROXY__.fromHslF(...args);
+            
         };
     
         // function 
@@ -736,7 +869,9 @@
           
         {
           //print("JS: QColor.prototype.lighter");
-          return this.__PROXY__.lighter(...args);
+          
+              return this.__PROXY__.lighter(...args);
+            
         };
     
         // function 
@@ -744,7 +879,9 @@
           
         {
           //print("JS: QColor.prototype.darker");
-          return this.__PROXY__.darker(...args);
+          
+              return this.__PROXY__.darker(...args);
+            
         };
     
         // function 
@@ -752,7 +889,9 @@
           
         {
           //print("JS: QColor.prototype.invalidate");
-          return this.__PROXY__.invalidate(...args);
+          
+              return this.__PROXY__.invalidate(...args);
+            
         };
     
         // function 
@@ -760,7 +899,9 @@
           
         {
           //print("JS: QColor.prototype.setColorFromString");
-          return this.__PROXY__.setColorFromString(...args);
+          
+              return this.__PROXY__.setColorFromString(...args);
+            
         };
     
         // function 
@@ -768,7 +909,9 @@
           
         {
           //print("JS: QColor.prototype.isRgbaValid");
-          return this.__PROXY__.isRgbaValid(...args);
+          
+              return this.__PROXY__.isRgbaValid(...args);
+            
         };
     
 
@@ -1042,6 +1185,16 @@
           //print("JS: QColor.isRgbaValid");
           
         };
+      QColor.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QColor.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QColor.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

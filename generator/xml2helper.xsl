@@ -551,8 +551,13 @@
       }
 
       QJSValue getWrapperQJSValue(const QJSValue&amp; v) {
-          if (v.hasOwnProperty("__PROXY__")) {
-              return getWrapperQJSValue(v.property("__PROXY__"));
+          if (v.isObject() &amp;&amp; !v.isQObject()) {
+              // __PROXY__ may be inherited from a prototype (JS class derived
+              // from a wrapped class without calling the base constructor):
+              QJSValue proxy = v.property("__PROXY__");
+              if (proxy.isQObject()) {
+                  return proxy;
+              }
           }
           if (v.prototype().hasOwnProperty("__WRAPPER__")) {
               return v.prototype();
@@ -800,22 +805,9 @@
           //return engine-&gt;newQObject(ret);
 
           // JS: new QVariant('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine-&gt;globalObject().property("QVariant");
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine-&gt;newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
-          //QJSValue r = engine-&gt;evaluate("new QVariant('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      &lt;&lt; "Uncaught exception in new QVariant(wrapper)"
-                      &lt;&lt; ":" &lt;&lt; r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QVariant('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QVariant::getIdStatic(), "QVariant", ret);
       }
 
       bool RJSHelper::is_QVariant(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined) {
@@ -1572,21 +1564,9 @@
           QJSEngine* engine = handler.getEngine();
 
           // JS: new QWidget('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine-&gt;globalObject().property("QWidget");
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine-&gt;newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
-          //QJSValue r = engine-&gt;evaluate("new QWidget('__GOT_WRAPPER__', wrapper);");
-          if (r.isError()) {
-              qWarning()
-                      &lt;&lt; "Uncaught exception in new QObject(wrapper)"
-                      &lt;&lt; ":" &lt;&lt; r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QWidget('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QWidget::getIdStatic(), "QWidget", ret);
       }
 
       QWidget* RJSHelper::js2cpp_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v) {
@@ -1981,15 +1961,9 @@
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
-          if (cl.isUndefined()) {
-              qWarning() &lt;&lt; "Class <xsl:value-of select="$type" /> is undefined. Use <xsl:value-of select="$type" />_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine-&gt;newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_<xsl:value-of select="$func" />::getIdStatic(), "<xsl:value-of select="$type" />", ret);
       }
 
       <xsl:value-of select="$sharedPointerType" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_QSharedPointer_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
@@ -2158,15 +2132,9 @@
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v);
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
-          if (cl.isUndefined()) {
-              qWarning() &lt;&lt; "Class <xsl:value-of select="$type" /> is undefined. Use <xsl:value-of select="$type" />_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine-&gt;newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_<xsl:value-of select="$type" />::getIdStatic(), "<xsl:value-of select="$type" />", ret);
       }
 
       <xsl:value-of select="$sharedPointerType" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
@@ -2303,25 +2271,9 @@
           }
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
-          if (cl.isUndefined()) {
-              qWarning() &lt;&lt; "Class <xsl:value-of select="$type" /> is undefined. Use <xsl:value-of select="$type" />_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine-&gt;newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
-          //QJSValue r = engine-&gt;evaluate("new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      &lt;&lt; "Uncaught exception in new <xsl:value-of select="$type" />(wrapper)"
-                      &lt;&lt; ":" &lt;&lt; r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_<xsl:value-of select="$func" />::getIdStatic(), "<xsl:value-of select="$type" />", ret);
       }
 
       QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />&amp; v) {
@@ -2330,25 +2282,9 @@
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, new <xsl:value-of select="$type" />(v), true);
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
-          if (cl.isUndefined()) {
-              qWarning() &lt;&lt; "Class <xsl:value-of select="$type" /> is undefined. Use <xsl:value-of select="$type" />_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine-&gt;newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
-          //QJSValue r = engine-&gt;evaluate("new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      &lt;&lt; "Uncaught exception in new <xsl:value-of select="$type" />(wrapper)"
-                      &lt;&lt; ":" &lt;&lt; r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_<xsl:value-of select="$func" />::getIdStatic(), "<xsl:value-of select="$type" />", ret);
       }
 
       <xsl:value-of select="$type" /><xsl:text> </xsl:text><xsl:value-of select="$rjshelper_class"/>::js2cpp_<xsl:value-of select="$func" />(RJSApi&amp; handler, const QJSValue&amp; v) {
@@ -2491,25 +2427,9 @@
           <xsl:value-of select="$type" />_Wrapper* ret = new <xsl:value-of select="$type" />_Wrapper(handler, v, false);
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
-          if (cl.isUndefined()) {
-              qWarning() &lt;&lt; "Class <xsl:value-of select="$type" /> is undefined. Use <xsl:value-of select="$type" />_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine-&gt;newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine-&gt;globalObject().setProperty("wrapper", engine-&gt;newQObject(ret));
-          //QJSValue r = engine-&gt;evaluate("new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      &lt;&lt; "Uncaught exception in new <xsl:value-of select="$type" />(wrapper)"
-                      &lt;&lt; ":" &lt;&lt; r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_<xsl:value-of select="$func" />::getIdStatic(), "<xsl:value-of select="$type" />", ret);
 
           //return engine-&gt;newQObject(ret);
       }
@@ -2674,25 +2594,9 @@
           QJSEngine* engine = handler.getEngine();
 
           // JS: new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine-&gt;globalObject().property("<xsl:value-of select="$type" />");
-          if (cl.isUndefined()) {
-              qWarning() &lt;&lt; "Class <xsl:value-of select="$type" /> is undefined. Use <xsl:value-of select="$type" />_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(existing));
-          args.append(engine-&gt;newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine-&gt;globalObject().setProperty("__wrapper__", engine-&gt;newQObject(ret));
-          //QJSValue r = engine-&gt;evaluate("new <xsl:value-of select="$type" />('__GOT_WRAPPER__', __wrapper__);");
-
-          if (r.isError()) {
-              qWarning()
-                      &lt;&lt; "Uncaught exception in new <xsl:value-of select="$type" />(wrapper)"
-                      &lt;&lt; ":" &lt;&lt; r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new <xsl:value-of select="$type" />('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_<xsl:value-of select="$func" />::getIdStatic(), "<xsl:value-of select="$type" />", ret);
       }
 
       QJSValue <xsl:value-of select="$rjshelper_class"/>::cpp2js_<xsl:value-of select="$func" />(RJSApi&amp; handler, const <xsl:value-of select="$type" />* v) {

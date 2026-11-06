@@ -3949,6 +3949,13 @@ QModelIndex a1_cpp;
               QHelpContentModel_Wrapper::headerDataChangedEmitter(
                 Qt::Orientation orientation, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpContentModel_Wrapper::staticMetaObject.indexOfSignal("headerDataChanged(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpContentModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::Orientation)
@@ -3996,6 +4003,13 @@ QModelIndex a1_cpp;
               QHelpContentModel_Wrapper::rowsInsertedEmitter(
                 const QModelIndex& parent, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpContentModel_Wrapper::staticMetaObject.indexOfSignal("rowsInserted(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpContentModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: parent (QModelIndex)
@@ -4817,6 +4831,13 @@ int a2_cpp;
               QHelpContentModel_Wrapper::contentsCreationStartedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpContentModel_Wrapper::staticMetaObject.indexOfSignal("contentsCreationStarted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpContentModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4837,6 +4858,13 @@ int a2_cpp;
               QHelpContentModel_Wrapper::contentsCreatedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpContentModel_Wrapper::staticMetaObject.indexOfSignal("contentsCreated()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpContentModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

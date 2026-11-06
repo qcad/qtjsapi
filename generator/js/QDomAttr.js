@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QDomAttr.prototype = new QDomAttr_BaseJs(engine);
       //QDomAttr.prototype = new QDomAttr_Wrapper(engine);
       QDomAttr.prototype = new Object();
+
 
       QDomAttr.prototype.toString = function() {
           //return "QDomAttr [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -179,7 +180,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.operator_equal");
-          return this.__PROXY__.operator_equal(...args);
+          
+              return this.__PROXY__.operator_equal(...args);
+            
         };
     
         // function 
@@ -187,7 +190,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.operator_unequal");
-          return this.__PROXY__.operator_unequal(...args);
+          
+              return this.__PROXY__.operator_unequal(...args);
+            
         };
     
         // function 
@@ -195,7 +200,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.insertBefore");
-          return this.__PROXY__.insertBefore(...args);
+          
+              return this.__PROXY__.insertBefore(...args);
+            
         };
     
         // function 
@@ -203,7 +210,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.insertAfter");
-          return this.__PROXY__.insertAfter(...args);
+          
+              return this.__PROXY__.insertAfter(...args);
+            
         };
     
         // function 
@@ -211,7 +220,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.replaceChild");
-          return this.__PROXY__.replaceChild(...args);
+          
+              return this.__PROXY__.replaceChild(...args);
+            
         };
     
         // function 
@@ -219,7 +230,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.removeChild");
-          return this.__PROXY__.removeChild(...args);
+          
+              return this.__PROXY__.removeChild(...args);
+            
         };
     
         // function 
@@ -227,7 +240,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.appendChild");
-          return this.__PROXY__.appendChild(...args);
+          
+              return this.__PROXY__.appendChild(...args);
+            
         };
     
         // function 
@@ -235,7 +250,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.hasChildNodes");
-          return this.__PROXY__.hasChildNodes(...args);
+          
+              return this.__PROXY__.hasChildNodes(...args);
+            
         };
     
         // function 
@@ -243,7 +260,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.cloneNode");
-          return this.__PROXY__.cloneNode(...args);
+          
+              return this.__PROXY__.cloneNode(...args);
+            
         };
     
         // function 
@@ -251,7 +270,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.normalize");
-          return this.__PROXY__.normalize(...args);
+          
+              return this.__PROXY__.normalize(...args);
+            
         };
     
         // function 
@@ -259,7 +280,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isSupported");
-          return this.__PROXY__.isSupported(...args);
+          
+              return this.__PROXY__.isSupported(...args);
+            
         };
     
         // function 
@@ -267,7 +290,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.nodeName");
-          return this.__PROXY__.nodeName(...args);
+          
+              return this.__PROXY__.nodeName(...args);
+            
         };
     
         // function 
@@ -275,7 +300,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.parentNode");
-          return this.__PROXY__.parentNode(...args);
+          
+              return this.__PROXY__.parentNode(...args);
+            
         };
     
         // function 
@@ -283,7 +310,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.childNodes");
-          return this.__PROXY__.childNodes(...args);
+          
+              return this.__PROXY__.childNodes(...args);
+            
         };
     
         // function 
@@ -291,7 +320,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.firstChild");
-          return this.__PROXY__.firstChild(...args);
+          
+              return this.__PROXY__.firstChild(...args);
+            
         };
     
         // function 
@@ -299,7 +330,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.lastChild");
-          return this.__PROXY__.lastChild(...args);
+          
+              return this.__PROXY__.lastChild(...args);
+            
         };
     
         // function 
@@ -307,7 +340,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.previousSibling");
-          return this.__PROXY__.previousSibling(...args);
+          
+              return this.__PROXY__.previousSibling(...args);
+            
         };
     
         // function 
@@ -315,7 +350,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.nextSibling");
-          return this.__PROXY__.nextSibling(...args);
+          
+              return this.__PROXY__.nextSibling(...args);
+            
         };
     
         // function 
@@ -323,7 +360,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.attributes");
-          return this.__PROXY__.attributes(...args);
+          
+              return this.__PROXY__.attributes(...args);
+            
         };
     
         // function 
@@ -331,7 +370,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.ownerDocument");
-          return this.__PROXY__.ownerDocument(...args);
+          
+              return this.__PROXY__.ownerDocument(...args);
+            
         };
     
         // function 
@@ -339,7 +380,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.namespaceURI");
-          return this.__PROXY__.namespaceURI(...args);
+          
+              return this.__PROXY__.namespaceURI(...args);
+            
         };
     
         // function 
@@ -347,7 +390,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.localName");
-          return this.__PROXY__.localName(...args);
+          
+              return this.__PROXY__.localName(...args);
+            
         };
     
         // function 
@@ -355,7 +400,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.hasAttributes");
-          return this.__PROXY__.hasAttributes(...args);
+          
+              return this.__PROXY__.hasAttributes(...args);
+            
         };
     
         // function 
@@ -363,7 +410,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.nodeValue");
-          return this.__PROXY__.nodeValue(...args);
+          
+              return this.__PROXY__.nodeValue(...args);
+            
         };
     
         // function 
@@ -371,7 +420,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.setNodeValue");
-          return this.__PROXY__.setNodeValue(...args);
+          
+              return this.__PROXY__.setNodeValue(...args);
+            
         };
     
         // function 
@@ -379,7 +430,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.prefix");
-          return this.__PROXY__.prefix(...args);
+          
+              return this.__PROXY__.prefix(...args);
+            
         };
     
         // function 
@@ -387,7 +440,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.setPrefix");
-          return this.__PROXY__.setPrefix(...args);
+          
+              return this.__PROXY__.setPrefix(...args);
+            
         };
     
         // function 
@@ -395,7 +450,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isAttr");
-          return this.__PROXY__.isAttr(...args);
+          
+              return this.__PROXY__.isAttr(...args);
+            
         };
     
         // function 
@@ -403,7 +460,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isCDATASection");
-          return this.__PROXY__.isCDATASection(...args);
+          
+              return this.__PROXY__.isCDATASection(...args);
+            
         };
     
         // function 
@@ -411,7 +470,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isDocumentFragment");
-          return this.__PROXY__.isDocumentFragment(...args);
+          
+              return this.__PROXY__.isDocumentFragment(...args);
+            
         };
     
         // function 
@@ -419,7 +480,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isDocument");
-          return this.__PROXY__.isDocument(...args);
+          
+              return this.__PROXY__.isDocument(...args);
+            
         };
     
         // function 
@@ -427,7 +490,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isDocumentType");
-          return this.__PROXY__.isDocumentType(...args);
+          
+              return this.__PROXY__.isDocumentType(...args);
+            
         };
     
         // function 
@@ -435,7 +500,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isElement");
-          return this.__PROXY__.isElement(...args);
+          
+              return this.__PROXY__.isElement(...args);
+            
         };
     
         // function 
@@ -443,7 +510,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isEntityReference");
-          return this.__PROXY__.isEntityReference(...args);
+          
+              return this.__PROXY__.isEntityReference(...args);
+            
         };
     
         // function 
@@ -451,7 +520,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isText");
-          return this.__PROXY__.isText(...args);
+          
+              return this.__PROXY__.isText(...args);
+            
         };
     
         // function 
@@ -459,7 +530,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isEntity");
-          return this.__PROXY__.isEntity(...args);
+          
+              return this.__PROXY__.isEntity(...args);
+            
         };
     
         // function 
@@ -467,7 +540,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isNotation");
-          return this.__PROXY__.isNotation(...args);
+          
+              return this.__PROXY__.isNotation(...args);
+            
         };
     
         // function 
@@ -475,7 +550,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isProcessingInstruction");
-          return this.__PROXY__.isProcessingInstruction(...args);
+          
+              return this.__PROXY__.isProcessingInstruction(...args);
+            
         };
     
         // function 
@@ -483,7 +560,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isCharacterData");
-          return this.__PROXY__.isCharacterData(...args);
+          
+              return this.__PROXY__.isCharacterData(...args);
+            
         };
     
         // function 
@@ -491,7 +570,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isComment");
-          return this.__PROXY__.isComment(...args);
+          
+              return this.__PROXY__.isComment(...args);
+            
         };
     
         // function 
@@ -499,7 +580,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.namedItem");
-          return this.__PROXY__.namedItem(...args);
+          
+              return this.__PROXY__.namedItem(...args);
+            
         };
     
         // function 
@@ -507,7 +590,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -515,7 +600,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.clear");
-          return this.__PROXY__.clear(...args);
+          
+              return this.__PROXY__.clear(...args);
+            
         };
     
         // function 
@@ -523,7 +610,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toAttr");
-          return this.__PROXY__.toAttr(...args);
+          
+              return this.__PROXY__.toAttr(...args);
+            
         };
     
         // function 
@@ -531,7 +620,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toCDATASection");
-          return this.__PROXY__.toCDATASection(...args);
+          
+              return this.__PROXY__.toCDATASection(...args);
+            
         };
     
         // function 
@@ -539,7 +630,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toDocumentFragment");
-          return this.__PROXY__.toDocumentFragment(...args);
+          
+              return this.__PROXY__.toDocumentFragment(...args);
+            
         };
     
         // function 
@@ -547,7 +640,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toDocument");
-          return this.__PROXY__.toDocument(...args);
+          
+              return this.__PROXY__.toDocument(...args);
+            
         };
     
         // function 
@@ -555,7 +650,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toDocumentType");
-          return this.__PROXY__.toDocumentType(...args);
+          
+              return this.__PROXY__.toDocumentType(...args);
+            
         };
     
         // function 
@@ -563,7 +660,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toElement");
-          return this.__PROXY__.toElement(...args);
+          
+              return this.__PROXY__.toElement(...args);
+            
         };
     
         // function 
@@ -571,7 +670,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toEntityReference");
-          return this.__PROXY__.toEntityReference(...args);
+          
+              return this.__PROXY__.toEntityReference(...args);
+            
         };
     
         // function 
@@ -579,7 +680,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toText");
-          return this.__PROXY__.toText(...args);
+          
+              return this.__PROXY__.toText(...args);
+            
         };
     
         // function 
@@ -587,7 +690,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toEntity");
-          return this.__PROXY__.toEntity(...args);
+          
+              return this.__PROXY__.toEntity(...args);
+            
         };
     
         // function 
@@ -595,7 +700,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toNotation");
-          return this.__PROXY__.toNotation(...args);
+          
+              return this.__PROXY__.toNotation(...args);
+            
         };
     
         // function 
@@ -603,7 +710,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toProcessingInstruction");
-          return this.__PROXY__.toProcessingInstruction(...args);
+          
+              return this.__PROXY__.toProcessingInstruction(...args);
+            
         };
     
         // function 
@@ -611,7 +720,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toCharacterData");
-          return this.__PROXY__.toCharacterData(...args);
+          
+              return this.__PROXY__.toCharacterData(...args);
+            
         };
     
         // function 
@@ -619,7 +730,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.toComment");
-          return this.__PROXY__.toComment(...args);
+          
+              return this.__PROXY__.toComment(...args);
+            
         };
     
         // function 
@@ -627,7 +740,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.firstChildElement");
-          return this.__PROXY__.firstChildElement(...args);
+          
+              return this.__PROXY__.firstChildElement(...args);
+            
         };
     
         // function 
@@ -635,7 +750,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.lastChildElement");
-          return this.__PROXY__.lastChildElement(...args);
+          
+              return this.__PROXY__.lastChildElement(...args);
+            
         };
     
         // function 
@@ -643,7 +760,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.previousSiblingElement");
-          return this.__PROXY__.previousSiblingElement(...args);
+          
+              return this.__PROXY__.previousSiblingElement(...args);
+            
         };
     
         // function 
@@ -651,7 +770,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.nextSiblingElement");
-          return this.__PROXY__.nextSiblingElement(...args);
+          
+              return this.__PROXY__.nextSiblingElement(...args);
+            
         };
     
         // function 
@@ -659,7 +780,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.lineNumber");
-          return this.__PROXY__.lineNumber(...args);
+          
+              return this.__PROXY__.lineNumber(...args);
+            
         };
     
         // function 
@@ -667,7 +790,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.columnNumber");
-          return this.__PROXY__.columnNumber(...args);
+          
+              return this.__PROXY__.columnNumber(...args);
+            
         };
     
         // function 
@@ -675,7 +800,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.operator_assign");
-          return this.__PROXY__.operator_assign(...args);
+          
+              return this.__PROXY__.operator_assign(...args);
+            
         };
     
         // function 
@@ -683,7 +810,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.name");
-          return this.__PROXY__.name(...args);
+          
+              return this.__PROXY__.name(...args);
+            
         };
     
         // function 
@@ -691,7 +820,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.specified");
-          return this.__PROXY__.specified(...args);
+          
+              return this.__PROXY__.specified(...args);
+            
         };
     
         // function 
@@ -699,7 +830,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.ownerElement");
-          return this.__PROXY__.ownerElement(...args);
+          
+              return this.__PROXY__.ownerElement(...args);
+            
         };
     
         // function 
@@ -707,7 +840,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.value");
-          return this.__PROXY__.value(...args);
+          
+              return this.__PROXY__.value(...args);
+            
         };
     
         // function 
@@ -715,7 +850,9 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.setValue");
-          return this.__PROXY__.setValue(...args);
+          
+              return this.__PROXY__.setValue(...args);
+            
         };
     
         // function 
@@ -723,11 +860,23 @@ QDomAttr.EncodingFromTextStream = QDomAttr_Wrapper.EncodingFromTextStream;
           
         {
           //print("JS: QDomAttr.prototype.nodeType");
-          return this.__PROXY__.nodeType(...args);
+          
+              return this.__PROXY__.nodeType(...args);
+            
         };
     
 
       // static functions:
+      QDomAttr.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QDomAttr.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QDomAttr.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

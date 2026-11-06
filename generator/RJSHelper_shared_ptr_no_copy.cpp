@@ -695,15 +695,9 @@
           QTextLayout_Wrapper* ret = new QTextLayout_Wrapper(handler, v);
 
           // JS: new QTextLayout('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QTextLayout");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QTextLayout is undefined. Use QTextLayout_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QTextLayout('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QTextLayout::getIdStatic(), "QTextLayout", ret);
       }
 
       QSharedPointer<QTextLayout> RJSHelper::js2cpp_QSharedPointer_QTextLayout(RJSApi& handler, const QJSValue& v) {

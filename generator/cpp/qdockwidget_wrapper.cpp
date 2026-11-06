@@ -16107,6 +16107,13 @@ bool a1_cpp;
               QDockWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDockWidget_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDockWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17141,6 +17148,13 @@ Qt::DockWidgetArea a1_cpp;
               QDockWidget_Wrapper::featuresChangedEmitter(
                 QDockWidget::DockWidgetFeatures features
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDockWidget_Wrapper::staticMetaObject.indexOfSignal("featuresChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDockWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: features (QDockWidget::DockWidgetFeatures)
@@ -17170,6 +17184,13 @@ Qt::DockWidgetArea a1_cpp;
               QDockWidget_Wrapper::topLevelChangedEmitter(
                 bool topLevel
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDockWidget_Wrapper::staticMetaObject.indexOfSignal("topLevelChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDockWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: topLevel (bool)
@@ -17199,6 +17220,13 @@ Qt::DockWidgetArea a1_cpp;
               QDockWidget_Wrapper::allowedAreasChangedEmitter(
                 Qt::DockWidgetAreas allowedAreas
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDockWidget_Wrapper::staticMetaObject.indexOfSignal("allowedAreasChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDockWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: allowedAreas (Qt::DockWidgetAreas)
@@ -17228,6 +17256,13 @@ Qt::DockWidgetArea a1_cpp;
               QDockWidget_Wrapper::visibilityChangedEmitter(
                 bool visible
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDockWidget_Wrapper::staticMetaObject.indexOfSignal("visibilityChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDockWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: visible (bool)
@@ -17257,6 +17292,13 @@ Qt::DockWidgetArea a1_cpp;
               QDockWidget_Wrapper::dockLocationChangedEmitter(
                 Qt::DockWidgetArea area
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDockWidget_Wrapper::staticMetaObject.indexOfSignal("dockLocationChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDockWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: area (Qt::DockWidgetArea)

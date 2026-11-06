@@ -2606,6 +2606,13 @@ int a4_cpp;
               QSortFilterProxyModel_Wrapper::headerDataChangedEmitter(
                 Qt::Orientation orientation, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("headerDataChanged(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::Orientation)
@@ -2653,6 +2660,13 @@ int a4_cpp;
               QSortFilterProxyModel_Wrapper::rowsInsertedEmitter(
                 const QModelIndex& parent, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("rowsInserted(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: parent (QModelIndex)
@@ -5406,6 +5420,13 @@ Qt::SortOrder a2_cpp;
               QSortFilterProxyModel_Wrapper::dynamicSortFilterChangedEmitter(
                 bool dynamicSortFilter
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("dynamicSortFilterChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: dynamicSortFilter (bool)
@@ -5435,6 +5456,13 @@ Qt::SortOrder a2_cpp;
               QSortFilterProxyModel_Wrapper::filterCaseSensitivityChangedEmitter(
                 Qt::CaseSensitivity filterCaseSensitivity
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("filterCaseSensitivityChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: filterCaseSensitivity (Qt::CaseSensitivity)
@@ -5464,6 +5492,13 @@ Qt::SortOrder a2_cpp;
               QSortFilterProxyModel_Wrapper::sortCaseSensitivityChangedEmitter(
                 Qt::CaseSensitivity sortCaseSensitivity
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("sortCaseSensitivityChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: sortCaseSensitivity (Qt::CaseSensitivity)
@@ -5493,6 +5528,13 @@ Qt::SortOrder a2_cpp;
               QSortFilterProxyModel_Wrapper::sortLocaleAwareChangedEmitter(
                 bool sortLocaleAware
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("sortLocaleAwareChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: sortLocaleAware (bool)
@@ -5522,6 +5564,13 @@ Qt::SortOrder a2_cpp;
               QSortFilterProxyModel_Wrapper::sortRoleChangedEmitter(
                 int sortRole
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("sortRoleChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: sortRole (int)
@@ -5551,6 +5600,13 @@ Qt::SortOrder a2_cpp;
               QSortFilterProxyModel_Wrapper::filterRoleChangedEmitter(
                 int filterRole
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("filterRoleChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: filterRole (int)
@@ -5580,6 +5636,13 @@ Qt::SortOrder a2_cpp;
               QSortFilterProxyModel_Wrapper::recursiveFilteringEnabledChangedEmitter(
                 bool recursiveFilteringEnabled
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("recursiveFilteringEnabledChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: recursiveFilteringEnabled (bool)
@@ -5609,6 +5672,13 @@ Qt::SortOrder a2_cpp;
               QSortFilterProxyModel_Wrapper::autoAcceptChildRowsChangedEmitter(
                 bool autoAcceptChildRows
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSortFilterProxyModel_Wrapper::staticMetaObject.indexOfSignal("autoAcceptChildRowsChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSortFilterProxyModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: autoAcceptChildRows (bool)

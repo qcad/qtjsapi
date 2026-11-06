@@ -3079,6 +3079,13 @@ QRectF a2_cpp;
               QSvgRenderer_Wrapper::repaintNeededEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSvgRenderer_Wrapper::staticMetaObject.indexOfSignal("repaintNeeded()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSvgRenderer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

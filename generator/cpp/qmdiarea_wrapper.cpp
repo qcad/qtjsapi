@@ -15871,6 +15871,13 @@ bool a1_cpp;
               QMdiArea_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMdiArea_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMdiArea_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -19729,6 +19736,13 @@ QTabWidget::TabPosition a1_cpp;
               QMdiArea_Wrapper::subWindowActivatedEmitter(
                 QMdiSubWindow* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMdiArea_Wrapper::staticMetaObject.indexOfSignal("subWindowActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMdiArea_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QMdiSubWindow)

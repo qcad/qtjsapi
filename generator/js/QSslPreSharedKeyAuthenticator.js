@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSslPreSharedKeyAuthenticator);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslPreSharedKeyAuthenticator);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslPreSharedKeyAuthenticator);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSslPreSharedKeyAuthenticator.prototype = new QSslPreSharedKeyAuthenticator_BaseJs(engine);
       //QSslPreSharedKeyAuthenticator.prototype = new QSslPreSharedKeyAuthenticator_Wrapper(engine);
       QSslPreSharedKeyAuthenticator.prototype = new Object();
+
 
       QSslPreSharedKeyAuthenticator.prototype.toString = function() {
           //return "QSslPreSharedKeyAuthenticator [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,6 +151,126 @@
 
       // functions:
       
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.identityHint = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.identityHint");
+          
+              return this.__PROXY__.identityHint(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.setIdentity = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.setIdentity");
+          
+              return this.__PROXY__.setIdentity(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.identity = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.identity");
+          
+              return this.__PROXY__.identity(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.maximumIdentityLength = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.maximumIdentityLength");
+          
+              return this.__PROXY__.maximumIdentityLength(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.setPreSharedKey = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.setPreSharedKey");
+          
+              return this.__PROXY__.setPreSharedKey(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.preSharedKey = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.preSharedKey");
+          
+              return this.__PROXY__.preSharedKey(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.maximumPreSharedKeyLength = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.maximumPreSharedKeyLength");
+          
+              return this.__PROXY__.maximumPreSharedKeyLength(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.isEqual = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.isEqual");
+          
+              return this.__PROXY__.isEqual(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        QSslPreSharedKeyAuthenticator.prototype.operator_not_assign = function(...args) 
+          
+        {
+          //print("JS: QSslPreSharedKeyAuthenticator.prototype.operator_not_assign");
+          
+              return this.__PROXY__.operator_not_assign(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -208,6 +329,16 @@
   }
   
         };
+      QSslPreSharedKeyAuthenticator.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSslPreSharedKeyAuthenticator.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSslPreSharedKeyAuthenticator.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -226,4 +357,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QSslPreSharedKeyAuthenticator.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

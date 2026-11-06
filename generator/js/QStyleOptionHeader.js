@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionHeader);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionHeader);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionHeader);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionHeader.prototype = new QStyleOptionHeader_BaseJs(engine);
       //QStyleOptionHeader.prototype = new QStyleOptionHeader_Wrapper(engine);
       QStyleOptionHeader.prototype = new Object();
+
 
       QStyleOptionHeader.prototype.toString = function() {
           //return "QStyleOptionHeader [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -199,8 +200,38 @@ QStyleOptionHeader.SortDown = QStyleOptionHeader_Wrapper.SortDown;
 
       // functions:
       
+        // function 
+        QStyleOptionHeader.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionHeader.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionHeader.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionHeader.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionHeader.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionHeader.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionHeader.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -219,4 +250,7 @@ QStyleOptionHeader.SortDown = QStyleOptionHeader_Wrapper.SortDown;
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionHeader.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

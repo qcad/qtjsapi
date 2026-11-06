@@ -15659,6 +15659,13 @@ bool a1_cpp;
               QListView_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QListView_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QListView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -22083,6 +22090,13 @@ QModelIndex a1_cpp;
               QListView_Wrapper::pressedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QListView_Wrapper::staticMetaObject.indexOfSignal("pressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QListView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22112,6 +22126,13 @@ QModelIndex a1_cpp;
               QListView_Wrapper::clickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QListView_Wrapper::staticMetaObject.indexOfSignal("clicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QListView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22141,6 +22162,13 @@ QModelIndex a1_cpp;
               QListView_Wrapper::doubleClickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QListView_Wrapper::staticMetaObject.indexOfSignal("doubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QListView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22170,6 +22198,13 @@ QModelIndex a1_cpp;
               QListView_Wrapper::activatedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QListView_Wrapper::staticMetaObject.indexOfSignal("activated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QListView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22199,6 +22234,13 @@ QModelIndex a1_cpp;
               QListView_Wrapper::enteredEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QListView_Wrapper::staticMetaObject.indexOfSignal("entered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QListView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22228,6 +22270,13 @@ QModelIndex a1_cpp;
               QListView_Wrapper::viewportEnteredEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QListView_Wrapper::staticMetaObject.indexOfSignal("viewportEntered()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QListView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -22248,6 +22297,13 @@ QModelIndex a1_cpp;
               QListView_Wrapper::iconSizeChangedEmitter(
                 const QSize& size
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QListView_Wrapper::staticMetaObject.indexOfSignal("iconSizeChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QListView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: size (QSize)

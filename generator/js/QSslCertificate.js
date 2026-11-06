@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSslCertificate);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCertificate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCertificate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -106,7 +106,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCertificate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -132,7 +132,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCertificate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -164,15 +164,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSslCertificate.prototype = new QSslCertificate_BaseJs(engine);
       //QSslCertificate.prototype = new QSslCertificate_Wrapper(engine);
       QSslCertificate.prototype = new Object();
+
 
       QSslCertificate.prototype.toString = function() {
           //return "QSslCertificate [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -215,6 +216,296 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
 
       // functions:
       
+        // function 
+        QSslCertificate.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.operator_not_assign = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.operator_not_assign");
+          
+              return this.__PROXY__.operator_not_assign(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.isNull");
+          
+              return this.__PROXY__.isNull(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.isBlacklisted = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.isBlacklisted");
+          
+              return this.__PROXY__.isBlacklisted(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.isSelfSigned = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.isSelfSigned");
+          
+              return this.__PROXY__.isSelfSigned(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.version = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.version");
+          
+              return this.__PROXY__.version(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.serialNumber = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.serialNumber");
+          
+              return this.__PROXY__.serialNumber(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.digest = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.digest");
+          
+              return this.__PROXY__.digest(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.issuerInfo = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.issuerInfo");
+          
+              return this.__PROXY__.issuerInfo(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.subjectInfo = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.subjectInfo");
+          
+              return this.__PROXY__.subjectInfo(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.issuerDisplayName = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.issuerDisplayName");
+          
+              return this.__PROXY__.issuerDisplayName(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.subjectDisplayName = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.subjectDisplayName");
+          
+              return this.__PROXY__.subjectDisplayName(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.subjectInfoAttributes = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.subjectInfoAttributes");
+          
+              return this.__PROXY__.subjectInfoAttributes(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.issuerInfoAttributes = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.issuerInfoAttributes");
+          
+              return this.__PROXY__.issuerInfoAttributes(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.effectiveDate = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.effectiveDate");
+          
+              return this.__PROXY__.effectiveDate(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.expiryDate = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.expiryDate");
+          
+              return this.__PROXY__.expiryDate(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.publicKey = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.publicKey");
+          
+              return this.__PROXY__.publicKey(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.extensions = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.extensions");
+          
+              return this.__PROXY__.extensions(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.toPem = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.toPem");
+          
+              return this.__PROXY__.toPem(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.toDer = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.toDer");
+          
+              return this.__PROXY__.toDer(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.toText = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.toText");
+          
+              return this.__PROXY__.toText(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.fromPath = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.fromPath");
+          
+              return this.__PROXY__.fromPath(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.fromDevice = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.fromDevice");
+          
+              return this.__PROXY__.fromDevice(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.fromData = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.fromData");
+          
+              return this.__PROXY__.fromData(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.fromFile = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.fromFile");
+          
+              return this.__PROXY__.fromFile(...args);
+            
+        };
+    
+        // function 
+        QSslCertificate.prototype.verify = function(...args) 
+          
+        {
+          //print("JS: QSslCertificate.prototype.verify");
+          
+              return this.__PROXY__.verify(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -362,6 +653,16 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
   }
   
         };
+      QSslCertificate.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSslCertificate.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSslCertificate.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -380,4 +681,7 @@ QSslCertificate.EmailAddress = QSslCertificate_Wrapper.EmailAddress;
       //  return this.wrapper.destr();
       //};
 
+      QSslCertificate.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

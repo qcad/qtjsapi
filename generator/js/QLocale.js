@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QLocale);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QLocale);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QLocale);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QLocale.prototype = new QLocale_BaseJs(engine);
       //QLocale.prototype = new QLocale_Wrapper(engine);
       QLocale.prototype = new Object();
+
 
       QLocale.getObjectType = function() {
         return RJSType_QLocale.getIdStatic();
@@ -975,6 +976,696 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
 
       // functions:
       
+        // function 
+        QLocale.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.language = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.language");
+          
+              return this.__PROXY__.language(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.script = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.script");
+          
+              return this.__PROXY__.script(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.territory = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.territory");
+          
+              return this.__PROXY__.territory(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.country = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.country");
+          
+              return this.__PROXY__.country(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.name");
+          
+              return this.__PROXY__.name(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.bcp47Name = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.bcp47Name");
+          
+              return this.__PROXY__.bcp47Name(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.nativeLanguageName = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.nativeLanguageName");
+          
+              return this.__PROXY__.nativeLanguageName(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.nativeTerritoryName = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.nativeTerritoryName");
+          
+              return this.__PROXY__.nativeTerritoryName(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.nativeCountryName = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.nativeCountryName");
+          
+              return this.__PROXY__.nativeCountryName(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toShort = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toShort");
+          
+              return this.__PROXY__.toShort(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toUShort = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toUShort");
+          
+              return this.__PROXY__.toUShort(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toInt = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toInt");
+          
+              return this.__PROXY__.toInt(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toUInt = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toUInt");
+          
+              return this.__PROXY__.toUInt(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toLong = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toLong");
+          
+              return this.__PROXY__.toLong(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toULong = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toULong");
+          
+              return this.__PROXY__.toULong(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toLongLong = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toLongLong");
+          
+              return this.__PROXY__.toLongLong(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toULongLong = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toULongLong");
+          
+              return this.__PROXY__.toULongLong(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toFloat = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toFloat");
+          
+              return this.__PROXY__.toFloat(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toDouble = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toDouble");
+          
+              return this.__PROXY__.toDouble(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toString = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toString");
+          
+              return this.__PROXY__.toString(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.dateFormat = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.dateFormat");
+          
+              return this.__PROXY__.dateFormat(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.timeFormat = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.timeFormat");
+          
+              return this.__PROXY__.timeFormat(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.dateTimeFormat = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.dateTimeFormat");
+          
+              return this.__PROXY__.dateTimeFormat(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toDate = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toDate");
+          
+              return this.__PROXY__.toDate(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toTime = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toTime");
+          
+              return this.__PROXY__.toTime(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toDateTime = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toDateTime");
+          
+              return this.__PROXY__.toDateTime(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.decimalPoint = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.decimalPoint");
+          
+              return this.__PROXY__.decimalPoint(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.groupSeparator = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.groupSeparator");
+          
+              return this.__PROXY__.groupSeparator(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.percent = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.percent");
+          
+              return this.__PROXY__.percent(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.zeroDigit = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.zeroDigit");
+          
+              return this.__PROXY__.zeroDigit(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.negativeSign = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.negativeSign");
+          
+              return this.__PROXY__.negativeSign(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.positiveSign = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.positiveSign");
+          
+              return this.__PROXY__.positiveSign(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.exponential = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.exponential");
+          
+              return this.__PROXY__.exponential(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.monthName = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.monthName");
+          
+              return this.__PROXY__.monthName(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.standaloneMonthName = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.standaloneMonthName");
+          
+              return this.__PROXY__.standaloneMonthName(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.dayName = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.dayName");
+          
+              return this.__PROXY__.dayName(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.standaloneDayName = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.standaloneDayName");
+          
+              return this.__PROXY__.standaloneDayName(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.firstDayOfWeek = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.firstDayOfWeek");
+          
+              return this.__PROXY__.firstDayOfWeek(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.weekdays = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.weekdays");
+          
+              return this.__PROXY__.weekdays(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.amText = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.amText");
+          
+              return this.__PROXY__.amText(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.pmText = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.pmText");
+          
+              return this.__PROXY__.pmText(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.measurementSystem = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.measurementSystem");
+          
+              return this.__PROXY__.measurementSystem(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.collation = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.collation");
+          
+              return this.__PROXY__.collation(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.textDirection = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.textDirection");
+          
+              return this.__PROXY__.textDirection(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toUpper = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toUpper");
+          
+              return this.__PROXY__.toUpper(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toLower = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toLower");
+          
+              return this.__PROXY__.toLower(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.currencySymbol = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.currencySymbol");
+          
+              return this.__PROXY__.currencySymbol(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.toCurrencyString = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.toCurrencyString");
+          
+              return this.__PROXY__.toCurrencyString(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.formattedDataSize = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.formattedDataSize");
+          
+              return this.__PROXY__.formattedDataSize(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.uiLanguages = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.uiLanguages");
+          
+              return this.__PROXY__.uiLanguages(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.languageToCode = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.languageToCode");
+          
+              return this.__PROXY__.languageToCode(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.territoryToCode = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.territoryToCode");
+          
+              return this.__PROXY__.territoryToCode(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.countryToCode = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.countryToCode");
+          
+              return this.__PROXY__.countryToCode(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.scriptToCode = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.scriptToCode");
+          
+              return this.__PROXY__.scriptToCode(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.languageToString = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.languageToString");
+          
+              return this.__PROXY__.languageToString(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.territoryToString = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.territoryToString");
+          
+              return this.__PROXY__.territoryToString(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.countryToString = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.countryToString");
+          
+              return this.__PROXY__.countryToString(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.scriptToString = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.scriptToString");
+          
+              return this.__PROXY__.scriptToString(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.setDefault = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.setDefault");
+          
+              return this.__PROXY__.setDefault(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.c = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.c");
+          
+              return this.__PROXY__.c(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.system = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.system");
+          
+              return this.__PROXY__.system(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.matchingLocales = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.matchingLocales");
+          
+              return this.__PROXY__.matchingLocales(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.countriesForLanguage = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.countriesForLanguage");
+          
+              return this.__PROXY__.countriesForLanguage(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.setNumberOptions = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.setNumberOptions");
+          
+              return this.__PROXY__.setNumberOptions(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.numberOptions = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.numberOptions");
+          
+              return this.__PROXY__.numberOptions(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.quoteString = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.quoteString");
+          
+              return this.__PROXY__.quoteString(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.createSeparatedList = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.createSeparatedList");
+          
+              return this.__PROXY__.createSeparatedList(...args);
+            
+        };
+    
+        // function 
+        QLocale.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QLocale.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -1341,6 +2032,16 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
   }
   
         };
+      QLocale.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QLocale.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QLocale.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -1359,4 +2060,7 @@ QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
       //  return this.wrapper.destr();
       //};
 
+      QLocale.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

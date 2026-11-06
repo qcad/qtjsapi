@@ -112,31 +112,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
-              // define property setters/getters:
-              Object.defineProperty(this, 'objectName', {
-                  get() {
-                      
-                          return this.__PROXY__.objectName;
-                        
-                  },
-                  
-                    set(value) {
-                        this.__PROXY__.setObjectName(value);
-                    },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
 
       }
 
       //QCompleter.prototype = new QCompleter_BaseJs(engine);
       //QCompleter.prototype = new QCompleter_Wrapper(engine);
       QCompleter.prototype = new Object();
+
 
       QCompleter.prototype.toString = function() {
           //return "QCompleter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -183,19 +168,13 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
       // functions:
       
         // function 
-        QCompleter.prototype.objectName = function(...args) 
-          
-        {
-          //print("JS: QCompleter.prototype.objectName");
-          return this.__PROXY__.objectName(...args);
-        };
-    
-        // function 
         QCompleter.prototype.setObjectName = function(...args) 
           
         {
           //print("JS: QCompleter.prototype.setObjectName");
-          return this.__PROXY__.setObjectName(...args);
+          
+              return this.__PROXY__.setObjectName(...args);
+            
         };
     
         // function 
@@ -203,7 +182,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.isWidgetType");
-          return this.__PROXY__.isWidgetType(...args);
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
         };
     
         // function 
@@ -211,7 +192,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.isWindowType");
-          return this.__PROXY__.isWindowType(...args);
+          
+              return this.__PROXY__.isWindowType(...args);
+            
         };
     
         // function 
@@ -219,7 +202,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.signalsBlocked");
-          return this.__PROXY__.signalsBlocked(...args);
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
         };
     
         // function 
@@ -227,7 +212,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.blockSignals");
-          return this.__PROXY__.blockSignals(...args);
+          
+              return this.__PROXY__.blockSignals(...args);
+            
         };
     
         // function 
@@ -235,7 +222,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.findChild");
-          return this.__PROXY__.findChild(...args);
+          
+              return this.__PROXY__.findChild(...args);
+            
         };
     
         // function 
@@ -243,7 +232,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.children");
-          return this.__PROXY__.children(...args);
+          
+              return this.__PROXY__.children(...args);
+            
         };
     
         // function 
@@ -251,7 +242,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setParent");
-          return this.__PROXY__.setParent(...args);
+          
+              return this.__PROXY__.setParent(...args);
+            
         };
     
         // function 
@@ -259,7 +252,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.installEventFilter");
-          return this.__PROXY__.installEventFilter(...args);
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
         };
     
         // function 
@@ -267,7 +262,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.removeEventFilter");
-          return this.__PROXY__.removeEventFilter(...args);
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
         };
     
         // function 
@@ -275,7 +272,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.dumpObjectTree");
-          return this.__PROXY__.dumpObjectTree(...args);
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
         };
     
         // function 
@@ -283,7 +282,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.dumpObjectInfo");
-          return this.__PROXY__.dumpObjectInfo(...args);
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
         };
     
         // function 
@@ -291,7 +292,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setProperty");
-          return this.__PROXY__.setProperty(...args);
+          
+              return this.__PROXY__.setProperty(...args);
+            
         };
     
         // function 
@@ -299,7 +302,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.property");
-          return this.__PROXY__.property(...args);
+          
+              return this.__PROXY__.property(...args);
+            
         };
     
         // function 
@@ -307,7 +312,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.dynamicPropertyNames");
-          return this.__PROXY__.dynamicPropertyNames(...args);
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
         };
     
         // function 
@@ -315,7 +322,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.parent");
-          return this.__PROXY__.parent(...args);
+          
+              return this.__PROXY__.parent(...args);
+            
         };
     
         // function 
@@ -323,7 +332,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.deleteLater");
-          return this.__PROXY__.deleteLater(...args);
+          
+              return this.__PROXY__.deleteLater(...args);
+            
         };
     
         // function 
@@ -331,7 +342,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setWidget");
-          return this.__PROXY__.setWidget(...args);
+          
+              return this.__PROXY__.setWidget(...args);
+            
         };
     
         // function 
@@ -339,7 +352,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.widget");
-          return this.__PROXY__.widget(...args);
+          
+              return this.__PROXY__.widget(...args);
+            
         };
     
         // function 
@@ -347,7 +362,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setCompletionMode");
-          return this.__PROXY__.setCompletionMode(...args);
+          
+              return this.__PROXY__.setCompletionMode(...args);
+            
         };
     
         // function 
@@ -355,7 +372,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.completionMode");
-          return this.__PROXY__.completionMode(...args);
+          
+              return this.__PROXY__.completionMode(...args);
+            
         };
     
         // function 
@@ -363,7 +382,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setFilterMode");
-          return this.__PROXY__.setFilterMode(...args);
+          
+              return this.__PROXY__.setFilterMode(...args);
+            
         };
     
         // function 
@@ -371,7 +392,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.filterMode");
-          return this.__PROXY__.filterMode(...args);
+          
+              return this.__PROXY__.filterMode(...args);
+            
         };
     
         // function 
@@ -379,7 +402,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setCaseSensitivity");
-          return this.__PROXY__.setCaseSensitivity(...args);
+          
+              return this.__PROXY__.setCaseSensitivity(...args);
+            
         };
     
         // function 
@@ -387,7 +412,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.caseSensitivity");
-          return this.__PROXY__.caseSensitivity(...args);
+          
+              return this.__PROXY__.caseSensitivity(...args);
+            
         };
     
         // function 
@@ -395,7 +422,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setModelSorting");
-          return this.__PROXY__.setModelSorting(...args);
+          
+              return this.__PROXY__.setModelSorting(...args);
+            
         };
     
         // function 
@@ -403,7 +432,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.modelSorting");
-          return this.__PROXY__.modelSorting(...args);
+          
+              return this.__PROXY__.modelSorting(...args);
+            
         };
     
         // function 
@@ -411,7 +442,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setCompletionColumn");
-          return this.__PROXY__.setCompletionColumn(...args);
+          
+              return this.__PROXY__.setCompletionColumn(...args);
+            
         };
     
         // function 
@@ -419,7 +452,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.completionColumn");
-          return this.__PROXY__.completionColumn(...args);
+          
+              return this.__PROXY__.completionColumn(...args);
+            
         };
     
         // function 
@@ -427,7 +462,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setCompletionRole");
-          return this.__PROXY__.setCompletionRole(...args);
+          
+              return this.__PROXY__.setCompletionRole(...args);
+            
         };
     
         // function 
@@ -435,7 +472,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.completionRole");
-          return this.__PROXY__.completionRole(...args);
+          
+              return this.__PROXY__.completionRole(...args);
+            
         };
     
         // function 
@@ -443,7 +482,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.wrapAround");
-          return this.__PROXY__.wrapAround(...args);
+          
+              return this.__PROXY__.wrapAround(...args);
+            
         };
     
         // function 
@@ -451,7 +492,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.maxVisibleItems");
-          return this.__PROXY__.maxVisibleItems(...args);
+          
+              return this.__PROXY__.maxVisibleItems(...args);
+            
         };
     
         // function 
@@ -459,7 +502,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setMaxVisibleItems");
-          return this.__PROXY__.setMaxVisibleItems(...args);
+          
+              return this.__PROXY__.setMaxVisibleItems(...args);
+            
         };
     
         // function 
@@ -467,7 +512,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.completionCount");
-          return this.__PROXY__.completionCount(...args);
+          
+              return this.__PROXY__.completionCount(...args);
+            
         };
     
         // function 
@@ -475,7 +522,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setCurrentRow");
-          return this.__PROXY__.setCurrentRow(...args);
+          
+              return this.__PROXY__.setCurrentRow(...args);
+            
         };
     
         // function 
@@ -483,7 +532,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.currentRow");
-          return this.__PROXY__.currentRow(...args);
+          
+              return this.__PROXY__.currentRow(...args);
+            
         };
     
         // function 
@@ -491,7 +542,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.currentCompletion");
-          return this.__PROXY__.currentCompletion(...args);
+          
+              return this.__PROXY__.currentCompletion(...args);
+            
         };
     
         // function 
@@ -499,7 +552,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.completionPrefix");
-          return this.__PROXY__.completionPrefix(...args);
+          
+              return this.__PROXY__.completionPrefix(...args);
+            
         };
     
         // function 
@@ -507,7 +562,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setCompletionPrefix");
-          return this.__PROXY__.setCompletionPrefix(...args);
+          
+              return this.__PROXY__.setCompletionPrefix(...args);
+            
         };
     
         // function 
@@ -515,7 +572,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.complete");
-          return this.__PROXY__.complete(...args);
+          
+              return this.__PROXY__.complete(...args);
+            
         };
     
         // function 
@@ -523,7 +582,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.setWrapAround");
-          return this.__PROXY__.setWrapAround(...args);
+          
+              return this.__PROXY__.setWrapAround(...args);
+            
         };
     
         // function 
@@ -531,7 +592,9 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.splitPath");
-          return this.__PROXY__.splitPath(...args);
+          
+              return this.__PROXY__.splitPath(...args);
+            
         };
     
         // function 
@@ -539,11 +602,38 @@ QCompleter.CaseInsensitivelySortedModel = QCompleter_Wrapper.CaseInsensitivelySo
           
         {
           //print("JS: QCompleter.prototype.eventFilter");
-          return this.__PROXY__.eventFilter(...args);
+          
+              return this.__PROXY__.eventFilter(...args);
+            
         };
     
 
       // static functions:
+      
+          Object.defineProperty(QCompleter.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QCompleter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QCompleter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QCompleter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

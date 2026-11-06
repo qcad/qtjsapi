@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlDTDHandler);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlDTDHandler.prototype = new QXmlDTDHandler_BaseJs(engine);
       //QXmlDTDHandler.prototype = new QXmlDTDHandler_Wrapper(engine);
       QXmlDTDHandler.prototype = new Object();
+
 
       QXmlDTDHandler.prototype.toString = function() {
           //return "QXmlDTDHandler [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,48 @@
 
       // functions:
       
+        // function 
+        QXmlDTDHandler.prototype.notationDecl = function(...args) 
+          
+        {
+          //print("JS: QXmlDTDHandler.prototype.notationDecl");
+          
+              return this.__PROXY__.notationDecl(...args);
+            
+        };
+    
+        // function 
+        QXmlDTDHandler.prototype.unparsedEntityDecl = function(...args) 
+          
+        {
+          //print("JS: QXmlDTDHandler.prototype.unparsedEntityDecl");
+          
+              return this.__PROXY__.unparsedEntityDecl(...args);
+            
+        };
+    
+        // function 
+        QXmlDTDHandler.prototype.errorString = function(...args) 
+          
+        {
+          //print("JS: QXmlDTDHandler.prototype.errorString");
+          
+              return this.__PROXY__.errorString(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlDTDHandler.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlDTDHandler.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlDTDHandler.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +156,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlDTDHandler.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

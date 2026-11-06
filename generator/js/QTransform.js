@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QTransform);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QTransform);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QTransform);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QTransform);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -130,7 +130,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QTransform);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -156,7 +156,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QTransform);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -188,15 +188,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QTransform.prototype = new QTransform_BaseJs(engine);
       //QTransform.prototype = new QTransform_Wrapper(engine);
       QTransform.prototype = new Object();
+
 
       QTransform.prototype.toString = function() {
           //return "QTransform [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -228,6 +229,386 @@
 
       // functions:
       
+        // function 
+        QTransform.prototype.isAffine = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.isAffine");
+          
+              return this.__PROXY__.isAffine(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.isIdentity = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.isIdentity");
+          
+              return this.__PROXY__.isIdentity(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.isInvertible = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.isInvertible");
+          
+              return this.__PROXY__.isInvertible(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.isScaling = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.isScaling");
+          
+              return this.__PROXY__.isScaling(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.isRotating = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.isRotating");
+          
+              return this.__PROXY__.isRotating(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.isTranslating = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.isTranslating");
+          
+              return this.__PROXY__.isTranslating(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.determinant = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.determinant");
+          
+              return this.__PROXY__.determinant(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m11 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m11");
+          
+              return this.__PROXY__.m11(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m12 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m12");
+          
+              return this.__PROXY__.m12(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m13 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m13");
+          
+              return this.__PROXY__.m13(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m21 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m21");
+          
+              return this.__PROXY__.m21(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m22 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m22");
+          
+              return this.__PROXY__.m22(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m23 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m23");
+          
+              return this.__PROXY__.m23(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m31 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m31");
+          
+              return this.__PROXY__.m31(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m32 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m32");
+          
+              return this.__PROXY__.m32(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.m33 = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.m33");
+          
+              return this.__PROXY__.m33(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.dx = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.dx");
+          
+              return this.__PROXY__.dx(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.dy = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.dy");
+          
+              return this.__PROXY__.dy(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.setMatrix = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.setMatrix");
+          
+              return this.__PROXY__.setMatrix(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.inverted = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.inverted");
+          
+              return this.__PROXY__.inverted(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.adjoint = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.adjoint");
+          
+              return this.__PROXY__.adjoint(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.transposed = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.transposed");
+          
+              return this.__PROXY__.transposed(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.translate = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.translate");
+          
+              return this.__PROXY__.translate(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.scale = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.scale");
+          
+              return this.__PROXY__.scale(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.shear = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.shear");
+          
+              return this.__PROXY__.shear(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.rotate = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.rotate");
+          
+              return this.__PROXY__.rotate(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.rotateRadians = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.rotateRadians");
+          
+              return this.__PROXY__.rotateRadians(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.squareToQuad = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.squareToQuad");
+          
+              return this.__PROXY__.squareToQuad(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.quadToSquare = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.quadToSquare");
+          
+              return this.__PROXY__.quadToSquare(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.quadToQuad = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.quadToQuad");
+          
+              return this.__PROXY__.quadToQuad(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.reset");
+          
+              return this.__PROXY__.reset(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.map = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.map");
+          
+              return this.__PROXY__.map(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.mapToPolygon = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.mapToPolygon");
+          
+              return this.__PROXY__.mapToPolygon(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.mapRect = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.mapRect");
+          
+              return this.__PROXY__.mapRect(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.fromTranslate = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.fromTranslate");
+          
+              return this.__PROXY__.fromTranslate(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.fromScale = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.fromScale");
+          
+              return this.__PROXY__.fromScale(...args);
+            
+        };
+    
+        // function 
+        QTransform.prototype.operator_multiply_assign = function(...args) 
+          
+        {
+          //print("JS: QTransform.prototype.operator_multiply_assign");
+          
+              return this.__PROXY__.operator_multiply_assign(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -370,6 +751,16 @@
   }
   
         };
+      QTransform.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QTransform.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QTransform.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -388,4 +779,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QTransform.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

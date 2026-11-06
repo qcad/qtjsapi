@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QModelIndex);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QModelIndex.prototype = new QModelIndex_BaseJs(engine);
       //QModelIndex.prototype = new QModelIndex_Wrapper(engine);
       QModelIndex.prototype = new Object();
+
 
       QModelIndex.prototype.toString = function() {
           //return "QModelIndex [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,108 @@
 
       // functions:
       
+        // function 
+        QModelIndex.prototype.row = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.row");
+          
+              return this.__PROXY__.row(...args);
+            
+        };
+    
+        // function 
+        QModelIndex.prototype.column = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.column");
+          
+              return this.__PROXY__.column(...args);
+            
+        };
+    
+        // function 
+        QModelIndex.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QModelIndex.prototype.sibling = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.sibling");
+          
+              return this.__PROXY__.sibling(...args);
+            
+        };
+    
+        // function 
+        QModelIndex.prototype.siblingAtColumn = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.siblingAtColumn");
+          
+              return this.__PROXY__.siblingAtColumn(...args);
+            
+        };
+    
+        // function 
+        QModelIndex.prototype.siblingAtRow = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.siblingAtRow");
+          
+              return this.__PROXY__.siblingAtRow(...args);
+            
+        };
+    
+        // function 
+        QModelIndex.prototype.data = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.data");
+          
+              return this.__PROXY__.data(...args);
+            
+        };
+    
+        // function 
+        QModelIndex.prototype.flags = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.flags");
+          
+              return this.__PROXY__.flags(...args);
+            
+        };
+    
+        // function 
+        QModelIndex.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QModelIndex.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
 
       // static functions:
+      QModelIndex.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QModelIndex.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QModelIndex.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +216,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QModelIndex.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

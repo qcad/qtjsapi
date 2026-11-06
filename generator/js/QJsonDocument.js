@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QJsonDocument);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QJsonDocument);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QJsonDocument);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QJsonDocument.prototype = new QJsonDocument_BaseJs(engine);
       //QJsonDocument.prototype = new QJsonDocument_Wrapper(engine);
       QJsonDocument.prototype = new Object();
+
 
       QJsonDocument.prototype.toString = function() {
           //return "QJsonDocument [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -154,6 +155,86 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
 
       // functions:
       
+        // function 
+        QJsonDocument.prototype.fromVariant = function(...args) 
+          
+        {
+          //print("JS: QJsonDocument.prototype.fromVariant");
+          
+              return this.__PROXY__.fromVariant(...args);
+            
+        };
+    
+        // function 
+        QJsonDocument.prototype.toVariant = function(...args) 
+          
+        {
+          //print("JS: QJsonDocument.prototype.toVariant");
+          
+              return this.__PROXY__.toVariant(...args);
+            
+        };
+    
+        // function 
+        QJsonDocument.prototype.fromJson = function(...args) 
+          
+        {
+          //print("JS: QJsonDocument.prototype.fromJson");
+          
+              return this.__PROXY__.fromJson(...args);
+            
+        };
+    
+        // function 
+        QJsonDocument.prototype.toJson = function(...args) 
+          
+        {
+          //print("JS: QJsonDocument.prototype.toJson");
+          
+              return this.__PROXY__.toJson(...args);
+            
+        };
+    
+        // function 
+        QJsonDocument.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QJsonDocument.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QJsonDocument.prototype.isArray = function(...args) 
+          
+        {
+          //print("JS: QJsonDocument.prototype.isArray");
+          
+              return this.__PROXY__.isArray(...args);
+            
+        };
+    
+        // function 
+        QJsonDocument.prototype.isObject = function(...args) 
+          
+        {
+          //print("JS: QJsonDocument.prototype.isObject");
+          
+              return this.__PROXY__.isObject(...args);
+            
+        };
+    
+        // function 
+        QJsonDocument.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QJsonDocument.prototype.isNull");
+          
+              return this.__PROXY__.isNull(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -212,6 +293,16 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
   }
   
         };
+      QJsonDocument.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QJsonDocument.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QJsonDocument.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -230,4 +321,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
       //  return this.wrapper.destr();
       //};
 
+      QJsonDocument.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -162,15 +162,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QLine.prototype = new QLine_BaseJs(engine);
       //QLine.prototype = new QLine_Wrapper(engine);
       QLine.prototype = new Object();
+
 
       QLine.prototype.toString = function() {
           //return "QLine [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -207,7 +208,9 @@
           
         {
           //print("JS: QLine.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -215,7 +218,9 @@
           
         {
           //print("JS: QLine.prototype.p1");
-          return this.__PROXY__.p1(...args);
+          
+              return this.__PROXY__.p1(...args);
+            
         };
     
         // function 
@@ -223,7 +228,9 @@
           
         {
           //print("JS: QLine.prototype.p2");
-          return this.__PROXY__.p2(...args);
+          
+              return this.__PROXY__.p2(...args);
+            
         };
     
         // function 
@@ -231,7 +238,9 @@
           
         {
           //print("JS: QLine.prototype.x1");
-          return this.__PROXY__.x1(...args);
+          
+              return this.__PROXY__.x1(...args);
+            
         };
     
         // function 
@@ -239,7 +248,9 @@
           
         {
           //print("JS: QLine.prototype.y1");
-          return this.__PROXY__.y1(...args);
+          
+              return this.__PROXY__.y1(...args);
+            
         };
     
         // function 
@@ -247,7 +258,9 @@
           
         {
           //print("JS: QLine.prototype.x2");
-          return this.__PROXY__.x2(...args);
+          
+              return this.__PROXY__.x2(...args);
+            
         };
     
         // function 
@@ -255,7 +268,9 @@
           
         {
           //print("JS: QLine.prototype.y2");
-          return this.__PROXY__.y2(...args);
+          
+              return this.__PROXY__.y2(...args);
+            
         };
     
         // function 
@@ -263,7 +278,9 @@
           
         {
           //print("JS: QLine.prototype.dx");
-          return this.__PROXY__.dx(...args);
+          
+              return this.__PROXY__.dx(...args);
+            
         };
     
         // function 
@@ -271,7 +288,9 @@
           
         {
           //print("JS: QLine.prototype.dy");
-          return this.__PROXY__.dy(...args);
+          
+              return this.__PROXY__.dy(...args);
+            
         };
     
         // function 
@@ -279,7 +298,9 @@
           
         {
           //print("JS: QLine.prototype.translate");
-          return this.__PROXY__.translate(...args);
+          
+              return this.__PROXY__.translate(...args);
+            
         };
     
         // function 
@@ -287,7 +308,9 @@
           
         {
           //print("JS: QLine.prototype.translated");
-          return this.__PROXY__.translated(...args);
+          
+              return this.__PROXY__.translated(...args);
+            
         };
     
         // function 
@@ -295,7 +318,9 @@
           
         {
           //print("JS: QLine.prototype.center");
-          return this.__PROXY__.center(...args);
+          
+              return this.__PROXY__.center(...args);
+            
         };
     
         // function 
@@ -303,7 +328,9 @@
           
         {
           //print("JS: QLine.prototype.setP1");
-          return this.__PROXY__.setP1(...args);
+          
+              return this.__PROXY__.setP1(...args);
+            
         };
     
         // function 
@@ -311,7 +338,9 @@
           
         {
           //print("JS: QLine.prototype.setP2");
-          return this.__PROXY__.setP2(...args);
+          
+              return this.__PROXY__.setP2(...args);
+            
         };
     
         // function 
@@ -319,7 +348,9 @@
           
         {
           //print("JS: QLine.prototype.setPoints");
-          return this.__PROXY__.setPoints(...args);
+          
+              return this.__PROXY__.setPoints(...args);
+            
         };
     
         // function 
@@ -327,11 +358,23 @@
           
         {
           //print("JS: QLine.prototype.setLine");
-          return this.__PROXY__.setLine(...args);
+          
+              return this.__PROXY__.setLine(...args);
+            
         };
     
 
       // static functions:
+      QLine.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QLine.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QLine.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

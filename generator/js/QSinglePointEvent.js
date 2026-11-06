@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSinglePointEvent.prototype = new QSinglePointEvent_BaseJs(engine);
       //QSinglePointEvent.prototype = new QSinglePointEvent_Wrapper(engine);
       QSinglePointEvent.prototype = new Object();
+
 
       QSinglePointEvent.prototype.toString = function() {
           //return "QSinglePointEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -282,7 +283,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -290,7 +293,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -298,7 +303,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -306,7 +313,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -314,7 +323,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -322,7 +333,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -330,7 +343,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -338,7 +353,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -346,7 +363,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -354,7 +373,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.setTimestamp");
-          return this.__PROXY__.setTimestamp(...args);
+          
+              return this.__PROXY__.setTimestamp(...args);
+            
         };
     
         // function 
@@ -362,7 +383,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.pointCount");
-          return this.__PROXY__.pointCount(...args);
+          
+              return this.__PROXY__.pointCount(...args);
+            
         };
     
         // function 
@@ -370,7 +393,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.point");
-          return this.__PROXY__.point(...args);
+          
+              return this.__PROXY__.point(...args);
+            
         };
     
         // function 
@@ -378,7 +403,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.pointById");
-          return this.__PROXY__.pointById(...args);
+          
+              return this.__PROXY__.pointById(...args);
+            
         };
     
         // function 
@@ -386,7 +413,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.allPointsGrabbed");
-          return this.__PROXY__.allPointsGrabbed(...args);
+          
+              return this.__PROXY__.allPointsGrabbed(...args);
+            
         };
     
         // function 
@@ -394,7 +423,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.allPointsAccepted");
-          return this.__PROXY__.allPointsAccepted(...args);
+          
+              return this.__PROXY__.allPointsAccepted(...args);
+            
         };
     
         // function 
@@ -402,7 +433,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -410,7 +443,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.exclusiveGrabber");
-          return this.__PROXY__.exclusiveGrabber(...args);
+          
+              return this.__PROXY__.exclusiveGrabber(...args);
+            
         };
     
         // function 
@@ -418,7 +453,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.setExclusiveGrabber");
-          return this.__PROXY__.setExclusiveGrabber(...args);
+          
+              return this.__PROXY__.setExclusiveGrabber(...args);
+            
         };
     
         // function 
@@ -426,7 +463,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.clearPassiveGrabbers");
-          return this.__PROXY__.clearPassiveGrabbers(...args);
+          
+              return this.__PROXY__.clearPassiveGrabbers(...args);
+            
         };
     
         // function 
@@ -434,7 +473,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.addPassiveGrabber");
-          return this.__PROXY__.addPassiveGrabber(...args);
+          
+              return this.__PROXY__.addPassiveGrabber(...args);
+            
         };
     
         // function 
@@ -442,7 +483,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.removePassiveGrabber");
-          return this.__PROXY__.removePassiveGrabber(...args);
+          
+              return this.__PROXY__.removePassiveGrabber(...args);
+            
         };
     
         // function 
@@ -450,7 +493,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.button");
-          return this.__PROXY__.button(...args);
+          
+              return this.__PROXY__.button(...args);
+            
         };
     
         // function 
@@ -458,7 +503,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.buttons");
-          return this.__PROXY__.buttons(...args);
+          
+              return this.__PROXY__.buttons(...args);
+            
         };
     
         // function 
@@ -466,7 +513,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.position");
-          return this.__PROXY__.position(...args);
+          
+              return this.__PROXY__.position(...args);
+            
         };
     
         // function 
@@ -474,7 +523,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.scenePosition");
-          return this.__PROXY__.scenePosition(...args);
+          
+              return this.__PROXY__.scenePosition(...args);
+            
         };
     
         // function 
@@ -482,7 +533,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.globalPosition");
-          return this.__PROXY__.globalPosition(...args);
+          
+              return this.__PROXY__.globalPosition(...args);
+            
         };
     
         // function 
@@ -490,7 +543,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.isBeginEvent");
-          return this.__PROXY__.isBeginEvent(...args);
+          
+              return this.__PROXY__.isBeginEvent(...args);
+            
         };
     
         // function 
@@ -498,7 +553,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.isUpdateEvent");
-          return this.__PROXY__.isUpdateEvent(...args);
+          
+              return this.__PROXY__.isUpdateEvent(...args);
+            
         };
     
         // function 
@@ -506,7 +563,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.isEndEvent");
-          return this.__PROXY__.isEndEvent(...args);
+          
+              return this.__PROXY__.isEndEvent(...args);
+            
         };
     
         // function 
@@ -514,7 +573,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.exclusivePointGrabber");
-          return this.__PROXY__.exclusivePointGrabber(...args);
+          
+              return this.__PROXY__.exclusivePointGrabber(...args);
+            
         };
     
         // function 
@@ -522,7 +583,9 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.setExclusivePointGrabber");
-          return this.__PROXY__.setExclusivePointGrabber(...args);
+          
+              return this.__PROXY__.setExclusivePointGrabber(...args);
+            
         };
     
         // function 
@@ -530,11 +593,23 @@ QSinglePointEvent.MaxUser = QSinglePointEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QSinglePointEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
 
       // static functions:
+      QSinglePointEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSinglePointEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSinglePointEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

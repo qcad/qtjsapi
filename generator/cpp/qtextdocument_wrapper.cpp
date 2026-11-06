@@ -6258,6 +6258,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::contentsChangeEmitter(
                 int from, int charsRemoved, int charsAdded
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("contentsChange(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: from (int)
@@ -6305,6 +6312,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::contentsChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("contentsChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -6325,6 +6339,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::undoAvailableEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("undoAvailable(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)
@@ -6354,6 +6375,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::redoAvailableEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("redoAvailable(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)
@@ -6383,6 +6411,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::undoCommandAddedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("undoCommandAdded()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -6403,6 +6438,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::modificationChangedEmitter(
                 bool m
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("modificationChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: m (bool)
@@ -6432,6 +6474,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::cursorPositionChangedEmitter(
                 const QTextCursor& cursor
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("cursorPositionChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: cursor (QTextCursor)
@@ -6461,6 +6510,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::blockCountChangedEmitter(
                 int newBlockCount
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("blockCountChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: newBlockCount (int)
@@ -6490,6 +6546,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::baseUrlChangedEmitter(
                 const QUrl& url
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("baseUrlChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: url (QUrl)
@@ -6519,6 +6582,13 @@ Qt::CursorMoveStyle a1_cpp;
               QTextDocument_Wrapper::documentLayoutChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextDocument_Wrapper::staticMetaObject.indexOfSignal("documentLayoutChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextDocument_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

@@ -45,6 +45,21 @@ public:
 
     void registerWrapper(RJSWrapperObj& obj);
 
+    /**
+     * \return The JS prototype object of the generated JS class with the
+     * given name (e.g. RVector.prototype), cached per type ID.
+     */
+    QJSValue getPrototype(int typeId, const char* className);
+
+    /**
+     * Creates the JS object for an existing wrapper object (the C++ side
+     * equivalent of 'new ClassName("__GOT_WRAPPER__", false, wrapper)'):
+     * a plain object with the prototype of the JS class and the wrapper
+     * attached as __PROXY__. Avoids calling the JS constructor for every
+     * object returned from C++ to JS.
+     */
+    QJSValue newProxyObject(int typeId, const char* className, QObject* wrapper);
+
 public slots:
     void unregisterWrapper(RJSWrapperObj& obj);
 
@@ -69,6 +84,9 @@ private:
 
     // list of wrappers created for this RJSApi instance:
     QSet<RJSWrapperObj*> wrappers;
+
+    // JS class prototypes by type ID (see getPrototype):
+    QHash<int, QJSValue> prototypeCache;
 };
 
 Q_DECLARE_METATYPE(RJSApi*)

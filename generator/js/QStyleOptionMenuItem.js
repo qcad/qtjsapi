@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionMenuItem);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionMenuItem);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionMenuItem);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionMenuItem.prototype = new QStyleOptionMenuItem_BaseJs(engine);
       //QStyleOptionMenuItem.prototype = new QStyleOptionMenuItem_Wrapper(engine);
       QStyleOptionMenuItem.prototype = new Object();
+
 
       QStyleOptionMenuItem.prototype.toString = function() {
           //return "QStyleOptionMenuItem [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -197,8 +198,38 @@ QStyleOptionMenuItem.NonExclusive = QStyleOptionMenuItem_Wrapper.NonExclusive;
 
       // functions:
       
+        // function 
+        QStyleOptionMenuItem.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionMenuItem.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionMenuItem.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionMenuItem.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionMenuItem.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionMenuItem.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionMenuItem.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -217,4 +248,7 @@ QStyleOptionMenuItem.NonExclusive = QStyleOptionMenuItem_Wrapper.NonExclusive;
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionMenuItem.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

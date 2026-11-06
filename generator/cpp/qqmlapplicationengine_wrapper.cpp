@@ -1899,6 +1899,13 @@ QString a1_cpp;
               QQmlApplicationEngine_Wrapper::uiLanguageChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQmlApplicationEngine_Wrapper::staticMetaObject.indexOfSignal("uiLanguageChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQmlApplicationEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3234,6 +3241,13 @@ QUrl a2_cpp;
               QQmlApplicationEngine_Wrapper::objectCreatedEmitter(
                 QObject* object, const QUrl& url
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQmlApplicationEngine_Wrapper::staticMetaObject.indexOfSignal("objectCreated(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQmlApplicationEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: object (QObject)
@@ -3272,6 +3286,13 @@ QUrl a2_cpp;
               QQmlApplicationEngine_Wrapper::objectCreationFailedEmitter(
                 const QUrl& url
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQmlApplicationEngine_Wrapper::staticMetaObject.indexOfSignal("objectCreationFailed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQmlApplicationEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: url (QUrl)

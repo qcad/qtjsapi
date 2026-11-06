@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QFileIconProvider);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QFileIconProvider);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QFileIconProvider.prototype = new QFileIconProvider_BaseJs(engine);
       //QFileIconProvider.prototype = new QFileIconProvider_Wrapper(engine);
       QFileIconProvider.prototype = new Object();
+
 
       QFileIconProvider.prototype.toString = function() {
           //return "QFileIconProvider [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -140,8 +141,58 @@ QFileIconProvider.DontUseCustomDirectoryIcons = QFileIconProvider_Wrapper.DontUs
 
       // functions:
       
+        // function 
+        QFileIconProvider.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QFileIconProvider.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QFileIconProvider.prototype.setOptions = function(...args) 
+          
+        {
+          //print("JS: QFileIconProvider.prototype.setOptions");
+          
+              return this.__PROXY__.setOptions(...args);
+            
+        };
+    
+        // function 
+        QFileIconProvider.prototype.options = function(...args) 
+          
+        {
+          //print("JS: QFileIconProvider.prototype.options");
+          
+              return this.__PROXY__.options(...args);
+            
+        };
+    
+        // function 
+        QFileIconProvider.prototype.icon = function(...args) 
+          
+        {
+          //print("JS: QFileIconProvider.prototype.icon");
+          
+              return this.__PROXY__.icon(...args);
+            
+        };
+    
 
       // static functions:
+      QFileIconProvider.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QFileIconProvider.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QFileIconProvider.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -160,4 +211,7 @@ QFileIconProvider.DontUseCustomDirectoryIcons = QFileIconProvider_Wrapper.DontUs
       //  return this.wrapper.destr();
       //};
 
+      QFileIconProvider.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

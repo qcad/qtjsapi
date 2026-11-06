@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QPaintDevice);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPaintDevice.prototype = new QPaintDevice_BaseJs(engine);
       //QPaintDevice.prototype = new QPaintDevice_Wrapper(engine);
       QPaintDevice.prototype = new Object();
+
 
       QPaintDevice.prototype.toString = function() {
           //return "QPaintDevice [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,6 +96,216 @@
 
       // functions:
       
+        // function 
+        QPaintDevice.prototype.devType = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.devType");
+          
+              return this.__PROXY__.devType(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.paintingActive = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.paintingActive");
+          
+              return this.__PROXY__.paintingActive(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.paintEngine = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.paintEngine");
+          
+              return this.__PROXY__.paintEngine(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.width = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.width");
+          
+              return this.__PROXY__.width(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.height = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.height");
+          
+              return this.__PROXY__.height(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.widthMM = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.widthMM");
+          
+              return this.__PROXY__.widthMM(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.heightMM = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.heightMM");
+          
+              return this.__PROXY__.heightMM(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.logicalDpiX = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.logicalDpiX");
+          
+              return this.__PROXY__.logicalDpiX(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.logicalDpiY = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.logicalDpiY");
+          
+              return this.__PROXY__.logicalDpiY(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.physicalDpiX = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.physicalDpiX");
+          
+              return this.__PROXY__.physicalDpiX(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.physicalDpiY = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.physicalDpiY");
+          
+              return this.__PROXY__.physicalDpiY(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.devicePixelRatio = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.devicePixelRatio");
+          
+              return this.__PROXY__.devicePixelRatio(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.devicePixelRatioF = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.devicePixelRatioF");
+          
+              return this.__PROXY__.devicePixelRatioF(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.colorCount = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.colorCount");
+          
+              return this.__PROXY__.colorCount(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.depth = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.depth");
+          
+              return this.__PROXY__.depth(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.devicePixelRatioFScale = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.devicePixelRatioFScale");
+          
+              return this.__PROXY__.devicePixelRatioFScale(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.metric = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.metric");
+          
+              return this.__PROXY__.metric(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.initPainter = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.initPainter");
+          
+              return this.__PROXY__.initPainter(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.redirected = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.redirected");
+          
+              return this.__PROXY__.redirected(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.sharedPainter = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.sharedPainter");
+          
+              return this.__PROXY__.sharedPainter(...args);
+            
+        };
+    
+        // function 
+        QPaintDevice.prototype.qt_paint_device_metric = function(...args) 
+          
+        {
+          //print("JS: QPaintDevice.prototype.qt_paint_device_metric");
+          
+              return this.__PROXY__.qt_paint_device_metric(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -125,6 +336,16 @@
   }
   
         };
+      QPaintDevice.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPaintDevice.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPaintDevice.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -143,4 +364,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QPaintDevice.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

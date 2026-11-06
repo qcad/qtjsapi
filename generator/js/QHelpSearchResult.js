@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QHelpSearchResult);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QHelpSearchResult);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QHelpSearchResult);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QHelpSearchResult.prototype = new QHelpSearchResult_BaseJs(engine);
       //QHelpSearchResult.prototype = new QHelpSearchResult_Wrapper(engine);
       QHelpSearchResult.prototype = new Object();
+
 
       QHelpSearchResult.prototype.toString = function() {
           //return "QHelpSearchResult [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,8 +151,48 @@
 
       // functions:
       
+        // function 
+        QHelpSearchResult.prototype.title = function(...args) 
+          
+        {
+          //print("JS: QHelpSearchResult.prototype.title");
+          
+              return this.__PROXY__.title(...args);
+            
+        };
+    
+        // function 
+        QHelpSearchResult.prototype.url = function(...args) 
+          
+        {
+          //print("JS: QHelpSearchResult.prototype.url");
+          
+              return this.__PROXY__.url(...args);
+            
+        };
+    
+        // function 
+        QHelpSearchResult.prototype.snippet = function(...args) 
+          
+        {
+          //print("JS: QHelpSearchResult.prototype.snippet");
+          
+              return this.__PROXY__.snippet(...args);
+            
+        };
+    
 
       // static functions:
+      QHelpSearchResult.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QHelpSearchResult.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QHelpSearchResult.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -170,4 +211,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QHelpSearchResult.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -2198,6 +2198,13 @@ int a1_cpp;
               QTimer_Wrapper::timeoutEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTimer_Wrapper::staticMetaObject.indexOfSignal("timeout()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTimer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

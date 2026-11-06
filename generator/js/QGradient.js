@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QGradient.prototype = new QGradient_BaseJs(engine);
       //QGradient.prototype = new QGradient_Wrapper(engine);
       QGradient.prototype = new Object();
+
 
       QGradient.prototype.toString = function() {
           //return "QGradient [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -347,7 +348,9 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QGradient.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -355,7 +358,9 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QGradient.prototype.setSpread");
-          return this.__PROXY__.setSpread(...args);
+          
+              return this.__PROXY__.setSpread(...args);
+            
         };
     
         // function 
@@ -363,7 +368,9 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QGradient.prototype.spread");
-          return this.__PROXY__.spread(...args);
+          
+              return this.__PROXY__.spread(...args);
+            
         };
     
         // function 
@@ -371,7 +378,9 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QGradient.prototype.setColorAt");
-          return this.__PROXY__.setColorAt(...args);
+          
+              return this.__PROXY__.setColorAt(...args);
+            
         };
     
         // function 
@@ -379,7 +388,9 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QGradient.prototype.coordinateMode");
-          return this.__PROXY__.coordinateMode(...args);
+          
+              return this.__PROXY__.coordinateMode(...args);
+            
         };
     
         // function 
@@ -387,7 +398,9 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QGradient.prototype.setCoordinateMode");
-          return this.__PROXY__.setCoordinateMode(...args);
+          
+              return this.__PROXY__.setCoordinateMode(...args);
+            
         };
     
         // function 
@@ -395,7 +408,9 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QGradient.prototype.interpolationMode");
-          return this.__PROXY__.interpolationMode(...args);
+          
+              return this.__PROXY__.interpolationMode(...args);
+            
         };
     
         // function 
@@ -403,11 +418,23 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QGradient.prototype.setInterpolationMode");
-          return this.__PROXY__.setInterpolationMode(...args);
+          
+              return this.__PROXY__.setInterpolationMode(...args);
+            
         };
     
 
       // static functions:
+      QGradient.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGradient.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGradient.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlReader);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlReader.prototype = new QXmlReader_BaseJs(engine);
       //QXmlReader.prototype = new QXmlReader_Wrapper(engine);
       QXmlReader.prototype = new Object();
+
 
       QXmlReader.prototype.toString = function() {
           //return "QXmlReader [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,188 @@
 
       // functions:
       
+        // function 
+        QXmlReader.prototype.feature = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.feature");
+          
+              return this.__PROXY__.feature(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.setFeature = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.setFeature");
+          
+              return this.__PROXY__.setFeature(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.hasFeature = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.hasFeature");
+          
+              return this.__PROXY__.hasFeature(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.hasProperty = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.hasProperty");
+          
+              return this.__PROXY__.hasProperty(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.setEntityResolver = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.setEntityResolver");
+          
+              return this.__PROXY__.setEntityResolver(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.entityResolver = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.entityResolver");
+          
+              return this.__PROXY__.entityResolver(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.setDTDHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.setDTDHandler");
+          
+              return this.__PROXY__.setDTDHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.DTDHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.DTDHandler");
+          
+              return this.__PROXY__.DTDHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.setContentHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.setContentHandler");
+          
+              return this.__PROXY__.setContentHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.contentHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.contentHandler");
+          
+              return this.__PROXY__.contentHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.setErrorHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.setErrorHandler");
+          
+              return this.__PROXY__.setErrorHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.errorHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.errorHandler");
+          
+              return this.__PROXY__.errorHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.setLexicalHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.setLexicalHandler");
+          
+              return this.__PROXY__.setLexicalHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.lexicalHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.lexicalHandler");
+          
+              return this.__PROXY__.lexicalHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.setDeclHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.setDeclHandler");
+          
+              return this.__PROXY__.setDeclHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.declHandler = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.declHandler");
+          
+              return this.__PROXY__.declHandler(...args);
+            
+        };
+    
+        // function 
+        QXmlReader.prototype.parse = function(...args) 
+          
+        {
+          //print("JS: QXmlReader.prototype.parse");
+          
+              return this.__PROXY__.parse(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlReader.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlReader.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlReader.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +296,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlReader.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -15883,6 +15883,13 @@ bool a1_cpp;
               QMdiSubWindow_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMdiSubWindow_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMdiSubWindow_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17181,6 +17188,13 @@ int a1_cpp;
               QMdiSubWindow_Wrapper::windowStateChangedEmitter(
                 Qt::WindowStates oldState, Qt::WindowStates newState
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMdiSubWindow_Wrapper::staticMetaObject.indexOfSignal("windowStateChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMdiSubWindow_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: oldState (Qt::WindowStates)
@@ -17219,6 +17233,13 @@ int a1_cpp;
               QMdiSubWindow_Wrapper::aboutToActivateEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMdiSubWindow_Wrapper::staticMetaObject.indexOfSignal("aboutToActivate()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMdiSubWindow_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

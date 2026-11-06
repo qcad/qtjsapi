@@ -4698,6 +4698,13 @@ int a1_cpp;
               QStackedLayout_Wrapper::widgetRemovedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStackedLayout_Wrapper::staticMetaObject.indexOfSignal("widgetRemoved(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStackedLayout_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -4727,6 +4734,13 @@ int a1_cpp;
               QStackedLayout_Wrapper::currentChangedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStackedLayout_Wrapper::staticMetaObject.indexOfSignal("currentChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStackedLayout_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)

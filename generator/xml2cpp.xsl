@@ -1387,6 +1387,13 @@
                 -->
                 <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" />
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = <xsl:value-of select="$wrapper-class-name" />::staticMetaObject.indexOfSignal("<xsl:value-of select="ancestor::qsrc:function/@name" />(<xsl:for-each select="qsrc:parameters/qsrc:parameter">QJSValue<xsl:if test="position() &lt; last()">,</xsl:if></xsl:for-each>)");
+                if (forwardedSignalIndex&gt;=0 &amp;&amp; !isSignalConnected(<xsl:value-of select="$wrapper-class-name" />::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="tojs" />
 

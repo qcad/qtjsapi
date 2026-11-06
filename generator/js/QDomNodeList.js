@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QDomNodeList.prototype = new QDomNodeList_BaseJs(engine);
       //QDomNodeList.prototype = new QDomNodeList_Wrapper(engine);
       QDomNodeList.prototype = new Object();
+
 
       QDomNodeList.prototype.toString = function() {
           //return "QDomNodeList [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -155,7 +156,9 @@
           
         {
           //print("JS: QDomNodeList.prototype.operator_assign");
-          return this.__PROXY__.operator_assign(...args);
+          
+              return this.__PROXY__.operator_assign(...args);
+            
         };
     
         // function 
@@ -163,7 +166,9 @@
           
         {
           //print("JS: QDomNodeList.prototype.item");
-          return this.__PROXY__.item(...args);
+          
+              return this.__PROXY__.item(...args);
+            
         };
     
         // function 
@@ -171,7 +176,9 @@
           
         {
           //print("JS: QDomNodeList.prototype.at");
-          return this.__PROXY__.at(...args);
+          
+              return this.__PROXY__.at(...args);
+            
         };
     
         // function 
@@ -179,7 +186,9 @@
           
         {
           //print("JS: QDomNodeList.prototype.length");
-          return this.__PROXY__.length(...args);
+          
+              return this.__PROXY__.length(...args);
+            
         };
     
         // function 
@@ -187,7 +196,9 @@
           
         {
           //print("JS: QDomNodeList.prototype.count");
-          return this.__PROXY__.count(...args);
+          
+              return this.__PROXY__.count(...args);
+            
         };
     
         // function 
@@ -195,7 +206,9 @@
           
         {
           //print("JS: QDomNodeList.prototype.size");
-          return this.__PROXY__.size(...args);
+          
+              return this.__PROXY__.size(...args);
+            
         };
     
         // function 
@@ -203,11 +216,23 @@
           
         {
           //print("JS: QDomNodeList.prototype.isEmpty");
-          return this.__PROXY__.isEmpty(...args);
+          
+              return this.__PROXY__.isEmpty(...args);
+            
         };
     
 
       // static functions:
+      QDomNodeList.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QDomNodeList.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QDomNodeList.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

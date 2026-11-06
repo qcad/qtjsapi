@@ -137,15 +137,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QEasingCurve.prototype = new QEasingCurve_BaseJs(engine);
       //QEasingCurve.prototype = new QEasingCurve_Wrapper(engine);
       QEasingCurve.prototype = new Object();
+
 
       QEasingCurve.prototype.toString = function() {
           //return "QEasingCurve [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -233,7 +234,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.operator_assign");
-          return this.__PROXY__.operator_assign(...args);
+          
+              return this.__PROXY__.operator_assign(...args);
+            
         };
     
         // function 
@@ -241,7 +244,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -249,7 +254,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.amplitude");
-          return this.__PROXY__.amplitude(...args);
+          
+              return this.__PROXY__.amplitude(...args);
+            
         };
     
         // function 
@@ -257,7 +264,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.setAmplitude");
-          return this.__PROXY__.setAmplitude(...args);
+          
+              return this.__PROXY__.setAmplitude(...args);
+            
         };
     
         // function 
@@ -265,7 +274,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.period");
-          return this.__PROXY__.period(...args);
+          
+              return this.__PROXY__.period(...args);
+            
         };
     
         // function 
@@ -273,7 +284,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.setPeriod");
-          return this.__PROXY__.setPeriod(...args);
+          
+              return this.__PROXY__.setPeriod(...args);
+            
         };
     
         // function 
@@ -281,7 +294,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.overshoot");
-          return this.__PROXY__.overshoot(...args);
+          
+              return this.__PROXY__.overshoot(...args);
+            
         };
     
         // function 
@@ -289,7 +304,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.setOvershoot");
-          return this.__PROXY__.setOvershoot(...args);
+          
+              return this.__PROXY__.setOvershoot(...args);
+            
         };
     
         // function 
@@ -297,7 +314,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.addCubicBezierSegment");
-          return this.__PROXY__.addCubicBezierSegment(...args);
+          
+              return this.__PROXY__.addCubicBezierSegment(...args);
+            
         };
     
         // function 
@@ -305,7 +324,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.addTCBSegment");
-          return this.__PROXY__.addTCBSegment(...args);
+          
+              return this.__PROXY__.addTCBSegment(...args);
+            
         };
     
         // function 
@@ -313,7 +334,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.toCubicSpline");
-          return this.__PROXY__.toCubicSpline(...args);
+          
+              return this.__PROXY__.toCubicSpline(...args);
+            
         };
     
         // function 
@@ -321,7 +344,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -329,7 +354,9 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.setType");
-          return this.__PROXY__.setType(...args);
+          
+              return this.__PROXY__.setType(...args);
+            
         };
     
         // function 
@@ -337,11 +364,23 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
           
         {
           //print("JS: QEasingCurve.prototype.valueForProgress");
-          return this.__PROXY__.valueForProgress(...args);
+          
+              return this.__PROXY__.valueForProgress(...args);
+            
         };
     
 
       // static functions:
+      QEasingCurve.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QEasingCurve.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QEasingCurve.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

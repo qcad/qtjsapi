@@ -1767,6 +1767,13 @@ QVariant a2_cpp;
               QInputDevice_Wrapper::availableVirtualGeometryChangedEmitter(
                 QRect area
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDevice_Wrapper::staticMetaObject.indexOfSignal("availableVirtualGeometryChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDevice_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: area (QRect)

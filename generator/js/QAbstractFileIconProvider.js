@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QAbstractFileIconProvider);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QAbstractFileIconProvider);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QAbstractFileIconProvider.prototype = new QAbstractFileIconProvider_BaseJs(engine);
       //QAbstractFileIconProvider.prototype = new QAbstractFileIconProvider_Wrapper(engine);
       QAbstractFileIconProvider.prototype = new Object();
+
 
       QAbstractFileIconProvider.prototype.toString = function() {
           //return "QAbstractFileIconProvider [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -136,8 +137,58 @@ QAbstractFileIconProvider.DontUseCustomDirectoryIcons = QAbstractFileIconProvide
 
       // functions:
       
+        // function 
+        QAbstractFileIconProvider.prototype.icon = function(...args) 
+          
+        {
+          //print("JS: QAbstractFileIconProvider.prototype.icon");
+          
+              return this.__PROXY__.icon(...args);
+            
+        };
+    
+        // function 
+        QAbstractFileIconProvider.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QAbstractFileIconProvider.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QAbstractFileIconProvider.prototype.setOptions = function(...args) 
+          
+        {
+          //print("JS: QAbstractFileIconProvider.prototype.setOptions");
+          
+              return this.__PROXY__.setOptions(...args);
+            
+        };
+    
+        // function 
+        QAbstractFileIconProvider.prototype.options = function(...args) 
+          
+        {
+          //print("JS: QAbstractFileIconProvider.prototype.options");
+          
+              return this.__PROXY__.options(...args);
+            
+        };
+    
 
       // static functions:
+      QAbstractFileIconProvider.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QAbstractFileIconProvider.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QAbstractFileIconProvider.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -156,4 +207,7 @@ QAbstractFileIconProvider.DontUseCustomDirectoryIcons = QAbstractFileIconProvide
       //  return this.wrapper.destr();
       //};
 
+      QAbstractFileIconProvider.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

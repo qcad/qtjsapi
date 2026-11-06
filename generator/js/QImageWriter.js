@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QImageWriter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QImageWriter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QImageWriter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -105,7 +105,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QImageWriter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -137,15 +137,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QImageWriter.prototype = new QImageWriter_BaseJs(engine);
       //QImageWriter.prototype = new QImageWriter_Wrapper(engine);
       QImageWriter.prototype = new Object();
+
 
       QImageWriter.prototype.toString = function() {
           //return "QImageWriter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -183,6 +184,286 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
 
       // functions:
       
+        // function 
+        QImageWriter.prototype.setFormat = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setFormat");
+          
+              return this.__PROXY__.setFormat(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.format = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.format");
+          
+              return this.__PROXY__.format(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setDevice = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setDevice");
+          
+              return this.__PROXY__.setDevice(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.device = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.device");
+          
+              return this.__PROXY__.device(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setFileName = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setFileName");
+          
+              return this.__PROXY__.setFileName(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.fileName = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.fileName");
+          
+              return this.__PROXY__.fileName(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setQuality = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setQuality");
+          
+              return this.__PROXY__.setQuality(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.quality = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.quality");
+          
+              return this.__PROXY__.quality(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setCompression = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setCompression");
+          
+              return this.__PROXY__.setCompression(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.compression = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.compression");
+          
+              return this.__PROXY__.compression(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setSubType = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setSubType");
+          
+              return this.__PROXY__.setSubType(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.subType = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.subType");
+          
+              return this.__PROXY__.subType(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.supportedSubTypes = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.supportedSubTypes");
+          
+              return this.__PROXY__.supportedSubTypes(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setOptimizedWrite = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setOptimizedWrite");
+          
+              return this.__PROXY__.setOptimizedWrite(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.optimizedWrite = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.optimizedWrite");
+          
+              return this.__PROXY__.optimizedWrite(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setProgressiveScanWrite = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setProgressiveScanWrite");
+          
+              return this.__PROXY__.setProgressiveScanWrite(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.progressiveScanWrite = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.progressiveScanWrite");
+          
+              return this.__PROXY__.progressiveScanWrite(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.transformation = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.transformation");
+          
+              return this.__PROXY__.transformation(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setTransformation = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setTransformation");
+          
+              return this.__PROXY__.setTransformation(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.canWrite = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.canWrite");
+          
+              return this.__PROXY__.canWrite(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.write = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.write");
+          
+              return this.__PROXY__.write(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.error = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.error");
+          
+              return this.__PROXY__.error(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.errorString = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.errorString");
+          
+              return this.__PROXY__.errorString(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.supportsOption = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.supportsOption");
+          
+              return this.__PROXY__.supportsOption(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.supportedImageFormats = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.supportedImageFormats");
+          
+              return this.__PROXY__.supportedImageFormats(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.supportedMimeTypes = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.supportedMimeTypes");
+          
+              return this.__PROXY__.supportedMimeTypes(...args);
+            
+        };
+    
+        // function 
+        QImageWriter.prototype.imageFormatsForMimeType = function(...args) 
+          
+        {
+          //print("JS: QImageWriter.prototype.imageFormatsForMimeType");
+          
+              return this.__PROXY__.imageFormatsForMimeType(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -269,6 +550,16 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
   }
   
         };
+      QImageWriter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QImageWriter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QImageWriter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -287,4 +578,7 @@ QImageWriter.InvalidImageError = QImageWriter_Wrapper.InvalidImageError;
       //  return this.wrapper.destr();
       //};
 
+      QImageWriter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

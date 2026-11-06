@@ -2766,6 +2766,13 @@ QString a1_cpp;
               QShortcut_Wrapper::activatedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QShortcut_Wrapper::staticMetaObject.indexOfSignal("activated()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QShortcut_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2786,6 +2793,13 @@ QString a1_cpp;
               QShortcut_Wrapper::activatedAmbiguouslyEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QShortcut_Wrapper::staticMetaObject.indexOfSignal("activatedAmbiguously()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QShortcut_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

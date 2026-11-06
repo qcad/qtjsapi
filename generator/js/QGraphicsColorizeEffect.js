@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGraphicsColorizeEffect);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGraphicsColorizeEffect);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QGraphicsColorizeEffect.prototype = new QGraphicsColorizeEffect_BaseJs(engine);
       //QGraphicsColorizeEffect.prototype = new QGraphicsColorizeEffect_Wrapper(engine);
       QGraphicsColorizeEffect.prototype = new Object();
+
 
       QGraphicsColorizeEffect.prototype.toString = function() {
           //return "QGraphicsColorizeEffect [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -140,8 +141,113 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
 
       // functions:
       
+        // function 
+        QGraphicsColorizeEffect.prototype.boundingRectFor = function(...args) 
+          
+        {
+          //print("JS: QGraphicsColorizeEffect.prototype.boundingRectFor");
+          
+              return this.__PROXY__.boundingRectFor(...args);
+            
+        };
+    
+        // function 
+        QGraphicsColorizeEffect.prototype.boundingRect = function(...args) 
+          
+        {
+          //print("JS: QGraphicsColorizeEffect.prototype.boundingRect");
+          
+              return this.__PROXY__.boundingRect(...args);
+            
+        };
+    
+        // function 
+        QGraphicsColorizeEffect.prototype.isEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsColorizeEffect.prototype.isEnabled");
+          
+              return this.__PROXY__.isEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsColorizeEffect.prototype.setEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsColorizeEffect.prototype.setEnabled");
+          
+              return this.__PROXY__.setEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsColorizeEffect.prototype.update = function(...args) 
+          
+        {
+          //print("JS: QGraphicsColorizeEffect.prototype.update");
+          
+              return this.__PROXY__.update(...args);
+            
+        };
+    
+        // function 
+        QGraphicsColorizeEffect.prototype.color = function(...args) 
+          
+        {
+          //print("JS: QGraphicsColorizeEffect.prototype.color");
+          
+              return this.__PROXY__.color(...args);
+            
+        };
+    
+        // function 
+        QGraphicsColorizeEffect.prototype.setColor = function(...args) 
+          
+        {
+          //print("JS: QGraphicsColorizeEffect.prototype.setColor");
+          
+              return this.__PROXY__.setColor(...args);
+            
+        };
+    
+        // function 
+        QGraphicsColorizeEffect.prototype.setStrength = function(...args) 
+          
+        {
+          //print("JS: QGraphicsColorizeEffect.prototype.setStrength");
+          
+              return this.__PROXY__.setStrength(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QGraphicsColorizeEffect.prototype, 'strength', {
+              get: function() {
+                  
+                      return this.__PROXY__.strength;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setStrength(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QGraphicsColorizeEffect.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGraphicsColorizeEffect.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGraphicsColorizeEffect.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -160,4 +266,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
       //  return this.wrapper.destr();
       //};
 
+      QGraphicsColorizeEffect.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

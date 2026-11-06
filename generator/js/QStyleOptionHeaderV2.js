@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionHeaderV2);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionHeaderV2);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionHeaderV2);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionHeaderV2.prototype = new QStyleOptionHeaderV2_BaseJs(engine);
       //QStyleOptionHeaderV2.prototype = new QStyleOptionHeaderV2_Wrapper(engine);
       QStyleOptionHeaderV2.prototype = new Object();
+
 
       QStyleOptionHeaderV2.prototype.toString = function() {
           //return "QStyleOptionHeaderV2 [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -171,8 +172,28 @@ QStyleOptionHeaderV2.SortDown = QStyleOptionHeaderV2_Wrapper.SortDown;
 
       // functions:
       
+        // function 
+        QStyleOptionHeaderV2.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionHeaderV2.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionHeaderV2.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionHeaderV2.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionHeaderV2.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -191,4 +212,7 @@ QStyleOptionHeaderV2.SortDown = QStyleOptionHeaderV2_Wrapper.SortDown;
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionHeaderV2.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QFontDatabase);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QFontDatabase);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QFontDatabase.prototype = new QFontDatabase_BaseJs(engine);
       //QFontDatabase.prototype = new QFontDatabase_Wrapper(engine);
       QFontDatabase.prototype = new Object();
+
 
       QFontDatabase.prototype.toString = function() {
           //return "QFontDatabase [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -168,6 +169,256 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
 
       // functions:
       
+        // function 
+        QFontDatabase.prototype.standardSizes = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.standardSizes");
+          
+              return this.__PROXY__.standardSizes(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.writingSystems = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.writingSystems");
+          
+              return this.__PROXY__.writingSystems(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.families = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.families");
+          
+              return this.__PROXY__.families(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.styles = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.styles");
+          
+              return this.__PROXY__.styles(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.pointSizes = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.pointSizes");
+          
+              return this.__PROXY__.pointSizes(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.smoothSizes = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.smoothSizes");
+          
+              return this.__PROXY__.smoothSizes(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.styleString = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.styleString");
+          
+              return this.__PROXY__.styleString(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.font = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.font");
+          
+              return this.__PROXY__.font(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.isBitmapScalable = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.isBitmapScalable");
+          
+              return this.__PROXY__.isBitmapScalable(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.isSmoothlyScalable = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.isSmoothlyScalable");
+          
+              return this.__PROXY__.isSmoothlyScalable(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.isScalable = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.isScalable");
+          
+              return this.__PROXY__.isScalable(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.isFixedPitch = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.isFixedPitch");
+          
+              return this.__PROXY__.isFixedPitch(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.italic = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.italic");
+          
+              return this.__PROXY__.italic(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.bold = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.bold");
+          
+              return this.__PROXY__.bold(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.weight = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.weight");
+          
+              return this.__PROXY__.weight(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.hasFamily = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.hasFamily");
+          
+              return this.__PROXY__.hasFamily(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.isPrivateFamily = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.isPrivateFamily");
+          
+              return this.__PROXY__.isPrivateFamily(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.writingSystemName = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.writingSystemName");
+          
+              return this.__PROXY__.writingSystemName(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.writingSystemSample = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.writingSystemSample");
+          
+              return this.__PROXY__.writingSystemSample(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.addApplicationFont = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.addApplicationFont");
+          
+              return this.__PROXY__.addApplicationFont(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.addApplicationFontFromData = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.addApplicationFontFromData");
+          
+              return this.__PROXY__.addApplicationFontFromData(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.applicationFontFamilies = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.applicationFontFamilies");
+          
+              return this.__PROXY__.applicationFontFamilies(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.removeApplicationFont = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.removeApplicationFont");
+          
+              return this.__PROXY__.removeApplicationFont(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.removeAllApplicationFonts = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.removeAllApplicationFonts");
+          
+              return this.__PROXY__.removeAllApplicationFonts(...args);
+            
+        };
+    
+        // function 
+        QFontDatabase.prototype.systemFont = function(...args) 
+          
+        {
+          //print("JS: QFontDatabase.prototype.systemFont");
+          
+              return this.__PROXY__.systemFont(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -890,6 +1141,16 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
   }
   
         };
+      QFontDatabase.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QFontDatabase.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QFontDatabase.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -908,4 +1169,7 @@ QFontDatabase.SmallestReadableFont = QFontDatabase_Wrapper.SmallestReadableFont;
       //  return this.wrapper.destr();
       //};
 
+      QFontDatabase.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

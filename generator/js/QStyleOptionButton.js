@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionButton);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionButton);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionButton);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionButton.prototype = new QStyleOptionButton_BaseJs(engine);
       //QStyleOptionButton.prototype = new QStyleOptionButton_Wrapper(engine);
       QStyleOptionButton.prototype = new Object();
+
 
       QStyleOptionButton.prototype.toString = function() {
           //return "QStyleOptionButton [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -190,8 +191,38 @@ QStyleOptionButton.CommandLinkButton = QStyleOptionButton_Wrapper.CommandLinkBut
 
       // functions:
       
+        // function 
+        QStyleOptionButton.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionButton.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionButton.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionButton.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionButton.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionButton.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionButton.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -210,4 +241,7 @@ QStyleOptionButton.CommandLinkButton = QStyleOptionButton_Wrapper.CommandLinkBut
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionButton.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

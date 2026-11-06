@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QDomNamedNodeMap.prototype = new QDomNamedNodeMap_BaseJs(engine);
       //QDomNamedNodeMap.prototype = new QDomNamedNodeMap_Wrapper(engine);
       QDomNamedNodeMap.prototype = new Object();
+
 
       QDomNamedNodeMap.prototype.toString = function() {
           //return "QDomNamedNodeMap [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -155,7 +156,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.operator_assign");
-          return this.__PROXY__.operator_assign(...args);
+          
+              return this.__PROXY__.operator_assign(...args);
+            
         };
     
         // function 
@@ -163,7 +166,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.operator_equal");
-          return this.__PROXY__.operator_equal(...args);
+          
+              return this.__PROXY__.operator_equal(...args);
+            
         };
     
         // function 
@@ -171,7 +176,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.operator_unequal");
-          return this.__PROXY__.operator_unequal(...args);
+          
+              return this.__PROXY__.operator_unequal(...args);
+            
         };
     
         // function 
@@ -179,7 +186,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.namedItem");
-          return this.__PROXY__.namedItem(...args);
+          
+              return this.__PROXY__.namedItem(...args);
+            
         };
     
         // function 
@@ -187,7 +196,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.setNamedItem");
-          return this.__PROXY__.setNamedItem(...args);
+          
+              return this.__PROXY__.setNamedItem(...args);
+            
         };
     
         // function 
@@ -195,7 +206,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.removeNamedItem");
-          return this.__PROXY__.removeNamedItem(...args);
+          
+              return this.__PROXY__.removeNamedItem(...args);
+            
         };
     
         // function 
@@ -203,7 +216,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.item");
-          return this.__PROXY__.item(...args);
+          
+              return this.__PROXY__.item(...args);
+            
         };
     
         // function 
@@ -211,7 +226,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.namedItemNS");
-          return this.__PROXY__.namedItemNS(...args);
+          
+              return this.__PROXY__.namedItemNS(...args);
+            
         };
     
         // function 
@@ -219,7 +236,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.setNamedItemNS");
-          return this.__PROXY__.setNamedItemNS(...args);
+          
+              return this.__PROXY__.setNamedItemNS(...args);
+            
         };
     
         // function 
@@ -227,7 +246,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.removeNamedItemNS");
-          return this.__PROXY__.removeNamedItemNS(...args);
+          
+              return this.__PROXY__.removeNamedItemNS(...args);
+            
         };
     
         // function 
@@ -235,7 +256,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.length");
-          return this.__PROXY__.length(...args);
+          
+              return this.__PROXY__.length(...args);
+            
         };
     
         // function 
@@ -243,7 +266,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.count");
-          return this.__PROXY__.count(...args);
+          
+              return this.__PROXY__.count(...args);
+            
         };
     
         // function 
@@ -251,7 +276,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.size");
-          return this.__PROXY__.size(...args);
+          
+              return this.__PROXY__.size(...args);
+            
         };
     
         // function 
@@ -259,7 +286,9 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.isEmpty");
-          return this.__PROXY__.isEmpty(...args);
+          
+              return this.__PROXY__.isEmpty(...args);
+            
         };
     
         // function 
@@ -267,11 +296,23 @@
           
         {
           //print("JS: QDomNamedNodeMap.prototype.contains");
-          return this.__PROXY__.contains(...args);
+          
+              return this.__PROXY__.contains(...args);
+            
         };
     
 
       // static functions:
+      QDomNamedNodeMap.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QDomNamedNodeMap.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QDomNamedNodeMap.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

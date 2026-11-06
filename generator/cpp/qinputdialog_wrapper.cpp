@@ -15616,6 +15616,13 @@ bool a1_cpp;
               QInputDialog_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -16146,6 +16153,13 @@ int a1_cpp;
               QInputDialog_Wrapper::finishedEmitter(
                 int result
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("finished(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: result (int)
@@ -16175,6 +16189,13 @@ int a1_cpp;
               QInputDialog_Wrapper::acceptedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("accepted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -16195,6 +16216,13 @@ int a1_cpp;
               QInputDialog_Wrapper::rejectedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("rejected()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -19114,6 +19142,13 @@ double a1_cpp;
               QInputDialog_Wrapper::textValueChangedEmitter(
                 const QString& text
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("textValueChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: text (QString)
@@ -19143,6 +19178,13 @@ double a1_cpp;
               QInputDialog_Wrapper::textValueSelectedEmitter(
                 const QString& text
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("textValueSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: text (QString)
@@ -19172,6 +19214,13 @@ double a1_cpp;
               QInputDialog_Wrapper::intValueChangedEmitter(
                 int value
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("intValueChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: value (int)
@@ -19201,6 +19250,13 @@ double a1_cpp;
               QInputDialog_Wrapper::intValueSelectedEmitter(
                 int value
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("intValueSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: value (int)
@@ -19230,6 +19286,13 @@ double a1_cpp;
               QInputDialog_Wrapper::doubleValueChangedEmitter(
                 double value
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("doubleValueChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: value (double)
@@ -19259,6 +19322,13 @@ double a1_cpp;
               QInputDialog_Wrapper::doubleValueSelectedEmitter(
                 double value
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QInputDialog_Wrapper::staticMetaObject.indexOfSignal("doubleValueSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QInputDialog_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: value (double)

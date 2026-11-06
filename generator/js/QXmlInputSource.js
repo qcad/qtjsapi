@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlInputSource);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QXmlInputSource);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QXmlInputSource);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlInputSource.prototype = new QXmlInputSource_BaseJs(engine);
       //QXmlInputSource.prototype = new QXmlInputSource_Wrapper(engine);
       QXmlInputSource.prototype = new Object();
+
 
       QXmlInputSource.prototype.toString = function() {
           //return "QXmlInputSource [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,8 +151,88 @@
 
       // functions:
       
+        // function 
+        QXmlInputSource.prototype.setData = function(...args) 
+          
+        {
+          //print("JS: QXmlInputSource.prototype.setData");
+          
+              return this.__PROXY__.setData(...args);
+            
+        };
+    
+        // function 
+        QXmlInputSource.prototype.fetchData = function(...args) 
+          
+        {
+          //print("JS: QXmlInputSource.prototype.fetchData");
+          
+              return this.__PROXY__.fetchData(...args);
+            
+        };
+    
+        // function 
+        QXmlInputSource.prototype.data = function(...args) 
+          
+        {
+          //print("JS: QXmlInputSource.prototype.data");
+          
+              return this.__PROXY__.data(...args);
+            
+        };
+    
+        // function 
+        QXmlInputSource.prototype.next = function(...args) 
+          
+        {
+          //print("JS: QXmlInputSource.prototype.next");
+          
+              return this.__PROXY__.next(...args);
+            
+        };
+    
+        // function 
+        QXmlInputSource.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: QXmlInputSource.prototype.reset");
+          
+              return this.__PROXY__.reset(...args);
+            
+        };
+    
+        // function 
+        QXmlInputSource.prototype.fromRawData = function(...args) 
+          
+        {
+          //print("JS: QXmlInputSource.prototype.fromRawData");
+          
+              return this.__PROXY__.fromRawData(...args);
+            
+        };
+    
+        // function 
+        QXmlInputSource.prototype.init = function(...args) 
+          
+        {
+          //print("JS: QXmlInputSource.prototype.init");
+          
+              return this.__PROXY__.init(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlInputSource.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlInputSource.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlInputSource.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -170,4 +251,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlInputSource.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

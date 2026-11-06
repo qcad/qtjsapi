@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSqlError);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSqlError);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSqlError.prototype = new QSqlError_BaseJs(engine);
       //QSqlError.prototype = new QSqlError_Wrapper(engine);
       QSqlError.prototype = new Object();
+
 
       QSqlError.prototype.toString = function() {
           //return "QSqlError [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -131,8 +132,78 @@ QSqlError.UnknownError = QSqlError_Wrapper.UnknownError;
 
       // functions:
       
+        // function 
+        QSqlError.prototype.driverText = function(...args) 
+          
+        {
+          //print("JS: QSqlError.prototype.driverText");
+          
+              return this.__PROXY__.driverText(...args);
+            
+        };
+    
+        // function 
+        QSqlError.prototype.databaseText = function(...args) 
+          
+        {
+          //print("JS: QSqlError.prototype.databaseText");
+          
+              return this.__PROXY__.databaseText(...args);
+            
+        };
+    
+        // function 
+        QSqlError.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QSqlError.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QSqlError.prototype.nativeErrorCode = function(...args) 
+          
+        {
+          //print("JS: QSqlError.prototype.nativeErrorCode");
+          
+              return this.__PROXY__.nativeErrorCode(...args);
+            
+        };
+    
+        // function 
+        QSqlError.prototype.text = function(...args) 
+          
+        {
+          //print("JS: QSqlError.prototype.text");
+          
+              return this.__PROXY__.text(...args);
+            
+        };
+    
+        // function 
+        QSqlError.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QSqlError.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
 
       // static functions:
+      QSqlError.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSqlError.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSqlError.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -151,4 +222,7 @@ QSqlError.UnknownError = QSqlError_Wrapper.UnknownError;
       //  return this.wrapper.destr();
       //};
 
+      QSqlError.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

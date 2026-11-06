@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPoint.prototype = new QPoint_BaseJs(engine);
       //QPoint.prototype = new QPoint_Wrapper(engine);
       QPoint.prototype = new Object();
+
 
       QPoint.prototype.toString = function() {
           //return "QPoint [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -155,7 +156,9 @@
           
         {
           //print("JS: QPoint.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -163,7 +166,9 @@
           
         {
           //print("JS: QPoint.prototype.x");
-          return this.__PROXY__.x(...args);
+          
+              return this.__PROXY__.x(...args);
+            
         };
     
         // function 
@@ -171,7 +176,9 @@
           
         {
           //print("JS: QPoint.prototype.y");
-          return this.__PROXY__.y(...args);
+          
+              return this.__PROXY__.y(...args);
+            
         };
     
         // function 
@@ -179,7 +186,9 @@
           
         {
           //print("JS: QPoint.prototype.setX");
-          return this.__PROXY__.setX(...args);
+          
+              return this.__PROXY__.setX(...args);
+            
         };
     
         // function 
@@ -187,7 +196,9 @@
           
         {
           //print("JS: QPoint.prototype.setY");
-          return this.__PROXY__.setY(...args);
+          
+              return this.__PROXY__.setY(...args);
+            
         };
     
         // function 
@@ -195,7 +206,9 @@
           
         {
           //print("JS: QPoint.prototype.manhattanLength");
-          return this.__PROXY__.manhattanLength(...args);
+          
+              return this.__PROXY__.manhattanLength(...args);
+            
         };
     
         // function 
@@ -203,7 +216,9 @@
           
         {
           //print("JS: QPoint.prototype.transposed");
-          return this.__PROXY__.transposed(...args);
+          
+              return this.__PROXY__.transposed(...args);
+            
         };
     
         // function 
@@ -211,7 +226,9 @@
           
         {
           //print("JS: QPoint.prototype.rx");
-          return this.__PROXY__.rx(...args);
+          
+              return this.__PROXY__.rx(...args);
+            
         };
     
         // function 
@@ -219,7 +236,9 @@
           
         {
           //print("JS: QPoint.prototype.ry");
-          return this.__PROXY__.ry(...args);
+          
+              return this.__PROXY__.ry(...args);
+            
         };
     
         // function 
@@ -227,7 +246,9 @@
           
         {
           //print("JS: QPoint.prototype.operator_add_assign");
-          return this.__PROXY__.operator_add_assign(...args);
+          
+              return this.__PROXY__.operator_add_assign(...args);
+            
         };
     
         // function 
@@ -235,7 +256,9 @@
           
         {
           //print("JS: QPoint.prototype.operator_subtract_assign");
-          return this.__PROXY__.operator_subtract_assign(...args);
+          
+              return this.__PROXY__.operator_subtract_assign(...args);
+            
         };
     
         // function 
@@ -243,7 +266,9 @@
           
         {
           //print("JS: QPoint.prototype.operator_multiply_assign");
-          return this.__PROXY__.operator_multiply_assign(...args);
+          
+              return this.__PROXY__.operator_multiply_assign(...args);
+            
         };
     
         // function 
@@ -251,7 +276,9 @@
           
         {
           //print("JS: QPoint.prototype.operator_divide_assign");
-          return this.__PROXY__.operator_divide_assign(...args);
+          
+              return this.__PROXY__.operator_divide_assign(...args);
+            
         };
     
         // function 
@@ -259,7 +286,9 @@
           
         {
           //print("JS: QPoint.prototype.dotProduct");
-          return this.__PROXY__.dotProduct(...args);
+          
+              return this.__PROXY__.dotProduct(...args);
+            
         };
     
 
@@ -292,6 +321,16 @@
   }
   
         };
+      QPoint.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPoint.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPoint.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

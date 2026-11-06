@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QMouseEvent.prototype = new QMouseEvent_BaseJs(engine);
       //QMouseEvent.prototype = new QMouseEvent_Wrapper(engine);
       QMouseEvent.prototype = new Object();
+
 
       QMouseEvent.prototype.toString = function() {
           //return "QMouseEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -371,7 +372,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -379,7 +382,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -387,7 +392,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -395,7 +402,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -403,7 +412,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -411,7 +422,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -419,7 +432,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -427,7 +442,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -435,7 +452,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -443,7 +462,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.modifiers");
-          return this.__PROXY__.modifiers(...args);
+          
+              return this.__PROXY__.modifiers(...args);
+            
         };
     
         // function 
@@ -451,7 +472,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.setModifiers");
-          return this.__PROXY__.setModifiers(...args);
+          
+              return this.__PROXY__.setModifiers(...args);
+            
         };
     
         // function 
@@ -459,7 +482,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.timestamp");
-          return this.__PROXY__.timestamp(...args);
+          
+              return this.__PROXY__.timestamp(...args);
+            
         };
     
         // function 
@@ -467,7 +492,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.setTimestamp");
-          return this.__PROXY__.setTimestamp(...args);
+          
+              return this.__PROXY__.setTimestamp(...args);
+            
         };
     
         // function 
@@ -475,7 +502,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.pointCount");
-          return this.__PROXY__.pointCount(...args);
+          
+              return this.__PROXY__.pointCount(...args);
+            
         };
     
         // function 
@@ -483,7 +512,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.point");
-          return this.__PROXY__.point(...args);
+          
+              return this.__PROXY__.point(...args);
+            
         };
     
         // function 
@@ -491,7 +522,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.pointById");
-          return this.__PROXY__.pointById(...args);
+          
+              return this.__PROXY__.pointById(...args);
+            
         };
     
         // function 
@@ -499,7 +532,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.allPointsGrabbed");
-          return this.__PROXY__.allPointsGrabbed(...args);
+          
+              return this.__PROXY__.allPointsGrabbed(...args);
+            
         };
     
         // function 
@@ -507,7 +542,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.allPointsAccepted");
-          return this.__PROXY__.allPointsAccepted(...args);
+          
+              return this.__PROXY__.allPointsAccepted(...args);
+            
         };
     
         // function 
@@ -515,7 +552,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -523,7 +562,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.exclusiveGrabber");
-          return this.__PROXY__.exclusiveGrabber(...args);
+          
+              return this.__PROXY__.exclusiveGrabber(...args);
+            
         };
     
         // function 
@@ -531,7 +572,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.setExclusiveGrabber");
-          return this.__PROXY__.setExclusiveGrabber(...args);
+          
+              return this.__PROXY__.setExclusiveGrabber(...args);
+            
         };
     
         // function 
@@ -539,7 +582,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.clearPassiveGrabbers");
-          return this.__PROXY__.clearPassiveGrabbers(...args);
+          
+              return this.__PROXY__.clearPassiveGrabbers(...args);
+            
         };
     
         // function 
@@ -547,7 +592,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.addPassiveGrabber");
-          return this.__PROXY__.addPassiveGrabber(...args);
+          
+              return this.__PROXY__.addPassiveGrabber(...args);
+            
         };
     
         // function 
@@ -555,7 +602,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.removePassiveGrabber");
-          return this.__PROXY__.removePassiveGrabber(...args);
+          
+              return this.__PROXY__.removePassiveGrabber(...args);
+            
         };
     
         // function 
@@ -563,7 +612,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.position");
-          return this.__PROXY__.position(...args);
+          
+              return this.__PROXY__.position(...args);
+            
         };
     
         // function 
@@ -571,7 +622,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.scenePosition");
-          return this.__PROXY__.scenePosition(...args);
+          
+              return this.__PROXY__.scenePosition(...args);
+            
         };
     
         // function 
@@ -579,7 +632,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.globalPosition");
-          return this.__PROXY__.globalPosition(...args);
+          
+              return this.__PROXY__.globalPosition(...args);
+            
         };
     
         // function 
@@ -587,7 +642,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.isBeginEvent");
-          return this.__PROXY__.isBeginEvent(...args);
+          
+              return this.__PROXY__.isBeginEvent(...args);
+            
         };
     
         // function 
@@ -595,7 +652,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.isUpdateEvent");
-          return this.__PROXY__.isUpdateEvent(...args);
+          
+              return this.__PROXY__.isUpdateEvent(...args);
+            
         };
     
         // function 
@@ -603,7 +662,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.isEndEvent");
-          return this.__PROXY__.isEndEvent(...args);
+          
+              return this.__PROXY__.isEndEvent(...args);
+            
         };
     
         // function 
@@ -611,7 +672,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.exclusivePointGrabber");
-          return this.__PROXY__.exclusivePointGrabber(...args);
+          
+              return this.__PROXY__.exclusivePointGrabber(...args);
+            
         };
     
         // function 
@@ -619,7 +682,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.setExclusivePointGrabber");
-          return this.__PROXY__.setExclusivePointGrabber(...args);
+          
+              return this.__PROXY__.setExclusivePointGrabber(...args);
+            
         };
     
         // function 
@@ -627,7 +692,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -635,7 +702,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.pos");
-          return this.__PROXY__.pos(...args);
+          
+              return this.__PROXY__.pos(...args);
+            
         };
     
         // function 
@@ -643,7 +712,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.button");
-          return this.__PROXY__.button(...args);
+          
+              return this.__PROXY__.button(...args);
+            
         };
     
         // function 
@@ -651,7 +722,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.buttons");
-          return this.__PROXY__.buttons(...args);
+          
+              return this.__PROXY__.buttons(...args);
+            
         };
     
         // function 
@@ -659,7 +732,9 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.source");
-          return this.__PROXY__.source(...args);
+          
+              return this.__PROXY__.source(...args);
+            
         };
     
         // function 
@@ -667,11 +742,23 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QMouseEvent.prototype.flags");
-          return this.__PROXY__.flags(...args);
+          
+              return this.__PROXY__.flags(...args);
+            
         };
     
 
       // static functions:
+      QMouseEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QMouseEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QMouseEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

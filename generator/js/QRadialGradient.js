@@ -240,15 +240,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QRadialGradient.prototype = new QRadialGradient_BaseJs(engine);
       //QRadialGradient.prototype = new QRadialGradient_Wrapper(engine);
       QRadialGradient.prototype = new Object();
+
 
       QRadialGradient.prototype.toString = function() {
           //return "QRadialGradient [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -481,7 +482,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -489,7 +492,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setSpread");
-          return this.__PROXY__.setSpread(...args);
+          
+              return this.__PROXY__.setSpread(...args);
+            
         };
     
         // function 
@@ -497,7 +502,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.spread");
-          return this.__PROXY__.spread(...args);
+          
+              return this.__PROXY__.spread(...args);
+            
         };
     
         // function 
@@ -505,7 +512,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setColorAt");
-          return this.__PROXY__.setColorAt(...args);
+          
+              return this.__PROXY__.setColorAt(...args);
+            
         };
     
         // function 
@@ -513,7 +522,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.coordinateMode");
-          return this.__PROXY__.coordinateMode(...args);
+          
+              return this.__PROXY__.coordinateMode(...args);
+            
         };
     
         // function 
@@ -521,7 +532,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setCoordinateMode");
-          return this.__PROXY__.setCoordinateMode(...args);
+          
+              return this.__PROXY__.setCoordinateMode(...args);
+            
         };
     
         // function 
@@ -529,7 +542,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.interpolationMode");
-          return this.__PROXY__.interpolationMode(...args);
+          
+              return this.__PROXY__.interpolationMode(...args);
+            
         };
     
         // function 
@@ -537,7 +552,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setInterpolationMode");
-          return this.__PROXY__.setInterpolationMode(...args);
+          
+              return this.__PROXY__.setInterpolationMode(...args);
+            
         };
     
         // function 
@@ -545,7 +562,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.center");
-          return this.__PROXY__.center(...args);
+          
+              return this.__PROXY__.center(...args);
+            
         };
     
         // function 
@@ -553,7 +572,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setCenter");
-          return this.__PROXY__.setCenter(...args);
+          
+              return this.__PROXY__.setCenter(...args);
+            
         };
     
         // function 
@@ -561,7 +582,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.focalPoint");
-          return this.__PROXY__.focalPoint(...args);
+          
+              return this.__PROXY__.focalPoint(...args);
+            
         };
     
         // function 
@@ -569,7 +592,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setFocalPoint");
-          return this.__PROXY__.setFocalPoint(...args);
+          
+              return this.__PROXY__.setFocalPoint(...args);
+            
         };
     
         // function 
@@ -577,7 +602,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.radius");
-          return this.__PROXY__.radius(...args);
+          
+              return this.__PROXY__.radius(...args);
+            
         };
     
         // function 
@@ -585,7 +612,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setRadius");
-          return this.__PROXY__.setRadius(...args);
+          
+              return this.__PROXY__.setRadius(...args);
+            
         };
     
         // function 
@@ -593,7 +622,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.centerRadius");
-          return this.__PROXY__.centerRadius(...args);
+          
+              return this.__PROXY__.centerRadius(...args);
+            
         };
     
         // function 
@@ -601,7 +632,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setCenterRadius");
-          return this.__PROXY__.setCenterRadius(...args);
+          
+              return this.__PROXY__.setCenterRadius(...args);
+            
         };
     
         // function 
@@ -609,7 +642,9 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.focalRadius");
-          return this.__PROXY__.focalRadius(...args);
+          
+              return this.__PROXY__.focalRadius(...args);
+            
         };
     
         // function 
@@ -617,11 +652,23 @@ QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
           
         {
           //print("JS: QRadialGradient.prototype.setFocalRadius");
-          return this.__PROXY__.setFocalRadius(...args);
+          
+              return this.__PROXY__.setFocalRadius(...args);
+            
         };
     
 
       // static functions:
+      QRadialGradient.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QRadialGradient.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QRadialGradient.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

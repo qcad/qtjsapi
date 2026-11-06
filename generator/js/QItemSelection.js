@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QItemSelection);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QItemSelection);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QItemSelection);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QItemSelection.prototype = new QItemSelection_BaseJs(engine);
       //QItemSelection.prototype = new QItemSelection_Wrapper(engine);
       QItemSelection.prototype = new Object();
+
 
       QItemSelection.prototype.toString = function() {
           //return "QItemSelection [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,8 +151,58 @@
 
       // functions:
       
+        // function 
+        QItemSelection.prototype.select = function(...args) 
+          
+        {
+          //print("JS: QItemSelection.prototype.select");
+          
+              return this.__PROXY__.select(...args);
+            
+        };
+    
+        // function 
+        QItemSelection.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QItemSelection.prototype.contains");
+          
+              return this.__PROXY__.contains(...args);
+            
+        };
+    
+        // function 
+        QItemSelection.prototype.indexes = function(...args) 
+          
+        {
+          //print("JS: QItemSelection.prototype.indexes");
+          
+              return this.__PROXY__.indexes(...args);
+            
+        };
+    
+        // function 
+        QItemSelection.prototype.merge = function(...args) 
+          
+        {
+          //print("JS: QItemSelection.prototype.merge");
+          
+              return this.__PROXY__.merge(...args);
+            
+        };
+    
 
       // static functions:
+      QItemSelection.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QItemSelection.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QItemSelection.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -170,4 +221,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QItemSelection.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSqlDatabase);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSqlDatabase);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSqlDatabase.prototype = new QSqlDatabase_BaseJs(engine);
       //QSqlDatabase.prototype = new QSqlDatabase_Wrapper(engine);
       QSqlDatabase.prototype = new Object();
+
 
       QSqlDatabase.prototype.toString = function() {
           //return "QSqlDatabase [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,326 @@
 
       // functions:
       
+        // function 
+        QSqlDatabase.prototype.open = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.open");
+          
+              return this.__PROXY__.open(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.close = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.close");
+          
+              return this.__PROXY__.close(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.isOpen = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.isOpen");
+          
+              return this.__PROXY__.isOpen(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.isOpenError = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.isOpenError");
+          
+              return this.__PROXY__.isOpenError(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.tables = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.tables");
+          
+              return this.__PROXY__.tables(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.record = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.record");
+          
+              return this.__PROXY__.record(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.lastError = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.lastError");
+          
+              return this.__PROXY__.lastError(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.transaction = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.transaction");
+          
+              return this.__PROXY__.transaction(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.commit = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.commit");
+          
+              return this.__PROXY__.commit(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.rollback = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.rollback");
+          
+              return this.__PROXY__.rollback(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.setDatabaseName = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.setDatabaseName");
+          
+              return this.__PROXY__.setDatabaseName(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.setUserName = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.setUserName");
+          
+              return this.__PROXY__.setUserName(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.setPassword = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.setPassword");
+          
+              return this.__PROXY__.setPassword(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.setHostName = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.setHostName");
+          
+              return this.__PROXY__.setHostName(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.setPort = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.setPort");
+          
+              return this.__PROXY__.setPort(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.setConnectOptions = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.setConnectOptions");
+          
+              return this.__PROXY__.setConnectOptions(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.databaseName = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.databaseName");
+          
+              return this.__PROXY__.databaseName(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.userName = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.userName");
+          
+              return this.__PROXY__.userName(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.password = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.password");
+          
+              return this.__PROXY__.password(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.hostName = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.hostName");
+          
+              return this.__PROXY__.hostName(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.driverName = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.driverName");
+          
+              return this.__PROXY__.driverName(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.port = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.port");
+          
+              return this.__PROXY__.port(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.connectOptions = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.connectOptions");
+          
+              return this.__PROXY__.connectOptions(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.connectionName = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.connectionName");
+          
+              return this.__PROXY__.connectionName(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.addDatabase = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.addDatabase");
+          
+              return this.__PROXY__.addDatabase(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.database = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.database");
+          
+              return this.__PROXY__.database(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.removeDatabase = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.removeDatabase");
+          
+              return this.__PROXY__.removeDatabase(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.contains");
+          
+              return this.__PROXY__.contains(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.drivers = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.drivers");
+          
+              return this.__PROXY__.drivers(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.connectionNames = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.connectionNames");
+          
+              return this.__PROXY__.connectionNames(...args);
+            
+        };
+    
+        // function 
+        QSqlDatabase.prototype.isDriverAvailable = function(...args) 
+          
+        {
+          //print("JS: QSqlDatabase.prototype.isDriverAvailable");
+          
+              return this.__PROXY__.isDriverAvailable(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -350,6 +671,16 @@
   }
   
         };
+      QSqlDatabase.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSqlDatabase.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSqlDatabase.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -368,4 +699,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QSqlDatabase.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

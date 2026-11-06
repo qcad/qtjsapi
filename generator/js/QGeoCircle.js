@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGeoCircle);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCircle);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCircle);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCircle);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -130,7 +130,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCircle);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -156,7 +156,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCircle);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -188,9 +188,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
@@ -198,11 +198,12 @@
       //QGeoCircle.prototype = new QGeoCircle_Wrapper(engine);
       QGeoCircle.prototype = new Object();
 
+
       
         // function with alias name in CPP wrapper:
         QGeoCircle.prototype.toString = function() {
           
-              return this.toStr.apply(this, arguments);
+              return this.__PROXY__.toStr.apply(this, arguments);
             
         }
       QGeoCircle.getObjectType = function() {
@@ -242,8 +243,138 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
 
       // functions:
       
+        // function 
+        QGeoCircle.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.contains");
+          
+              return this.__PROXY__.contains(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.boundingGeoRectangle = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.boundingGeoRectangle");
+          
+              return this.__PROXY__.boundingGeoRectangle(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.setCenter = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.setCenter");
+          
+              return this.__PROXY__.setCenter(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.center = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.center");
+          
+              return this.__PROXY__.center(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.setRadius = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.setRadius");
+          
+              return this.__PROXY__.setRadius(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.radius = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.radius");
+          
+              return this.__PROXY__.radius(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.translate = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.translate");
+          
+              return this.__PROXY__.translate(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.translated = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.translated");
+          
+              return this.__PROXY__.translated(...args);
+            
+        };
+    
+        // function 
+        QGeoCircle.prototype.extendCircle = function(...args) 
+          
+        {
+          //print("JS: QGeoCircle.prototype.extendCircle");
+          
+              return this.__PROXY__.extendCircle(...args);
+            
+        };
+    
 
       // static functions:
+      QGeoCircle.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGeoCircle.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGeoCircle.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -262,4 +393,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
       //  return this.wrapper.destr();
       //};
 
+      QGeoCircle.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

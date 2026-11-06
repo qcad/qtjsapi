@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QTime.prototype = new QTime_BaseJs(engine);
       //QTime.prototype = new QTime_Wrapper(engine);
       QTime.prototype = new Object();
+
 
       QTime.getObjectType = function() {
         return RJSType_QTime.getIdStatic();
@@ -152,7 +153,9 @@
           
         {
           //print("JS: QTime.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -160,7 +163,9 @@
           
         {
           //print("JS: QTime.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -168,7 +173,9 @@
           
         {
           //print("JS: QTime.prototype.hour");
-          return this.__PROXY__.hour(...args);
+          
+              return this.__PROXY__.hour(...args);
+            
         };
     
         // function 
@@ -176,7 +183,9 @@
           
         {
           //print("JS: QTime.prototype.minute");
-          return this.__PROXY__.minute(...args);
+          
+              return this.__PROXY__.minute(...args);
+            
         };
     
         // function 
@@ -184,7 +193,9 @@
           
         {
           //print("JS: QTime.prototype.second");
-          return this.__PROXY__.second(...args);
+          
+              return this.__PROXY__.second(...args);
+            
         };
     
         // function 
@@ -192,7 +203,9 @@
           
         {
           //print("JS: QTime.prototype.msec");
-          return this.__PROXY__.msec(...args);
+          
+              return this.__PROXY__.msec(...args);
+            
         };
     
         // function 
@@ -200,7 +213,9 @@
           
         {
           //print("JS: QTime.prototype.toString");
-          return this.__PROXY__.toString(...args);
+          
+              return this.__PROXY__.toString(...args);
+            
         };
     
         // function 
@@ -208,7 +223,9 @@
           
         {
           //print("JS: QTime.prototype.setHMS");
-          return this.__PROXY__.setHMS(...args);
+          
+              return this.__PROXY__.setHMS(...args);
+            
         };
     
         // function 
@@ -216,7 +233,9 @@
           
         {
           //print("JS: QTime.prototype.addSecs");
-          return this.__PROXY__.addSecs(...args);
+          
+              return this.__PROXY__.addSecs(...args);
+            
         };
     
         // function 
@@ -224,7 +243,9 @@
           
         {
           //print("JS: QTime.prototype.secsTo");
-          return this.__PROXY__.secsTo(...args);
+          
+              return this.__PROXY__.secsTo(...args);
+            
         };
     
         // function 
@@ -232,7 +253,9 @@
           
         {
           //print("JS: QTime.prototype.addMSecs");
-          return this.__PROXY__.addMSecs(...args);
+          
+              return this.__PROXY__.addMSecs(...args);
+            
         };
     
         // function 
@@ -240,7 +263,9 @@
           
         {
           //print("JS: QTime.prototype.msecsTo");
-          return this.__PROXY__.msecsTo(...args);
+          
+              return this.__PROXY__.msecsTo(...args);
+            
         };
     
         // function 
@@ -248,7 +273,9 @@
           
         {
           //print("JS: QTime.prototype.fromMSecsSinceStartOfDay");
-          return this.__PROXY__.fromMSecsSinceStartOfDay(...args);
+          
+              return this.__PROXY__.fromMSecsSinceStartOfDay(...args);
+            
         };
     
         // function 
@@ -256,7 +283,9 @@
           
         {
           //print("JS: QTime.prototype.msecsSinceStartOfDay");
-          return this.__PROXY__.msecsSinceStartOfDay(...args);
+          
+              return this.__PROXY__.msecsSinceStartOfDay(...args);
+            
         };
     
         // function 
@@ -264,7 +293,9 @@
           
         {
           //print("JS: QTime.prototype.currentTime");
-          return this.__PROXY__.currentTime(...args);
+          
+              return this.__PROXY__.currentTime(...args);
+            
         };
     
         // function 
@@ -272,7 +303,9 @@
           
         {
           //print("JS: QTime.prototype.fromString");
-          return this.__PROXY__.fromString(...args);
+          
+              return this.__PROXY__.fromString(...args);
+            
         };
     
         // function 
@@ -280,7 +313,9 @@
           
         {
           //print("JS: QTime.prototype.operator_lessthan");
-          return this.__PROXY__.operator_lessthan(...args);
+          
+              return this.__PROXY__.operator_lessthan(...args);
+            
         };
     
 
@@ -412,6 +447,16 @@
   }
   
         };
+      QTime.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QTime.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QTime.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

@@ -3787,6 +3787,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::organizationNameChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("organizationNameChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3807,6 +3814,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::organizationDomainChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("organizationDomainChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3827,6 +3841,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::applicationNameChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("applicationNameChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3847,6 +3868,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::applicationVersionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("applicationVersionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4258,6 +4286,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::fontDatabaseChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("fontDatabaseChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4278,6 +4313,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::screenAddedEmitter(
                 QScreen* screen
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("screenAdded(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: screen (QScreen)
@@ -4307,6 +4349,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::screenRemovedEmitter(
                 QScreen* screen
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("screenRemoved(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: screen (QScreen)
@@ -4336,6 +4385,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::primaryScreenChangedEmitter(
                 QScreen* screen
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("primaryScreenChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: screen (QScreen)
@@ -4365,6 +4421,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::lastWindowClosedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("lastWindowClosed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4385,6 +4448,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::focusObjectChangedEmitter(
                 QObject* focusObject
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("focusObjectChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: focusObject (QObject)
@@ -4414,6 +4484,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::applicationStateChangedEmitter(
                 Qt::ApplicationState state
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("applicationStateChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: state (Qt::ApplicationState)
@@ -4443,6 +4520,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::layoutDirectionChangedEmitter(
                 Qt::LayoutDirection direction
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("layoutDirectionChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: direction (Qt::LayoutDirection)
@@ -4472,6 +4556,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::applicationDisplayNameChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("applicationDisplayNameChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4494,6 +4585,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::paletteChangedEmitter(
                 const QPalette& pal
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("paletteChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pal (QPalette)
@@ -4523,6 +4621,13 @@ bool a1_cpp;
               QGuiApplication_Wrapper::fontChangedEmitter(
                 const QFont& font
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QGuiApplication_Wrapper::staticMetaObject.indexOfSignal("fontChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QGuiApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: font (QFont)

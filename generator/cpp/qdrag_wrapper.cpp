@@ -2419,6 +2419,13 @@ Qt::DropAction a1_cpp;
               QDrag_Wrapper::actionChangedEmitter(
                 Qt::DropAction action
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDrag_Wrapper::staticMetaObject.indexOfSignal("actionChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDrag_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: action (Qt::DropAction)
@@ -2448,6 +2455,13 @@ Qt::DropAction a1_cpp;
               QDrag_Wrapper::targetChangedEmitter(
                 QObject* newTarget
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDrag_Wrapper::staticMetaObject.indexOfSignal("targetChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDrag_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: newTarget (QObject)

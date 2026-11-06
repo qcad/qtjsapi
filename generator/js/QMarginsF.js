@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QMarginsF);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QMarginsF);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QMarginsF);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QMarginsF);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -130,7 +130,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QMarginsF);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -156,7 +156,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QMarginsF);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -188,15 +188,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QMarginsF.prototype = new QMarginsF_BaseJs(engine);
       //QMarginsF.prototype = new QMarginsF_Wrapper(engine);
       QMarginsF.prototype = new Object();
+
 
       QMarginsF.prototype.toString = function() {
           //return "QMarginsF [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -228,8 +229,118 @@
 
       // functions:
       
+        // function 
+        QMarginsF.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.isNull");
+          
+              return this.__PROXY__.isNull(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.left = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.left");
+          
+              return this.__PROXY__.left(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.top = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.top");
+          
+              return this.__PROXY__.top(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.right = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.right");
+          
+              return this.__PROXY__.right(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.bottom = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.bottom");
+          
+              return this.__PROXY__.bottom(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.setLeft = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.setLeft");
+          
+              return this.__PROXY__.setLeft(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.setTop = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.setTop");
+          
+              return this.__PROXY__.setTop(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.setRight = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.setRight");
+          
+              return this.__PROXY__.setRight(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.setBottom = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.setBottom");
+          
+              return this.__PROXY__.setBottom(...args);
+            
+        };
+    
+        // function 
+        QMarginsF.prototype.toMargins = function(...args) 
+          
+        {
+          //print("JS: QMarginsF.prototype.toMargins");
+          
+              return this.__PROXY__.toMargins(...args);
+            
+        };
+    
 
       // static functions:
+      QMarginsF.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QMarginsF.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QMarginsF.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -248,4 +359,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QMarginsF.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

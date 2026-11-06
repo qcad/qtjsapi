@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlDefaultHandler);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QXmlDefaultHandler);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlDefaultHandler.prototype = new QXmlDefaultHandler_BaseJs(engine);
       //QXmlDefaultHandler.prototype = new QXmlDefaultHandler_Wrapper(engine);
       QXmlDefaultHandler.prototype = new Object();
+
 
       QXmlDefaultHandler.prototype.toString = function() {
           //return "QXmlDefaultHandler [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -148,6 +149,36 @@
 
       // functions:
       
+        // function 
+        QXmlDefaultHandler.prototype.warning = function(...args) 
+          
+        {
+          //print("JS: QXmlDefaultHandler.prototype.warning");
+          
+              return this.__PROXY__.warning(...args);
+            
+        };
+    
+        // function 
+        QXmlDefaultHandler.prototype.error = function(...args) 
+          
+        {
+          //print("JS: QXmlDefaultHandler.prototype.error");
+          
+              return this.__PROXY__.error(...args);
+            
+        };
+    
+        // function 
+        QXmlDefaultHandler.prototype.fatalError = function(...args) 
+          
+        {
+          //print("JS: QXmlDefaultHandler.prototype.fatalError");
+          
+              return this.__PROXY__.fatalError(...args);
+            
+        };
+    
       // function 
       QXmlDefaultHandler.prototype.setDocumentLocator = function() 
         
@@ -162,7 +193,7 @@
                 // call highest level JS implementation:
                 //return this.setDocumentLocatorBase(
                 
-                    return this.setDocumentLocatorSuper(
+                    return this.__PROXY__.setDocumentLocatorSuper(
                   arguments[0]
                 );
               
@@ -194,7 +225,7 @@
                 // call highest level JS implementation:
                 //return this.startDocumentBase(
                 
-                    return this.startDocumentSuper(
+                    return this.__PROXY__.startDocumentSuper(
                   
                 );
               
@@ -226,7 +257,7 @@
                 // call highest level JS implementation:
                 //return this.endDocumentBase(
                 
-                    return this.endDocumentSuper(
+                    return this.__PROXY__.endDocumentSuper(
                   
                 );
               
@@ -258,7 +289,7 @@
                 // call highest level JS implementation:
                 //return this.startPrefixMappingBase(
                 
-                    return this.startPrefixMappingSuper(
+                    return this.__PROXY__.startPrefixMappingSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -290,7 +321,7 @@
                 // call highest level JS implementation:
                 //return this.endPrefixMappingBase(
                 
-                    return this.endPrefixMappingSuper(
+                    return this.__PROXY__.endPrefixMappingSuper(
                   arguments[0]
                 );
               
@@ -322,7 +353,7 @@
                 // call highest level JS implementation:
                 //return this.startElementBase(
                 
-                    return this.startElementSuper(
+                    return this.__PROXY__.startElementSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3]
                 );
               
@@ -354,7 +385,7 @@
                 // call highest level JS implementation:
                 //return this.endElementBase(
                 
-                    return this.endElementSuper(
+                    return this.__PROXY__.endElementSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -386,7 +417,7 @@
                 // call highest level JS implementation:
                 //return this.charactersBase(
                 
-                    return this.charactersSuper(
+                    return this.__PROXY__.charactersSuper(
                   arguments[0]
                 );
               
@@ -418,7 +449,7 @@
                 // call highest level JS implementation:
                 //return this.ignorableWhitespaceBase(
                 
-                    return this.ignorableWhitespaceSuper(
+                    return this.__PROXY__.ignorableWhitespaceSuper(
                   arguments[0]
                 );
               
@@ -450,7 +481,7 @@
                 // call highest level JS implementation:
                 //return this.processingInstructionBase(
                 
-                    return this.processingInstructionSuper(
+                    return this.__PROXY__.processingInstructionSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -482,7 +513,7 @@
                 // call highest level JS implementation:
                 //return this.skippedEntityBase(
                 
-                    return this.skippedEntitySuper(
+                    return this.__PROXY__.skippedEntitySuper(
                   arguments[0]
                 );
               
@@ -514,7 +545,7 @@
                 // call highest level JS implementation:
                 //return this.notationDeclBase(
                 
-                    return this.notationDeclSuper(
+                    return this.__PROXY__.notationDeclSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -546,7 +577,7 @@
                 // call highest level JS implementation:
                 //return this.unparsedEntityDeclBase(
                 
-                    return this.unparsedEntityDeclSuper(
+                    return this.__PROXY__.unparsedEntityDeclSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3]
                 );
               
@@ -578,7 +609,7 @@
                 // call highest level JS implementation:
                 //return this.startDTDBase(
                 
-                    return this.startDTDSuper(
+                    return this.__PROXY__.startDTDSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -610,7 +641,7 @@
                 // call highest level JS implementation:
                 //return this.endDTDBase(
                 
-                    return this.endDTDSuper(
+                    return this.__PROXY__.endDTDSuper(
                   
                 );
               
@@ -642,7 +673,7 @@
                 // call highest level JS implementation:
                 //return this.startEntityBase(
                 
-                    return this.startEntitySuper(
+                    return this.__PROXY__.startEntitySuper(
                   arguments[0]
                 );
               
@@ -674,7 +705,7 @@
                 // call highest level JS implementation:
                 //return this.endEntityBase(
                 
-                    return this.endEntitySuper(
+                    return this.__PROXY__.endEntitySuper(
                   arguments[0]
                 );
               
@@ -706,7 +737,7 @@
                 // call highest level JS implementation:
                 //return this.startCDATABase(
                 
-                    return this.startCDATASuper(
+                    return this.__PROXY__.startCDATASuper(
                   
                 );
               
@@ -738,7 +769,7 @@
                 // call highest level JS implementation:
                 //return this.endCDATABase(
                 
-                    return this.endCDATASuper(
+                    return this.__PROXY__.endCDATASuper(
                   
                 );
               
@@ -770,7 +801,7 @@
                 // call highest level JS implementation:
                 //return this.commentBase(
                 
-                    return this.commentSuper(
+                    return this.__PROXY__.commentSuper(
                   arguments[0]
                 );
               
@@ -802,7 +833,7 @@
                 // call highest level JS implementation:
                 //return this.attributeDeclBase(
                 
-                    return this.attributeDeclSuper(
+                    return this.__PROXY__.attributeDeclSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
@@ -834,7 +865,7 @@
                 // call highest level JS implementation:
                 //return this.internalEntityDeclBase(
                 
-                    return this.internalEntityDeclSuper(
+                    return this.__PROXY__.internalEntityDeclSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -866,7 +897,7 @@
                 // call highest level JS implementation:
                 //return this.externalEntityDeclBase(
                 
-                    return this.externalEntityDeclSuper(
+                    return this.__PROXY__.externalEntityDeclSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -898,7 +929,7 @@
                 // call highest level JS implementation:
                 //return this.errorStringBase(
                 
-                    return this.errorStringSuper(
+                    return this.__PROXY__.errorStringSuper(
                   
                 );
               
@@ -918,6 +949,16 @@
     
 
       // static functions:
+      QXmlDefaultHandler.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlDefaultHandler.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlDefaultHandler.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -936,4 +977,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlDefaultHandler.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

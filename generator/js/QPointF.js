@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPointF.prototype = new QPointF_BaseJs(engine);
       //QPointF.prototype = new QPointF_Wrapper(engine);
       QPointF.prototype = new Object();
+
 
       QPointF.prototype.toString = function() {
           //return "QPointF [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -181,7 +182,9 @@
           
         {
           //print("JS: QPointF.prototype.manhattanLength");
-          return this.__PROXY__.manhattanLength(...args);
+          
+              return this.__PROXY__.manhattanLength(...args);
+            
         };
     
         // function 
@@ -189,7 +192,9 @@
           
         {
           //print("JS: QPointF.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -197,7 +202,9 @@
           
         {
           //print("JS: QPointF.prototype.x");
-          return this.__PROXY__.x(...args);
+          
+              return this.__PROXY__.x(...args);
+            
         };
     
         // function 
@@ -205,7 +212,9 @@
           
         {
           //print("JS: QPointF.prototype.y");
-          return this.__PROXY__.y(...args);
+          
+              return this.__PROXY__.y(...args);
+            
         };
     
         // function 
@@ -213,7 +222,9 @@
           
         {
           //print("JS: QPointF.prototype.setX");
-          return this.__PROXY__.setX(...args);
+          
+              return this.__PROXY__.setX(...args);
+            
         };
     
         // function 
@@ -221,7 +232,9 @@
           
         {
           //print("JS: QPointF.prototype.setY");
-          return this.__PROXY__.setY(...args);
+          
+              return this.__PROXY__.setY(...args);
+            
         };
     
         // function 
@@ -229,7 +242,9 @@
           
         {
           //print("JS: QPointF.prototype.transposed");
-          return this.__PROXY__.transposed(...args);
+          
+              return this.__PROXY__.transposed(...args);
+            
         };
     
         // function 
@@ -237,7 +252,9 @@
           
         {
           //print("JS: QPointF.prototype.rx");
-          return this.__PROXY__.rx(...args);
+          
+              return this.__PROXY__.rx(...args);
+            
         };
     
         // function 
@@ -245,7 +262,9 @@
           
         {
           //print("JS: QPointF.prototype.ry");
-          return this.__PROXY__.ry(...args);
+          
+              return this.__PROXY__.ry(...args);
+            
         };
     
         // function 
@@ -253,7 +272,9 @@
           
         {
           //print("JS: QPointF.prototype.dotProduct");
-          return this.__PROXY__.dotProduct(...args);
+          
+              return this.__PROXY__.dotProduct(...args);
+            
         };
     
         // function 
@@ -261,7 +282,9 @@
           
         {
           //print("JS: QPointF.prototype.toPoint");
-          return this.__PROXY__.toPoint(...args);
+          
+              return this.__PROXY__.toPoint(...args);
+            
         };
     
 
@@ -294,6 +317,16 @@
   }
   
         };
+      QPointF.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPointF.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPointF.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

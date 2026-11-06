@@ -85,63 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
-              // define property setters/getters:
-              Object.defineProperty(this, 'pixelDelta', {
-                  get() {
-                      
-                          return this.__PROXY__.pixelDelta;
-                        
-                  },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
-              // define property setters/getters:
-              Object.defineProperty(this, 'angleDelta', {
-                  get() {
-                      
-                          return this.__PROXY__.angleDelta;
-                        
-                  },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
-              // define property setters/getters:
-              Object.defineProperty(this, 'phase', {
-                  get() {
-                      
-                          return this.__PROXY__.phase;
-                        
-                  },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
-              // define property setters/getters:
-              Object.defineProperty(this, 'inverted', {
-                  get() {
-                      
-                          return this.__PROXY__.inverted;
-                        
-                  },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
 
       }
 
       //QWheelEvent.prototype = new QWheelEvent_BaseJs(engine);
       //QWheelEvent.prototype = new QWheelEvent_Wrapper(engine);
       QWheelEvent.prototype = new Object();
+
 
       QWheelEvent.prototype.toString = function() {
           //return "QWheelEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -368,7 +321,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -376,7 +331,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -384,7 +341,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -392,7 +351,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -400,7 +361,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -408,7 +371,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -416,7 +381,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -424,7 +391,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -432,7 +401,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -440,7 +411,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.modifiers");
-          return this.__PROXY__.modifiers(...args);
+          
+              return this.__PROXY__.modifiers(...args);
+            
         };
     
         // function 
@@ -448,7 +421,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.setModifiers");
-          return this.__PROXY__.setModifiers(...args);
+          
+              return this.__PROXY__.setModifiers(...args);
+            
         };
     
         // function 
@@ -456,7 +431,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.timestamp");
-          return this.__PROXY__.timestamp(...args);
+          
+              return this.__PROXY__.timestamp(...args);
+            
         };
     
         // function 
@@ -464,7 +441,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.setTimestamp");
-          return this.__PROXY__.setTimestamp(...args);
+          
+              return this.__PROXY__.setTimestamp(...args);
+            
         };
     
         // function 
@@ -472,7 +451,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.pointCount");
-          return this.__PROXY__.pointCount(...args);
+          
+              return this.__PROXY__.pointCount(...args);
+            
         };
     
         // function 
@@ -480,7 +461,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.point");
-          return this.__PROXY__.point(...args);
+          
+              return this.__PROXY__.point(...args);
+            
         };
     
         // function 
@@ -488,7 +471,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.pointById");
-          return this.__PROXY__.pointById(...args);
+          
+              return this.__PROXY__.pointById(...args);
+            
         };
     
         // function 
@@ -496,7 +481,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.allPointsGrabbed");
-          return this.__PROXY__.allPointsGrabbed(...args);
+          
+              return this.__PROXY__.allPointsGrabbed(...args);
+            
         };
     
         // function 
@@ -504,7 +491,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.allPointsAccepted");
-          return this.__PROXY__.allPointsAccepted(...args);
+          
+              return this.__PROXY__.allPointsAccepted(...args);
+            
         };
     
         // function 
@@ -512,7 +501,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -520,7 +511,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.exclusiveGrabber");
-          return this.__PROXY__.exclusiveGrabber(...args);
+          
+              return this.__PROXY__.exclusiveGrabber(...args);
+            
         };
     
         // function 
@@ -528,7 +521,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.setExclusiveGrabber");
-          return this.__PROXY__.setExclusiveGrabber(...args);
+          
+              return this.__PROXY__.setExclusiveGrabber(...args);
+            
         };
     
         // function 
@@ -536,7 +531,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.clearPassiveGrabbers");
-          return this.__PROXY__.clearPassiveGrabbers(...args);
+          
+              return this.__PROXY__.clearPassiveGrabbers(...args);
+            
         };
     
         // function 
@@ -544,7 +541,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.addPassiveGrabber");
-          return this.__PROXY__.addPassiveGrabber(...args);
+          
+              return this.__PROXY__.addPassiveGrabber(...args);
+            
         };
     
         // function 
@@ -552,7 +551,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.removePassiveGrabber");
-          return this.__PROXY__.removePassiveGrabber(...args);
+          
+              return this.__PROXY__.removePassiveGrabber(...args);
+            
         };
     
         // function 
@@ -560,7 +561,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.button");
-          return this.__PROXY__.button(...args);
+          
+              return this.__PROXY__.button(...args);
+            
         };
     
         // function 
@@ -568,7 +571,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.buttons");
-          return this.__PROXY__.buttons(...args);
+          
+              return this.__PROXY__.buttons(...args);
+            
         };
     
         // function 
@@ -576,7 +581,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.position");
-          return this.__PROXY__.position(...args);
+          
+              return this.__PROXY__.position(...args);
+            
         };
     
         // function 
@@ -584,7 +591,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.scenePosition");
-          return this.__PROXY__.scenePosition(...args);
+          
+              return this.__PROXY__.scenePosition(...args);
+            
         };
     
         // function 
@@ -592,7 +601,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.globalPosition");
-          return this.__PROXY__.globalPosition(...args);
+          
+              return this.__PROXY__.globalPosition(...args);
+            
         };
     
         // function 
@@ -600,7 +611,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.exclusivePointGrabber");
-          return this.__PROXY__.exclusivePointGrabber(...args);
+          
+              return this.__PROXY__.exclusivePointGrabber(...args);
+            
         };
     
         // function 
@@ -608,7 +621,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.setExclusivePointGrabber");
-          return this.__PROXY__.setExclusivePointGrabber(...args);
+          
+              return this.__PROXY__.setExclusivePointGrabber(...args);
+            
         };
     
         // function 
@@ -616,39 +631,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
-        };
-    
-        // function 
-        QWheelEvent.prototype.pixelDelta = function(...args) 
           
-        {
-          //print("JS: QWheelEvent.prototype.pixelDelta");
-          return this.__PROXY__.pixelDelta(...args);
-        };
-    
-        // function 
-        QWheelEvent.prototype.angleDelta = function(...args) 
-          
-        {
-          //print("JS: QWheelEvent.prototype.angleDelta");
-          return this.__PROXY__.angleDelta(...args);
-        };
-    
-        // function 
-        QWheelEvent.prototype.phase = function(...args) 
-          
-        {
-          //print("JS: QWheelEvent.prototype.phase");
-          return this.__PROXY__.phase(...args);
-        };
-    
-        // function 
-        QWheelEvent.prototype.inverted = function(...args) 
-          
-        {
-          //print("JS: QWheelEvent.prototype.inverted");
-          return this.__PROXY__.inverted(...args);
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -656,7 +641,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.isInverted");
-          return this.__PROXY__.isInverted(...args);
+          
+              return this.__PROXY__.isInverted(...args);
+            
         };
     
         // function 
@@ -664,7 +651,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.hasPixelDelta");
-          return this.__PROXY__.hasPixelDelta(...args);
+          
+              return this.__PROXY__.hasPixelDelta(...args);
+            
         };
     
         // function 
@@ -672,7 +661,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.isBeginEvent");
-          return this.__PROXY__.isBeginEvent(...args);
+          
+              return this.__PROXY__.isBeginEvent(...args);
+            
         };
     
         // function 
@@ -680,7 +671,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.isUpdateEvent");
-          return this.__PROXY__.isUpdateEvent(...args);
+          
+              return this.__PROXY__.isUpdateEvent(...args);
+            
         };
     
         // function 
@@ -688,7 +681,9 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.isEndEvent");
-          return this.__PROXY__.isEndEvent(...args);
+          
+              return this.__PROXY__.isEndEvent(...args);
+            
         };
     
         // function 
@@ -696,11 +691,67 @@ QWheelEvent.MaxUser = QWheelEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QWheelEvent.prototype.source");
-          return this.__PROXY__.source(...args);
+          
+              return this.__PROXY__.source(...args);
+            
         };
     
 
       // static functions:
+      
+          Object.defineProperty(QWheelEvent.prototype, 'pixelDelta', {
+              get: function() {
+                  
+                      return this.__PROXY__.pixelDelta;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QWheelEvent.prototype, 'angleDelta', {
+              get: function() {
+                  
+                      return this.__PROXY__.angleDelta;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QWheelEvent.prototype, 'phase', {
+              get: function() {
+                  
+                      return this.__PROXY__.phase;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QWheelEvent.prototype, 'inverted', {
+              get: function() {
+                  
+                      return this.__PROXY__.inverted;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QWheelEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QWheelEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QWheelEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

@@ -2091,6 +2091,13 @@ QString a1_cpp;
               QHelpSearchEngine_Wrapper::indexingStartedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpSearchEngine_Wrapper::staticMetaObject.indexOfSignal("indexingStarted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpSearchEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2111,6 +2118,13 @@ QString a1_cpp;
               QHelpSearchEngine_Wrapper::indexingFinishedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpSearchEngine_Wrapper::staticMetaObject.indexOfSignal("indexingFinished()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpSearchEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2131,6 +2145,13 @@ QString a1_cpp;
               QHelpSearchEngine_Wrapper::searchingStartedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpSearchEngine_Wrapper::staticMetaObject.indexOfSignal("searchingStarted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpSearchEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2151,6 +2172,13 @@ QString a1_cpp;
               QHelpSearchEngine_Wrapper::searchingFinishedEmitter(
                 int searchResultCount
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpSearchEngine_Wrapper::staticMetaObject.indexOfSignal("searchingFinished(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpSearchEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: searchResultCount (int)

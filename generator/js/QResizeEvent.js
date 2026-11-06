@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QResizeEvent.prototype = new QResizeEvent_BaseJs(engine);
       //QResizeEvent.prototype = new QResizeEvent_Wrapper(engine);
       QResizeEvent.prototype = new Object();
+
 
       QResizeEvent.prototype.toString = function() {
           //return "QResizeEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -307,7 +308,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -315,7 +318,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -323,7 +328,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -331,7 +338,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -339,7 +348,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -347,7 +358,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -355,7 +368,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -363,7 +378,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -371,7 +388,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -379,7 +398,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -387,7 +408,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -395,7 +418,9 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.size");
-          return this.__PROXY__.size(...args);
+          
+              return this.__PROXY__.size(...args);
+            
         };
     
         // function 
@@ -403,11 +428,23 @@ QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QResizeEvent.prototype.oldSize");
-          return this.__PROXY__.oldSize(...args);
+          
+              return this.__PROXY__.oldSize(...args);
+            
         };
     
 
       // static functions:
+      QResizeEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QResizeEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QResizeEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

@@ -2213,6 +2213,13 @@ char a1_cpp;
               QAbstractSocket_Wrapper::readyReadEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("readyRead()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2233,6 +2240,13 @@ char a1_cpp;
               QAbstractSocket_Wrapper::channelReadyReadEmitter(
                 int channel
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("channelReadyRead(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: channel (int)
@@ -2262,6 +2276,13 @@ char a1_cpp;
               QAbstractSocket_Wrapper::bytesWrittenEmitter(
                 qint64 bytes
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("bytesWritten(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: bytes (qint64)
@@ -2291,6 +2312,13 @@ char a1_cpp;
               QAbstractSocket_Wrapper::channelBytesWrittenEmitter(
                 int channel, qint64 bytes
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("channelBytesWritten(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: channel (int)
@@ -2329,6 +2357,13 @@ char a1_cpp;
               QAbstractSocket_Wrapper::aboutToCloseEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("aboutToClose()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2349,6 +2384,13 @@ char a1_cpp;
               QAbstractSocket_Wrapper::readChannelFinishedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("readChannelFinished()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4675,6 +4717,13 @@ QString a1_cpp;
               QAbstractSocket_Wrapper::hostFoundEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("hostFound()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4695,6 +4744,13 @@ QString a1_cpp;
               QAbstractSocket_Wrapper::connectedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("connected()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4715,6 +4771,13 @@ QString a1_cpp;
               QAbstractSocket_Wrapper::disconnectedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("disconnected()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4735,6 +4798,13 @@ QString a1_cpp;
               QAbstractSocket_Wrapper::stateChangedEmitter(
                 QAbstractSocket::SocketState a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("stateChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAbstractSocket::SocketState)
@@ -4764,6 +4834,13 @@ QString a1_cpp;
               QAbstractSocket_Wrapper::errorOccurredEmitter(
                 QAbstractSocket::SocketError a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractSocket_Wrapper::staticMetaObject.indexOfSignal("errorOccurred(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractSocket_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAbstractSocket::SocketError)

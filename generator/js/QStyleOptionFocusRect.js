@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionFocusRect);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionFocusRect);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionFocusRect);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionFocusRect.prototype = new QStyleOptionFocusRect_BaseJs(engine);
       //QStyleOptionFocusRect.prototype = new QStyleOptionFocusRect_Wrapper(engine);
       QStyleOptionFocusRect.prototype = new Object();
+
 
       QStyleOptionFocusRect.prototype.toString = function() {
           //return "QStyleOptionFocusRect [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -182,8 +183,38 @@ QStyleOptionFocusRect.SO_ComplexCustomBase = QStyleOptionFocusRect_Wrapper.SO_Co
 
       // functions:
       
+        // function 
+        QStyleOptionFocusRect.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionFocusRect.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionFocusRect.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionFocusRect.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionFocusRect.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionFocusRect.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionFocusRect.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -202,4 +233,7 @@ QStyleOptionFocusRect.SO_ComplexCustomBase = QStyleOptionFocusRect_Wrapper.SO_Co
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionFocusRect.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -7592,6 +7592,13 @@ int a1_cpp;
               QQuickView_Wrapper::screenChangedEmitter(
                 QScreen* screen
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("screenChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: screen (QScreen)
@@ -7621,6 +7628,13 @@ int a1_cpp;
               QQuickView_Wrapper::modalityChangedEmitter(
                 Qt::WindowModality modality
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("modalityChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: modality (Qt::WindowModality)
@@ -7650,6 +7664,13 @@ int a1_cpp;
               QQuickView_Wrapper::windowStateChangedEmitter(
                 Qt::WindowState windowState
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("windowStateChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: windowState (Qt::WindowState)
@@ -7679,6 +7700,13 @@ int a1_cpp;
               QQuickView_Wrapper::windowTitleChangedEmitter(
                 const QString& title
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("windowTitleChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: title (QString)
@@ -7708,6 +7736,13 @@ int a1_cpp;
               QQuickView_Wrapper::xChangedEmitter(
                 int arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("xChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (int)
@@ -7737,6 +7772,13 @@ int a1_cpp;
               QQuickView_Wrapper::yChangedEmitter(
                 int arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("yChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (int)
@@ -7766,6 +7808,13 @@ int a1_cpp;
               QQuickView_Wrapper::widthChangedEmitter(
                 int arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("widthChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (int)
@@ -7795,6 +7844,13 @@ int a1_cpp;
               QQuickView_Wrapper::heightChangedEmitter(
                 int arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("heightChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (int)
@@ -7824,6 +7880,13 @@ int a1_cpp;
               QQuickView_Wrapper::minimumWidthChangedEmitter(
                 int arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("minimumWidthChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (int)
@@ -7853,6 +7916,13 @@ int a1_cpp;
               QQuickView_Wrapper::minimumHeightChangedEmitter(
                 int arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("minimumHeightChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (int)
@@ -7882,6 +7952,13 @@ int a1_cpp;
               QQuickView_Wrapper::maximumWidthChangedEmitter(
                 int arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("maximumWidthChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (int)
@@ -7911,6 +7988,13 @@ int a1_cpp;
               QQuickView_Wrapper::maximumHeightChangedEmitter(
                 int arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("maximumHeightChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (int)
@@ -7940,6 +8024,13 @@ int a1_cpp;
               QQuickView_Wrapper::visibleChangedEmitter(
                 bool arg
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("visibleChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: arg (bool)
@@ -7969,6 +8060,13 @@ int a1_cpp;
               QQuickView_Wrapper::visibilityChangedEmitter(
                 QWindow::Visibility visibility
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("visibilityChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: visibility (QWindow::Visibility)
@@ -7998,6 +8096,13 @@ int a1_cpp;
               QQuickView_Wrapper::activeChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("activeChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -8018,6 +8123,13 @@ int a1_cpp;
               QQuickView_Wrapper::contentOrientationChangedEmitter(
                 Qt::ScreenOrientation orientation
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("contentOrientationChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::ScreenOrientation)
@@ -8047,6 +8159,13 @@ int a1_cpp;
               QQuickView_Wrapper::focusObjectChangedEmitter(
                 QObject* object
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("focusObjectChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: object (QObject)
@@ -8076,6 +8195,13 @@ int a1_cpp;
               QQuickView_Wrapper::opacityChangedEmitter(
                 qreal opacity
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("opacityChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: opacity (qreal)
@@ -8105,6 +8231,13 @@ int a1_cpp;
               QQuickView_Wrapper::transientParentChangedEmitter(
                 QWindow* transientParent
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("transientParentChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: transientParent (QWindow)
@@ -8381,6 +8514,13 @@ QVariantMap a1_cpp;
               QQuickView_Wrapper::statusChangedEmitter(
                 QQuickView::Status a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickView_Wrapper::staticMetaObject.indexOfSignal("statusChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QQuickView::Status)

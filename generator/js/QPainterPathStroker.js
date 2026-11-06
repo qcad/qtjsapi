@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPainterPathStroker.prototype = new QPainterPathStroker_BaseJs(engine);
       //QPainterPathStroker.prototype = new QPainterPathStroker_Wrapper(engine);
       QPainterPathStroker.prototype = new Object();
+
 
       QPainterPathStroker.prototype.toString = function() {
           //return "QPainterPathStroker [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -155,7 +156,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.setWidth");
-          return this.__PROXY__.setWidth(...args);
+          
+              return this.__PROXY__.setWidth(...args);
+            
         };
     
         // function 
@@ -163,7 +166,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.width");
-          return this.__PROXY__.width(...args);
+          
+              return this.__PROXY__.width(...args);
+            
         };
     
         // function 
@@ -171,7 +176,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.setCapStyle");
-          return this.__PROXY__.setCapStyle(...args);
+          
+              return this.__PROXY__.setCapStyle(...args);
+            
         };
     
         // function 
@@ -179,7 +186,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.capStyle");
-          return this.__PROXY__.capStyle(...args);
+          
+              return this.__PROXY__.capStyle(...args);
+            
         };
     
         // function 
@@ -187,7 +196,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.setJoinStyle");
-          return this.__PROXY__.setJoinStyle(...args);
+          
+              return this.__PROXY__.setJoinStyle(...args);
+            
         };
     
         // function 
@@ -195,7 +206,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.joinStyle");
-          return this.__PROXY__.joinStyle(...args);
+          
+              return this.__PROXY__.joinStyle(...args);
+            
         };
     
         // function 
@@ -203,7 +216,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.setMiterLimit");
-          return this.__PROXY__.setMiterLimit(...args);
+          
+              return this.__PROXY__.setMiterLimit(...args);
+            
         };
     
         // function 
@@ -211,7 +226,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.miterLimit");
-          return this.__PROXY__.miterLimit(...args);
+          
+              return this.__PROXY__.miterLimit(...args);
+            
         };
     
         // function 
@@ -219,7 +236,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.setCurveThreshold");
-          return this.__PROXY__.setCurveThreshold(...args);
+          
+              return this.__PROXY__.setCurveThreshold(...args);
+            
         };
     
         // function 
@@ -227,7 +246,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.curveThreshold");
-          return this.__PROXY__.curveThreshold(...args);
+          
+              return this.__PROXY__.curveThreshold(...args);
+            
         };
     
         // function 
@@ -235,7 +256,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.setDashPattern");
-          return this.__PROXY__.setDashPattern(...args);
+          
+              return this.__PROXY__.setDashPattern(...args);
+            
         };
     
         // function 
@@ -243,7 +266,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.dashPattern");
-          return this.__PROXY__.dashPattern(...args);
+          
+              return this.__PROXY__.dashPattern(...args);
+            
         };
     
         // function 
@@ -251,7 +276,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.setDashOffset");
-          return this.__PROXY__.setDashOffset(...args);
+          
+              return this.__PROXY__.setDashOffset(...args);
+            
         };
     
         // function 
@@ -259,7 +286,9 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.dashOffset");
-          return this.__PROXY__.dashOffset(...args);
+          
+              return this.__PROXY__.dashOffset(...args);
+            
         };
     
         // function 
@@ -267,11 +296,23 @@
           
         {
           //print("JS: QPainterPathStroker.prototype.createStroke");
-          return this.__PROXY__.createStroke(...args);
+          
+              return this.__PROXY__.createStroke(...args);
+            
         };
     
 
       // static functions:
+      QPainterPathStroker.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPainterPathStroker.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPainterPathStroker.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

@@ -21,7 +21,12 @@
 -->
 
 <xsl:param name="proxy-mode">
+  <!-- proxy mode is used for all classes since 2026-11 (unique per instance prototypes
+       degrade the QV4 internal class tree, see RJSApi.h notes): -->
+  <xsl:value-of select="'true'" />
+  <!--
   <xsl:value-of select="qsrc:unit/qsrc:class/@proxy" />
+  -->
   <!--
   <xsl:value-of select="not(qsrc:unit/qsrc:class/qsrc:function/qsrc:variant[@signal='true']) and not(qsrc:unit/qsrc:class[@inheritable='true'])" />
   -->
@@ -132,46 +137,15 @@
           <xsl:apply-templates select="qsrc:function/qsrc:variant[@signal='true']" mode="signalconnections" />
           -->
 
-          <xsl:if test="qsrc:function/qsrc:variant[@signal='true']">
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              <xsl:apply-templates select="qsrc:function/qsrc:variant[@signal='true']" mode="signalaliases" />
-            }
-          </xsl:if>
         }
 
-        <xsl:if test="$proxy-mode='true'">
-          <xsl:for-each select="qsrc:property">
-            <xsl:if test="@read or @write">
-              // define property setters/getters:
-              Object.defineProperty(this, '<xsl:value-of select="@name"/>', {
-                  get() {
-                      <xsl:choose>
-                        <xsl:when test="@name=@read">
-                          return this.__PROXY__.<xsl:value-of select="@read"/>;
-                        </xsl:when>
-                        <xsl:otherwise>
-                          return this.__PROXY__.<xsl:value-of select="@read"/>();
-                        </xsl:otherwise>
-                      </xsl:choose>
-                  },
-                  <xsl:if test="@write">
-                    set(value) {
-                        this.__PROXY__.<xsl:value-of select="@write"/>(value);
-                    },
-                  </xsl:if>
-                  enumerable: true,
-                  configurable: true
-              });
-            </xsl:if>
-          </xsl:for-each>
-        </xsl:if>
 
       }
 
       //<xsl:value-of select="@name" />.prototype = new <xsl:value-of select="@name" />_BaseJs(engine);
       //<xsl:value-of select="@name" />.prototype = new <xsl:value-of select="@name" />_Wrapper(engine);
       <xsl:value-of select="@name" />.prototype = new Object();
+
 
       <xsl:if test="not(qsrc:function[@name='toString'])">
         <xsl:value-of select="@name" />.prototype.toString = function() {
@@ -265,6 +239,60 @@
       <xsl:apply-templates select="qsrc:function">
         <xsl:with-param name="static" select="true()"/>
       </xsl:apply-templates>
+
+      <!-- NOTE: properties are defined after the functions: a property with the
+           same name as a function (e.g. objectName) takes precedence, as it does
+           for the QObject wrapper itself in QV4. -->
+      <!-- property getters / setters forwarding to the wrapper (shared, on the prototype): -->
+      <xsl:for-each select="qsrc:property">
+        <xsl:if test="@read or @write">
+          Object.defineProperty(<xsl:value-of select="ancestor::qsrc:class/@name" />.prototype, '<xsl:value-of select="@name"/>', {
+              get: function() {
+                  <xsl:choose>
+                    <xsl:when test="@name=@read">
+                      return this.__PROXY__.<xsl:value-of select="@read"/>;
+                    </xsl:when>
+                    <xsl:otherwise>
+                      return this.__PROXY__.<xsl:value-of select="@read"/>();
+                    </xsl:otherwise>
+                  </xsl:choose>
+              },
+              <xsl:if test="@write">
+                set: function(value) {
+                    this.__PROXY__.<xsl:value-of select="@write"/>(value);
+                },
+              </xsl:if>
+              enumerable: true,
+              configurable: true
+          });
+        </xsl:if>
+      </xsl:for-each>
+
+      <!-- signals: accessors returning the signal object of the wrapper
+           (obj.clicked.connect(...) and obj["clicked(bool)"].connect(...)): -->
+      <xsl:for-each select="qsrc:function[qsrc:variant/@signal='true']">
+        Object.defineProperty(<xsl:value-of select="ancestor::qsrc:class/@name" />.prototype, '<xsl:value-of select="@name"/>', {
+            get: function() { return this.__PROXY__.<xsl:value-of select="@name"/>; },
+            configurable: true
+        });
+        <xsl:for-each select="qsrc:variant[@signal='true' and count(qsrc:parameters/qsrc:parameter)&gt;0]">
+          Object.defineProperty(<xsl:value-of select="ancestor::qsrc:class/@name" />.prototype, '<xsl:value-of select="../@name"/>(<xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="signalaliases"/>)', {
+              get: function() { return this.__PROXY__.<xsl:value-of select="../@name"/>; },
+              configurable: true
+          });
+        </xsl:for-each>
+      </xsl:for-each>
+
+      <!-- generic wrapper functions: -->
+      <xsl:value-of select="@name" />.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      <xsl:value-of select="@name" />.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      <xsl:value-of select="@name" />.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
 
       <!--
       <xsl:value-of select="@name" />.getIdStatic = function() 
@@ -570,7 +598,7 @@
       </xsl:if>
     </xsl:when>
 
-    <xsl:when test="not(qsrc:variant/@signal='true') and not(@nojs='true') and not(@static='true') and qsrc:variant[not(@static)] and qsrc:variant[@overridable='true']">
+    <xsl:when test="not(qsrc:variant/@signal='true') and not(@nojs='true') and not(@static='true') and qsrc:variant[not(@static)] and qsrc:variant[@overridable='true'] and not(../qsrc:property[@name=current()/@name])">
       // function 
       <xsl:choose>
         <xsl:when test="@jsname">
@@ -586,7 +614,9 @@
       };
     </xsl:when>
 
-    <xsl:when test="$proxy-mode='true' and not(@cppname)">
+    <!-- no forwarder for functions with the same name as a property (e.g. objectName):
+         the property accessor takes precedence (as for the QObject wrapper itself in QV4): -->
+    <xsl:when test="$proxy-mode='true' and not(@cppname) and not(qsrc:variant/@signal='true') and not(@nojs='true') and not(../qsrc:property[@name=current()/@name])">
         // function 
         <xsl:choose>
           <xsl:when test="@jsname">
@@ -598,7 +628,15 @@
         </xsl:choose>
         {
           //print("JS: <xsl:value-of select="ancestor::qsrc:class/@name" />.prototype.<xsl:value-of select="@name" />");
-          return this.__PROXY__.<xsl:value-of select="@name" />(...args);
+          <xsl:choose>
+            <xsl:when test="qsrc:variant[1]/@access='protected' or (qsrc:variant[1]/@virtual='true' and qsrc:variant[1]/@overridable='true')">
+              <!-- C++ wrapper exposes protected / overridable functions as <name>Super: -->
+              return this.__PROXY__.<xsl:value-of select="@name" />Super(...args);
+            </xsl:when>
+            <xsl:otherwise>
+              return this.__PROXY__.<xsl:value-of select="@name" />(...args);
+            </xsl:otherwise>
+          </xsl:choose>
         };
     </xsl:when>
 

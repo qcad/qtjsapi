@@ -16079,6 +16079,13 @@ bool a1_cpp;
               QQuickWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickWidget_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17505,6 +17512,13 @@ QUrl a1_cpp;
               QQuickWidget_Wrapper::statusChangedEmitter(
                 QQuickWidget::Status a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQuickWidget_Wrapper::staticMetaObject.indexOfSignal("statusChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQuickWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QQuickWidget::Status)

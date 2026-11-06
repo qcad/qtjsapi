@@ -16080,6 +16080,13 @@ bool a1_cpp;
               QTextEdit_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextEdit_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextEdit_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -23726,6 +23733,13 @@ int a1_cpp;
               QTextEdit_Wrapper::textChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextEdit_Wrapper::staticMetaObject.indexOfSignal("textChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextEdit_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -23746,6 +23760,13 @@ int a1_cpp;
               QTextEdit_Wrapper::undoAvailableEmitter(
                 bool b
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextEdit_Wrapper::staticMetaObject.indexOfSignal("undoAvailable(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextEdit_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: b (bool)
@@ -23775,6 +23796,13 @@ int a1_cpp;
               QTextEdit_Wrapper::redoAvailableEmitter(
                 bool b
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextEdit_Wrapper::staticMetaObject.indexOfSignal("redoAvailable(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextEdit_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: b (bool)
@@ -23804,6 +23832,13 @@ int a1_cpp;
               QTextEdit_Wrapper::currentCharFormatChangedEmitter(
                 const QTextCharFormat& format
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextEdit_Wrapper::staticMetaObject.indexOfSignal("currentCharFormatChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextEdit_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: format (QTextCharFormat)
@@ -23833,6 +23868,13 @@ int a1_cpp;
               QTextEdit_Wrapper::copyAvailableEmitter(
                 bool b
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextEdit_Wrapper::staticMetaObject.indexOfSignal("copyAvailable(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextEdit_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: b (bool)
@@ -23862,6 +23904,13 @@ int a1_cpp;
               QTextEdit_Wrapper::selectionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextEdit_Wrapper::staticMetaObject.indexOfSignal("selectionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextEdit_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -23882,6 +23931,13 @@ int a1_cpp;
               QTextEdit_Wrapper::cursorPositionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTextEdit_Wrapper::staticMetaObject.indexOfSignal("cursorPositionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTextEdit_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

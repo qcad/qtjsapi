@@ -1886,6 +1886,13 @@ QString a1_cpp;
               QHelpFilterEngine_Wrapper::filterActivatedEmitter(
                 const QString& newFilter
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpFilterEngine_Wrapper::staticMetaObject.indexOfSignal("filterActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpFilterEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: newFilter (QString)

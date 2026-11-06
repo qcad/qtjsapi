@@ -1735,6 +1735,13 @@ QModelIndex a2_cpp;
               QItemDelegate_Wrapper::commitDataEmitter(
                 QWidget* editor
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QItemDelegate_Wrapper::staticMetaObject.indexOfSignal("commitData(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QItemDelegate_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: editor (QWidget)
@@ -1764,6 +1771,13 @@ QModelIndex a2_cpp;
               QItemDelegate_Wrapper::closeEditorEmitter(
                 QWidget* editor, QAbstractItemDelegate::EndEditHint hint
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QItemDelegate_Wrapper::staticMetaObject.indexOfSignal("closeEditor(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QItemDelegate_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: editor (QWidget)
@@ -1802,6 +1816,13 @@ QModelIndex a2_cpp;
               QItemDelegate_Wrapper::sizeHintChangedEmitter(
                 const QModelIndex& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QItemDelegate_Wrapper::staticMetaObject.indexOfSignal("sizeHintChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QItemDelegate_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QModelIndex)

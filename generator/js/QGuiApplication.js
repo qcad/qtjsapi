@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGuiApplication);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,36 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["screenAdded(QScreen*)"] = Object.getPrototypeOf(this).screenAdded;
-  
-    this["screenRemoved(QScreen*)"] = Object.getPrototypeOf(this).screenRemoved;
-  
-    this["primaryScreenChanged(QScreen*)"] = Object.getPrototypeOf(this).primaryScreenChanged;
-  
-    this["focusObjectChanged(QObject*)"] = Object.getPrototypeOf(this).focusObjectChanged;
-  
-    this["applicationStateChanged(Qt::ApplicationState)"] = Object.getPrototypeOf(this).applicationStateChanged;
-  
-    this["layoutDirectionChanged(Qt::LayoutDirection)"] = Object.getPrototypeOf(this).layoutDirectionChanged;
-  
-    this["paletteChanged(QPalette)"] = Object.getPrototypeOf(this).paletteChanged;
-  
-    this["fontChanged(QFont)"] = Object.getPrototypeOf(this).fontChanged;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //QGuiApplication.prototype = new QGuiApplication_BaseJs(engine);
       //QGuiApplication.prototype = new QGuiApplication_Wrapper(engine);
       QGuiApplication.prototype = new Object();
+
 
       QGuiApplication.prototype.toString = function() {
           //return "QGuiApplication [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +104,676 @@
 
       // functions:
       
+        // function 
+        QGuiApplication.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.children = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setOrganizationDomain = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setOrganizationDomain");
+          
+              return this.__PROXY__.setOrganizationDomain(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setOrganizationName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setOrganizationName");
+          
+              return this.__PROXY__.setOrganizationName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setApplicationName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setApplicationName");
+          
+              return this.__PROXY__.setApplicationName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setApplicationVersion = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setApplicationVersion");
+          
+              return this.__PROXY__.setApplicationVersion(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.isQuitLockEnabled = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.isQuitLockEnabled");
+          
+              return this.__PROXY__.isQuitLockEnabled(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setQuitLockEnabled = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setQuitLockEnabled");
+          
+              return this.__PROXY__.setQuitLockEnabled(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.qt_sendSpontaneousEvent = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.qt_sendSpontaneousEvent");
+          
+              return this.__PROXY__.qt_sendSpontaneousEvent(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.qAppName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.qAppName");
+          
+              return this.__PROXY__.qAppName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setApplicationDisplayName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setApplicationDisplayName");
+          
+              return this.__PROXY__.setApplicationDisplayName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.applicationDisplayName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.applicationDisplayName");
+          
+              return this.__PROXY__.applicationDisplayName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setDesktopFileName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setDesktopFileName");
+          
+              return this.__PROXY__.setDesktopFileName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.desktopFileName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.desktopFileName");
+          
+              return this.__PROXY__.desktopFileName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setWindowIcon = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setWindowIcon");
+          
+              return this.__PROXY__.setWindowIcon(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.windowIcon = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.windowIcon");
+          
+              return this.__PROXY__.windowIcon(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.platformName = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.platformName");
+          
+              return this.__PROXY__.platformName(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.focusObject = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.focusObject");
+          
+              return this.__PROXY__.focusObject(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.primaryScreen = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.primaryScreen");
+          
+              return this.__PROXY__.primaryScreen(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.screens = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.screens");
+          
+              return this.__PROXY__.screens(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.screenAt = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.screenAt");
+          
+              return this.__PROXY__.screenAt(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.devicePixelRatio = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.devicePixelRatio");
+          
+              return this.__PROXY__.devicePixelRatio(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.overrideCursor = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.overrideCursor");
+          
+              return this.__PROXY__.overrideCursor(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setOverrideCursor = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setOverrideCursor");
+          
+              return this.__PROXY__.setOverrideCursor(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.changeOverrideCursor = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.changeOverrideCursor");
+          
+              return this.__PROXY__.changeOverrideCursor(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.restoreOverrideCursor = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.restoreOverrideCursor");
+          
+              return this.__PROXY__.restoreOverrideCursor(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.font = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.font");
+          
+              return this.__PROXY__.font(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setFont = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setFont");
+          
+              return this.__PROXY__.setFont(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.clipboard = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.clipboard");
+          
+              return this.__PROXY__.clipboard(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.palette = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.palette");
+          
+              return this.__PROXY__.palette(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setPalette = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setPalette");
+          
+              return this.__PROXY__.setPalette(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.keyboardModifiers = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.keyboardModifiers");
+          
+              return this.__PROXY__.keyboardModifiers(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.queryKeyboardModifiers = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.queryKeyboardModifiers");
+          
+              return this.__PROXY__.queryKeyboardModifiers(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.mouseButtons = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.mouseButtons");
+          
+              return this.__PROXY__.mouseButtons(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setLayoutDirection = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setLayoutDirection");
+          
+              return this.__PROXY__.setLayoutDirection(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.layoutDirection = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.layoutDirection");
+          
+              return this.__PROXY__.layoutDirection(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.isRightToLeft = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.isRightToLeft");
+          
+              return this.__PROXY__.isRightToLeft(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.isLeftToRight = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.isLeftToRight");
+          
+              return this.__PROXY__.isLeftToRight(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setDesktopSettingsAware = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setDesktopSettingsAware");
+          
+              return this.__PROXY__.setDesktopSettingsAware(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.desktopSettingsAware = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.desktopSettingsAware");
+          
+              return this.__PROXY__.desktopSettingsAware(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.setQuitOnLastWindowClosed = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.setQuitOnLastWindowClosed");
+          
+              return this.__PROXY__.setQuitOnLastWindowClosed(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.quitOnLastWindowClosed = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.quitOnLastWindowClosed");
+          
+              return this.__PROXY__.quitOnLastWindowClosed(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.applicationState = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.applicationState");
+          
+              return this.__PROXY__.applicationState(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.exec = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.exec");
+          
+              return this.__PROXY__.exec(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.notify = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.notify");
+          
+              return this.__PROXY__.notify(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.isSessionRestored = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.isSessionRestored");
+          
+              return this.__PROXY__.isSessionRestored(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.sessionId = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.sessionId");
+          
+              return this.__PROXY__.sessionId(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.sessionKey = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.sessionKey");
+          
+              return this.__PROXY__.sessionKey(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.isSavingSession = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.isSavingSession");
+          
+              return this.__PROXY__.isSavingSession(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.sync = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.sync");
+          
+              return this.__PROXY__.sync(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.event = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.event");
+          
+              return this.__PROXY__.event(...args);
+            
+        };
+    
+        // function 
+        QGuiApplication.prototype.compressEvent = function(...args) 
+          
+        {
+          //print("JS: QGuiApplication.prototype.compressEvent");
+          
+              return this.__PROXY__.compressEvent(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -1079,6 +1729,221 @@
   
         };
       
+          Object.defineProperty(QGuiApplication.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'applicationName', {
+              get: function() {
+                  
+                      return this.__PROXY__.applicationName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setApplicationName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'applicationVersion', {
+              get: function() {
+                  
+                      return this.__PROXY__.applicationVersion;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setApplicationVersion(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'organizationDomain', {
+              get: function() {
+                  
+                      return this.__PROXY__.organizationDomain;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setOrganizationDomain(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'organizationName', {
+              get: function() {
+                  
+                      return this.__PROXY__.organizationName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setOrganizationName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'quitLockEnabled', {
+              get: function() {
+                  
+                      return this.__PROXY__.isQuitLockEnabled();
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setQuitLockEnabled(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'organizationNameChanged', {
+            get: function() { return this.__PROXY__.organizationNameChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'organizationDomainChanged', {
+            get: function() { return this.__PROXY__.organizationDomainChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'applicationNameChanged', {
+            get: function() { return this.__PROXY__.applicationNameChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'applicationVersionChanged', {
+            get: function() { return this.__PROXY__.applicationVersionChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'fontDatabaseChanged', {
+            get: function() { return this.__PROXY__.fontDatabaseChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'screenAdded', {
+            get: function() { return this.__PROXY__.screenAdded; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'screenAdded(QScreen*)', {
+              get: function() { return this.__PROXY__.screenAdded; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'screenRemoved', {
+            get: function() { return this.__PROXY__.screenRemoved; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'screenRemoved(QScreen*)', {
+              get: function() { return this.__PROXY__.screenRemoved; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'primaryScreenChanged', {
+            get: function() { return this.__PROXY__.primaryScreenChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'primaryScreenChanged(QScreen*)', {
+              get: function() { return this.__PROXY__.primaryScreenChanged; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'lastWindowClosed', {
+            get: function() { return this.__PROXY__.lastWindowClosed; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'focusObjectChanged', {
+            get: function() { return this.__PROXY__.focusObjectChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'focusObjectChanged(QObject*)', {
+              get: function() { return this.__PROXY__.focusObjectChanged; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'applicationStateChanged', {
+            get: function() { return this.__PROXY__.applicationStateChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'applicationStateChanged(Qt::ApplicationState)', {
+              get: function() { return this.__PROXY__.applicationStateChanged; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'layoutDirectionChanged', {
+            get: function() { return this.__PROXY__.layoutDirectionChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'layoutDirectionChanged(Qt::LayoutDirection)', {
+              get: function() { return this.__PROXY__.layoutDirectionChanged; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'applicationDisplayNameChanged', {
+            get: function() { return this.__PROXY__.applicationDisplayNameChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'paletteChanged', {
+            get: function() { return this.__PROXY__.paletteChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'paletteChanged(QPalette)', {
+              get: function() { return this.__PROXY__.paletteChanged; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QGuiApplication.prototype, 'fontChanged', {
+            get: function() { return this.__PROXY__.fontChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QGuiApplication.prototype, 'fontChanged(QFont)', {
+              get: function() { return this.__PROXY__.fontChanged; },
+              configurable: true
+          });
+        QGuiApplication.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGuiApplication.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGuiApplication.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
+      
 
       // constants:
       
@@ -1096,4 +1961,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QGuiApplication.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

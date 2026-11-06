@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSettings);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSettings);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSettings);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -107,7 +107,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSettings);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -134,7 +134,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSettings);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -161,7 +161,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSettings);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -188,7 +188,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSettings);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -220,15 +220,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSettings.prototype = new QSettings_BaseJs(engine);
       //QSettings.prototype = new QSettings_Wrapper(engine);
       QSettings.prototype = new Object();
+
 
       QSettings.prototype.toString = function() {
           //return "QSettings [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -294,6 +295,486 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
 
       // functions:
       
+        // function 
+        QSettings.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.children = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.sync = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.sync");
+          
+              return this.__PROXY__.sync(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.status = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.status");
+          
+              return this.__PROXY__.status(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.isAtomicSyncRequired = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.isAtomicSyncRequired");
+          
+              return this.__PROXY__.isAtomicSyncRequired(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.setAtomicSyncRequired = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setAtomicSyncRequired");
+          
+              return this.__PROXY__.setAtomicSyncRequired(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.beginGroup = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.beginGroup");
+          
+              return this.__PROXY__.beginGroup(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.endGroup = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.endGroup");
+          
+              return this.__PROXY__.endGroup(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.group = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.group");
+          
+              return this.__PROXY__.group(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.beginReadArray = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.beginReadArray");
+          
+              return this.__PROXY__.beginReadArray(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.beginWriteArray = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.beginWriteArray");
+          
+              return this.__PROXY__.beginWriteArray(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.endArray = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.endArray");
+          
+              return this.__PROXY__.endArray(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.setArrayIndex = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setArrayIndex");
+          
+              return this.__PROXY__.setArrayIndex(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.allKeys = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.allKeys");
+          
+              return this.__PROXY__.allKeys(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.childKeys = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.childKeys");
+          
+              return this.__PROXY__.childKeys(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.childGroups = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.childGroups");
+          
+              return this.__PROXY__.childGroups(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.isWritable = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.isWritable");
+          
+              return this.__PROXY__.isWritable(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.setValue = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setValue");
+          
+              return this.__PROXY__.setValue(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.value = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.value");
+          
+              return this.__PROXY__.value(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.remove = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.remove");
+          
+              return this.__PROXY__.remove(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.contains");
+          
+              return this.__PROXY__.contains(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.setFallbacksEnabled = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setFallbacksEnabled");
+          
+              return this.__PROXY__.setFallbacksEnabled(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.fallbacksEnabled = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.fallbacksEnabled");
+          
+              return this.__PROXY__.fallbacksEnabled(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.fileName = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.fileName");
+          
+              return this.__PROXY__.fileName(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.format = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.format");
+          
+              return this.__PROXY__.format(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.scope = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.scope");
+          
+              return this.__PROXY__.scope(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.organizationName = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.organizationName");
+          
+              return this.__PROXY__.organizationName(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.applicationName = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.applicationName");
+          
+              return this.__PROXY__.applicationName(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.setDefaultFormat = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setDefaultFormat");
+          
+              return this.__PROXY__.setDefaultFormat(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.defaultFormat = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.defaultFormat");
+          
+              return this.__PROXY__.defaultFormat(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.setPath = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.setPath");
+          
+              return this.__PROXY__.setPath(...args);
+            
+        };
+    
+        // function 
+        QSettings.prototype.event = function(...args) 
+          
+        {
+          //print("JS: QSettings.prototype.event");
+          
+              return this.__PROXY__.event(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -381,6 +862,31 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
   
         };
       
+          Object.defineProperty(QSettings.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QSettings.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSettings.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSettings.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
+      
 
       // constants:
       
@@ -398,4 +904,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
       //  return this.wrapper.destr();
       //};
 
+      QSettings.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionSlider);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionSlider);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionSlider);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionSlider.prototype = new QStyleOptionSlider_BaseJs(engine);
       //QStyleOptionSlider.prototype = new QStyleOptionSlider_Wrapper(engine);
       QStyleOptionSlider.prototype = new Object();
+
 
       QStyleOptionSlider.prototype.toString = function() {
           //return "QStyleOptionSlider [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -154,8 +155,28 @@
 
       // functions:
       
+        // function 
+        QStyleOptionSlider.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionSlider.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionSlider.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionSlider.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionSlider.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -174,4 +195,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionSlider.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

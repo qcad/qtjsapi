@@ -3928,6 +3928,13 @@ QModelIndex a1_cpp;
               QHelpIndexModel_Wrapper::headerDataChangedEmitter(
                 Qt::Orientation orientation, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpIndexModel_Wrapper::staticMetaObject.indexOfSignal("headerDataChanged(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpIndexModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::Orientation)
@@ -3975,6 +3982,13 @@ QModelIndex a1_cpp;
               QHelpIndexModel_Wrapper::rowsInsertedEmitter(
                 const QModelIndex& parent, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpIndexModel_Wrapper::staticMetaObject.indexOfSignal("rowsInserted(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpIndexModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: parent (QModelIndex)
@@ -4850,6 +4864,13 @@ QString a2_cpp;
               QHelpIndexModel_Wrapper::indexCreationStartedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpIndexModel_Wrapper::staticMetaObject.indexOfSignal("indexCreationStarted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpIndexModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4870,6 +4891,13 @@ QString a2_cpp;
               QHelpIndexModel_Wrapper::indexCreatedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpIndexModel_Wrapper::staticMetaObject.indexOfSignal("indexCreated()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpIndexModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

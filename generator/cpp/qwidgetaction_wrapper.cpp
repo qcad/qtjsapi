@@ -4593,6 +4593,13 @@ bool a1_cpp;
               QWidgetAction_Wrapper::changedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QWidgetAction_Wrapper::staticMetaObject.indexOfSignal("changed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QWidgetAction_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4613,6 +4620,13 @@ bool a1_cpp;
               QWidgetAction_Wrapper::triggeredEmitter(
                 bool checked
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QWidgetAction_Wrapper::staticMetaObject.indexOfSignal("triggered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QWidgetAction_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: checked (bool)
@@ -4642,6 +4656,13 @@ bool a1_cpp;
               QWidgetAction_Wrapper::hoveredEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QWidgetAction_Wrapper::staticMetaObject.indexOfSignal("hovered()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QWidgetAction_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -4662,6 +4683,13 @@ bool a1_cpp;
               QWidgetAction_Wrapper::toggledEmitter(
                 bool a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QWidgetAction_Wrapper::staticMetaObject.indexOfSignal("toggled(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QWidgetAction_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (bool)

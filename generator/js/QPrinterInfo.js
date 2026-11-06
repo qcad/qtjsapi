@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QPrinterInfo);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPrinterInfo);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPrinterInfo);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPrinterInfo);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPrinterInfo.prototype = new QPrinterInfo_BaseJs(engine);
       //QPrinterInfo.prototype = new QPrinterInfo_Wrapper(engine);
       QPrinterInfo.prototype = new Object();
+
 
       QPrinterInfo.prototype.toString = function() {
           //return "QPrinterInfo [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -176,6 +177,236 @@
 
       // functions:
       
+        // function 
+        QPrinterInfo.prototype.printerName = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.printerName");
+          
+              return this.__PROXY__.printerName(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.description = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.description");
+          
+              return this.__PROXY__.description(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.location = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.location");
+          
+              return this.__PROXY__.location(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.makeAndModel = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.makeAndModel");
+          
+              return this.__PROXY__.makeAndModel(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.isNull");
+          
+              return this.__PROXY__.isNull(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.isDefault = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.isDefault");
+          
+              return this.__PROXY__.isDefault(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.isRemote = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.isRemote");
+          
+              return this.__PROXY__.isRemote(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.state = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.state");
+          
+              return this.__PROXY__.state(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.supportedPageSizes = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.supportedPageSizes");
+          
+              return this.__PROXY__.supportedPageSizes(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.defaultPageSize = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.defaultPageSize");
+          
+              return this.__PROXY__.defaultPageSize(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.supportsCustomPageSizes = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.supportsCustomPageSizes");
+          
+              return this.__PROXY__.supportsCustomPageSizes(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.minimumPhysicalPageSize = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.minimumPhysicalPageSize");
+          
+              return this.__PROXY__.minimumPhysicalPageSize(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.maximumPhysicalPageSize = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.maximumPhysicalPageSize");
+          
+              return this.__PROXY__.maximumPhysicalPageSize(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.supportedResolutions = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.supportedResolutions");
+          
+              return this.__PROXY__.supportedResolutions(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.defaultDuplexMode = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.defaultDuplexMode");
+          
+              return this.__PROXY__.defaultDuplexMode(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.supportedDuplexModes = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.supportedDuplexModes");
+          
+              return this.__PROXY__.supportedDuplexModes(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.defaultColorMode = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.defaultColorMode");
+          
+              return this.__PROXY__.defaultColorMode(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.supportedColorModes = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.supportedColorModes");
+          
+              return this.__PROXY__.supportedColorModes(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.availablePrinterNames = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.availablePrinterNames");
+          
+              return this.__PROXY__.availablePrinterNames(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.availablePrinters = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.availablePrinters");
+          
+              return this.__PROXY__.availablePrinters(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.defaultPrinterName = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.defaultPrinterName");
+          
+              return this.__PROXY__.defaultPrinterName(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.defaultPrinter = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.defaultPrinter");
+          
+              return this.__PROXY__.defaultPrinter(...args);
+            
+        };
+    
+        // function 
+        QPrinterInfo.prototype.printerInfo = function(...args) 
+          
+        {
+          //print("JS: QPrinterInfo.prototype.printerInfo");
+          
+              return this.__PROXY__.printerInfo(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -318,6 +549,16 @@
   }
   
         };
+      QPrinterInfo.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPrinterInfo.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPrinterInfo.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -336,4 +577,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QPrinterInfo.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

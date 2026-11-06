@@ -3695,6 +3695,13 @@ bool a1_cpp;
               QCoreApplication_Wrapper::organizationNameChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QCoreApplication_Wrapper::staticMetaObject.indexOfSignal("organizationNameChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QCoreApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3715,6 +3722,13 @@ bool a1_cpp;
               QCoreApplication_Wrapper::organizationDomainChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QCoreApplication_Wrapper::staticMetaObject.indexOfSignal("organizationDomainChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QCoreApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3735,6 +3749,13 @@ bool a1_cpp;
               QCoreApplication_Wrapper::applicationNameChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QCoreApplication_Wrapper::staticMetaObject.indexOfSignal("applicationNameChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QCoreApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3755,6 +3776,13 @@ bool a1_cpp;
               QCoreApplication_Wrapper::applicationVersionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QCoreApplication_Wrapper::staticMetaObject.indexOfSignal("applicationVersionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QCoreApplication_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

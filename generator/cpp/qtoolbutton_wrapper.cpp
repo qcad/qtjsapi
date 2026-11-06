@@ -15883,6 +15883,13 @@ bool a1_cpp;
               QToolButton_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QToolButton_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QToolButton_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17752,6 +17759,13 @@ bool a1_cpp;
               QToolButton_Wrapper::pressedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QToolButton_Wrapper::staticMetaObject.indexOfSignal("pressed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QToolButton_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -17772,6 +17786,13 @@ bool a1_cpp;
               QToolButton_Wrapper::releasedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QToolButton_Wrapper::staticMetaObject.indexOfSignal("released()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QToolButton_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -17792,6 +17813,13 @@ bool a1_cpp;
               QToolButton_Wrapper::clickedEmitter(
                 bool checked
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QToolButton_Wrapper::staticMetaObject.indexOfSignal("clicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QToolButton_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: checked (bool)
@@ -17821,6 +17849,13 @@ bool a1_cpp;
               QToolButton_Wrapper::toggledEmitter(
                 bool checked
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QToolButton_Wrapper::staticMetaObject.indexOfSignal("toggled(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QToolButton_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: checked (bool)
@@ -18815,6 +18850,13 @@ Qt::ToolButtonStyle a1_cpp;
               QToolButton_Wrapper::triggeredEmitter(
                 QAction* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QToolButton_Wrapper::staticMetaObject.indexOfSignal("triggered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QToolButton_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAction)

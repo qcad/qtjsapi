@@ -243,15 +243,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QRegion.prototype = new QRegion_BaseJs(engine);
       //QRegion.prototype = new QRegion_Wrapper(engine);
       QRegion.prototype = new Object();
+
 
       QRegion.prototype.toString = function() {
           //return "QRegion [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -288,7 +289,9 @@
           
         {
           //print("JS: QRegion.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -296,7 +299,9 @@
           
         {
           //print("JS: QRegion.prototype.isEmpty");
-          return this.__PROXY__.isEmpty(...args);
+          
+              return this.__PROXY__.isEmpty(...args);
+            
         };
     
         // function 
@@ -304,7 +309,9 @@
           
         {
           //print("JS: QRegion.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -312,7 +319,9 @@
           
         {
           //print("JS: QRegion.prototype.contains");
-          return this.__PROXY__.contains(...args);
+          
+              return this.__PROXY__.contains(...args);
+            
         };
     
         // function 
@@ -320,7 +329,9 @@
           
         {
           //print("JS: QRegion.prototype.translate");
-          return this.__PROXY__.translate(...args);
+          
+              return this.__PROXY__.translate(...args);
+            
         };
     
         // function 
@@ -328,7 +339,9 @@
           
         {
           //print("JS: QRegion.prototype.translated");
-          return this.__PROXY__.translated(...args);
+          
+              return this.__PROXY__.translated(...args);
+            
         };
     
         // function 
@@ -336,7 +349,9 @@
           
         {
           //print("JS: QRegion.prototype.united");
-          return this.__PROXY__.united(...args);
+          
+              return this.__PROXY__.united(...args);
+            
         };
     
         // function 
@@ -344,7 +359,9 @@
           
         {
           //print("JS: QRegion.prototype.intersected");
-          return this.__PROXY__.intersected(...args);
+          
+              return this.__PROXY__.intersected(...args);
+            
         };
     
         // function 
@@ -352,7 +369,9 @@
           
         {
           //print("JS: QRegion.prototype.subtracted");
-          return this.__PROXY__.subtracted(...args);
+          
+              return this.__PROXY__.subtracted(...args);
+            
         };
     
         // function 
@@ -360,7 +379,9 @@
           
         {
           //print("JS: QRegion.prototype.xored");
-          return this.__PROXY__.xored(...args);
+          
+              return this.__PROXY__.xored(...args);
+            
         };
     
         // function 
@@ -368,7 +389,9 @@
           
         {
           //print("JS: QRegion.prototype.intersects");
-          return this.__PROXY__.intersects(...args);
+          
+              return this.__PROXY__.intersects(...args);
+            
         };
     
         // function 
@@ -376,7 +399,9 @@
           
         {
           //print("JS: QRegion.prototype.boundingRect");
-          return this.__PROXY__.boundingRect(...args);
+          
+              return this.__PROXY__.boundingRect(...args);
+            
         };
     
         // function 
@@ -384,7 +409,9 @@
           
         {
           //print("JS: QRegion.prototype.rectCount");
-          return this.__PROXY__.rectCount(...args);
+          
+              return this.__PROXY__.rectCount(...args);
+            
         };
     
         // function 
@@ -392,7 +419,9 @@
           
         {
           //print("JS: QRegion.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
         // function 
@@ -400,7 +429,9 @@
           
         {
           //print("JS: QRegion.prototype.detach");
-          return this.__PROXY__.detach(...args);
+          
+              return this.__PROXY__.detach(...args);
+            
         };
     
         // function 
@@ -408,7 +439,9 @@
           
         {
           //print("JS: QRegion.prototype.qt_region_strictContains");
-          return this.__PROXY__.qt_region_strictContains(...args);
+          
+              return this.__PROXY__.qt_region_strictContains(...args);
+            
         };
     
         // function 
@@ -416,7 +449,9 @@
           
         {
           //print("JS: QRegion.prototype.exec");
-          return this.__PROXY__.exec(...args);
+          
+              return this.__PROXY__.exec(...args);
+            
         };
     
         // function 
@@ -424,7 +459,9 @@
           
         {
           //print("JS: QRegion.prototype.cleanUp");
-          return this.__PROXY__.cleanUp(...args);
+          
+              return this.__PROXY__.cleanUp(...args);
+            
         };
     
 
@@ -438,6 +475,16 @@
           //print("JS: QRegion.cleanUp");
           
         };
+      QRegion.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QRegion.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QRegion.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

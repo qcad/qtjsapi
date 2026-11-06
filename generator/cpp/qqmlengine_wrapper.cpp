@@ -1788,6 +1788,13 @@ QString a1_cpp;
               QQmlEngine_Wrapper::uiLanguageChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QQmlEngine_Wrapper::staticMetaObject.indexOfSignal("uiLanguageChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QQmlEngine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

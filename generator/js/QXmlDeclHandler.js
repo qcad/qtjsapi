@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlDeclHandler);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlDeclHandler.prototype = new QXmlDeclHandler_BaseJs(engine);
       //QXmlDeclHandler.prototype = new QXmlDeclHandler_Wrapper(engine);
       QXmlDeclHandler.prototype = new Object();
+
 
       QXmlDeclHandler.prototype.toString = function() {
           //return "QXmlDeclHandler [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,58 @@
 
       // functions:
       
+        // function 
+        QXmlDeclHandler.prototype.attributeDecl = function(...args) 
+          
+        {
+          //print("JS: QXmlDeclHandler.prototype.attributeDecl");
+          
+              return this.__PROXY__.attributeDecl(...args);
+            
+        };
+    
+        // function 
+        QXmlDeclHandler.prototype.internalEntityDecl = function(...args) 
+          
+        {
+          //print("JS: QXmlDeclHandler.prototype.internalEntityDecl");
+          
+              return this.__PROXY__.internalEntityDecl(...args);
+            
+        };
+    
+        // function 
+        QXmlDeclHandler.prototype.externalEntityDecl = function(...args) 
+          
+        {
+          //print("JS: QXmlDeclHandler.prototype.externalEntityDecl");
+          
+              return this.__PROXY__.externalEntityDecl(...args);
+            
+        };
+    
+        // function 
+        QXmlDeclHandler.prototype.errorString = function(...args) 
+          
+        {
+          //print("JS: QXmlDeclHandler.prototype.errorString");
+          
+              return this.__PROXY__.errorString(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlDeclHandler.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlDeclHandler.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlDeclHandler.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +166,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlDeclHandler.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

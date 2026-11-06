@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QContextMenuEvent.prototype = new QContextMenuEvent_BaseJs(engine);
       //QContextMenuEvent.prototype = new QContextMenuEvent_Wrapper(engine);
       QContextMenuEvent.prototype = new Object();
+
 
       QContextMenuEvent.prototype.toString = function() {
           //return "QContextMenuEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -317,7 +318,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -325,7 +328,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -333,7 +338,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -341,7 +348,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -349,7 +358,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -357,7 +368,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -365,7 +378,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -373,7 +388,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -381,7 +398,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -389,7 +408,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -397,7 +418,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.modifiers");
-          return this.__PROXY__.modifiers(...args);
+          
+              return this.__PROXY__.modifiers(...args);
+            
         };
     
         // function 
@@ -405,7 +428,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.setModifiers");
-          return this.__PROXY__.setModifiers(...args);
+          
+              return this.__PROXY__.setModifiers(...args);
+            
         };
     
         // function 
@@ -413,7 +438,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.timestamp");
-          return this.__PROXY__.timestamp(...args);
+          
+              return this.__PROXY__.timestamp(...args);
+            
         };
     
         // function 
@@ -421,7 +448,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.setTimestamp");
-          return this.__PROXY__.setTimestamp(...args);
+          
+              return this.__PROXY__.setTimestamp(...args);
+            
         };
     
         // function 
@@ -429,7 +458,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -437,7 +468,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.x");
-          return this.__PROXY__.x(...args);
+          
+              return this.__PROXY__.x(...args);
+            
         };
     
         // function 
@@ -445,7 +478,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.y");
-          return this.__PROXY__.y(...args);
+          
+              return this.__PROXY__.y(...args);
+            
         };
     
         // function 
@@ -453,7 +488,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.globalX");
-          return this.__PROXY__.globalX(...args);
+          
+              return this.__PROXY__.globalX(...args);
+            
         };
     
         // function 
@@ -461,7 +498,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.globalY");
-          return this.__PROXY__.globalY(...args);
+          
+              return this.__PROXY__.globalY(...args);
+            
         };
     
         // function 
@@ -469,7 +508,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.pos");
-          return this.__PROXY__.pos(...args);
+          
+              return this.__PROXY__.pos(...args);
+            
         };
     
         // function 
@@ -477,7 +518,9 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.globalPos");
-          return this.__PROXY__.globalPos(...args);
+          
+              return this.__PROXY__.globalPos(...args);
+            
         };
     
         // function 
@@ -485,11 +528,23 @@ QContextMenuEvent.Other = QContextMenuEvent_Wrapper.Other;
           
         {
           //print("JS: QContextMenuEvent.prototype.reason");
-          return this.__PROXY__.reason(...args);
+          
+              return this.__PROXY__.reason(...args);
+            
         };
     
 
       // static functions:
+      QContextMenuEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QContextMenuEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QContextMenuEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

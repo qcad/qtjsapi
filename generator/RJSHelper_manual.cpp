@@ -758,8 +758,13 @@
       }
 
       QJSValue getWrapperQJSValue(const QJSValue& v) {
-          if (v.hasOwnProperty("__PROXY__")) {
-              return getWrapperQJSValue(v.property("__PROXY__"));
+          if (v.isObject() && !v.isQObject()) {
+              // __PROXY__ may be inherited from a prototype (JS class derived
+              // from a wrapped class without calling the base constructor):
+              QJSValue proxy = v.property("__PROXY__");
+              if (proxy.isQObject()) {
+                  return proxy;
+              }
           }
           if (v.prototype().hasOwnProperty("__WRAPPER__")) {
               return v.prototype();
@@ -1007,22 +1012,9 @@
           //return engine->newQObject(ret);
 
           // JS: new QVariant('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QVariant");
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QVariant('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QVariant(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QVariant('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QVariant::getIdStatic(), "QVariant", ret);
       }
 
       bool RJSHelper::is_QVariant(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
@@ -1666,21 +1658,9 @@
           QJSEngine* engine = handler.getEngine();
 
           // JS: new QWidget('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QWidget");
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QWidget('__GOT_WRAPPER__', wrapper);");
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QObject(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QWidget('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QWidget::getIdStatic(), "QWidget", ret);
       }
 
       QWidget* RJSHelper::js2cpp_QWidget_ptr(RJSApi& handler, const QJSValue& v) {

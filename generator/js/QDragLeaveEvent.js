@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QDragLeaveEvent.prototype = new QDragLeaveEvent_BaseJs(engine);
       //QDragLeaveEvent.prototype = new QDragLeaveEvent_Wrapper(engine);
       QDragLeaveEvent.prototype = new Object();
+
 
       QDragLeaveEvent.prototype.toString = function() {
           //return "QDragLeaveEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -307,7 +308,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -315,7 +318,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -323,7 +328,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -331,7 +338,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -339,7 +348,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -347,7 +358,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -355,7 +368,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -363,7 +378,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -371,7 +388,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -379,7 +398,9 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -387,11 +408,23 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QDragLeaveEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
 
       // static functions:
+      QDragLeaveEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QDragLeaveEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QDragLeaveEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

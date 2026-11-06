@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionViewItem);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionViewItem);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionViewItem);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionViewItem.prototype = new QStyleOptionViewItem_BaseJs(engine);
       //QStyleOptionViewItem.prototype = new QStyleOptionViewItem_Wrapper(engine);
       QStyleOptionViewItem.prototype = new Object();
+
 
       QStyleOptionViewItem.prototype.toString = function() {
           //return "QStyleOptionViewItem [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -205,8 +206,38 @@ QStyleOptionViewItem.OnlyOne = QStyleOptionViewItem_Wrapper.OnlyOne;
 
       // functions:
       
+        // function 
+        QStyleOptionViewItem.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionViewItem.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionViewItem.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionViewItem.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionViewItem.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionViewItem.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionViewItem.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -225,4 +256,7 @@ QStyleOptionViewItem.OnlyOne = QStyleOptionViewItem_Wrapper.OnlyOne;
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionViewItem.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

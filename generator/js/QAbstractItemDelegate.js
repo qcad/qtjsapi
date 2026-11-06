@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QAbstractItemDelegate);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,26 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["commitData(QWidget*)"] = Object.getPrototypeOf(this).commitData;
-  
-    this["closeEditor(QWidget*,QAbstractItemDelegate::EndEditHint)"] = Object.getPrototypeOf(this).closeEditor;
-  
-    this["sizeHintChanged(QModelIndex)"] = Object.getPrototypeOf(this).sizeHintChanged;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //QAbstractItemDelegate.prototype = new QAbstractItemDelegate_BaseJs(engine);
       //QAbstractItemDelegate.prototype = new QAbstractItemDelegate_Wrapper(engine);
       QAbstractItemDelegate.prototype = new Object();
+
 
       QAbstractItemDelegate.prototype.toString = function() {
           //return "QAbstractItemDelegate [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -117,8 +107,273 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
 
       // functions:
       
+        // function 
+        QAbstractItemDelegate.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.children = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.destroyEditor = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.destroyEditor");
+          
+              return this.__PROXY__.destroyEditor(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.setEditorData = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.setEditorData");
+          
+              return this.__PROXY__.setEditorData(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.setModelData = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.setModelData");
+          
+              return this.__PROXY__.setModelData(...args);
+            
+        };
+    
+        // function 
+        QAbstractItemDelegate.prototype.paintingRoles = function(...args) 
+          
+        {
+          //print("JS: QAbstractItemDelegate.prototype.paintingRoles");
+          
+              return this.__PROXY__.paintingRoles(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QAbstractItemDelegate.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(QAbstractItemDelegate.prototype, 'commitData', {
+            get: function() { return this.__PROXY__.commitData; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QAbstractItemDelegate.prototype, 'commitData(QWidget*)', {
+              get: function() { return this.__PROXY__.commitData; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QAbstractItemDelegate.prototype, 'closeEditor', {
+            get: function() { return this.__PROXY__.closeEditor; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QAbstractItemDelegate.prototype, 'closeEditor(QWidget*,QAbstractItemDelegate::EndEditHint)', {
+              get: function() { return this.__PROXY__.closeEditor; },
+              configurable: true
+          });
+        
+        Object.defineProperty(QAbstractItemDelegate.prototype, 'sizeHintChanged', {
+            get: function() { return this.__PROXY__.sizeHintChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QAbstractItemDelegate.prototype, 'sizeHintChanged(QModelIndex)', {
+              get: function() { return this.__PROXY__.sizeHintChanged; },
+              configurable: true
+          });
+        QAbstractItemDelegate.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QAbstractItemDelegate.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QAbstractItemDelegate.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -137,4 +392,7 @@ QAbstractItemDelegate.RevertModelCache = QAbstractItemDelegate_Wrapper.RevertMod
       //  return this.wrapper.destr();
       //};
 
+      QAbstractItemDelegate.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

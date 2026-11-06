@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSslCertificateExtension);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCertificateExtension);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCertificateExtension);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSslCertificateExtension.prototype = new QSslCertificateExtension_BaseJs(engine);
       //QSslCertificateExtension.prototype = new QSslCertificateExtension_Wrapper(engine);
       QSslCertificateExtension.prototype = new Object();
+
 
       QSslCertificateExtension.prototype.toString = function() {
           //return "QSslCertificateExtension [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,8 +151,88 @@
 
       // functions:
       
+        // function 
+        QSslCertificateExtension.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QSslCertificateExtension.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QSslCertificateExtension.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QSslCertificateExtension.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QSslCertificateExtension.prototype.oid = function(...args) 
+          
+        {
+          //print("JS: QSslCertificateExtension.prototype.oid");
+          
+              return this.__PROXY__.oid(...args);
+            
+        };
+    
+        // function 
+        QSslCertificateExtension.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QSslCertificateExtension.prototype.name");
+          
+              return this.__PROXY__.name(...args);
+            
+        };
+    
+        // function 
+        QSslCertificateExtension.prototype.value = function(...args) 
+          
+        {
+          //print("JS: QSslCertificateExtension.prototype.value");
+          
+              return this.__PROXY__.value(...args);
+            
+        };
+    
+        // function 
+        QSslCertificateExtension.prototype.isCritical = function(...args) 
+          
+        {
+          //print("JS: QSslCertificateExtension.prototype.isCritical");
+          
+              return this.__PROXY__.isCritical(...args);
+            
+        };
+    
+        // function 
+        QSslCertificateExtension.prototype.isSupported = function(...args) 
+          
+        {
+          //print("JS: QSslCertificateExtension.prototype.isSupported");
+          
+              return this.__PROXY__.isSupported(...args);
+            
+        };
+    
 
       // static functions:
+      QSslCertificateExtension.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSslCertificateExtension.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSslCertificateExtension.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -170,4 +251,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QSslCertificateExtension.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

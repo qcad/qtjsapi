@@ -15888,6 +15888,13 @@ bool a1_cpp;
               QFontComboBox_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -20171,6 +20178,13 @@ QString a1_cpp;
               QFontComboBox_Wrapper::editTextChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("editTextChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20200,6 +20214,13 @@ QString a1_cpp;
               QFontComboBox_Wrapper::activatedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("activated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20229,6 +20250,13 @@ QString a1_cpp;
               QFontComboBox_Wrapper::textActivatedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("textActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20258,6 +20286,13 @@ QString a1_cpp;
               QFontComboBox_Wrapper::highlightedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("highlighted(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20287,6 +20322,13 @@ QString a1_cpp;
               QFontComboBox_Wrapper::textHighlightedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("textHighlighted(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20316,6 +20358,13 @@ QString a1_cpp;
               QFontComboBox_Wrapper::currentIndexChangedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("currentIndexChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20345,6 +20394,13 @@ QString a1_cpp;
               QFontComboBox_Wrapper::currentTextChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("currentTextChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20822,6 +20878,13 @@ QFont a1_cpp;
               QFontComboBox_Wrapper::currentFontChangedEmitter(
                 const QFont& f
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFontComboBox_Wrapper::staticMetaObject.indexOfSignal("currentFontChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFontComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: f (QFont)

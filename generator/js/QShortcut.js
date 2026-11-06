@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QShortcut);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QShortcut);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QShortcut);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -111,20 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-            }
-          
+
         }
 
-        
 
       }
 
       //QShortcut.prototype = new QShortcut_BaseJs(engine);
       //QShortcut.prototype = new QShortcut_Wrapper(engine);
       QShortcut.prototype = new Object();
+
 
       QShortcut.prototype.toString = function() {
           //return "QShortcut [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -160,8 +156,393 @@
 
       // functions:
       
+        // function 
+        QShortcut.prototype.eventFilter = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.eventFilter");
+          
+              return this.__PROXY__.eventFilterSuper(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.children = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setKey = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setKey");
+          
+              return this.__PROXY__.setKey(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setKeys = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setKeys");
+          
+              return this.__PROXY__.setKeys(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.keys = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.keys");
+          
+              return this.__PROXY__.keys(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setEnabled = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setEnabled");
+          
+              return this.__PROXY__.setEnabled(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.isEnabled = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.isEnabled");
+          
+              return this.__PROXY__.isEnabled(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setContext = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setContext");
+          
+              return this.__PROXY__.setContext(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setAutoRepeat = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setAutoRepeat");
+          
+              return this.__PROXY__.setAutoRepeat(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.setWhatsThis = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.setWhatsThis");
+          
+              return this.__PROXY__.setWhatsThis(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.whatsThis = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.whatsThis");
+          
+              return this.__PROXY__.whatsThis(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.parentWidget = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.parentWidget");
+          
+              return this.__PROXY__.parentWidget(...args);
+            
+        };
+    
+        // function 
+        QShortcut.prototype.event = function(...args) 
+          
+        {
+          //print("JS: QShortcut.prototype.event");
+          
+              return this.__PROXY__.eventSuper(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QShortcut.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QShortcut.prototype, 'key', {
+              get: function() {
+                  
+                      return this.__PROXY__.key;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setKey(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QShortcut.prototype, 'enabled', {
+              get: function() {
+                  
+                      return this.__PROXY__.isEnabled();
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setEnabled(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QShortcut.prototype, 'autoRepeat', {
+              get: function() {
+                  
+                      return this.__PROXY__.autoRepeat;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setAutoRepeat(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QShortcut.prototype, 'context', {
+              get: function() {
+                  
+                      return this.__PROXY__.context;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setContext(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(QShortcut.prototype, 'activated', {
+            get: function() { return this.__PROXY__.activated; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QShortcut.prototype, 'activatedAmbiguously', {
+            get: function() { return this.__PROXY__.activatedAmbiguously; },
+            configurable: true
+        });
+        QShortcut.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QShortcut.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QShortcut.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -180,4 +561,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QShortcut.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

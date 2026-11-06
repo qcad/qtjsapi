@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QTextLength);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QTextLength);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QTextLength);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QTextLength.prototype = new QTextLength_BaseJs(engine);
       //QTextLength.prototype = new QTextLength_Wrapper(engine);
       QTextLength.prototype = new Object();
+
 
       QTextLength.prototype.toString = function() {
           //return "QTextLength [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -155,8 +156,58 @@ QTextLength.PercentageLength = QTextLength_Wrapper.PercentageLength;
 
       // functions:
       
+        // function 
+        QTextLength.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QTextLength.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QTextLength.prototype.value = function(...args) 
+          
+        {
+          //print("JS: QTextLength.prototype.value");
+          
+              return this.__PROXY__.value(...args);
+            
+        };
+    
+        // function 
+        QTextLength.prototype.rawValue = function(...args) 
+          
+        {
+          //print("JS: QTextLength.prototype.rawValue");
+          
+              return this.__PROXY__.rawValue(...args);
+            
+        };
+    
+        // function 
+        QTextLength.prototype.operator = function(...args) 
+          
+        {
+          //print("JS: QTextLength.prototype.operator");
+          
+              return this.__PROXY__.operator(...args);
+            
+        };
+    
 
       // static functions:
+      QTextLength.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QTextLength.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QTextLength.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -175,4 +226,7 @@ QTextLength.PercentageLength = QTextLength_Wrapper.PercentageLength;
       //  return this.wrapper.destr();
       //};
 
+      QTextLength.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

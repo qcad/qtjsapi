@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QPanGesture);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPanGesture);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPanGesture.prototype = new QPanGesture_BaseJs(engine);
       //QPanGesture.prototype = new QPanGesture_Wrapper(engine);
       QPanGesture.prototype = new Object();
+
 
       QPanGesture.prototype.toString = function() {
           //return "QPanGesture [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,8 +130,207 @@
 
       // functions:
       
+        // function 
+        QPanGesture.prototype.setHotSpot = function(...args) 
+          
+        {
+          //print("JS: QPanGesture.prototype.setHotSpot");
+          
+              return this.__PROXY__.setHotSpot(...args);
+            
+        };
+    
+        // function 
+        QPanGesture.prototype.unsetHotSpot = function(...args) 
+          
+        {
+          //print("JS: QPanGesture.prototype.unsetHotSpot");
+          
+              return this.__PROXY__.unsetHotSpot(...args);
+            
+        };
+    
+        // function 
+        QPanGesture.prototype.setGestureCancelPolicy = function(...args) 
+          
+        {
+          //print("JS: QPanGesture.prototype.setGestureCancelPolicy");
+          
+              return this.__PROXY__.setGestureCancelPolicy(...args);
+            
+        };
+    
+        // function 
+        QPanGesture.prototype.Q_DECLARE_PRIVATE = function(...args) 
+          
+        {
+          //print("JS: QPanGesture.prototype.Q_DECLARE_PRIVATE");
+          
+              return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
+            
+        };
+    
+        // function 
+        QPanGesture.prototype.setLastOffset = function(...args) 
+          
+        {
+          //print("JS: QPanGesture.prototype.setLastOffset");
+          
+              return this.__PROXY__.setLastOffset(...args);
+            
+        };
+    
+        // function 
+        QPanGesture.prototype.setOffset = function(...args) 
+          
+        {
+          //print("JS: QPanGesture.prototype.setOffset");
+          
+              return this.__PROXY__.setOffset(...args);
+            
+        };
+    
+        // function 
+        QPanGesture.prototype.setAcceleration = function(...args) 
+          
+        {
+          //print("JS: QPanGesture.prototype.setAcceleration");
+          
+              return this.__PROXY__.setAcceleration(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QPanGesture.prototype, 'state', {
+              get: function() {
+                  
+                      return this.__PROXY__.state;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QPanGesture.prototype, 'gestureType', {
+              get: function() {
+                  
+                      return this.__PROXY__.gestureType;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QPanGesture.prototype, 'gestureCancelPolicy', {
+              get: function() {
+                  
+                      return this.__PROXY__.gestureCancelPolicy;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setGestureCancelPolicy(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QPanGesture.prototype, 'hotSpot', {
+              get: function() {
+                  
+                      return this.__PROXY__.hotSpot;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setHotSpot(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QPanGesture.prototype, 'hasHotSpot', {
+              get: function() {
+                  
+                      return this.__PROXY__.hasHotSpot;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QPanGesture.prototype, 'lastOffset', {
+              get: function() {
+                  
+                      return this.__PROXY__.lastOffset;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setLastOffset(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QPanGesture.prototype, 'offset', {
+              get: function() {
+                  
+                      return this.__PROXY__.offset;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setOffset(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QPanGesture.prototype, 'delta', {
+              get: function() {
+                  
+                      return this.__PROXY__.delta;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QPanGesture.prototype, 'acceleration', {
+              get: function() {
+                  
+                      return this.__PROXY__.acceleration;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setAcceleration(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QPanGesture.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPanGesture.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPanGesture.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -149,4 +349,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QPanGesture.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

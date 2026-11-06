@@ -15958,6 +15958,13 @@ bool a1_cpp;
               QLabel_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QLabel_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QLabel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -19347,6 +19354,13 @@ double a1_cpp;
               QLabel_Wrapper::linkActivatedEmitter(
                 const QString& link
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QLabel_Wrapper::staticMetaObject.indexOfSignal("linkActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QLabel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: link (QString)
@@ -19376,6 +19390,13 @@ double a1_cpp;
               QLabel_Wrapper::linkHoveredEmitter(
                 const QString& link
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QLabel_Wrapper::staticMetaObject.indexOfSignal("linkHovered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QLabel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: link (QString)

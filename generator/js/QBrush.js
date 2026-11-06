@@ -319,15 +319,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QBrush.prototype = new QBrush_BaseJs(engine);
       //QBrush.prototype = new QBrush_Wrapper(engine);
       QBrush.prototype = new Object();
+
 
       QBrush.prototype.toString = function() {
           //return "QBrush [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -364,7 +365,9 @@
           
         {
           //print("JS: QBrush.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -372,7 +375,9 @@
           
         {
           //print("JS: QBrush.prototype.style");
-          return this.__PROXY__.style(...args);
+          
+              return this.__PROXY__.style(...args);
+            
         };
     
         // function 
@@ -380,7 +385,9 @@
           
         {
           //print("JS: QBrush.prototype.setStyle");
-          return this.__PROXY__.setStyle(...args);
+          
+              return this.__PROXY__.setStyle(...args);
+            
         };
     
         // function 
@@ -388,7 +395,9 @@
           
         {
           //print("JS: QBrush.prototype.transform");
-          return this.__PROXY__.transform(...args);
+          
+              return this.__PROXY__.transform(...args);
+            
         };
     
         // function 
@@ -396,7 +405,9 @@
           
         {
           //print("JS: QBrush.prototype.setTransform");
-          return this.__PROXY__.setTransform(...args);
+          
+              return this.__PROXY__.setTransform(...args);
+            
         };
     
         // function 
@@ -404,7 +415,9 @@
           
         {
           //print("JS: QBrush.prototype.texture");
-          return this.__PROXY__.texture(...args);
+          
+              return this.__PROXY__.texture(...args);
+            
         };
     
         // function 
@@ -412,7 +425,9 @@
           
         {
           //print("JS: QBrush.prototype.setTexture");
-          return this.__PROXY__.setTexture(...args);
+          
+              return this.__PROXY__.setTexture(...args);
+            
         };
     
         // function 
@@ -420,7 +435,9 @@
           
         {
           //print("JS: QBrush.prototype.textureImage");
-          return this.__PROXY__.textureImage(...args);
+          
+              return this.__PROXY__.textureImage(...args);
+            
         };
     
         // function 
@@ -428,7 +445,9 @@
           
         {
           //print("JS: QBrush.prototype.setTextureImage");
-          return this.__PROXY__.setTextureImage(...args);
+          
+              return this.__PROXY__.setTextureImage(...args);
+            
         };
     
         // function 
@@ -436,7 +455,9 @@
           
         {
           //print("JS: QBrush.prototype.color");
-          return this.__PROXY__.color(...args);
+          
+              return this.__PROXY__.color(...args);
+            
         };
     
         // function 
@@ -444,7 +465,9 @@
           
         {
           //print("JS: QBrush.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -452,7 +475,9 @@
           
         {
           //print("JS: QBrush.prototype.gradient");
-          return this.__PROXY__.gradient(...args);
+          
+              return this.__PROXY__.gradient(...args);
+            
         };
     
         // function 
@@ -460,7 +485,9 @@
           
         {
           //print("JS: QBrush.prototype.isOpaque");
-          return this.__PROXY__.isOpaque(...args);
+          
+              return this.__PROXY__.isOpaque(...args);
+            
         };
     
         // function 
@@ -468,7 +495,9 @@
           
         {
           //print("JS: QBrush.prototype.qHasPixmapTexture");
-          return this.__PROXY__.qHasPixmapTexture(...args);
+          
+              return this.__PROXY__.qHasPixmapTexture(...args);
+            
         };
     
         // function 
@@ -476,7 +505,9 @@
           
         {
           //print("JS: QBrush.prototype.detach");
-          return this.__PROXY__.detach(...args);
+          
+              return this.__PROXY__.detach(...args);
+            
         };
     
         // function 
@@ -484,7 +515,9 @@
           
         {
           //print("JS: QBrush.prototype.init");
-          return this.__PROXY__.init(...args);
+          
+              return this.__PROXY__.init(...args);
+            
         };
     
         // function 
@@ -492,11 +525,23 @@
           
         {
           //print("JS: QBrush.prototype.isDetached");
-          return this.__PROXY__.isDetached(...args);
+          
+              return this.__PROXY__.isDetached(...args);
+            
         };
     
 
       // static functions:
+      QBrush.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QBrush.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QBrush.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

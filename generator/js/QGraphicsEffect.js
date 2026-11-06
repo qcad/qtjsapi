@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGraphicsEffect);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QGraphicsEffect.prototype = new QGraphicsEffect_BaseJs(engine);
       //QGraphicsEffect.prototype = new QGraphicsEffect_Wrapper(engine);
       QGraphicsEffect.prototype = new Object();
+
 
       QGraphicsEffect.prototype.toString = function() {
           //return "QGraphicsEffect [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -110,8 +111,253 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
 
       // functions:
       
+        // function 
+        QGraphicsEffect.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.children = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.boundingRectFor = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.boundingRectFor");
+          
+              return this.__PROXY__.boundingRectFor(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.boundingRect = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.boundingRect");
+          
+              return this.__PROXY__.boundingRect(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.isEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.isEnabled");
+          
+              return this.__PROXY__.isEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.setEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.setEnabled");
+          
+              return this.__PROXY__.setEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsEffect.prototype.update = function(...args) 
+          
+        {
+          //print("JS: QGraphicsEffect.prototype.update");
+          
+              return this.__PROXY__.update(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QGraphicsEffect.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QGraphicsEffect.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGraphicsEffect.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGraphicsEffect.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -130,4 +376,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
       //  return this.wrapper.destr();
       //};
 
+      QGraphicsEffect.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

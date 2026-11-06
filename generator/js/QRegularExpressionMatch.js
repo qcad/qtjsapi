@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QRegularExpressionMatch.prototype = new QRegularExpressionMatch_BaseJs(engine);
       //QRegularExpressionMatch.prototype = new QRegularExpressionMatch_Wrapper(engine);
       QRegularExpressionMatch.prototype = new Object();
+
 
       QRegularExpressionMatch.prototype.toString = function() {
           //return "QRegularExpressionMatch [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -181,7 +182,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -189,7 +192,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.regularExpression");
-          return this.__PROXY__.regularExpression(...args);
+          
+              return this.__PROXY__.regularExpression(...args);
+            
         };
     
         // function 
@@ -197,7 +202,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.matchType");
-          return this.__PROXY__.matchType(...args);
+          
+              return this.__PROXY__.matchType(...args);
+            
         };
     
         // function 
@@ -205,7 +212,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.matchOptions");
-          return this.__PROXY__.matchOptions(...args);
+          
+              return this.__PROXY__.matchOptions(...args);
+            
         };
     
         // function 
@@ -213,7 +222,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.hasMatch");
-          return this.__PROXY__.hasMatch(...args);
+          
+              return this.__PROXY__.hasMatch(...args);
+            
         };
     
         // function 
@@ -221,7 +232,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.hasPartialMatch");
-          return this.__PROXY__.hasPartialMatch(...args);
+          
+              return this.__PROXY__.hasPartialMatch(...args);
+            
         };
     
         // function 
@@ -229,7 +242,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -237,7 +252,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.lastCapturedIndex");
-          return this.__PROXY__.lastCapturedIndex(...args);
+          
+              return this.__PROXY__.lastCapturedIndex(...args);
+            
         };
     
         // function 
@@ -245,7 +262,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.captured");
-          return this.__PROXY__.captured(...args);
+          
+              return this.__PROXY__.captured(...args);
+            
         };
     
         // function 
@@ -253,7 +272,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.capturedTexts");
-          return this.__PROXY__.capturedTexts(...args);
+          
+              return this.__PROXY__.capturedTexts(...args);
+            
         };
     
         // function 
@@ -261,7 +282,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.capturedStart");
-          return this.__PROXY__.capturedStart(...args);
+          
+              return this.__PROXY__.capturedStart(...args);
+            
         };
     
         // function 
@@ -269,7 +292,9 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.capturedLength");
-          return this.__PROXY__.capturedLength(...args);
+          
+              return this.__PROXY__.capturedLength(...args);
+            
         };
     
         // function 
@@ -277,11 +302,23 @@
           
         {
           //print("JS: QRegularExpressionMatch.prototype.capturedEnd");
-          return this.__PROXY__.capturedEnd(...args);
+          
+              return this.__PROXY__.capturedEnd(...args);
+            
         };
     
 
       // static functions:
+      QRegularExpressionMatch.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QRegularExpressionMatch.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QRegularExpressionMatch.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

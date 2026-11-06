@@ -14980,6 +14980,13 @@ bool a1_cpp;
               QHelpSearchQueryWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpSearchQueryWidget_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpSearchQueryWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -15540,6 +15547,13 @@ bool a1_cpp;
               QHelpSearchQueryWidget_Wrapper::searchEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHelpSearchQueryWidget_Wrapper::staticMetaObject.indexOfSignal("search()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHelpSearchQueryWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

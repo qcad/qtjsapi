@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSslError);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslError);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslError);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslError);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -130,7 +130,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslError);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -162,15 +162,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSslError.prototype = new QSslError_BaseJs(engine);
       //QSslError.prototype = new QSslError_Wrapper(engine);
       QSslError.prototype = new Object();
+
 
       QSslError.prototype.toString = function() {
           //return "QSslError [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -242,8 +243,98 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
 
       // functions:
       
+        // function 
+        QSslError.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QSslError.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QSslError.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QSslError.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QSslError.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QSslError.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        QSslError.prototype.operator_not_assign = function(...args) 
+          
+        {
+          //print("JS: QSslError.prototype.operator_not_assign");
+          
+              return this.__PROXY__.operator_not_assign(...args);
+            
+        };
+    
+        // function 
+        QSslError.prototype.error = function(...args) 
+          
+        {
+          //print("JS: QSslError.prototype.error");
+          
+              return this.__PROXY__.error(...args);
+            
+        };
+    
+        // function 
+        QSslError.prototype.errorString = function(...args) 
+          
+        {
+          //print("JS: QSslError.prototype.errorString");
+          
+              return this.__PROXY__.errorString(...args);
+            
+        };
+    
+        // function 
+        QSslError.prototype.certificate = function(...args) 
+          
+        {
+          //print("JS: QSslError.prototype.certificate");
+          
+              return this.__PROXY__.certificate(...args);
+            
+        };
+    
+        // function 
+        QSslError.prototype.print = function(...args) 
+          
+        {
+          //print("JS: QSslError.prototype.print");
+          
+              return this.__PROXY__.print(...args);
+            
+        };
+    
 
       // static functions:
+      QSslError.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSslError.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSslError.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -262,4 +353,7 @@ QSslError.UnspecifiedError = QSslError_Wrapper.UnspecifiedError;
       //  return this.wrapper.destr();
       //};
 
+      QSslError.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QCoreApplication);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,20 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-            }
-          
+
         }
 
-        
 
       }
 
       //QCoreApplication.prototype = new QCoreApplication_BaseJs(engine);
       //QCoreApplication.prototype = new QCoreApplication_Wrapper(engine);
       QCoreApplication.prototype = new Object();
+
 
       QCoreApplication.prototype.toString = function() {
           //return "QCoreApplication [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -104,6 +100,566 @@
 
       // functions:
       
+        // function 
+        QCoreApplication.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.children = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setAttribute = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setAttribute");
+          
+              return this.__PROXY__.setAttribute(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.testAttribute = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.testAttribute");
+          
+              return this.__PROXY__.testAttribute(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setOrganizationDomain = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setOrganizationDomain");
+          
+              return this.__PROXY__.setOrganizationDomain(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setOrganizationName = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setOrganizationName");
+          
+              return this.__PROXY__.setOrganizationName(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setApplicationName = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setApplicationName");
+          
+              return this.__PROXY__.setApplicationName(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setApplicationVersion = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setApplicationVersion");
+          
+              return this.__PROXY__.setApplicationVersion(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setSetuidAllowed = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setSetuidAllowed");
+          
+              return this.__PROXY__.setSetuidAllowed(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.isSetuidAllowed = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.isSetuidAllowed");
+          
+              return this.__PROXY__.isSetuidAllowed(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.instance = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.instance");
+          
+              return this.__PROXY__.instance(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.exec = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.exec");
+          
+              return this.__PROXY__.exec(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.processEvents = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.processEvents");
+          
+              return this.__PROXY__.processEvents(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.exit = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.exit");
+          
+              return this.__PROXY__.exit(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.sendEvent = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.sendEvent");
+          
+              return this.__PROXY__.sendEvent(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.postEvent = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.postEvent");
+          
+              return this.__PROXY__.postEvent(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.sendPostedEvents = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.sendPostedEvents");
+          
+              return this.__PROXY__.sendPostedEvents(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.removePostedEvents = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.removePostedEvents");
+          
+              return this.__PROXY__.removePostedEvents(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.notify = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.notify");
+          
+              return this.__PROXY__.notify(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.startingUp = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.startingUp");
+          
+              return this.__PROXY__.startingUp(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.closingDown = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.closingDown");
+          
+              return this.__PROXY__.closingDown(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.applicationDirPath = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.applicationDirPath");
+          
+              return this.__PROXY__.applicationDirPath(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.applicationFilePath = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.applicationFilePath");
+          
+              return this.__PROXY__.applicationFilePath(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.applicationPid = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.applicationPid");
+          
+              return this.__PROXY__.applicationPid(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setLibraryPaths = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setLibraryPaths");
+          
+              return this.__PROXY__.setLibraryPaths(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.libraryPaths = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.libraryPaths");
+          
+              return this.__PROXY__.libraryPaths(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.addLibraryPath = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.addLibraryPath");
+          
+              return this.__PROXY__.addLibraryPath(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.removeLibraryPath = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.removeLibraryPath");
+          
+              return this.__PROXY__.removeLibraryPath(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.installTranslator = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.installTranslator");
+          
+              return this.__PROXY__.installTranslator(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.removeTranslator = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.removeTranslator");
+          
+              return this.__PROXY__.removeTranslator(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.isQuitLockEnabled = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.isQuitLockEnabled");
+          
+              return this.__PROXY__.isQuitLockEnabled(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.setQuitLockEnabled = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.setQuitLockEnabled");
+          
+              return this.__PROXY__.setQuitLockEnabled(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.quit = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.quit");
+          
+              return this.__PROXY__.quit(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.event = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.event");
+          
+              return this.__PROXY__.event(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.compressEvent = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.compressEvent");
+          
+              return this.__PROXY__.compressEvent(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.sendSpontaneousEvent = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.sendSpontaneousEvent");
+          
+              return this.__PROXY__.sendSpontaneousEvent(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.notifyInternal2 = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.notifyInternal2");
+          
+              return this.__PROXY__.notifyInternal2(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.forwardEvent = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.forwardEvent");
+          
+              return this.__PROXY__.forwardEvent(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.libraryPathsLocked = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.libraryPathsLocked");
+          
+              return this.__PROXY__.libraryPathsLocked(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.qt_sendSpontaneousEvent = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.qt_sendSpontaneousEvent");
+          
+              return this.__PROXY__.qt_sendSpontaneousEvent(...args);
+            
+        };
+    
+        // function 
+        QCoreApplication.prototype.qAppName = function(...args) 
+          
+        {
+          //print("JS: QCoreApplication.prototype.qAppName");
+          
+              return this.__PROXY__.qAppName(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -835,6 +1391,126 @@
           
         };
       
+          Object.defineProperty(QCoreApplication.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QCoreApplication.prototype, 'applicationName', {
+              get: function() {
+                  
+                      return this.__PROXY__.applicationName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setApplicationName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QCoreApplication.prototype, 'applicationVersion', {
+              get: function() {
+                  
+                      return this.__PROXY__.applicationVersion;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setApplicationVersion(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QCoreApplication.prototype, 'organizationDomain', {
+              get: function() {
+                  
+                      return this.__PROXY__.organizationDomain;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setOrganizationDomain(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QCoreApplication.prototype, 'organizationName', {
+              get: function() {
+                  
+                      return this.__PROXY__.organizationName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setOrganizationName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QCoreApplication.prototype, 'quitLockEnabled', {
+              get: function() {
+                  
+                      return this.__PROXY__.isQuitLockEnabled();
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setQuitLockEnabled(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(QCoreApplication.prototype, 'organizationNameChanged', {
+            get: function() { return this.__PROXY__.organizationNameChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QCoreApplication.prototype, 'organizationDomainChanged', {
+            get: function() { return this.__PROXY__.organizationDomainChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QCoreApplication.prototype, 'applicationNameChanged', {
+            get: function() { return this.__PROXY__.applicationNameChanged; },
+            configurable: true
+        });
+        
+        Object.defineProperty(QCoreApplication.prototype, 'applicationVersionChanged', {
+            get: function() { return this.__PROXY__.applicationVersionChanged; },
+            configurable: true
+        });
+        QCoreApplication.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QCoreApplication.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QCoreApplication.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
+      
 
       // constants:
       
@@ -852,4 +1528,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QCoreApplication.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

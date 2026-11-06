@@ -16405,6 +16405,13 @@ bool a1_cpp;
               QHeaderView_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -22093,6 +22100,13 @@ QModelIndex a1_cpp;
               QHeaderView_Wrapper::pressedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("pressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22122,6 +22136,13 @@ QModelIndex a1_cpp;
               QHeaderView_Wrapper::clickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("clicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22151,6 +22172,13 @@ QModelIndex a1_cpp;
               QHeaderView_Wrapper::doubleClickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("doubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22180,6 +22208,13 @@ QModelIndex a1_cpp;
               QHeaderView_Wrapper::activatedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("activated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22209,6 +22244,13 @@ QModelIndex a1_cpp;
               QHeaderView_Wrapper::enteredEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("entered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -26786,6 +26828,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sectionMovedEmitter(
                 int logicalIndex, int oldVisualIndex, int newVisualIndex
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sectionMoved(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: logicalIndex (int)
@@ -26833,6 +26882,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sectionResizedEmitter(
                 int logicalIndex, int oldSize, int newSize
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sectionResized(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: logicalIndex (int)
@@ -26880,6 +26936,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sectionPressedEmitter(
                 int logicalIndex
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sectionPressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: logicalIndex (int)
@@ -26909,6 +26972,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sectionClickedEmitter(
                 int logicalIndex
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sectionClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: logicalIndex (int)
@@ -26938,6 +27008,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sectionEnteredEmitter(
                 int logicalIndex
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sectionEntered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: logicalIndex (int)
@@ -26967,6 +27044,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sectionDoubleClickedEmitter(
                 int logicalIndex
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sectionDoubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: logicalIndex (int)
@@ -26996,6 +27080,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sectionCountChangedEmitter(
                 int oldCount, int newCount
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sectionCountChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: oldCount (int)
@@ -27034,6 +27125,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sectionHandleDoubleClickedEmitter(
                 int logicalIndex
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sectionHandleDoubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: logicalIndex (int)
@@ -27063,6 +27161,13 @@ int a3_cpp;
               QHeaderView_Wrapper::geometriesChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("geometriesChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -27083,6 +27188,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sortIndicatorChangedEmitter(
                 int logicalIndex, Qt::SortOrder order
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sortIndicatorChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: logicalIndex (int)
@@ -27121,6 +27233,13 @@ int a3_cpp;
               QHeaderView_Wrapper::sortIndicatorClearableChangedEmitter(
                 bool clearable
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QHeaderView_Wrapper::staticMetaObject.indexOfSignal("sortIndicatorClearableChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QHeaderView_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: clearable (bool)

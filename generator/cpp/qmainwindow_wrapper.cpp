@@ -16140,6 +16140,13 @@ bool a1_cpp;
               QMainWindow_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMainWindow_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMainWindow_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -20202,6 +20209,13 @@ bool a1_cpp;
               QMainWindow_Wrapper::iconSizeChangedEmitter(
                 const QSize& iconSize
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMainWindow_Wrapper::staticMetaObject.indexOfSignal("iconSizeChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMainWindow_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: iconSize (QSize)
@@ -20231,6 +20245,13 @@ bool a1_cpp;
               QMainWindow_Wrapper::toolButtonStyleChangedEmitter(
                 Qt::ToolButtonStyle toolButtonStyle
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMainWindow_Wrapper::staticMetaObject.indexOfSignal("toolButtonStyleChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMainWindow_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: toolButtonStyle (Qt::ToolButtonStyle)
@@ -20262,6 +20283,13 @@ bool a1_cpp;
               QMainWindow_Wrapper::tabifiedDockWidgetActivatedEmitter(
                 QDockWidget* dockWidget
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QMainWindow_Wrapper::staticMetaObject.indexOfSignal("tabifiedDockWidgetActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QMainWindow_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: dockWidget (QDockWidget)

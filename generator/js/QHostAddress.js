@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QHostAddress);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QHostAddress);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QHostAddress);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QHostAddress);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -130,7 +130,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QHostAddress);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -156,7 +156,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QHostAddress);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -182,7 +182,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QHostAddress);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -214,15 +214,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QHostAddress.prototype = new QHostAddress_BaseJs(engine);
       //QHostAddress.prototype = new QHostAddress_Wrapper(engine);
       QHostAddress.prototype = new Object();
+
 
       QHostAddress.getObjectType = function() {
         return RJSType_QHostAddress.getIdStatic();
@@ -273,8 +274,208 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
 
       // functions:
       
+        // function 
+        QHostAddress.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.setAddress = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.setAddress");
+          
+              return this.__PROXY__.setAddress(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.protocol = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.protocol");
+          
+              return this.__PROXY__.protocol(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.toIPv4Address = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.toIPv4Address");
+          
+              return this.__PROXY__.toIPv4Address(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.toString = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.toString");
+          
+              return this.__PROXY__.toString(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.scopeId = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.scopeId");
+          
+              return this.__PROXY__.scopeId(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.setScopeId = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.setScopeId");
+          
+              return this.__PROXY__.setScopeId(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isEqual = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isEqual");
+          
+              return this.__PROXY__.isEqual(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isNull");
+          
+              return this.__PROXY__.isNull(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isInSubnet = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isInSubnet");
+          
+              return this.__PROXY__.isInSubnet(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isLoopback = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isLoopback");
+          
+              return this.__PROXY__.isLoopback(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isGlobal = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isGlobal");
+          
+              return this.__PROXY__.isGlobal(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isLinkLocal = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isLinkLocal");
+          
+              return this.__PROXY__.isLinkLocal(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isSiteLocal = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isSiteLocal");
+          
+              return this.__PROXY__.isSiteLocal(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isUniqueLocalUnicast = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isUniqueLocalUnicast");
+          
+              return this.__PROXY__.isUniqueLocalUnicast(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isMulticast = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isMulticast");
+          
+              return this.__PROXY__.isMulticast(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isBroadcast = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isBroadcast");
+          
+              return this.__PROXY__.isBroadcast(...args);
+            
+        };
+    
+        // function 
+        QHostAddress.prototype.isPrivateUse = function(...args) 
+          
+        {
+          //print("JS: QHostAddress.prototype.isPrivateUse");
+          
+              return this.__PROXY__.isPrivateUse(...args);
+            
+        };
+    
 
       // static functions:
+      QHostAddress.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QHostAddress.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QHostAddress.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -293,4 +494,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
       //  return this.wrapper.destr();
       //};
 
+      QHostAddress.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPainterPath.prototype = new QPainterPath_BaseJs(engine);
       //QPainterPath.prototype = new QPainterPath_Wrapper(engine);
       QPainterPath.prototype = new Object();
+
 
       QPainterPath.prototype.toString = function() {
           //return "QPainterPath [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -135,7 +136,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -143,7 +146,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.clear");
-          return this.__PROXY__.clear(...args);
+          
+              return this.__PROXY__.clear(...args);
+            
         };
     
         // function 
@@ -151,7 +156,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.reserve");
-          return this.__PROXY__.reserve(...args);
+          
+              return this.__PROXY__.reserve(...args);
+            
         };
     
         // function 
@@ -159,7 +166,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.capacity");
-          return this.__PROXY__.capacity(...args);
+          
+              return this.__PROXY__.capacity(...args);
+            
         };
     
         // function 
@@ -167,7 +176,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.closeSubpath");
-          return this.__PROXY__.closeSubpath(...args);
+          
+              return this.__PROXY__.closeSubpath(...args);
+            
         };
     
         // function 
@@ -175,7 +186,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.moveTo");
-          return this.__PROXY__.moveTo(...args);
+          
+              return this.__PROXY__.moveTo(...args);
+            
         };
     
         // function 
@@ -183,7 +196,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.lineTo");
-          return this.__PROXY__.lineTo(...args);
+          
+              return this.__PROXY__.lineTo(...args);
+            
         };
     
         // function 
@@ -191,7 +206,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.arcMoveTo");
-          return this.__PROXY__.arcMoveTo(...args);
+          
+              return this.__PROXY__.arcMoveTo(...args);
+            
         };
     
         // function 
@@ -199,7 +216,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.arcTo");
-          return this.__PROXY__.arcTo(...args);
+          
+              return this.__PROXY__.arcTo(...args);
+            
         };
     
         // function 
@@ -207,7 +226,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.cubicTo");
-          return this.__PROXY__.cubicTo(...args);
+          
+              return this.__PROXY__.cubicTo(...args);
+            
         };
     
         // function 
@@ -215,7 +236,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.quadTo");
-          return this.__PROXY__.quadTo(...args);
+          
+              return this.__PROXY__.quadTo(...args);
+            
         };
     
         // function 
@@ -223,7 +246,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.currentPosition");
-          return this.__PROXY__.currentPosition(...args);
+          
+              return this.__PROXY__.currentPosition(...args);
+            
         };
     
         // function 
@@ -231,7 +256,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.addRect");
-          return this.__PROXY__.addRect(...args);
+          
+              return this.__PROXY__.addRect(...args);
+            
         };
     
         // function 
@@ -239,7 +266,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.addEllipse");
-          return this.__PROXY__.addEllipse(...args);
+          
+              return this.__PROXY__.addEllipse(...args);
+            
         };
     
         // function 
@@ -247,7 +276,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.addPolygon");
-          return this.__PROXY__.addPolygon(...args);
+          
+              return this.__PROXY__.addPolygon(...args);
+            
         };
     
         // function 
@@ -255,7 +286,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.addText");
-          return this.__PROXY__.addText(...args);
+          
+              return this.__PROXY__.addText(...args);
+            
         };
     
         // function 
@@ -263,7 +296,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.addPath");
-          return this.__PROXY__.addPath(...args);
+          
+              return this.__PROXY__.addPath(...args);
+            
         };
     
         // function 
@@ -271,7 +306,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.addRegion");
-          return this.__PROXY__.addRegion(...args);
+          
+              return this.__PROXY__.addRegion(...args);
+            
         };
     
         // function 
@@ -279,7 +316,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.addRoundedRect");
-          return this.__PROXY__.addRoundedRect(...args);
+          
+              return this.__PROXY__.addRoundedRect(...args);
+            
         };
     
         // function 
@@ -287,7 +326,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.connectPath");
-          return this.__PROXY__.connectPath(...args);
+          
+              return this.__PROXY__.connectPath(...args);
+            
         };
     
         // function 
@@ -295,7 +336,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.contains");
-          return this.__PROXY__.contains(...args);
+          
+              return this.__PROXY__.contains(...args);
+            
         };
     
         // function 
@@ -303,7 +346,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.intersects");
-          return this.__PROXY__.intersects(...args);
+          
+              return this.__PROXY__.intersects(...args);
+            
         };
     
         // function 
@@ -311,7 +356,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.translate");
-          return this.__PROXY__.translate(...args);
+          
+              return this.__PROXY__.translate(...args);
+            
         };
     
         // function 
@@ -319,7 +366,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.translated");
-          return this.__PROXY__.translated(...args);
+          
+              return this.__PROXY__.translated(...args);
+            
         };
     
         // function 
@@ -327,7 +376,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.boundingRect");
-          return this.__PROXY__.boundingRect(...args);
+          
+              return this.__PROXY__.boundingRect(...args);
+            
         };
     
         // function 
@@ -335,7 +386,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.controlPointRect");
-          return this.__PROXY__.controlPointRect(...args);
+          
+              return this.__PROXY__.controlPointRect(...args);
+            
         };
     
         // function 
@@ -343,7 +396,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.fillRule");
-          return this.__PROXY__.fillRule(...args);
+          
+              return this.__PROXY__.fillRule(...args);
+            
         };
     
         // function 
@@ -351,7 +406,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.setFillRule");
-          return this.__PROXY__.setFillRule(...args);
+          
+              return this.__PROXY__.setFillRule(...args);
+            
         };
     
         // function 
@@ -359,7 +416,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.isEmpty");
-          return this.__PROXY__.isEmpty(...args);
+          
+              return this.__PROXY__.isEmpty(...args);
+            
         };
     
         // function 
@@ -367,7 +426,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.toReversed");
-          return this.__PROXY__.toReversed(...args);
+          
+              return this.__PROXY__.toReversed(...args);
+            
         };
     
         // function 
@@ -375,7 +436,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.toSubpathPolygons");
-          return this.__PROXY__.toSubpathPolygons(...args);
+          
+              return this.__PROXY__.toSubpathPolygons(...args);
+            
         };
     
         // function 
@@ -383,7 +446,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.toFillPolygons");
-          return this.__PROXY__.toFillPolygons(...args);
+          
+              return this.__PROXY__.toFillPolygons(...args);
+            
         };
     
         // function 
@@ -391,7 +456,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.toFillPolygon");
-          return this.__PROXY__.toFillPolygon(...args);
+          
+              return this.__PROXY__.toFillPolygon(...args);
+            
         };
     
         // function 
@@ -399,7 +466,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.elementCount");
-          return this.__PROXY__.elementCount(...args);
+          
+              return this.__PROXY__.elementCount(...args);
+            
         };
     
         // function 
@@ -407,7 +476,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.setElementPositionAt");
-          return this.__PROXY__.setElementPositionAt(...args);
+          
+              return this.__PROXY__.setElementPositionAt(...args);
+            
         };
     
         // function 
@@ -415,7 +486,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.length");
-          return this.__PROXY__.length(...args);
+          
+              return this.__PROXY__.length(...args);
+            
         };
     
         // function 
@@ -423,7 +496,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.percentAtLength");
-          return this.__PROXY__.percentAtLength(...args);
+          
+              return this.__PROXY__.percentAtLength(...args);
+            
         };
     
         // function 
@@ -431,7 +506,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.pointAtPercent");
-          return this.__PROXY__.pointAtPercent(...args);
+          
+              return this.__PROXY__.pointAtPercent(...args);
+            
         };
     
         // function 
@@ -439,7 +516,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.angleAtPercent");
-          return this.__PROXY__.angleAtPercent(...args);
+          
+              return this.__PROXY__.angleAtPercent(...args);
+            
         };
     
         // function 
@@ -447,7 +526,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.slopeAtPercent");
-          return this.__PROXY__.slopeAtPercent(...args);
+          
+              return this.__PROXY__.slopeAtPercent(...args);
+            
         };
     
         // function 
@@ -455,7 +536,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.united");
-          return this.__PROXY__.united(...args);
+          
+              return this.__PROXY__.united(...args);
+            
         };
     
         // function 
@@ -463,7 +546,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.intersected");
-          return this.__PROXY__.intersected(...args);
+          
+              return this.__PROXY__.intersected(...args);
+            
         };
     
         // function 
@@ -471,7 +556,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.subtracted");
-          return this.__PROXY__.subtracted(...args);
+          
+              return this.__PROXY__.subtracted(...args);
+            
         };
     
         // function 
@@ -479,7 +566,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.simplified");
-          return this.__PROXY__.simplified(...args);
+          
+              return this.__PROXY__.simplified(...args);
+            
         };
     
         // function 
@@ -487,7 +576,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.ensureData");
-          return this.__PROXY__.ensureData(...args);
+          
+              return this.__PROXY__.ensureData(...args);
+            
         };
     
         // function 
@@ -495,7 +586,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.ensureData_helper");
-          return this.__PROXY__.ensureData_helper(...args);
+          
+              return this.__PROXY__.ensureData_helper(...args);
+            
         };
     
         // function 
@@ -503,7 +596,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.detach");
-          return this.__PROXY__.detach(...args);
+          
+              return this.__PROXY__.detach(...args);
+            
         };
     
         // function 
@@ -511,7 +606,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.setDirty");
-          return this.__PROXY__.setDirty(...args);
+          
+              return this.__PROXY__.setDirty(...args);
+            
         };
     
         // function 
@@ -519,7 +616,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.computeBoundingRect");
-          return this.__PROXY__.computeBoundingRect(...args);
+          
+              return this.__PROXY__.computeBoundingRect(...args);
+            
         };
     
         // function 
@@ -527,7 +626,9 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.computeControlPointRect");
-          return this.__PROXY__.computeControlPointRect(...args);
+          
+              return this.__PROXY__.computeControlPointRect(...args);
+            
         };
     
         // function 
@@ -535,11 +636,23 @@ QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
           
         {
           //print("JS: QPainterPath.prototype.d_func");
-          return this.__PROXY__.d_func(...args);
+          
+              return this.__PROXY__.d_func(...args);
+            
         };
     
 
       // static functions:
+      QPainterPath.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPainterPath.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPainterPath.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSslDiffieHellmanParameters);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslDiffieHellmanParameters);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslDiffieHellmanParameters);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslDiffieHellmanParameters);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSslDiffieHellmanParameters.prototype = new QSslDiffieHellmanParameters_BaseJs(engine);
       //QSslDiffieHellmanParameters.prototype = new QSslDiffieHellmanParameters_Wrapper(engine);
       QSslDiffieHellmanParameters.prototype = new Object();
+
 
       QSslDiffieHellmanParameters.prototype.toString = function() {
           //return "QSslDiffieHellmanParameters [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -181,6 +182,116 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
 
       // functions:
       
+        // function 
+        QSslDiffieHellmanParameters.prototype.defaultParameters = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.defaultParameters");
+          
+              return this.__PROXY__.defaultParameters(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.fromEncoded = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.fromEncoded");
+          
+              return this.__PROXY__.fromEncoded(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.error = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.error");
+          
+              return this.__PROXY__.error(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.errorString = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.errorString");
+          
+              return this.__PROXY__.errorString(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.isEqual = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.isEqual");
+          
+              return this.__PROXY__.isEqual(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        QSslDiffieHellmanParameters.prototype.operator_not_assign = function(...args) 
+          
+        {
+          //print("JS: QSslDiffieHellmanParameters.prototype.operator_not_assign");
+          
+              return this.__PROXY__.operator_not_assign(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -311,6 +422,16 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
   }
   
         };
+      QSslDiffieHellmanParameters.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSslDiffieHellmanParameters.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSslDiffieHellmanParameters.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -329,4 +450,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
       //  return this.wrapper.destr();
       //};
 
+      QSslDiffieHellmanParameters.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

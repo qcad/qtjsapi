@@ -16076,6 +16076,13 @@ bool a1_cpp;
               QSpinBox_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSpinBox_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSpinBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -18768,6 +18775,13 @@ int a1_cpp;
               QSpinBox_Wrapper::valueChangedEmitter(
                 int a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSpinBox_Wrapper::staticMetaObject.indexOfSignal("valueChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSpinBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (int)
@@ -18797,6 +18811,13 @@ int a1_cpp;
               QSpinBox_Wrapper::textChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSpinBox_Wrapper::staticMetaObject.indexOfSignal("textChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSpinBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -34892,6 +34913,13 @@ bool a1_cpp;
               QDoubleSpinBox_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDoubleSpinBox_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDoubleSpinBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -37900,6 +37928,13 @@ double a1_cpp;
               QDoubleSpinBox_Wrapper::valueChangedEmitter(
                 double a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDoubleSpinBox_Wrapper::staticMetaObject.indexOfSignal("valueChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDoubleSpinBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (double)
@@ -37929,6 +37964,13 @@ double a1_cpp;
               QDoubleSpinBox_Wrapper::textChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDoubleSpinBox_Wrapper::staticMetaObject.indexOfSignal("textChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDoubleSpinBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)

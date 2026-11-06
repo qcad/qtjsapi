@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QDesktopServices.prototype = new QDesktopServices_BaseJs(engine);
       //QDesktopServices.prototype = new QDesktopServices_Wrapper(engine);
       QDesktopServices.prototype = new Object();
+
 
       QDesktopServices.prototype.toString = function() {
           //return "QDesktopServices [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,7 +130,9 @@
           
         {
           //print("JS: QDesktopServices.prototype.openUrl");
-          return this.__PROXY__.openUrl(...args);
+          
+              return this.__PROXY__.openUrl(...args);
+            
         };
     
         // function 
@@ -137,7 +140,9 @@
           
         {
           //print("JS: QDesktopServices.prototype.setUrlHandler");
-          return this.__PROXY__.setUrlHandler(...args);
+          
+              return this.__PROXY__.setUrlHandler(...args);
+            
         };
     
         // function 
@@ -145,7 +150,9 @@
           
         {
           //print("JS: QDesktopServices.prototype.unsetUrlHandler");
-          return this.__PROXY__.unsetUrlHandler(...args);
+          
+              return this.__PROXY__.unsetUrlHandler(...args);
+            
         };
     
 
@@ -234,6 +241,16 @@
   }
   
         };
+      QDesktopServices.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QDesktopServices.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QDesktopServices.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

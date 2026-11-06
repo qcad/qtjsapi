@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QLayoutItem);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QLayoutItem.prototype = new QLayoutItem_BaseJs(engine);
       //QLayoutItem.prototype = new QLayoutItem_Wrapper(engine);
       QLayoutItem.prototype = new Object();
+
 
       QLayoutItem.prototype.toString = function() {
           //return "QLayoutItem [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -109,7 +110,7 @@
                 // call highest level JS implementation:
                 //return this.sizeHintBase(
                 
-                    return this.sizeHintSuper(
+                    return this.__PROXY__.sizeHintSuper(
                   
                 );
               
@@ -127,8 +128,178 @@
   
       };
     
+        // function 
+        QLayoutItem.prototype.minimumSize = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.minimumSize");
+          
+              return this.__PROXY__.minimumSize(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.maximumSize = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.maximumSize");
+          
+              return this.__PROXY__.maximumSize(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.expandingDirections = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.expandingDirections");
+          
+              return this.__PROXY__.expandingDirections(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.setGeometry = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.setGeometry");
+          
+              return this.__PROXY__.setGeometry(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.geometry = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.geometry");
+          
+              return this.__PROXY__.geometry(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.hasHeightForWidth = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.hasHeightForWidth");
+          
+              return this.__PROXY__.hasHeightForWidth(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.heightForWidth = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.heightForWidth");
+          
+              return this.__PROXY__.heightForWidth(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.minimumHeightForWidth = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.minimumHeightForWidth");
+          
+              return this.__PROXY__.minimumHeightForWidth(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.invalidate = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.invalidate");
+          
+              return this.__PROXY__.invalidate(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.widget = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.widget");
+          
+              return this.__PROXY__.widget(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.layout = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.layout");
+          
+              return this.__PROXY__.layout(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.spacerItem = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.spacerItem");
+          
+              return this.__PROXY__.spacerItem(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.alignment = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.alignment");
+          
+              return this.__PROXY__.alignment(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.setAlignment = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.setAlignment");
+          
+              return this.__PROXY__.setAlignment(...args);
+            
+        };
+    
+        // function 
+        QLayoutItem.prototype.controlTypes = function(...args) 
+          
+        {
+          //print("JS: QLayoutItem.prototype.controlTypes");
+          
+              return this.__PROXY__.controlTypes(...args);
+            
+        };
+    
 
       // static functions:
+      QLayoutItem.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QLayoutItem.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QLayoutItem.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -147,4 +318,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QLayoutItem.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

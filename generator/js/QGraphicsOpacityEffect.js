@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGraphicsOpacityEffect);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGraphicsOpacityEffect);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QGraphicsOpacityEffect.prototype = new QGraphicsOpacityEffect_BaseJs(engine);
       //QGraphicsOpacityEffect.prototype = new QGraphicsOpacityEffect_Wrapper(engine);
       QGraphicsOpacityEffect.prototype = new Object();
+
 
       QGraphicsOpacityEffect.prototype.toString = function() {
           //return "QGraphicsOpacityEffect [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -140,8 +141,113 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
 
       // functions:
       
+        // function 
+        QGraphicsOpacityEffect.prototype.boundingRectFor = function(...args) 
+          
+        {
+          //print("JS: QGraphicsOpacityEffect.prototype.boundingRectFor");
+          
+              return this.__PROXY__.boundingRectFor(...args);
+            
+        };
+    
+        // function 
+        QGraphicsOpacityEffect.prototype.boundingRect = function(...args) 
+          
+        {
+          //print("JS: QGraphicsOpacityEffect.prototype.boundingRect");
+          
+              return this.__PROXY__.boundingRect(...args);
+            
+        };
+    
+        // function 
+        QGraphicsOpacityEffect.prototype.isEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsOpacityEffect.prototype.isEnabled");
+          
+              return this.__PROXY__.isEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsOpacityEffect.prototype.setEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsOpacityEffect.prototype.setEnabled");
+          
+              return this.__PROXY__.setEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsOpacityEffect.prototype.update = function(...args) 
+          
+        {
+          //print("JS: QGraphicsOpacityEffect.prototype.update");
+          
+              return this.__PROXY__.update(...args);
+            
+        };
+    
+        // function 
+        QGraphicsOpacityEffect.prototype.opacity = function(...args) 
+          
+        {
+          //print("JS: QGraphicsOpacityEffect.prototype.opacity");
+          
+              return this.__PROXY__.opacity(...args);
+            
+        };
+    
+        // function 
+        QGraphicsOpacityEffect.prototype.setOpacity = function(...args) 
+          
+        {
+          //print("JS: QGraphicsOpacityEffect.prototype.setOpacity");
+          
+              return this.__PROXY__.setOpacity(...args);
+            
+        };
+    
+        // function 
+        QGraphicsOpacityEffect.prototype.setOpacityMask = function(...args) 
+          
+        {
+          //print("JS: QGraphicsOpacityEffect.prototype.setOpacityMask");
+          
+              return this.__PROXY__.setOpacityMask(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QGraphicsOpacityEffect.prototype, 'opacityMask', {
+              get: function() {
+                  
+                      return this.__PROXY__.opacityMask;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setOpacityMask(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QGraphicsOpacityEffect.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGraphicsOpacityEffect.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGraphicsOpacityEffect.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -160,4 +266,7 @@ QGraphicsOpacityEffect.PadToEffectiveBoundingRect = QGraphicsOpacityEffect_Wrapp
       //  return this.wrapper.destr();
       //};
 
+      QGraphicsOpacityEffect.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

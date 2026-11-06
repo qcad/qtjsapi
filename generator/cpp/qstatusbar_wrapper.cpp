@@ -15961,6 +15961,13 @@ bool a1_cpp;
               QStatusBar_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStatusBar_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStatusBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17011,6 +17018,13 @@ int a2_cpp;
               QStatusBar_Wrapper::messageChangedEmitter(
                 const QString& text
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStatusBar_Wrapper::staticMetaObject.indexOfSignal("messageChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStatusBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: text (QString)

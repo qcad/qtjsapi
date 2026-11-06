@@ -1955,6 +1955,13 @@ QStringList a1_cpp;
               QFileSystemWatcher_Wrapper::fileChangedEmitter(
                 const QString& path
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileSystemWatcher_Wrapper::staticMetaObject.indexOfSignal("fileChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileSystemWatcher_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: path (QString)
@@ -1984,6 +1991,13 @@ QStringList a1_cpp;
               QFileSystemWatcher_Wrapper::directoryChangedEmitter(
                 const QString& path
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileSystemWatcher_Wrapper::staticMetaObject.indexOfSignal("directoryChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileSystemWatcher_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: path (QString)

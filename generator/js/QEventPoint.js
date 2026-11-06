@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QEventPoint);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QEventPoint);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QEventPoint);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -105,7 +105,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QEventPoint);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -131,7 +131,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QEventPoint);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -163,15 +163,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QEventPoint.prototype = new QEventPoint_BaseJs(engine);
       //QEventPoint.prototype = new QEventPoint_Wrapper(engine);
       QEventPoint.prototype = new Object();
+
 
       QEventPoint.prototype.toString = function() {
           //return "QEventPoint [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -210,8 +211,289 @@ QEventPoint.Released = QEventPoint_Wrapper.Released;
 
       // functions:
       
+        // function 
+        QEventPoint.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QEventPoint.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QEventPoint.prototype.normalizedPosition = function(...args) 
+          
+        {
+          //print("JS: QEventPoint.prototype.normalizedPosition");
+          
+              return this.__PROXY__.normalizedPosition(...args);
+            
+        };
+    
+        // function 
+        QEventPoint.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: QEventPoint.prototype.isAccepted");
+          
+              return this.__PROXY__.isAccepted(...args);
+            
+        };
+    
+        // function 
+        QEventPoint.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: QEventPoint.prototype.setAccepted");
+          
+              return this.__PROXY__.setAccepted(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QEventPoint.prototype, 'id', {
+              get: function() {
+                  
+                      return this.__PROXY__.id;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'state', {
+              get: function() {
+                  
+                      return this.__PROXY__.state;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'timestamp', {
+              get: function() {
+                  
+                      return this.__PROXY__.timestamp;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'pressTimestamp', {
+              get: function() {
+                  
+                      return this.__PROXY__.pressTimestamp;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'lastTimestamp', {
+              get: function() {
+                  
+                      return this.__PROXY__.lastTimestamp;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'timeHeld', {
+              get: function() {
+                  
+                      return this.__PROXY__.timeHeld;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'pressure', {
+              get: function() {
+                  
+                      return this.__PROXY__.pressure;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'rotation', {
+              get: function() {
+                  
+                      return this.__PROXY__.rotation;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'ellipseDiameters', {
+              get: function() {
+                  
+                      return this.__PROXY__.ellipseDiameters;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'position', {
+              get: function() {
+                  
+                      return this.__PROXY__.position;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'pressPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.pressPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'grabPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.grabPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'lastPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.lastPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'scenePosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.scenePosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'scenePressPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.scenePressPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'sceneGrabPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.sceneGrabPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'sceneLastPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.sceneLastPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'globalPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.globalPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'globalPressPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.globalPressPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'globalGrabPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.globalGrabPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QEventPoint.prototype, 'globalLastPosition', {
+              get: function() {
+                  
+                      return this.__PROXY__.globalLastPosition;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QEventPoint.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QEventPoint.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QEventPoint.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -230,4 +512,7 @@ QEventPoint.Released = QEventPoint_Wrapper.Released;
       //  return this.wrapper.destr();
       //};
 
+      QEventPoint.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

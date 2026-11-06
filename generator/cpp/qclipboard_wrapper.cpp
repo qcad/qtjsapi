@@ -2504,6 +2504,13 @@ QClipboard::Mode a2_cpp;
               QClipboard_Wrapper::changedEmitter(
                 QClipboard::Mode mode
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QClipboard_Wrapper::staticMetaObject.indexOfSignal("changed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QClipboard_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: mode (QClipboard::Mode)
@@ -2533,6 +2540,13 @@ QClipboard::Mode a2_cpp;
               QClipboard_Wrapper::selectionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QClipboard_Wrapper::staticMetaObject.indexOfSignal("selectionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QClipboard_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2553,6 +2567,13 @@ QClipboard::Mode a2_cpp;
               QClipboard_Wrapper::findBufferChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QClipboard_Wrapper::staticMetaObject.indexOfSignal("findBufferChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QClipboard_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -2573,6 +2594,13 @@ QClipboard::Mode a2_cpp;
               QClipboard_Wrapper::dataChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QClipboard_Wrapper::staticMetaObject.indexOfSignal("dataChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QClipboard_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

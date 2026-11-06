@@ -216,15 +216,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QCursor.prototype = new QCursor_BaseJs(engine);
       //QCursor.prototype = new QCursor_Wrapper(engine);
       QCursor.prototype = new Object();
+
 
       QCursor.prototype.toString = function() {
           //return "QCursor [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -261,7 +262,9 @@
           
         {
           //print("JS: QCursor.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -269,7 +272,9 @@
           
         {
           //print("JS: QCursor.prototype.shape");
-          return this.__PROXY__.shape(...args);
+          
+              return this.__PROXY__.shape(...args);
+            
         };
     
         // function 
@@ -277,7 +282,9 @@
           
         {
           //print("JS: QCursor.prototype.setShape");
-          return this.__PROXY__.setShape(...args);
+          
+              return this.__PROXY__.setShape(...args);
+            
         };
     
         // function 
@@ -285,7 +292,9 @@
           
         {
           //print("JS: QCursor.prototype.pixmap");
-          return this.__PROXY__.pixmap(...args);
+          
+              return this.__PROXY__.pixmap(...args);
+            
         };
     
         // function 
@@ -293,7 +302,9 @@
           
         {
           //print("JS: QCursor.prototype.hotSpot");
-          return this.__PROXY__.hotSpot(...args);
+          
+              return this.__PROXY__.hotSpot(...args);
+            
         };
     
         // function 
@@ -301,7 +312,9 @@
           
         {
           //print("JS: QCursor.prototype.pos");
-          return this.__PROXY__.pos(...args);
+          
+              return this.__PROXY__.pos(...args);
+            
         };
     
         // function 
@@ -309,7 +322,9 @@
           
         {
           //print("JS: QCursor.prototype.setPos");
-          return this.__PROXY__.setPos(...args);
+          
+              return this.__PROXY__.setPos(...args);
+            
         };
     
 
@@ -426,6 +441,16 @@
   }
   
         };
+      QCursor.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QCursor.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QCursor.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

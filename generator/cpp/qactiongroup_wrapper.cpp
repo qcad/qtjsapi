@@ -2282,6 +2282,13 @@ bool a1_cpp;
               QActionGroup_Wrapper::triggeredEmitter(
                 QAction* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QActionGroup_Wrapper::staticMetaObject.indexOfSignal("triggered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QActionGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAction)
@@ -2311,6 +2318,13 @@ bool a1_cpp;
               QActionGroup_Wrapper::hoveredEmitter(
                 QAction* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QActionGroup_Wrapper::staticMetaObject.indexOfSignal("hovered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QActionGroup_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAction)

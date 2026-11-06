@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QPageRanges);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPageRanges);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPageRanges);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPageRanges);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPageRanges.prototype = new QPageRanges_BaseJs(engine);
       //QPageRanges.prototype = new QPageRanges_Wrapper(engine);
       QPageRanges.prototype = new Object();
+
 
       QPageRanges.getObjectType = function() {
         return RJSType_QPageRanges.getIdStatic();
@@ -172,6 +173,126 @@
 
       // functions:
       
+        // function 
+        QPageRanges.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.addPage = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.addPage");
+          
+              return this.__PROXY__.addPage(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.addRange = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.addRange");
+          
+              return this.__PROXY__.addRange(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.toString = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.toString");
+          
+              return this.__PROXY__.toString(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.fromString = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.fromString");
+          
+              return this.__PROXY__.fromString(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.contains");
+          
+              return this.__PROXY__.contains(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.firstPage = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.firstPage");
+          
+              return this.__PROXY__.firstPage(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.lastPage = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.lastPage");
+          
+              return this.__PROXY__.lastPage(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.detach = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.detach");
+          
+              return this.__PROXY__.detach(...args);
+            
+        };
+    
+        // function 
+        QPageRanges.prototype.isEqual = function(...args) 
+          
+        {
+          //print("JS: QPageRanges.prototype.isEqual");
+          
+              return this.__PROXY__.isEqual(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -202,6 +323,16 @@
   }
   
         };
+      QPageRanges.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPageRanges.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPageRanges.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -220,4 +351,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QPageRanges.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

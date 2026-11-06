@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QToolTip);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QToolTip.prototype = new QToolTip_BaseJs(engine);
       //QToolTip.prototype = new QToolTip_Wrapper(engine);
       QToolTip.prototype = new Object();
+
 
       QToolTip.prototype.toString = function() {
           //return "QToolTip [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,6 +96,86 @@
 
       // functions:
       
+        // function 
+        QToolTip.prototype.showText = function(...args) 
+          
+        {
+          //print("JS: QToolTip.prototype.showText");
+          
+              return this.__PROXY__.showText(...args);
+            
+        };
+    
+        // function 
+        QToolTip.prototype.hideText = function(...args) 
+          
+        {
+          //print("JS: QToolTip.prototype.hideText");
+          
+              return this.__PROXY__.hideText(...args);
+            
+        };
+    
+        // function 
+        QToolTip.prototype.isVisible = function(...args) 
+          
+        {
+          //print("JS: QToolTip.prototype.isVisible");
+          
+              return this.__PROXY__.isVisible(...args);
+            
+        };
+    
+        // function 
+        QToolTip.prototype.text = function(...args) 
+          
+        {
+          //print("JS: QToolTip.prototype.text");
+          
+              return this.__PROXY__.text(...args);
+            
+        };
+    
+        // function 
+        QToolTip.prototype.palette = function(...args) 
+          
+        {
+          //print("JS: QToolTip.prototype.palette");
+          
+              return this.__PROXY__.palette(...args);
+            
+        };
+    
+        // function 
+        QToolTip.prototype.setPalette = function(...args) 
+          
+        {
+          //print("JS: QToolTip.prototype.setPalette");
+          
+              return this.__PROXY__.setPalette(...args);
+            
+        };
+    
+        // function 
+        QToolTip.prototype.font = function(...args) 
+          
+        {
+          //print("JS: QToolTip.prototype.font");
+          
+              return this.__PROXY__.font(...args);
+            
+        };
+    
+        // function 
+        QToolTip.prototype.setFont = function(...args) 
+          
+        {
+          //print("JS: QToolTip.prototype.setFont");
+          
+              return this.__PROXY__.setFont(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -322,6 +403,16 @@
   }
   
         };
+      QToolTip.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QToolTip.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QToolTip.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -340,4 +431,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QToolTip.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPaintEvent.prototype = new QPaintEvent_BaseJs(engine);
       //QPaintEvent.prototype = new QPaintEvent_Wrapper(engine);
       QPaintEvent.prototype = new Object();
+
 
       QPaintEvent.prototype.toString = function() {
           //return "QPaintEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -333,7 +334,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -341,7 +344,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -349,7 +354,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -357,7 +364,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -365,7 +374,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -373,7 +384,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -381,7 +394,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -389,7 +404,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -397,7 +414,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -405,7 +424,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -413,7 +434,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -421,7 +444,9 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.rect");
-          return this.__PROXY__.rect(...args);
+          
+              return this.__PROXY__.rect(...args);
+            
         };
     
         // function 
@@ -429,11 +454,23 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QPaintEvent.prototype.region");
-          return this.__PROXY__.region(...args);
+          
+              return this.__PROXY__.region(...args);
+            
         };
     
 
       // static functions:
+      QPaintEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPaintEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPaintEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

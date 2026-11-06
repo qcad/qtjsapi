@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QUrlQuery);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QUrlQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QUrlQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QUrlQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -130,7 +130,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QUrlQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -162,15 +162,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QUrlQuery.prototype = new QUrlQuery_BaseJs(engine);
       //QUrlQuery.prototype = new QUrlQuery_Wrapper(engine);
       QUrlQuery.prototype = new Object();
+
 
       QUrlQuery.getObjectType = function() {
         return RJSType_QUrlQuery.getIdStatic();
@@ -198,8 +199,208 @@
 
       // functions:
       
+        // function 
+        QUrlQuery.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.isDetached = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.isDetached");
+          
+              return this.__PROXY__.isDetached(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.query = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.query");
+          
+              return this.__PROXY__.query(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.setQuery = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.setQuery");
+          
+              return this.__PROXY__.setQuery(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.toString = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.toString");
+          
+              return this.__PROXY__.toString(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.setQueryDelimiters = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.setQueryDelimiters");
+          
+              return this.__PROXY__.setQueryDelimiters(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.queryValueDelimiter = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.queryValueDelimiter");
+          
+              return this.__PROXY__.queryValueDelimiter(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.queryPairDelimiter = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.queryPairDelimiter");
+          
+              return this.__PROXY__.queryPairDelimiter(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.setQueryItems = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.setQueryItems");
+          
+              return this.__PROXY__.setQueryItems(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.queryItems = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.queryItems");
+          
+              return this.__PROXY__.queryItems(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.hasQueryItem = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.hasQueryItem");
+          
+              return this.__PROXY__.hasQueryItem(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.addQueryItem = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.addQueryItem");
+          
+              return this.__PROXY__.addQueryItem(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.removeQueryItem = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.removeQueryItem");
+          
+              return this.__PROXY__.removeQueryItem(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.queryItemValue = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.queryItemValue");
+          
+              return this.__PROXY__.queryItemValue(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.allQueryItemValues = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.allQueryItemValues");
+          
+              return this.__PROXY__.allQueryItemValues(...args);
+            
+        };
+    
+        // function 
+        QUrlQuery.prototype.removeAllQueryItems = function(...args) 
+          
+        {
+          //print("JS: QUrlQuery.prototype.removeAllQueryItems");
+          
+              return this.__PROXY__.removeAllQueryItems(...args);
+            
+        };
+    
 
       // static functions:
+      QUrlQuery.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QUrlQuery.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QUrlQuery.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -218,4 +419,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QUrlQuery.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

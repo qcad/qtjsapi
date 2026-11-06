@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStringDecoder);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStringDecoder);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStringDecoder);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStringDecoder);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStringDecoder.prototype = new QStringDecoder_BaseJs(engine);
       //QStringDecoder.prototype = new QStringDecoder_Wrapper(engine);
       QStringDecoder.prototype = new Object();
+
 
       QStringDecoder.prototype.toString = function() {
           //return "QStringDecoder [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -192,8 +193,78 @@ QStringDecoder.LastEncoding = QStringDecoder_Wrapper.LastEncoding;
 
       // functions:
       
+        // function 
+        QStringDecoder.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QStringDecoder.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QStringDecoder.prototype.resetState = function(...args) 
+          
+        {
+          //print("JS: QStringDecoder.prototype.resetState");
+          
+              return this.__PROXY__.resetState(...args);
+            
+        };
+    
+        // function 
+        QStringDecoder.prototype.hasError = function(...args) 
+          
+        {
+          //print("JS: QStringDecoder.prototype.hasError");
+          
+              return this.__PROXY__.hasError(...args);
+            
+        };
+    
+        // function 
+        QStringDecoder.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QStringDecoder.prototype.name");
+          
+              return this.__PROXY__.name(...args);
+            
+        };
+    
+        // function 
+        QStringDecoder.prototype.decode = function(...args) 
+          
+        {
+          //print("JS: QStringDecoder.prototype.decode");
+          
+              return this.__PROXY__.decode(...args);
+            
+        };
+    
+        // function 
+        QStringDecoder.prototype.requiredSpace = function(...args) 
+          
+        {
+          //print("JS: QStringDecoder.prototype.requiredSpace");
+          
+              return this.__PROXY__.requiredSpace(...args);
+            
+        };
+    
 
       // static functions:
+      QStringDecoder.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStringDecoder.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStringDecoder.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -212,4 +283,7 @@ QStringDecoder.LastEncoding = QStringDecoder_Wrapper.LastEncoding;
       //  return this.wrapper.destr();
       //};
 
+      QStringDecoder.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

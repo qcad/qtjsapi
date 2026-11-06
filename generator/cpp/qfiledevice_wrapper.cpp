@@ -3276,6 +3276,13 @@ char a1_cpp;
               QFileDevice_Wrapper::readyReadEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDevice_Wrapper::staticMetaObject.indexOfSignal("readyRead()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDevice_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3296,6 +3303,13 @@ char a1_cpp;
               QFileDevice_Wrapper::channelReadyReadEmitter(
                 int channel
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDevice_Wrapper::staticMetaObject.indexOfSignal("channelReadyRead(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDevice_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: channel (int)
@@ -3325,6 +3339,13 @@ char a1_cpp;
               QFileDevice_Wrapper::bytesWrittenEmitter(
                 qint64 bytes
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDevice_Wrapper::staticMetaObject.indexOfSignal("bytesWritten(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDevice_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: bytes (qint64)
@@ -3354,6 +3375,13 @@ char a1_cpp;
               QFileDevice_Wrapper::channelBytesWrittenEmitter(
                 int channel, qint64 bytes
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDevice_Wrapper::staticMetaObject.indexOfSignal("channelBytesWritten(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDevice_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: channel (int)
@@ -3392,6 +3420,13 @@ char a1_cpp;
               QFileDevice_Wrapper::aboutToCloseEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDevice_Wrapper::staticMetaObject.indexOfSignal("aboutToClose()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDevice_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -3412,6 +3447,13 @@ char a1_cpp;
               QFileDevice_Wrapper::readChannelFinishedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QFileDevice_Wrapper::staticMetaObject.indexOfSignal("readChannelFinished()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QFileDevice_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

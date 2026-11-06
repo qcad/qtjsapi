@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QInputDevice);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QInputDevice);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,22 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["availableVirtualGeometryChanged(QRect)"] = Object.getPrototypeOf(this).availableVirtualGeometryChanged;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //QInputDevice.prototype = new QInputDevice_BaseJs(engine);
       //QInputDevice.prototype = new QInputDevice_Wrapper(engine);
       QInputDevice.prototype = new Object();
+
 
       QInputDevice.prototype.toString = function() {
           //return "QInputDevice [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -136,6 +130,186 @@
 
       // functions:
       
+        // function 
+        QInputDevice.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.children = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        QInputDevice.prototype.seatNames = function(...args) 
+          
+        {
+          //print("JS: QInputDevice.prototype.seatNames");
+          
+              return this.__PROXY__.seatNames(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -167,6 +341,85 @@
   
         };
       
+          Object.defineProperty(QInputDevice.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QInputDevice.prototype, 'name', {
+              get: function() {
+                  
+                      return this.__PROXY__.name;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QInputDevice.prototype, 'systemId', {
+              get: function() {
+                  
+                      return this.__PROXY__.systemId;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QInputDevice.prototype, 'seatName', {
+              get: function() {
+                  
+                      return this.__PROXY__.seatName;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QInputDevice.prototype, 'availableVirtualGeometry', {
+              get: function() {
+                  
+                      return this.__PROXY__.availableVirtualGeometry;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(QInputDevice.prototype, 'availableVirtualGeometryChanged', {
+            get: function() { return this.__PROXY__.availableVirtualGeometryChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(QInputDevice.prototype, 'availableVirtualGeometryChanged(QRect)', {
+              get: function() { return this.__PROXY__.availableVirtualGeometryChanged; },
+              configurable: true
+          });
+        QInputDevice.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QInputDevice.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QInputDevice.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
+      
 
       // constants:
       
@@ -184,4 +437,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QInputDevice.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

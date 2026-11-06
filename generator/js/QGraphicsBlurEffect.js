@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGraphicsBlurEffect);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGraphicsBlurEffect);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QGraphicsBlurEffect.prototype = new QGraphicsBlurEffect_BaseJs(engine);
       //QGraphicsBlurEffect.prototype = new QGraphicsBlurEffect_Wrapper(engine);
       QGraphicsBlurEffect.prototype = new Object();
+
 
       QGraphicsBlurEffect.prototype.toString = function() {
           //return "QGraphicsBlurEffect [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -149,8 +150,298 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
 
       // functions:
       
+        // function 
+        QGraphicsBlurEffect.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.children = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.property = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.boundingRect = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.boundingRect");
+          
+              return this.__PROXY__.boundingRect(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.isEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.isEnabled");
+          
+              return this.__PROXY__.isEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.setEnabled = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.setEnabled");
+          
+              return this.__PROXY__.setEnabled(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.update = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.update");
+          
+              return this.__PROXY__.update(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.boundingRectFor = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.boundingRectFor");
+          
+              return this.__PROXY__.boundingRectFor(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.blurRadius = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.blurRadius");
+          
+              return this.__PROXY__.blurRadius(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.setBlurRadius = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.setBlurRadius");
+          
+              return this.__PROXY__.setBlurRadius(...args);
+            
+        };
+    
+        // function 
+        QGraphicsBlurEffect.prototype.setBlurHints = function(...args) 
+          
+        {
+          //print("JS: QGraphicsBlurEffect.prototype.setBlurHints");
+          
+              return this.__PROXY__.setBlurHints(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(QGraphicsBlurEffect.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(QGraphicsBlurEffect.prototype, 'blurHints', {
+              get: function() {
+                  
+                      return this.__PROXY__.blurHints;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setBlurHints(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        QGraphicsBlurEffect.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGraphicsBlurEffect.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGraphicsBlurEffect.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -169,4 +460,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
       //  return this.wrapper.destr();
       //};
 
+      QGraphicsBlurEffect.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

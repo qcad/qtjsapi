@@ -1391,6 +1391,13 @@ QNetworkProxy a1_cpp;
               QSslServer_Wrapper::newConnectionEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSslServer_Wrapper::staticMetaObject.indexOfSignal("newConnection()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSslServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -1411,6 +1418,13 @@ QNetworkProxy a1_cpp;
               QSslServer_Wrapper::acceptErrorEmitter(
                 QAbstractSocket::SocketError socketError
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSslServer_Wrapper::staticMetaObject.indexOfSignal("acceptError(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSslServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: socketError (QAbstractSocket::SocketError)
@@ -1682,6 +1696,13 @@ int a1_cpp;
               QSslServer_Wrapper::sslErrorsEmitter(
                 QSslSocket* socket, const QList<QSslError>& errors
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSslServer_Wrapper::staticMetaObject.indexOfSignal("sslErrors(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSslServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: socket (QSslSocket)
@@ -1720,6 +1741,13 @@ int a1_cpp;
               QSslServer_Wrapper::peerVerifyErrorEmitter(
                 QSslSocket* socket, const QSslError& error
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSslServer_Wrapper::staticMetaObject.indexOfSignal("peerVerifyError(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSslServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: socket (QSslSocket)
@@ -1758,6 +1786,13 @@ int a1_cpp;
               QSslServer_Wrapper::errorOccurredEmitter(
                 QSslSocket* socket, QAbstractSocket::SocketError error
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSslServer_Wrapper::staticMetaObject.indexOfSignal("errorOccurred(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSslServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: socket (QSslSocket)
@@ -1796,6 +1831,13 @@ int a1_cpp;
               QSslServer_Wrapper::preSharedKeyAuthenticationRequiredEmitter(
                 QSslSocket* socket, QSslPreSharedKeyAuthenticator* authenticator
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSslServer_Wrapper::staticMetaObject.indexOfSignal("preSharedKeyAuthenticationRequired(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSslServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: socket (QSslSocket)
@@ -1834,6 +1876,13 @@ int a1_cpp;
               QSslServer_Wrapper::handshakeInterruptedOnErrorEmitter(
                 QSslSocket* socket, const QSslError& error
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSslServer_Wrapper::staticMetaObject.indexOfSignal("handshakeInterruptedOnError(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSslServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: socket (QSslSocket)
@@ -1872,6 +1921,13 @@ int a1_cpp;
               QSslServer_Wrapper::startedEncryptionHandshakeEmitter(
                 QSslSocket* socket
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QSslServer_Wrapper::staticMetaObject.indexOfSignal("startedEncryptionHandshake(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QSslServer_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: socket (QSslSocket)

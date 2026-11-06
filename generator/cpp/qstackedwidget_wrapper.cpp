@@ -16018,6 +16018,13 @@ bool a1_cpp;
               QStackedWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStackedWidget_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStackedWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -18380,6 +18387,13 @@ int a1_cpp;
               QStackedWidget_Wrapper::currentChangedEmitter(
                 int a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStackedWidget_Wrapper::staticMetaObject.indexOfSignal("currentChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStackedWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (int)
@@ -18409,6 +18423,13 @@ int a1_cpp;
               QStackedWidget_Wrapper::widgetRemovedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStackedWidget_Wrapper::staticMetaObject.indexOfSignal("widgetRemoved(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStackedWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)

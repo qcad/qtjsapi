@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QCalendar.prototype = new QCalendar_BaseJs(engine);
       //QCalendar.prototype = new QCalendar_Wrapper(engine);
       QCalendar.prototype = new Object();
+
 
       QCalendar.prototype.toString = function() {
           //return "QCalendar [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,7 +130,9 @@
           
         {
           //print("JS: QCalendar.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -137,7 +140,9 @@
           
         {
           //print("JS: QCalendar.prototype.daysInMonth");
-          return this.__PROXY__.daysInMonth(...args);
+          
+              return this.__PROXY__.daysInMonth(...args);
+            
         };
     
         // function 
@@ -145,7 +150,9 @@
           
         {
           //print("JS: QCalendar.prototype.daysInYear");
-          return this.__PROXY__.daysInYear(...args);
+          
+              return this.__PROXY__.daysInYear(...args);
+            
         };
     
         // function 
@@ -153,7 +160,9 @@
           
         {
           //print("JS: QCalendar.prototype.monthsInYear");
-          return this.__PROXY__.monthsInYear(...args);
+          
+              return this.__PROXY__.monthsInYear(...args);
+            
         };
     
         // function 
@@ -161,7 +170,9 @@
           
         {
           //print("JS: QCalendar.prototype.isDateValid");
-          return this.__PROXY__.isDateValid(...args);
+          
+              return this.__PROXY__.isDateValid(...args);
+            
         };
     
         // function 
@@ -169,7 +180,9 @@
           
         {
           //print("JS: QCalendar.prototype.isLeapYear");
-          return this.__PROXY__.isLeapYear(...args);
+          
+              return this.__PROXY__.isLeapYear(...args);
+            
         };
     
         // function 
@@ -177,7 +190,9 @@
           
         {
           //print("JS: QCalendar.prototype.isGregorian");
-          return this.__PROXY__.isGregorian(...args);
+          
+              return this.__PROXY__.isGregorian(...args);
+            
         };
     
         // function 
@@ -185,7 +200,9 @@
           
         {
           //print("JS: QCalendar.prototype.isLunar");
-          return this.__PROXY__.isLunar(...args);
+          
+              return this.__PROXY__.isLunar(...args);
+            
         };
     
         // function 
@@ -193,7 +210,9 @@
           
         {
           //print("JS: QCalendar.prototype.isLuniSolar");
-          return this.__PROXY__.isLuniSolar(...args);
+          
+              return this.__PROXY__.isLuniSolar(...args);
+            
         };
     
         // function 
@@ -201,7 +220,9 @@
           
         {
           //print("JS: QCalendar.prototype.isSolar");
-          return this.__PROXY__.isSolar(...args);
+          
+              return this.__PROXY__.isSolar(...args);
+            
         };
     
         // function 
@@ -209,7 +230,9 @@
           
         {
           //print("JS: QCalendar.prototype.isProleptic");
-          return this.__PROXY__.isProleptic(...args);
+          
+              return this.__PROXY__.isProleptic(...args);
+            
         };
     
         // function 
@@ -217,7 +240,9 @@
           
         {
           //print("JS: QCalendar.prototype.hasYearZero");
-          return this.__PROXY__.hasYearZero(...args);
+          
+              return this.__PROXY__.hasYearZero(...args);
+            
         };
     
         // function 
@@ -225,7 +250,9 @@
           
         {
           //print("JS: QCalendar.prototype.maximumDaysInMonth");
-          return this.__PROXY__.maximumDaysInMonth(...args);
+          
+              return this.__PROXY__.maximumDaysInMonth(...args);
+            
         };
     
         // function 
@@ -233,7 +260,9 @@
           
         {
           //print("JS: QCalendar.prototype.minimumDaysInMonth");
-          return this.__PROXY__.minimumDaysInMonth(...args);
+          
+              return this.__PROXY__.minimumDaysInMonth(...args);
+            
         };
     
         // function 
@@ -241,7 +270,9 @@
           
         {
           //print("JS: QCalendar.prototype.maximumMonthsInYear");
-          return this.__PROXY__.maximumMonthsInYear(...args);
+          
+              return this.__PROXY__.maximumMonthsInYear(...args);
+            
         };
     
         // function 
@@ -249,7 +280,9 @@
           
         {
           //print("JS: QCalendar.prototype.name");
-          return this.__PROXY__.name(...args);
+          
+              return this.__PROXY__.name(...args);
+            
         };
     
         // function 
@@ -257,7 +290,9 @@
           
         {
           //print("JS: QCalendar.prototype.dayOfWeek");
-          return this.__PROXY__.dayOfWeek(...args);
+          
+              return this.__PROXY__.dayOfWeek(...args);
+            
         };
     
         // function 
@@ -265,7 +300,9 @@
           
         {
           //print("JS: QCalendar.prototype.monthName");
-          return this.__PROXY__.monthName(...args);
+          
+              return this.__PROXY__.monthName(...args);
+            
         };
     
         // function 
@@ -273,7 +310,9 @@
           
         {
           //print("JS: QCalendar.prototype.standaloneMonthName");
-          return this.__PROXY__.standaloneMonthName(...args);
+          
+              return this.__PROXY__.standaloneMonthName(...args);
+            
         };
     
         // function 
@@ -281,7 +320,9 @@
           
         {
           //print("JS: QCalendar.prototype.weekDayName");
-          return this.__PROXY__.weekDayName(...args);
+          
+              return this.__PROXY__.weekDayName(...args);
+            
         };
     
         // function 
@@ -289,7 +330,9 @@
           
         {
           //print("JS: QCalendar.prototype.standaloneWeekDayName");
-          return this.__PROXY__.standaloneWeekDayName(...args);
+          
+              return this.__PROXY__.standaloneWeekDayName(...args);
+            
         };
     
         // function 
@@ -297,7 +340,9 @@
           
         {
           //print("JS: QCalendar.prototype.availableCalendars");
-          return this.__PROXY__.availableCalendars(...args);
+          
+              return this.__PROXY__.availableCalendars(...args);
+            
         };
     
 
@@ -330,6 +375,16 @@
   }
   
         };
+      QCalendar.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QCalendar.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QCalendar.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

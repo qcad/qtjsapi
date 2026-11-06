@@ -162,15 +162,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QIcon.prototype = new QIcon_BaseJs(engine);
       //QIcon.prototype = new QIcon_Wrapper(engine);
       QIcon.prototype = new Object();
+
 
       QIcon.prototype.toString = function() {
           //return "QIcon [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -217,7 +218,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -225,7 +228,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.pixmap");
-          return this.__PROXY__.pixmap(...args);
+          
+              return this.__PROXY__.pixmap(...args);
+            
         };
     
         // function 
@@ -233,7 +238,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.actualSize");
-          return this.__PROXY__.actualSize(...args);
+          
+              return this.__PROXY__.actualSize(...args);
+            
         };
     
         // function 
@@ -241,7 +248,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.name");
-          return this.__PROXY__.name(...args);
+          
+              return this.__PROXY__.name(...args);
+            
         };
     
         // function 
@@ -249,7 +258,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.paint");
-          return this.__PROXY__.paint(...args);
+          
+              return this.__PROXY__.paint(...args);
+            
         };
     
         // function 
@@ -257,7 +268,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -265,7 +278,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.isDetached");
-          return this.__PROXY__.isDetached(...args);
+          
+              return this.__PROXY__.isDetached(...args);
+            
         };
     
         // function 
@@ -273,7 +288,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.detach");
-          return this.__PROXY__.detach(...args);
+          
+              return this.__PROXY__.detach(...args);
+            
         };
     
         // function 
@@ -281,7 +298,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.cacheKey");
-          return this.__PROXY__.cacheKey(...args);
+          
+              return this.__PROXY__.cacheKey(...args);
+            
         };
     
         // function 
@@ -289,7 +308,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.addPixmap");
-          return this.__PROXY__.addPixmap(...args);
+          
+              return this.__PROXY__.addPixmap(...args);
+            
         };
     
         // function 
@@ -297,7 +318,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.addFile");
-          return this.__PROXY__.addFile(...args);
+          
+              return this.__PROXY__.addFile(...args);
+            
         };
     
         // function 
@@ -305,7 +328,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.availableSizes");
-          return this.__PROXY__.availableSizes(...args);
+          
+              return this.__PROXY__.availableSizes(...args);
+            
         };
     
         // function 
@@ -313,7 +338,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.setIsMask");
-          return this.__PROXY__.setIsMask(...args);
+          
+              return this.__PROXY__.setIsMask(...args);
+            
         };
     
         // function 
@@ -321,7 +348,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.isMask");
-          return this.__PROXY__.isMask(...args);
+          
+              return this.__PROXY__.isMask(...args);
+            
         };
     
         // function 
@@ -329,7 +358,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.fromTheme");
-          return this.__PROXY__.fromTheme(...args);
+          
+              return this.__PROXY__.fromTheme(...args);
+            
         };
     
         // function 
@@ -337,7 +368,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.hasThemeIcon");
-          return this.__PROXY__.hasThemeIcon(...args);
+          
+              return this.__PROXY__.hasThemeIcon(...args);
+            
         };
     
         // function 
@@ -345,7 +378,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.themeSearchPaths");
-          return this.__PROXY__.themeSearchPaths(...args);
+          
+              return this.__PROXY__.themeSearchPaths(...args);
+            
         };
     
         // function 
@@ -353,7 +388,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.setThemeSearchPaths");
-          return this.__PROXY__.setThemeSearchPaths(...args);
+          
+              return this.__PROXY__.setThemeSearchPaths(...args);
+            
         };
     
         // function 
@@ -361,7 +398,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.fallbackSearchPaths");
-          return this.__PROXY__.fallbackSearchPaths(...args);
+          
+              return this.__PROXY__.fallbackSearchPaths(...args);
+            
         };
     
         // function 
@@ -369,7 +408,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.setFallbackSearchPaths");
-          return this.__PROXY__.setFallbackSearchPaths(...args);
+          
+              return this.__PROXY__.setFallbackSearchPaths(...args);
+            
         };
     
         // function 
@@ -377,7 +418,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.themeName");
-          return this.__PROXY__.themeName(...args);
+          
+              return this.__PROXY__.themeName(...args);
+            
         };
     
         // function 
@@ -385,7 +428,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.setThemeName");
-          return this.__PROXY__.setThemeName(...args);
+          
+              return this.__PROXY__.setThemeName(...args);
+            
         };
     
         // function 
@@ -393,7 +438,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.fallbackThemeName");
-          return this.__PROXY__.fallbackThemeName(...args);
+          
+              return this.__PROXY__.fallbackThemeName(...args);
+            
         };
     
         // function 
@@ -401,7 +448,9 @@ QIcon.Off = QIcon_Wrapper.Off;
           
         {
           //print("JS: QIcon.prototype.setFallbackThemeName");
-          return this.__PROXY__.setFallbackThemeName(...args);
+          
+              return this.__PROXY__.setFallbackThemeName(...args);
+            
         };
     
 
@@ -700,6 +749,16 @@ QIcon.Off = QIcon_Wrapper.Off;
   }
   
         };
+      QIcon.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QIcon.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QIcon.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

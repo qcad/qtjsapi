@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QPageSize);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPageSize);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPageSize);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -106,7 +106,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPageSize);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -132,7 +132,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPageSize);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -158,7 +158,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QPageSize);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -190,15 +190,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPageSize.prototype = new QPageSize_BaseJs(engine);
       //QPageSize.prototype = new QPageSize_Wrapper(engine);
       QPageSize.prototype = new Object();
+
 
       QPageSize.prototype.toString = function() {
           //return "QPageSize [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -370,6 +371,166 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
 
       // functions:
       
+        // function 
+        QPageSize.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.isEquivalentTo = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.isEquivalentTo");
+          
+              return this.__PROXY__.isEquivalentTo(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.key = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.key");
+          
+              return this.__PROXY__.key(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.name");
+          
+              return this.__PROXY__.name(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.id = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.id");
+          
+              return this.__PROXY__.id(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.windowsId = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.windowsId");
+          
+              return this.__PROXY__.windowsId(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.definitionSize = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.definitionSize");
+          
+              return this.__PROXY__.definitionSize(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.definitionUnits = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.definitionUnits");
+          
+              return this.__PROXY__.definitionUnits(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.size = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.size");
+          
+              return this.__PROXY__.size(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.sizePoints = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.sizePoints");
+          
+              return this.__PROXY__.sizePoints(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.sizePixels = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.sizePixels");
+          
+              return this.__PROXY__.sizePixels(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.rect = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.rect");
+          
+              return this.__PROXY__.rect(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.rectPoints = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.rectPoints");
+          
+              return this.__PROXY__.rectPoints(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.rectPixels = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.rectPixels");
+          
+              return this.__PROXY__.rectPixels(...args);
+            
+        };
+    
+        // function 
+        QPageSize.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QPageSize.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -654,6 +815,16 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
   }
   
         };
+      QPageSize.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPageSize.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPageSize.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -672,4 +843,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
       //  return this.wrapper.destr();
       //};
 
+      QPageSize.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

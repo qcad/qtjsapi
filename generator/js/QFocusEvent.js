@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QFocusEvent.prototype = new QFocusEvent_BaseJs(engine);
       //QFocusEvent.prototype = new QFocusEvent_Wrapper(engine);
       QFocusEvent.prototype = new Object();
+
 
       QFocusEvent.prototype.toString = function() {
           //return "QFocusEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -308,7 +309,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -316,7 +319,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -324,7 +329,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -332,7 +339,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -340,7 +349,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -348,7 +359,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -356,7 +369,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -364,7 +379,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -372,7 +389,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -380,7 +399,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -388,7 +409,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -396,7 +419,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.gotFocus");
-          return this.__PROXY__.gotFocus(...args);
+          
+              return this.__PROXY__.gotFocus(...args);
+            
         };
     
         // function 
@@ -404,7 +429,9 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.lostFocus");
-          return this.__PROXY__.lostFocus(...args);
+          
+              return this.__PROXY__.lostFocus(...args);
+            
         };
     
         // function 
@@ -412,11 +439,23 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QFocusEvent.prototype.reason");
-          return this.__PROXY__.reason(...args);
+          
+              return this.__PROXY__.reason(...args);
+            
         };
     
 
       // static functions:
+      QFocusEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QFocusEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QFocusEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

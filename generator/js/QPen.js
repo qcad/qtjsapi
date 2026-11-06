@@ -215,15 +215,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QPen.prototype = new QPen_BaseJs(engine);
       //QPen.prototype = new QPen_Wrapper(engine);
       QPen.prototype = new Object();
+
 
       QPen.prototype.toString = function() {
           //return "QPen [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -260,7 +261,9 @@
           
         {
           //print("JS: QPen.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -268,7 +271,9 @@
           
         {
           //print("JS: QPen.prototype.style");
-          return this.__PROXY__.style(...args);
+          
+              return this.__PROXY__.style(...args);
+            
         };
     
         // function 
@@ -276,7 +281,9 @@
           
         {
           //print("JS: QPen.prototype.setStyle");
-          return this.__PROXY__.setStyle(...args);
+          
+              return this.__PROXY__.setStyle(...args);
+            
         };
     
         // function 
@@ -284,7 +291,9 @@
           
         {
           //print("JS: QPen.prototype.dashPattern");
-          return this.__PROXY__.dashPattern(...args);
+          
+              return this.__PROXY__.dashPattern(...args);
+            
         };
     
         // function 
@@ -292,7 +301,9 @@
           
         {
           //print("JS: QPen.prototype.setDashPattern");
-          return this.__PROXY__.setDashPattern(...args);
+          
+              return this.__PROXY__.setDashPattern(...args);
+            
         };
     
         // function 
@@ -300,7 +311,9 @@
           
         {
           //print("JS: QPen.prototype.dashOffset");
-          return this.__PROXY__.dashOffset(...args);
+          
+              return this.__PROXY__.dashOffset(...args);
+            
         };
     
         // function 
@@ -308,7 +321,9 @@
           
         {
           //print("JS: QPen.prototype.setDashOffset");
-          return this.__PROXY__.setDashOffset(...args);
+          
+              return this.__PROXY__.setDashOffset(...args);
+            
         };
     
         // function 
@@ -316,7 +331,9 @@
           
         {
           //print("JS: QPen.prototype.miterLimit");
-          return this.__PROXY__.miterLimit(...args);
+          
+              return this.__PROXY__.miterLimit(...args);
+            
         };
     
         // function 
@@ -324,7 +341,9 @@
           
         {
           //print("JS: QPen.prototype.setMiterLimit");
-          return this.__PROXY__.setMiterLimit(...args);
+          
+              return this.__PROXY__.setMiterLimit(...args);
+            
         };
     
         // function 
@@ -332,7 +351,9 @@
           
         {
           //print("JS: QPen.prototype.widthF");
-          return this.__PROXY__.widthF(...args);
+          
+              return this.__PROXY__.widthF(...args);
+            
         };
     
         // function 
@@ -340,7 +361,9 @@
           
         {
           //print("JS: QPen.prototype.setWidthF");
-          return this.__PROXY__.setWidthF(...args);
+          
+              return this.__PROXY__.setWidthF(...args);
+            
         };
     
         // function 
@@ -348,7 +371,9 @@
           
         {
           //print("JS: QPen.prototype.width");
-          return this.__PROXY__.width(...args);
+          
+              return this.__PROXY__.width(...args);
+            
         };
     
         // function 
@@ -356,7 +381,9 @@
           
         {
           //print("JS: QPen.prototype.setWidth");
-          return this.__PROXY__.setWidth(...args);
+          
+              return this.__PROXY__.setWidth(...args);
+            
         };
     
         // function 
@@ -364,7 +391,9 @@
           
         {
           //print("JS: QPen.prototype.color");
-          return this.__PROXY__.color(...args);
+          
+              return this.__PROXY__.color(...args);
+            
         };
     
         // function 
@@ -372,7 +401,9 @@
           
         {
           //print("JS: QPen.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -380,7 +411,9 @@
           
         {
           //print("JS: QPen.prototype.brush");
-          return this.__PROXY__.brush(...args);
+          
+              return this.__PROXY__.brush(...args);
+            
         };
     
         // function 
@@ -388,7 +421,9 @@
           
         {
           //print("JS: QPen.prototype.setBrush");
-          return this.__PROXY__.setBrush(...args);
+          
+              return this.__PROXY__.setBrush(...args);
+            
         };
     
         // function 
@@ -396,7 +431,9 @@
           
         {
           //print("JS: QPen.prototype.isSolid");
-          return this.__PROXY__.isSolid(...args);
+          
+              return this.__PROXY__.isSolid(...args);
+            
         };
     
         // function 
@@ -404,7 +441,9 @@
           
         {
           //print("JS: QPen.prototype.capStyle");
-          return this.__PROXY__.capStyle(...args);
+          
+              return this.__PROXY__.capStyle(...args);
+            
         };
     
         // function 
@@ -412,7 +451,9 @@
           
         {
           //print("JS: QPen.prototype.setCapStyle");
-          return this.__PROXY__.setCapStyle(...args);
+          
+              return this.__PROXY__.setCapStyle(...args);
+            
         };
     
         // function 
@@ -420,7 +461,9 @@
           
         {
           //print("JS: QPen.prototype.joinStyle");
-          return this.__PROXY__.joinStyle(...args);
+          
+              return this.__PROXY__.joinStyle(...args);
+            
         };
     
         // function 
@@ -428,7 +471,9 @@
           
         {
           //print("JS: QPen.prototype.setJoinStyle");
-          return this.__PROXY__.setJoinStyle(...args);
+          
+              return this.__PROXY__.setJoinStyle(...args);
+            
         };
     
         // function 
@@ -436,7 +481,9 @@
           
         {
           //print("JS: QPen.prototype.isCosmetic");
-          return this.__PROXY__.isCosmetic(...args);
+          
+              return this.__PROXY__.isCosmetic(...args);
+            
         };
     
         // function 
@@ -444,7 +491,9 @@
           
         {
           //print("JS: QPen.prototype.setCosmetic");
-          return this.__PROXY__.setCosmetic(...args);
+          
+              return this.__PROXY__.setCosmetic(...args);
+            
         };
     
         // function 
@@ -452,7 +501,9 @@
           
         {
           //print("JS: QPen.prototype.isDetached");
-          return this.__PROXY__.isDetached(...args);
+          
+              return this.__PROXY__.isDetached(...args);
+            
         };
     
         // function 
@@ -460,11 +511,23 @@
           
         {
           //print("JS: QPen.prototype.detach");
-          return this.__PROXY__.detach(...args);
+          
+              return this.__PROXY__.detach(...args);
+            
         };
     
 
       // static functions:
+      QPen.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QPen.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QPen.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

@@ -2966,6 +2966,13 @@ QItemSelectionModel::SelectionFlags a2_cpp;
               QItemSelectionModel_Wrapper::selectionChangedEmitter(
                 const QItemSelection& selected, const QItemSelection& deselected
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QItemSelectionModel_Wrapper::staticMetaObject.indexOfSignal("selectionChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QItemSelectionModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: selected (QItemSelection)
@@ -3004,6 +3011,13 @@ QItemSelectionModel::SelectionFlags a2_cpp;
               QItemSelectionModel_Wrapper::currentChangedEmitter(
                 const QModelIndex& current, const QModelIndex& previous
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QItemSelectionModel_Wrapper::staticMetaObject.indexOfSignal("currentChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QItemSelectionModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: current (QModelIndex)
@@ -3042,6 +3056,13 @@ QItemSelectionModel::SelectionFlags a2_cpp;
               QItemSelectionModel_Wrapper::currentRowChangedEmitter(
                 const QModelIndex& current, const QModelIndex& previous
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QItemSelectionModel_Wrapper::staticMetaObject.indexOfSignal("currentRowChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QItemSelectionModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: current (QModelIndex)
@@ -3080,6 +3101,13 @@ QItemSelectionModel::SelectionFlags a2_cpp;
               QItemSelectionModel_Wrapper::currentColumnChangedEmitter(
                 const QModelIndex& current, const QModelIndex& previous
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QItemSelectionModel_Wrapper::staticMetaObject.indexOfSignal("currentColumnChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QItemSelectionModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: current (QModelIndex)
@@ -3118,6 +3146,13 @@ QItemSelectionModel::SelectionFlags a2_cpp;
               QItemSelectionModel_Wrapper::modelChangedEmitter(
                 QAbstractItemModel* model
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QItemSelectionModel_Wrapper::staticMetaObject.indexOfSignal("modelChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QItemSelectionModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: model (QAbstractItemModel)

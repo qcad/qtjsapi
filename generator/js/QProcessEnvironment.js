@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QProcessEnvironment);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QProcessEnvironment);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QProcessEnvironment);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QProcessEnvironment);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QProcessEnvironment.prototype = new QProcessEnvironment_BaseJs(engine);
       //QProcessEnvironment.prototype = new QProcessEnvironment_Wrapper(engine);
       QProcessEnvironment.prototype = new Object();
+
 
       QProcessEnvironment.prototype.toString = function() {
           //return "QProcessEnvironment [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -179,6 +180,116 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
 
       // functions:
       
+        // function 
+        QProcessEnvironment.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.inheritsFromParent = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.inheritsFromParent");
+          
+              return this.__PROXY__.inheritsFromParent(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.contains");
+          
+              return this.__PROXY__.contains(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.insert = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.insert");
+          
+              return this.__PROXY__.insert(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.remove = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.remove");
+          
+              return this.__PROXY__.remove(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.value = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.value");
+          
+              return this.__PROXY__.value(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.toStringList = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.toStringList");
+          
+              return this.__PROXY__.toStringList(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.keys = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.keys");
+          
+              return this.__PROXY__.keys(...args);
+            
+        };
+    
+        // function 
+        QProcessEnvironment.prototype.systemEnvironment = function(...args) 
+          
+        {
+          //print("JS: QProcessEnvironment.prototype.systemEnvironment");
+          
+              return this.__PROXY__.systemEnvironment(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -209,6 +320,16 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
   }
   
         };
+      QProcessEnvironment.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QProcessEnvironment.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QProcessEnvironment.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -227,4 +348,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
       //  return this.wrapper.destr();
       //};
 
+      QProcessEnvironment.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

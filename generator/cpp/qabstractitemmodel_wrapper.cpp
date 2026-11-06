@@ -5316,6 +5316,13 @@ QModelIndex a1_cpp;
               QAbstractItemModel_Wrapper::headerDataChangedEmitter(
                 Qt::Orientation orientation, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractItemModel_Wrapper::staticMetaObject.indexOfSignal("headerDataChanged(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractItemModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::Orientation)
@@ -5363,6 +5370,13 @@ QModelIndex a1_cpp;
               QAbstractItemModel_Wrapper::rowsInsertedEmitter(
                 const QModelIndex& parent, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractItemModel_Wrapper::staticMetaObject.indexOfSignal("rowsInserted(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractItemModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: parent (QModelIndex)
@@ -9505,6 +9519,13 @@ QModelIndex a1_cpp;
               QAbstractTableModel_Wrapper::headerDataChangedEmitter(
                 Qt::Orientation orientation, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractTableModel_Wrapper::staticMetaObject.indexOfSignal("headerDataChanged(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractTableModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::Orientation)
@@ -9552,6 +9573,13 @@ QModelIndex a1_cpp;
               QAbstractTableModel_Wrapper::rowsInsertedEmitter(
                 const QModelIndex& parent, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractTableModel_Wrapper::staticMetaObject.indexOfSignal("rowsInserted(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractTableModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: parent (QModelIndex)
@@ -14074,6 +14102,13 @@ QModelIndex a1_cpp;
               QAbstractListModel_Wrapper::headerDataChangedEmitter(
                 Qt::Orientation orientation, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractListModel_Wrapper::staticMetaObject.indexOfSignal("headerDataChanged(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractListModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::Orientation)
@@ -14121,6 +14156,13 @@ QModelIndex a1_cpp;
               QAbstractListModel_Wrapper::rowsInsertedEmitter(
                 const QModelIndex& parent, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QAbstractListModel_Wrapper::staticMetaObject.indexOfSignal("rowsInserted(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QAbstractListModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: parent (QModelIndex)

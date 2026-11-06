@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QIODeviceBase);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QIODeviceBase);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QIODeviceBase.prototype = new QIODeviceBase_BaseJs(engine);
       //QIODeviceBase.prototype = new QIODeviceBase_Wrapper(engine);
       QIODeviceBase.prototype = new Object();
+
 
       QIODeviceBase.prototype.toString = function() {
           //return "QIODeviceBase [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -138,6 +139,16 @@ QIODeviceBase.ExistingOnly = QIODeviceBase_Wrapper.ExistingOnly;
       
 
       // static functions:
+      QIODeviceBase.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QIODeviceBase.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QIODeviceBase.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -156,4 +167,7 @@ QIODeviceBase.ExistingOnly = QIODeviceBase_Wrapper.ExistingOnly;
       //  return this.wrapper.destr();
       //};
 
+      QIODeviceBase.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

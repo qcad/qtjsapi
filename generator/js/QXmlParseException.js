@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlParseException);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QXmlParseException);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QXmlParseException);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlParseException.prototype = new QXmlParseException_BaseJs(engine);
       //QXmlParseException.prototype = new QXmlParseException_Wrapper(engine);
       QXmlParseException.prototype = new Object();
+
 
       QXmlParseException.prototype.toString = function() {
           //return "QXmlParseException [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -151,8 +152,68 @@
 
       // functions:
       
+        // function 
+        QXmlParseException.prototype.columnNumber = function(...args) 
+          
+        {
+          //print("JS: QXmlParseException.prototype.columnNumber");
+          
+              return this.__PROXY__.columnNumber(...args);
+            
+        };
+    
+        // function 
+        QXmlParseException.prototype.lineNumber = function(...args) 
+          
+        {
+          //print("JS: QXmlParseException.prototype.lineNumber");
+          
+              return this.__PROXY__.lineNumber(...args);
+            
+        };
+    
+        // function 
+        QXmlParseException.prototype.publicId = function(...args) 
+          
+        {
+          //print("JS: QXmlParseException.prototype.publicId");
+          
+              return this.__PROXY__.publicId(...args);
+            
+        };
+    
+        // function 
+        QXmlParseException.prototype.systemId = function(...args) 
+          
+        {
+          //print("JS: QXmlParseException.prototype.systemId");
+          
+              return this.__PROXY__.systemId(...args);
+            
+        };
+    
+        // function 
+        QXmlParseException.prototype.message = function(...args) 
+          
+        {
+          //print("JS: QXmlParseException.prototype.message");
+          
+              return this.__PROXY__.message(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlParseException.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlParseException.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlParseException.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -171,4 +232,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlParseException.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

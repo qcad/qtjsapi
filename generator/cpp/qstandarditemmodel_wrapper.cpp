@@ -8233,6 +8233,13 @@ QModelIndex a1_cpp;
               QStandardItemModel_Wrapper::headerDataChangedEmitter(
                 Qt::Orientation orientation, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStandardItemModel_Wrapper::staticMetaObject.indexOfSignal("headerDataChanged(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStandardItemModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::Orientation)
@@ -8280,6 +8287,13 @@ QModelIndex a1_cpp;
               QStandardItemModel_Wrapper::rowsInsertedEmitter(
                 const QModelIndex& parent, int first, int last
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStandardItemModel_Wrapper::staticMetaObject.indexOfSignal("rowsInserted(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStandardItemModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: parent (QModelIndex)
@@ -12426,6 +12440,13 @@ QModelIndex a5_cpp;
               QStandardItemModel_Wrapper::itemChangedEmitter(
                 QStandardItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QStandardItemModel_Wrapper::staticMetaObject.indexOfSignal("itemChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QStandardItemModel_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QStandardItem)

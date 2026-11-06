@@ -16030,6 +16030,13 @@ bool a1_cpp;
               QScrollBar_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScrollBar_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScrollBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17833,6 +17840,13 @@ int a2_cpp;
               QScrollBar_Wrapper::valueChangedEmitter(
                 int value
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScrollBar_Wrapper::staticMetaObject.indexOfSignal("valueChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScrollBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: value (int)
@@ -17862,6 +17876,13 @@ int a2_cpp;
               QScrollBar_Wrapper::sliderPressedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScrollBar_Wrapper::staticMetaObject.indexOfSignal("sliderPressed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScrollBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -17882,6 +17903,13 @@ int a2_cpp;
               QScrollBar_Wrapper::sliderMovedEmitter(
                 int position
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScrollBar_Wrapper::staticMetaObject.indexOfSignal("sliderMoved(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScrollBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: position (int)
@@ -17911,6 +17939,13 @@ int a2_cpp;
               QScrollBar_Wrapper::sliderReleasedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScrollBar_Wrapper::staticMetaObject.indexOfSignal("sliderReleased()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScrollBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -17931,6 +17966,13 @@ int a2_cpp;
               QScrollBar_Wrapper::rangeChangedEmitter(
                 int min, int max
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScrollBar_Wrapper::staticMetaObject.indexOfSignal("rangeChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScrollBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: min (int)
@@ -17969,6 +18011,13 @@ int a2_cpp;
               QScrollBar_Wrapper::actionTriggeredEmitter(
                 int action
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QScrollBar_Wrapper::staticMetaObject.indexOfSignal("actionTriggered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QScrollBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: action (int)

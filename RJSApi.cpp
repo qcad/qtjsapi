@@ -841,6 +841,39 @@ void RJSApi::registerWrapper(RJSWrapperObj& obj) {
     // //}
 }
 
+QJSValue RJSApi::getPrototype(int typeId, const char* className) {
+    QHash<int, QJSValue>::const_iterator it = prototypeCache.constFind(typeId);
+    if (it!=prototypeCache.constEnd()) {
+        return it.value();
+    }
+
+    QJSValue cl = engine->globalObject().property(QString::fromLatin1(className));
+    if (cl.isUndefined()) {
+        qWarning() << "Class" << className << "is undefined. Use" << className << "_Wrapper::init().";
+        return QJSValue();
+    }
+    QJSValue proto = cl.property("prototype");
+    if (!proto.isObject()) {
+        qWarning() << "RJSApi::getPrototype: no prototype for class" << className;
+        return QJSValue();
+    }
+    prototypeCache.insert(typeId, proto);
+    return proto;
+}
+
+QJSValue RJSApi::newProxyObject(int typeId, const char* className, QObject* wrapper) {
+    QJSValue proto = getPrototype(typeId, className);
+    QJSValue obj = engine->newObject();
+    if (proto.isObject()) {
+        obj.setPrototype(proto);
+    }
+    QJSValue w = engine->newQObject(wrapper);
+    // marker used by getWrapperQJSValue for raw wrapper objects:
+    w.setProperty("__WRAPPER__", true);
+    obj.setProperty("__PROXY__", w);
+    return obj;
+}
+
 void RJSApi::unregisterWrapper(RJSWrapperObj& obj) {
     if (!obj.isCppOwnership()) {
         return;

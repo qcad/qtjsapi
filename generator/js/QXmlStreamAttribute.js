@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlStreamAttribute);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlStreamAttribute.prototype = new QXmlStreamAttribute_BaseJs(engine);
       //QXmlStreamAttribute.prototype = new QXmlStreamAttribute_Wrapper(engine);
       QXmlStreamAttribute.prototype = new Object();
+
 
       QXmlStreamAttribute.prototype.toString = function() {
           //return "QXmlStreamAttribute [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,28 @@
 
       // functions:
       
+        // function 
+        QXmlStreamAttribute.prototype.isDefault = function(...args) 
+          
+        {
+          //print("JS: QXmlStreamAttribute.prototype.isDefault");
+          
+              return this.__PROXY__.isDefault(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlStreamAttribute.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlStreamAttribute.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlStreamAttribute.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +136,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlStreamAttribute.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

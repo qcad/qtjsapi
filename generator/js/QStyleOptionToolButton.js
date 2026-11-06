@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionToolButton);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionToolButton);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionToolButton);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionToolButton.prototype = new QStyleOptionToolButton_BaseJs(engine);
       //QStyleOptionToolButton.prototype = new QStyleOptionToolButton_Wrapper(engine);
       QStyleOptionToolButton.prototype = new Object();
+
 
       QStyleOptionToolButton.prototype.toString = function() {
           //return "QStyleOptionToolButton [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -162,8 +163,28 @@ QStyleOptionToolButton.HasMenu = QStyleOptionToolButton_Wrapper.HasMenu;
 
       // functions:
       
+        // function 
+        QStyleOptionToolButton.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionToolButton.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionToolButton.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionToolButton.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionToolButton.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -182,4 +203,7 @@ QStyleOptionToolButton.HasMenu = QStyleOptionToolButton_Wrapper.HasMenu;
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionToolButton.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

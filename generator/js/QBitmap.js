@@ -163,15 +163,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QBitmap.prototype = new QBitmap_BaseJs(engine);
       //QBitmap.prototype = new QBitmap_Wrapper(engine);
       QBitmap.prototype = new Object();
+
 
       QBitmap.prototype.toString = function() {
           //return "QBitmap [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -216,7 +217,9 @@
           
         {
           //print("JS: QBitmap.prototype.paintingActive");
-          return this.__PROXY__.paintingActive(...args);
+          
+              return this.__PROXY__.paintingActive(...args);
+            
         };
     
         // function 
@@ -224,7 +227,9 @@
           
         {
           //print("JS: QBitmap.prototype.widthMM");
-          return this.__PROXY__.widthMM(...args);
+          
+              return this.__PROXY__.widthMM(...args);
+            
         };
     
         // function 
@@ -232,7 +237,9 @@
           
         {
           //print("JS: QBitmap.prototype.heightMM");
-          return this.__PROXY__.heightMM(...args);
+          
+              return this.__PROXY__.heightMM(...args);
+            
         };
     
         // function 
@@ -240,7 +247,9 @@
           
         {
           //print("JS: QBitmap.prototype.logicalDpiX");
-          return this.__PROXY__.logicalDpiX(...args);
+          
+              return this.__PROXY__.logicalDpiX(...args);
+            
         };
     
         // function 
@@ -248,7 +257,9 @@
           
         {
           //print("JS: QBitmap.prototype.logicalDpiY");
-          return this.__PROXY__.logicalDpiY(...args);
+          
+              return this.__PROXY__.logicalDpiY(...args);
+            
         };
     
         // function 
@@ -256,7 +267,9 @@
           
         {
           //print("JS: QBitmap.prototype.physicalDpiX");
-          return this.__PROXY__.physicalDpiX(...args);
+          
+              return this.__PROXY__.physicalDpiX(...args);
+            
         };
     
         // function 
@@ -264,7 +277,9 @@
           
         {
           //print("JS: QBitmap.prototype.physicalDpiY");
-          return this.__PROXY__.physicalDpiY(...args);
+          
+              return this.__PROXY__.physicalDpiY(...args);
+            
         };
     
         // function 
@@ -272,7 +287,9 @@
           
         {
           //print("JS: QBitmap.prototype.devicePixelRatioF");
-          return this.__PROXY__.devicePixelRatioF(...args);
+          
+              return this.__PROXY__.devicePixelRatioF(...args);
+            
         };
     
         // function 
@@ -280,7 +297,9 @@
           
         {
           //print("JS: QBitmap.prototype.colorCount");
-          return this.__PROXY__.colorCount(...args);
+          
+              return this.__PROXY__.colorCount(...args);
+            
         };
     
         // function 
@@ -288,7 +307,9 @@
           
         {
           //print("JS: QBitmap.prototype.initPainter");
-          return this.__PROXY__.initPainter(...args);
+          
+              return this.__PROXY__.initPainter(...args);
+            
         };
     
         // function 
@@ -296,7 +317,9 @@
           
         {
           //print("JS: QBitmap.prototype.redirected");
-          return this.__PROXY__.redirected(...args);
+          
+              return this.__PROXY__.redirected(...args);
+            
         };
     
         // function 
@@ -304,7 +327,9 @@
           
         {
           //print("JS: QBitmap.prototype.sharedPainter");
-          return this.__PROXY__.sharedPainter(...args);
+          
+              return this.__PROXY__.sharedPainter(...args);
+            
         };
     
         // function 
@@ -312,7 +337,9 @@
           
         {
           //print("JS: QBitmap.prototype.qt_paint_device_metric");
-          return this.__PROXY__.qt_paint_device_metric(...args);
+          
+              return this.__PROXY__.qt_paint_device_metric(...args);
+            
         };
     
         // function 
@@ -320,7 +347,9 @@
           
         {
           //print("JS: QBitmap.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -328,7 +357,9 @@
           
         {
           //print("JS: QBitmap.prototype.devType");
-          return this.__PROXY__.devType(...args);
+          
+              return this.__PROXY__.devType(...args);
+            
         };
     
         // function 
@@ -336,7 +367,9 @@
           
         {
           //print("JS: QBitmap.prototype.width");
-          return this.__PROXY__.width(...args);
+          
+              return this.__PROXY__.width(...args);
+            
         };
     
         // function 
@@ -344,7 +377,9 @@
           
         {
           //print("JS: QBitmap.prototype.height");
-          return this.__PROXY__.height(...args);
+          
+              return this.__PROXY__.height(...args);
+            
         };
     
         // function 
@@ -352,7 +387,9 @@
           
         {
           //print("JS: QBitmap.prototype.size");
-          return this.__PROXY__.size(...args);
+          
+              return this.__PROXY__.size(...args);
+            
         };
     
         // function 
@@ -360,7 +397,9 @@
           
         {
           //print("JS: QBitmap.prototype.rect");
-          return this.__PROXY__.rect(...args);
+          
+              return this.__PROXY__.rect(...args);
+            
         };
     
         // function 
@@ -368,7 +407,9 @@
           
         {
           //print("JS: QBitmap.prototype.depth");
-          return this.__PROXY__.depth(...args);
+          
+              return this.__PROXY__.depth(...args);
+            
         };
     
         // function 
@@ -376,7 +417,9 @@
           
         {
           //print("JS: QBitmap.prototype.fill");
-          return this.__PROXY__.fill(...args);
+          
+              return this.__PROXY__.fill(...args);
+            
         };
     
         // function 
@@ -384,7 +427,9 @@
           
         {
           //print("JS: QBitmap.prototype.mask");
-          return this.__PROXY__.mask(...args);
+          
+              return this.__PROXY__.mask(...args);
+            
         };
     
         // function 
@@ -392,7 +437,9 @@
           
         {
           //print("JS: QBitmap.prototype.setMask");
-          return this.__PROXY__.setMask(...args);
+          
+              return this.__PROXY__.setMask(...args);
+            
         };
     
         // function 
@@ -400,7 +447,9 @@
           
         {
           //print("JS: QBitmap.prototype.devicePixelRatio");
-          return this.__PROXY__.devicePixelRatio(...args);
+          
+              return this.__PROXY__.devicePixelRatio(...args);
+            
         };
     
         // function 
@@ -408,7 +457,9 @@
           
         {
           //print("JS: QBitmap.prototype.setDevicePixelRatio");
-          return this.__PROXY__.setDevicePixelRatio(...args);
+          
+              return this.__PROXY__.setDevicePixelRatio(...args);
+            
         };
     
         // function 
@@ -416,7 +467,9 @@
           
         {
           //print("JS: QBitmap.prototype.deviceIndependentSize");
-          return this.__PROXY__.deviceIndependentSize(...args);
+          
+              return this.__PROXY__.deviceIndependentSize(...args);
+            
         };
     
         // function 
@@ -424,7 +477,9 @@
           
         {
           //print("JS: QBitmap.prototype.hasAlpha");
-          return this.__PROXY__.hasAlpha(...args);
+          
+              return this.__PROXY__.hasAlpha(...args);
+            
         };
     
         // function 
@@ -432,7 +487,9 @@
           
         {
           //print("JS: QBitmap.prototype.hasAlphaChannel");
-          return this.__PROXY__.hasAlphaChannel(...args);
+          
+              return this.__PROXY__.hasAlphaChannel(...args);
+            
         };
     
         // function 
@@ -440,7 +497,9 @@
           
         {
           //print("JS: QBitmap.prototype.createHeuristicMask");
-          return this.__PROXY__.createHeuristicMask(...args);
+          
+              return this.__PROXY__.createHeuristicMask(...args);
+            
         };
     
         // function 
@@ -448,7 +507,9 @@
           
         {
           //print("JS: QBitmap.prototype.createMaskFromColor");
-          return this.__PROXY__.createMaskFromColor(...args);
+          
+              return this.__PROXY__.createMaskFromColor(...args);
+            
         };
     
         // function 
@@ -456,7 +517,9 @@
           
         {
           //print("JS: QBitmap.prototype.scaled");
-          return this.__PROXY__.scaled(...args);
+          
+              return this.__PROXY__.scaled(...args);
+            
         };
     
         // function 
@@ -464,7 +527,9 @@
           
         {
           //print("JS: QBitmap.prototype.scaledToWidth");
-          return this.__PROXY__.scaledToWidth(...args);
+          
+              return this.__PROXY__.scaledToWidth(...args);
+            
         };
     
         // function 
@@ -472,7 +537,9 @@
           
         {
           //print("JS: QBitmap.prototype.scaledToHeight");
-          return this.__PROXY__.scaledToHeight(...args);
+          
+              return this.__PROXY__.scaledToHeight(...args);
+            
         };
     
         // function 
@@ -480,7 +547,9 @@
           
         {
           //print("JS: QBitmap.prototype.toImage");
-          return this.__PROXY__.toImage(...args);
+          
+              return this.__PROXY__.toImage(...args);
+            
         };
     
         // function 
@@ -488,7 +557,9 @@
           
         {
           //print("JS: QBitmap.prototype.load");
-          return this.__PROXY__.load(...args);
+          
+              return this.__PROXY__.load(...args);
+            
         };
     
         // function 
@@ -496,7 +567,9 @@
           
         {
           //print("JS: QBitmap.prototype.loadFromData");
-          return this.__PROXY__.loadFromData(...args);
+          
+              return this.__PROXY__.loadFromData(...args);
+            
         };
     
         // function 
@@ -504,7 +577,9 @@
           
         {
           //print("JS: QBitmap.prototype.save");
-          return this.__PROXY__.save(...args);
+          
+              return this.__PROXY__.save(...args);
+            
         };
     
         // function 
@@ -512,7 +587,9 @@
           
         {
           //print("JS: QBitmap.prototype.convertFromImage");
-          return this.__PROXY__.convertFromImage(...args);
+          
+              return this.__PROXY__.convertFromImage(...args);
+            
         };
     
         // function 
@@ -520,7 +597,9 @@
           
         {
           //print("JS: QBitmap.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
         // function 
@@ -528,7 +607,9 @@
           
         {
           //print("JS: QBitmap.prototype.scroll");
-          return this.__PROXY__.scroll(...args);
+          
+              return this.__PROXY__.scroll(...args);
+            
         };
     
         // function 
@@ -536,7 +617,9 @@
           
         {
           //print("JS: QBitmap.prototype.cacheKey");
-          return this.__PROXY__.cacheKey(...args);
+          
+              return this.__PROXY__.cacheKey(...args);
+            
         };
     
         // function 
@@ -544,7 +627,9 @@
           
         {
           //print("JS: QBitmap.prototype.isDetached");
-          return this.__PROXY__.isDetached(...args);
+          
+              return this.__PROXY__.isDetached(...args);
+            
         };
     
         // function 
@@ -552,7 +637,9 @@
           
         {
           //print("JS: QBitmap.prototype.detach");
-          return this.__PROXY__.detach(...args);
+          
+              return this.__PROXY__.detach(...args);
+            
         };
     
         // function 
@@ -560,7 +647,9 @@
           
         {
           //print("JS: QBitmap.prototype.isQBitmap");
-          return this.__PROXY__.isQBitmap(...args);
+          
+              return this.__PROXY__.isQBitmap(...args);
+            
         };
     
         // function 
@@ -568,7 +657,9 @@
           
         {
           //print("JS: QBitmap.prototype.paintEngine");
-          return this.__PROXY__.paintEngine(...args);
+          
+              return this.__PROXY__.paintEngine(...args);
+            
         };
     
         // function 
@@ -576,7 +667,9 @@
           
         {
           //print("JS: QBitmap.prototype.metric");
-          return this.__PROXY__.metric(...args);
+          
+              return this.__PROXY__.metric(...args);
+            
         };
     
         // function 
@@ -584,7 +677,9 @@
           
         {
           //print("JS: QBitmap.prototype.doImageIO");
-          return this.__PROXY__.doImageIO(...args);
+          
+              return this.__PROXY__.doImageIO(...args);
+            
         };
     
         // function 
@@ -592,7 +687,9 @@
           
         {
           //print("JS: QBitmap.prototype.doInit");
-          return this.__PROXY__.doInit(...args);
+          
+              return this.__PROXY__.doInit(...args);
+            
         };
     
         // function 
@@ -600,7 +697,9 @@
           
         {
           //print("JS: QBitmap.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -608,7 +707,9 @@
           
         {
           //print("JS: QBitmap.prototype.clear");
-          return this.__PROXY__.clear(...args);
+          
+              return this.__PROXY__.clear(...args);
+            
         };
     
         // function 
@@ -616,7 +717,9 @@
           
         {
           //print("JS: QBitmap.prototype.fromImage");
-          return this.__PROXY__.fromImage(...args);
+          
+              return this.__PROXY__.fromImage(...args);
+            
         };
     
         // function 
@@ -624,7 +727,9 @@
           
         {
           //print("JS: QBitmap.prototype.fromPixmap");
-          return this.__PROXY__.fromPixmap(...args);
+          
+              return this.__PROXY__.fromPixmap(...args);
+            
         };
     
         // function 
@@ -632,7 +737,9 @@
           
         {
           //print("JS: QBitmap.prototype.transformed");
-          return this.__PROXY__.transformed(...args);
+          
+              return this.__PROXY__.transformed(...args);
+            
         };
     
 
@@ -709,6 +816,16 @@
   }
   
         };
+      QBitmap.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QBitmap.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QBitmap.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

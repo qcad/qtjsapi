@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QKeyCombination);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QKeyCombination);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QKeyCombination);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QKeyCombination.prototype = new QKeyCombination_BaseJs(engine);
       //QKeyCombination.prototype = new QKeyCombination_Wrapper(engine);
       QKeyCombination.prototype = new Object();
+
 
       QKeyCombination.prototype.toString = function() {
           //return "QKeyCombination [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -151,6 +152,46 @@
 
       // functions:
       
+        // function 
+        QKeyCombination.prototype.keyboardModifiers = function(...args) 
+          
+        {
+          //print("JS: QKeyCombination.prototype.keyboardModifiers");
+          
+              return this.__PROXY__.keyboardModifiers(...args);
+            
+        };
+    
+        // function 
+        QKeyCombination.prototype.key = function(...args) 
+          
+        {
+          //print("JS: QKeyCombination.prototype.key");
+          
+              return this.__PROXY__.key(...args);
+            
+        };
+    
+        // function 
+        QKeyCombination.prototype.fromCombined = function(...args) 
+          
+        {
+          //print("JS: QKeyCombination.prototype.fromCombined");
+          
+              return this.__PROXY__.fromCombined(...args);
+            
+        };
+    
+        // function 
+        QKeyCombination.prototype.toCombined = function(...args) 
+          
+        {
+          //print("JS: QKeyCombination.prototype.toCombined");
+          
+              return this.__PROXY__.toCombined(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -181,6 +222,16 @@
   }
   
         };
+      QKeyCombination.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QKeyCombination.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QKeyCombination.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -199,4 +250,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QKeyCombination.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

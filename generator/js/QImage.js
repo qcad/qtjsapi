@@ -163,15 +163,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QImage.prototype = new QImage_BaseJs(engine);
       //QImage.prototype = new QImage_Wrapper(engine);
       QImage.prototype = new Object();
+
 
       QImage.prototype.toString = function() {
           //return "QImage [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -255,7 +256,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.paintingActive");
-          return this.__PROXY__.paintingActive(...args);
+          
+              return this.__PROXY__.paintingActive(...args);
+            
         };
     
         // function 
@@ -263,7 +266,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.widthMM");
-          return this.__PROXY__.widthMM(...args);
+          
+              return this.__PROXY__.widthMM(...args);
+            
         };
     
         // function 
@@ -271,7 +276,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.heightMM");
-          return this.__PROXY__.heightMM(...args);
+          
+              return this.__PROXY__.heightMM(...args);
+            
         };
     
         // function 
@@ -279,7 +286,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.logicalDpiX");
-          return this.__PROXY__.logicalDpiX(...args);
+          
+              return this.__PROXY__.logicalDpiX(...args);
+            
         };
     
         // function 
@@ -287,7 +296,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.logicalDpiY");
-          return this.__PROXY__.logicalDpiY(...args);
+          
+              return this.__PROXY__.logicalDpiY(...args);
+            
         };
     
         // function 
@@ -295,7 +306,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.physicalDpiX");
-          return this.__PROXY__.physicalDpiX(...args);
+          
+              return this.__PROXY__.physicalDpiX(...args);
+            
         };
     
         // function 
@@ -303,7 +316,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.physicalDpiY");
-          return this.__PROXY__.physicalDpiY(...args);
+          
+              return this.__PROXY__.physicalDpiY(...args);
+            
         };
     
         // function 
@@ -311,7 +326,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.devicePixelRatioF");
-          return this.__PROXY__.devicePixelRatioF(...args);
+          
+              return this.__PROXY__.devicePixelRatioF(...args);
+            
         };
     
         // function 
@@ -319,7 +336,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.initPainter");
-          return this.__PROXY__.initPainter(...args);
+          
+              return this.__PROXY__.initPainter(...args);
+            
         };
     
         // function 
@@ -327,7 +346,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.redirected");
-          return this.__PROXY__.redirected(...args);
+          
+              return this.__PROXY__.redirected(...args);
+            
         };
     
         // function 
@@ -335,7 +356,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.sharedPainter");
-          return this.__PROXY__.sharedPainter(...args);
+          
+              return this.__PROXY__.sharedPainter(...args);
+            
         };
     
         // function 
@@ -343,7 +366,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.qt_paint_device_metric");
-          return this.__PROXY__.qt_paint_device_metric(...args);
+          
+              return this.__PROXY__.qt_paint_device_metric(...args);
+            
         };
     
         // function 
@@ -351,7 +376,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.swap");
-          return this.__PROXY__.swap(...args);
+          
+              return this.__PROXY__.swap(...args);
+            
         };
     
         // function 
@@ -359,7 +386,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.isNull");
-          return this.__PROXY__.isNull(...args);
+          
+              return this.__PROXY__.isNull(...args);
+            
         };
     
         // function 
@@ -367,7 +396,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.devType");
-          return this.__PROXY__.devType(...args);
+          
+              return this.__PROXY__.devType(...args);
+            
         };
     
         // function 
@@ -375,7 +406,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.detach");
-          return this.__PROXY__.detach(...args);
+          
+              return this.__PROXY__.detach(...args);
+            
         };
     
         // function 
@@ -383,7 +416,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.isDetached");
-          return this.__PROXY__.isDetached(...args);
+          
+              return this.__PROXY__.isDetached(...args);
+            
         };
     
         // function 
@@ -391,7 +426,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
         // function 
@@ -399,7 +436,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.format");
-          return this.__PROXY__.format(...args);
+          
+              return this.__PROXY__.format(...args);
+            
         };
     
         // function 
@@ -407,7 +446,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.convertToFormat");
-          return this.__PROXY__.convertToFormat(...args);
+          
+              return this.__PROXY__.convertToFormat(...args);
+            
         };
     
         // function 
@@ -415,7 +456,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.reinterpretAsFormat");
-          return this.__PROXY__.reinterpretAsFormat(...args);
+          
+              return this.__PROXY__.reinterpretAsFormat(...args);
+            
         };
     
         // function 
@@ -423,7 +466,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.convertedTo");
-          return this.__PROXY__.convertedTo(...args);
+          
+              return this.__PROXY__.convertedTo(...args);
+            
         };
     
         // function 
@@ -431,7 +476,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.convertTo");
-          return this.__PROXY__.convertTo(...args);
+          
+              return this.__PROXY__.convertTo(...args);
+            
         };
     
         // function 
@@ -439,7 +486,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.width");
-          return this.__PROXY__.width(...args);
+          
+              return this.__PROXY__.width(...args);
+            
         };
     
         // function 
@@ -447,7 +496,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.height");
-          return this.__PROXY__.height(...args);
+          
+              return this.__PROXY__.height(...args);
+            
         };
     
         // function 
@@ -455,7 +506,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.size");
-          return this.__PROXY__.size(...args);
+          
+              return this.__PROXY__.size(...args);
+            
         };
     
         // function 
@@ -463,7 +516,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.rect");
-          return this.__PROXY__.rect(...args);
+          
+              return this.__PROXY__.rect(...args);
+            
         };
     
         // function 
@@ -471,7 +526,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.depth");
-          return this.__PROXY__.depth(...args);
+          
+              return this.__PROXY__.depth(...args);
+            
         };
     
         // function 
@@ -479,7 +536,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.colorCount");
-          return this.__PROXY__.colorCount(...args);
+          
+              return this.__PROXY__.colorCount(...args);
+            
         };
     
         // function 
@@ -487,7 +546,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.bitPlaneCount");
-          return this.__PROXY__.bitPlaneCount(...args);
+          
+              return this.__PROXY__.bitPlaneCount(...args);
+            
         };
     
         // function 
@@ -495,7 +556,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setColorCount");
-          return this.__PROXY__.setColorCount(...args);
+          
+              return this.__PROXY__.setColorCount(...args);
+            
         };
     
         // function 
@@ -503,7 +566,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.allGray");
-          return this.__PROXY__.allGray(...args);
+          
+              return this.__PROXY__.allGray(...args);
+            
         };
     
         // function 
@@ -511,7 +576,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.isGrayscale");
-          return this.__PROXY__.isGrayscale(...args);
+          
+              return this.__PROXY__.isGrayscale(...args);
+            
         };
     
         // function 
@@ -519,7 +586,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.sizeInBytes");
-          return this.__PROXY__.sizeInBytes(...args);
+          
+              return this.__PROXY__.sizeInBytes(...args);
+            
         };
     
         // function 
@@ -527,7 +596,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.bytesPerLine");
-          return this.__PROXY__.bytesPerLine(...args);
+          
+              return this.__PROXY__.bytesPerLine(...args);
+            
         };
     
         // function 
@@ -535,7 +606,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.valid");
-          return this.__PROXY__.valid(...args);
+          
+              return this.__PROXY__.valid(...args);
+            
         };
     
         // function 
@@ -543,7 +616,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.pixelIndex");
-          return this.__PROXY__.pixelIndex(...args);
+          
+              return this.__PROXY__.pixelIndex(...args);
+            
         };
     
         // function 
@@ -551,7 +626,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setPixel");
-          return this.__PROXY__.setPixel(...args);
+          
+              return this.__PROXY__.setPixel(...args);
+            
         };
     
         // function 
@@ -559,7 +636,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.pixelColor");
-          return this.__PROXY__.pixelColor(...args);
+          
+              return this.__PROXY__.pixelColor(...args);
+            
         };
     
         // function 
@@ -567,7 +646,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setPixelColor");
-          return this.__PROXY__.setPixelColor(...args);
+          
+              return this.__PROXY__.setPixelColor(...args);
+            
         };
     
         // function 
@@ -575,7 +656,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.devicePixelRatio");
-          return this.__PROXY__.devicePixelRatio(...args);
+          
+              return this.__PROXY__.devicePixelRatio(...args);
+            
         };
     
         // function 
@@ -583,7 +666,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setDevicePixelRatio");
-          return this.__PROXY__.setDevicePixelRatio(...args);
+          
+              return this.__PROXY__.setDevicePixelRatio(...args);
+            
         };
     
         // function 
@@ -591,7 +676,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.deviceIndependentSize");
-          return this.__PROXY__.deviceIndependentSize(...args);
+          
+              return this.__PROXY__.deviceIndependentSize(...args);
+            
         };
     
         // function 
@@ -599,7 +686,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.fill");
-          return this.__PROXY__.fill(...args);
+          
+              return this.__PROXY__.fill(...args);
+            
         };
     
         // function 
@@ -607,7 +696,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.hasAlphaChannel");
-          return this.__PROXY__.hasAlphaChannel(...args);
+          
+              return this.__PROXY__.hasAlphaChannel(...args);
+            
         };
     
         // function 
@@ -615,7 +706,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setAlphaChannel");
-          return this.__PROXY__.setAlphaChannel(...args);
+          
+              return this.__PROXY__.setAlphaChannel(...args);
+            
         };
     
         // function 
@@ -623,7 +716,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.createAlphaMask");
-          return this.__PROXY__.createAlphaMask(...args);
+          
+              return this.__PROXY__.createAlphaMask(...args);
+            
         };
     
         // function 
@@ -631,7 +726,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.createHeuristicMask");
-          return this.__PROXY__.createHeuristicMask(...args);
+          
+              return this.__PROXY__.createHeuristicMask(...args);
+            
         };
     
         // function 
@@ -639,7 +736,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.scaled");
-          return this.__PROXY__.scaled(...args);
+          
+              return this.__PROXY__.scaled(...args);
+            
         };
     
         // function 
@@ -647,7 +746,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.scaledToWidth");
-          return this.__PROXY__.scaledToWidth(...args);
+          
+              return this.__PROXY__.scaledToWidth(...args);
+            
         };
     
         // function 
@@ -655,7 +756,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.scaledToHeight");
-          return this.__PROXY__.scaledToHeight(...args);
+          
+              return this.__PROXY__.scaledToHeight(...args);
+            
         };
     
         // function 
@@ -663,7 +766,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.transformed");
-          return this.__PROXY__.transformed(...args);
+          
+              return this.__PROXY__.transformed(...args);
+            
         };
     
         // function 
@@ -671,7 +776,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.trueMatrix");
-          return this.__PROXY__.trueMatrix(...args);
+          
+              return this.__PROXY__.trueMatrix(...args);
+            
         };
     
         // function 
@@ -679,7 +786,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.mirrored");
-          return this.__PROXY__.mirrored(...args);
+          
+              return this.__PROXY__.mirrored(...args);
+            
         };
     
         // function 
@@ -687,7 +796,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.rgbSwapped");
-          return this.__PROXY__.rgbSwapped(...args);
+          
+              return this.__PROXY__.rgbSwapped(...args);
+            
         };
     
         // function 
@@ -695,7 +806,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -703,7 +816,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.rgbSwap");
-          return this.__PROXY__.rgbSwap(...args);
+          
+              return this.__PROXY__.rgbSwap(...args);
+            
         };
     
         // function 
@@ -711,7 +826,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.invertPixels");
-          return this.__PROXY__.invertPixels(...args);
+          
+              return this.__PROXY__.invertPixels(...args);
+            
         };
     
         // function 
@@ -719,7 +836,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.load");
-          return this.__PROXY__.load(...args);
+          
+              return this.__PROXY__.load(...args);
+            
         };
     
         // function 
@@ -727,7 +846,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.save");
-          return this.__PROXY__.save(...args);
+          
+              return this.__PROXY__.save(...args);
+            
         };
     
         // function 
@@ -735,7 +856,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.cacheKey");
-          return this.__PROXY__.cacheKey(...args);
+          
+              return this.__PROXY__.cacheKey(...args);
+            
         };
     
         // function 
@@ -743,7 +866,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.paintEngine");
-          return this.__PROXY__.paintEngine(...args);
+          
+              return this.__PROXY__.paintEngine(...args);
+            
         };
     
         // function 
@@ -751,7 +876,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.dotsPerMeterX");
-          return this.__PROXY__.dotsPerMeterX(...args);
+          
+              return this.__PROXY__.dotsPerMeterX(...args);
+            
         };
     
         // function 
@@ -759,7 +886,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.dotsPerMeterY");
-          return this.__PROXY__.dotsPerMeterY(...args);
+          
+              return this.__PROXY__.dotsPerMeterY(...args);
+            
         };
     
         // function 
@@ -767,7 +896,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setDotsPerMeterX");
-          return this.__PROXY__.setDotsPerMeterX(...args);
+          
+              return this.__PROXY__.setDotsPerMeterX(...args);
+            
         };
     
         // function 
@@ -775,7 +906,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setDotsPerMeterY");
-          return this.__PROXY__.setDotsPerMeterY(...args);
+          
+              return this.__PROXY__.setDotsPerMeterY(...args);
+            
         };
     
         // function 
@@ -783,7 +916,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.offset");
-          return this.__PROXY__.offset(...args);
+          
+              return this.__PROXY__.offset(...args);
+            
         };
     
         // function 
@@ -791,7 +926,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setOffset");
-          return this.__PROXY__.setOffset(...args);
+          
+              return this.__PROXY__.setOffset(...args);
+            
         };
     
         // function 
@@ -799,7 +936,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.textKeys");
-          return this.__PROXY__.textKeys(...args);
+          
+              return this.__PROXY__.textKeys(...args);
+            
         };
     
         // function 
@@ -807,7 +946,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.text");
-          return this.__PROXY__.text(...args);
+          
+              return this.__PROXY__.text(...args);
+            
         };
     
         // function 
@@ -815,7 +956,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.setText");
-          return this.__PROXY__.setText(...args);
+          
+              return this.__PROXY__.setText(...args);
+            
         };
     
         // function 
@@ -823,7 +966,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.metric");
-          return this.__PROXY__.metric(...args);
+          
+              return this.__PROXY__.metric(...args);
+            
         };
     
         // function 
@@ -831,7 +976,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.mirrored_helper");
-          return this.__PROXY__.mirrored_helper(...args);
+          
+              return this.__PROXY__.mirrored_helper(...args);
+            
         };
     
         // function 
@@ -839,7 +986,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.rgbSwapped_helper");
-          return this.__PROXY__.rgbSwapped_helper(...args);
+          
+              return this.__PROXY__.rgbSwapped_helper(...args);
+            
         };
     
         // function 
@@ -847,7 +996,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.mirrored_inplace");
-          return this.__PROXY__.mirrored_inplace(...args);
+          
+              return this.__PROXY__.mirrored_inplace(...args);
+            
         };
     
         // function 
@@ -855,7 +1006,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.rgbSwapped_inplace");
-          return this.__PROXY__.rgbSwapped_inplace(...args);
+          
+              return this.__PROXY__.rgbSwapped_inplace(...args);
+            
         };
     
         // function 
@@ -863,7 +1016,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.convertToFormat_helper");
-          return this.__PROXY__.convertToFormat_helper(...args);
+          
+              return this.__PROXY__.convertToFormat_helper(...args);
+            
         };
     
         // function 
@@ -871,7 +1026,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.convertToFormat_inplace");
-          return this.__PROXY__.convertToFormat_inplace(...args);
+          
+              return this.__PROXY__.convertToFormat_inplace(...args);
+            
         };
     
         // function 
@@ -879,7 +1036,9 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
           
         {
           //print("JS: QImage.prototype.smoothScaled");
-          return this.__PROXY__.smoothScaled(...args);
+          
+              return this.__PROXY__.smoothScaled(...args);
+            
         };
     
 
@@ -912,6 +1071,16 @@ QImage.NImageFormats = QImage_Wrapper.NImageFormats;
   }
   
         };
+      QImage.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QImage.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QImage.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

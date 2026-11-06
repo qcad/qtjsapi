@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QNetworkProxyQuery);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QNetworkProxyQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QNetworkProxyQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -107,7 +107,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QNetworkProxyQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -133,7 +133,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QNetworkProxyQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -159,7 +159,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QNetworkProxyQuery);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -191,15 +191,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QNetworkProxyQuery.prototype = new QNetworkProxyQuery_BaseJs(engine);
       //QNetworkProxyQuery.prototype = new QNetworkProxyQuery_Wrapper(engine);
       QNetworkProxyQuery.prototype = new Object();
+
 
       QNetworkProxyQuery.prototype.toString = function() {
           //return "QNetworkProxyQuery [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -239,8 +240,178 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
 
       // functions:
       
+        // function 
+        QNetworkProxyQuery.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.operator_not_assign = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.operator_not_assign");
+          
+              return this.__PROXY__.operator_not_assign(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.queryType = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.queryType");
+          
+              return this.__PROXY__.queryType(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.setQueryType = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.setQueryType");
+          
+              return this.__PROXY__.setQueryType(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.peerPort = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.peerPort");
+          
+              return this.__PROXY__.peerPort(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.setPeerPort = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.setPeerPort");
+          
+              return this.__PROXY__.setPeerPort(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.peerHostName = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.peerHostName");
+          
+              return this.__PROXY__.peerHostName(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.setPeerHostName = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.setPeerHostName");
+          
+              return this.__PROXY__.setPeerHostName(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.localPort = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.localPort");
+          
+              return this.__PROXY__.localPort(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.setLocalPort = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.setLocalPort");
+          
+              return this.__PROXY__.setLocalPort(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.protocolTag = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.protocolTag");
+          
+              return this.__PROXY__.protocolTag(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.setProtocolTag = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.setProtocolTag");
+          
+              return this.__PROXY__.setProtocolTag(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.url = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.url");
+          
+              return this.__PROXY__.url(...args);
+            
+        };
+    
+        // function 
+        QNetworkProxyQuery.prototype.setUrl = function(...args) 
+          
+        {
+          //print("JS: QNetworkProxyQuery.prototype.setUrl");
+          
+              return this.__PROXY__.setUrl(...args);
+            
+        };
+    
 
       // static functions:
+      QNetworkProxyQuery.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QNetworkProxyQuery.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QNetworkProxyQuery.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -259,4 +430,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
       //  return this.wrapper.destr();
       //};
 
+      QNetworkProxyQuery.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

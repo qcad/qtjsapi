@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSslCipher);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCipher);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCipher);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCipher);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -130,7 +130,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslCipher);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -162,15 +162,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSslCipher.prototype = new QSslCipher_BaseJs(engine);
       //QSslCipher.prototype = new QSslCipher_Wrapper(engine);
       QSslCipher.prototype = new Object();
+
 
       QSslCipher.prototype.toString = function() {
           //return "QSslCipher [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -202,8 +203,148 @@
 
       // functions:
       
+        // function 
+        QSslCipher.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.operator_not_assign = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.operator_not_assign");
+          
+              return this.__PROXY__.operator_not_assign(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.isNull");
+          
+              return this.__PROXY__.isNull(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.name");
+          
+              return this.__PROXY__.name(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.supportedBits = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.supportedBits");
+          
+              return this.__PROXY__.supportedBits(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.usedBits = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.usedBits");
+          
+              return this.__PROXY__.usedBits(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.keyExchangeMethod = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.keyExchangeMethod");
+          
+              return this.__PROXY__.keyExchangeMethod(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.authenticationMethod = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.authenticationMethod");
+          
+              return this.__PROXY__.authenticationMethod(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.encryptionMethod = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.encryptionMethod");
+          
+              return this.__PROXY__.encryptionMethod(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.protocolString = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.protocolString");
+          
+              return this.__PROXY__.protocolString(...args);
+            
+        };
+    
+        // function 
+        QSslCipher.prototype.protocol = function(...args) 
+          
+        {
+          //print("JS: QSslCipher.prototype.protocol");
+          
+              return this.__PROXY__.protocol(...args);
+            
+        };
+    
 
       // static functions:
+      QSslCipher.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSslCipher.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSslCipher.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -222,4 +363,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QSslCipher.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

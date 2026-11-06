@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStringEncoder);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStringEncoder);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStringEncoder);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStringEncoder);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStringEncoder.prototype = new QStringEncoder_BaseJs(engine);
       //QStringEncoder.prototype = new QStringEncoder_Wrapper(engine);
       QStringEncoder.prototype = new Object();
+
 
       QStringEncoder.prototype.toString = function() {
           //return "QStringEncoder [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -192,8 +193,88 @@ QStringEncoder.LastEncoding = QStringEncoder_Wrapper.LastEncoding;
 
       // functions:
       
+        // function 
+        QStringEncoder.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QStringEncoder.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QStringEncoder.prototype.resetState = function(...args) 
+          
+        {
+          //print("JS: QStringEncoder.prototype.resetState");
+          
+              return this.__PROXY__.resetState(...args);
+            
+        };
+    
+        // function 
+        QStringEncoder.prototype.hasError = function(...args) 
+          
+        {
+          //print("JS: QStringEncoder.prototype.hasError");
+          
+              return this.__PROXY__.hasError(...args);
+            
+        };
+    
+        // function 
+        QStringEncoder.prototype.name = function(...args) 
+          
+        {
+          //print("JS: QStringEncoder.prototype.name");
+          
+              return this.__PROXY__.name(...args);
+            
+        };
+    
+        // function 
+        QStringEncoder.prototype.encode = function(...args) 
+          
+        {
+          //print("JS: QStringEncoder.prototype.encode");
+          
+              return this.__PROXY__.encode(...args);
+            
+        };
+    
+        // function 
+        QStringEncoder.prototype.requiredSpace = function(...args) 
+          
+        {
+          //print("JS: QStringEncoder.prototype.requiredSpace");
+          
+              return this.__PROXY__.requiredSpace(...args);
+            
+        };
+    
+        // function 
+        QStringEncoder.prototype.encodeAsByteArray = function(...args) 
+          
+        {
+          //print("JS: QStringEncoder.prototype.encodeAsByteArray");
+          
+              return this.__PROXY__.encodeAsByteArray(...args);
+            
+        };
+    
 
       // static functions:
+      QStringEncoder.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStringEncoder.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStringEncoder.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -212,4 +293,7 @@ QStringEncoder.LastEncoding = QStringEncoder_Wrapper.LastEncoding;
       //  return this.wrapper.destr();
       //};
 
+      QStringEncoder.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

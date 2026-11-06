@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QGeoCoordinate);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCoordinate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCoordinate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCoordinate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -130,7 +130,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QGeoCoordinate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -162,9 +162,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
@@ -172,11 +172,12 @@
       //QGeoCoordinate.prototype = new QGeoCoordinate_Wrapper(engine);
       QGeoCoordinate.prototype = new Object();
 
+
       
         // function with alias name in CPP wrapper:
         QGeoCoordinate.prototype.toString = function() {
           
-              return this.toStr.apply(this, arguments);
+              return this.__PROXY__.toStr.apply(this, arguments);
             
         }
       QGeoCoordinate.getObjectType = function() {
@@ -218,8 +219,128 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
 
       // functions:
       
+        // function 
+        QGeoCoordinate.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.setLatitude = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.setLatitude");
+          
+              return this.__PROXY__.setLatitude(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.latitude = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.latitude");
+          
+              return this.__PROXY__.latitude(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.setLongitude = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.setLongitude");
+          
+              return this.__PROXY__.setLongitude(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.longitude = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.longitude");
+          
+              return this.__PROXY__.longitude(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.setAltitude = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.setAltitude");
+          
+              return this.__PROXY__.setAltitude(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.altitude = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.altitude");
+          
+              return this.__PROXY__.altitude(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.distanceTo = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.distanceTo");
+          
+              return this.__PROXY__.distanceTo(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.azimuthTo = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.azimuthTo");
+          
+              return this.__PROXY__.azimuthTo(...args);
+            
+        };
+    
+        // function 
+        QGeoCoordinate.prototype.atDistanceAndAzimuth = function(...args) 
+          
+        {
+          //print("JS: QGeoCoordinate.prototype.atDistanceAndAzimuth");
+          
+              return this.__PROXY__.atDistanceAndAzimuth(...args);
+            
+        };
+    
 
       // static functions:
+      QGeoCoordinate.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QGeoCoordinate.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QGeoCoordinate.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -238,4 +359,7 @@ QGeoCoordinate.DegreesMinutesSecondsWithHemisphere = QGeoCoordinate_Wrapper.Degr
       //  return this.wrapper.destr();
       //};
 
+      QGeoCoordinate.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

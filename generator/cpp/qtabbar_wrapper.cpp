@@ -15891,6 +15891,13 @@ bool a1_cpp;
               QTabBar_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTabBar_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTabBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -20216,6 +20223,13 @@ int a1_cpp;
               QTabBar_Wrapper::currentChangedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTabBar_Wrapper::staticMetaObject.indexOfSignal("currentChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTabBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20245,6 +20259,13 @@ int a1_cpp;
               QTabBar_Wrapper::tabCloseRequestedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTabBar_Wrapper::staticMetaObject.indexOfSignal("tabCloseRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTabBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20274,6 +20295,13 @@ int a1_cpp;
               QTabBar_Wrapper::tabMovedEmitter(
                 int from, int to
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTabBar_Wrapper::staticMetaObject.indexOfSignal("tabMoved(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTabBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: from (int)
@@ -20312,6 +20340,13 @@ int a1_cpp;
               QTabBar_Wrapper::tabBarClickedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTabBar_Wrapper::staticMetaObject.indexOfSignal("tabBarClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTabBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20341,6 +20376,13 @@ int a1_cpp;
               QTabBar_Wrapper::tabBarDoubleClickedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTabBar_Wrapper::staticMetaObject.indexOfSignal("tabBarDoubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTabBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)

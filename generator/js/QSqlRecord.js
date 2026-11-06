@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSqlRecord);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSqlRecord);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSqlRecord.prototype = new QSqlRecord_BaseJs(engine);
       //QSqlRecord.prototype = new QSqlRecord_Wrapper(engine);
       QSqlRecord.prototype = new Object();
+
 
       QSqlRecord.prototype.toString = function() {
           //return "QSqlRecord [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,8 +125,108 @@
 
       // functions:
       
+        // function 
+        QSqlRecord.prototype.value = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.value");
+          
+              return this.__PROXY__.value(...args);
+            
+        };
+    
+        // function 
+        QSqlRecord.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.isNull");
+          
+              return this.__PROXY__.isNull(...args);
+            
+        };
+    
+        // function 
+        QSqlRecord.prototype.indexOf = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.indexOf");
+          
+              return this.__PROXY__.indexOf(...args);
+            
+        };
+    
+        // function 
+        QSqlRecord.prototype.fieldName = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.fieldName");
+          
+              return this.__PROXY__.fieldName(...args);
+            
+        };
+    
+        // function 
+        QSqlRecord.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        QSqlRecord.prototype.contains = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.contains");
+          
+              return this.__PROXY__.contains(...args);
+            
+        };
+    
+        // function 
+        QSqlRecord.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        QSqlRecord.prototype.clearValues = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.clearValues");
+          
+              return this.__PROXY__.clearValues(...args);
+            
+        };
+    
+        // function 
+        QSqlRecord.prototype.count = function(...args) 
+          
+        {
+          //print("JS: QSqlRecord.prototype.count");
+          
+              return this.__PROXY__.count(...args);
+            
+        };
+    
 
       // static functions:
+      QSqlRecord.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSqlRecord.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSqlRecord.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -144,4 +245,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QSqlRecord.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

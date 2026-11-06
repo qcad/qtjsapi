@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QXmlLocator);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QXmlLocator.prototype = new QXmlLocator_BaseJs(engine);
       //QXmlLocator.prototype = new QXmlLocator_Wrapper(engine);
       QXmlLocator.prototype = new Object();
+
 
       QXmlLocator.prototype.toString = function() {
           //return "QXmlLocator [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,38 @@
 
       // functions:
       
+        // function 
+        QXmlLocator.prototype.columnNumber = function(...args) 
+          
+        {
+          //print("JS: QXmlLocator.prototype.columnNumber");
+          
+              return this.__PROXY__.columnNumber(...args);
+            
+        };
+    
+        // function 
+        QXmlLocator.prototype.lineNumber = function(...args) 
+          
+        {
+          //print("JS: QXmlLocator.prototype.lineNumber");
+          
+              return this.__PROXY__.lineNumber(...args);
+            
+        };
+    
 
       // static functions:
+      QXmlLocator.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QXmlLocator.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QXmlLocator.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +146,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QXmlLocator.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

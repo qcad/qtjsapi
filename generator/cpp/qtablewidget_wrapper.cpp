@@ -18385,6 +18385,13 @@ bool a1_cpp;
               QTableWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -24893,6 +24900,13 @@ QModelIndex a1_cpp;
               QTableWidget_Wrapper::pressedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("pressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -24922,6 +24936,13 @@ QModelIndex a1_cpp;
               QTableWidget_Wrapper::clickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("clicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -24951,6 +24972,13 @@ QModelIndex a1_cpp;
               QTableWidget_Wrapper::doubleClickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("doubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -24980,6 +25008,13 @@ QModelIndex a1_cpp;
               QTableWidget_Wrapper::activatedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("activated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -25009,6 +25044,13 @@ QModelIndex a1_cpp;
               QTableWidget_Wrapper::enteredEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("entered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -25038,6 +25080,13 @@ QModelIndex a1_cpp;
               QTableWidget_Wrapper::viewportEnteredEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("viewportEntered()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -25058,6 +25107,13 @@ QModelIndex a1_cpp;
               QTableWidget_Wrapper::iconSizeChangedEmitter(
                 const QSize& size
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("iconSizeChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: size (QSize)
@@ -33823,6 +33879,13 @@ int a1_cpp;
               QTableWidget_Wrapper::itemPressedEmitter(
                 QTableWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("itemPressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTableWidgetItem)
@@ -33852,6 +33915,13 @@ int a1_cpp;
               QTableWidget_Wrapper::itemClickedEmitter(
                 QTableWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("itemClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTableWidgetItem)
@@ -33881,6 +33951,13 @@ int a1_cpp;
               QTableWidget_Wrapper::itemDoubleClickedEmitter(
                 QTableWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("itemDoubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTableWidgetItem)
@@ -33910,6 +33987,13 @@ int a1_cpp;
               QTableWidget_Wrapper::itemActivatedEmitter(
                 QTableWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("itemActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTableWidgetItem)
@@ -33939,6 +34023,13 @@ int a1_cpp;
               QTableWidget_Wrapper::itemEnteredEmitter(
                 QTableWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("itemEntered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTableWidgetItem)
@@ -33968,6 +34059,13 @@ int a1_cpp;
               QTableWidget_Wrapper::itemChangedEmitter(
                 QTableWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("itemChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QTableWidgetItem)
@@ -33997,6 +34095,13 @@ int a1_cpp;
               QTableWidget_Wrapper::currentItemChangedEmitter(
                 QTableWidgetItem* current, QTableWidgetItem* previous
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("currentItemChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: current (QTableWidgetItem)
@@ -34035,6 +34140,13 @@ int a1_cpp;
               QTableWidget_Wrapper::itemSelectionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("itemSelectionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -34055,6 +34167,13 @@ int a1_cpp;
               QTableWidget_Wrapper::cellPressedEmitter(
                 int row, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("cellPressed(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: row (int)
@@ -34093,6 +34212,13 @@ int a1_cpp;
               QTableWidget_Wrapper::cellClickedEmitter(
                 int row, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("cellClicked(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: row (int)
@@ -34131,6 +34257,13 @@ int a1_cpp;
               QTableWidget_Wrapper::cellDoubleClickedEmitter(
                 int row, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("cellDoubleClicked(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: row (int)
@@ -34169,6 +34302,13 @@ int a1_cpp;
               QTableWidget_Wrapper::cellActivatedEmitter(
                 int row, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("cellActivated(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: row (int)
@@ -34207,6 +34347,13 @@ int a1_cpp;
               QTableWidget_Wrapper::cellEnteredEmitter(
                 int row, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("cellEntered(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: row (int)
@@ -34245,6 +34392,13 @@ int a1_cpp;
               QTableWidget_Wrapper::cellChangedEmitter(
                 int row, int column
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("cellChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: row (int)
@@ -34283,6 +34437,13 @@ int a1_cpp;
               QTableWidget_Wrapper::currentCellChangedEmitter(
                 int currentRow, int currentColumn, int previousRow, int previousColumn
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QTableWidget_Wrapper::staticMetaObject.indexOfSignal("currentCellChanged(QJSValue,QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QTableWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: currentRow (int)

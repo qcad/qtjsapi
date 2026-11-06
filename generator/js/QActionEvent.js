@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QActionEvent.prototype = new QActionEvent_BaseJs(engine);
       //QActionEvent.prototype = new QActionEvent_Wrapper(engine);
       QActionEvent.prototype = new Object();
+
 
       QActionEvent.prototype.toString = function() {
           //return "QActionEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -308,7 +309,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.type");
-          return this.__PROXY__.type(...args);
+          
+              return this.__PROXY__.type(...args);
+            
         };
     
         // function 
@@ -316,7 +319,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.spontaneous");
-          return this.__PROXY__.spontaneous(...args);
+          
+              return this.__PROXY__.spontaneous(...args);
+            
         };
     
         // function 
@@ -324,7 +329,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.setAccepted");
-          return this.__PROXY__.setAccepted(...args);
+          
+              return this.__PROXY__.setAccepted(...args);
+            
         };
     
         // function 
@@ -332,7 +339,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.isAccepted");
-          return this.__PROXY__.isAccepted(...args);
+          
+              return this.__PROXY__.isAccepted(...args);
+            
         };
     
         // function 
@@ -340,7 +349,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.accept");
-          return this.__PROXY__.accept(...args);
+          
+              return this.__PROXY__.accept(...args);
+            
         };
     
         // function 
@@ -348,7 +359,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.ignore");
-          return this.__PROXY__.ignore(...args);
+          
+              return this.__PROXY__.ignore(...args);
+            
         };
     
         // function 
@@ -356,7 +369,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.isInputEvent");
-          return this.__PROXY__.isInputEvent(...args);
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
         };
     
         // function 
@@ -364,7 +379,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.isPointerEvent");
-          return this.__PROXY__.isPointerEvent(...args);
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
         };
     
         // function 
@@ -372,7 +389,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.isSinglePointEvent");
-          return this.__PROXY__.isSinglePointEvent(...args);
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
         };
     
         // function 
@@ -380,7 +399,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -388,7 +409,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.setSpontaneous");
-          return this.__PROXY__.setSpontaneous(...args);
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
         };
     
         // function 
@@ -396,7 +419,9 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.action");
-          return this.__PROXY__.action(...args);
+          
+              return this.__PROXY__.action(...args);
+            
         };
     
         // function 
@@ -404,11 +429,23 @@ QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
           
         {
           //print("JS: QActionEvent.prototype.before");
-          return this.__PROXY__.before(...args);
+          
+              return this.__PROXY__.before(...args);
+            
         };
     
 
       // static functions:
+      QActionEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QActionEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QActionEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

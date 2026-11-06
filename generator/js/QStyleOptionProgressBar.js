@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QStyleOptionProgressBar);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionProgressBar);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QStyleOptionProgressBar);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QStyleOptionProgressBar.prototype = new QStyleOptionProgressBar_BaseJs(engine);
       //QStyleOptionProgressBar.prototype = new QStyleOptionProgressBar_Wrapper(engine);
       QStyleOptionProgressBar.prototype = new Object();
+
 
       QStyleOptionProgressBar.prototype.toString = function() {
           //return "QStyleOptionProgressBar [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -182,8 +183,38 @@ QStyleOptionProgressBar.SO_ComplexCustomBase = QStyleOptionProgressBar_Wrapper.S
 
       // functions:
       
+        // function 
+        QStyleOptionProgressBar.prototype.initFrom = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionProgressBar.prototype.initFrom");
+          
+              return this.__PROXY__.initFrom(...args);
+            
+        };
+    
+        // function 
+        QStyleOptionProgressBar.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QStyleOptionProgressBar.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QStyleOptionProgressBar.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QStyleOptionProgressBar.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QStyleOptionProgressBar.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -202,4 +233,7 @@ QStyleOptionProgressBar.SO_ComplexCustomBase = QStyleOptionProgressBar_Wrapper.S
       //  return this.wrapper.destr();
       //};
 
+      QStyleOptionProgressBar.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

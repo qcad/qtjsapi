@@ -699,25 +699,9 @@
           QTcpSocket_Wrapper* ret = new QTcpSocket_Wrapper(handler, v, false);
 
           // JS: new QTcpSocket('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QTcpSocket");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QTcpSocket is undefined. Use QTcpSocket_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QTcpSocket('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QTcpSocket(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QTcpSocket('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QTcpSocket::getIdStatic(), "QTcpSocket", ret);
 
           //return engine->newQObject(ret);
       }
@@ -773,25 +757,9 @@
           QSslSocket_Wrapper* ret = new QSslSocket_Wrapper(handler, v, false);
 
           // JS: new QSslSocket('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSslSocket");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSslSocket is undefined. Use QSslSocket_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSslSocket('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSslSocket(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QSslSocket('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QSslSocket::getIdStatic(), "QSslSocket", ret);
 
           //return engine->newQObject(ret);
       }
@@ -847,25 +815,9 @@
           QNetworkProxyFactory_Wrapper* ret = new QNetworkProxyFactory_Wrapper(handler, v, false);
 
           // JS: new QNetworkProxyFactory('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QNetworkProxyFactory");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QNetworkProxyFactory is undefined. Use QNetworkProxyFactory_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QNetworkProxyFactory('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QNetworkProxyFactory(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QNetworkProxyFactory('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QNetworkProxyFactory::getIdStatic(), "QNetworkProxyFactory", ret);
 
           //return engine->newQObject(ret);
       }
@@ -929,25 +881,9 @@
           QAbstractFileIconProvider_Wrapper* ret = new QAbstractFileIconProvider_Wrapper(handler, v, false);
 
           // JS: new QAbstractFileIconProvider('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QAbstractFileIconProvider");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QAbstractFileIconProvider is undefined. Use QAbstractFileIconProvider_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QAbstractFileIconProvider('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QAbstractFileIconProvider(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QAbstractFileIconProvider('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QAbstractFileIconProvider::getIdStatic(), "QAbstractFileIconProvider", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1011,25 +947,9 @@
           QAbstractListModel_Wrapper* ret = new QAbstractListModel_Wrapper(handler, v, false);
 
           // JS: new QAbstractListModel('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QAbstractListModel");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QAbstractListModel is undefined. Use QAbstractListModel_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QAbstractListModel('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QAbstractListModel(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QAbstractListModel('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QAbstractListModel::getIdStatic(), "QAbstractListModel", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1085,25 +1005,9 @@
           QAbstractTableModel_Wrapper* ret = new QAbstractTableModel_Wrapper(handler, v, false);
 
           // JS: new QAbstractTableModel('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QAbstractTableModel");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QAbstractTableModel is undefined. Use QAbstractTableModel_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QAbstractTableModel('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QAbstractTableModel(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QAbstractTableModel('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QAbstractTableModel::getIdStatic(), "QAbstractTableModel", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1167,25 +1071,9 @@
           QAbstractSocket_Wrapper* ret = new QAbstractSocket_Wrapper(handler, v, false);
 
           // JS: new QAbstractSocket('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QAbstractSocket");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QAbstractSocket is undefined. Use QAbstractSocket_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QAbstractSocket('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QAbstractSocket(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QAbstractSocket('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QAbstractSocket::getIdStatic(), "QAbstractSocket", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1241,25 +1129,9 @@
           QActionEvent_Wrapper* ret = new QActionEvent_Wrapper(handler, v, false);
 
           // JS: new QActionEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QActionEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QActionEvent is undefined. Use QActionEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QActionEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QActionEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QActionEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QActionEvent::getIdStatic(), "QActionEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1315,25 +1187,9 @@
           QCompleter_Wrapper* ret = new QCompleter_Wrapper(handler, v, false);
 
           // JS: new QCompleter('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QCompleter");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QCompleter is undefined. Use QCompleter_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QCompleter('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QCompleter(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QCompleter('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QCompleter::getIdStatic(), "QCompleter", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1389,25 +1245,9 @@
           QContextMenuEvent_Wrapper* ret = new QContextMenuEvent_Wrapper(handler, v, false);
 
           // JS: new QContextMenuEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QContextMenuEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QContextMenuEvent is undefined. Use QContextMenuEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QContextMenuEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QContextMenuEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QContextMenuEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QContextMenuEvent::getIdStatic(), "QContextMenuEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1463,25 +1303,9 @@
           QDirIterator_Wrapper* ret = new QDirIterator_Wrapper(handler, v, false);
 
           // JS: new QDirIterator('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QDirIterator");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QDirIterator is undefined. Use QDirIterator_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QDirIterator('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QDirIterator(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QDirIterator('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QDirIterator::getIdStatic(), "QDirIterator", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1537,25 +1361,9 @@
           QDragEnterEvent_Wrapper* ret = new QDragEnterEvent_Wrapper(handler, v, false);
 
           // JS: new QDragEnterEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QDragEnterEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QDragEnterEvent is undefined. Use QDragEnterEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QDragEnterEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QDragEnterEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QDragEnterEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QDragEnterEvent::getIdStatic(), "QDragEnterEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1611,25 +1419,9 @@
           QDragLeaveEvent_Wrapper* ret = new QDragLeaveEvent_Wrapper(handler, v, false);
 
           // JS: new QDragLeaveEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QDragLeaveEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QDragLeaveEvent is undefined. Use QDragLeaveEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QDragLeaveEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QDragLeaveEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QDragLeaveEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QDragLeaveEvent::getIdStatic(), "QDragLeaveEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1693,25 +1485,9 @@
           QDragMoveEvent_Wrapper* ret = new QDragMoveEvent_Wrapper(handler, v, false);
 
           // JS: new QDragMoveEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QDragMoveEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QDragMoveEvent is undefined. Use QDragMoveEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QDragMoveEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QDragMoveEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QDragMoveEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QDragMoveEvent::getIdStatic(), "QDragMoveEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1775,25 +1551,9 @@
           QDropEvent_Wrapper* ret = new QDropEvent_Wrapper(handler, v, false);
 
           // JS: new QDropEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QDropEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QDropEvent is undefined. Use QDropEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QDropEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QDropEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QDropEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QDropEvent::getIdStatic(), "QDropEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1921,25 +1681,9 @@
           QEvent_Wrapper* ret = new QEvent_Wrapper(handler, v, false);
 
           // JS: new QEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QEvent is undefined. Use QEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QEvent::getIdStatic(), "QEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -1995,25 +1739,9 @@
           QFileIconProvider_Wrapper* ret = new QFileIconProvider_Wrapper(handler, v, false);
 
           // JS: new QFileIconProvider('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QFileIconProvider");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QFileIconProvider is undefined. Use QFileIconProvider_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QFileIconProvider('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QFileIconProvider(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QFileIconProvider('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QFileIconProvider::getIdStatic(), "QFileIconProvider", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2069,25 +1797,9 @@
           QFocusEvent_Wrapper* ret = new QFocusEvent_Wrapper(handler, v, false);
 
           // JS: new QFocusEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QFocusEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QFocusEvent is undefined. Use QFocusEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QFocusEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QFocusEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QFocusEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QFocusEvent::getIdStatic(), "QFocusEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2143,25 +1855,9 @@
           QFontMetrics_Wrapper* ret = new QFontMetrics_Wrapper(handler, v, false);
 
           // JS: new QFontMetrics('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QFontMetrics");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QFontMetrics is undefined. Use QFontMetrics_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QFontMetrics('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QFontMetrics(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QFontMetrics('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QFontMetrics::getIdStatic(), "QFontMetrics", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2217,25 +1913,9 @@
           QFontMetricsF_Wrapper* ret = new QFontMetricsF_Wrapper(handler, v, false);
 
           // JS: new QFontMetricsF('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QFontMetricsF");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QFontMetricsF is undefined. Use QFontMetricsF_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QFontMetricsF('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QFontMetricsF(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QFontMetricsF('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QFontMetricsF::getIdStatic(), "QFontMetricsF", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2291,25 +1971,9 @@
           QHelpEvent_Wrapper* ret = new QHelpEvent_Wrapper(handler, v, false);
 
           // JS: new QHelpEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QHelpEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QHelpEvent is undefined. Use QHelpEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QHelpEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QHelpEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QHelpEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QHelpEvent::getIdStatic(), "QHelpEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2365,25 +2029,9 @@
           QIODeviceBase_Wrapper* ret = new QIODeviceBase_Wrapper(handler, v, false);
 
           // JS: new QIODeviceBase('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QIODeviceBase");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QIODeviceBase is undefined. Use QIODeviceBase_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QIODeviceBase('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QIODeviceBase(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QIODeviceBase('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QIODeviceBase::getIdStatic(), "QIODeviceBase", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2439,25 +2087,9 @@
           QImageReader_Wrapper* ret = new QImageReader_Wrapper(handler, v, false);
 
           // JS: new QImageReader('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QImageReader");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QImageReader is undefined. Use QImageReader_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QImageReader('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QImageReader(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QImageReader('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QImageReader::getIdStatic(), "QImageReader", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2513,25 +2145,9 @@
           QImageWriter_Wrapper* ret = new QImageWriter_Wrapper(handler, v, false);
 
           // JS: new QImageWriter('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QImageWriter");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QImageWriter is undefined. Use QImageWriter_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QImageWriter('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QImageWriter(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QImageWriter('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QImageWriter::getIdStatic(), "QImageWriter", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2611,25 +2227,9 @@
           QInputEvent_Wrapper* ret = new QInputEvent_Wrapper(handler, v, false);
 
           // JS: new QInputEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QInputEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QInputEvent is undefined. Use QInputEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QInputEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QInputEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QInputEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QInputEvent::getIdStatic(), "QInputEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2701,25 +2301,9 @@
           QJSEngine_Wrapper* ret = new QJSEngine_Wrapper(handler, v, false);
 
           // JS: new QJSEngine('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QJSEngine");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QJSEngine is undefined. Use QJSEngine_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QJSEngine('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QJSEngine(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QJSEngine('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QJSEngine::getIdStatic(), "QJSEngine", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2775,25 +2359,9 @@
           QKeyEvent_Wrapper* ret = new QKeyEvent_Wrapper(handler, v, false);
 
           // JS: new QKeyEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QKeyEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QKeyEvent is undefined. Use QKeyEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QKeyEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QKeyEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QKeyEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QKeyEvent::getIdStatic(), "QKeyEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2873,25 +2441,9 @@
           QLayoutItem_Wrapper* ret = new QLayoutItem_Wrapper(handler, v, false);
 
           // JS: new QLayoutItem('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QLayoutItem");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QLayoutItem is undefined. Use QLayoutItem_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QLayoutItem('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QLayoutItem(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QLayoutItem('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QLayoutItem::getIdStatic(), "QLayoutItem", ret);
 
           //return engine->newQObject(ret);
       }
@@ -2947,25 +2499,9 @@
           QListWidgetItem_Wrapper* ret = new QListWidgetItem_Wrapper(handler, v, false);
 
           // JS: new QListWidgetItem('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QListWidgetItem");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QListWidgetItem is undefined. Use QListWidgetItem_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QListWidgetItem('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QListWidgetItem(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QListWidgetItem('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QListWidgetItem::getIdStatic(), "QListWidgetItem", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3021,25 +2557,9 @@
           QMouseEvent_Wrapper* ret = new QMouseEvent_Wrapper(handler, v, false);
 
           // JS: new QMouseEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QMouseEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QMouseEvent is undefined. Use QMouseEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QMouseEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QMouseEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QMouseEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QMouseEvent::getIdStatic(), "QMouseEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3103,25 +2623,9 @@
           QPagedPaintDevice_Wrapper* ret = new QPagedPaintDevice_Wrapper(handler, v, false);
 
           // JS: new QPagedPaintDevice('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QPagedPaintDevice");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QPagedPaintDevice is undefined. Use QPagedPaintDevice_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QPagedPaintDevice('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QPagedPaintDevice(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QPagedPaintDevice('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QPagedPaintDevice::getIdStatic(), "QPagedPaintDevice", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3217,25 +2721,9 @@
           QPaintDevice_Wrapper* ret = new QPaintDevice_Wrapper(handler, v, false);
 
           // JS: new QPaintDevice('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QPaintDevice");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QPaintDevice is undefined. Use QPaintDevice_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QPaintDevice('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QPaintDevice(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QPaintDevice('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QPaintDevice::getIdStatic(), "QPaintDevice", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3291,25 +2779,9 @@
           QPaintEvent_Wrapper* ret = new QPaintEvent_Wrapper(handler, v, false);
 
           // JS: new QPaintEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QPaintEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QPaintEvent is undefined. Use QPaintEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QPaintEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QPaintEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QPaintEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QPaintEvent::getIdStatic(), "QPaintEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3365,25 +2837,9 @@
           QPainter_Wrapper* ret = new QPainter_Wrapper(handler, v, false);
 
           // JS: new QPainter('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QPainter");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QPainter is undefined. Use QPainter_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QPainter('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QPainter(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QPainter('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QPainter::getIdStatic(), "QPainter", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3439,25 +2895,9 @@
           QPanGesture_Wrapper* ret = new QPanGesture_Wrapper(handler, v, false);
 
           // JS: new QPanGesture('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QPanGesture");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QPanGesture is undefined. Use QPanGesture_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QPanGesture('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QPanGesture(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QPanGesture('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QPanGesture::getIdStatic(), "QPanGesture", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3513,25 +2953,9 @@
           QPinchGesture_Wrapper* ret = new QPinchGesture_Wrapper(handler, v, false);
 
           // JS: new QPinchGesture('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QPinchGesture");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QPinchGesture is undefined. Use QPinchGesture_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QPinchGesture('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QPinchGesture(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QPinchGesture('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QPinchGesture::getIdStatic(), "QPinchGesture", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3595,25 +3019,9 @@
           QPointerEvent_Wrapper* ret = new QPointerEvent_Wrapper(handler, v, false);
 
           // JS: new QPointerEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QPointerEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QPointerEvent is undefined. Use QPointerEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QPointerEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QPointerEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QPointerEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QPointerEvent::getIdStatic(), "QPointerEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3670,25 +3078,9 @@
           QPrinter_Wrapper* ret = new QPrinter_Wrapper(handler, v, false);
 
           // JS: new QPrinter('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QPrinter");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QPrinter is undefined. Use QPrinter_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QPrinter('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QPrinter(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QPrinter('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QPrinter::getIdStatic(), "QPrinter", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3746,25 +3138,9 @@
           QProcess_Wrapper* ret = new QProcess_Wrapper(handler, v, false);
 
           // JS: new QProcess('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QProcess");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QProcess is undefined. Use QProcess_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QProcess('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QProcess(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QProcess('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QProcess::getIdStatic(), "QProcess", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3836,25 +3212,9 @@
           QQmlEngine_Wrapper* ret = new QQmlEngine_Wrapper(handler, v, false);
 
           // JS: new QQmlEngine('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QQmlEngine");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QQmlEngine is undefined. Use QQmlEngine_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QQmlEngine('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QQmlEngine(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QQmlEngine('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QQmlEngine::getIdStatic(), "QQmlEngine", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3910,25 +3270,9 @@
           QQmlContext_Wrapper* ret = new QQmlContext_Wrapper(handler, v, false);
 
           // JS: new QQmlContext('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QQmlContext");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QQmlContext is undefined. Use QQmlContext_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QQmlContext('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QQmlContext(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QQmlContext('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QQmlContext::getIdStatic(), "QQmlContext", ret);
 
           //return engine->newQObject(ret);
       }
@@ -3984,25 +3328,9 @@
           QQmlApplicationEngine_Wrapper* ret = new QQmlApplicationEngine_Wrapper(handler, v, false);
 
           // JS: new QQmlApplicationEngine('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QQmlApplicationEngine");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QQmlApplicationEngine is undefined. Use QQmlApplicationEngine_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QQmlApplicationEngine('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QQmlApplicationEngine(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QQmlApplicationEngine('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QQmlApplicationEngine::getIdStatic(), "QQmlApplicationEngine", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4058,25 +3386,9 @@
           QResizeEvent_Wrapper* ret = new QResizeEvent_Wrapper(handler, v, false);
 
           // JS: new QResizeEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QResizeEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QResizeEvent is undefined. Use QResizeEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QResizeEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QResizeEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QResizeEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QResizeEvent::getIdStatic(), "QResizeEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4148,25 +3460,9 @@
           QSinglePointEvent_Wrapper* ret = new QSinglePointEvent_Wrapper(handler, v, false);
 
           // JS: new QSinglePointEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSinglePointEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSinglePointEvent is undefined. Use QSinglePointEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSinglePointEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSinglePointEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QSinglePointEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QSinglePointEvent::getIdStatic(), "QSinglePointEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4222,25 +3518,9 @@
           QSpacerItem_Wrapper* ret = new QSpacerItem_Wrapper(handler, v, false);
 
           // JS: new QSpacerItem('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSpacerItem");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSpacerItem is undefined. Use QSpacerItem_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSpacerItem('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSpacerItem(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QSpacerItem('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QSpacerItem::getIdStatic(), "QSpacerItem", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4297,25 +3577,9 @@
           QSqlQuery_Wrapper* ret = new QSqlQuery_Wrapper(handler, v, false);
 
           // JS: new QSqlQuery('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSqlQuery");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSqlQuery is undefined. Use QSqlQuery_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSqlQuery('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSqlQuery(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QSqlQuery('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QSqlQuery::getIdStatic(), "QSqlQuery", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4374,25 +3638,9 @@
           QHelpContentItem_Wrapper* ret = new QHelpContentItem_Wrapper(handler, v, false);
 
           // JS: new QHelpContentItem('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QHelpContentItem");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QHelpContentItem is undefined. Use QHelpContentItem_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QHelpContentItem('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QHelpContentItem(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QHelpContentItem('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QHelpContentItem::getIdStatic(), "QHelpContentItem", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4450,25 +3698,9 @@
           QStandardItem_Wrapper* ret = new QStandardItem_Wrapper(handler, v, false);
 
           // JS: new QStandardItem('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QStandardItem");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QStandardItem is undefined. Use QStandardItem_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QStandardItem('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QStandardItem(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QStandardItem('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QStandardItem::getIdStatic(), "QStandardItem", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4524,25 +3756,9 @@
           QStringConverter_Wrapper* ret = new QStringConverter_Wrapper(handler, v, false);
 
           // JS: new QStringConverter('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QStringConverter");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QStringConverter is undefined. Use QStringConverter_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QStringConverter('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QStringConverter(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QStringConverter('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QStringConverter::getIdStatic(), "QStringConverter", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4598,25 +3814,9 @@
           QStringDecoder_Wrapper* ret = new QStringDecoder_Wrapper(handler, v, false);
 
           // JS: new QStringDecoder('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QStringDecoder");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QStringDecoder is undefined. Use QStringDecoder_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QStringDecoder('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QStringDecoder(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QStringDecoder('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QStringDecoder::getIdStatic(), "QStringDecoder", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4672,25 +3872,9 @@
           QStringEncoder_Wrapper* ret = new QStringEncoder_Wrapper(handler, v, false);
 
           // JS: new QStringEncoder('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QStringEncoder");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QStringEncoder is undefined. Use QStringEncoder_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QStringEncoder('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QStringEncoder(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QStringEncoder('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QStringEncoder::getIdStatic(), "QStringEncoder", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4746,25 +3930,9 @@
           QSwipeGesture_Wrapper* ret = new QSwipeGesture_Wrapper(handler, v, false);
 
           // JS: new QSwipeGesture('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QSwipeGesture");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QSwipeGesture is undefined. Use QSwipeGesture_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QSwipeGesture('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QSwipeGesture(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QSwipeGesture('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QSwipeGesture::getIdStatic(), "QSwipeGesture", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4820,25 +3988,9 @@
           QTableWidgetItem_Wrapper* ret = new QTableWidgetItem_Wrapper(handler, v, false);
 
           // JS: new QTableWidgetItem('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QTableWidgetItem");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QTableWidgetItem is undefined. Use QTableWidgetItem_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QTableWidgetItem('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QTableWidgetItem(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QTableWidgetItem('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QTableWidgetItem::getIdStatic(), "QTableWidgetItem", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4894,25 +4046,9 @@
           QTextCursor_Wrapper* ret = new QTextCursor_Wrapper(handler, v, false);
 
           // JS: new QTextCursor('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QTextCursor");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QTextCursor is undefined. Use QTextCursor_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QTextCursor('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QTextCursor(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QTextCursor('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QTextCursor::getIdStatic(), "QTextCursor", ret);
 
           //return engine->newQObject(ret);
       }
@@ -4968,25 +4104,9 @@
           QTextLayout_Wrapper* ret = new QTextLayout_Wrapper(handler, v, false);
 
           // JS: new QTextLayout('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QTextLayout");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QTextLayout is undefined. Use QTextLayout_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QTextLayout('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QTextLayout(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QTextLayout('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QTextLayout::getIdStatic(), "QTextLayout", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5042,25 +4162,9 @@
           QTextStream_Wrapper* ret = new QTextStream_Wrapper(handler, v, false);
 
           // JS: new QTextStream('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QTextStream");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QTextStream is undefined. Use QTextStream_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QTextStream('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QTextStream(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QTextStream('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QTextStream::getIdStatic(), "QTextStream", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5116,25 +4220,9 @@
           QToolTip_Wrapper* ret = new QToolTip_Wrapper(handler, v, false);
 
           // JS: new QToolTip('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QToolTip");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QToolTip is undefined. Use QToolTip_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QToolTip('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QToolTip(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QToolTip('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QToolTip::getIdStatic(), "QToolTip", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5190,25 +4278,9 @@
           QTreeWidgetItem_Wrapper* ret = new QTreeWidgetItem_Wrapper(handler, v, false);
 
           // JS: new QTreeWidgetItem('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QTreeWidgetItem");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QTreeWidgetItem is undefined. Use QTreeWidgetItem_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QTreeWidgetItem('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QTreeWidgetItem(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QTreeWidgetItem('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QTreeWidgetItem::getIdStatic(), "QTreeWidgetItem", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5264,25 +4336,9 @@
           QUiLoader_Wrapper* ret = new QUiLoader_Wrapper(handler, v, false);
 
           // JS: new QUiLoader('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QUiLoader");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QUiLoader is undefined. Use QUiLoader_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QUiLoader('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QUiLoader(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QUiLoader('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QUiLoader::getIdStatic(), "QUiLoader", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5338,25 +4394,9 @@
           QWheelEvent_Wrapper* ret = new QWheelEvent_Wrapper(handler, v, false);
 
           // JS: new QWheelEvent('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QWheelEvent");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QWheelEvent is undefined. Use QWheelEvent_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QWheelEvent('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QWheelEvent(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QWheelEvent('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QWheelEvent::getIdStatic(), "QWheelEvent", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5412,25 +4452,9 @@
           QWidgetItem_Wrapper* ret = new QWidgetItem_Wrapper(handler, v, false);
 
           // JS: new QWidgetItem('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QWidgetItem");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QWidgetItem is undefined. Use QWidgetItem_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QWidgetItem('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QWidgetItem(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QWidgetItem('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QWidgetItem::getIdStatic(), "QWidgetItem", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5486,25 +4510,9 @@
           QXmlContentHandler_Wrapper* ret = new QXmlContentHandler_Wrapper(handler, v, false);
 
           // JS: new QXmlContentHandler('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlContentHandler");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlContentHandler is undefined. Use QXmlContentHandler_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlContentHandler('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlContentHandler(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlContentHandler('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlContentHandler::getIdStatic(), "QXmlContentHandler", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5560,25 +4568,9 @@
           QXmlDTDHandler_Wrapper* ret = new QXmlDTDHandler_Wrapper(handler, v, false);
 
           // JS: new QXmlDTDHandler('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlDTDHandler");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlDTDHandler is undefined. Use QXmlDTDHandler_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlDTDHandler('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlDTDHandler(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlDTDHandler('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlDTDHandler::getIdStatic(), "QXmlDTDHandler", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5642,25 +4634,9 @@
           QXmlDeclHandler_Wrapper* ret = new QXmlDeclHandler_Wrapper(handler, v, false);
 
           // JS: new QXmlDeclHandler('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlDeclHandler");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlDeclHandler is undefined. Use QXmlDeclHandler_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlDeclHandler('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlDeclHandler(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlDeclHandler('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlDeclHandler::getIdStatic(), "QXmlDeclHandler", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5716,25 +4692,9 @@
           QXmlDefaultHandler_Wrapper* ret = new QXmlDefaultHandler_Wrapper(handler, v, false);
 
           // JS: new QXmlDefaultHandler('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlDefaultHandler");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlDefaultHandler is undefined. Use QXmlDefaultHandler_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlDefaultHandler('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlDefaultHandler(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlDefaultHandler('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlDefaultHandler::getIdStatic(), "QXmlDefaultHandler", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5790,25 +4750,9 @@
           QXmlEntityResolver_Wrapper* ret = new QXmlEntityResolver_Wrapper(handler, v, false);
 
           // JS: new QXmlEntityResolver('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlEntityResolver");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlEntityResolver is undefined. Use QXmlEntityResolver_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlEntityResolver('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlEntityResolver(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlEntityResolver('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlEntityResolver::getIdStatic(), "QXmlEntityResolver", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5864,25 +4808,9 @@
           QXmlErrorHandler_Wrapper* ret = new QXmlErrorHandler_Wrapper(handler, v, false);
 
           // JS: new QXmlErrorHandler('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlErrorHandler");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlErrorHandler is undefined. Use QXmlErrorHandler_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlErrorHandler('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlErrorHandler(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlErrorHandler('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlErrorHandler::getIdStatic(), "QXmlErrorHandler", ret);
 
           //return engine->newQObject(ret);
       }
@@ -5938,25 +4866,9 @@
           QXmlInputSource_Wrapper* ret = new QXmlInputSource_Wrapper(handler, v, false);
 
           // JS: new QXmlInputSource('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlInputSource");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlInputSource is undefined. Use QXmlInputSource_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlInputSource('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlInputSource(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlInputSource('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlInputSource::getIdStatic(), "QXmlInputSource", ret);
 
           //return engine->newQObject(ret);
       }
@@ -6012,25 +4924,9 @@
           QXmlLexicalHandler_Wrapper* ret = new QXmlLexicalHandler_Wrapper(handler, v, false);
 
           // JS: new QXmlLexicalHandler('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlLexicalHandler");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlLexicalHandler is undefined. Use QXmlLexicalHandler_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlLexicalHandler('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlLexicalHandler(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlLexicalHandler('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlLexicalHandler::getIdStatic(), "QXmlLexicalHandler", ret);
 
           //return engine->newQObject(ret);
       }
@@ -6086,25 +4982,9 @@
           QXmlLocator_Wrapper* ret = new QXmlLocator_Wrapper(handler, v, false);
 
           // JS: new QXmlLocator('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlLocator");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlLocator is undefined. Use QXmlLocator_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlLocator('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlLocator(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlLocator('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlLocator::getIdStatic(), "QXmlLocator", ret);
 
           //return engine->newQObject(ret);
       }
@@ -6160,25 +5040,9 @@
           QXmlParseException_Wrapper* ret = new QXmlParseException_Wrapper(handler, v, false);
 
           // JS: new QXmlParseException('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlParseException");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlParseException is undefined. Use QXmlParseException_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlParseException('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlParseException(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlParseException('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlParseException::getIdStatic(), "QXmlParseException", ret);
 
           //return engine->newQObject(ret);
       }
@@ -6242,25 +5106,9 @@
           QXmlReader_Wrapper* ret = new QXmlReader_Wrapper(handler, v, false);
 
           // JS: new QXmlReader('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlReader");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlReader is undefined. Use QXmlReader_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlReader('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlReader(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlReader('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlReader::getIdStatic(), "QXmlReader", ret);
 
           //return engine->newQObject(ret);
       }
@@ -6316,25 +5164,9 @@
           QXmlSimpleReader_Wrapper* ret = new QXmlSimpleReader_Wrapper(handler, v, false);
 
           // JS: new QXmlSimpleReader('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlSimpleReader");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlSimpleReader is undefined. Use QXmlSimpleReader_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlSimpleReader('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlSimpleReader(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlSimpleReader('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlSimpleReader::getIdStatic(), "QXmlSimpleReader", ret);
 
           //return engine->newQObject(ret);
       }
@@ -6390,25 +5222,9 @@
           QXmlStreamAttribute_Wrapper* ret = new QXmlStreamAttribute_Wrapper(handler, v, false);
 
           // JS: new QXmlStreamAttribute('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlStreamAttribute");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlStreamAttribute is undefined. Use QXmlStreamAttribute_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlStreamAttribute('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlStreamAttribute(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlStreamAttribute('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlStreamAttribute::getIdStatic(), "QXmlStreamAttribute", ret);
 
           //return engine->newQObject(ret);
       }
@@ -6464,25 +5280,9 @@
           QXmlStreamReader_Wrapper* ret = new QXmlStreamReader_Wrapper(handler, v, false);
 
           // JS: new QXmlStreamReader('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlStreamReader");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlStreamReader is undefined. Use QXmlStreamReader_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlStreamReader('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlStreamReader(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlStreamReader('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlStreamReader::getIdStatic(), "QXmlStreamReader", ret);
 
           //return engine->newQObject(ret);
       }
@@ -6538,25 +5338,9 @@
           QXmlStreamWriter_Wrapper* ret = new QXmlStreamWriter_Wrapper(handler, v, false);
 
           // JS: new QXmlStreamWriter('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("QXmlStreamWriter");
-          if (cl.isUndefined()) {
-              qWarning() << "Class QXmlStreamWriter is undefined. Use QXmlStreamWriter_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new QXmlStreamWriter('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new QXmlStreamWriter(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new QXmlStreamWriter('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_QXmlStreamWriter::getIdStatic(), "QXmlStreamWriter", ret);
 
           //return engine->newQObject(ret);
       }

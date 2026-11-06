@@ -16134,6 +16134,13 @@ bool a1_cpp;
               QDialogButtonBox_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialogButtonBox_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialogButtonBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17387,6 +17394,13 @@ bool a1_cpp;
               QDialogButtonBox_Wrapper::clickedEmitter(
                 QAbstractButton* button
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialogButtonBox_Wrapper::staticMetaObject.indexOfSignal("clicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialogButtonBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: button (QAbstractButton)
@@ -17416,6 +17430,13 @@ bool a1_cpp;
               QDialogButtonBox_Wrapper::acceptedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialogButtonBox_Wrapper::staticMetaObject.indexOfSignal("accepted()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialogButtonBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -17436,6 +17457,13 @@ bool a1_cpp;
               QDialogButtonBox_Wrapper::helpRequestedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialogButtonBox_Wrapper::staticMetaObject.indexOfSignal("helpRequested()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialogButtonBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -17456,6 +17484,13 @@ bool a1_cpp;
               QDialogButtonBox_Wrapper::rejectedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = QDialogButtonBox_Wrapper::staticMetaObject.indexOfSignal("rejected()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(QDialogButtonBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

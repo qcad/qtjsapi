@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, QSslKey);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslKey);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslKey);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -106,7 +106,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslKey);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -132,7 +132,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslKey);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -158,7 +158,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, QSslKey);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -190,15 +190,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //QSslKey.prototype = new QSslKey_BaseJs(engine);
       //QSslKey.prototype = new QSslKey_Wrapper(engine);
       QSslKey.prototype = new Object();
+
 
       QSslKey.prototype.toString = function() {
           //return "QSslKey [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -230,8 +231,128 @@
 
       // functions:
       
+        // function 
+        QSslKey.prototype.operator_assign = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.operator_assign");
+          
+              return this.__PROXY__.operator_assign(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.swap = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.swap");
+          
+              return this.__PROXY__.swap(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.isNull = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.isNull");
+          
+              return this.__PROXY__.isNull(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.length = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.length");
+          
+              return this.__PROXY__.length(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.type = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.algorithm = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.algorithm");
+          
+              return this.__PROXY__.algorithm(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.toPem = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.toPem");
+          
+              return this.__PROXY__.toPem(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.toDer = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.toDer");
+          
+              return this.__PROXY__.toDer(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        QSslKey.prototype.operator_not_assign = function(...args) 
+          
+        {
+          //print("JS: QSslKey.prototype.operator_not_assign");
+          
+              return this.__PROXY__.operator_not_assign(...args);
+            
+        };
+    
 
       // static functions:
+      QSslKey.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      QSslKey.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      QSslKey.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -250,4 +371,7 @@
       //  return this.wrapper.destr();
       //};
 
+      QSslKey.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       
