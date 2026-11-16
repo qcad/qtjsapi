@@ -185,7 +185,7 @@ QStyleOptionTab.Beginning = QStyleOptionTab_Wrapper.Beginning;
 QStyleOptionTab.Middle = QStyleOptionTab_Wrapper.Middle;
 QStyleOptionTab.End = QStyleOptionTab_Wrapper.End;
 QStyleOptionTab.OnlyOneTab = QStyleOptionTab_Wrapper.OnlyOneTab;
-QStyleOptionTab.Moving = QStyleOptionTab_Wrapper.Moving;
+QStyleOptionTab.Moving = QStyleOptionTab_Wrapper.Moving; // C++: #if QT_VERSION >= QT_VERSION_CHECK(6, 6, 0)
 
   // enum: SelectedPosition
 QStyleOptionTab.NotAdjacent = QStyleOptionTab_Wrapper.NotAdjacent;

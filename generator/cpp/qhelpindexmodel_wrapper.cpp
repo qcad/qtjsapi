@@ -14,6 +14,10 @@
     
     // static functions implementation in singleton wrapper:
     
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
+#endif
+
     void QHelpIndexModel_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QHelpIndexModel_Wrapper>("org.qcad", 1, 0, "QHelpIndexModel_Wrapper");
@@ -189,6 +193,10 @@
 
   // constructors:
   
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
+#endif
+
 
     // non-static functions:
     
@@ -4533,6 +4541,8 @@ QStringList a1_cpp;
                 
               }
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
     // Class: QHelpIndexModel
     // Function: createIndexForCurrentFilter
     // Source: 
@@ -4580,6 +4590,8 @@ QStringList a1_cpp;
                 
               }
             
+#endif
+
     // Class: QHelpIndexModel
     // Function: createIndex
     // Source: 

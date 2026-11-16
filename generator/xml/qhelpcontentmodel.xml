@@ -7,11 +7,13 @@
       <super name="QObject" />
       <super name="QAbstractItemModel" />
     </super_list>
+    <preproc plain="#if QT_VERSION&gt;=QT_VERSION_CHECK(6,8,0)" />
     <function name="createContentsForCurrentFilter">
       <variant return-type="void" access="public">
         <parameters />
       </variant>
     </function>
+    <preproc plain="#endif" />
     <function name="createContents">
       <variant return-type="void" access="public">
         <parameters>

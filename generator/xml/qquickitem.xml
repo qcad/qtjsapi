@@ -519,6 +519,7 @@
         <parameters />
       </variant>
     </function>
+    <preproc plain="#if QT_VERSION&gt;=QT_VERSION_CHECK(6,7,0)" />
     <function name="focusPolicy">
       <variant return-type="Qt::FocusPolicy" const="true" access="public">
         <parameters />
@@ -531,6 +532,7 @@
         </parameters>
       </variant>
     </function>
+    <preproc plain="#endif" />
     <function name="isAncestorOf">
       <variant return-type="bool" const="true" access="public">
         <parameters>

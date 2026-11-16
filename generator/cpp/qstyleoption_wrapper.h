@@ -2837,7 +2837,10 @@ SO_ComplexCustomBase = QStyleOptionTab::SO_ComplexCustomBase,
 Middle = QStyleOptionTab::Middle,
 End = QStyleOptionTab::End,
 OnlyOneTab = QStyleOptionTab::OnlyOneTab,
+
+#if QT_VERSION >= QT_VERSION_CHECK(6, 6, 0)
 Moving = QStyleOptionTab::Moving,
+#endif
 
   };
   Q_ENUM(TabPosition)

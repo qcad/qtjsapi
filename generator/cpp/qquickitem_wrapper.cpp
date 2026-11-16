@@ -13,6 +13,10 @@
     
     // static functions implementation in singleton wrapper:
     
+#if QT_VERSION>=QT_VERSION_CHECK(6,7,0)
+
+#endif
+
 #if QT_CONFIG(cursor)
 
 #endif
@@ -461,6 +465,10 @@ QQuickItem_Wrapper::QQuickItem_Wrapper
                 
               }
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,7,0)
+
+#endif
+
 #if QT_CONFIG(cursor)
 
 #endif
@@ -5316,6 +5324,8 @@ bool a1_cpp;
                 
               }
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,7,0)
+
     // Class: QQuickItem
     // Function: focusPolicy
     // Source: 
@@ -5437,6 +5447,8 @@ Qt::FocusPolicy a1_cpp;
                 
               }
             
+#endif
+
     // Class: QQuickItem
     // Function: isAncestorOf
     // Source: 

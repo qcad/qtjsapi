@@ -171,6 +171,10 @@ UnknownNetworkLayerProtocol = QHostAddress::UnknownNetworkLayerProtocol,
               
               ;
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,6,0)
+
+#endif
+
 
     // non-static functions:
     
@@ -578,6 +582,8 @@ UnknownNetworkLayerProtocol = QHostAddress::UnknownNetworkLayerProtocol,
               
               ;
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,6,0)
+
     // Class: QHostAddress
     // Function: isPrivateUse
     // Source: 
@@ -599,6 +605,8 @@ UnknownNetworkLayerProtocol = QHostAddress::UnknownNetworkLayerProtocol,
               
               ;
             
+#endif
+
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             

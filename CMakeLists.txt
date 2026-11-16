@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 
-if(APPLE)
-    set(CMAKE_OSX_DEPLOYMENT_TARGET "12.0" CACHE STRING "Minimum macOS version" FORCE)
+# Minimum macOS version, unless passed on the command line
+# (e.g. -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 for Qt 6.5):
+if(APPLE AND NOT CMAKE_OSX_DEPLOYMENT_TARGET)
+    set(CMAKE_OSX_DEPLOYMENT_TARGET "12.0" CACHE STRING "Minimum macOS version")
 endif()
 
 project(qtjsapi VERSION 1.0 LANGUAGES CXX)

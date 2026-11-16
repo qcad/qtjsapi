@@ -9,11 +9,13 @@
       <super name="QAbstractListModel" />
       <super name="QStringListModel" />
     </super_list>
+    <preproc plain="#if QT_VERSION&gt;=QT_VERSION_CHECK(6,8,0)" />
     <function name="createIndexForCurrentFilter">
       <variant return-type="void" access="public">
         <parameters />
       </variant>
     </function>
+    <preproc plain="#endif" />
     <function name="createIndex">
       <variant return-type="void" access="public">
         <parameters>

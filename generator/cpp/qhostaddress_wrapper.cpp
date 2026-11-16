@@ -19,6 +19,10 @@
 
 #endif
 
+#if QT_VERSION>=QT_VERSION_CHECK(6,6,0)
+
+#endif
+
     void QHostAddress_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QHostAddress_Wrapper>("org.qcad", 1, 0, "QHostAddress_Wrapper");
@@ -415,6 +419,10 @@ QHostAddress::SpecialAddress a1_cpp;
                 
               }
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,6,0)
+
+#endif
+
 
     // non-static functions:
     
@@ -1617,6 +1625,8 @@ int a2_cpp;
                 
               }
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,6,0)
+
     // Class: QHostAddress
     // Function: isPrivateUse
     // Source: 
@@ -1674,6 +1684,8 @@ int a2_cpp;
                 
               }
             
+#endif
+
 
   // member functions for static properties, forward to static function
   

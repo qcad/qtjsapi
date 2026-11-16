@@ -194,6 +194,10 @@ BottomRight = QQuickItem::BottomRight,
               
               ;
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,7,0)
+
+#endif
+
 #if QT_CONFIG(cursor)
 
 #endif
@@ -1913,6 +1917,8 @@ BottomRight = QQuickItem::BottomRight,
               
               ;
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,7,0)
+
     // Class: QQuickItem
     // Function: focusPolicy
     // Source: 
@@ -1957,6 +1963,8 @@ BottomRight = QQuickItem::BottomRight,
               
               ;
             
+#endif
+
     // Class: QQuickItem
     // Function: isAncestorOf
     // Source: 

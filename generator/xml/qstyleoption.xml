@@ -341,7 +341,7 @@
       <key>Middle</key>
       <key>End</key>
       <key>OnlyOneTab</key>
-      <key>Moving</key>
+      <key preproc="if QT_VERSION >= QT_VERSION_CHECK(6, 6, 0)">Moving</key>
     </enum>
     <enum name="SelectedPosition">
       <key>NotAdjacent</key>

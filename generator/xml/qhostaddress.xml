@@ -299,11 +299,13 @@
         <parameters />
       </variant>
     </function>
+    <preproc plain="#if QT_VERSION&gt;=QT_VERSION_CHECK(6,6,0)" />
     <function name="isPrivateUse">
       <variant return-type="bool" const="true" access="public">
         <parameters />
       </variant>
     </function>
+    <preproc plain="#endif" />
     <!--
     <function name="parseSubnet" static="true">
       <variant return-type="std::pair&lt;QHostAddress,int&gt;" static="true" access="public">

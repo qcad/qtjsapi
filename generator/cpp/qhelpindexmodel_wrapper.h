@@ -123,6 +123,10 @@ HorizontalSortHint = QHelpIndexModel::HorizontalSortHint,
 
   // constructors:
   
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
+#endif
+
 
     // non-static functions:
     
@@ -1547,6 +1551,8 @@ HorizontalSortHint = QHelpIndexModel::HorizontalSortHint,
               
               ;
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
     // Class: QHelpIndexModel
     // Function: createIndexForCurrentFilter
     // Source: 
@@ -1566,6 +1572,8 @@ HorizontalSortHint = QHelpIndexModel::HorizontalSortHint,
               
               ;
             
+#endif
+
     // Class: QHelpIndexModel
     // Function: createIndex
     // Source: 

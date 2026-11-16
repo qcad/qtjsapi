@@ -123,6 +123,10 @@ HorizontalSortHint = QHelpContentModel::HorizontalSortHint,
 
   // constructors:
   
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
+#endif
+
 
     // non-static functions:
     
@@ -1420,6 +1424,8 @@ HorizontalSortHint = QHelpContentModel::HorizontalSortHint,
               
               ;
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
     // Class: QHelpContentModel
     // Function: createContentsForCurrentFilter
     // Source: 
@@ -1439,6 +1445,8 @@ HorizontalSortHint = QHelpContentModel::HorizontalSortHint,
               
               ;
             
+#endif
+
     // Class: QHelpContentModel
     // Function: createContents
     // Source: 

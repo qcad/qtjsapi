@@ -14,6 +14,10 @@
     
     // static functions implementation in singleton wrapper:
     
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
+#endif
+
     void QHelpContentModel_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<QHelpContentModel_Wrapper>("org.qcad", 1, 0, "QHelpContentModel_Wrapper");
@@ -189,6 +193,10 @@
 
   // constructors:
   
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
+#endif
+
 
     // non-static functions:
     
@@ -4147,6 +4155,8 @@ QModelIndex a1_cpp;
                 
               }
             
+#if QT_VERSION>=QT_VERSION_CHECK(6,8,0)
+
     // Class: QHelpContentModel
     // Function: createContentsForCurrentFilter
     // Source: 
@@ -4194,6 +4204,8 @@ QModelIndex a1_cpp;
                 
               }
             
+#endif
+
     // Class: QHelpContentModel
     // Function: createContents
     // Source: 
