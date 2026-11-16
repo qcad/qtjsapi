@@ -192,7 +192,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isWidgetType = function(...args) 
           
@@ -202,7 +202,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isWindowType = function(...args) 
           
@@ -212,7 +212,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.signalsBlocked = function(...args) 
           
@@ -222,7 +222,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.blockSignals = function(...args) 
           
@@ -232,7 +232,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.findChild = function(...args) 
           
@@ -242,7 +242,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.children = function(...args) 
           
@@ -252,7 +252,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.installEventFilter = function(...args) 
           
@@ -262,7 +262,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.removeEventFilter = function(...args) 
           
@@ -272,7 +272,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.dumpObjectTree = function(...args) 
           
@@ -282,7 +282,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.dumpObjectInfo = function(...args) 
           
@@ -292,7 +292,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setProperty = function(...args) 
           
@@ -302,7 +302,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.property = function(...args) 
           
@@ -312,7 +312,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.dynamicPropertyNames = function(...args) 
           
@@ -322,7 +322,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.parent = function(...args) 
           
@@ -332,7 +332,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.deleteLater = function(...args) 
           
@@ -342,7 +342,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.devType = function(...args) 
           
@@ -352,7 +352,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.createWinId = function(...args) 
           
@@ -362,7 +362,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isWindow = function(...args) 
           
@@ -372,7 +372,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isModal = function(...args) 
           
@@ -382,7 +382,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowModality = function(...args) 
           
@@ -392,7 +392,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isEnabled = function(...args) 
           
@@ -402,7 +402,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isEnabledTo = function(...args) 
           
@@ -412,7 +412,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setEnabled = function(...args) 
           
@@ -422,7 +422,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setDisabled = function(...args) 
           
@@ -432,7 +432,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowModified = function(...args) 
           
@@ -442,7 +442,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMinimumSize = function(...args) 
           
@@ -452,7 +452,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMaximumSize = function(...args) 
           
@@ -462,7 +462,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMinimumWidth = function(...args) 
           
@@ -472,7 +472,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMinimumHeight = function(...args) 
           
@@ -482,7 +482,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMaximumWidth = function(...args) 
           
@@ -492,7 +492,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMaximumHeight = function(...args) 
           
@@ -502,7 +502,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setSizeIncrement = function(...args) 
           
@@ -512,7 +512,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setBaseSize = function(...args) 
           
@@ -522,7 +522,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFixedSize = function(...args) 
           
@@ -532,7 +532,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFixedWidth = function(...args) 
           
@@ -542,7 +542,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFixedHeight = function(...args) 
           
@@ -552,7 +552,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.mapToGlobal = function(...args) 
           
@@ -562,7 +562,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.mapFromGlobal = function(...args) 
           
@@ -572,7 +572,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.mapToParent = function(...args) 
           
@@ -582,7 +582,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.mapFromParent = function(...args) 
           
@@ -592,7 +592,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.mapTo = function(...args) 
           
@@ -602,7 +602,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.mapFrom = function(...args) 
           
@@ -612,7 +612,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.window = function(...args) 
           
@@ -622,7 +622,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.nativeParentWidget = function(...args) 
           
@@ -632,7 +632,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.topLevelWidget = function(...args) 
           
@@ -642,7 +642,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setPalette = function(...args) 
           
@@ -652,7 +652,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setBackgroundRole = function(...args) 
           
@@ -662,7 +662,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.backgroundRole = function(...args) 
           
@@ -672,7 +672,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setForegroundRole = function(...args) 
           
@@ -682,7 +682,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.foregroundRole = function(...args) 
           
@@ -692,7 +692,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFont = function(...args) 
           
@@ -702,7 +702,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.fontInfo = function(...args) 
           
@@ -712,7 +712,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setCursor = function(...args) 
           
@@ -722,7 +722,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.unsetCursor = function(...args) 
           
@@ -732,7 +732,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMouseTracking = function(...args) 
           
@@ -742,7 +742,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.hasMouseTracking = function(...args) 
           
@@ -752,7 +752,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.underMouse = function(...args) 
           
@@ -762,7 +762,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setTabletTracking = function(...args) 
           
@@ -772,7 +772,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.hasTabletTracking = function(...args) 
           
@@ -782,7 +782,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMask = function(...args) 
           
@@ -792,7 +792,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.mask = function(...args) 
           
@@ -802,7 +802,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.clearMask = function(...args) 
           
@@ -812,7 +812,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.grab = function(...args) 
           
@@ -822,7 +822,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.grabGesture = function(...args) 
           
@@ -832,7 +832,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.ungrabGesture = function(...args) 
           
@@ -842,7 +842,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowTitle = function(...args) 
           
@@ -852,7 +852,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setStyleSheet = function(...args) 
           
@@ -862,7 +862,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowIcon = function(...args) 
           
@@ -872,7 +872,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowIconText = function(...args) 
           
@@ -882,7 +882,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowRole = function(...args) 
           
@@ -892,7 +892,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.windowRole = function(...args) 
           
@@ -902,7 +902,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowFilePath = function(...args) 
           
@@ -912,7 +912,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowOpacity = function(...args) 
           
@@ -922,7 +922,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isWindowModified = function(...args) 
           
@@ -932,7 +932,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setToolTip = function(...args) 
           
@@ -942,7 +942,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setToolTipDuration = function(...args) 
           
@@ -952,7 +952,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setStatusTip = function(...args) 
           
@@ -962,7 +962,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWhatsThis = function(...args) 
           
@@ -972,7 +972,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setAccessibleName = function(...args) 
           
@@ -982,7 +982,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setAccessibleDescription = function(...args) 
           
@@ -992,7 +992,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setLayoutDirection = function(...args) 
           
@@ -1002,7 +1002,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1012,7 +1012,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setLocale = function(...args) 
           
@@ -1022,7 +1022,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.unsetLocale = function(...args) 
           
@@ -1032,7 +1032,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isRightToLeft = function(...args) 
           
@@ -1042,7 +1042,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isLeftToRight = function(...args) 
           
@@ -1052,7 +1052,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.activateWindow = function(...args) 
           
@@ -1062,7 +1062,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.clearFocus = function(...args) 
           
@@ -1072,7 +1072,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFocus = function(...args) 
           
@@ -1082,7 +1082,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFocusPolicy = function(...args) 
           
@@ -1092,7 +1092,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.hasFocus = function(...args) 
           
@@ -1102,7 +1102,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFocusProxy = function(...args) 
           
@@ -1112,7 +1112,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.focusProxy = function(...args) 
           
@@ -1122,7 +1122,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1132,7 +1132,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.grabMouse = function(...args) 
           
@@ -1142,7 +1142,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.releaseMouse = function(...args) 
           
@@ -1152,7 +1152,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.grabKeyboard = function(...args) 
           
@@ -1162,7 +1162,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.releaseKeyboard = function(...args) 
           
@@ -1172,7 +1172,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.grabShortcut = function(...args) 
           
@@ -1182,7 +1182,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.releaseShortcut = function(...args) 
           
@@ -1192,7 +1192,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setShortcutEnabled = function(...args) 
           
@@ -1202,7 +1202,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1212,7 +1212,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1222,7 +1222,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.update = function(...args) 
           
@@ -1232,7 +1232,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.repaint = function(...args) 
           
@@ -1242,7 +1242,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setVisible = function(...args) 
           
@@ -1252,7 +1252,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setHidden = function(...args) 
           
@@ -1262,7 +1262,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.show = function(...args) 
           
@@ -1272,7 +1272,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.hide = function(...args) 
           
@@ -1282,7 +1282,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.showMinimized = function(...args) 
           
@@ -1292,7 +1292,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.showMaximized = function(...args) 
           
@@ -1302,7 +1302,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.showFullScreen = function(...args) 
           
@@ -1312,7 +1312,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.showNormal = function(...args) 
           
@@ -1322,7 +1322,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.close = function(...args) 
           
@@ -1332,7 +1332,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.raise = function(...args) 
           
@@ -1342,7 +1342,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.lower = function(...args) 
           
@@ -1352,7 +1352,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.stackUnder = function(...args) 
           
@@ -1362,7 +1362,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.move = function(...args) 
           
@@ -1372,7 +1372,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.resize = function(...args) 
           
@@ -1382,7 +1382,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setGeometry = function(...args) 
           
@@ -1392,7 +1392,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.saveGeometry = function(...args) 
           
@@ -1402,7 +1402,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.restoreGeometry = function(...args) 
           
@@ -1412,7 +1412,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.adjustSize = function(...args) 
           
@@ -1422,7 +1422,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isVisible = function(...args) 
           
@@ -1432,7 +1432,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isVisibleTo = function(...args) 
           
@@ -1442,7 +1442,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isHidden = function(...args) 
           
@@ -1452,7 +1452,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isMinimized = function(...args) 
           
@@ -1462,7 +1462,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isMaximized = function(...args) 
           
@@ -1472,7 +1472,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isFullScreen = function(...args) 
           
@@ -1482,7 +1482,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.windowState = function(...args) 
           
@@ -1492,7 +1492,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowState = function(...args) 
           
@@ -1502,7 +1502,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.overrideWindowState = function(...args) 
           
@@ -1512,7 +1512,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setSizePolicy = function(...args) 
           
@@ -1522,7 +1522,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.heightForWidth = function(...args) 
           
@@ -1532,7 +1532,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.hasHeightForWidth = function(...args) 
           
@@ -1542,7 +1542,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.visibleRegion = function(...args) 
           
@@ -1552,7 +1552,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setContentsMargins = function(...args) 
           
@@ -1562,7 +1562,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.contentsMargins = function(...args) 
           
@@ -1572,7 +1572,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.contentsRect = function(...args) 
           
@@ -1582,7 +1582,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.layout = function(...args) 
           
@@ -1592,7 +1592,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setLayout = function(...args) 
           
@@ -1602,7 +1602,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.updateGeometry = function(...args) 
           
@@ -1612,7 +1612,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setParent = function(...args) 
           
@@ -1622,7 +1622,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.scroll = function(...args) 
           
@@ -1632,7 +1632,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.focusWidget = function(...args) 
           
@@ -1642,7 +1642,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.nextInFocusChain = function(...args) 
           
@@ -1652,7 +1652,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.previousInFocusChain = function(...args) 
           
@@ -1662,7 +1662,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setAcceptDrops = function(...args) 
           
@@ -1672,7 +1672,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.addAction = function(...args) 
           
@@ -1682,7 +1682,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.addActions = function(...args) 
           
@@ -1692,7 +1692,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.insertActions = function(...args) 
           
@@ -1702,7 +1702,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.insertAction = function(...args) 
           
@@ -1712,7 +1712,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.removeAction = function(...args) 
           
@@ -1722,7 +1722,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.actions = function(...args) 
           
@@ -1732,7 +1732,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.parentWidget = function(...args) 
           
@@ -1742,7 +1742,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowFlags = function(...args) 
           
@@ -1752,7 +1752,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.windowFlags = function(...args) 
           
@@ -1762,7 +1762,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setWindowFlag = function(...args) 
           
@@ -1772,7 +1772,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.overrideWindowFlags = function(...args) 
           
@@ -1782,7 +1782,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.windowType = function(...args) 
           
@@ -1792,7 +1792,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.childAt = function(...args) 
           
@@ -1802,7 +1802,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setAttribute = function(...args) 
           
@@ -1812,7 +1812,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.testAttribute = function(...args) 
           
@@ -1822,7 +1822,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.ensurePolished = function(...args) 
           
@@ -1832,7 +1832,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isAncestorOf = function(...args) 
           
@@ -1842,7 +1842,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setAutoFillBackground = function(...args) 
           
@@ -1852,7 +1852,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1862,7 +1862,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.wheelEvent = function(...args) 
           
@@ -1872,7 +1872,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.keyPressEvent = function(...args) 
           
@@ -1882,7 +1882,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.keyReleaseEvent = function(...args) 
           
@@ -1892,7 +1892,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.focusInEvent = function(...args) 
           
@@ -1902,7 +1902,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.focusOutEvent = function(...args) 
           
@@ -1912,7 +1912,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.enterEvent = function(...args) 
           
@@ -1922,7 +1922,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.leaveEvent = function(...args) 
           
@@ -1932,7 +1932,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.moveEvent = function(...args) 
           
@@ -1942,7 +1942,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.closeEvent = function(...args) 
           
@@ -1952,7 +1952,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.tabletEvent = function(...args) 
           
@@ -1962,7 +1962,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.dragEnterEvent = function(...args) 
           
@@ -1972,7 +1972,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.dragMoveEvent = function(...args) 
           
@@ -1982,7 +1982,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.dragLeaveEvent = function(...args) 
           
@@ -1992,7 +1992,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.dropEvent = function(...args) 
           
@@ -2002,7 +2002,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.showEvent = function(...args) 
           
@@ -2012,7 +2012,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.hideEvent = function(...args) 
           
@@ -2022,7 +2022,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.nativeEvent = function(...args) 
           
@@ -2032,7 +2032,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.metric = function(...args) 
           
@@ -2042,7 +2042,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.initPainter = function(...args) 
           
@@ -2052,7 +2052,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.redirected = function(...args) 
           
@@ -2062,7 +2062,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.sharedPainter = function(...args) 
           
@@ -2072,7 +2072,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.inputMethodEvent = function(...args) 
           
@@ -2082,7 +2082,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.inputMethodQuery = function(...args) 
           
@@ -2092,7 +2092,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setInputMethodHints = function(...args) 
           
@@ -2102,7 +2102,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.updateMicroFocus = function(...args) 
           
@@ -2112,7 +2112,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.create = function(...args) 
           
@@ -2122,7 +2122,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.destroy = function(...args) 
           
@@ -2132,7 +2132,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.focusNextPrevChild = function(...args) 
           
@@ -2142,7 +2142,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.focusNextChild = function(...args) 
           
@@ -2152,7 +2152,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.focusPreviousChild = function(...args) 
           
@@ -2162,7 +2162,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setBackingStore = function(...args) 
           
@@ -2172,7 +2172,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.testAttribute_helper = function(...args) 
           
@@ -2182,7 +2182,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.takeLayout = function(...args) 
           
@@ -2192,7 +2192,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2202,7 +2202,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.qt_qwidget_data = function(...args) 
           
@@ -2212,7 +2212,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.qt_widget_private = function(...args) 
           
@@ -2222,7 +2222,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.frameStyle = function(...args) 
           
@@ -2232,7 +2232,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFrameStyle = function(...args) 
           
@@ -2242,7 +2242,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFrameShape = function(...args) 
           
@@ -2252,7 +2252,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFrameShadow = function(...args) 
           
@@ -2262,7 +2262,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setLineWidth = function(...args) 
           
@@ -2272,7 +2272,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setMidLineWidth = function(...args) 
           
@@ -2282,7 +2282,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setFrameRect = function(...args) 
           
@@ -2292,7 +2292,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.drawFrame = function(...args) 
           
@@ -2302,7 +2302,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.initStyleOption = function(...args) 
           
@@ -2312,7 +2312,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.addWidget = function(...args) 
           
@@ -2322,7 +2322,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.addWidget(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.insertWidget = function(...args) 
           
@@ -2332,7 +2332,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.insertWidget(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.replaceWidget = function(...args) 
           
@@ -2342,7 +2342,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.replaceWidget(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setOrientation = function(...args) 
           
@@ -2352,7 +2352,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.orientation = function(...args) 
           
@@ -2362,7 +2362,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.orientation(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setChildrenCollapsible = function(...args) 
           
@@ -2372,7 +2372,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setChildrenCollapsible(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setCollapsible = function(...args) 
           
@@ -2382,7 +2382,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setCollapsible(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.isCollapsible = function(...args) 
           
@@ -2392,7 +2392,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.isCollapsible(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setOpaqueResize = function(...args) 
           
@@ -2402,7 +2402,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setOpaqueResize(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.refresh = function(...args) 
           
@@ -2412,7 +2412,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.refresh(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.sizes = function(...args) 
           
@@ -2422,7 +2422,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.sizes(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setSizes = function(...args) 
           
@@ -2432,7 +2432,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizes(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.saveState = function(...args) 
           
@@ -2442,7 +2442,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.saveState(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.restoreState = function(...args) 
           
@@ -2452,7 +2452,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.restoreState(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setHandleWidth = function(...args) 
           
@@ -2462,7 +2462,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setHandleWidth(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.indexOf = function(...args) 
           
@@ -2472,7 +2472,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.indexOf(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.widget = function(...args) 
           
@@ -2482,7 +2482,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.count = function(...args) 
           
@@ -2492,7 +2492,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.handle = function(...args) 
           
@@ -2502,7 +2502,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.handle(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setStretchFactor = function(...args) 
           
@@ -2512,7 +2512,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setStretchFactor(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.createHandle = function(...args) 
           
@@ -2522,7 +2522,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.createHandle(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.childEvent = function(...args) 
           
@@ -2532,7 +2532,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.childEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.event = function(...args) 
           
@@ -2542,7 +2542,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.resizeEvent = function(...args) 
           
@@ -2552,7 +2552,8 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QSplitter.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QSplitter.prototype.changeEvent = function(...args) 
           
@@ -2562,7 +2563,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.moveSplitter = function(...args) 
           
@@ -2572,7 +2573,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.moveSplitter(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.setRubberBand = function(...args) 
           
@@ -2582,7 +2583,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.setRubberBand(...args);
             
         };
-    
+        
         // function 
         QSplitter.prototype.closestLegalPosition = function(...args) 
           
@@ -2592,7 +2593,7 @@ QSplitter.Shape_Mask = QSplitter_Wrapper.Shape_Mask;
               return this.__PROXY__.closestLegalPosition(...args);
             
         };
-    
+        
 
       // static functions:
       

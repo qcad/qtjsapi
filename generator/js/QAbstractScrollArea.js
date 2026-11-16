@@ -170,7 +170,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isWidgetType = function(...args) 
           
@@ -180,7 +180,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isWindowType = function(...args) 
           
@@ -190,7 +190,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.signalsBlocked = function(...args) 
           
@@ -200,7 +200,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.blockSignals = function(...args) 
           
@@ -210,7 +210,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.findChild = function(...args) 
           
@@ -220,7 +220,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.children = function(...args) 
           
@@ -230,7 +230,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.installEventFilter = function(...args) 
           
@@ -240,7 +240,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.removeEventFilter = function(...args) 
           
@@ -250,7 +250,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.dumpObjectTree = function(...args) 
           
@@ -260,7 +260,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.dumpObjectInfo = function(...args) 
           
@@ -270,7 +270,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setProperty = function(...args) 
           
@@ -280,7 +280,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.property = function(...args) 
           
@@ -290,7 +290,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.dynamicPropertyNames = function(...args) 
           
@@ -300,7 +300,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.parent = function(...args) 
           
@@ -310,7 +310,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.deleteLater = function(...args) 
           
@@ -320,7 +320,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.devType = function(...args) 
           
@@ -330,7 +330,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.createWinId = function(...args) 
           
@@ -340,7 +340,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isWindow = function(...args) 
           
@@ -350,7 +350,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isModal = function(...args) 
           
@@ -360,7 +360,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowModality = function(...args) 
           
@@ -370,7 +370,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isEnabled = function(...args) 
           
@@ -380,7 +380,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isEnabledTo = function(...args) 
           
@@ -390,7 +390,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setEnabled = function(...args) 
           
@@ -400,7 +400,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setDisabled = function(...args) 
           
@@ -410,7 +410,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowModified = function(...args) 
           
@@ -420,7 +420,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMinimumSize = function(...args) 
           
@@ -430,7 +430,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMaximumSize = function(...args) 
           
@@ -440,7 +440,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMinimumWidth = function(...args) 
           
@@ -450,7 +450,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMinimumHeight = function(...args) 
           
@@ -460,7 +460,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMaximumWidth = function(...args) 
           
@@ -470,7 +470,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMaximumHeight = function(...args) 
           
@@ -480,7 +480,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setSizeIncrement = function(...args) 
           
@@ -490,7 +490,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setBaseSize = function(...args) 
           
@@ -500,7 +500,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFixedSize = function(...args) 
           
@@ -510,7 +510,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFixedWidth = function(...args) 
           
@@ -520,7 +520,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFixedHeight = function(...args) 
           
@@ -530,7 +530,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.mapToGlobal = function(...args) 
           
@@ -540,7 +540,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.mapFromGlobal = function(...args) 
           
@@ -550,7 +550,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.mapToParent = function(...args) 
           
@@ -560,7 +560,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.mapFromParent = function(...args) 
           
@@ -570,7 +570,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.mapTo = function(...args) 
           
@@ -580,7 +580,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.mapFrom = function(...args) 
           
@@ -590,7 +590,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.window = function(...args) 
           
@@ -600,7 +600,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.nativeParentWidget = function(...args) 
           
@@ -610,7 +610,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.topLevelWidget = function(...args) 
           
@@ -620,7 +620,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setPalette = function(...args) 
           
@@ -630,7 +630,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setBackgroundRole = function(...args) 
           
@@ -640,7 +640,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.backgroundRole = function(...args) 
           
@@ -650,7 +650,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setForegroundRole = function(...args) 
           
@@ -660,7 +660,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.foregroundRole = function(...args) 
           
@@ -670,7 +670,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFont = function(...args) 
           
@@ -680,7 +680,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.fontInfo = function(...args) 
           
@@ -690,7 +690,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setCursor = function(...args) 
           
@@ -700,7 +700,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.unsetCursor = function(...args) 
           
@@ -710,7 +710,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMouseTracking = function(...args) 
           
@@ -720,7 +720,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.hasMouseTracking = function(...args) 
           
@@ -730,7 +730,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.underMouse = function(...args) 
           
@@ -740,7 +740,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setTabletTracking = function(...args) 
           
@@ -750,7 +750,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.hasTabletTracking = function(...args) 
           
@@ -760,7 +760,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMask = function(...args) 
           
@@ -770,7 +770,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.mask = function(...args) 
           
@@ -780,7 +780,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.clearMask = function(...args) 
           
@@ -790,7 +790,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.grab = function(...args) 
           
@@ -800,7 +800,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.grabGesture = function(...args) 
           
@@ -810,7 +810,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.ungrabGesture = function(...args) 
           
@@ -820,7 +820,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowTitle = function(...args) 
           
@@ -830,7 +830,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setStyleSheet = function(...args) 
           
@@ -840,7 +840,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowIcon = function(...args) 
           
@@ -850,7 +850,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowIconText = function(...args) 
           
@@ -860,7 +860,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowRole = function(...args) 
           
@@ -870,7 +870,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.windowRole = function(...args) 
           
@@ -880,7 +880,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowFilePath = function(...args) 
           
@@ -890,7 +890,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowOpacity = function(...args) 
           
@@ -900,7 +900,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isWindowModified = function(...args) 
           
@@ -910,7 +910,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setToolTip = function(...args) 
           
@@ -920,7 +920,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setToolTipDuration = function(...args) 
           
@@ -930,7 +930,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setStatusTip = function(...args) 
           
@@ -940,7 +940,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWhatsThis = function(...args) 
           
@@ -950,7 +950,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setAccessibleName = function(...args) 
           
@@ -960,7 +960,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setAccessibleDescription = function(...args) 
           
@@ -970,7 +970,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setLayoutDirection = function(...args) 
           
@@ -980,7 +980,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.unsetLayoutDirection = function(...args) 
           
@@ -990,7 +990,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setLocale = function(...args) 
           
@@ -1000,7 +1000,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.unsetLocale = function(...args) 
           
@@ -1010,7 +1010,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isRightToLeft = function(...args) 
           
@@ -1020,7 +1020,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isLeftToRight = function(...args) 
           
@@ -1030,7 +1030,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.activateWindow = function(...args) 
           
@@ -1040,7 +1040,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.clearFocus = function(...args) 
           
@@ -1050,7 +1050,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFocus = function(...args) 
           
@@ -1060,7 +1060,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFocusPolicy = function(...args) 
           
@@ -1070,7 +1070,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.hasFocus = function(...args) 
           
@@ -1080,7 +1080,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFocusProxy = function(...args) 
           
@@ -1090,7 +1090,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.focusProxy = function(...args) 
           
@@ -1100,7 +1100,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1110,7 +1110,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.grabMouse = function(...args) 
           
@@ -1120,7 +1120,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.releaseMouse = function(...args) 
           
@@ -1130,7 +1130,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.grabKeyboard = function(...args) 
           
@@ -1140,7 +1140,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.releaseKeyboard = function(...args) 
           
@@ -1150,7 +1150,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.grabShortcut = function(...args) 
           
@@ -1160,7 +1160,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.releaseShortcut = function(...args) 
           
@@ -1170,7 +1170,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setShortcutEnabled = function(...args) 
           
@@ -1180,7 +1180,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1190,7 +1190,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1200,7 +1200,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.update = function(...args) 
           
@@ -1210,7 +1210,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.repaint = function(...args) 
           
@@ -1220,7 +1220,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setVisible = function(...args) 
           
@@ -1230,7 +1230,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setHidden = function(...args) 
           
@@ -1240,7 +1240,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.show = function(...args) 
           
@@ -1250,7 +1250,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.hide = function(...args) 
           
@@ -1260,7 +1260,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.showMinimized = function(...args) 
           
@@ -1270,7 +1270,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.showMaximized = function(...args) 
           
@@ -1280,7 +1280,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.showFullScreen = function(...args) 
           
@@ -1290,7 +1290,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.showNormal = function(...args) 
           
@@ -1300,7 +1300,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.close = function(...args) 
           
@@ -1310,7 +1310,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.raise = function(...args) 
           
@@ -1320,7 +1320,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.lower = function(...args) 
           
@@ -1330,7 +1330,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.stackUnder = function(...args) 
           
@@ -1340,7 +1340,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.move = function(...args) 
           
@@ -1350,7 +1350,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.resize = function(...args) 
           
@@ -1360,7 +1360,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setGeometry = function(...args) 
           
@@ -1370,7 +1370,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.saveGeometry = function(...args) 
           
@@ -1380,7 +1380,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.restoreGeometry = function(...args) 
           
@@ -1390,7 +1390,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.adjustSize = function(...args) 
           
@@ -1400,7 +1400,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isVisible = function(...args) 
           
@@ -1410,7 +1410,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isVisibleTo = function(...args) 
           
@@ -1420,7 +1420,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isHidden = function(...args) 
           
@@ -1430,7 +1430,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isMinimized = function(...args) 
           
@@ -1440,7 +1440,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isMaximized = function(...args) 
           
@@ -1450,7 +1450,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isFullScreen = function(...args) 
           
@@ -1460,7 +1460,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.windowState = function(...args) 
           
@@ -1470,7 +1470,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowState = function(...args) 
           
@@ -1480,7 +1480,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.overrideWindowState = function(...args) 
           
@@ -1490,7 +1490,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setSizePolicy = function(...args) 
           
@@ -1500,7 +1500,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.heightForWidth = function(...args) 
           
@@ -1510,7 +1510,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.hasHeightForWidth = function(...args) 
           
@@ -1520,7 +1520,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.visibleRegion = function(...args) 
           
@@ -1530,7 +1530,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setContentsMargins = function(...args) 
           
@@ -1540,7 +1540,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.contentsMargins = function(...args) 
           
@@ -1550,7 +1550,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.contentsRect = function(...args) 
           
@@ -1560,7 +1560,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.layout = function(...args) 
           
@@ -1570,7 +1570,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setLayout = function(...args) 
           
@@ -1580,7 +1580,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.updateGeometry = function(...args) 
           
@@ -1590,7 +1590,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setParent = function(...args) 
           
@@ -1600,7 +1600,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.scroll = function(...args) 
           
@@ -1610,7 +1610,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.focusWidget = function(...args) 
           
@@ -1620,7 +1620,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.nextInFocusChain = function(...args) 
           
@@ -1630,7 +1630,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.previousInFocusChain = function(...args) 
           
@@ -1640,7 +1640,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setAcceptDrops = function(...args) 
           
@@ -1650,7 +1650,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.addAction = function(...args) 
           
@@ -1660,7 +1660,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.addActions = function(...args) 
           
@@ -1670,7 +1670,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.insertActions = function(...args) 
           
@@ -1680,7 +1680,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.insertAction = function(...args) 
           
@@ -1690,7 +1690,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.removeAction = function(...args) 
           
@@ -1700,7 +1700,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.actions = function(...args) 
           
@@ -1710,7 +1710,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.parentWidget = function(...args) 
           
@@ -1720,7 +1720,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowFlags = function(...args) 
           
@@ -1730,7 +1730,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.windowFlags = function(...args) 
           
@@ -1740,7 +1740,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setWindowFlag = function(...args) 
           
@@ -1750,7 +1750,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.overrideWindowFlags = function(...args) 
           
@@ -1760,7 +1760,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.windowType = function(...args) 
           
@@ -1770,7 +1770,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.childAt = function(...args) 
           
@@ -1780,7 +1780,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setAttribute = function(...args) 
           
@@ -1790,7 +1790,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.testAttribute = function(...args) 
           
@@ -1800,7 +1800,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.ensurePolished = function(...args) 
           
@@ -1810,7 +1810,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.isAncestorOf = function(...args) 
           
@@ -1820,7 +1820,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setAutoFillBackground = function(...args) 
           
@@ -1830,7 +1830,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.keyReleaseEvent = function(...args) 
           
@@ -1840,7 +1840,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.focusInEvent = function(...args) 
           
@@ -1850,7 +1850,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.focusOutEvent = function(...args) 
           
@@ -1860,7 +1860,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.enterEvent = function(...args) 
           
@@ -1870,7 +1870,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.leaveEvent = function(...args) 
           
@@ -1880,7 +1880,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.moveEvent = function(...args) 
           
@@ -1890,7 +1890,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.closeEvent = function(...args) 
           
@@ -1900,7 +1900,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.tabletEvent = function(...args) 
           
@@ -1910,7 +1910,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       QAbstractScrollArea.prototype.actionEvent = function() 
         
@@ -1952,7 +1952,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.dragLeaveEvent = function(...args) 
           
@@ -1962,7 +1962,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.dropEvent = function(...args) 
           
@@ -1972,7 +1972,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.showEvent = function(...args) 
           
@@ -1982,7 +1982,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.hideEvent = function(...args) 
           
@@ -1992,7 +1992,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.nativeEvent = function(...args) 
           
@@ -2002,7 +2002,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.changeEvent = function(...args) 
           
@@ -2012,7 +2012,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.metric = function(...args) 
           
@@ -2022,7 +2022,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.initPainter = function(...args) 
           
@@ -2032,7 +2032,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.redirected = function(...args) 
           
@@ -2042,7 +2042,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.sharedPainter = function(...args) 
           
@@ -2052,7 +2052,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.inputMethodEvent = function(...args) 
           
@@ -2062,7 +2062,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.inputMethodQuery = function(...args) 
           
@@ -2072,7 +2072,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setInputMethodHints = function(...args) 
           
@@ -2082,7 +2082,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.updateMicroFocus = function(...args) 
           
@@ -2092,7 +2092,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.create = function(...args) 
           
@@ -2102,7 +2102,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.destroy = function(...args) 
           
@@ -2112,7 +2112,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.focusNextPrevChild = function(...args) 
           
@@ -2122,7 +2122,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.focusNextChild = function(...args) 
           
@@ -2132,7 +2132,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.focusPreviousChild = function(...args) 
           
@@ -2142,7 +2142,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setBackingStore = function(...args) 
           
@@ -2152,7 +2152,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.testAttribute_helper = function(...args) 
           
@@ -2162,7 +2162,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.takeLayout = function(...args) 
           
@@ -2172,7 +2172,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2182,7 +2182,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.qt_qwidget_data = function(...args) 
           
@@ -2192,7 +2192,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.qt_widget_private = function(...args) 
           
@@ -2202,7 +2202,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.frameStyle = function(...args) 
           
@@ -2212,7 +2212,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFrameStyle = function(...args) 
           
@@ -2222,7 +2222,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFrameShape = function(...args) 
           
@@ -2232,7 +2232,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFrameShadow = function(...args) 
           
@@ -2242,7 +2242,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setLineWidth = function(...args) 
           
@@ -2252,7 +2252,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setMidLineWidth = function(...args) 
           
@@ -2262,7 +2262,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setFrameRect = function(...args) 
           
@@ -2272,7 +2272,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.drawFrame = function(...args) 
           
@@ -2282,7 +2282,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.initStyleOption = function(...args) 
           
@@ -2292,7 +2292,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2302,7 +2302,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2312,7 +2312,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.verticalScrollBar = function(...args) 
           
@@ -2322,7 +2322,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2332,7 +2332,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2342,7 +2342,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2352,7 +2352,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.horizontalScrollBar = function(...args) 
           
@@ -2362,7 +2362,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2372,7 +2372,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.cornerWidget = function(...args) 
           
@@ -2382,7 +2382,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setCornerWidget = function(...args) 
           
@@ -2392,7 +2392,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.addScrollBarWidget = function(...args) 
           
@@ -2402,7 +2402,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.viewport = function(...args) 
           
@@ -2412,7 +2412,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setViewport = function(...args) 
           
@@ -2422,7 +2422,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.maximumViewportSize = function(...args) 
           
@@ -2432,7 +2432,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setupViewport = function(...args) 
           
@@ -2442,7 +2442,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2452,7 +2452,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2462,7 +2462,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.setViewportMargins = function(...args) 
           
@@ -2472,7 +2472,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.setViewportMarginsSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.setViewportMargins.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.viewportMargins = function(...args) 
           
@@ -2482,7 +2483,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.viewportMarginsSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.viewportMargins.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.eventFilter = function(...args) 
           
@@ -2492,7 +2494,7 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractScrollArea.prototype.event = function(...args) 
           
@@ -2502,7 +2504,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.eventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.event.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.viewportEvent = function(...args) 
           
@@ -2512,7 +2515,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.viewportEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.viewportEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.resizeEvent = function(...args) 
           
@@ -2522,7 +2526,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.paintEvent = function(...args) 
           
@@ -2532,7 +2537,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.mousePressEvent = function(...args) 
           
@@ -2542,7 +2548,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2552,7 +2559,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2562,7 +2570,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mouseDoubleClickEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.mouseDoubleClickEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.mouseMoveEvent = function(...args) 
           
@@ -2572,7 +2581,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.wheelEvent = function(...args) 
           
@@ -2582,7 +2592,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.wheelEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.wheelEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.dragEnterEvent = function(...args) 
           
@@ -2592,7 +2603,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.dragEnterEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.dragEnterEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.keyPressEvent = function(...args) 
           
@@ -2602,7 +2614,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.keyPressEventSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.keyPressEvent.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.scrollContentsBy = function(...args) 
           
@@ -2612,7 +2625,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.scrollContentsBySuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.scrollContentsBy.__SUPER__ = true;
+        
         // function 
         QAbstractScrollArea.prototype.viewportSizeHint = function(...args) 
           
@@ -2622,7 +2636,8 @@ QAbstractScrollArea.AdjustToContents = QAbstractScrollArea_Wrapper.AdjustToConte
               return this.__PROXY__.viewportSizeHintSuper(...args);
             
         };
-    
+        QAbstractScrollArea.prototype.viewportSizeHint.__SUPER__ = true;
+        
 
       // static functions:
       

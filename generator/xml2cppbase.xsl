@@ -587,7 +587,9 @@
 
       //QJSValue f = self.prototype().property("<xsl:value-of select="../@name" />");
       QJSValue f = self.property("<xsl:value-of select="../@name" />");
-      if (f.isCallable() /*&amp;&amp; !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() &amp;&amp; !f.property("__SUPER__").toBool() /*&amp;&amp; !recFlag*/) {
         <!--
         QJSValueList args;
         <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="toqjsvaluelist" />
@@ -720,7 +722,9 @@
 
       //QJSValue f = self.prototype().property("<xsl:value-of select="../@name" />");
       QJSValue f = self.property("<xsl:value-of select="../@name" />");
-      if (f.isCallable() /*&amp;&amp; !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() &amp;&amp; !f.property("__SUPER__").toBool() /*&amp;&amp; !recFlag*/) {
         QJSValueList args;
         <xsl:apply-templates select="qsrc:parameters/qsrc:parameter" mode="toqjsvaluelist" />
 

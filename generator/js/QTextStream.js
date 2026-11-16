@@ -227,7 +227,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setEncoding(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.encoding = function(...args) 
           
@@ -237,7 +237,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.encoding(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setAutoDetectUnicode = function(...args) 
           
@@ -247,7 +247,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setAutoDetectUnicode(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.autoDetectUnicode = function(...args) 
           
@@ -257,7 +257,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.autoDetectUnicode(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setGenerateByteOrderMark = function(...args) 
           
@@ -267,7 +267,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setGenerateByteOrderMark(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.generateByteOrderMark = function(...args) 
           
@@ -277,7 +277,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.generateByteOrderMark(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setLocale = function(...args) 
           
@@ -287,7 +287,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.locale = function(...args) 
           
@@ -297,7 +297,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.locale(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setDevice = function(...args) 
           
@@ -307,7 +307,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setDevice(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.device = function(...args) 
           
@@ -317,7 +317,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.device(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.status = function(...args) 
           
@@ -327,7 +327,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.status(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setStatus = function(...args) 
           
@@ -337,7 +337,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setStatus(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.resetStatus = function(...args) 
           
@@ -347,7 +347,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.resetStatus(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.atEnd = function(...args) 
           
@@ -357,7 +357,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.reset = function(...args) 
           
@@ -367,7 +367,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.flush = function(...args) 
           
@@ -377,7 +377,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.flush(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.seek = function(...args) 
           
@@ -387,7 +387,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.pos = function(...args) 
           
@@ -397,7 +397,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.skipWhiteSpace = function(...args) 
           
@@ -407,7 +407,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.skipWhiteSpace(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.readLine = function(...args) 
           
@@ -417,7 +417,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.readLine(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.readAll = function(...args) 
           
@@ -427,7 +427,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.read = function(...args) 
           
@@ -437,7 +437,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.read(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setFieldAlignment = function(...args) 
           
@@ -447,7 +447,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setFieldAlignment(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.fieldAlignment = function(...args) 
           
@@ -457,7 +457,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.fieldAlignment(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setPadChar = function(...args) 
           
@@ -467,7 +467,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setPadChar(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.padChar = function(...args) 
           
@@ -477,7 +477,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.padChar(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setFieldWidth = function(...args) 
           
@@ -487,7 +487,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setFieldWidth(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.fieldWidth = function(...args) 
           
@@ -497,7 +497,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.fieldWidth(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setNumberFlags = function(...args) 
           
@@ -507,7 +507,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setNumberFlags(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.numberFlags = function(...args) 
           
@@ -517,7 +517,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.numberFlags(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setIntegerBase = function(...args) 
           
@@ -527,7 +527,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setIntegerBase(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.integerBase = function(...args) 
           
@@ -537,7 +537,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.integerBase(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setRealNumberNotation = function(...args) 
           
@@ -547,7 +547,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setRealNumberNotation(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.realNumberNotation = function(...args) 
           
@@ -557,7 +557,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.realNumberNotation(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.setRealNumberPrecision = function(...args) 
           
@@ -567,7 +567,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.setRealNumberPrecision(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.realNumberPrecision = function(...args) 
           
@@ -577,7 +577,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.realNumberPrecision(...args);
             
         };
-    
+        
         // function 
         QTextStream.prototype.writeString = function(...args) 
           
@@ -587,7 +587,7 @@ QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
               return this.__PROXY__.writeString(...args);
             
         };
-    
+        
 
       // static functions:
       QTextStream.prototype.isNullWrapper = function() {

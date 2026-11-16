@@ -138,7 +138,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.createWinId = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isWindow = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isModal = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowModality = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isEnabled = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isEnabledTo = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setEnabled = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setDisabled = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowModified = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setMinimumSize = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setMaximumSize = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setMinimumWidth = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setMinimumHeight = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setMaximumWidth = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setMaximumHeight = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setSizeIncrement = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setBaseSize = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setFixedSize = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setFixedWidth = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setFixedHeight = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mapToGlobal = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mapFromGlobal = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mapToParent = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mapFromParent = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mapTo = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mapFrom = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.window = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.nativeParentWidget = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.topLevelWidget = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setPalette = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setBackgroundRole = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.backgroundRole = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setForegroundRole = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.foregroundRole = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setFont = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.fontInfo = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setCursor = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.unsetCursor = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setMouseTracking = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.hasMouseTracking = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.underMouse = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setTabletTracking = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.hasTabletTracking = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setMask = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mask = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.clearMask = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.grab = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.grabGesture = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.ungrabGesture = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowTitle = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setStyleSheet = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowIcon = function(...args) 
           
@@ -658,7 +658,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowIconText = function(...args) 
           
@@ -668,7 +668,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowRole = function(...args) 
           
@@ -678,7 +678,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.windowRole = function(...args) 
           
@@ -688,7 +688,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowFilePath = function(...args) 
           
@@ -698,7 +698,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowOpacity = function(...args) 
           
@@ -708,7 +708,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isWindowModified = function(...args) 
           
@@ -718,7 +718,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setToolTip = function(...args) 
           
@@ -728,7 +728,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setToolTipDuration = function(...args) 
           
@@ -738,7 +738,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setStatusTip = function(...args) 
           
@@ -748,7 +748,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWhatsThis = function(...args) 
           
@@ -758,7 +758,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setAccessibleName = function(...args) 
           
@@ -768,7 +768,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setAccessibleDescription = function(...args) 
           
@@ -778,7 +778,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setLayoutDirection = function(...args) 
           
@@ -788,7 +788,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.unsetLayoutDirection = function(...args) 
           
@@ -798,7 +798,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setLocale = function(...args) 
           
@@ -808,7 +808,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.unsetLocale = function(...args) 
           
@@ -818,7 +818,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isRightToLeft = function(...args) 
           
@@ -828,7 +828,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isLeftToRight = function(...args) 
           
@@ -838,7 +838,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.activateWindow = function(...args) 
           
@@ -848,7 +848,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.clearFocus = function(...args) 
           
@@ -858,7 +858,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setFocus = function(...args) 
           
@@ -868,7 +868,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setFocusPolicy = function(...args) 
           
@@ -878,7 +878,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.hasFocus = function(...args) 
           
@@ -888,7 +888,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setFocusProxy = function(...args) 
           
@@ -898,7 +898,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.focusProxy = function(...args) 
           
@@ -908,7 +908,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setContextMenuPolicy = function(...args) 
           
@@ -918,7 +918,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.grabMouse = function(...args) 
           
@@ -928,7 +928,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.releaseMouse = function(...args) 
           
@@ -938,7 +938,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.grabKeyboard = function(...args) 
           
@@ -948,7 +948,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.releaseKeyboard = function(...args) 
           
@@ -958,7 +958,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.grabShortcut = function(...args) 
           
@@ -968,7 +968,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.releaseShortcut = function(...args) 
           
@@ -978,7 +978,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setShortcutEnabled = function(...args) 
           
@@ -988,7 +988,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -998,7 +998,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1008,7 +1008,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.update = function(...args) 
           
@@ -1018,7 +1018,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.repaint = function(...args) 
           
@@ -1028,7 +1028,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setVisible = function(...args) 
           
@@ -1038,7 +1038,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setHidden = function(...args) 
           
@@ -1048,7 +1048,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.show = function(...args) 
           
@@ -1058,7 +1058,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.hide = function(...args) 
           
@@ -1068,7 +1068,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.showMinimized = function(...args) 
           
@@ -1078,7 +1078,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.showMaximized = function(...args) 
           
@@ -1088,7 +1088,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.showFullScreen = function(...args) 
           
@@ -1098,7 +1098,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.showNormal = function(...args) 
           
@@ -1108,7 +1108,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.close = function(...args) 
           
@@ -1118,7 +1118,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.raise = function(...args) 
           
@@ -1128,7 +1128,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.lower = function(...args) 
           
@@ -1138,7 +1138,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.stackUnder = function(...args) 
           
@@ -1148,7 +1148,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.move = function(...args) 
           
@@ -1158,7 +1158,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.resize = function(...args) 
           
@@ -1168,7 +1168,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setGeometry = function(...args) 
           
@@ -1178,7 +1178,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.saveGeometry = function(...args) 
           
@@ -1188,7 +1188,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.restoreGeometry = function(...args) 
           
@@ -1198,7 +1198,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.adjustSize = function(...args) 
           
@@ -1208,7 +1208,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isVisible = function(...args) 
           
@@ -1218,7 +1218,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isVisibleTo = function(...args) 
           
@@ -1228,7 +1228,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isHidden = function(...args) 
           
@@ -1238,7 +1238,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isMinimized = function(...args) 
           
@@ -1248,7 +1248,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isMaximized = function(...args) 
           
@@ -1258,7 +1258,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isFullScreen = function(...args) 
           
@@ -1268,7 +1268,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.windowState = function(...args) 
           
@@ -1278,7 +1278,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowState = function(...args) 
           
@@ -1288,7 +1288,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.overrideWindowState = function(...args) 
           
@@ -1298,7 +1298,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setSizePolicy = function(...args) 
           
@@ -1308,7 +1308,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.heightForWidth = function(...args) 
           
@@ -1318,7 +1318,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.hasHeightForWidth = function(...args) 
           
@@ -1328,7 +1328,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.visibleRegion = function(...args) 
           
@@ -1338,7 +1338,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setContentsMargins = function(...args) 
           
@@ -1348,7 +1348,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.contentsMargins = function(...args) 
           
@@ -1358,7 +1358,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.contentsRect = function(...args) 
           
@@ -1368,7 +1368,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.layout = function(...args) 
           
@@ -1378,7 +1378,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setLayout = function(...args) 
           
@@ -1388,7 +1388,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.updateGeometry = function(...args) 
           
@@ -1398,7 +1398,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setParent = function(...args) 
           
@@ -1408,7 +1408,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.scroll = function(...args) 
           
@@ -1418,7 +1418,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.focusWidget = function(...args) 
           
@@ -1428,7 +1428,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.nextInFocusChain = function(...args) 
           
@@ -1438,7 +1438,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.previousInFocusChain = function(...args) 
           
@@ -1448,7 +1448,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setAcceptDrops = function(...args) 
           
@@ -1458,7 +1458,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.addAction = function(...args) 
           
@@ -1468,7 +1468,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.addActions = function(...args) 
           
@@ -1478,7 +1478,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.insertActions = function(...args) 
           
@@ -1488,7 +1488,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.insertAction = function(...args) 
           
@@ -1498,7 +1498,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.removeAction = function(...args) 
           
@@ -1508,7 +1508,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.actions = function(...args) 
           
@@ -1518,7 +1518,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.parentWidget = function(...args) 
           
@@ -1528,7 +1528,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowFlags = function(...args) 
           
@@ -1538,7 +1538,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.windowFlags = function(...args) 
           
@@ -1548,7 +1548,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setWindowFlag = function(...args) 
           
@@ -1558,7 +1558,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.overrideWindowFlags = function(...args) 
           
@@ -1568,7 +1568,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.windowType = function(...args) 
           
@@ -1578,7 +1578,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.childAt = function(...args) 
           
@@ -1588,7 +1588,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setAttribute = function(...args) 
           
@@ -1598,7 +1598,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.testAttribute = function(...args) 
           
@@ -1608,7 +1608,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.ensurePolished = function(...args) 
           
@@ -1618,7 +1618,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.isAncestorOf = function(...args) 
           
@@ -1628,7 +1628,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setAutoFillBackground = function(...args) 
           
@@ -1638,7 +1638,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1648,7 +1648,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.wheelEvent = function(...args) 
           
@@ -1658,7 +1658,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.keyPressEvent = function(...args) 
           
@@ -1668,7 +1668,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.keyReleaseEvent = function(...args) 
           
@@ -1678,7 +1678,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.focusInEvent = function(...args) 
           
@@ -1688,7 +1688,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.focusOutEvent = function(...args) 
           
@@ -1698,7 +1698,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.enterEvent = function(...args) 
           
@@ -1708,7 +1708,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.leaveEvent = function(...args) 
           
@@ -1718,7 +1718,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.moveEvent = function(...args) 
           
@@ -1728,7 +1728,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.closeEvent = function(...args) 
           
@@ -1738,7 +1738,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.tabletEvent = function(...args) 
           
@@ -1748,7 +1748,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.dragEnterEvent = function(...args) 
           
@@ -1758,7 +1758,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.dragMoveEvent = function(...args) 
           
@@ -1768,7 +1768,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.dragLeaveEvent = function(...args) 
           
@@ -1778,7 +1778,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.dropEvent = function(...args) 
           
@@ -1788,7 +1788,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.showEvent = function(...args) 
           
@@ -1798,7 +1798,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.hideEvent = function(...args) 
           
@@ -1808,7 +1808,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.nativeEvent = function(...args) 
           
@@ -1818,7 +1818,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.changeEvent = function(...args) 
           
@@ -1828,7 +1828,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.metric = function(...args) 
           
@@ -1838,7 +1838,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.initPainter = function(...args) 
           
@@ -1848,7 +1848,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.redirected = function(...args) 
           
@@ -1858,7 +1858,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.sharedPainter = function(...args) 
           
@@ -1868,7 +1868,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.inputMethodEvent = function(...args) 
           
@@ -1878,7 +1878,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.inputMethodQuery = function(...args) 
           
@@ -1888,7 +1888,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setInputMethodHints = function(...args) 
           
@@ -1898,7 +1898,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.updateMicroFocus = function(...args) 
           
@@ -1908,7 +1908,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.create = function(...args) 
           
@@ -1918,7 +1918,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.destroy = function(...args) 
           
@@ -1928,7 +1928,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.focusNextPrevChild = function(...args) 
           
@@ -1938,7 +1938,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.focusNextChild = function(...args) 
           
@@ -1948,7 +1948,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.focusPreviousChild = function(...args) 
           
@@ -1958,7 +1958,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setBackingStore = function(...args) 
           
@@ -1968,7 +1968,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.testAttribute_helper = function(...args) 
           
@@ -1978,7 +1978,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.takeLayout = function(...args) 
           
@@ -1988,7 +1988,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.qt_mac_is_metal = function(...args) 
           
@@ -1998,7 +1998,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.qt_qwidget_data = function(...args) 
           
@@ -2008,7 +2008,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.qt_widget_private = function(...args) 
           
@@ -2018,7 +2018,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.setOrientation = function(...args) 
           
@@ -2028,7 +2028,7 @@
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.orientation = function(...args) 
           
@@ -2038,7 +2038,7 @@
               return this.__PROXY__.orientation(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.opaqueResize = function(...args) 
           
@@ -2048,7 +2048,7 @@
               return this.__PROXY__.opaqueResize(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.splitter = function(...args) 
           
@@ -2058,7 +2058,7 @@
               return this.__PROXY__.splitter(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.paintEvent = function(...args) 
           
@@ -2068,7 +2068,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QSplitterHandle.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QSplitterHandle.prototype.mouseMoveEvent = function(...args) 
           
@@ -2078,7 +2079,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QSplitterHandle.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QSplitterHandle.prototype.mousePressEvent = function(...args) 
           
@@ -2088,7 +2090,7 @@
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2098,7 +2100,7 @@
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.resizeEvent = function(...args) 
           
@@ -2108,7 +2110,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QSplitterHandle.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QSplitterHandle.prototype.event = function(...args) 
           
@@ -2118,7 +2121,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.moveSplitter = function(...args) 
           
@@ -2128,7 +2131,7 @@
               return this.__PROXY__.moveSplitter(...args);
             
         };
-    
+        
         // function 
         QSplitterHandle.prototype.closestLegalPosition = function(...args) 
           
@@ -2138,7 +2141,7 @@
               return this.__PROXY__.closestLegalPosition(...args);
             
         };
-    
+        
 
       // static functions:
       

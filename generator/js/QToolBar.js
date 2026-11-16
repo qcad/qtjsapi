@@ -170,7 +170,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isWidgetType = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isWindowType = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.signalsBlocked = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.blockSignals = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.findChild = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.children = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.installEventFilter = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.removeEventFilter = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.dumpObjectTree = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.dumpObjectInfo = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setProperty = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.property = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.dynamicPropertyNames = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.parent = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.deleteLater = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.devType = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.createWinId = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isWindow = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isModal = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowModality = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isEnabled = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isEnabledTo = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setEnabled = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setDisabled = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowModified = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMinimumSize = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMaximumSize = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMinimumWidth = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMinimumHeight = function(...args) 
           
@@ -460,7 +460,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMaximumWidth = function(...args) 
           
@@ -470,7 +470,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMaximumHeight = function(...args) 
           
@@ -480,7 +480,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setSizeIncrement = function(...args) 
           
@@ -490,7 +490,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setBaseSize = function(...args) 
           
@@ -500,7 +500,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setFixedSize = function(...args) 
           
@@ -510,7 +510,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setFixedWidth = function(...args) 
           
@@ -520,7 +520,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setFixedHeight = function(...args) 
           
@@ -530,7 +530,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.mapToGlobal = function(...args) 
           
@@ -540,7 +540,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.mapFromGlobal = function(...args) 
           
@@ -550,7 +550,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.mapToParent = function(...args) 
           
@@ -560,7 +560,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.mapFromParent = function(...args) 
           
@@ -570,7 +570,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.mapTo = function(...args) 
           
@@ -580,7 +580,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.mapFrom = function(...args) 
           
@@ -590,7 +590,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.window = function(...args) 
           
@@ -600,7 +600,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.nativeParentWidget = function(...args) 
           
@@ -610,7 +610,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.topLevelWidget = function(...args) 
           
@@ -620,7 +620,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setPalette = function(...args) 
           
@@ -630,7 +630,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setBackgroundRole = function(...args) 
           
@@ -640,7 +640,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.backgroundRole = function(...args) 
           
@@ -650,7 +650,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setForegroundRole = function(...args) 
           
@@ -660,7 +660,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.foregroundRole = function(...args) 
           
@@ -670,7 +670,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setFont = function(...args) 
           
@@ -680,7 +680,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.fontInfo = function(...args) 
           
@@ -690,7 +690,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setCursor = function(...args) 
           
@@ -700,7 +700,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.unsetCursor = function(...args) 
           
@@ -710,7 +710,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMouseTracking = function(...args) 
           
@@ -720,7 +720,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.hasMouseTracking = function(...args) 
           
@@ -730,7 +730,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.underMouse = function(...args) 
           
@@ -740,7 +740,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setTabletTracking = function(...args) 
           
@@ -750,7 +750,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.hasTabletTracking = function(...args) 
           
@@ -760,7 +760,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMask = function(...args) 
           
@@ -770,7 +770,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.mask = function(...args) 
           
@@ -780,7 +780,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.clearMask = function(...args) 
           
@@ -790,7 +790,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.grab = function(...args) 
           
@@ -800,7 +800,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.grabGesture = function(...args) 
           
@@ -810,7 +810,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.ungrabGesture = function(...args) 
           
@@ -820,7 +820,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowTitle = function(...args) 
           
@@ -830,7 +830,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setStyleSheet = function(...args) 
           
@@ -840,7 +840,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowIcon = function(...args) 
           
@@ -850,7 +850,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowIconText = function(...args) 
           
@@ -860,7 +860,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowRole = function(...args) 
           
@@ -870,7 +870,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.windowRole = function(...args) 
           
@@ -880,7 +880,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowFilePath = function(...args) 
           
@@ -890,7 +890,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowOpacity = function(...args) 
           
@@ -900,7 +900,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isWindowModified = function(...args) 
           
@@ -910,7 +910,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setToolTip = function(...args) 
           
@@ -920,7 +920,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setToolTipDuration = function(...args) 
           
@@ -930,7 +930,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setStatusTip = function(...args) 
           
@@ -940,7 +940,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWhatsThis = function(...args) 
           
@@ -950,7 +950,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setAccessibleName = function(...args) 
           
@@ -960,7 +960,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setAccessibleDescription = function(...args) 
           
@@ -970,7 +970,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setLayoutDirection = function(...args) 
           
@@ -980,7 +980,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.unsetLayoutDirection = function(...args) 
           
@@ -990,7 +990,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setLocale = function(...args) 
           
@@ -1000,7 +1000,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.unsetLocale = function(...args) 
           
@@ -1010,7 +1010,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isRightToLeft = function(...args) 
           
@@ -1020,7 +1020,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isLeftToRight = function(...args) 
           
@@ -1030,7 +1030,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.activateWindow = function(...args) 
           
@@ -1040,7 +1040,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.clearFocus = function(...args) 
           
@@ -1050,7 +1050,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setFocus = function(...args) 
           
@@ -1060,7 +1060,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setFocusPolicy = function(...args) 
           
@@ -1070,7 +1070,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.hasFocus = function(...args) 
           
@@ -1080,7 +1080,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setFocusProxy = function(...args) 
           
@@ -1090,7 +1090,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.focusProxy = function(...args) 
           
@@ -1100,7 +1100,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1110,7 +1110,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.grabMouse = function(...args) 
           
@@ -1120,7 +1120,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.releaseMouse = function(...args) 
           
@@ -1130,7 +1130,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.grabKeyboard = function(...args) 
           
@@ -1140,7 +1140,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.releaseKeyboard = function(...args) 
           
@@ -1150,7 +1150,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.grabShortcut = function(...args) 
           
@@ -1160,7 +1160,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.releaseShortcut = function(...args) 
           
@@ -1170,7 +1170,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setShortcutEnabled = function(...args) 
           
@@ -1180,7 +1180,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1190,7 +1190,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1200,7 +1200,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.update = function(...args) 
           
@@ -1210,7 +1210,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.repaint = function(...args) 
           
@@ -1220,7 +1220,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setVisible = function(...args) 
           
@@ -1230,7 +1230,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setHidden = function(...args) 
           
@@ -1240,7 +1240,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.show = function(...args) 
           
@@ -1250,7 +1250,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.hide = function(...args) 
           
@@ -1260,7 +1260,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.showMinimized = function(...args) 
           
@@ -1270,7 +1270,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.showMaximized = function(...args) 
           
@@ -1280,7 +1280,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.showFullScreen = function(...args) 
           
@@ -1290,7 +1290,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.showNormal = function(...args) 
           
@@ -1300,7 +1300,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.close = function(...args) 
           
@@ -1310,7 +1310,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.raise = function(...args) 
           
@@ -1320,7 +1320,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.lower = function(...args) 
           
@@ -1330,7 +1330,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.stackUnder = function(...args) 
           
@@ -1340,7 +1340,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.move = function(...args) 
           
@@ -1350,7 +1350,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.resize = function(...args) 
           
@@ -1360,7 +1360,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setGeometry = function(...args) 
           
@@ -1370,7 +1370,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.saveGeometry = function(...args) 
           
@@ -1380,7 +1380,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.restoreGeometry = function(...args) 
           
@@ -1390,7 +1390,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.adjustSize = function(...args) 
           
@@ -1400,7 +1400,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isVisible = function(...args) 
           
@@ -1410,7 +1410,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isVisibleTo = function(...args) 
           
@@ -1420,7 +1420,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isHidden = function(...args) 
           
@@ -1430,7 +1430,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isMinimized = function(...args) 
           
@@ -1440,7 +1440,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isMaximized = function(...args) 
           
@@ -1450,7 +1450,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isFullScreen = function(...args) 
           
@@ -1460,7 +1460,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.windowState = function(...args) 
           
@@ -1470,7 +1470,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowState = function(...args) 
           
@@ -1480,7 +1480,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.overrideWindowState = function(...args) 
           
@@ -1490,7 +1490,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setSizePolicy = function(...args) 
           
@@ -1500,7 +1500,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.heightForWidth = function(...args) 
           
@@ -1510,7 +1510,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.hasHeightForWidth = function(...args) 
           
@@ -1520,7 +1520,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.visibleRegion = function(...args) 
           
@@ -1530,7 +1530,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setContentsMargins = function(...args) 
           
@@ -1540,7 +1540,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.contentsMargins = function(...args) 
           
@@ -1550,7 +1550,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.contentsRect = function(...args) 
           
@@ -1560,7 +1560,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.layout = function(...args) 
           
@@ -1570,7 +1570,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setLayout = function(...args) 
           
@@ -1580,7 +1580,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.updateGeometry = function(...args) 
           
@@ -1590,7 +1590,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setParent = function(...args) 
           
@@ -1600,7 +1600,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.scroll = function(...args) 
           
@@ -1610,7 +1610,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.focusWidget = function(...args) 
           
@@ -1620,7 +1620,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.nextInFocusChain = function(...args) 
           
@@ -1630,7 +1630,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.previousInFocusChain = function(...args) 
           
@@ -1640,7 +1640,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setAcceptDrops = function(...args) 
           
@@ -1650,7 +1650,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.addActions = function(...args) 
           
@@ -1660,7 +1660,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.insertActions = function(...args) 
           
@@ -1670,7 +1670,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.insertAction = function(...args) 
           
@@ -1680,7 +1680,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.removeAction = function(...args) 
           
@@ -1690,7 +1690,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.actions = function(...args) 
           
@@ -1700,7 +1700,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.parentWidget = function(...args) 
           
@@ -1710,7 +1710,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowFlags = function(...args) 
           
@@ -1720,7 +1720,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.windowFlags = function(...args) 
           
@@ -1730,7 +1730,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setWindowFlag = function(...args) 
           
@@ -1740,7 +1740,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.overrideWindowFlags = function(...args) 
           
@@ -1750,7 +1750,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.windowType = function(...args) 
           
@@ -1760,7 +1760,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.childAt = function(...args) 
           
@@ -1770,7 +1770,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setAttribute = function(...args) 
           
@@ -1780,7 +1780,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.testAttribute = function(...args) 
           
@@ -1790,7 +1790,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.ensurePolished = function(...args) 
           
@@ -1800,7 +1800,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isAncestorOf = function(...args) 
           
@@ -1810,7 +1810,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setAutoFillBackground = function(...args) 
           
@@ -1820,7 +1820,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.event = function(...args) 
           
@@ -1830,7 +1830,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1840,7 +1840,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.wheelEvent = function(...args) 
           
@@ -1850,7 +1850,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.keyPressEvent = function(...args) 
           
@@ -1860,7 +1860,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.keyReleaseEvent = function(...args) 
           
@@ -1870,7 +1870,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.focusInEvent = function(...args) 
           
@@ -1880,7 +1880,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.focusOutEvent = function(...args) 
           
@@ -1890,7 +1890,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.enterEvent = function(...args) 
           
@@ -1900,7 +1900,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.leaveEvent = function(...args) 
           
@@ -1910,7 +1910,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.moveEvent = function(...args) 
           
@@ -1920,7 +1920,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.closeEvent = function(...args) 
           
@@ -1930,7 +1930,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.tabletEvent = function(...args) 
           
@@ -1940,7 +1940,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.dragEnterEvent = function(...args) 
           
@@ -1950,7 +1950,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.dragMoveEvent = function(...args) 
           
@@ -1960,7 +1960,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.dragLeaveEvent = function(...args) 
           
@@ -1970,7 +1970,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.dropEvent = function(...args) 
           
@@ -1980,7 +1980,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.showEvent = function(...args) 
           
@@ -1990,7 +1990,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.hideEvent = function(...args) 
           
@@ -2000,7 +2000,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.nativeEvent = function(...args) 
           
@@ -2010,7 +2010,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.changeEvent = function(...args) 
           
@@ -2020,7 +2020,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.metric = function(...args) 
           
@@ -2030,7 +2030,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.initPainter = function(...args) 
           
@@ -2040,7 +2040,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.redirected = function(...args) 
           
@@ -2050,7 +2050,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.sharedPainter = function(...args) 
           
@@ -2060,7 +2060,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.inputMethodEvent = function(...args) 
           
@@ -2070,7 +2070,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.inputMethodQuery = function(...args) 
           
@@ -2080,7 +2080,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setInputMethodHints = function(...args) 
           
@@ -2090,7 +2090,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.updateMicroFocus = function(...args) 
           
@@ -2100,7 +2100,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.create = function(...args) 
           
@@ -2110,7 +2110,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.destroy = function(...args) 
           
@@ -2120,7 +2120,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.focusNextPrevChild = function(...args) 
           
@@ -2130,7 +2130,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.focusNextChild = function(...args) 
           
@@ -2140,7 +2140,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.focusPreviousChild = function(...args) 
           
@@ -2150,7 +2150,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setBackingStore = function(...args) 
           
@@ -2160,7 +2160,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.testAttribute_helper = function(...args) 
           
@@ -2170,7 +2170,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.takeLayout = function(...args) 
           
@@ -2180,7 +2180,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2190,7 +2190,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.qt_qwidget_data = function(...args) 
           
@@ -2200,7 +2200,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.qt_widget_private = function(...args) 
           
@@ -2210,7 +2210,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setMovable = function(...args) 
           
@@ -2220,7 +2220,7 @@
               return this.__PROXY__.setMovable(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isMovable = function(...args) 
           
@@ -2230,7 +2230,7 @@
               return this.__PROXY__.isMovable(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setAllowedAreas = function(...args) 
           
@@ -2240,7 +2240,7 @@
               return this.__PROXY__.setAllowedAreas(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isAreaAllowed = function(...args) 
           
@@ -2250,7 +2250,7 @@
               return this.__PROXY__.isAreaAllowed(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setOrientation = function(...args) 
           
@@ -2260,7 +2260,7 @@
               return this.__PROXY__.setOrientation(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.clear = function(...args) 
           
@@ -2270,7 +2270,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.addAction = function(...args) 
           
@@ -2280,7 +2280,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.addSeparator = function(...args) 
           
@@ -2290,7 +2290,7 @@
               return this.__PROXY__.addSeparator(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.insertSeparator = function(...args) 
           
@@ -2300,7 +2300,7 @@
               return this.__PROXY__.insertSeparator(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.addWidget = function(...args) 
           
@@ -2310,7 +2310,7 @@
               return this.__PROXY__.addWidget(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.insertWidget = function(...args) 
           
@@ -2320,7 +2320,7 @@
               return this.__PROXY__.insertWidget(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.actionGeometry = function(...args) 
           
@@ -2330,7 +2330,7 @@
               return this.__PROXY__.actionGeometry(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.actionAt = function(...args) 
           
@@ -2340,7 +2340,7 @@
               return this.__PROXY__.actionAt(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.toggleViewAction = function(...args) 
           
@@ -2350,7 +2350,7 @@
               return this.__PROXY__.toggleViewAction(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.widgetForAction = function(...args) 
           
@@ -2360,7 +2360,7 @@
               return this.__PROXY__.widgetForAction(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isFloatable = function(...args) 
           
@@ -2370,7 +2370,7 @@
               return this.__PROXY__.isFloatable(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setFloatable = function(...args) 
           
@@ -2380,7 +2380,7 @@
               return this.__PROXY__.setFloatable(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.isFloating = function(...args) 
           
@@ -2390,7 +2390,7 @@
               return this.__PROXY__.isFloating(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setIconSize = function(...args) 
           
@@ -2400,7 +2400,7 @@
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.setToolButtonStyle = function(...args) 
           
@@ -2410,7 +2410,7 @@
               return this.__PROXY__.setToolButtonStyle(...args);
             
         };
-    
+        
         // function 
         QToolBar.prototype.paintEvent = function(...args) 
           
@@ -2420,7 +2420,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QToolBar.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QToolBar.prototype.mouseMoveEvent = function(...args) 
           
@@ -2430,7 +2431,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QToolBar.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QToolBar.prototype.resizeEvent = function(...args) 
           
@@ -2440,7 +2442,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QToolBar.prototype.resizeEvent.__SUPER__ = true;
+        
 
       // static functions:
       

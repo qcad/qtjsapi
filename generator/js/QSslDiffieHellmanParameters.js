@@ -191,7 +191,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.defaultParameters(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.operator_assign = function(...args) 
           
@@ -201,7 +201,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.swap = function(...args) 
           
@@ -211,7 +211,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.fromEncoded = function(...args) 
           
@@ -221,7 +221,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.fromEncoded(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.isEmpty = function(...args) 
           
@@ -231,7 +231,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.isValid = function(...args) 
           
@@ -241,7 +241,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.error = function(...args) 
           
@@ -251,7 +251,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.errorString = function(...args) 
           
@@ -261,7 +261,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.isEqual = function(...args) 
           
@@ -271,7 +271,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.isEqual(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.equals = function(...args) 
           
@@ -281,7 +281,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QSslDiffieHellmanParameters.prototype.operator_not_assign = function(...args) 
           
@@ -291,7 +291,7 @@ QSslDiffieHellmanParameters.UnsafeParametersError = QSslDiffieHellmanParameters_
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
 
       // static functions:
       

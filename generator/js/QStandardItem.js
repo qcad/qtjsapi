@@ -217,7 +217,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setData = function(...args) 
           
@@ -227,7 +227,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.clearData = function(...args) 
           
@@ -237,7 +237,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.clearData(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.text = function(...args) 
           
@@ -247,7 +247,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setText = function(...args) 
           
@@ -257,7 +257,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.icon = function(...args) 
           
@@ -267,7 +267,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.icon(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setIcon = function(...args) 
           
@@ -277,7 +277,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.toolTip = function(...args) 
           
@@ -287,7 +287,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.toolTip(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setToolTip = function(...args) 
           
@@ -297,7 +297,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.statusTip = function(...args) 
           
@@ -307,7 +307,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.statusTip(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setStatusTip = function(...args) 
           
@@ -317,7 +317,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.whatsThis = function(...args) 
           
@@ -327,7 +327,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.whatsThis(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setWhatsThis = function(...args) 
           
@@ -337,7 +337,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.sizeHint = function(...args) 
           
@@ -347,7 +347,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.sizeHint(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setSizeHint = function(...args) 
           
@@ -357,7 +357,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setSizeHint(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.font = function(...args) 
           
@@ -367,7 +367,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setFont = function(...args) 
           
@@ -377,7 +377,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.textAlignment = function(...args) 
           
@@ -387,7 +387,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.textAlignment(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setTextAlignment = function(...args) 
           
@@ -397,7 +397,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setTextAlignment(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.background = function(...args) 
           
@@ -407,7 +407,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setBackground = function(...args) 
           
@@ -417,7 +417,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.foreground = function(...args) 
           
@@ -427,7 +427,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.foreground(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setForeground = function(...args) 
           
@@ -437,7 +437,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setForeground(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.checkState = function(...args) 
           
@@ -447,7 +447,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.checkState(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setCheckState = function(...args) 
           
@@ -457,7 +457,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setCheckState(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.accessibleText = function(...args) 
           
@@ -467,7 +467,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.accessibleText(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setAccessibleText = function(...args) 
           
@@ -477,7 +477,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setAccessibleText(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.accessibleDescription = function(...args) 
           
@@ -487,7 +487,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.accessibleDescription(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setAccessibleDescription = function(...args) 
           
@@ -497,7 +497,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.flags = function(...args) 
           
@@ -507,7 +507,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setFlags = function(...args) 
           
@@ -517,7 +517,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setFlags(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.isEnabled = function(...args) 
           
@@ -527,7 +527,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setEnabled = function(...args) 
           
@@ -537,7 +537,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.isEditable = function(...args) 
           
@@ -547,7 +547,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setEditable = function(...args) 
           
@@ -557,7 +557,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setEditable(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.isSelectable = function(...args) 
           
@@ -567,7 +567,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.isSelectable(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setSelectable = function(...args) 
           
@@ -577,7 +577,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setSelectable(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.isCheckable = function(...args) 
           
@@ -587,7 +587,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setCheckable = function(...args) 
           
@@ -597,7 +597,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.isAutoTristate = function(...args) 
           
@@ -607,7 +607,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.isAutoTristate(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setAutoTristate = function(...args) 
           
@@ -617,7 +617,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setAutoTristate(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.isUserTristate = function(...args) 
           
@@ -627,7 +627,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.isUserTristate(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setUserTristate = function(...args) 
           
@@ -637,7 +637,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setUserTristate(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.isDragEnabled = function(...args) 
           
@@ -647,7 +647,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.isDragEnabled(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setDragEnabled = function(...args) 
           
@@ -657,7 +657,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.isDropEnabled = function(...args) 
           
@@ -667,7 +667,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.isDropEnabled(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setDropEnabled = function(...args) 
           
@@ -677,7 +677,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setDropEnabled(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.parent = function(...args) 
           
@@ -687,7 +687,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.row = function(...args) 
           
@@ -697,7 +697,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.row(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.column = function(...args) 
           
@@ -707,7 +707,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.column(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.index = function(...args) 
           
@@ -717,7 +717,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.index(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.model = function(...args) 
           
@@ -727,7 +727,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.rowCount = function(...args) 
           
@@ -737,7 +737,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.rowCount(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setRowCount = function(...args) 
           
@@ -747,7 +747,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setRowCount(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.columnCount = function(...args) 
           
@@ -757,7 +757,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.columnCount(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setColumnCount = function(...args) 
           
@@ -767,7 +767,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setColumnCount(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.hasChildren = function(...args) 
           
@@ -777,7 +777,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.hasChildren(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.child = function(...args) 
           
@@ -787,7 +787,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.child(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.setChild = function(...args) 
           
@@ -797,7 +797,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.setChild(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.insertRow = function(...args) 
           
@@ -807,7 +807,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.insertRow(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.insertColumn = function(...args) 
           
@@ -817,7 +817,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.insertColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.insertRows = function(...args) 
           
@@ -827,7 +827,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.insertRows(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.insertColumns = function(...args) 
           
@@ -837,7 +837,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.insertColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.removeRow = function(...args) 
           
@@ -847,7 +847,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.removeRow(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.removeColumn = function(...args) 
           
@@ -857,7 +857,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.removeColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.removeRows = function(...args) 
           
@@ -867,7 +867,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.removeRows(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.removeColumns = function(...args) 
           
@@ -877,7 +877,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.removeColumns(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.appendRow = function(...args) 
           
@@ -887,7 +887,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.appendRow(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.appendRows = function(...args) 
           
@@ -897,7 +897,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.appendRows(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.appendColumn = function(...args) 
           
@@ -907,7 +907,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.appendColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.takeChild = function(...args) 
           
@@ -917,7 +917,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.takeChild(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.takeRow = function(...args) 
           
@@ -927,7 +927,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.takeRow(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.takeColumn = function(...args) 
           
@@ -937,7 +937,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.takeColumn(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.sortChildren = function(...args) 
           
@@ -947,7 +947,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.sortChildren(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.clone = function(...args) 
           
@@ -957,7 +957,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QStandardItem.prototype.type = function(...args) 
           
@@ -967,7 +967,7 @@ QStandardItem.UserType = QStandardItem_Wrapper.UserType;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
 
       // static functions:
       QStandardItem.prototype.isNullWrapper = function() {

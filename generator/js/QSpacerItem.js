@@ -139,7 +139,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.heightForWidth = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.minimumHeightForWidth = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.minimumHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.invalidate = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.widget = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.layout = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.alignment = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.setAlignment = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.controlTypes = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.controlTypes(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.changeSize = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.changeSize(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.sizeHint = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.sizeHint(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.minimumSize = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.minimumSize(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.maximumSize = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.maximumSize(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.expandingDirections = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.expandingDirections(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.isEmpty = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.setGeometry = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.geometry = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.spacerItem = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.spacerItem(...args);
             
         };
-    
+        
         // function 
         QSpacerItem.prototype.sizePolicy = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.sizePolicy(...args);
             
         };
-    
+        
 
       // static functions:
       QSpacerItem.prototype.isNullWrapper = function() {

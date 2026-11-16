@@ -193,7 +193,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.tableWidget = function(...args) 
           
@@ -203,7 +203,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.tableWidget(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.row = function(...args) 
           
@@ -213,7 +213,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.row(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.column = function(...args) 
           
@@ -223,7 +223,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.column(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setSelected = function(...args) 
           
@@ -233,7 +233,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.isSelected = function(...args) 
           
@@ -243,7 +243,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.flags = function(...args) 
           
@@ -253,7 +253,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setFlags = function(...args) 
           
@@ -263,7 +263,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setFlags(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.text = function(...args) 
           
@@ -273,7 +273,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setText = function(...args) 
           
@@ -283,7 +283,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.icon = function(...args) 
           
@@ -293,7 +293,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.icon(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setIcon = function(...args) 
           
@@ -303,7 +303,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.statusTip = function(...args) 
           
@@ -313,7 +313,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.statusTip(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setStatusTip = function(...args) 
           
@@ -323,7 +323,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.toolTip = function(...args) 
           
@@ -333,7 +333,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.toolTip(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setToolTip = function(...args) 
           
@@ -343,7 +343,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.whatsThis = function(...args) 
           
@@ -353,7 +353,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.whatsThis(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setWhatsThis = function(...args) 
           
@@ -363,7 +363,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.font = function(...args) 
           
@@ -373,7 +373,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setFont = function(...args) 
           
@@ -383,7 +383,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setTextAlignment = function(...args) 
           
@@ -393,7 +393,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setTextAlignment(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.background = function(...args) 
           
@@ -403,7 +403,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setBackground = function(...args) 
           
@@ -413,7 +413,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.foreground = function(...args) 
           
@@ -423,7 +423,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.foreground(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setForeground = function(...args) 
           
@@ -433,7 +433,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setForeground(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.checkState = function(...args) 
           
@@ -443,7 +443,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.checkState(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setCheckState = function(...args) 
           
@@ -453,7 +453,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setCheckState(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.sizeHint = function(...args) 
           
@@ -463,7 +463,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.sizeHint(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setSizeHint = function(...args) 
           
@@ -473,7 +473,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setSizeHint(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.data = function(...args) 
           
@@ -483,7 +483,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.setData = function(...args) 
           
@@ -493,7 +493,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.operator_assign = function(...args) 
           
@@ -503,7 +503,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.type = function(...args) 
           
@@ -513,7 +513,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QTableWidgetItem.prototype.tableModel = function(...args) 
           
@@ -523,7 +523,7 @@ QTableWidgetItem.UserType = QTableWidgetItem_Wrapper.UserType;
               return this.__PROXY__.tableModel(...args);
             
         };
-    
+        
 
       // static functions:
       QTableWidgetItem.prototype.isNullWrapper = function() {

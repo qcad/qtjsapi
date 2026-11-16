@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.setExclusive = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.setExclusive(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.exclusive = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.exclusive(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.addButton = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.addButton(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.removeButton = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.removeButton(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.buttons = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.checkedButton = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.checkedButton(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.button = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.button(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.setId = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.setId(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.id = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.id(...args);
             
         };
-    
+        
         // function 
         QButtonGroup.prototype.checkedId = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.checkedId(...args);
             
         };
-    
+        
 
       // static functions:
       

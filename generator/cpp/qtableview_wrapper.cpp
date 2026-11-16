@@ -282,15 +282,21 @@ QTableView_Wrapper::QTableView_Wrapper
 
                 // set handler for wrapped base object:
                 //((QTableView_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QTableView_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QTableView_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       

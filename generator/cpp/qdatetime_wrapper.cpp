@@ -554,6 +554,8 @@ int a3_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -577,6 +579,8 @@ int a3_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -2548,6 +2552,8 @@ int a4_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -2571,6 +2577,8 @@ int a4_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -4495,6 +4503,8 @@ QDateTime_Wrapper::QDateTime_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

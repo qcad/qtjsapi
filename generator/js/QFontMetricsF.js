@@ -212,7 +212,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.ascent = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.ascent(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.capHeight = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.capHeight(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.descent = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.descent(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.height = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.leading = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.leading(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.lineSpacing = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.lineSpacing(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.minLeftBearing = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.minLeftBearing(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.minRightBearing = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.minRightBearing(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.maxWidth = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.maxWidth(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.xHeight = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.xHeight(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.averageCharWidth = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.averageCharWidth(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.inFont = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.inFont(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.inFontUcs4 = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.inFontUcs4(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.leftBearing = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.leftBearing(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.rightBearing = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.rightBearing(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.horizontalAdvance = function(...args) 
           
@@ -372,7 +372,7 @@
               return this.__PROXY__.horizontalAdvance(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.boundingRect = function(...args) 
           
@@ -382,7 +382,7 @@
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.size = function(...args) 
           
@@ -392,7 +392,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.tightBoundingRect = function(...args) 
           
@@ -402,7 +402,7 @@
               return this.__PROXY__.tightBoundingRect(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.elidedText = function(...args) 
           
@@ -412,7 +412,7 @@
               return this.__PROXY__.elidedText(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.underlinePos = function(...args) 
           
@@ -422,7 +422,7 @@
               return this.__PROXY__.underlinePos(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.overlinePos = function(...args) 
           
@@ -432,7 +432,7 @@
               return this.__PROXY__.overlinePos(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.strikeOutPos = function(...args) 
           
@@ -442,7 +442,7 @@
               return this.__PROXY__.strikeOutPos(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.lineWidth = function(...args) 
           
@@ -452,7 +452,7 @@
               return this.__PROXY__.lineWidth(...args);
             
         };
-    
+        
         // function 
         QFontMetricsF.prototype.fontDpi = function(...args) 
           
@@ -462,7 +462,7 @@
               return this.__PROXY__.fontDpi(...args);
             
         };
-    
+        
 
       // static functions:
       QFontMetricsF.prototype.isNullWrapper = function() {

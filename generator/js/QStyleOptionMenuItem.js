@@ -207,7 +207,7 @@ QStyleOptionMenuItem.NonExclusive = QStyleOptionMenuItem_Wrapper.NonExclusive;
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionMenuItem.prototype.operator_assign = function(...args) 
           
@@ -217,7 +217,7 @@ QStyleOptionMenuItem.NonExclusive = QStyleOptionMenuItem_Wrapper.NonExclusive;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionMenuItem.prototype.isNullWrapper = function() {

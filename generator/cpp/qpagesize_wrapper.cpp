@@ -991,6 +991,8 @@ QPageSize::SizeMatchPolicy a4_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -1065,6 +1067,8 @@ QPageSize::SizeMatchPolicy a3_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -1103,6 +1107,8 @@ QPageSize a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -1141,6 +1147,8 @@ QPageSize::PageSizeId a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -1164,6 +1172,8 @@ QPageSize::PageSizeId a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

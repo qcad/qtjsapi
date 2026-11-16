@@ -220,7 +220,7 @@ QEventPoint.Released = QEventPoint_Wrapper.Released;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QEventPoint.prototype.normalizedPosition = function(...args) 
           
@@ -230,7 +230,7 @@ QEventPoint.Released = QEventPoint_Wrapper.Released;
               return this.__PROXY__.normalizedPosition(...args);
             
         };
-    
+        
         // function 
         QEventPoint.prototype.isAccepted = function(...args) 
           
@@ -240,7 +240,7 @@ QEventPoint.Released = QEventPoint_Wrapper.Released;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QEventPoint.prototype.setAccepted = function(...args) 
           
@@ -250,7 +250,7 @@ QEventPoint.Released = QEventPoint_Wrapper.Released;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
 
       // static functions:
       

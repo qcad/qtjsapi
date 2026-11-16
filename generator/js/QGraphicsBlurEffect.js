@@ -159,7 +159,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.isWidgetType = function(...args) 
           
@@ -169,7 +169,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.isWindowType = function(...args) 
           
@@ -179,7 +179,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.signalsBlocked = function(...args) 
           
@@ -189,7 +189,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.blockSignals = function(...args) 
           
@@ -199,7 +199,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.findChild = function(...args) 
           
@@ -209,7 +209,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.children = function(...args) 
           
@@ -219,7 +219,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.setParent = function(...args) 
           
@@ -229,7 +229,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.installEventFilter = function(...args) 
           
@@ -239,7 +239,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.removeEventFilter = function(...args) 
           
@@ -249,7 +249,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.dumpObjectTree = function(...args) 
           
@@ -259,7 +259,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.dumpObjectInfo = function(...args) 
           
@@ -269,7 +269,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.setProperty = function(...args) 
           
@@ -279,7 +279,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.property = function(...args) 
           
@@ -289,7 +289,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.dynamicPropertyNames = function(...args) 
           
@@ -299,7 +299,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.parent = function(...args) 
           
@@ -309,7 +309,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.deleteLater = function(...args) 
           
@@ -319,7 +319,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.boundingRect = function(...args) 
           
@@ -329,7 +329,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.isEnabled = function(...args) 
           
@@ -339,7 +339,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.setEnabled = function(...args) 
           
@@ -349,7 +349,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.update = function(...args) 
           
@@ -359,7 +359,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.boundingRectFor = function(...args) 
           
@@ -369,7 +369,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.boundingRectFor(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.blurRadius = function(...args) 
           
@@ -379,7 +379,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.blurRadius(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.setBlurRadius = function(...args) 
           
@@ -389,7 +389,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.setBlurRadius(...args);
             
         };
-    
+        
         // function 
         QGraphicsBlurEffect.prototype.setBlurHints = function(...args) 
           
@@ -399,7 +399,7 @@ QGraphicsBlurEffect.AnimationHint = QGraphicsBlurEffect_Wrapper.AnimationHint;
               return this.__PROXY__.setBlurHints(...args);
             
         };
-    
+        
 
       // static functions:
       

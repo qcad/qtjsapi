@@ -192,7 +192,7 @@ QStyleOptionProgressBar.SO_ComplexCustomBase = QStyleOptionProgressBar_Wrapper.S
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionProgressBar.prototype.operator_assign = function(...args) 
           
@@ -202,7 +202,7 @@ QStyleOptionProgressBar.SO_ComplexCustomBase = QStyleOptionProgressBar_Wrapper.S
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionProgressBar.prototype.isNullWrapper = function() {

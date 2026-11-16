@@ -186,7 +186,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isWidgetType = function(...args) 
           
@@ -196,7 +196,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isWindowType = function(...args) 
           
@@ -206,7 +206,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.signalsBlocked = function(...args) 
           
@@ -216,7 +216,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.blockSignals = function(...args) 
           
@@ -226,7 +226,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.findChild = function(...args) 
           
@@ -236,7 +236,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.children = function(...args) 
           
@@ -246,7 +246,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.installEventFilter = function(...args) 
           
@@ -256,7 +256,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.removeEventFilter = function(...args) 
           
@@ -266,7 +266,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.dumpObjectTree = function(...args) 
           
@@ -276,7 +276,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.dumpObjectInfo = function(...args) 
           
@@ -286,7 +286,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setProperty = function(...args) 
           
@@ -296,7 +296,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.property = function(...args) 
           
@@ -306,7 +306,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.dynamicPropertyNames = function(...args) 
           
@@ -316,7 +316,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.parent = function(...args) 
           
@@ -326,7 +326,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.deleteLater = function(...args) 
           
@@ -336,7 +336,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.devType = function(...args) 
           
@@ -346,7 +346,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.createWinId = function(...args) 
           
@@ -356,7 +356,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isWindow = function(...args) 
           
@@ -366,7 +366,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isModal = function(...args) 
           
@@ -376,7 +376,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowModality = function(...args) 
           
@@ -386,7 +386,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isEnabled = function(...args) 
           
@@ -396,7 +396,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isEnabledTo = function(...args) 
           
@@ -406,7 +406,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setEnabled = function(...args) 
           
@@ -416,7 +416,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setDisabled = function(...args) 
           
@@ -426,7 +426,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowModified = function(...args) 
           
@@ -436,7 +436,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMinimumSize = function(...args) 
           
@@ -446,7 +446,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMaximumSize = function(...args) 
           
@@ -456,7 +456,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMinimumWidth = function(...args) 
           
@@ -466,7 +466,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMinimumHeight = function(...args) 
           
@@ -476,7 +476,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMaximumWidth = function(...args) 
           
@@ -486,7 +486,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMaximumHeight = function(...args) 
           
@@ -496,7 +496,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setSizeIncrement = function(...args) 
           
@@ -506,7 +506,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setBaseSize = function(...args) 
           
@@ -516,7 +516,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFixedSize = function(...args) 
           
@@ -526,7 +526,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFixedWidth = function(...args) 
           
@@ -536,7 +536,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFixedHeight = function(...args) 
           
@@ -546,7 +546,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.mapToGlobal = function(...args) 
           
@@ -556,7 +556,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.mapFromGlobal = function(...args) 
           
@@ -566,7 +566,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.mapToParent = function(...args) 
           
@@ -576,7 +576,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.mapFromParent = function(...args) 
           
@@ -586,7 +586,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.mapTo = function(...args) 
           
@@ -596,7 +596,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.mapFrom = function(...args) 
           
@@ -606,7 +606,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.window = function(...args) 
           
@@ -616,7 +616,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.nativeParentWidget = function(...args) 
           
@@ -626,7 +626,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.topLevelWidget = function(...args) 
           
@@ -636,7 +636,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setPalette = function(...args) 
           
@@ -646,7 +646,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setBackgroundRole = function(...args) 
           
@@ -656,7 +656,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.backgroundRole = function(...args) 
           
@@ -666,7 +666,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setForegroundRole = function(...args) 
           
@@ -676,7 +676,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.foregroundRole = function(...args) 
           
@@ -686,7 +686,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFont = function(...args) 
           
@@ -696,7 +696,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.fontInfo = function(...args) 
           
@@ -706,7 +706,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setCursor = function(...args) 
           
@@ -716,7 +716,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.unsetCursor = function(...args) 
           
@@ -726,7 +726,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMouseTracking = function(...args) 
           
@@ -736,7 +736,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.hasMouseTracking = function(...args) 
           
@@ -746,7 +746,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.underMouse = function(...args) 
           
@@ -756,7 +756,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setTabletTracking = function(...args) 
           
@@ -766,7 +766,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.hasTabletTracking = function(...args) 
           
@@ -776,7 +776,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMask = function(...args) 
           
@@ -786,7 +786,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.mask = function(...args) 
           
@@ -796,7 +796,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.clearMask = function(...args) 
           
@@ -806,7 +806,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.grab = function(...args) 
           
@@ -816,7 +816,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.grabGesture = function(...args) 
           
@@ -826,7 +826,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.ungrabGesture = function(...args) 
           
@@ -836,7 +836,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowTitle = function(...args) 
           
@@ -846,7 +846,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setStyleSheet = function(...args) 
           
@@ -856,7 +856,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowIcon = function(...args) 
           
@@ -866,7 +866,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowIconText = function(...args) 
           
@@ -876,7 +876,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowRole = function(...args) 
           
@@ -886,7 +886,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.windowRole = function(...args) 
           
@@ -896,7 +896,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowFilePath = function(...args) 
           
@@ -906,7 +906,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowOpacity = function(...args) 
           
@@ -916,7 +916,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isWindowModified = function(...args) 
           
@@ -926,7 +926,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setToolTip = function(...args) 
           
@@ -936,7 +936,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setToolTipDuration = function(...args) 
           
@@ -946,7 +946,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setStatusTip = function(...args) 
           
@@ -956,7 +956,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWhatsThis = function(...args) 
           
@@ -966,7 +966,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setAccessibleName = function(...args) 
           
@@ -976,7 +976,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setAccessibleDescription = function(...args) 
           
@@ -986,7 +986,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setLayoutDirection = function(...args) 
           
@@ -996,7 +996,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1006,7 +1006,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setLocale = function(...args) 
           
@@ -1016,7 +1016,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.unsetLocale = function(...args) 
           
@@ -1026,7 +1026,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isRightToLeft = function(...args) 
           
@@ -1036,7 +1036,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isLeftToRight = function(...args) 
           
@@ -1046,7 +1046,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.activateWindow = function(...args) 
           
@@ -1056,7 +1056,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.clearFocus = function(...args) 
           
@@ -1066,7 +1066,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFocus = function(...args) 
           
@@ -1076,7 +1076,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFocusPolicy = function(...args) 
           
@@ -1086,7 +1086,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.hasFocus = function(...args) 
           
@@ -1096,7 +1096,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFocusProxy = function(...args) 
           
@@ -1106,7 +1106,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.focusProxy = function(...args) 
           
@@ -1116,7 +1116,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1126,7 +1126,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.grabMouse = function(...args) 
           
@@ -1136,7 +1136,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.releaseMouse = function(...args) 
           
@@ -1146,7 +1146,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.grabKeyboard = function(...args) 
           
@@ -1156,7 +1156,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.releaseKeyboard = function(...args) 
           
@@ -1166,7 +1166,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.grabShortcut = function(...args) 
           
@@ -1176,7 +1176,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.releaseShortcut = function(...args) 
           
@@ -1186,7 +1186,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setShortcutEnabled = function(...args) 
           
@@ -1196,7 +1196,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1206,7 +1206,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1216,7 +1216,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.update = function(...args) 
           
@@ -1226,7 +1226,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.repaint = function(...args) 
           
@@ -1236,7 +1236,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setVisible = function(...args) 
           
@@ -1246,7 +1246,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setHidden = function(...args) 
           
@@ -1256,7 +1256,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.show = function(...args) 
           
@@ -1266,7 +1266,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.hide = function(...args) 
           
@@ -1276,7 +1276,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.showMinimized = function(...args) 
           
@@ -1286,7 +1286,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.showMaximized = function(...args) 
           
@@ -1296,7 +1296,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.showFullScreen = function(...args) 
           
@@ -1306,7 +1306,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.showNormal = function(...args) 
           
@@ -1316,7 +1316,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.close = function(...args) 
           
@@ -1326,7 +1326,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.raise = function(...args) 
           
@@ -1336,7 +1336,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.lower = function(...args) 
           
@@ -1346,7 +1346,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.stackUnder = function(...args) 
           
@@ -1356,7 +1356,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.move = function(...args) 
           
@@ -1366,7 +1366,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.resize = function(...args) 
           
@@ -1376,7 +1376,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setGeometry = function(...args) 
           
@@ -1386,7 +1386,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.saveGeometry = function(...args) 
           
@@ -1396,7 +1396,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.restoreGeometry = function(...args) 
           
@@ -1406,7 +1406,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.adjustSize = function(...args) 
           
@@ -1416,7 +1416,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isVisible = function(...args) 
           
@@ -1426,7 +1426,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isVisibleTo = function(...args) 
           
@@ -1436,7 +1436,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isHidden = function(...args) 
           
@@ -1446,7 +1446,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isMinimized = function(...args) 
           
@@ -1456,7 +1456,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isMaximized = function(...args) 
           
@@ -1466,7 +1466,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isFullScreen = function(...args) 
           
@@ -1476,7 +1476,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.windowState = function(...args) 
           
@@ -1486,7 +1486,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowState = function(...args) 
           
@@ -1496,7 +1496,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.overrideWindowState = function(...args) 
           
@@ -1506,7 +1506,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setSizePolicy = function(...args) 
           
@@ -1516,7 +1516,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.heightForWidth = function(...args) 
           
@@ -1526,7 +1526,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.hasHeightForWidth = function(...args) 
           
@@ -1536,7 +1536,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.visibleRegion = function(...args) 
           
@@ -1546,7 +1546,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setContentsMargins = function(...args) 
           
@@ -1556,7 +1556,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.contentsMargins = function(...args) 
           
@@ -1566,7 +1566,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.contentsRect = function(...args) 
           
@@ -1576,7 +1576,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.layout = function(...args) 
           
@@ -1586,7 +1586,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setLayout = function(...args) 
           
@@ -1596,7 +1596,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.updateGeometry = function(...args) 
           
@@ -1606,7 +1606,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setParent = function(...args) 
           
@@ -1616,7 +1616,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.scroll = function(...args) 
           
@@ -1626,7 +1626,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.focusWidget = function(...args) 
           
@@ -1636,7 +1636,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.nextInFocusChain = function(...args) 
           
@@ -1646,7 +1646,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.previousInFocusChain = function(...args) 
           
@@ -1656,7 +1656,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setAcceptDrops = function(...args) 
           
@@ -1666,7 +1666,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.addAction = function(...args) 
           
@@ -1676,7 +1676,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.addActions = function(...args) 
           
@@ -1686,7 +1686,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.insertActions = function(...args) 
           
@@ -1696,7 +1696,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.insertAction = function(...args) 
           
@@ -1706,7 +1706,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.removeAction = function(...args) 
           
@@ -1716,7 +1716,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.actions = function(...args) 
           
@@ -1726,7 +1726,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.parentWidget = function(...args) 
           
@@ -1736,7 +1736,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowFlags = function(...args) 
           
@@ -1746,7 +1746,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.windowFlags = function(...args) 
           
@@ -1756,7 +1756,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setWindowFlag = function(...args) 
           
@@ -1766,7 +1766,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.overrideWindowFlags = function(...args) 
           
@@ -1776,7 +1776,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.windowType = function(...args) 
           
@@ -1786,7 +1786,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.childAt = function(...args) 
           
@@ -1796,7 +1796,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setAttribute = function(...args) 
           
@@ -1806,7 +1806,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.testAttribute = function(...args) 
           
@@ -1816,7 +1816,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.ensurePolished = function(...args) 
           
@@ -1826,7 +1826,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.isAncestorOf = function(...args) 
           
@@ -1836,7 +1836,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setAutoFillBackground = function(...args) 
           
@@ -1846,7 +1846,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.event = function(...args) 
           
@@ -1856,7 +1856,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1866,7 +1866,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.wheelEvent = function(...args) 
           
@@ -1876,7 +1876,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.keyPressEvent = function(...args) 
           
@@ -1886,7 +1886,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.keyReleaseEvent = function(...args) 
           
@@ -1896,7 +1896,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.focusInEvent = function(...args) 
           
@@ -1906,7 +1906,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.focusOutEvent = function(...args) 
           
@@ -1916,7 +1916,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.enterEvent = function(...args) 
           
@@ -1926,7 +1926,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.leaveEvent = function(...args) 
           
@@ -1936,7 +1936,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.moveEvent = function(...args) 
           
@@ -1946,7 +1946,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.closeEvent = function(...args) 
           
@@ -1956,7 +1956,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.tabletEvent = function(...args) 
           
@@ -1966,7 +1966,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.dragEnterEvent = function(...args) 
           
@@ -1976,7 +1976,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.dragMoveEvent = function(...args) 
           
@@ -1986,7 +1986,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.dragLeaveEvent = function(...args) 
           
@@ -1996,7 +1996,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.dropEvent = function(...args) 
           
@@ -2006,7 +2006,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.showEvent = function(...args) 
           
@@ -2016,7 +2016,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.hideEvent = function(...args) 
           
@@ -2026,7 +2026,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.nativeEvent = function(...args) 
           
@@ -2036,7 +2036,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.changeEvent = function(...args) 
           
@@ -2046,7 +2046,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.metric = function(...args) 
           
@@ -2056,7 +2056,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.initPainter = function(...args) 
           
@@ -2066,7 +2066,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.redirected = function(...args) 
           
@@ -2076,7 +2076,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.sharedPainter = function(...args) 
           
@@ -2086,7 +2086,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.inputMethodEvent = function(...args) 
           
@@ -2096,7 +2096,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.inputMethodQuery = function(...args) 
           
@@ -2106,7 +2106,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setInputMethodHints = function(...args) 
           
@@ -2116,7 +2116,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.updateMicroFocus = function(...args) 
           
@@ -2126,7 +2126,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.create = function(...args) 
           
@@ -2136,7 +2136,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.destroy = function(...args) 
           
@@ -2146,7 +2146,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.focusNextPrevChild = function(...args) 
           
@@ -2156,7 +2156,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.focusNextChild = function(...args) 
           
@@ -2166,7 +2166,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.focusPreviousChild = function(...args) 
           
@@ -2176,7 +2176,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setBackingStore = function(...args) 
           
@@ -2186,7 +2186,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.testAttribute_helper = function(...args) 
           
@@ -2196,7 +2196,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.takeLayout = function(...args) 
           
@@ -2206,7 +2206,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2216,7 +2216,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.qt_qwidget_data = function(...args) 
           
@@ -2226,7 +2226,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.qt_widget_private = function(...args) 
           
@@ -2236,7 +2236,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.frameStyle = function(...args) 
           
@@ -2246,7 +2246,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFrameStyle = function(...args) 
           
@@ -2256,7 +2256,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFrameShape = function(...args) 
           
@@ -2266,7 +2266,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFrameShadow = function(...args) 
           
@@ -2276,7 +2276,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setLineWidth = function(...args) 
           
@@ -2286,7 +2286,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setMidLineWidth = function(...args) 
           
@@ -2296,7 +2296,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setFrameRect = function(...args) 
           
@@ -2306,7 +2306,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.drawFrame = function(...args) 
           
@@ -2316,7 +2316,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.initStyleOption = function(...args) 
           
@@ -2326,7 +2326,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.verticalScrollBarPolicy = function(...args) 
           
@@ -2336,7 +2336,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.verticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setVerticalScrollBarPolicy = function(...args) 
           
@@ -2346,7 +2346,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setVerticalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.verticalScrollBar = function(...args) 
           
@@ -2356,7 +2356,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.verticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setVerticalScrollBar = function(...args) 
           
@@ -2366,7 +2366,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setVerticalScrollBar(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.horizontalScrollBarPolicy = function(...args) 
           
@@ -2376,7 +2376,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.horizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setHorizontalScrollBarPolicy = function(...args) 
           
@@ -2386,7 +2386,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setHorizontalScrollBarPolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.horizontalScrollBar = function(...args) 
           
@@ -2396,7 +2396,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.horizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setHorizontalScrollBar = function(...args) 
           
@@ -2406,7 +2406,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setHorizontalScrollBar(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.cornerWidget = function(...args) 
           
@@ -2416,7 +2416,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.cornerWidget(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setCornerWidget = function(...args) 
           
@@ -2426,7 +2426,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setCornerWidget(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.addScrollBarWidget = function(...args) 
           
@@ -2436,7 +2436,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.addScrollBarWidget(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.viewport = function(...args) 
           
@@ -2446,7 +2446,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setViewport = function(...args) 
           
@@ -2456,7 +2456,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.maximumViewportSize = function(...args) 
           
@@ -2466,7 +2466,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.maximumViewportSize(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.sizeAdjustPolicy = function(...args) 
           
@@ -2476,7 +2476,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.sizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2486,7 +2486,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.eventFilter = function(...args) 
           
@@ -2496,7 +2496,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.currentSubWindow = function(...args) 
           
@@ -2506,7 +2506,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.currentSubWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.activeSubWindow = function(...args) 
           
@@ -2516,7 +2516,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activeSubWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.subWindowList = function(...args) 
           
@@ -2526,7 +2526,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.subWindowList(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.addSubWindow = function(...args) 
           
@@ -2536,7 +2536,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.addSubWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.removeSubWindow = function(...args) 
           
@@ -2546,7 +2546,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.removeSubWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.background = function(...args) 
           
@@ -2556,7 +2556,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setBackground = function(...args) 
           
@@ -2566,7 +2566,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setActivationOrder = function(...args) 
           
@@ -2576,7 +2576,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setActivationOrder(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setOption = function(...args) 
           
@@ -2586,7 +2586,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.testOption = function(...args) 
           
@@ -2596,7 +2596,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.testOption(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setViewMode = function(...args) 
           
@@ -2606,7 +2606,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setViewMode(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setDocumentMode = function(...args) 
           
@@ -2616,7 +2616,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setDocumentMode(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setTabsClosable = function(...args) 
           
@@ -2626,7 +2626,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabsClosable(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setTabsMovable = function(...args) 
           
@@ -2636,7 +2636,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabsMovable(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setTabShape = function(...args) 
           
@@ -2646,7 +2646,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabShape(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setTabPosition = function(...args) 
           
@@ -2656,7 +2656,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setTabPosition(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setActiveSubWindow = function(...args) 
           
@@ -2666,7 +2666,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setActiveSubWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.tileSubWindows = function(...args) 
           
@@ -2676,7 +2676,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.tileSubWindows(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.cascadeSubWindows = function(...args) 
           
@@ -2686,7 +2686,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.cascadeSubWindows(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.closeActiveSubWindow = function(...args) 
           
@@ -2696,7 +2696,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.closeActiveSubWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.closeAllSubWindows = function(...args) 
           
@@ -2706,7 +2706,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.closeAllSubWindows(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.activateNextSubWindow = function(...args) 
           
@@ -2716,7 +2716,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activateNextSubWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.activatePreviousSubWindow = function(...args) 
           
@@ -2726,7 +2726,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.activatePreviousSubWindow(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.setupViewport = function(...args) 
           
@@ -2736,7 +2736,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.setupViewport(...args);
             
         };
-    
+        
         // function 
         QMdiArea.prototype.scrollContentsBy = function(...args) 
           
@@ -2746,7 +2746,7 @@ QMdiArea.TabbedView = QMdiArea_Wrapper.TabbedView;
               return this.__PROXY__.scrollContentsBy(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -192,7 +192,7 @@ QStyleOptionRubberBand.SO_ComplexCustomBase = QStyleOptionRubberBand_Wrapper.SO_
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionRubberBand.prototype.operator_assign = function(...args) 
           
@@ -202,7 +202,7 @@ QStyleOptionRubberBand.SO_ComplexCustomBase = QStyleOptionRubberBand_Wrapper.SO_
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionRubberBand.prototype.isNullWrapper = function() {

@@ -238,7 +238,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.left = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.left(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.top = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.top(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.right = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.right(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.bottom = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.bottom(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.setLeft = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.setLeft(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.setTop = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.setTop(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.setRight = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.setRight(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.setBottom = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.setBottom(...args);
             
         };
-    
+        
         // function 
         QMarginsF.prototype.toMargins = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.toMargins(...args);
             
         };
-    
+        
 
       // static functions:
       QMarginsF.prototype.isNullWrapper = function() {

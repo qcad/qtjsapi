@@ -281,7 +281,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.merge = function(...args) 
           
@@ -291,7 +291,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.merge(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isEmpty = function(...args) 
           
@@ -301,7 +301,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.type = function(...args) 
           
@@ -311,7 +311,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.objectIndex = function(...args) 
           
@@ -321,7 +321,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.objectIndex(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setObjectIndex = function(...args) 
           
@@ -331,7 +331,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setObjectIndex(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.property = function(...args) 
           
@@ -341,7 +341,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setProperty = function(...args) 
           
@@ -351,7 +351,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.clearProperty = function(...args) 
           
@@ -361,7 +361,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.clearProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.hasProperty = function(...args) 
           
@@ -371,7 +371,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.hasProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.boolProperty = function(...args) 
           
@@ -381,7 +381,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.boolProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.intProperty = function(...args) 
           
@@ -391,7 +391,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.intProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.doubleProperty = function(...args) 
           
@@ -401,7 +401,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.doubleProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.stringProperty = function(...args) 
           
@@ -411,7 +411,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.stringProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.colorProperty = function(...args) 
           
@@ -421,7 +421,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.colorProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.penProperty = function(...args) 
           
@@ -431,7 +431,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.penProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.brushProperty = function(...args) 
           
@@ -441,7 +441,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.brushProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.lengthProperty = function(...args) 
           
@@ -451,7 +451,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.lengthProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.lengthVectorProperty = function(...args) 
           
@@ -461,7 +461,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.lengthVectorProperty(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.propertyCount = function(...args) 
           
@@ -471,7 +471,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.propertyCount(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setObjectType = function(...args) 
           
@@ -481,7 +481,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setObjectType(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.objectType = function(...args) 
           
@@ -491,7 +491,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.objectType(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isCharFormat = function(...args) 
           
@@ -501,7 +501,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isBlockFormat = function(...args) 
           
@@ -511,7 +511,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isListFormat = function(...args) 
           
@@ -521,7 +521,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isListFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isFrameFormat = function(...args) 
           
@@ -531,7 +531,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isImageFormat = function(...args) 
           
@@ -541,7 +541,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isTableFormat = function(...args) 
           
@@ -551,7 +551,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isTableCellFormat = function(...args) 
           
@@ -561,7 +561,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.toBlockFormat = function(...args) 
           
@@ -571,7 +571,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.toBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.toCharFormat = function(...args) 
           
@@ -581,7 +581,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.toCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.toListFormat = function(...args) 
           
@@ -591,7 +591,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.toListFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.toTableFormat = function(...args) 
           
@@ -601,7 +601,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.toTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.toFrameFormat = function(...args) 
           
@@ -611,7 +611,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.toFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.toImageFormat = function(...args) 
           
@@ -621,7 +621,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.toImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.toTableCellFormat = function(...args) 
           
@@ -631,7 +631,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.toTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setLayoutDirection = function(...args) 
           
@@ -641,7 +641,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.layoutDirection = function(...args) 
           
@@ -651,7 +651,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.layoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setBackground = function(...args) 
           
@@ -661,7 +661,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.background = function(...args) 
           
@@ -671,7 +671,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.clearBackground = function(...args) 
           
@@ -681,7 +681,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.clearBackground(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setForeground = function(...args) 
           
@@ -691,7 +691,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setForeground(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.foreground = function(...args) 
           
@@ -701,7 +701,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.foreground(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.clearForeground = function(...args) 
           
@@ -711,7 +711,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.clearForeground(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.isValid = function(...args) 
           
@@ -721,7 +721,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setStyle = function(...args) 
           
@@ -731,7 +731,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setStyle(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.style = function(...args) 
           
@@ -741,7 +741,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.style(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setIndent = function(...args) 
           
@@ -751,7 +751,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setIndent(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.indent = function(...args) 
           
@@ -761,7 +761,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.indent(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setNumberPrefix = function(...args) 
           
@@ -771,7 +771,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setNumberPrefix(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.numberPrefix = function(...args) 
           
@@ -781,7 +781,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.numberPrefix(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.setNumberSuffix = function(...args) 
           
@@ -791,7 +791,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.setNumberSuffix(...args);
             
         };
-    
+        
         // function 
         QTextListFormat.prototype.numberSuffix = function(...args) 
           
@@ -801,7 +801,7 @@ QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
               return this.__PROXY__.numberSuffix(...args);
             
         };
-    
+        
 
       // static functions:
       QTextListFormat.prototype.isNullWrapper = function() {

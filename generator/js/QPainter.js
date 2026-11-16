@@ -184,7 +184,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.device(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.begin = function(...args) 
           
@@ -194,7 +194,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.begin(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.end = function(...args) 
           
@@ -204,7 +204,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.end(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.isActive = function(...args) 
           
@@ -214,7 +214,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.isActive(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setCompositionMode = function(...args) 
           
@@ -224,7 +224,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setCompositionMode(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.compositionMode = function(...args) 
           
@@ -234,7 +234,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.compositionMode(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.font = function(...args) 
           
@@ -244,7 +244,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setFont = function(...args) 
           
@@ -254,7 +254,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.fontInfo = function(...args) 
           
@@ -264,7 +264,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setPen = function(...args) 
           
@@ -274,7 +274,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setPen(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.pen = function(...args) 
           
@@ -284,7 +284,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.pen(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setBrush = function(...args) 
           
@@ -294,7 +294,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setBrush(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.brush = function(...args) 
           
@@ -304,7 +304,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.brush(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setBackgroundMode = function(...args) 
           
@@ -314,7 +314,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setBackgroundMode(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.backgroundMode = function(...args) 
           
@@ -324,7 +324,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.backgroundMode(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.brushOrigin = function(...args) 
           
@@ -334,7 +334,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.brushOrigin(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setBrushOrigin = function(...args) 
           
@@ -344,7 +344,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setBrushOrigin(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setBackground = function(...args) 
           
@@ -354,7 +354,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.background = function(...args) 
           
@@ -364,7 +364,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.opacity = function(...args) 
           
@@ -374,7 +374,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.opacity(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setOpacity = function(...args) 
           
@@ -384,7 +384,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setOpacity(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.clipRegion = function(...args) 
           
@@ -394,7 +394,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.clipRegion(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.clipPath = function(...args) 
           
@@ -404,7 +404,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.clipPath(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setClipRect = function(...args) 
           
@@ -414,7 +414,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setClipRect(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setClipRegion = function(...args) 
           
@@ -424,7 +424,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setClipRegion(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setClipPath = function(...args) 
           
@@ -434,7 +434,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setClipPath(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setClipping = function(...args) 
           
@@ -444,7 +444,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setClipping(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.hasClipping = function(...args) 
           
@@ -454,7 +454,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.hasClipping(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.clipBoundingRect = function(...args) 
           
@@ -464,7 +464,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.clipBoundingRect(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.save = function(...args) 
           
@@ -474,7 +474,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.save(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.restore = function(...args) 
           
@@ -484,7 +484,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.restore(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setTransform = function(...args) 
           
@@ -494,7 +494,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setTransform(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.transform = function(...args) 
           
@@ -504,7 +504,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.transform(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.deviceTransform = function(...args) 
           
@@ -514,7 +514,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.deviceTransform(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.resetTransform = function(...args) 
           
@@ -524,7 +524,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.resetTransform(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setWorldTransform = function(...args) 
           
@@ -534,7 +534,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setWorldTransform(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.worldTransform = function(...args) 
           
@@ -544,7 +544,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.worldTransform(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.combinedTransform = function(...args) 
           
@@ -554,7 +554,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.combinedTransform(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setWorldMatrixEnabled = function(...args) 
           
@@ -564,7 +564,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setWorldMatrixEnabled(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.worldMatrixEnabled = function(...args) 
           
@@ -574,7 +574,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.worldMatrixEnabled(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.scale = function(...args) 
           
@@ -584,7 +584,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.scale(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.shear = function(...args) 
           
@@ -594,7 +594,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.shear(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.rotate = function(...args) 
           
@@ -604,7 +604,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.rotate(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.translate = function(...args) 
           
@@ -614,7 +614,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.window = function(...args) 
           
@@ -624,7 +624,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setWindow = function(...args) 
           
@@ -634,7 +634,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setWindow(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.viewport = function(...args) 
           
@@ -644,7 +644,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.viewport(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setViewport = function(...args) 
           
@@ -654,7 +654,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setViewport(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setViewTransformEnabled = function(...args) 
           
@@ -664,7 +664,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setViewTransformEnabled(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.viewTransformEnabled = function(...args) 
           
@@ -674,7 +674,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.viewTransformEnabled(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.strokePath = function(...args) 
           
@@ -684,7 +684,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.strokePath(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.fillPath = function(...args) 
           
@@ -694,7 +694,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.fillPath(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPath = function(...args) 
           
@@ -704,7 +704,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPath(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPoint = function(...args) 
           
@@ -714,7 +714,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPoint(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPoints = function(...args) 
           
@@ -724,7 +724,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPoints(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawLine = function(...args) 
           
@@ -734,7 +734,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawLine(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawLines = function(...args) 
           
@@ -744,7 +744,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawLines(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawRect = function(...args) 
           
@@ -754,7 +754,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawRect(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawRects = function(...args) 
           
@@ -764,7 +764,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawRects(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawEllipse = function(...args) 
           
@@ -774,7 +774,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawEllipse(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPolyline = function(...args) 
           
@@ -784,7 +784,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPolyline(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPolygon = function(...args) 
           
@@ -794,7 +794,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPolygon(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawConvexPolygon = function(...args) 
           
@@ -804,7 +804,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawConvexPolygon(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawArc = function(...args) 
           
@@ -814,7 +814,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawArc(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPie = function(...args) 
           
@@ -824,7 +824,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPie(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawChord = function(...args) 
           
@@ -834,7 +834,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawChord(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawRoundedRect = function(...args) 
           
@@ -844,7 +844,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawRoundedRect(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawTiledPixmap = function(...args) 
           
@@ -854,7 +854,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawTiledPixmap(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPicture = function(...args) 
           
@@ -864,7 +864,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPicture(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPixmap = function(...args) 
           
@@ -874,7 +874,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPixmap(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawPixmapFragments = function(...args) 
           
@@ -884,7 +884,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawPixmapFragments(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawImage = function(...args) 
           
@@ -894,7 +894,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawImage(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setLayoutDirection = function(...args) 
           
@@ -904,7 +904,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.layoutDirection = function(...args) 
           
@@ -914,7 +914,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.layoutDirection(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.drawText = function(...args) 
           
@@ -924,7 +924,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.drawText(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.boundingRect = function(...args) 
           
@@ -934,7 +934,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.fillRect = function(...args) 
           
@@ -944,7 +944,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.fillRect(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.eraseRect = function(...args) 
           
@@ -954,7 +954,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.eraseRect(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setRenderHint = function(...args) 
           
@@ -964,7 +964,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setRenderHint(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.setRenderHints = function(...args) 
           
@@ -974,7 +974,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.setRenderHints(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.renderHints = function(...args) 
           
@@ -984,7 +984,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.renderHints(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.testRenderHint = function(...args) 
           
@@ -994,7 +994,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.testRenderHint(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.paintEngine = function(...args) 
           
@@ -1004,7 +1004,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.beginNativePainting = function(...args) 
           
@@ -1014,7 +1014,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.beginNativePainting(...args);
             
         };
-    
+        
         // function 
         QPainter.prototype.endNativePainting = function(...args) 
           
@@ -1024,7 +1024,7 @@ QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
               return this.__PROXY__.endNativePainting(...args);
             
         };
-    
+        
 
       // static functions:
       QPainter.prototype.isNullWrapper = function() {

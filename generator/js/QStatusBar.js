@@ -143,7 +143,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isWidgetType = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isWindowType = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.signalsBlocked = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.blockSignals = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.findChild = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.children = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.installEventFilter = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.removeEventFilter = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.dumpObjectTree = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.dumpObjectInfo = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setProperty = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.property = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.dynamicPropertyNames = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.parent = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.deleteLater = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.devType = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.createWinId = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isWindow = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isModal = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowModality = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isEnabled = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isEnabledTo = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setEnabled = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setDisabled = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowModified = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setMinimumSize = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setMaximumSize = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setMinimumWidth = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setMinimumHeight = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setMaximumWidth = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setMaximumHeight = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setSizeIncrement = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setBaseSize = function(...args) 
           
@@ -473,7 +473,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setFixedSize = function(...args) 
           
@@ -483,7 +483,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setFixedWidth = function(...args) 
           
@@ -493,7 +493,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setFixedHeight = function(...args) 
           
@@ -503,7 +503,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.mapToGlobal = function(...args) 
           
@@ -513,7 +513,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.mapFromGlobal = function(...args) 
           
@@ -523,7 +523,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.mapToParent = function(...args) 
           
@@ -533,7 +533,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.mapFromParent = function(...args) 
           
@@ -543,7 +543,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.mapTo = function(...args) 
           
@@ -553,7 +553,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.mapFrom = function(...args) 
           
@@ -563,7 +563,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.window = function(...args) 
           
@@ -573,7 +573,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.nativeParentWidget = function(...args) 
           
@@ -583,7 +583,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.topLevelWidget = function(...args) 
           
@@ -593,7 +593,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setPalette = function(...args) 
           
@@ -603,7 +603,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setBackgroundRole = function(...args) 
           
@@ -613,7 +613,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.backgroundRole = function(...args) 
           
@@ -623,7 +623,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setForegroundRole = function(...args) 
           
@@ -633,7 +633,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.foregroundRole = function(...args) 
           
@@ -643,7 +643,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setFont = function(...args) 
           
@@ -653,7 +653,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.fontInfo = function(...args) 
           
@@ -663,7 +663,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setCursor = function(...args) 
           
@@ -673,7 +673,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.unsetCursor = function(...args) 
           
@@ -683,7 +683,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setMouseTracking = function(...args) 
           
@@ -693,7 +693,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.hasMouseTracking = function(...args) 
           
@@ -703,7 +703,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.underMouse = function(...args) 
           
@@ -713,7 +713,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setTabletTracking = function(...args) 
           
@@ -723,7 +723,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.hasTabletTracking = function(...args) 
           
@@ -733,7 +733,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setMask = function(...args) 
           
@@ -743,7 +743,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.mask = function(...args) 
           
@@ -753,7 +753,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.clearMask = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.grab = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.grabGesture = function(...args) 
           
@@ -783,7 +783,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.ungrabGesture = function(...args) 
           
@@ -793,7 +793,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowTitle = function(...args) 
           
@@ -803,7 +803,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setStyleSheet = function(...args) 
           
@@ -813,7 +813,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowIcon = function(...args) 
           
@@ -823,7 +823,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowIconText = function(...args) 
           
@@ -833,7 +833,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowRole = function(...args) 
           
@@ -843,7 +843,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.windowRole = function(...args) 
           
@@ -853,7 +853,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowFilePath = function(...args) 
           
@@ -863,7 +863,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowOpacity = function(...args) 
           
@@ -873,7 +873,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isWindowModified = function(...args) 
           
@@ -883,7 +883,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setToolTip = function(...args) 
           
@@ -893,7 +893,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setToolTipDuration = function(...args) 
           
@@ -903,7 +903,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setStatusTip = function(...args) 
           
@@ -913,7 +913,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWhatsThis = function(...args) 
           
@@ -923,7 +923,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setAccessibleName = function(...args) 
           
@@ -933,7 +933,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setAccessibleDescription = function(...args) 
           
@@ -943,7 +943,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setLayoutDirection = function(...args) 
           
@@ -953,7 +953,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.unsetLayoutDirection = function(...args) 
           
@@ -963,7 +963,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setLocale = function(...args) 
           
@@ -973,7 +973,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.unsetLocale = function(...args) 
           
@@ -983,7 +983,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isRightToLeft = function(...args) 
           
@@ -993,7 +993,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isLeftToRight = function(...args) 
           
@@ -1003,7 +1003,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.activateWindow = function(...args) 
           
@@ -1013,7 +1013,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.clearFocus = function(...args) 
           
@@ -1023,7 +1023,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setFocus = function(...args) 
           
@@ -1033,7 +1033,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setFocusPolicy = function(...args) 
           
@@ -1043,7 +1043,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.hasFocus = function(...args) 
           
@@ -1053,7 +1053,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setFocusProxy = function(...args) 
           
@@ -1063,7 +1063,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.focusProxy = function(...args) 
           
@@ -1073,7 +1073,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1083,7 +1083,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.grabMouse = function(...args) 
           
@@ -1093,7 +1093,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.releaseMouse = function(...args) 
           
@@ -1103,7 +1103,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.grabKeyboard = function(...args) 
           
@@ -1113,7 +1113,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.releaseKeyboard = function(...args) 
           
@@ -1123,7 +1123,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.grabShortcut = function(...args) 
           
@@ -1133,7 +1133,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.releaseShortcut = function(...args) 
           
@@ -1143,7 +1143,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setShortcutEnabled = function(...args) 
           
@@ -1153,7 +1153,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1163,7 +1163,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1173,7 +1173,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.update = function(...args) 
           
@@ -1183,7 +1183,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.repaint = function(...args) 
           
@@ -1193,7 +1193,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setVisible = function(...args) 
           
@@ -1203,7 +1203,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setHidden = function(...args) 
           
@@ -1213,7 +1213,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.show = function(...args) 
           
@@ -1223,7 +1223,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.hide = function(...args) 
           
@@ -1233,7 +1233,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.showMinimized = function(...args) 
           
@@ -1243,7 +1243,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.showMaximized = function(...args) 
           
@@ -1253,7 +1253,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.showFullScreen = function(...args) 
           
@@ -1263,7 +1263,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.showNormal = function(...args) 
           
@@ -1273,7 +1273,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.close = function(...args) 
           
@@ -1283,7 +1283,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.raise = function(...args) 
           
@@ -1293,7 +1293,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.lower = function(...args) 
           
@@ -1303,7 +1303,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.stackUnder = function(...args) 
           
@@ -1313,7 +1313,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.move = function(...args) 
           
@@ -1323,7 +1323,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.resize = function(...args) 
           
@@ -1333,7 +1333,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setGeometry = function(...args) 
           
@@ -1343,7 +1343,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.saveGeometry = function(...args) 
           
@@ -1353,7 +1353,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.restoreGeometry = function(...args) 
           
@@ -1363,7 +1363,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.adjustSize = function(...args) 
           
@@ -1373,7 +1373,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isVisible = function(...args) 
           
@@ -1383,7 +1383,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isVisibleTo = function(...args) 
           
@@ -1393,7 +1393,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isHidden = function(...args) 
           
@@ -1403,7 +1403,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isMinimized = function(...args) 
           
@@ -1413,7 +1413,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isMaximized = function(...args) 
           
@@ -1423,7 +1423,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isFullScreen = function(...args) 
           
@@ -1433,7 +1433,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.windowState = function(...args) 
           
@@ -1443,7 +1443,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowState = function(...args) 
           
@@ -1453,7 +1453,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.overrideWindowState = function(...args) 
           
@@ -1463,7 +1463,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setSizePolicy = function(...args) 
           
@@ -1473,7 +1473,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.heightForWidth = function(...args) 
           
@@ -1483,7 +1483,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.hasHeightForWidth = function(...args) 
           
@@ -1493,7 +1493,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.visibleRegion = function(...args) 
           
@@ -1503,7 +1503,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setContentsMargins = function(...args) 
           
@@ -1513,7 +1513,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.contentsMargins = function(...args) 
           
@@ -1523,7 +1523,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.contentsRect = function(...args) 
           
@@ -1533,7 +1533,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.layout = function(...args) 
           
@@ -1543,7 +1543,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setLayout = function(...args) 
           
@@ -1553,7 +1553,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.updateGeometry = function(...args) 
           
@@ -1563,7 +1563,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setParent = function(...args) 
           
@@ -1573,7 +1573,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.scroll = function(...args) 
           
@@ -1583,7 +1583,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.focusWidget = function(...args) 
           
@@ -1593,7 +1593,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.nextInFocusChain = function(...args) 
           
@@ -1603,7 +1603,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.previousInFocusChain = function(...args) 
           
@@ -1613,7 +1613,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setAcceptDrops = function(...args) 
           
@@ -1623,7 +1623,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.addAction = function(...args) 
           
@@ -1633,7 +1633,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.addActions = function(...args) 
           
@@ -1643,7 +1643,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.insertActions = function(...args) 
           
@@ -1653,7 +1653,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.insertAction = function(...args) 
           
@@ -1663,7 +1663,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.removeAction = function(...args) 
           
@@ -1673,7 +1673,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.actions = function(...args) 
           
@@ -1683,7 +1683,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.parentWidget = function(...args) 
           
@@ -1693,7 +1693,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowFlags = function(...args) 
           
@@ -1703,7 +1703,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.windowFlags = function(...args) 
           
@@ -1713,7 +1713,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setWindowFlag = function(...args) 
           
@@ -1723,7 +1723,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.overrideWindowFlags = function(...args) 
           
@@ -1733,7 +1733,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.windowType = function(...args) 
           
@@ -1743,7 +1743,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.childAt = function(...args) 
           
@@ -1753,7 +1753,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setAttribute = function(...args) 
           
@@ -1763,7 +1763,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.testAttribute = function(...args) 
           
@@ -1773,7 +1773,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.ensurePolished = function(...args) 
           
@@ -1783,7 +1783,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isAncestorOf = function(...args) 
           
@@ -1793,7 +1793,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setAutoFillBackground = function(...args) 
           
@@ -1803,7 +1803,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.event = function(...args) 
           
@@ -1813,7 +1813,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1823,7 +1823,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.wheelEvent = function(...args) 
           
@@ -1833,7 +1833,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.keyPressEvent = function(...args) 
           
@@ -1843,7 +1843,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.keyReleaseEvent = function(...args) 
           
@@ -1853,7 +1853,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.focusInEvent = function(...args) 
           
@@ -1863,7 +1863,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.focusOutEvent = function(...args) 
           
@@ -1873,7 +1873,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.enterEvent = function(...args) 
           
@@ -1883,7 +1883,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.leaveEvent = function(...args) 
           
@@ -1893,7 +1893,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.moveEvent = function(...args) 
           
@@ -1903,7 +1903,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.closeEvent = function(...args) 
           
@@ -1913,7 +1913,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.tabletEvent = function(...args) 
           
@@ -1923,7 +1923,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.dragEnterEvent = function(...args) 
           
@@ -1933,7 +1933,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.dragMoveEvent = function(...args) 
           
@@ -1943,7 +1943,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.dragLeaveEvent = function(...args) 
           
@@ -1953,7 +1953,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.dropEvent = function(...args) 
           
@@ -1963,7 +1963,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.showEvent = function(...args) 
           
@@ -1973,7 +1973,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.hideEvent = function(...args) 
           
@@ -1983,7 +1983,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.nativeEvent = function(...args) 
           
@@ -1993,7 +1993,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.changeEvent = function(...args) 
           
@@ -2003,7 +2003,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.metric = function(...args) 
           
@@ -2013,7 +2013,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.initPainter = function(...args) 
           
@@ -2023,7 +2023,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.redirected = function(...args) 
           
@@ -2033,7 +2033,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.sharedPainter = function(...args) 
           
@@ -2043,7 +2043,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.inputMethodEvent = function(...args) 
           
@@ -2053,7 +2053,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.inputMethodQuery = function(...args) 
           
@@ -2063,7 +2063,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setInputMethodHints = function(...args) 
           
@@ -2073,7 +2073,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.updateMicroFocus = function(...args) 
           
@@ -2083,7 +2083,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.create = function(...args) 
           
@@ -2093,7 +2093,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.destroy = function(...args) 
           
@@ -2103,7 +2103,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.focusNextPrevChild = function(...args) 
           
@@ -2113,7 +2113,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.focusNextChild = function(...args) 
           
@@ -2123,7 +2123,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.focusPreviousChild = function(...args) 
           
@@ -2133,7 +2133,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setBackingStore = function(...args) 
           
@@ -2143,7 +2143,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.testAttribute_helper = function(...args) 
           
@@ -2153,7 +2153,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.takeLayout = function(...args) 
           
@@ -2163,7 +2163,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2173,7 +2173,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.qt_qwidget_data = function(...args) 
           
@@ -2183,7 +2183,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.qt_widget_private = function(...args) 
           
@@ -2193,7 +2193,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.addWidget = function(...args) 
           
@@ -2203,7 +2203,7 @@
               return this.__PROXY__.addWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.insertWidget = function(...args) 
           
@@ -2213,7 +2213,7 @@
               return this.__PROXY__.insertWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.addPermanentWidget = function(...args) 
           
@@ -2223,7 +2223,7 @@
               return this.__PROXY__.addPermanentWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.insertPermanentWidget = function(...args) 
           
@@ -2233,7 +2233,7 @@
               return this.__PROXY__.insertPermanentWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.removeWidget = function(...args) 
           
@@ -2243,7 +2243,7 @@
               return this.__PROXY__.removeWidget(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.setSizeGripEnabled = function(...args) 
           
@@ -2253,7 +2253,7 @@
               return this.__PROXY__.setSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.isSizeGripEnabled = function(...args) 
           
@@ -2263,7 +2263,7 @@
               return this.__PROXY__.isSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.currentMessage = function(...args) 
           
@@ -2273,7 +2273,7 @@
               return this.__PROXY__.currentMessage(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.showMessage = function(...args) 
           
@@ -2283,7 +2283,7 @@
               return this.__PROXY__.showMessage(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.clearMessage = function(...args) 
           
@@ -2293,7 +2293,7 @@
               return this.__PROXY__.clearMessage(...args);
             
         };
-    
+        
         // function 
         QStatusBar.prototype.paintEvent = function(...args) 
           
@@ -2303,7 +2303,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QStatusBar.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QStatusBar.prototype.mouseMoveEvent = function(...args) 
           
@@ -2313,7 +2314,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QStatusBar.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QStatusBar.prototype.resizeEvent = function(...args) 
           
@@ -2323,7 +2325,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QStatusBar.prototype.resizeEvent.__SUPER__ = true;
+        
 
       // static functions:
       

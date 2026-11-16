@@ -290,6 +290,8 @@ QBuffer_Wrapper::QBuffer_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -313,6 +315,8 @@ QBuffer_Wrapper::QBuffer_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

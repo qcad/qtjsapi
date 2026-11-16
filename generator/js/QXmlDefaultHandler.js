@@ -158,7 +158,7 @@
               return this.__PROXY__.warning(...args);
             
         };
-    
+        
         // function 
         QXmlDefaultHandler.prototype.error = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QXmlDefaultHandler.prototype.fatalError = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.fatalError(...args);
             
         };
-    
+        
       // function 
       QXmlDefaultHandler.prototype.setDocumentLocator = function() 
         

@@ -147,7 +147,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isWidgetType = function(...args) 
           
@@ -157,7 +157,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isWindowType = function(...args) 
           
@@ -167,7 +167,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.signalsBlocked = function(...args) 
           
@@ -177,7 +177,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.blockSignals = function(...args) 
           
@@ -187,7 +187,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.findChild = function(...args) 
           
@@ -197,7 +197,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.children = function(...args) 
           
@@ -207,7 +207,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.installEventFilter = function(...args) 
           
@@ -217,7 +217,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.removeEventFilter = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.dumpObjectTree = function(...args) 
           
@@ -237,7 +237,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.dumpObjectInfo = function(...args) 
           
@@ -247,7 +247,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setProperty = function(...args) 
           
@@ -257,7 +257,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.property = function(...args) 
           
@@ -267,7 +267,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.dynamicPropertyNames = function(...args) 
           
@@ -277,7 +277,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.parent = function(...args) 
           
@@ -287,7 +287,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.deleteLater = function(...args) 
           
@@ -297,7 +297,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.devType = function(...args) 
           
@@ -307,7 +307,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.createWinId = function(...args) 
           
@@ -317,7 +317,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isWindow = function(...args) 
           
@@ -327,7 +327,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isModal = function(...args) 
           
@@ -337,7 +337,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowModality = function(...args) 
           
@@ -347,7 +347,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isEnabled = function(...args) 
           
@@ -357,7 +357,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isEnabledTo = function(...args) 
           
@@ -367,7 +367,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setEnabled = function(...args) 
           
@@ -377,7 +377,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setDisabled = function(...args) 
           
@@ -387,7 +387,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowModified = function(...args) 
           
@@ -397,7 +397,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMinimumSize = function(...args) 
           
@@ -407,7 +407,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMaximumSize = function(...args) 
           
@@ -417,7 +417,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMinimumWidth = function(...args) 
           
@@ -427,7 +427,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMinimumHeight = function(...args) 
           
@@ -437,7 +437,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMaximumWidth = function(...args) 
           
@@ -447,7 +447,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMaximumHeight = function(...args) 
           
@@ -457,7 +457,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setSizeIncrement = function(...args) 
           
@@ -467,7 +467,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setBaseSize = function(...args) 
           
@@ -477,7 +477,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setFixedSize = function(...args) 
           
@@ -487,7 +487,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setFixedWidth = function(...args) 
           
@@ -497,7 +497,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setFixedHeight = function(...args) 
           
@@ -507,7 +507,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.mapToGlobal = function(...args) 
           
@@ -517,7 +517,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.mapFromGlobal = function(...args) 
           
@@ -527,7 +527,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.mapToParent = function(...args) 
           
@@ -537,7 +537,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.mapFromParent = function(...args) 
           
@@ -547,7 +547,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.mapTo = function(...args) 
           
@@ -557,7 +557,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.mapFrom = function(...args) 
           
@@ -567,7 +567,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.window = function(...args) 
           
@@ -577,7 +577,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.nativeParentWidget = function(...args) 
           
@@ -587,7 +587,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.topLevelWidget = function(...args) 
           
@@ -597,7 +597,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setPalette = function(...args) 
           
@@ -607,7 +607,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setBackgroundRole = function(...args) 
           
@@ -617,7 +617,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.backgroundRole = function(...args) 
           
@@ -627,7 +627,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setForegroundRole = function(...args) 
           
@@ -637,7 +637,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.foregroundRole = function(...args) 
           
@@ -647,7 +647,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setFont = function(...args) 
           
@@ -657,7 +657,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.fontInfo = function(...args) 
           
@@ -667,7 +667,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setCursor = function(...args) 
           
@@ -677,7 +677,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.unsetCursor = function(...args) 
           
@@ -687,7 +687,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMouseTracking = function(...args) 
           
@@ -697,7 +697,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.hasMouseTracking = function(...args) 
           
@@ -707,7 +707,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.underMouse = function(...args) 
           
@@ -717,7 +717,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setTabletTracking = function(...args) 
           
@@ -727,7 +727,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.hasTabletTracking = function(...args) 
           
@@ -737,7 +737,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMask = function(...args) 
           
@@ -747,7 +747,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.mask = function(...args) 
           
@@ -757,7 +757,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.clearMask = function(...args) 
           
@@ -767,7 +767,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.grab = function(...args) 
           
@@ -777,7 +777,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.grabGesture = function(...args) 
           
@@ -787,7 +787,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.ungrabGesture = function(...args) 
           
@@ -797,7 +797,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowTitle = function(...args) 
           
@@ -807,7 +807,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setStyleSheet = function(...args) 
           
@@ -817,7 +817,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowIcon = function(...args) 
           
@@ -827,7 +827,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowIconText = function(...args) 
           
@@ -837,7 +837,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowRole = function(...args) 
           
@@ -847,7 +847,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.windowRole = function(...args) 
           
@@ -857,7 +857,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowFilePath = function(...args) 
           
@@ -867,7 +867,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowOpacity = function(...args) 
           
@@ -877,7 +877,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isWindowModified = function(...args) 
           
@@ -887,7 +887,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setToolTip = function(...args) 
           
@@ -897,7 +897,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setToolTipDuration = function(...args) 
           
@@ -907,7 +907,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setStatusTip = function(...args) 
           
@@ -917,7 +917,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWhatsThis = function(...args) 
           
@@ -927,7 +927,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAccessibleName = function(...args) 
           
@@ -937,7 +937,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAccessibleDescription = function(...args) 
           
@@ -947,7 +947,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setLayoutDirection = function(...args) 
           
@@ -957,7 +957,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.unsetLayoutDirection = function(...args) 
           
@@ -967,7 +967,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setLocale = function(...args) 
           
@@ -977,7 +977,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.unsetLocale = function(...args) 
           
@@ -987,7 +987,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isRightToLeft = function(...args) 
           
@@ -997,7 +997,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isLeftToRight = function(...args) 
           
@@ -1007,7 +1007,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.activateWindow = function(...args) 
           
@@ -1017,7 +1017,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.clearFocus = function(...args) 
           
@@ -1027,7 +1027,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setFocus = function(...args) 
           
@@ -1037,7 +1037,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setFocusPolicy = function(...args) 
           
@@ -1047,7 +1047,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.hasFocus = function(...args) 
           
@@ -1057,7 +1057,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setFocusProxy = function(...args) 
           
@@ -1067,7 +1067,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.focusProxy = function(...args) 
           
@@ -1077,7 +1077,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1087,7 +1087,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.grabMouse = function(...args) 
           
@@ -1097,7 +1097,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.releaseMouse = function(...args) 
           
@@ -1107,7 +1107,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.grabKeyboard = function(...args) 
           
@@ -1117,7 +1117,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.releaseKeyboard = function(...args) 
           
@@ -1127,7 +1127,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.grabShortcut = function(...args) 
           
@@ -1137,7 +1137,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.releaseShortcut = function(...args) 
           
@@ -1147,7 +1147,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setShortcutEnabled = function(...args) 
           
@@ -1157,7 +1157,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1167,7 +1167,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1177,7 +1177,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.update = function(...args) 
           
@@ -1187,7 +1187,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.repaint = function(...args) 
           
@@ -1197,7 +1197,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setVisible = function(...args) 
           
@@ -1207,7 +1207,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setHidden = function(...args) 
           
@@ -1217,7 +1217,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.show = function(...args) 
           
@@ -1227,7 +1227,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.hide = function(...args) 
           
@@ -1237,7 +1237,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.showMinimized = function(...args) 
           
@@ -1247,7 +1247,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.showMaximized = function(...args) 
           
@@ -1257,7 +1257,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.showFullScreen = function(...args) 
           
@@ -1267,7 +1267,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.showNormal = function(...args) 
           
@@ -1277,7 +1277,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.close = function(...args) 
           
@@ -1287,7 +1287,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.raise = function(...args) 
           
@@ -1297,7 +1297,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.lower = function(...args) 
           
@@ -1307,7 +1307,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.stackUnder = function(...args) 
           
@@ -1317,7 +1317,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.move = function(...args) 
           
@@ -1327,7 +1327,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.resize = function(...args) 
           
@@ -1337,7 +1337,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setGeometry = function(...args) 
           
@@ -1347,7 +1347,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.saveGeometry = function(...args) 
           
@@ -1357,7 +1357,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.restoreGeometry = function(...args) 
           
@@ -1367,7 +1367,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.adjustSize = function(...args) 
           
@@ -1377,7 +1377,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isVisible = function(...args) 
           
@@ -1387,7 +1387,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isVisibleTo = function(...args) 
           
@@ -1397,7 +1397,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isHidden = function(...args) 
           
@@ -1407,7 +1407,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isMinimized = function(...args) 
           
@@ -1417,7 +1417,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isMaximized = function(...args) 
           
@@ -1427,7 +1427,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isFullScreen = function(...args) 
           
@@ -1437,7 +1437,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.windowState = function(...args) 
           
@@ -1447,7 +1447,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowState = function(...args) 
           
@@ -1457,7 +1457,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.overrideWindowState = function(...args) 
           
@@ -1467,7 +1467,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setSizePolicy = function(...args) 
           
@@ -1477,7 +1477,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.heightForWidth = function(...args) 
           
@@ -1487,7 +1487,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.hasHeightForWidth = function(...args) 
           
@@ -1497,7 +1497,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.visibleRegion = function(...args) 
           
@@ -1507,7 +1507,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setContentsMargins = function(...args) 
           
@@ -1517,7 +1517,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.contentsMargins = function(...args) 
           
@@ -1527,7 +1527,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.contentsRect = function(...args) 
           
@@ -1537,7 +1537,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.layout = function(...args) 
           
@@ -1547,7 +1547,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setLayout = function(...args) 
           
@@ -1557,7 +1557,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.updateGeometry = function(...args) 
           
@@ -1567,7 +1567,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setParent = function(...args) 
           
@@ -1577,7 +1577,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.scroll = function(...args) 
           
@@ -1587,7 +1587,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.focusWidget = function(...args) 
           
@@ -1597,7 +1597,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.nextInFocusChain = function(...args) 
           
@@ -1607,7 +1607,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.previousInFocusChain = function(...args) 
           
@@ -1617,7 +1617,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAcceptDrops = function(...args) 
           
@@ -1627,7 +1627,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.addAction = function(...args) 
           
@@ -1637,7 +1637,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.addActions = function(...args) 
           
@@ -1647,7 +1647,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.insertActions = function(...args) 
           
@@ -1657,7 +1657,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.insertAction = function(...args) 
           
@@ -1667,7 +1667,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.removeAction = function(...args) 
           
@@ -1677,7 +1677,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.actions = function(...args) 
           
@@ -1687,7 +1687,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.parentWidget = function(...args) 
           
@@ -1697,7 +1697,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowFlags = function(...args) 
           
@@ -1707,7 +1707,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.windowFlags = function(...args) 
           
@@ -1717,7 +1717,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setWindowFlag = function(...args) 
           
@@ -1727,7 +1727,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.overrideWindowFlags = function(...args) 
           
@@ -1737,7 +1737,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.windowType = function(...args) 
           
@@ -1747,7 +1747,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.childAt = function(...args) 
           
@@ -1757,7 +1757,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAttribute = function(...args) 
           
@@ -1767,7 +1767,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.testAttribute = function(...args) 
           
@@ -1777,7 +1777,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.ensurePolished = function(...args) 
           
@@ -1787,7 +1787,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isAncestorOf = function(...args) 
           
@@ -1797,7 +1797,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAutoFillBackground = function(...args) 
           
@@ -1807,7 +1807,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.event = function(...args) 
           
@@ -1817,7 +1817,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1827,7 +1827,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.wheelEvent = function(...args) 
           
@@ -1837,7 +1837,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.keyPressEvent = function(...args) 
           
@@ -1847,7 +1847,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.keyReleaseEvent = function(...args) 
           
@@ -1857,7 +1857,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.focusInEvent = function(...args) 
           
@@ -1867,7 +1867,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.focusOutEvent = function(...args) 
           
@@ -1877,7 +1877,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.enterEvent = function(...args) 
           
@@ -1887,7 +1887,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.leaveEvent = function(...args) 
           
@@ -1897,7 +1897,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.moveEvent = function(...args) 
           
@@ -1907,7 +1907,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.closeEvent = function(...args) 
           
@@ -1917,7 +1917,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.tabletEvent = function(...args) 
           
@@ -1927,7 +1927,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.dragEnterEvent = function(...args) 
           
@@ -1937,7 +1937,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.dragMoveEvent = function(...args) 
           
@@ -1947,7 +1947,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.dragLeaveEvent = function(...args) 
           
@@ -1957,7 +1957,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.dropEvent = function(...args) 
           
@@ -1967,7 +1967,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.showEvent = function(...args) 
           
@@ -1977,7 +1977,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.hideEvent = function(...args) 
           
@@ -1987,7 +1987,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.nativeEvent = function(...args) 
           
@@ -1997,7 +1997,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.changeEvent = function(...args) 
           
@@ -2007,7 +2007,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.metric = function(...args) 
           
@@ -2017,7 +2017,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.initPainter = function(...args) 
           
@@ -2027,7 +2027,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.redirected = function(...args) 
           
@@ -2037,7 +2037,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.sharedPainter = function(...args) 
           
@@ -2047,7 +2047,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.inputMethodEvent = function(...args) 
           
@@ -2057,7 +2057,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.inputMethodQuery = function(...args) 
           
@@ -2067,7 +2067,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setInputMethodHints = function(...args) 
           
@@ -2077,7 +2077,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.updateMicroFocus = function(...args) 
           
@@ -2087,7 +2087,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.create = function(...args) 
           
@@ -2097,7 +2097,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.destroy = function(...args) 
           
@@ -2107,7 +2107,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.focusNextPrevChild = function(...args) 
           
@@ -2117,7 +2117,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.focusNextChild = function(...args) 
           
@@ -2127,7 +2127,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.focusPreviousChild = function(...args) 
           
@@ -2137,7 +2137,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setBackingStore = function(...args) 
           
@@ -2147,7 +2147,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.testAttribute_helper = function(...args) 
           
@@ -2157,7 +2157,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.takeLayout = function(...args) 
           
@@ -2167,7 +2167,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2177,7 +2177,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.qt_qwidget_data = function(...args) 
           
@@ -2187,7 +2187,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.qt_widget_private = function(...args) 
           
@@ -2197,7 +2197,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setText = function(...args) 
           
@@ -2207,7 +2207,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setIcon = function(...args) 
           
@@ -2217,7 +2217,7 @@
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setShortcut = function(...args) 
           
@@ -2227,7 +2227,7 @@
               return this.__PROXY__.setShortcut(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setCheckable = function(...args) 
           
@@ -2237,7 +2237,7 @@
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isCheckable = function(...args) 
           
@@ -2247,7 +2247,7 @@
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isChecked = function(...args) 
           
@@ -2257,7 +2257,7 @@
               return this.__PROXY__.isChecked(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setDown = function(...args) 
           
@@ -2267,7 +2267,7 @@
               return this.__PROXY__.setDown(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.isDown = function(...args) 
           
@@ -2277,7 +2277,7 @@
               return this.__PROXY__.isDown(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAutoRepeat = function(...args) 
           
@@ -2287,7 +2287,7 @@
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAutoRepeatDelay = function(...args) 
           
@@ -2297,7 +2297,7 @@
               return this.__PROXY__.setAutoRepeatDelay(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAutoRepeatInterval = function(...args) 
           
@@ -2307,7 +2307,7 @@
               return this.__PROXY__.setAutoRepeatInterval(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAutoExclusive = function(...args) 
           
@@ -2317,7 +2317,7 @@
               return this.__PROXY__.setAutoExclusive(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.group = function(...args) 
           
@@ -2327,7 +2327,7 @@
               return this.__PROXY__.group(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setIconSize = function(...args) 
           
@@ -2337,7 +2337,7 @@
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.animateClick = function(...args) 
           
@@ -2347,7 +2347,7 @@
               return this.__PROXY__.animateClick(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.click = function(...args) 
           
@@ -2357,7 +2357,7 @@
               return this.__PROXY__.click(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.toggle = function(...args) 
           
@@ -2367,7 +2367,7 @@
               return this.__PROXY__.toggle(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setChecked = function(...args) 
           
@@ -2377,7 +2377,7 @@
               return this.__PROXY__.setChecked(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setArrowType = function(...args) 
           
@@ -2387,7 +2387,7 @@
               return this.__PROXY__.setArrowType(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setMenu = function(...args) 
           
@@ -2397,7 +2397,7 @@
               return this.__PROXY__.setMenu(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.menu = function(...args) 
           
@@ -2407,7 +2407,7 @@
               return this.__PROXY__.menu(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setPopupMode = function(...args) 
           
@@ -2417,7 +2417,7 @@
               return this.__PROXY__.setPopupMode(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.defaultAction = function(...args) 
           
@@ -2427,7 +2427,7 @@
               return this.__PROXY__.defaultAction(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setAutoRaise = function(...args) 
           
@@ -2437,7 +2437,7 @@
               return this.__PROXY__.setAutoRaise(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.showMenu = function(...args) 
           
@@ -2447,7 +2447,7 @@
               return this.__PROXY__.showMenu(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setToolButtonStyle = function(...args) 
           
@@ -2457,7 +2457,7 @@
               return this.__PROXY__.setToolButtonStyle(...args);
             
         };
-    
+        
         // function 
         QToolButton.prototype.setDefaultAction = function(...args) 
           
@@ -2467,7 +2467,7 @@
               return this.__PROXY__.setDefaultAction(...args);
             
         };
-    
+        
 
       // static functions:
       

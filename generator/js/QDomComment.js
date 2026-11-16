@@ -164,7 +164,7 @@
               return this.__PROXY__.substringData(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.appendData = function(...args) 
           
@@ -174,7 +174,7 @@
               return this.__PROXY__.appendData(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.insertData = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.insertData(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.deleteData = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.deleteData(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.replaceData = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.replaceData(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.length = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.data = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.setData = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.operator_assign = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QDomComment.prototype.nodeType = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.nodeType(...args);
             
         };
-    
+        
 
       // static functions:
       QDomComment.prototype.isNullWrapper = function() {

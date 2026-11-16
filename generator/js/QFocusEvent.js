@@ -313,7 +313,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.spontaneous = function(...args) 
           
@@ -323,7 +323,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.setAccepted = function(...args) 
           
@@ -333,7 +333,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.isAccepted = function(...args) 
           
@@ -343,7 +343,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.accept = function(...args) 
           
@@ -353,7 +353,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.ignore = function(...args) 
           
@@ -363,7 +363,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.isInputEvent = function(...args) 
           
@@ -373,7 +373,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.isPointerEvent = function(...args) 
           
@@ -383,7 +383,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -393,7 +393,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.clone = function(...args) 
           
@@ -403,7 +403,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.setSpontaneous = function(...args) 
           
@@ -413,7 +413,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.gotFocus = function(...args) 
           
@@ -423,7 +423,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.gotFocus(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.lostFocus = function(...args) 
           
@@ -433,7 +433,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.lostFocus(...args);
             
         };
-    
+        
         // function 
         QFocusEvent.prototype.reason = function(...args) 
           
@@ -443,7 +443,7 @@ QFocusEvent.MaxUser = QFocusEvent_Wrapper.MaxUser;
               return this.__PROXY__.reason(...args);
             
         };
-    
+        
 
       // static functions:
       QFocusEvent.prototype.isNullWrapper = function() {

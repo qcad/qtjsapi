@@ -147,7 +147,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.isWidgetType = function(...args) 
           
@@ -157,7 +157,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.isWindowType = function(...args) 
           
@@ -167,7 +167,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.signalsBlocked = function(...args) 
           
@@ -177,7 +177,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.blockSignals = function(...args) 
           
@@ -187,7 +187,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.findChild = function(...args) 
           
@@ -197,7 +197,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.children = function(...args) 
           
@@ -207,7 +207,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setParent = function(...args) 
           
@@ -217,7 +217,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.installEventFilter = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.removeEventFilter = function(...args) 
           
@@ -237,7 +237,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.dumpObjectTree = function(...args) 
           
@@ -247,7 +247,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.dumpObjectInfo = function(...args) 
           
@@ -257,7 +257,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setProperty = function(...args) 
           
@@ -267,7 +267,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.property = function(...args) 
           
@@ -277,7 +277,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.dynamicPropertyNames = function(...args) 
           
@@ -287,7 +287,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.parent = function(...args) 
           
@@ -297,7 +297,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.deleteLater = function(...args) 
           
@@ -307,7 +307,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.widget = function(...args) 
           
@@ -317,7 +317,7 @@
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.spacerItem = function(...args) 
           
@@ -327,7 +327,7 @@
               return this.__PROXY__.spacerItem(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.alignment = function(...args) 
           
@@ -337,7 +337,7 @@
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setContentsMargins = function(...args) 
           
@@ -347,7 +347,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.contentsMargins = function(...args) 
           
@@ -357,7 +357,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.contentsRect = function(...args) 
           
@@ -367,7 +367,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setAlignment = function(...args) 
           
@@ -377,7 +377,7 @@
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setSizeConstraint = function(...args) 
           
@@ -387,7 +387,7 @@
               return this.__PROXY__.setSizeConstraint(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.sizeConstraint = function(...args) 
           
@@ -397,7 +397,7 @@
               return this.__PROXY__.sizeConstraint(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setMenuBar = function(...args) 
           
@@ -407,7 +407,7 @@
               return this.__PROXY__.setMenuBar(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.menuBar = function(...args) 
           
@@ -417,7 +417,7 @@
               return this.__PROXY__.menuBar(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.parentWidget = function(...args) 
           
@@ -427,7 +427,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.geometry = function(...args) 
           
@@ -437,7 +437,7 @@
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.activate = function(...args) 
           
@@ -447,7 +447,7 @@
               return this.__PROXY__.activate(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.update = function(...args) 
           
@@ -457,7 +457,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.removeWidget = function(...args) 
           
@@ -467,7 +467,7 @@
               return this.__PROXY__.removeWidget(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.removeItem = function(...args) 
           
@@ -477,7 +477,7 @@
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.indexOf = function(...args) 
           
@@ -487,7 +487,7 @@
               return this.__PROXY__.indexOf(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.isEmpty = function(...args) 
           
@@ -497,7 +497,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.controlTypes = function(...args) 
           
@@ -507,7 +507,7 @@
               return this.__PROXY__.controlTypes(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.totalHeightForWidth = function(...args) 
           
@@ -517,7 +517,7 @@
               return this.__PROXY__.totalHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.totalMinimumSize = function(...args) 
           
@@ -527,7 +527,7 @@
               return this.__PROXY__.totalMinimumSize(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.totalMaximumSize = function(...args) 
           
@@ -537,7 +537,7 @@
               return this.__PROXY__.totalMaximumSize(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.totalSizeHint = function(...args) 
           
@@ -547,7 +547,7 @@
               return this.__PROXY__.totalSizeHint(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.layout = function(...args) 
           
@@ -557,7 +557,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setEnabled = function(...args) 
           
@@ -567,7 +567,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.isEnabled = function(...args) 
           
@@ -577,7 +577,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.widgetEvent = function(...args) 
           
@@ -587,7 +587,7 @@
               return this.__PROXY__.widgetEvent(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.childEvent = function(...args) 
           
@@ -597,7 +597,7 @@
               return this.__PROXY__.childEvent(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.addChildLayout = function(...args) 
           
@@ -607,7 +607,7 @@
               return this.__PROXY__.addChildLayout(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.addChildWidget = function(...args) 
           
@@ -617,7 +617,7 @@
               return this.__PROXY__.addChildWidget(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.adoptLayout = function(...args) 
           
@@ -627,7 +627,7 @@
               return this.__PROXY__.adoptLayout(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.alignmentRect = function(...args) 
           
@@ -637,7 +637,7 @@
               return this.__PROXY__.alignmentRect(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.sizeHint = function(...args) 
           
@@ -647,7 +647,7 @@
               return this.__PROXY__.sizeHint(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.minimumSize = function(...args) 
           
@@ -657,7 +657,7 @@
               return this.__PROXY__.minimumSize(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.maximumSize = function(...args) 
           
@@ -667,7 +667,7 @@
               return this.__PROXY__.maximumSize(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setHorizontalSpacing = function(...args) 
           
@@ -677,7 +677,7 @@
               return this.__PROXY__.setHorizontalSpacing(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.horizontalSpacing = function(...args) 
           
@@ -687,7 +687,7 @@
               return this.__PROXY__.horizontalSpacing(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setVerticalSpacing = function(...args) 
           
@@ -697,7 +697,7 @@
               return this.__PROXY__.setVerticalSpacing(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.verticalSpacing = function(...args) 
           
@@ -707,7 +707,7 @@
               return this.__PROXY__.verticalSpacing(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setSpacing = function(...args) 
           
@@ -717,7 +717,7 @@
               return this.__PROXY__.setSpacing(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setRowStretch = function(...args) 
           
@@ -727,7 +727,7 @@
               return this.__PROXY__.setRowStretch(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setColumnStretch = function(...args) 
           
@@ -737,7 +737,7 @@
               return this.__PROXY__.setColumnStretch(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.rowStretch = function(...args) 
           
@@ -747,7 +747,7 @@
               return this.__PROXY__.rowStretch(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.columnStretch = function(...args) 
           
@@ -757,7 +757,7 @@
               return this.__PROXY__.columnStretch(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setRowMinimumHeight = function(...args) 
           
@@ -767,7 +767,7 @@
               return this.__PROXY__.setRowMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setColumnMinimumWidth = function(...args) 
           
@@ -777,7 +777,7 @@
               return this.__PROXY__.setColumnMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.rowMinimumHeight = function(...args) 
           
@@ -787,7 +787,7 @@
               return this.__PROXY__.rowMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.columnMinimumWidth = function(...args) 
           
@@ -797,7 +797,7 @@
               return this.__PROXY__.columnMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.columnCount = function(...args) 
           
@@ -807,7 +807,7 @@
               return this.__PROXY__.columnCount(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.rowCount = function(...args) 
           
@@ -817,7 +817,7 @@
               return this.__PROXY__.rowCount(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.cellRect = function(...args) 
           
@@ -827,7 +827,7 @@
               return this.__PROXY__.cellRect(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.hasHeightForWidth = function(...args) 
           
@@ -837,7 +837,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.heightForWidth = function(...args) 
           
@@ -847,7 +847,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.minimumHeightForWidth = function(...args) 
           
@@ -857,7 +857,7 @@
               return this.__PROXY__.minimumHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.expandingDirections = function(...args) 
           
@@ -867,7 +867,7 @@
               return this.__PROXY__.expandingDirections(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.invalidate = function(...args) 
           
@@ -877,7 +877,7 @@
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.addWidget = function(...args) 
           
@@ -887,7 +887,7 @@
               return this.__PROXY__.addWidget(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.addLayout = function(...args) 
           
@@ -897,7 +897,7 @@
               return this.__PROXY__.addLayout(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setOriginCorner = function(...args) 
           
@@ -907,7 +907,7 @@
               return this.__PROXY__.setOriginCorner(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.originCorner = function(...args) 
           
@@ -917,7 +917,7 @@
               return this.__PROXY__.originCorner(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.itemAt = function(...args) 
           
@@ -927,7 +927,7 @@
               return this.__PROXY__.itemAt(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.itemAtPosition = function(...args) 
           
@@ -937,7 +937,7 @@
               return this.__PROXY__.itemAtPosition(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.takeAt = function(...args) 
           
@@ -947,7 +947,7 @@
               return this.__PROXY__.takeAt(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.count = function(...args) 
           
@@ -957,7 +957,7 @@
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setGeometry = function(...args) 
           
@@ -967,7 +967,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.addItem = function(...args) 
           
@@ -977,7 +977,7 @@
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         QGridLayout.prototype.setDefaultPositioning = function(...args) 
           
@@ -987,7 +987,7 @@
               return this.__PROXY__.setDefaultPositioning(...args);
             
         };
-    
+        
 
       // static functions:
       

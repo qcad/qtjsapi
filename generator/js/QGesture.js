@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.setHotSpot = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.setHotSpot(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.unsetHotSpot = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.unsetHotSpot(...args);
             
         };
-    
+        
         // function 
         QGesture.prototype.setGestureCancelPolicy = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.setGestureCancelPolicy(...args);
             
         };
-    
+        
 
       // static functions:
       

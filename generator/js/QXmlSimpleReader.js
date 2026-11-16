@@ -138,7 +138,7 @@
               return this.__PROXY__.feature(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.setFeature = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.setFeature(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.hasFeature = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.hasFeature(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.hasProperty = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.hasProperty(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.setEntityResolver = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setEntityResolver(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.entityResolver = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.entityResolver(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.setDTDHandler = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.setDTDHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.DTDHandler = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.DTDHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.setContentHandler = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.setContentHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.contentHandler = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.contentHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.setErrorHandler = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.setErrorHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.errorHandler = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.errorHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.setLexicalHandler = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setLexicalHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.lexicalHandler = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.lexicalHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.setDeclHandler = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.setDeclHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.declHandler = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.declHandler(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.parse = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.parse(...args);
             
         };
-    
+        
         // function 
         QXmlSimpleReader.prototype.parseContinue = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.parseContinue(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlSimpleReader.prototype.isNullWrapper = function() {

@@ -184,7 +184,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.operator_equal(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.operator_unequal = function(...args) 
           
@@ -194,7 +194,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.operator_unequal(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.insertBefore = function(...args) 
           
@@ -204,7 +204,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.insertBefore(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.insertAfter = function(...args) 
           
@@ -214,7 +214,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.insertAfter(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.replaceChild = function(...args) 
           
@@ -224,7 +224,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.replaceChild(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.removeChild = function(...args) 
           
@@ -234,7 +234,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.removeChild(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.appendChild = function(...args) 
           
@@ -244,7 +244,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.appendChild(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.hasChildNodes = function(...args) 
           
@@ -254,7 +254,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.hasChildNodes(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.cloneNode = function(...args) 
           
@@ -264,7 +264,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.cloneNode(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.normalize = function(...args) 
           
@@ -274,7 +274,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.normalize(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isSupported = function(...args) 
           
@@ -284,7 +284,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isSupported(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.nodeName = function(...args) 
           
@@ -294,7 +294,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.nodeName(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.parentNode = function(...args) 
           
@@ -304,7 +304,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.parentNode(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.childNodes = function(...args) 
           
@@ -314,7 +314,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.childNodes(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.firstChild = function(...args) 
           
@@ -324,7 +324,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.firstChild(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.lastChild = function(...args) 
           
@@ -334,7 +334,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.lastChild(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.previousSibling = function(...args) 
           
@@ -344,7 +344,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.previousSibling(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.nextSibling = function(...args) 
           
@@ -354,7 +354,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.nextSibling(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.attributes = function(...args) 
           
@@ -364,7 +364,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.attributes(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.ownerDocument = function(...args) 
           
@@ -374,7 +374,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.ownerDocument(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.namespaceURI = function(...args) 
           
@@ -384,7 +384,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.namespaceURI(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.localName = function(...args) 
           
@@ -394,7 +394,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.localName(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.hasAttributes = function(...args) 
           
@@ -404,7 +404,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.hasAttributes(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.nodeValue = function(...args) 
           
@@ -414,7 +414,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.nodeValue(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.setNodeValue = function(...args) 
           
@@ -424,7 +424,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.setNodeValue(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.prefix = function(...args) 
           
@@ -434,7 +434,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.prefix(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.setPrefix = function(...args) 
           
@@ -444,7 +444,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.setPrefix(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isAttr = function(...args) 
           
@@ -454,7 +454,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isAttr(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isCDATASection = function(...args) 
           
@@ -464,7 +464,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isCDATASection(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isDocumentFragment = function(...args) 
           
@@ -474,7 +474,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isDocumentFragment(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isDocument = function(...args) 
           
@@ -484,7 +484,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isDocument(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isDocumentType = function(...args) 
           
@@ -494,7 +494,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isDocumentType(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isElement = function(...args) 
           
@@ -504,7 +504,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isElement(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isEntityReference = function(...args) 
           
@@ -514,7 +514,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isEntityReference(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isText = function(...args) 
           
@@ -524,7 +524,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isText(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isEntity = function(...args) 
           
@@ -534,7 +534,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isEntity(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isNotation = function(...args) 
           
@@ -544,7 +544,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isNotation(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isProcessingInstruction = function(...args) 
           
@@ -554,7 +554,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isProcessingInstruction(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isCharacterData = function(...args) 
           
@@ -564,7 +564,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isCharacterData(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isComment = function(...args) 
           
@@ -574,7 +574,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isComment(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.namedItem = function(...args) 
           
@@ -584,7 +584,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.namedItem(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.isNull = function(...args) 
           
@@ -594,7 +594,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.clear = function(...args) 
           
@@ -604,7 +604,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toAttr = function(...args) 
           
@@ -614,7 +614,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toAttr(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toCDATASection = function(...args) 
           
@@ -624,7 +624,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toCDATASection(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toDocumentFragment = function(...args) 
           
@@ -634,7 +634,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toDocumentFragment(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toDocument = function(...args) 
           
@@ -644,7 +644,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toDocument(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toDocumentType = function(...args) 
           
@@ -654,7 +654,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toDocumentType(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toElement = function(...args) 
           
@@ -664,7 +664,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toElement(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toEntityReference = function(...args) 
           
@@ -674,7 +674,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toEntityReference(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toText = function(...args) 
           
@@ -684,7 +684,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toText(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toEntity = function(...args) 
           
@@ -694,7 +694,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toEntity(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toNotation = function(...args) 
           
@@ -704,7 +704,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toNotation(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toProcessingInstruction = function(...args) 
           
@@ -714,7 +714,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toProcessingInstruction(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toCharacterData = function(...args) 
           
@@ -724,7 +724,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toCharacterData(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.toComment = function(...args) 
           
@@ -734,7 +734,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.toComment(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.firstChildElement = function(...args) 
           
@@ -744,7 +744,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.firstChildElement(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.lastChildElement = function(...args) 
           
@@ -754,7 +754,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.lastChildElement(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.previousSiblingElement = function(...args) 
           
@@ -764,7 +764,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.previousSiblingElement(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.nextSiblingElement = function(...args) 
           
@@ -774,7 +774,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.nextSiblingElement(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.lineNumber = function(...args) 
           
@@ -784,7 +784,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.lineNumber(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.columnNumber = function(...args) 
           
@@ -794,7 +794,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.columnNumber(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.operator_assign = function(...args) 
           
@@ -804,7 +804,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.publicId = function(...args) 
           
@@ -814,7 +814,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.publicId(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.systemId = function(...args) 
           
@@ -824,7 +824,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.systemId(...args);
             
         };
-    
+        
         // function 
         QDomNotation.prototype.nodeType = function(...args) 
           
@@ -834,7 +834,7 @@ QDomNotation.EncodingFromTextStream = QDomNotation_Wrapper.EncodingFromTextStrea
               return this.__PROXY__.nodeType(...args);
             
         };
-    
+        
 
       // static functions:
       QDomNotation.prototype.isNullWrapper = function() {

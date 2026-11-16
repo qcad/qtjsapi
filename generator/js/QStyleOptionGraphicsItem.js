@@ -192,7 +192,7 @@ QStyleOptionGraphicsItem.SO_ComplexCustomBase = QStyleOptionGraphicsItem_Wrapper
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionGraphicsItem.prototype.operator_assign = function(...args) 
           
@@ -202,7 +202,7 @@ QStyleOptionGraphicsItem.SO_ComplexCustomBase = QStyleOptionGraphicsItem_Wrapper
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QStyleOptionGraphicsItem.prototype.levelOfDetailFromTransform = function(...args) 
           
@@ -212,7 +212,7 @@ QStyleOptionGraphicsItem.SO_ComplexCustomBase = QStyleOptionGraphicsItem_Wrapper
               return this.__PROXY__.levelOfDetailFromTransform(...args);
             
         };
-    
+        
 
       // static functions:
       

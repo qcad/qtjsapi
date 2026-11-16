@@ -283,7 +283,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.setAddress = function(...args) 
           
@@ -293,7 +293,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.setAddress(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.protocol = function(...args) 
           
@@ -303,7 +303,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.protocol(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.toIPv4Address = function(...args) 
           
@@ -313,7 +313,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.toIPv4Address(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.toString = function(...args) 
           
@@ -323,7 +323,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.toString(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.scopeId = function(...args) 
           
@@ -333,7 +333,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.scopeId(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.setScopeId = function(...args) 
           
@@ -343,7 +343,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.setScopeId(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isEqual = function(...args) 
           
@@ -353,7 +353,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isEqual(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isNull = function(...args) 
           
@@ -363,7 +363,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.clear = function(...args) 
           
@@ -373,7 +373,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isInSubnet = function(...args) 
           
@@ -383,7 +383,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isInSubnet(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isLoopback = function(...args) 
           
@@ -393,7 +393,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isLoopback(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isGlobal = function(...args) 
           
@@ -403,7 +403,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isGlobal(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isLinkLocal = function(...args) 
           
@@ -413,7 +413,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isLinkLocal(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isSiteLocal = function(...args) 
           
@@ -423,7 +423,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isSiteLocal(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isUniqueLocalUnicast = function(...args) 
           
@@ -433,7 +433,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isUniqueLocalUnicast(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isMulticast = function(...args) 
           
@@ -443,7 +443,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isMulticast(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isBroadcast = function(...args) 
           
@@ -453,7 +453,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isBroadcast(...args);
             
         };
-    
+        
         // function 
         QHostAddress.prototype.isPrivateUse = function(...args) 
           
@@ -463,7 +463,7 @@ QHostAddress.UnknownNetworkLayerProtocol = QHostAddress_Wrapper.UnknownNetworkLa
               return this.__PROXY__.isPrivateUse(...args);
             
         };
-    
+        
 
       // static functions:
       QHostAddress.prototype.isNullWrapper = function() {

@@ -139,7 +139,7 @@
               return this.__PROXY__.setHotSpot(...args);
             
         };
-    
+        
         // function 
         QSwipeGesture.prototype.unsetHotSpot = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.unsetHotSpot(...args);
             
         };
-    
+        
         // function 
         QSwipeGesture.prototype.setGestureCancelPolicy = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.setGestureCancelPolicy(...args);
             
         };
-    
+        
         // function 
         QSwipeGesture.prototype.Q_DECLARE_PRIVATE = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
             
         };
-    
+        
         // function 
         QSwipeGesture.prototype.horizontalDirection = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.horizontalDirection(...args);
             
         };
-    
+        
         // function 
         QSwipeGesture.prototype.verticalDirection = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.verticalDirection(...args);
             
         };
-    
+        
         // function 
         QSwipeGesture.prototype.swipeAngle = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.swipeAngle(...args);
             
         };
-    
+        
         // function 
         QSwipeGesture.prototype.setSwipeAngle = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setSwipeAngle(...args);
             
         };
-    
+        
 
       // static functions:
       

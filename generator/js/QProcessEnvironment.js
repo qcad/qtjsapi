@@ -189,7 +189,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.isEmpty = function(...args) 
           
@@ -199,7 +199,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.inheritsFromParent = function(...args) 
           
@@ -209,7 +209,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.inheritsFromParent(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.clear = function(...args) 
           
@@ -219,7 +219,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.contains = function(...args) 
           
@@ -229,7 +229,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.insert = function(...args) 
           
@@ -239,7 +239,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.insert(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.remove = function(...args) 
           
@@ -249,7 +249,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.remove(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.value = function(...args) 
           
@@ -259,7 +259,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.value(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.toStringList = function(...args) 
           
@@ -269,7 +269,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.toStringList(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.keys = function(...args) 
           
@@ -279,7 +279,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.keys(...args);
             
         };
-    
+        
         // function 
         QProcessEnvironment.prototype.systemEnvironment = function(...args) 
           
@@ -289,7 +289,7 @@ QProcessEnvironment.InheritFromParent = QProcessEnvironment_Wrapper.InheritFromP
               return this.__PROXY__.systemEnvironment(...args);
             
         };
-    
+        
 
       // static functions:
       

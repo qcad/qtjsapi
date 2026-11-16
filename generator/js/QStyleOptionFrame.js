@@ -197,7 +197,7 @@ QStyleOptionFrame.Rounded = QStyleOptionFrame_Wrapper.Rounded;
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionFrame.prototype.operator_assign = function(...args) 
           
@@ -207,7 +207,7 @@ QStyleOptionFrame.Rounded = QStyleOptionFrame_Wrapper.Rounded;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionFrame.prototype.isNullWrapper = function() {

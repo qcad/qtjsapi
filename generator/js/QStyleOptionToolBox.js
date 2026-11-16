@@ -203,7 +203,7 @@ QStyleOptionToolBox.PreviousIsSelected = QStyleOptionToolBox_Wrapper.PreviousIsS
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionToolBox.prototype.operator_assign = function(...args) 
           
@@ -213,7 +213,7 @@ QStyleOptionToolBox.PreviousIsSelected = QStyleOptionToolBox_Wrapper.PreviousIsS
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionToolBox.prototype.isNullWrapper = function() {

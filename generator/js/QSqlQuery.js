@@ -160,7 +160,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.isActive = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.isActive(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.isSelect = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.isSelect(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.size = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.numRowsAffected = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.numRowsAffected(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.lastError = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.lastError(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.lastQuery = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.lastQuery(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.lastInsertId = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.lastInsertId(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.setForwardOnly = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.setForwardOnly(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.exec = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.prepare = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.prepare(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.addBindValue = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.addBindValue(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.value = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.value(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.record = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.record(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.next = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.next(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.previous = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.previous(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.first = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.first(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.last = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.last(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.seek = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.at = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.at(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.finish = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.finish(...args);
             
         };
-    
+        
         // function 
         QSqlQuery.prototype.clear = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
 
       // static functions:
       QSqlQuery.prototype.isNullWrapper = function() {

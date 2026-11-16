@@ -237,7 +237,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.setDevice(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.device = function(...args) 
           
@@ -247,7 +247,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.device(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.addData = function(...args) 
           
@@ -257,7 +257,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.addData(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.clear = function(...args) 
           
@@ -267,7 +267,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.atEnd = function(...args) 
           
@@ -277,7 +277,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.readNext = function(...args) 
           
@@ -287,7 +287,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.readNext(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.readNextStartElement = function(...args) 
           
@@ -297,7 +297,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.readNextStartElement(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.skipCurrentElement = function(...args) 
           
@@ -307,7 +307,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.skipCurrentElement(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.tokenType = function(...args) 
           
@@ -317,7 +317,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.tokenType(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.tokenString = function(...args) 
           
@@ -327,7 +327,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.tokenString(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.setNamespaceProcessing = function(...args) 
           
@@ -337,7 +337,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.setNamespaceProcessing(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.namespaceProcessing = function(...args) 
           
@@ -347,7 +347,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.namespaceProcessing(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isStartDocument = function(...args) 
           
@@ -357,7 +357,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isStartDocument(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isEndDocument = function(...args) 
           
@@ -367,7 +367,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isEndDocument(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isStartElement = function(...args) 
           
@@ -377,7 +377,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isStartElement(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isEndElement = function(...args) 
           
@@ -387,7 +387,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isEndElement(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isCharacters = function(...args) 
           
@@ -397,7 +397,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isCharacters(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isWhitespace = function(...args) 
           
@@ -407,7 +407,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isWhitespace(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isCDATA = function(...args) 
           
@@ -417,7 +417,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isCDATA(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isComment = function(...args) 
           
@@ -427,7 +427,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isComment(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isDTD = function(...args) 
           
@@ -437,7 +437,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isDTD(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isEntityReference = function(...args) 
           
@@ -447,7 +447,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isEntityReference(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isProcessingInstruction = function(...args) 
           
@@ -457,7 +457,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isProcessingInstruction(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.isStandaloneDocument = function(...args) 
           
@@ -467,7 +467,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.isStandaloneDocument(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.lineNumber = function(...args) 
           
@@ -477,7 +477,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.lineNumber(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.columnNumber = function(...args) 
           
@@ -487,7 +487,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.columnNumber(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.characterOffset = function(...args) 
           
@@ -497,7 +497,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.characterOffset(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.attributes = function(...args) 
           
@@ -507,7 +507,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.attributes(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.readElementText = function(...args) 
           
@@ -517,7 +517,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.readElementText(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.text = function(...args) 
           
@@ -527,7 +527,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.entityExpansionLimit = function(...args) 
           
@@ -537,7 +537,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.entityExpansionLimit(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.setEntityExpansionLimit = function(...args) 
           
@@ -547,7 +547,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.setEntityExpansionLimit(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.raiseError = function(...args) 
           
@@ -557,7 +557,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.raiseError(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.errorString = function(...args) 
           
@@ -567,7 +567,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.error = function(...args) 
           
@@ -577,7 +577,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QXmlStreamReader.prototype.hasError = function(...args) 
           
@@ -587,7 +587,7 @@ QXmlStreamReader.PrematureEndOfDocumentError = QXmlStreamReader_Wrapper.Prematur
               return this.__PROXY__.hasError(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlStreamReader.prototype.isNullWrapper = function() {

@@ -249,7 +249,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.swap = function(...args) 
           
@@ -259,7 +259,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.equals = function(...args) 
           
@@ -269,7 +269,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.operator_not_assign = function(...args) 
           
@@ -279,7 +279,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.queryType = function(...args) 
           
@@ -289,7 +289,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.queryType(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.setQueryType = function(...args) 
           
@@ -299,7 +299,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.setQueryType(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.peerPort = function(...args) 
           
@@ -309,7 +309,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.peerPort(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.setPeerPort = function(...args) 
           
@@ -319,7 +319,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.setPeerPort(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.peerHostName = function(...args) 
           
@@ -329,7 +329,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.peerHostName(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.setPeerHostName = function(...args) 
           
@@ -339,7 +339,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.setPeerHostName(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.localPort = function(...args) 
           
@@ -349,7 +349,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.localPort(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.setLocalPort = function(...args) 
           
@@ -359,7 +359,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.setLocalPort(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.protocolTag = function(...args) 
           
@@ -369,7 +369,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.protocolTag(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.setProtocolTag = function(...args) 
           
@@ -379,7 +379,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.setProtocolTag(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.url = function(...args) 
           
@@ -389,7 +389,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.url(...args);
             
         };
-    
+        
         // function 
         QNetworkProxyQuery.prototype.setUrl = function(...args) 
           
@@ -399,7 +399,7 @@ QNetworkProxyQuery.SctpServer = QNetworkProxyQuery_Wrapper.SctpServer;
               return this.__PROXY__.setUrl(...args);
             
         };
-    
+        
 
       // static functions:
       QNetworkProxyQuery.prototype.isNullWrapper = function() {

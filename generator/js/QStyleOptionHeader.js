@@ -209,7 +209,7 @@ QStyleOptionHeader.SortDown = QStyleOptionHeader_Wrapper.SortDown;
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionHeader.prototype.operator_assign = function(...args) 
           
@@ -219,7 +219,7 @@ QStyleOptionHeader.SortDown = QStyleOptionHeader_Wrapper.SortDown;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionHeader.prototype.isNullWrapper = function() {

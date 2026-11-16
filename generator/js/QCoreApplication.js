@@ -109,7 +109,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.isWidgetType = function(...args) 
           
@@ -119,7 +119,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.isWindowType = function(...args) 
           
@@ -129,7 +129,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.signalsBlocked = function(...args) 
           
@@ -139,7 +139,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.blockSignals = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.findChild = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.children = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setParent = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.installEventFilter = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.removeEventFilter = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.dumpObjectTree = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.dumpObjectInfo = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setProperty = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.property = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.dynamicPropertyNames = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.parent = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.deleteLater = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setAttribute = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.testAttribute = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setOrganizationDomain = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.setOrganizationDomain(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setOrganizationName = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.setOrganizationName(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setApplicationName = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.setApplicationName(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setApplicationVersion = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.setApplicationVersion(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setSetuidAllowed = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.setSetuidAllowed(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.isSetuidAllowed = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.isSetuidAllowed(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.instance = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.instance(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.exec = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.processEvents = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.processEvents(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.exit = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.exit(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.sendEvent = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.sendEvent(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.postEvent = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.postEvent(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.sendPostedEvents = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.sendPostedEvents(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.removePostedEvents = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.removePostedEvents(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.notify = function(...args) 
           
@@ -439,7 +439,7 @@
               return this.__PROXY__.notify(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.startingUp = function(...args) 
           
@@ -449,7 +449,7 @@
               return this.__PROXY__.startingUp(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.closingDown = function(...args) 
           
@@ -459,7 +459,7 @@
               return this.__PROXY__.closingDown(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.applicationDirPath = function(...args) 
           
@@ -469,7 +469,7 @@
               return this.__PROXY__.applicationDirPath(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.applicationFilePath = function(...args) 
           
@@ -479,7 +479,7 @@
               return this.__PROXY__.applicationFilePath(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.applicationPid = function(...args) 
           
@@ -489,7 +489,7 @@
               return this.__PROXY__.applicationPid(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setLibraryPaths = function(...args) 
           
@@ -499,7 +499,7 @@
               return this.__PROXY__.setLibraryPaths(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.libraryPaths = function(...args) 
           
@@ -509,7 +509,7 @@
               return this.__PROXY__.libraryPaths(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.addLibraryPath = function(...args) 
           
@@ -519,7 +519,7 @@
               return this.__PROXY__.addLibraryPath(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.removeLibraryPath = function(...args) 
           
@@ -529,7 +529,7 @@
               return this.__PROXY__.removeLibraryPath(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.installTranslator = function(...args) 
           
@@ -539,7 +539,7 @@
               return this.__PROXY__.installTranslator(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.removeTranslator = function(...args) 
           
@@ -549,7 +549,7 @@
               return this.__PROXY__.removeTranslator(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.isQuitLockEnabled = function(...args) 
           
@@ -559,7 +559,7 @@
               return this.__PROXY__.isQuitLockEnabled(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.setQuitLockEnabled = function(...args) 
           
@@ -569,7 +569,7 @@
               return this.__PROXY__.setQuitLockEnabled(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.quit = function(...args) 
           
@@ -579,7 +579,7 @@
               return this.__PROXY__.quit(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.event = function(...args) 
           
@@ -589,7 +589,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.compressEvent = function(...args) 
           
@@ -599,7 +599,7 @@
               return this.__PROXY__.compressEvent(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.sendSpontaneousEvent = function(...args) 
           
@@ -609,7 +609,7 @@
               return this.__PROXY__.sendSpontaneousEvent(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.notifyInternal2 = function(...args) 
           
@@ -619,7 +619,7 @@
               return this.__PROXY__.notifyInternal2(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.forwardEvent = function(...args) 
           
@@ -629,7 +629,7 @@
               return this.__PROXY__.forwardEvent(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.libraryPathsLocked = function(...args) 
           
@@ -639,7 +639,7 @@
               return this.__PROXY__.libraryPathsLocked(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.qt_sendSpontaneousEvent = function(...args) 
           
@@ -649,7 +649,7 @@
               return this.__PROXY__.qt_sendSpontaneousEvent(...args);
             
         };
-    
+        
         // function 
         QCoreApplication.prototype.qAppName = function(...args) 
           
@@ -659,7 +659,7 @@
               return this.__PROXY__.qAppName(...args);
             
         };
-    
+        
 
       // static functions:
       

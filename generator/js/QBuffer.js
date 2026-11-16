@@ -185,7 +185,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.isWidgetType = function(...args) 
           
@@ -195,7 +195,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.isWindowType = function(...args) 
           
@@ -205,7 +205,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.signalsBlocked = function(...args) 
           
@@ -215,7 +215,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.blockSignals = function(...args) 
           
@@ -225,7 +225,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.findChild = function(...args) 
           
@@ -235,7 +235,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.children = function(...args) 
           
@@ -245,7 +245,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.setParent = function(...args) 
           
@@ -255,7 +255,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.installEventFilter = function(...args) 
           
@@ -265,7 +265,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.removeEventFilter = function(...args) 
           
@@ -275,7 +275,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.dumpObjectTree = function(...args) 
           
@@ -285,7 +285,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.dumpObjectInfo = function(...args) 
           
@@ -295,7 +295,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.setProperty = function(...args) 
           
@@ -305,7 +305,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.property = function(...args) 
           
@@ -315,7 +315,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.dynamicPropertyNames = function(...args) 
           
@@ -325,7 +325,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.parent = function(...args) 
           
@@ -335,7 +335,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.deleteLater = function(...args) 
           
@@ -345,7 +345,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.openMode = function(...args) 
           
@@ -355,7 +355,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.openMode(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.setTextModeEnabled = function(...args) 
           
@@ -365,7 +365,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.setTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.isTextModeEnabled = function(...args) 
           
@@ -375,7 +375,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.isTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.isOpen = function(...args) 
           
@@ -385,7 +385,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.isReadable = function(...args) 
           
@@ -395,7 +395,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.isWritable = function(...args) 
           
@@ -405,7 +405,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.isSequential = function(...args) 
           
@@ -415,7 +415,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.isSequential(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.readChannelCount = function(...args) 
           
@@ -425,7 +425,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.readChannelCount(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.writeChannelCount = function(...args) 
           
@@ -435,7 +435,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.writeChannelCount(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.currentReadChannel = function(...args) 
           
@@ -445,7 +445,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.currentReadChannel(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.setCurrentReadChannel = function(...args) 
           
@@ -455,7 +455,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.setCurrentReadChannel(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.currentWriteChannel = function(...args) 
           
@@ -465,7 +465,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.currentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.setCurrentWriteChannel = function(...args) 
           
@@ -475,7 +475,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.setCurrentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.reset = function(...args) 
           
@@ -485,7 +485,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.bytesAvailable = function(...args) 
           
@@ -495,7 +495,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.bytesAvailable(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.bytesToWrite = function(...args) 
           
@@ -505,7 +505,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.bytesToWrite(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.readAll = function(...args) 
           
@@ -515,7 +515,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.startTransaction = function(...args) 
           
@@ -525,7 +525,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.startTransaction(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.commitTransaction = function(...args) 
           
@@ -535,7 +535,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.rollbackTransaction = function(...args) 
           
@@ -545,7 +545,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.isTransactionStarted = function(...args) 
           
@@ -555,7 +555,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.isTransactionStarted(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.write = function(...args) 
           
@@ -565,7 +565,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.skip = function(...args) 
           
@@ -575,7 +575,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.skip(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.waitForReadyRead = function(...args) 
           
@@ -585,7 +585,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.waitForReadyRead(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.waitForBytesWritten = function(...args) 
           
@@ -595,7 +595,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.waitForBytesWritten(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.ungetChar = function(...args) 
           
@@ -605,7 +605,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.ungetChar(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.putChar = function(...args) 
           
@@ -615,7 +615,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.putChar(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.errorString = function(...args) 
           
@@ -625,7 +625,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.buffer = function(...args) 
           
@@ -635,7 +635,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.buffer(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.setData = function(...args) 
           
@@ -645,7 +645,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.data = function(...args) 
           
@@ -655,7 +655,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.open = function(...args) 
           
@@ -665,7 +665,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.close = function(...args) 
           
@@ -675,7 +675,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.size = function(...args) 
           
@@ -685,7 +685,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.pos = function(...args) 
           
@@ -695,7 +695,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.seek = function(...args) 
           
@@ -705,7 +705,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.atEnd = function(...args) 
           
@@ -715,7 +715,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.canReadLine = function(...args) 
           
@@ -725,7 +725,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.canReadLine(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.connectNotify = function(...args) 
           
@@ -735,7 +735,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.connectNotify(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.disconnectNotify = function(...args) 
           
@@ -745,7 +745,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.disconnectNotify(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.readData = function(...args) 
           
@@ -755,7 +755,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.readData(...args);
             
         };
-    
+        
         // function 
         QBuffer.prototype.writeData = function(...args) 
           
@@ -765,7 +765,7 @@ QBuffer.ExistingOnly = QBuffer_Wrapper.ExistingOnly;
               return this.__PROXY__.writeData(...args);
             
         };
-    
+        
 
       // static functions:
       

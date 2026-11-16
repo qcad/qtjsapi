@@ -115,7 +115,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.isWidgetType = function(...args) 
           
@@ -125,7 +125,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.isWindowType = function(...args) 
           
@@ -135,7 +135,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.signalsBlocked = function(...args) 
           
@@ -145,7 +145,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.blockSignals = function(...args) 
           
@@ -155,7 +155,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.findChild = function(...args) 
           
@@ -165,7 +165,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.children = function(...args) 
           
@@ -175,7 +175,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.setParent = function(...args) 
           
@@ -185,7 +185,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.installEventFilter = function(...args) 
           
@@ -195,7 +195,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.removeEventFilter = function(...args) 
           
@@ -205,7 +205,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.dumpObjectTree = function(...args) 
           
@@ -215,7 +215,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.dumpObjectInfo = function(...args) 
           
@@ -225,7 +225,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.setProperty = function(...args) 
           
@@ -235,7 +235,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.property = function(...args) 
           
@@ -245,7 +245,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.dynamicPropertyNames = function(...args) 
           
@@ -255,7 +255,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.parent = function(...args) 
           
@@ -265,7 +265,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.deleteLater = function(...args) 
           
@@ -275,7 +275,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.clear = function(...args) 
           
@@ -285,7 +285,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.supportsSelection = function(...args) 
           
@@ -295,7 +295,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.supportsSelection(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.supportsFindBuffer = function(...args) 
           
@@ -305,7 +305,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.supportsFindBuffer(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.ownsSelection = function(...args) 
           
@@ -315,7 +315,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.ownsSelection(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.ownsClipboard = function(...args) 
           
@@ -325,7 +325,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.ownsClipboard(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.ownsFindBuffer = function(...args) 
           
@@ -335,7 +335,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.ownsFindBuffer(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.text = function(...args) 
           
@@ -345,7 +345,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.setText = function(...args) 
           
@@ -355,7 +355,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.mimeData = function(...args) 
           
@@ -365,7 +365,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.mimeData(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.setMimeData = function(...args) 
           
@@ -375,7 +375,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.setMimeData(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.image = function(...args) 
           
@@ -385,7 +385,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.image(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.pixmap = function(...args) 
           
@@ -395,7 +395,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.pixmap(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.setImage = function(...args) 
           
@@ -405,7 +405,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.setImage(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.setPixmap = function(...args) 
           
@@ -415,7 +415,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.setPixmap(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.supportsMode = function(...args) 
           
@@ -425,7 +425,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.supportsMode(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.ownsMode = function(...args) 
           
@@ -435,7 +435,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.ownsMode(...args);
             
         };
-    
+        
         // function 
         QClipboard.prototype.emitChanged = function(...args) 
           
@@ -445,7 +445,7 @@ QClipboard.LastMode = QClipboard_Wrapper.LastMode;
               return this.__PROXY__.emitChanged(...args);
             
         };
-    
+        
 
       // static functions:
       

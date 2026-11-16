@@ -113,7 +113,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isWidgetType = function(...args) 
           
@@ -123,7 +123,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isWindowType = function(...args) 
           
@@ -133,7 +133,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.signalsBlocked = function(...args) 
           
@@ -143,7 +143,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.blockSignals = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.findChild = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.children = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.installEventFilter = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.removeEventFilter = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setProperty = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.property = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.parent = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.deleteLater = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.devType = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.createWinId = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isWindow = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isModal = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowModality = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isEnabled = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isEnabledTo = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setEnabled = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setDisabled = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowModified = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setMinimumSize = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setMaximumSize = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setBaseSize = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setFixedSize = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setFixedWidth = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setFixedHeight = function(...args) 
           
@@ -473,7 +473,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.mapToGlobal = function(...args) 
           
@@ -483,7 +483,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -493,7 +493,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.mapToParent = function(...args) 
           
@@ -503,7 +503,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.mapFromParent = function(...args) 
           
@@ -513,7 +513,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.mapTo = function(...args) 
           
@@ -523,7 +523,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.mapFrom = function(...args) 
           
@@ -533,7 +533,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.window = function(...args) 
           
@@ -543,7 +543,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -553,7 +553,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.topLevelWidget = function(...args) 
           
@@ -563,7 +563,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setPalette = function(...args) 
           
@@ -573,7 +573,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -583,7 +583,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.backgroundRole = function(...args) 
           
@@ -593,7 +593,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setForegroundRole = function(...args) 
           
@@ -603,7 +603,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.foregroundRole = function(...args) 
           
@@ -613,7 +613,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setFont = function(...args) 
           
@@ -623,7 +623,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.fontInfo = function(...args) 
           
@@ -633,7 +633,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setCursor = function(...args) 
           
@@ -643,7 +643,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.unsetCursor = function(...args) 
           
@@ -653,7 +653,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setMouseTracking = function(...args) 
           
@@ -663,7 +663,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -673,7 +673,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.underMouse = function(...args) 
           
@@ -683,7 +683,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setTabletTracking = function(...args) 
           
@@ -693,7 +693,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -703,7 +703,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setMask = function(...args) 
           
@@ -713,7 +713,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.mask = function(...args) 
           
@@ -723,7 +723,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.clearMask = function(...args) 
           
@@ -733,7 +733,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.grab = function(...args) 
           
@@ -743,7 +743,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.grabGesture = function(...args) 
           
@@ -753,7 +753,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.ungrabGesture = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowTitle = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setStyleSheet = function(...args) 
           
@@ -783,7 +783,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowIcon = function(...args) 
           
@@ -793,7 +793,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowIconText = function(...args) 
           
@@ -803,7 +803,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowRole = function(...args) 
           
@@ -813,7 +813,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.windowRole = function(...args) 
           
@@ -823,7 +823,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -833,7 +833,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -843,7 +843,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isWindowModified = function(...args) 
           
@@ -853,7 +853,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setToolTip = function(...args) 
           
@@ -863,7 +863,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -873,7 +873,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setStatusTip = function(...args) 
           
@@ -883,7 +883,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWhatsThis = function(...args) 
           
@@ -893,7 +893,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setAccessibleName = function(...args) 
           
@@ -903,7 +903,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -913,7 +913,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -923,7 +923,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -933,7 +933,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setLocale = function(...args) 
           
@@ -943,7 +943,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.unsetLocale = function(...args) 
           
@@ -953,7 +953,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isRightToLeft = function(...args) 
           
@@ -963,7 +963,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isLeftToRight = function(...args) 
           
@@ -973,7 +973,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.activateWindow = function(...args) 
           
@@ -983,7 +983,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.clearFocus = function(...args) 
           
@@ -993,7 +993,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setFocus = function(...args) 
           
@@ -1003,7 +1003,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1013,7 +1013,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.hasFocus = function(...args) 
           
@@ -1023,7 +1023,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1033,7 +1033,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.focusProxy = function(...args) 
           
@@ -1043,7 +1043,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1053,7 +1053,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.grabMouse = function(...args) 
           
@@ -1063,7 +1063,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.releaseMouse = function(...args) 
           
@@ -1073,7 +1073,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1083,7 +1083,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1093,7 +1093,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.grabShortcut = function(...args) 
           
@@ -1103,7 +1103,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1113,7 +1113,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1123,7 +1123,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1133,7 +1133,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1143,7 +1143,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.update = function(...args) 
           
@@ -1153,7 +1153,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.repaint = function(...args) 
           
@@ -1163,7 +1163,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setVisible = function(...args) 
           
@@ -1173,7 +1173,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setHidden = function(...args) 
           
@@ -1183,7 +1183,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.show = function(...args) 
           
@@ -1193,7 +1193,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.hide = function(...args) 
           
@@ -1203,7 +1203,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.showMinimized = function(...args) 
           
@@ -1213,7 +1213,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.showMaximized = function(...args) 
           
@@ -1223,7 +1223,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.showFullScreen = function(...args) 
           
@@ -1233,7 +1233,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.showNormal = function(...args) 
           
@@ -1243,7 +1243,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.close = function(...args) 
           
@@ -1253,7 +1253,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.raise = function(...args) 
           
@@ -1263,7 +1263,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.lower = function(...args) 
           
@@ -1273,7 +1273,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.stackUnder = function(...args) 
           
@@ -1283,7 +1283,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.move = function(...args) 
           
@@ -1293,7 +1293,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.resize = function(...args) 
           
@@ -1303,7 +1303,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setGeometry = function(...args) 
           
@@ -1313,7 +1313,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.saveGeometry = function(...args) 
           
@@ -1323,7 +1323,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1333,7 +1333,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.adjustSize = function(...args) 
           
@@ -1343,7 +1343,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isVisible = function(...args) 
           
@@ -1353,7 +1353,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1363,7 +1363,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isHidden = function(...args) 
           
@@ -1373,7 +1373,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isMinimized = function(...args) 
           
@@ -1383,7 +1383,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isMaximized = function(...args) 
           
@@ -1393,7 +1393,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isFullScreen = function(...args) 
           
@@ -1403,7 +1403,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.windowState = function(...args) 
           
@@ -1413,7 +1413,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowState = function(...args) 
           
@@ -1423,7 +1423,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1433,7 +1433,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1443,7 +1443,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.heightForWidth = function(...args) 
           
@@ -1453,7 +1453,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1463,7 +1463,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.visibleRegion = function(...args) 
           
@@ -1473,7 +1473,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1483,7 +1483,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.contentsMargins = function(...args) 
           
@@ -1493,7 +1493,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.contentsRect = function(...args) 
           
@@ -1503,7 +1503,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.layout = function(...args) 
           
@@ -1513,7 +1513,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setLayout = function(...args) 
           
@@ -1523,7 +1523,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.updateGeometry = function(...args) 
           
@@ -1533,7 +1533,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setParent = function(...args) 
           
@@ -1543,7 +1543,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.scroll = function(...args) 
           
@@ -1553,7 +1553,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.focusWidget = function(...args) 
           
@@ -1563,7 +1563,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1573,7 +1573,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1583,7 +1583,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1593,7 +1593,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.addAction = function(...args) 
           
@@ -1603,7 +1603,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.addActions = function(...args) 
           
@@ -1613,7 +1613,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.insertActions = function(...args) 
           
@@ -1623,7 +1623,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.insertAction = function(...args) 
           
@@ -1633,7 +1633,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.removeAction = function(...args) 
           
@@ -1643,7 +1643,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.actions = function(...args) 
           
@@ -1653,7 +1653,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.parentWidget = function(...args) 
           
@@ -1663,7 +1663,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1673,7 +1673,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.windowFlags = function(...args) 
           
@@ -1683,7 +1683,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1693,7 +1693,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1703,7 +1703,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.windowType = function(...args) 
           
@@ -1713,7 +1713,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.childAt = function(...args) 
           
@@ -1723,7 +1723,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setAttribute = function(...args) 
           
@@ -1733,7 +1733,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.testAttribute = function(...args) 
           
@@ -1743,7 +1743,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.ensurePolished = function(...args) 
           
@@ -1753,7 +1753,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1763,7 +1763,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1773,7 +1773,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.event = function(...args) 
           
@@ -1783,7 +1783,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1793,7 +1793,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.wheelEvent = function(...args) 
           
@@ -1803,7 +1803,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.keyPressEvent = function(...args) 
           
@@ -1813,7 +1813,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1823,7 +1823,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.focusInEvent = function(...args) 
           
@@ -1833,7 +1833,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1843,7 +1843,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.enterEvent = function(...args) 
           
@@ -1853,7 +1853,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.leaveEvent = function(...args) 
           
@@ -1863,7 +1863,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.moveEvent = function(...args) 
           
@@ -1873,7 +1873,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.closeEvent = function(...args) 
           
@@ -1883,7 +1883,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.tabletEvent = function(...args) 
           
@@ -1893,7 +1893,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -1903,7 +1903,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -1913,7 +1913,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -1923,7 +1923,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.dropEvent = function(...args) 
           
@@ -1933,7 +1933,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.showEvent = function(...args) 
           
@@ -1943,7 +1943,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.hideEvent = function(...args) 
           
@@ -1953,7 +1953,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.nativeEvent = function(...args) 
           
@@ -1963,7 +1963,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.changeEvent = function(...args) 
           
@@ -1973,7 +1973,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.metric = function(...args) 
           
@@ -1983,7 +1983,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.initPainter = function(...args) 
           
@@ -1993,7 +1993,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.redirected = function(...args) 
           
@@ -2003,7 +2003,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.sharedPainter = function(...args) 
           
@@ -2013,7 +2013,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2023,7 +2023,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2033,7 +2033,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2043,7 +2043,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2053,7 +2053,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.create = function(...args) 
           
@@ -2063,7 +2063,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.destroy = function(...args) 
           
@@ -2073,7 +2073,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2083,7 +2083,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.focusNextChild = function(...args) 
           
@@ -2093,7 +2093,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2103,7 +2103,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.setBackingStore = function(...args) 
           
@@ -2113,7 +2113,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2123,7 +2123,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.takeLayout = function(...args) 
           
@@ -2133,7 +2133,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2143,7 +2143,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2153,7 +2153,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QRhiWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2163,7 +2163,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
 
       // static functions:
       

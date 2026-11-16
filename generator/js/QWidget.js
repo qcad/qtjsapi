@@ -143,7 +143,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isWidgetType = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isWindowType = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.signalsBlocked = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.blockSignals = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.findChild = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.children = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.installEventFilter = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.removeEventFilter = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setProperty = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.property = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.parent = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.deleteLater = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.paintingActive = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.paintEngine = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.widthMM = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.heightMM = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.logicalDpiX = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.logicalDpiY = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.physicalDpiX = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.physicalDpiY = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.devicePixelRatio = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.devicePixelRatioF = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.colorCount = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.depth = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.qt_paint_device_metric = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.devType = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.createWinId = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isWindow = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isModal = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowModality = function(...args) 
           
@@ -473,7 +473,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isEnabled = function(...args) 
           
@@ -483,7 +483,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isEnabledTo = function(...args) 
           
@@ -493,7 +493,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setEnabled = function(...args) 
           
@@ -503,7 +503,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setDisabled = function(...args) 
           
@@ -513,7 +513,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowModified = function(...args) 
           
@@ -523,7 +523,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setMinimumSize = function(...args) 
           
@@ -533,7 +533,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setMaximumSize = function(...args) 
           
@@ -543,7 +543,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -553,7 +553,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -563,7 +563,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -573,7 +573,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -583,7 +583,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -593,7 +593,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setBaseSize = function(...args) 
           
@@ -603,7 +603,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setFixedSize = function(...args) 
           
@@ -613,7 +613,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setFixedWidth = function(...args) 
           
@@ -623,7 +623,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setFixedHeight = function(...args) 
           
@@ -633,7 +633,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mapToGlobal = function(...args) 
           
@@ -643,7 +643,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -653,7 +653,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mapToParent = function(...args) 
           
@@ -663,7 +663,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mapFromParent = function(...args) 
           
@@ -673,7 +673,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mapTo = function(...args) 
           
@@ -683,7 +683,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mapFrom = function(...args) 
           
@@ -693,7 +693,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.window = function(...args) 
           
@@ -703,7 +703,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -713,7 +713,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.topLevelWidget = function(...args) 
           
@@ -723,7 +723,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setPalette = function(...args) 
           
@@ -733,7 +733,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -743,7 +743,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.backgroundRole = function(...args) 
           
@@ -753,7 +753,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setForegroundRole = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.foregroundRole = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setFont = function(...args) 
           
@@ -783,7 +783,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.fontInfo = function(...args) 
           
@@ -793,7 +793,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setCursor = function(...args) 
           
@@ -803,7 +803,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.unsetCursor = function(...args) 
           
@@ -813,7 +813,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setMouseTracking = function(...args) 
           
@@ -823,7 +823,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -833,7 +833,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.underMouse = function(...args) 
           
@@ -843,7 +843,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setTabletTracking = function(...args) 
           
@@ -853,7 +853,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -863,7 +863,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setMask = function(...args) 
           
@@ -873,7 +873,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mask = function(...args) 
           
@@ -883,7 +883,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.clearMask = function(...args) 
           
@@ -893,7 +893,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.grab = function(...args) 
           
@@ -903,7 +903,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.grabGesture = function(...args) 
           
@@ -913,7 +913,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.ungrabGesture = function(...args) 
           
@@ -923,7 +923,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowTitle = function(...args) 
           
@@ -933,7 +933,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setStyleSheet = function(...args) 
           
@@ -943,7 +943,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowIcon = function(...args) 
           
@@ -953,7 +953,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowIconText = function(...args) 
           
@@ -963,7 +963,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowRole = function(...args) 
           
@@ -973,7 +973,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.windowRole = function(...args) 
           
@@ -983,7 +983,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -993,7 +993,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -1003,7 +1003,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isWindowModified = function(...args) 
           
@@ -1013,7 +1013,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setToolTip = function(...args) 
           
@@ -1023,7 +1023,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -1033,7 +1033,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setStatusTip = function(...args) 
           
@@ -1043,7 +1043,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWhatsThis = function(...args) 
           
@@ -1053,7 +1053,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setAccessibleName = function(...args) 
           
@@ -1063,7 +1063,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -1073,7 +1073,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -1083,7 +1083,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1093,7 +1093,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setLocale = function(...args) 
           
@@ -1103,7 +1103,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.unsetLocale = function(...args) 
           
@@ -1113,7 +1113,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1123,7 +1123,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1133,7 +1133,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.activateWindow = function(...args) 
           
@@ -1143,7 +1143,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.clearFocus = function(...args) 
           
@@ -1153,7 +1153,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setFocus = function(...args) 
           
@@ -1163,7 +1163,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1173,7 +1173,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.hasFocus = function(...args) 
           
@@ -1183,7 +1183,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setTabOrder = function(...args) 
           
@@ -1193,7 +1193,7 @@
               return this.__PROXY__.setTabOrder(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1203,7 +1203,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.focusProxy = function(...args) 
           
@@ -1213,7 +1213,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1223,7 +1223,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.grabMouse = function(...args) 
           
@@ -1233,7 +1233,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.releaseMouse = function(...args) 
           
@@ -1243,7 +1243,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1253,7 +1253,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1263,7 +1263,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.grabShortcut = function(...args) 
           
@@ -1273,7 +1273,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1283,7 +1283,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1293,7 +1293,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1303,7 +1303,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mouseGrabber = function(...args) 
           
@@ -1313,7 +1313,7 @@
               return this.__PROXY__.mouseGrabber(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.keyboardGrabber = function(...args) 
           
@@ -1323,7 +1323,7 @@
               return this.__PROXY__.keyboardGrabber(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1333,7 +1333,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.update = function(...args) 
           
@@ -1343,7 +1343,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.repaint = function(...args) 
           
@@ -1353,7 +1353,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setVisible = function(...args) 
           
@@ -1363,7 +1363,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setHidden = function(...args) 
           
@@ -1373,7 +1373,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.show = function(...args) 
           
@@ -1383,7 +1383,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.hide = function(...args) 
           
@@ -1393,7 +1393,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.showMinimized = function(...args) 
           
@@ -1403,7 +1403,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.showMaximized = function(...args) 
           
@@ -1413,7 +1413,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.showFullScreen = function(...args) 
           
@@ -1423,7 +1423,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.showNormal = function(...args) 
           
@@ -1433,7 +1433,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.close = function(...args) 
           
@@ -1443,7 +1443,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.raise = function(...args) 
           
@@ -1453,7 +1453,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.lower = function(...args) 
           
@@ -1463,7 +1463,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.stackUnder = function(...args) 
           
@@ -1473,7 +1473,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.move = function(...args) 
           
@@ -1483,7 +1483,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.resize = function(...args) 
           
@@ -1493,7 +1493,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setGeometry = function(...args) 
           
@@ -1503,7 +1503,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.saveGeometry = function(...args) 
           
@@ -1513,7 +1513,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1523,7 +1523,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.adjustSize = function(...args) 
           
@@ -1533,7 +1533,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isVisible = function(...args) 
           
@@ -1543,7 +1543,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1553,7 +1553,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isHidden = function(...args) 
           
@@ -1563,7 +1563,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isMinimized = function(...args) 
           
@@ -1573,7 +1573,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isMaximized = function(...args) 
           
@@ -1583,7 +1583,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isFullScreen = function(...args) 
           
@@ -1593,7 +1593,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.windowState = function(...args) 
           
@@ -1603,7 +1603,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowState = function(...args) 
           
@@ -1613,7 +1613,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1623,7 +1623,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1633,7 +1633,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.heightForWidth = function(...args) 
           
@@ -1643,7 +1643,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1653,7 +1653,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.visibleRegion = function(...args) 
           
@@ -1663,7 +1663,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1673,7 +1673,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.contentsMargins = function(...args) 
           
@@ -1683,7 +1683,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.contentsRect = function(...args) 
           
@@ -1693,7 +1693,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.layout = function(...args) 
           
@@ -1703,7 +1703,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setLayout = function(...args) 
           
@@ -1713,7 +1713,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.updateGeometry = function(...args) 
           
@@ -1723,7 +1723,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setParent = function(...args) 
           
@@ -1733,7 +1733,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.scroll = function(...args) 
           
@@ -1743,7 +1743,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.focusWidget = function(...args) 
           
@@ -1753,7 +1753,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1763,7 +1763,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1773,7 +1773,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1783,7 +1783,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.addAction = function(...args) 
           
@@ -1793,7 +1793,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.addActions = function(...args) 
           
@@ -1803,7 +1803,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.insertActions = function(...args) 
           
@@ -1813,7 +1813,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.insertAction = function(...args) 
           
@@ -1823,7 +1823,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.removeAction = function(...args) 
           
@@ -1833,7 +1833,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.actions = function(...args) 
           
@@ -1843,7 +1843,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.parentWidget = function(...args) 
           
@@ -1853,7 +1853,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1863,7 +1863,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.windowFlags = function(...args) 
           
@@ -1873,7 +1873,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1883,7 +1883,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1893,7 +1893,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.windowType = function(...args) 
           
@@ -1903,7 +1903,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.childAt = function(...args) 
           
@@ -1913,7 +1913,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setAttribute = function(...args) 
           
@@ -1923,7 +1923,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.testAttribute = function(...args) 
           
@@ -1933,7 +1933,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.ensurePolished = function(...args) 
           
@@ -1943,7 +1943,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1953,7 +1953,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1963,7 +1963,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.event = function(...args) 
           
@@ -1973,7 +1973,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mousePressEvent = function(...args) 
           
@@ -1983,7 +1983,8 @@
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        QWidget.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         QWidget.prototype.mouseReleaseEvent = function(...args) 
           
@@ -1993,7 +1994,8 @@
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        QWidget.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         QWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2003,7 +2005,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.mouseMoveEvent = function(...args) 
           
@@ -2013,7 +2015,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QWidget.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QWidget.prototype.wheelEvent = function(...args) 
           
@@ -2023,7 +2026,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.keyPressEvent = function(...args) 
           
@@ -2033,7 +2036,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -2043,7 +2046,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.focusInEvent = function(...args) 
           
@@ -2053,7 +2056,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.focusOutEvent = function(...args) 
           
@@ -2063,7 +2066,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.enterEvent = function(...args) 
           
@@ -2073,7 +2076,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.leaveEvent = function(...args) 
           
@@ -2083,7 +2086,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.paintEvent = function(...args) 
           
@@ -2093,7 +2096,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QWidget.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QWidget.prototype.moveEvent = function(...args) 
           
@@ -2103,7 +2107,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.resizeEvent = function(...args) 
           
@@ -2113,7 +2117,8 @@
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QWidget.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QWidget.prototype.closeEvent = function(...args) 
           
@@ -2123,7 +2128,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.tabletEvent = function(...args) 
           
@@ -2133,7 +2138,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       QWidget.prototype.actionEvent = function() 
         
@@ -2175,7 +2180,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -2185,7 +2190,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -2195,7 +2200,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.dropEvent = function(...args) 
           
@@ -2205,7 +2210,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.showEvent = function(...args) 
           
@@ -2215,7 +2220,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.hideEvent = function(...args) 
           
@@ -2225,7 +2230,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.nativeEvent = function(...args) 
           
@@ -2235,7 +2240,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.changeEvent = function(...args) 
           
@@ -2245,7 +2250,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.metric = function(...args) 
           
@@ -2255,7 +2260,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.initPainter = function(...args) 
           
@@ -2265,7 +2270,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.redirected = function(...args) 
           
@@ -2275,7 +2280,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.sharedPainter = function(...args) 
           
@@ -2285,7 +2290,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2295,7 +2300,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2305,7 +2310,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2315,7 +2320,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2325,7 +2330,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.create = function(...args) 
           
@@ -2335,7 +2340,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.destroy = function(...args) 
           
@@ -2345,7 +2350,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2355,7 +2360,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.focusNextChild = function(...args) 
           
@@ -2365,7 +2370,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2375,7 +2380,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.setBackingStore = function(...args) 
           
@@ -2385,7 +2390,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2395,7 +2400,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.takeLayout = function(...args) 
           
@@ -2405,7 +2410,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2415,7 +2420,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2425,7 +2430,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2435,7 +2440,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
 
       // static functions:
       

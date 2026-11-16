@@ -279,6 +279,8 @@ QRegion::RegionType a5_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -335,6 +337,8 @@ QRegion::RegionType a2_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -391,6 +395,8 @@ Qt::FillRule a2_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -429,6 +435,8 @@ QRegion a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -467,6 +475,8 @@ QRegion a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -505,6 +515,8 @@ QBitmap a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -528,6 +540,8 @@ QBitmap a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

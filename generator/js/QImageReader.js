@@ -188,7 +188,7 @@
               return this.__PROXY__.setFormat(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.format = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.format(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setAutoDetectImageFormat = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.setAutoDetectImageFormat(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.autoDetectImageFormat = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.autoDetectImageFormat(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setDecideFormatFromContent = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.setDecideFormatFromContent(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.decideFormatFromContent = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.decideFormatFromContent(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setDevice = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.setDevice(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.device = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.device(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setFileName = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.setFileName(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.fileName = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.size = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.imageFormat = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.imageFormat(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.textKeys = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.textKeys(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.text = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setClipRect = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.setClipRect(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.clipRect = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.clipRect(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setScaledSize = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.setScaledSize(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.scaledSize = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.scaledSize(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setQuality = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.setQuality(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.quality = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.quality(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setScaledClipRect = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.setScaledClipRect(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.scaledClipRect = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.scaledClipRect(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setBackgroundColor = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.setBackgroundColor(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.backgroundColor = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.backgroundColor(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.supportsAnimation = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__.supportsAnimation(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.transformation = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__.transformation(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setAutoTransform = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__.setAutoTransform(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.autoTransform = function(...args) 
           
@@ -458,7 +458,7 @@
               return this.__PROXY__.autoTransform(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.subType = function(...args) 
           
@@ -468,7 +468,7 @@
               return this.__PROXY__.subType(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.supportedSubTypes = function(...args) 
           
@@ -478,7 +478,7 @@
               return this.__PROXY__.supportedSubTypes(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.canRead = function(...args) 
           
@@ -488,7 +488,7 @@
               return this.__PROXY__.canRead(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.read = function(...args) 
           
@@ -498,7 +498,7 @@
               return this.__PROXY__.read(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.jumpToNextImage = function(...args) 
           
@@ -508,7 +508,7 @@
               return this.__PROXY__.jumpToNextImage(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.jumpToImage = function(...args) 
           
@@ -518,7 +518,7 @@
               return this.__PROXY__.jumpToImage(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.loopCount = function(...args) 
           
@@ -528,7 +528,7 @@
               return this.__PROXY__.loopCount(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.imageCount = function(...args) 
           
@@ -538,7 +538,7 @@
               return this.__PROXY__.imageCount(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.nextImageDelay = function(...args) 
           
@@ -548,7 +548,7 @@
               return this.__PROXY__.nextImageDelay(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.currentImageNumber = function(...args) 
           
@@ -558,7 +558,7 @@
               return this.__PROXY__.currentImageNumber(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.currentImageRect = function(...args) 
           
@@ -568,7 +568,7 @@
               return this.__PROXY__.currentImageRect(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.error = function(...args) 
           
@@ -578,7 +578,7 @@
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.errorString = function(...args) 
           
@@ -588,7 +588,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.supportsOption = function(...args) 
           
@@ -598,7 +598,7 @@
               return this.__PROXY__.supportsOption(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.supportedImageFormats = function(...args) 
           
@@ -608,7 +608,7 @@
               return this.__PROXY__.supportedImageFormats(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.supportedMimeTypes = function(...args) 
           
@@ -618,7 +618,7 @@
               return this.__PROXY__.supportedMimeTypes(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.imageFormatsForMimeType = function(...args) 
           
@@ -628,7 +628,7 @@
               return this.__PROXY__.imageFormatsForMimeType(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.allocationLimit = function(...args) 
           
@@ -638,7 +638,7 @@
               return this.__PROXY__.allocationLimit(...args);
             
         };
-    
+        
         // function 
         QImageReader.prototype.setAllocationLimit = function(...args) 
           
@@ -648,7 +648,7 @@
               return this.__PROXY__.setAllocationLimit(...args);
             
         };
-    
+        
 
       // static functions:
       

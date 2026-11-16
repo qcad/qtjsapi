@@ -201,7 +201,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isWidgetType = function(...args) 
           
@@ -211,7 +211,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isWindowType = function(...args) 
           
@@ -221,7 +221,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.signalsBlocked = function(...args) 
           
@@ -231,7 +231,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.blockSignals = function(...args) 
           
@@ -241,7 +241,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.findChild = function(...args) 
           
@@ -251,7 +251,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.children = function(...args) 
           
@@ -261,7 +261,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.installEventFilter = function(...args) 
           
@@ -271,7 +271,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.removeEventFilter = function(...args) 
           
@@ -281,7 +281,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.dumpObjectTree = function(...args) 
           
@@ -291,7 +291,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.dumpObjectInfo = function(...args) 
           
@@ -301,7 +301,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setProperty = function(...args) 
           
@@ -311,7 +311,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.property = function(...args) 
           
@@ -321,7 +321,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.dynamicPropertyNames = function(...args) 
           
@@ -331,7 +331,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.parent = function(...args) 
           
@@ -341,7 +341,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.deleteLater = function(...args) 
           
@@ -351,7 +351,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.devType = function(...args) 
           
@@ -361,7 +361,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.createWinId = function(...args) 
           
@@ -371,7 +371,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isWindow = function(...args) 
           
@@ -381,7 +381,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isModal = function(...args) 
           
@@ -391,7 +391,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowModality = function(...args) 
           
@@ -401,7 +401,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isEnabled = function(...args) 
           
@@ -411,7 +411,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isEnabledTo = function(...args) 
           
@@ -421,7 +421,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setEnabled = function(...args) 
           
@@ -431,7 +431,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setDisabled = function(...args) 
           
@@ -441,7 +441,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowModified = function(...args) 
           
@@ -451,7 +451,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMinimumSize = function(...args) 
           
@@ -461,7 +461,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMaximumSize = function(...args) 
           
@@ -471,7 +471,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMinimumWidth = function(...args) 
           
@@ -481,7 +481,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMinimumHeight = function(...args) 
           
@@ -491,7 +491,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMaximumWidth = function(...args) 
           
@@ -501,7 +501,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMaximumHeight = function(...args) 
           
@@ -511,7 +511,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setSizeIncrement = function(...args) 
           
@@ -521,7 +521,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setBaseSize = function(...args) 
           
@@ -531,7 +531,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setFixedSize = function(...args) 
           
@@ -541,7 +541,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setFixedWidth = function(...args) 
           
@@ -551,7 +551,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setFixedHeight = function(...args) 
           
@@ -561,7 +561,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mapToGlobal = function(...args) 
           
@@ -571,7 +571,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mapFromGlobal = function(...args) 
           
@@ -581,7 +581,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mapToParent = function(...args) 
           
@@ -591,7 +591,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mapFromParent = function(...args) 
           
@@ -601,7 +601,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mapTo = function(...args) 
           
@@ -611,7 +611,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mapFrom = function(...args) 
           
@@ -621,7 +621,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.window = function(...args) 
           
@@ -631,7 +631,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.nativeParentWidget = function(...args) 
           
@@ -641,7 +641,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.topLevelWidget = function(...args) 
           
@@ -651,7 +651,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setPalette = function(...args) 
           
@@ -661,7 +661,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setBackgroundRole = function(...args) 
           
@@ -671,7 +671,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.backgroundRole = function(...args) 
           
@@ -681,7 +681,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setForegroundRole = function(...args) 
           
@@ -691,7 +691,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.foregroundRole = function(...args) 
           
@@ -701,7 +701,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setFont = function(...args) 
           
@@ -711,7 +711,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.fontInfo = function(...args) 
           
@@ -721,7 +721,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setCursor = function(...args) 
           
@@ -731,7 +731,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.unsetCursor = function(...args) 
           
@@ -741,7 +741,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMouseTracking = function(...args) 
           
@@ -751,7 +751,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.hasMouseTracking = function(...args) 
           
@@ -761,7 +761,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.underMouse = function(...args) 
           
@@ -771,7 +771,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setTabletTracking = function(...args) 
           
@@ -781,7 +781,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.hasTabletTracking = function(...args) 
           
@@ -791,7 +791,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMask = function(...args) 
           
@@ -801,7 +801,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mask = function(...args) 
           
@@ -811,7 +811,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.clearMask = function(...args) 
           
@@ -821,7 +821,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.grab = function(...args) 
           
@@ -831,7 +831,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.grabGesture = function(...args) 
           
@@ -841,7 +841,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.ungrabGesture = function(...args) 
           
@@ -851,7 +851,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowTitle = function(...args) 
           
@@ -861,7 +861,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setStyleSheet = function(...args) 
           
@@ -871,7 +871,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowIcon = function(...args) 
           
@@ -881,7 +881,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowIconText = function(...args) 
           
@@ -891,7 +891,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowRole = function(...args) 
           
@@ -901,7 +901,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.windowRole = function(...args) 
           
@@ -911,7 +911,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowFilePath = function(...args) 
           
@@ -921,7 +921,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowOpacity = function(...args) 
           
@@ -931,7 +931,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isWindowModified = function(...args) 
           
@@ -941,7 +941,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setToolTip = function(...args) 
           
@@ -951,7 +951,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setToolTipDuration = function(...args) 
           
@@ -961,7 +961,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setStatusTip = function(...args) 
           
@@ -971,7 +971,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWhatsThis = function(...args) 
           
@@ -981,7 +981,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAccessibleName = function(...args) 
           
@@ -991,7 +991,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAccessibleDescription = function(...args) 
           
@@ -1001,7 +1001,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setLayoutDirection = function(...args) 
           
@@ -1011,7 +1011,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1021,7 +1021,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setLocale = function(...args) 
           
@@ -1031,7 +1031,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.unsetLocale = function(...args) 
           
@@ -1041,7 +1041,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isRightToLeft = function(...args) 
           
@@ -1051,7 +1051,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isLeftToRight = function(...args) 
           
@@ -1061,7 +1061,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.activateWindow = function(...args) 
           
@@ -1071,7 +1071,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.clearFocus = function(...args) 
           
@@ -1081,7 +1081,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setFocus = function(...args) 
           
@@ -1091,7 +1091,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setFocusPolicy = function(...args) 
           
@@ -1101,7 +1101,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.hasFocus = function(...args) 
           
@@ -1111,7 +1111,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setFocusProxy = function(...args) 
           
@@ -1121,7 +1121,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.focusProxy = function(...args) 
           
@@ -1131,7 +1131,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1141,7 +1141,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.grabMouse = function(...args) 
           
@@ -1151,7 +1151,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.releaseMouse = function(...args) 
           
@@ -1161,7 +1161,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.grabKeyboard = function(...args) 
           
@@ -1171,7 +1171,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.releaseKeyboard = function(...args) 
           
@@ -1181,7 +1181,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.grabShortcut = function(...args) 
           
@@ -1191,7 +1191,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.releaseShortcut = function(...args) 
           
@@ -1201,7 +1201,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setShortcutEnabled = function(...args) 
           
@@ -1211,7 +1211,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1221,7 +1221,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1231,7 +1231,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.update = function(...args) 
           
@@ -1241,7 +1241,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.repaint = function(...args) 
           
@@ -1251,7 +1251,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setVisible = function(...args) 
           
@@ -1261,7 +1261,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setHidden = function(...args) 
           
@@ -1271,7 +1271,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.show = function(...args) 
           
@@ -1281,7 +1281,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.hide = function(...args) 
           
@@ -1291,7 +1291,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.showMinimized = function(...args) 
           
@@ -1301,7 +1301,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.showMaximized = function(...args) 
           
@@ -1311,7 +1311,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.showFullScreen = function(...args) 
           
@@ -1321,7 +1321,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.showNormal = function(...args) 
           
@@ -1331,7 +1331,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.close = function(...args) 
           
@@ -1341,7 +1341,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.raise = function(...args) 
           
@@ -1351,7 +1351,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.lower = function(...args) 
           
@@ -1361,7 +1361,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.stackUnder = function(...args) 
           
@@ -1371,7 +1371,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.move = function(...args) 
           
@@ -1381,7 +1381,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.resize = function(...args) 
           
@@ -1391,7 +1391,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setGeometry = function(...args) 
           
@@ -1401,7 +1401,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.saveGeometry = function(...args) 
           
@@ -1411,7 +1411,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.restoreGeometry = function(...args) 
           
@@ -1421,7 +1421,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.adjustSize = function(...args) 
           
@@ -1431,7 +1431,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isVisible = function(...args) 
           
@@ -1441,7 +1441,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isVisibleTo = function(...args) 
           
@@ -1451,7 +1451,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isHidden = function(...args) 
           
@@ -1461,7 +1461,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isMinimized = function(...args) 
           
@@ -1471,7 +1471,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isMaximized = function(...args) 
           
@@ -1481,7 +1481,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isFullScreen = function(...args) 
           
@@ -1491,7 +1491,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.windowState = function(...args) 
           
@@ -1501,7 +1501,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowState = function(...args) 
           
@@ -1511,7 +1511,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.overrideWindowState = function(...args) 
           
@@ -1521,7 +1521,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setSizePolicy = function(...args) 
           
@@ -1531,7 +1531,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.heightForWidth = function(...args) 
           
@@ -1541,7 +1541,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.hasHeightForWidth = function(...args) 
           
@@ -1551,7 +1551,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.visibleRegion = function(...args) 
           
@@ -1561,7 +1561,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setContentsMargins = function(...args) 
           
@@ -1571,7 +1571,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.contentsMargins = function(...args) 
           
@@ -1581,7 +1581,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.contentsRect = function(...args) 
           
@@ -1591,7 +1591,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.layout = function(...args) 
           
@@ -1601,7 +1601,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setLayout = function(...args) 
           
@@ -1611,7 +1611,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.updateGeometry = function(...args) 
           
@@ -1621,7 +1621,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setParent = function(...args) 
           
@@ -1631,7 +1631,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.scroll = function(...args) 
           
@@ -1641,7 +1641,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.focusWidget = function(...args) 
           
@@ -1651,7 +1651,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.nextInFocusChain = function(...args) 
           
@@ -1661,7 +1661,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.previousInFocusChain = function(...args) 
           
@@ -1671,7 +1671,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAcceptDrops = function(...args) 
           
@@ -1681,7 +1681,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.addAction = function(...args) 
           
@@ -1691,7 +1691,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.addActions = function(...args) 
           
@@ -1701,7 +1701,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.insertActions = function(...args) 
           
@@ -1711,7 +1711,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.insertAction = function(...args) 
           
@@ -1721,7 +1721,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.removeAction = function(...args) 
           
@@ -1731,7 +1731,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.actions = function(...args) 
           
@@ -1741,7 +1741,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.parentWidget = function(...args) 
           
@@ -1751,7 +1751,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowFlags = function(...args) 
           
@@ -1761,7 +1761,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.windowFlags = function(...args) 
           
@@ -1771,7 +1771,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setWindowFlag = function(...args) 
           
@@ -1781,7 +1781,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.overrideWindowFlags = function(...args) 
           
@@ -1791,7 +1791,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.windowType = function(...args) 
           
@@ -1801,7 +1801,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.childAt = function(...args) 
           
@@ -1811,7 +1811,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAttribute = function(...args) 
           
@@ -1821,7 +1821,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.testAttribute = function(...args) 
           
@@ -1831,7 +1831,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.ensurePolished = function(...args) 
           
@@ -1841,7 +1841,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isAncestorOf = function(...args) 
           
@@ -1851,7 +1851,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAutoFillBackground = function(...args) 
           
@@ -1861,7 +1861,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1871,7 +1871,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.wheelEvent = function(...args) 
           
@@ -1881,7 +1881,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.keyReleaseEvent = function(...args) 
           
@@ -1891,7 +1891,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.enterEvent = function(...args) 
           
@@ -1901,7 +1901,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.leaveEvent = function(...args) 
           
@@ -1911,7 +1911,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.moveEvent = function(...args) 
           
@@ -1921,7 +1921,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.closeEvent = function(...args) 
           
@@ -1931,7 +1931,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.tabletEvent = function(...args) 
           
@@ -1941,7 +1941,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.dragEnterEvent = function(...args) 
           
@@ -1951,7 +1951,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.dragMoveEvent = function(...args) 
           
@@ -1961,7 +1961,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.dragLeaveEvent = function(...args) 
           
@@ -1971,7 +1971,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.dropEvent = function(...args) 
           
@@ -1981,7 +1981,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.showEvent = function(...args) 
           
@@ -1991,7 +1991,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.hideEvent = function(...args) 
           
@@ -2001,7 +2001,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.nativeEvent = function(...args) 
           
@@ -2011,7 +2011,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.changeEvent = function(...args) 
           
@@ -2021,7 +2021,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.metric = function(...args) 
           
@@ -2031,7 +2031,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.initPainter = function(...args) 
           
@@ -2041,7 +2041,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.redirected = function(...args) 
           
@@ -2051,7 +2051,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.sharedPainter = function(...args) 
           
@@ -2061,7 +2061,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.inputMethodEvent = function(...args) 
           
@@ -2071,7 +2071,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.inputMethodQuery = function(...args) 
           
@@ -2081,7 +2081,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setInputMethodHints = function(...args) 
           
@@ -2091,7 +2091,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.updateMicroFocus = function(...args) 
           
@@ -2101,7 +2101,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.create = function(...args) 
           
@@ -2111,7 +2111,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.destroy = function(...args) 
           
@@ -2121,7 +2121,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.focusNextPrevChild = function(...args) 
           
@@ -2131,7 +2131,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.focusNextChild = function(...args) 
           
@@ -2141,7 +2141,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.focusPreviousChild = function(...args) 
           
@@ -2151,7 +2151,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setBackingStore = function(...args) 
           
@@ -2161,7 +2161,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.testAttribute_helper = function(...args) 
           
@@ -2171,7 +2171,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.takeLayout = function(...args) 
           
@@ -2181,7 +2181,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2191,7 +2191,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.qt_qwidget_data = function(...args) 
           
@@ -2201,7 +2201,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.qt_widget_private = function(...args) 
           
@@ -2211,7 +2211,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setText = function(...args) 
           
@@ -2221,7 +2221,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setIcon = function(...args) 
           
@@ -2231,7 +2231,7 @@
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setShortcut = function(...args) 
           
@@ -2241,7 +2241,7 @@
               return this.__PROXY__.setShortcut(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setCheckable = function(...args) 
           
@@ -2251,7 +2251,7 @@
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isCheckable = function(...args) 
           
@@ -2261,7 +2261,7 @@
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isChecked = function(...args) 
           
@@ -2271,7 +2271,7 @@
               return this.__PROXY__.isChecked(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setDown = function(...args) 
           
@@ -2281,7 +2281,7 @@
               return this.__PROXY__.setDown(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isDown = function(...args) 
           
@@ -2291,7 +2291,7 @@
               return this.__PROXY__.isDown(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAutoRepeat = function(...args) 
           
@@ -2301,7 +2301,7 @@
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAutoRepeatDelay = function(...args) 
           
@@ -2311,7 +2311,7 @@
               return this.__PROXY__.setAutoRepeatDelay(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAutoRepeatInterval = function(...args) 
           
@@ -2321,7 +2321,7 @@
               return this.__PROXY__.setAutoRepeatInterval(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAutoExclusive = function(...args) 
           
@@ -2331,7 +2331,7 @@
               return this.__PROXY__.setAutoExclusive(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.group = function(...args) 
           
@@ -2341,7 +2341,7 @@
               return this.__PROXY__.group(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setIconSize = function(...args) 
           
@@ -2351,7 +2351,7 @@
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.animateClick = function(...args) 
           
@@ -2361,7 +2361,7 @@
               return this.__PROXY__.animateClick(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.click = function(...args) 
           
@@ -2371,7 +2371,7 @@
               return this.__PROXY__.click(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.toggle = function(...args) 
           
@@ -2381,7 +2381,7 @@
               return this.__PROXY__.toggle(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setChecked = function(...args) 
           
@@ -2391,7 +2391,7 @@
               return this.__PROXY__.setChecked(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setAutoDefault = function(...args) 
           
@@ -2401,7 +2401,7 @@
               return this.__PROXY__.setAutoDefault(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isDefault = function(...args) 
           
@@ -2411,7 +2411,7 @@
               return this.__PROXY__.isDefault(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setDefault = function(...args) 
           
@@ -2421,7 +2421,7 @@
               return this.__PROXY__.setDefault(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setMenu = function(...args) 
           
@@ -2431,7 +2431,7 @@
               return this.__PROXY__.setMenu(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.menu = function(...args) 
           
@@ -2441,7 +2441,7 @@
               return this.__PROXY__.menu(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.setFlat = function(...args) 
           
@@ -2451,7 +2451,7 @@
               return this.__PROXY__.setFlat(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.isFlat = function(...args) 
           
@@ -2461,7 +2461,7 @@
               return this.__PROXY__.isFlat(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.showMenu = function(...args) 
           
@@ -2471,7 +2471,7 @@
               return this.__PROXY__.showMenu(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.event = function(...args) 
           
@@ -2481,7 +2481,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.paintEvent = function(...args) 
           
@@ -2491,7 +2491,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QPushButton.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QPushButton.prototype.keyPressEvent = function(...args) 
           
@@ -2501,7 +2502,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.focusInEvent = function(...args) 
           
@@ -2511,7 +2512,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.focusOutEvent = function(...args) 
           
@@ -2521,7 +2522,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.mouseMoveEvent = function(...args) 
           
@@ -2531,7 +2532,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QPushButton.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QPushButton.prototype.initStyleOption = function(...args) 
           
@@ -2541,7 +2543,7 @@
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QPushButton.prototype.hitButton = function(...args) 
           
@@ -2551,7 +2553,7 @@
               return this.__PROXY__.hitButton(...args);
             
         };
-    
+        
 
       // static functions:
       

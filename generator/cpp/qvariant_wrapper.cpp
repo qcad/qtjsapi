@@ -224,6 +224,8 @@ QVariant a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -262,6 +264,8 @@ int a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -300,6 +304,8 @@ uint a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -338,6 +344,8 @@ bool a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -376,6 +384,8 @@ double a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -414,6 +424,8 @@ float a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -452,6 +464,8 @@ QByteArray a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -490,6 +504,8 @@ QString a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -528,6 +544,8 @@ QStringList a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -566,6 +584,8 @@ QChar a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -604,6 +624,8 @@ QDate a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -642,6 +664,8 @@ QTime a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -680,6 +704,8 @@ QDateTime a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -718,6 +744,8 @@ QList<QVariant> a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -756,6 +784,8 @@ QSize a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -794,6 +824,8 @@ QSizeF a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -832,6 +864,8 @@ QPoint a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -870,6 +904,8 @@ QPointF a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -908,6 +944,8 @@ QRect a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -946,6 +984,8 @@ QRectF a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -984,6 +1024,8 @@ QLocale a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -1022,6 +1064,8 @@ QUrl a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -1045,6 +1089,8 @@ QUrl a1_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

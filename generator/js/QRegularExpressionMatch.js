@@ -186,7 +186,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.regularExpression = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.regularExpression(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.matchType = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.matchType(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.matchOptions = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.matchOptions(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.hasMatch = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.hasMatch(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.hasPartialMatch = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.hasPartialMatch(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.isValid = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.lastCapturedIndex = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.lastCapturedIndex(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.captured = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.captured(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.capturedTexts = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.capturedTexts(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.capturedStart = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.capturedStart(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.capturedLength = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.capturedLength(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionMatch.prototype.capturedEnd = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.capturedEnd(...args);
             
         };
-    
+        
 
       // static functions:
       QRegularExpressionMatch.prototype.isNullWrapper = function() {

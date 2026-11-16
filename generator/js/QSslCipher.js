@@ -212,7 +212,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.swap = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.equals = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.operator_not_assign = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.isNull = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.name = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.supportedBits = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.supportedBits(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.usedBits = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.usedBits(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.keyExchangeMethod = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.keyExchangeMethod(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.authenticationMethod = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.authenticationMethod(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.encryptionMethod = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.encryptionMethod(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.protocolString = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.protocolString(...args);
             
         };
-    
+        
         // function 
         QSslCipher.prototype.protocol = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.protocol(...args);
             
         };
-    
+        
 
       // static functions:
       QSslCipher.prototype.isNullWrapper = function() {

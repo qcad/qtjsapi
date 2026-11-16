@@ -376,7 +376,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.spontaneous = function(...args) 
           
@@ -386,7 +386,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.isAccepted = function(...args) 
           
@@ -396,7 +396,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.accept = function(...args) 
           
@@ -406,7 +406,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.ignore = function(...args) 
           
@@ -416,7 +416,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.isInputEvent = function(...args) 
           
@@ -426,7 +426,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.isPointerEvent = function(...args) 
           
@@ -436,7 +436,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -446,7 +446,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.setSpontaneous = function(...args) 
           
@@ -456,7 +456,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.modifiers = function(...args) 
           
@@ -466,7 +466,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.modifiers(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.setModifiers = function(...args) 
           
@@ -476,7 +476,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setModifiers(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.timestamp = function(...args) 
           
@@ -486,7 +486,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.timestamp(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.setTimestamp = function(...args) 
           
@@ -496,7 +496,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setTimestamp(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.pointCount = function(...args) 
           
@@ -506,7 +506,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointCount(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.point = function(...args) 
           
@@ -516,7 +516,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.point(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.pointById = function(...args) 
           
@@ -526,7 +526,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.pointById(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.allPointsGrabbed = function(...args) 
           
@@ -536,7 +536,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsGrabbed(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.allPointsAccepted = function(...args) 
           
@@ -546,7 +546,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.allPointsAccepted(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.setAccepted = function(...args) 
           
@@ -556,7 +556,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.exclusiveGrabber = function(...args) 
           
@@ -566,7 +566,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.setExclusiveGrabber = function(...args) 
           
@@ -576,7 +576,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusiveGrabber(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.clearPassiveGrabbers = function(...args) 
           
@@ -586,7 +586,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.clearPassiveGrabbers(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.addPassiveGrabber = function(...args) 
           
@@ -596,7 +596,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.addPassiveGrabber(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.removePassiveGrabber = function(...args) 
           
@@ -606,7 +606,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.removePassiveGrabber(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.position = function(...args) 
           
@@ -616,7 +616,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.scenePosition = function(...args) 
           
@@ -626,7 +626,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.scenePosition(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.globalPosition = function(...args) 
           
@@ -636,7 +636,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.globalPosition(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.isBeginEvent = function(...args) 
           
@@ -646,7 +646,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isBeginEvent(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.isUpdateEvent = function(...args) 
           
@@ -656,7 +656,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isUpdateEvent(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.isEndEvent = function(...args) 
           
@@ -666,7 +666,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.isEndEvent(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.exclusivePointGrabber = function(...args) 
           
@@ -676,7 +676,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.exclusivePointGrabber(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.setExclusivePointGrabber = function(...args) 
           
@@ -686,7 +686,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.setExclusivePointGrabber(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.clone = function(...args) 
           
@@ -696,7 +696,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.pos = function(...args) 
           
@@ -706,7 +706,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.button = function(...args) 
           
@@ -716,7 +716,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.button(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.buttons = function(...args) 
           
@@ -726,7 +726,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.source = function(...args) 
           
@@ -736,7 +736,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
         // function 
         QMouseEvent.prototype.flags = function(...args) 
           
@@ -746,7 +746,7 @@ QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
 
       // static functions:
       QMouseEvent.prototype.isNullWrapper = function() {

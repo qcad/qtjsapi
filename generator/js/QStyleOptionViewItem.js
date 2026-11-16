@@ -215,7 +215,7 @@ QStyleOptionViewItem.OnlyOne = QStyleOptionViewItem_Wrapper.OnlyOne;
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOptionViewItem.prototype.operator_assign = function(...args) 
           
@@ -225,7 +225,7 @@ QStyleOptionViewItem.OnlyOne = QStyleOptionViewItem_Wrapper.OnlyOne;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionViewItem.prototype.isNullWrapper = function() {

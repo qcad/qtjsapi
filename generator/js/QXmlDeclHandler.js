@@ -105,7 +105,7 @@
               return this.__PROXY__.attributeDecl(...args);
             
         };
-    
+        
         // function 
         QXmlDeclHandler.prototype.internalEntityDecl = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.internalEntityDecl(...args);
             
         };
-    
+        
         // function 
         QXmlDeclHandler.prototype.externalEntityDecl = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.externalEntityDecl(...args);
             
         };
-    
+        
         // function 
         QXmlDeclHandler.prototype.errorString = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlDeclHandler.prototype.isNullWrapper = function() {

@@ -186,7 +186,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.translate = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.translated = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.boundingRect = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.point = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.point(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.setPoint = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.setPoint(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.containsPoint = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.containsPoint(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.united = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.united(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.intersected = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.intersected(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.subtracted = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.subtracted(...args);
             
         };
-    
+        
         // function 
         QPolygon.prototype.intersects = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.intersects(...args);
             
         };
-    
+        
 
       // static functions:
       QPolygon.prototype.isNullWrapper = function() {

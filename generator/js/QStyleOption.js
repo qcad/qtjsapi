@@ -189,7 +189,7 @@ QStyleOption.SO_ComplexCustomBase = QStyleOption_Wrapper.SO_ComplexCustomBase;
               return this.__PROXY__.initFrom(...args);
             
         };
-    
+        
         // function 
         QStyleOption.prototype.operator_assign = function(...args) 
           
@@ -199,7 +199,7 @@ QStyleOption.SO_ComplexCustomBase = QStyleOption_Wrapper.SO_ComplexCustomBase;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOption.prototype.isNullWrapper = function() {

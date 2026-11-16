@@ -382,7 +382,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.setSpread = function(...args) 
           
@@ -392,7 +392,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.setSpread(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.spread = function(...args) 
           
@@ -402,7 +402,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.spread(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.setColorAt = function(...args) 
           
@@ -412,7 +412,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.setColorAt(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.coordinateMode = function(...args) 
           
@@ -422,7 +422,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.coordinateMode(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.setCoordinateMode = function(...args) 
           
@@ -432,7 +432,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.setCoordinateMode(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.interpolationMode = function(...args) 
           
@@ -442,7 +442,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.interpolationMode(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.setInterpolationMode = function(...args) 
           
@@ -452,7 +452,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.setInterpolationMode(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.start = function(...args) 
           
@@ -462,7 +462,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.start(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.setStart = function(...args) 
           
@@ -472,7 +472,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.setStart(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.finalStop = function(...args) 
           
@@ -482,7 +482,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.finalStop(...args);
             
         };
-    
+        
         // function 
         QLinearGradient.prototype.setFinalStop = function(...args) 
           
@@ -492,7 +492,7 @@ QLinearGradient.NumPresets = QLinearGradient_Wrapper.NumPresets;
               return this.__PROXY__.setFinalStop(...args);
             
         };
-    
+        
 
       // static functions:
       QLinearGradient.prototype.isNullWrapper = function() {

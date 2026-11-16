@@ -182,7 +182,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.addPage = function(...args) 
           
@@ -192,7 +192,7 @@
               return this.__PROXY__.addPage(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.addRange = function(...args) 
           
@@ -202,7 +202,7 @@
               return this.__PROXY__.addRange(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.clear = function(...args) 
           
@@ -212,7 +212,7 @@
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.toString = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.toString(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.fromString = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.fromString(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.contains = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.isEmpty = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.firstPage = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.firstPage(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.lastPage = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.lastPage(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.detach = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QPageRanges.prototype.isEqual = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.isEqual(...args);
             
         };
-    
+        
 
       // static functions:
       

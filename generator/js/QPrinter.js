@@ -238,7 +238,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.width = function(...args) 
           
@@ -248,7 +248,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.height = function(...args) 
           
@@ -258,7 +258,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.widthMM = function(...args) 
           
@@ -268,7 +268,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.heightMM = function(...args) 
           
@@ -278,7 +278,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.logicalDpiX = function(...args) 
           
@@ -288,7 +288,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.logicalDpiY = function(...args) 
           
@@ -298,7 +298,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.physicalDpiX = function(...args) 
           
@@ -308,7 +308,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.physicalDpiY = function(...args) 
           
@@ -318,7 +318,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.devicePixelRatio = function(...args) 
           
@@ -328,7 +328,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.devicePixelRatioF = function(...args) 
           
@@ -338,7 +338,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.colorCount = function(...args) 
           
@@ -348,7 +348,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.depth = function(...args) 
           
@@ -358,7 +358,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.initPainter = function(...args) 
           
@@ -368,7 +368,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.redirected = function(...args) 
           
@@ -378,7 +378,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.sharedPainter = function(...args) 
           
@@ -388,7 +388,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.qt_paint_device_metric = function(...args) 
           
@@ -398,7 +398,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPageLayout = function(...args) 
           
@@ -408,7 +408,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPageLayout(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPageSize = function(...args) 
           
@@ -418,7 +418,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPageSize(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPageOrientation = function(...args) 
           
@@ -428,7 +428,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPageOrientation(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPageMargins = function(...args) 
           
@@ -438,7 +438,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPageMargins(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.pageLayout = function(...args) 
           
@@ -448,7 +448,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.pageLayout(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPageRanges = function(...args) 
           
@@ -458,7 +458,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPageRanges(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.pageRanges = function(...args) 
           
@@ -468,7 +468,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.pageRanges(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.dd = function(...args) 
           
@@ -478,7 +478,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.dd(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.devType = function(...args) 
           
@@ -488,7 +488,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setOutputFormat = function(...args) 
           
@@ -498,7 +498,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setOutputFormat(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.outputFormat = function(...args) 
           
@@ -508,7 +508,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.outputFormat(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPdfVersion = function(...args) 
           
@@ -518,7 +518,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPdfVersion(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.pdfVersion = function(...args) 
           
@@ -528,7 +528,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.pdfVersion(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPrinterName = function(...args) 
           
@@ -538,7 +538,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPrinterName(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.printerName = function(...args) 
           
@@ -548,7 +548,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.printerName(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.isValid = function(...args) 
           
@@ -558,7 +558,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setOutputFileName = function(...args) 
           
@@ -568,7 +568,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setOutputFileName(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.outputFileName = function(...args) 
           
@@ -578,7 +578,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.outputFileName(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPrintProgram = function(...args) 
           
@@ -588,7 +588,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPrintProgram(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.printProgram = function(...args) 
           
@@ -598,7 +598,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.printProgram(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setDocName = function(...args) 
           
@@ -608,7 +608,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setDocName(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.docName = function(...args) 
           
@@ -618,7 +618,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.docName(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setCreator = function(...args) 
           
@@ -628,7 +628,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setCreator(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.creator = function(...args) 
           
@@ -638,7 +638,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.creator(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPageOrder = function(...args) 
           
@@ -648,7 +648,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPageOrder(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.pageOrder = function(...args) 
           
@@ -658,7 +658,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.pageOrder(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setResolution = function(...args) 
           
@@ -668,7 +668,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setResolution(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.resolution = function(...args) 
           
@@ -678,7 +678,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.resolution(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setColorMode = function(...args) 
           
@@ -688,7 +688,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setColorMode(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.colorMode = function(...args) 
           
@@ -698,7 +698,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.colorMode(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setCollateCopies = function(...args) 
           
@@ -708,7 +708,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setCollateCopies(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.collateCopies = function(...args) 
           
@@ -718,7 +718,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.collateCopies(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setFullPage = function(...args) 
           
@@ -728,7 +728,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setFullPage(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.fullPage = function(...args) 
           
@@ -738,7 +738,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.fullPage(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setCopyCount = function(...args) 
           
@@ -748,7 +748,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setCopyCount(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.copyCount = function(...args) 
           
@@ -758,7 +758,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.copyCount(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.supportsMultipleCopies = function(...args) 
           
@@ -768,7 +768,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.supportsMultipleCopies(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPaperSource = function(...args) 
           
@@ -778,7 +778,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPaperSource(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.paperSource = function(...args) 
           
@@ -788,7 +788,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.paperSource(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setDuplex = function(...args) 
           
@@ -798,7 +798,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setDuplex(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.duplex = function(...args) 
           
@@ -808,7 +808,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.duplex(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.supportedResolutions = function(...args) 
           
@@ -818,7 +818,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.supportedResolutions(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.supportedPaperSources = function(...args) 
           
@@ -828,7 +828,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.supportedPaperSources(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setFontEmbeddingEnabled = function(...args) 
           
@@ -838,7 +838,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setFontEmbeddingEnabled(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.fontEmbeddingEnabled = function(...args) 
           
@@ -848,7 +848,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.fontEmbeddingEnabled(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.paperRect = function(...args) 
           
@@ -858,7 +858,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.paperRect(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.pageRect = function(...args) 
           
@@ -868,7 +868,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.pageRect(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.printerSelectionOption = function(...args) 
           
@@ -878,7 +878,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.printerSelectionOption(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPrinterSelectionOption = function(...args) 
           
@@ -888,7 +888,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPrinterSelectionOption(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.newPage = function(...args) 
           
@@ -898,7 +898,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.newPage(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.abort = function(...args) 
           
@@ -908,7 +908,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.abort(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.printerState = function(...args) 
           
@@ -918,7 +918,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.printerState(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.paintEngine = function(...args) 
           
@@ -928,7 +928,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setFromTo = function(...args) 
           
@@ -938,7 +938,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setFromTo(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.fromPage = function(...args) 
           
@@ -948,7 +948,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.fromPage(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.toPage = function(...args) 
           
@@ -958,7 +958,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.toPage(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setPrintRange = function(...args) 
           
@@ -968,7 +968,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setPrintRange(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.printRange = function(...args) 
           
@@ -978,7 +978,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.printRange(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.metric = function(...args) 
           
@@ -988,7 +988,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QPrinter.prototype.setEngines = function(...args) 
           
@@ -998,7 +998,7 @@ QPrinter.DuplexShortSide = QPrinter_Wrapper.DuplexShortSide;
               return this.__PROXY__.setEngines(...args);
             
         };
-    
+        
 
       // static functions:
       QPrinter.prototype.isNullWrapper = function() {

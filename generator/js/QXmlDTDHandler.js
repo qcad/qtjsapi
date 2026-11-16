@@ -105,7 +105,7 @@
               return this.__PROXY__.notationDecl(...args);
             
         };
-    
+        
         // function 
         QXmlDTDHandler.prototype.unparsedEntityDecl = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.unparsedEntityDecl(...args);
             
         };
-    
+        
         // function 
         QXmlDTDHandler.prototype.errorString = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlDTDHandler.prototype.isNullWrapper = function() {

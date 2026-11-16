@@ -174,7 +174,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isWidgetType = function(...args) 
           
@@ -184,7 +184,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isWindowType = function(...args) 
           
@@ -194,7 +194,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.signalsBlocked = function(...args) 
           
@@ -204,7 +204,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.blockSignals = function(...args) 
           
@@ -214,7 +214,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.findChild = function(...args) 
           
@@ -224,7 +224,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.children = function(...args) 
           
@@ -234,7 +234,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.installEventFilter = function(...args) 
           
@@ -244,7 +244,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.removeEventFilter = function(...args) 
           
@@ -254,7 +254,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.dumpObjectTree = function(...args) 
           
@@ -264,7 +264,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.dumpObjectInfo = function(...args) 
           
@@ -274,7 +274,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setProperty = function(...args) 
           
@@ -284,7 +284,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.property = function(...args) 
           
@@ -294,7 +294,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.dynamicPropertyNames = function(...args) 
           
@@ -304,7 +304,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.parent = function(...args) 
           
@@ -314,7 +314,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.deleteLater = function(...args) 
           
@@ -324,7 +324,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.devType = function(...args) 
           
@@ -334,7 +334,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.createWinId = function(...args) 
           
@@ -344,7 +344,7 @@
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isWindow = function(...args) 
           
@@ -354,7 +354,7 @@
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isModal = function(...args) 
           
@@ -364,7 +364,7 @@
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowModality = function(...args) 
           
@@ -374,7 +374,7 @@
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isEnabled = function(...args) 
           
@@ -384,7 +384,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isEnabledTo = function(...args) 
           
@@ -394,7 +394,7 @@
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setEnabled = function(...args) 
           
@@ -404,7 +404,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setDisabled = function(...args) 
           
@@ -414,7 +414,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowModified = function(...args) 
           
@@ -424,7 +424,7 @@
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setMinimumSize = function(...args) 
           
@@ -434,7 +434,7 @@
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setMaximumSize = function(...args) 
           
@@ -444,7 +444,7 @@
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setMinimumWidth = function(...args) 
           
@@ -454,7 +454,7 @@
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setMinimumHeight = function(...args) 
           
@@ -464,7 +464,7 @@
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setMaximumWidth = function(...args) 
           
@@ -474,7 +474,7 @@
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setMaximumHeight = function(...args) 
           
@@ -484,7 +484,7 @@
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setSizeIncrement = function(...args) 
           
@@ -494,7 +494,7 @@
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setBaseSize = function(...args) 
           
@@ -504,7 +504,7 @@
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setFixedSize = function(...args) 
           
@@ -514,7 +514,7 @@
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setFixedWidth = function(...args) 
           
@@ -524,7 +524,7 @@
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setFixedHeight = function(...args) 
           
@@ -534,7 +534,7 @@
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.mapToGlobal = function(...args) 
           
@@ -544,7 +544,7 @@
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.mapFromGlobal = function(...args) 
           
@@ -554,7 +554,7 @@
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.mapToParent = function(...args) 
           
@@ -564,7 +564,7 @@
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.mapFromParent = function(...args) 
           
@@ -574,7 +574,7 @@
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.mapTo = function(...args) 
           
@@ -584,7 +584,7 @@
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.mapFrom = function(...args) 
           
@@ -594,7 +594,7 @@
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.window = function(...args) 
           
@@ -604,7 +604,7 @@
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.nativeParentWidget = function(...args) 
           
@@ -614,7 +614,7 @@
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.topLevelWidget = function(...args) 
           
@@ -624,7 +624,7 @@
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setPalette = function(...args) 
           
@@ -634,7 +634,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setBackgroundRole = function(...args) 
           
@@ -644,7 +644,7 @@
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.backgroundRole = function(...args) 
           
@@ -654,7 +654,7 @@
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setForegroundRole = function(...args) 
           
@@ -664,7 +664,7 @@
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.foregroundRole = function(...args) 
           
@@ -674,7 +674,7 @@
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setFont = function(...args) 
           
@@ -684,7 +684,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.fontInfo = function(...args) 
           
@@ -694,7 +694,7 @@
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setCursor = function(...args) 
           
@@ -704,7 +704,7 @@
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.unsetCursor = function(...args) 
           
@@ -714,7 +714,7 @@
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setMouseTracking = function(...args) 
           
@@ -724,7 +724,7 @@
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.hasMouseTracking = function(...args) 
           
@@ -734,7 +734,7 @@
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.underMouse = function(...args) 
           
@@ -744,7 +744,7 @@
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setTabletTracking = function(...args) 
           
@@ -754,7 +754,7 @@
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.hasTabletTracking = function(...args) 
           
@@ -764,7 +764,7 @@
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setMask = function(...args) 
           
@@ -774,7 +774,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.mask = function(...args) 
           
@@ -784,7 +784,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.clearMask = function(...args) 
           
@@ -794,7 +794,7 @@
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.grab = function(...args) 
           
@@ -804,7 +804,7 @@
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.grabGesture = function(...args) 
           
@@ -814,7 +814,7 @@
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.ungrabGesture = function(...args) 
           
@@ -824,7 +824,7 @@
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowTitle = function(...args) 
           
@@ -834,7 +834,7 @@
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setStyleSheet = function(...args) 
           
@@ -844,7 +844,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowIcon = function(...args) 
           
@@ -854,7 +854,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowIconText = function(...args) 
           
@@ -864,7 +864,7 @@
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowRole = function(...args) 
           
@@ -874,7 +874,7 @@
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.windowRole = function(...args) 
           
@@ -884,7 +884,7 @@
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowFilePath = function(...args) 
           
@@ -894,7 +894,7 @@
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowOpacity = function(...args) 
           
@@ -904,7 +904,7 @@
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isWindowModified = function(...args) 
           
@@ -914,7 +914,7 @@
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setToolTip = function(...args) 
           
@@ -924,7 +924,7 @@
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setToolTipDuration = function(...args) 
           
@@ -934,7 +934,7 @@
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setStatusTip = function(...args) 
           
@@ -944,7 +944,7 @@
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWhatsThis = function(...args) 
           
@@ -954,7 +954,7 @@
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAccessibleName = function(...args) 
           
@@ -964,7 +964,7 @@
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAccessibleDescription = function(...args) 
           
@@ -974,7 +974,7 @@
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setLayoutDirection = function(...args) 
           
@@ -984,7 +984,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.unsetLayoutDirection = function(...args) 
           
@@ -994,7 +994,7 @@
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setLocale = function(...args) 
           
@@ -1004,7 +1004,7 @@
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.unsetLocale = function(...args) 
           
@@ -1014,7 +1014,7 @@
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isRightToLeft = function(...args) 
           
@@ -1024,7 +1024,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isLeftToRight = function(...args) 
           
@@ -1034,7 +1034,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.activateWindow = function(...args) 
           
@@ -1044,7 +1044,7 @@
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.clearFocus = function(...args) 
           
@@ -1054,7 +1054,7 @@
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setFocus = function(...args) 
           
@@ -1064,7 +1064,7 @@
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setFocusPolicy = function(...args) 
           
@@ -1074,7 +1074,7 @@
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.hasFocus = function(...args) 
           
@@ -1084,7 +1084,7 @@
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setFocusProxy = function(...args) 
           
@@ -1094,7 +1094,7 @@
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.focusProxy = function(...args) 
           
@@ -1104,7 +1104,7 @@
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1114,7 +1114,7 @@
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.grabMouse = function(...args) 
           
@@ -1124,7 +1124,7 @@
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.releaseMouse = function(...args) 
           
@@ -1134,7 +1134,7 @@
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.grabKeyboard = function(...args) 
           
@@ -1144,7 +1144,7 @@
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.releaseKeyboard = function(...args) 
           
@@ -1154,7 +1154,7 @@
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.grabShortcut = function(...args) 
           
@@ -1164,7 +1164,7 @@
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.releaseShortcut = function(...args) 
           
@@ -1174,7 +1174,7 @@
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setShortcutEnabled = function(...args) 
           
@@ -1184,7 +1184,7 @@
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1194,7 +1194,7 @@
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1204,7 +1204,7 @@
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.update = function(...args) 
           
@@ -1214,7 +1214,7 @@
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.repaint = function(...args) 
           
@@ -1224,7 +1224,7 @@
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setVisible = function(...args) 
           
@@ -1234,7 +1234,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setHidden = function(...args) 
           
@@ -1244,7 +1244,7 @@
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.show = function(...args) 
           
@@ -1254,7 +1254,7 @@
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.hide = function(...args) 
           
@@ -1264,7 +1264,7 @@
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.showMinimized = function(...args) 
           
@@ -1274,7 +1274,7 @@
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.showMaximized = function(...args) 
           
@@ -1284,7 +1284,7 @@
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.showFullScreen = function(...args) 
           
@@ -1294,7 +1294,7 @@
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.showNormal = function(...args) 
           
@@ -1304,7 +1304,7 @@
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.close = function(...args) 
           
@@ -1314,7 +1314,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.raise = function(...args) 
           
@@ -1324,7 +1324,7 @@
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.lower = function(...args) 
           
@@ -1334,7 +1334,7 @@
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.stackUnder = function(...args) 
           
@@ -1344,7 +1344,7 @@
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.move = function(...args) 
           
@@ -1354,7 +1354,7 @@
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.resize = function(...args) 
           
@@ -1364,7 +1364,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setGeometry = function(...args) 
           
@@ -1374,7 +1374,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.saveGeometry = function(...args) 
           
@@ -1384,7 +1384,7 @@
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.restoreGeometry = function(...args) 
           
@@ -1394,7 +1394,7 @@
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.adjustSize = function(...args) 
           
@@ -1404,7 +1404,7 @@
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isVisible = function(...args) 
           
@@ -1414,7 +1414,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isVisibleTo = function(...args) 
           
@@ -1424,7 +1424,7 @@
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isHidden = function(...args) 
           
@@ -1434,7 +1434,7 @@
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isMinimized = function(...args) 
           
@@ -1444,7 +1444,7 @@
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isMaximized = function(...args) 
           
@@ -1454,7 +1454,7 @@
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isFullScreen = function(...args) 
           
@@ -1464,7 +1464,7 @@
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.windowState = function(...args) 
           
@@ -1474,7 +1474,7 @@
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowState = function(...args) 
           
@@ -1484,7 +1484,7 @@
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.overrideWindowState = function(...args) 
           
@@ -1494,7 +1494,7 @@
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setSizePolicy = function(...args) 
           
@@ -1504,7 +1504,7 @@
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.heightForWidth = function(...args) 
           
@@ -1514,7 +1514,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.hasHeightForWidth = function(...args) 
           
@@ -1524,7 +1524,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.visibleRegion = function(...args) 
           
@@ -1534,7 +1534,7 @@
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setContentsMargins = function(...args) 
           
@@ -1544,7 +1544,7 @@
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.contentsMargins = function(...args) 
           
@@ -1554,7 +1554,7 @@
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.contentsRect = function(...args) 
           
@@ -1564,7 +1564,7 @@
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.layout = function(...args) 
           
@@ -1574,7 +1574,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setLayout = function(...args) 
           
@@ -1584,7 +1584,7 @@
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.updateGeometry = function(...args) 
           
@@ -1594,7 +1594,7 @@
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setParent = function(...args) 
           
@@ -1604,7 +1604,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.scroll = function(...args) 
           
@@ -1614,7 +1614,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.focusWidget = function(...args) 
           
@@ -1624,7 +1624,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.nextInFocusChain = function(...args) 
           
@@ -1634,7 +1634,7 @@
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.previousInFocusChain = function(...args) 
           
@@ -1644,7 +1644,7 @@
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAcceptDrops = function(...args) 
           
@@ -1654,7 +1654,7 @@
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.addAction = function(...args) 
           
@@ -1664,7 +1664,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.addActions = function(...args) 
           
@@ -1674,7 +1674,7 @@
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.insertActions = function(...args) 
           
@@ -1684,7 +1684,7 @@
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.insertAction = function(...args) 
           
@@ -1694,7 +1694,7 @@
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.removeAction = function(...args) 
           
@@ -1704,7 +1704,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.actions = function(...args) 
           
@@ -1714,7 +1714,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.parentWidget = function(...args) 
           
@@ -1724,7 +1724,7 @@
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowFlags = function(...args) 
           
@@ -1734,7 +1734,7 @@
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.windowFlags = function(...args) 
           
@@ -1744,7 +1744,7 @@
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setWindowFlag = function(...args) 
           
@@ -1754,7 +1754,7 @@
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.overrideWindowFlags = function(...args) 
           
@@ -1764,7 +1764,7 @@
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.windowType = function(...args) 
           
@@ -1774,7 +1774,7 @@
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.childAt = function(...args) 
           
@@ -1784,7 +1784,7 @@
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAttribute = function(...args) 
           
@@ -1794,7 +1794,7 @@
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.testAttribute = function(...args) 
           
@@ -1804,7 +1804,7 @@
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.ensurePolished = function(...args) 
           
@@ -1814,7 +1814,7 @@
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isAncestorOf = function(...args) 
           
@@ -1824,7 +1824,7 @@
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAutoFillBackground = function(...args) 
           
@@ -1834,7 +1834,7 @@
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1844,7 +1844,7 @@
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.wheelEvent = function(...args) 
           
@@ -1854,7 +1854,7 @@
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.keyPressEvent = function(...args) 
           
@@ -1864,7 +1864,7 @@
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.keyReleaseEvent = function(...args) 
           
@@ -1874,7 +1874,7 @@
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.focusInEvent = function(...args) 
           
@@ -1884,7 +1884,7 @@
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.focusOutEvent = function(...args) 
           
@@ -1894,7 +1894,7 @@
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.enterEvent = function(...args) 
           
@@ -1904,7 +1904,7 @@
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.leaveEvent = function(...args) 
           
@@ -1914,7 +1914,7 @@
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.moveEvent = function(...args) 
           
@@ -1924,7 +1924,7 @@
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.closeEvent = function(...args) 
           
@@ -1934,7 +1934,7 @@
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.tabletEvent = function(...args) 
           
@@ -1944,7 +1944,7 @@
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.dragEnterEvent = function(...args) 
           
@@ -1954,7 +1954,7 @@
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.dragMoveEvent = function(...args) 
           
@@ -1964,7 +1964,7 @@
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.dragLeaveEvent = function(...args) 
           
@@ -1974,7 +1974,7 @@
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.dropEvent = function(...args) 
           
@@ -1984,7 +1984,7 @@
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.showEvent = function(...args) 
           
@@ -1994,7 +1994,7 @@
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.hideEvent = function(...args) 
           
@@ -2004,7 +2004,7 @@
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.nativeEvent = function(...args) 
           
@@ -2014,7 +2014,7 @@
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.changeEvent = function(...args) 
           
@@ -2024,7 +2024,7 @@
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.metric = function(...args) 
           
@@ -2034,7 +2034,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.initPainter = function(...args) 
           
@@ -2044,7 +2044,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.redirected = function(...args) 
           
@@ -2054,7 +2054,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.sharedPainter = function(...args) 
           
@@ -2064,7 +2064,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.inputMethodEvent = function(...args) 
           
@@ -2074,7 +2074,7 @@
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.inputMethodQuery = function(...args) 
           
@@ -2084,7 +2084,7 @@
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setInputMethodHints = function(...args) 
           
@@ -2094,7 +2094,7 @@
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.updateMicroFocus = function(...args) 
           
@@ -2104,7 +2104,7 @@
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.create = function(...args) 
           
@@ -2114,7 +2114,7 @@
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.destroy = function(...args) 
           
@@ -2124,7 +2124,7 @@
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.focusNextPrevChild = function(...args) 
           
@@ -2134,7 +2134,7 @@
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.focusNextChild = function(...args) 
           
@@ -2144,7 +2144,7 @@
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.focusPreviousChild = function(...args) 
           
@@ -2154,7 +2154,7 @@
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setBackingStore = function(...args) 
           
@@ -2164,7 +2164,7 @@
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.testAttribute_helper = function(...args) 
           
@@ -2174,7 +2174,7 @@
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.takeLayout = function(...args) 
           
@@ -2184,7 +2184,7 @@
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2194,7 +2194,7 @@
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.qt_qwidget_data = function(...args) 
           
@@ -2204,7 +2204,7 @@
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.qt_widget_private = function(...args) 
           
@@ -2214,7 +2214,7 @@
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setText = function(...args) 
           
@@ -2224,7 +2224,7 @@
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setIcon = function(...args) 
           
@@ -2234,7 +2234,7 @@
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setShortcut = function(...args) 
           
@@ -2244,7 +2244,7 @@
               return this.__PROXY__.setShortcut(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setCheckable = function(...args) 
           
@@ -2254,7 +2254,7 @@
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isCheckable = function(...args) 
           
@@ -2264,7 +2264,7 @@
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isChecked = function(...args) 
           
@@ -2274,7 +2274,7 @@
               return this.__PROXY__.isChecked(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setDown = function(...args) 
           
@@ -2284,7 +2284,7 @@
               return this.__PROXY__.setDown(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isDown = function(...args) 
           
@@ -2294,7 +2294,7 @@
               return this.__PROXY__.isDown(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAutoRepeat = function(...args) 
           
@@ -2304,7 +2304,7 @@
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAutoRepeatDelay = function(...args) 
           
@@ -2314,7 +2314,7 @@
               return this.__PROXY__.setAutoRepeatDelay(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAutoRepeatInterval = function(...args) 
           
@@ -2324,7 +2324,7 @@
               return this.__PROXY__.setAutoRepeatInterval(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setAutoExclusive = function(...args) 
           
@@ -2334,7 +2334,7 @@
               return this.__PROXY__.setAutoExclusive(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.group = function(...args) 
           
@@ -2344,7 +2344,7 @@
               return this.__PROXY__.group(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setIconSize = function(...args) 
           
@@ -2354,7 +2354,7 @@
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.animateClick = function(...args) 
           
@@ -2364,7 +2364,7 @@
               return this.__PROXY__.animateClick(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.click = function(...args) 
           
@@ -2374,7 +2374,7 @@
               return this.__PROXY__.click(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.toggle = function(...args) 
           
@@ -2384,7 +2384,7 @@
               return this.__PROXY__.toggle(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setChecked = function(...args) 
           
@@ -2394,7 +2394,7 @@
               return this.__PROXY__.setChecked(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setTristate = function(...args) 
           
@@ -2404,7 +2404,7 @@
               return this.__PROXY__.setTristate(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.isTristate = function(...args) 
           
@@ -2414,7 +2414,7 @@
               return this.__PROXY__.isTristate(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.checkState = function(...args) 
           
@@ -2424,7 +2424,7 @@
               return this.__PROXY__.checkState(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.setCheckState = function(...args) 
           
@@ -2434,7 +2434,7 @@
               return this.__PROXY__.setCheckState(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.event = function(...args) 
           
@@ -2444,7 +2444,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.hitButton = function(...args) 
           
@@ -2454,7 +2454,7 @@
               return this.__PROXY__.hitButton(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.checkStateSet = function(...args) 
           
@@ -2464,7 +2464,7 @@
               return this.__PROXY__.checkStateSet(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.nextCheckState = function(...args) 
           
@@ -2474,7 +2474,7 @@
               return this.__PROXY__.nextCheckState(...args);
             
         };
-    
+        
         // function 
         QCheckBox.prototype.paintEvent = function(...args) 
           
@@ -2484,7 +2484,8 @@
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QCheckBox.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QCheckBox.prototype.mouseMoveEvent = function(...args) 
           
@@ -2494,7 +2495,8 @@
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QCheckBox.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QCheckBox.prototype.initStyleOption = function(...args) 
           
@@ -2504,7 +2506,7 @@
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
 
       // static functions:
       

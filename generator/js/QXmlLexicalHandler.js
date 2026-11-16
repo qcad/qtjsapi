@@ -105,7 +105,7 @@
               return this.__PROXY__.startDTD(...args);
             
         };
-    
+        
         // function 
         QXmlLexicalHandler.prototype.endDTD = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.endDTD(...args);
             
         };
-    
+        
         // function 
         QXmlLexicalHandler.prototype.startEntity = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.startEntity(...args);
             
         };
-    
+        
         // function 
         QXmlLexicalHandler.prototype.endEntity = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.endEntity(...args);
             
         };
-    
+        
         // function 
         QXmlLexicalHandler.prototype.startCDATA = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.startCDATA(...args);
             
         };
-    
+        
         // function 
         QXmlLexicalHandler.prototype.endCDATA = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.endCDATA(...args);
             
         };
-    
+        
         // function 
         QXmlLexicalHandler.prototype.comment = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.comment(...args);
             
         };
-    
+        
         // function 
         QXmlLexicalHandler.prototype.errorString = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlLexicalHandler.prototype.isNullWrapper = function() {

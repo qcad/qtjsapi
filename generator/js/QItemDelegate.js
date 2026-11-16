@@ -150,7 +150,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.isWidgetType = function(...args) 
           
@@ -160,7 +160,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.isWindowType = function(...args) 
           
@@ -170,7 +170,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.signalsBlocked = function(...args) 
           
@@ -180,7 +180,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.blockSignals = function(...args) 
           
@@ -190,7 +190,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.findChild = function(...args) 
           
@@ -200,7 +200,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.children = function(...args) 
           
@@ -210,7 +210,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.setParent = function(...args) 
           
@@ -220,7 +220,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.installEventFilter = function(...args) 
           
@@ -230,7 +230,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.removeEventFilter = function(...args) 
           
@@ -240,7 +240,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.dumpObjectTree = function(...args) 
           
@@ -250,7 +250,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.dumpObjectInfo = function(...args) 
           
@@ -260,7 +260,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.setProperty = function(...args) 
           
@@ -270,7 +270,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.property = function(...args) 
           
@@ -280,7 +280,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.dynamicPropertyNames = function(...args) 
           
@@ -290,7 +290,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.parent = function(...args) 
           
@@ -300,7 +300,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.deleteLater = function(...args) 
           
@@ -310,7 +310,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.destroyEditor = function(...args) 
           
@@ -320,7 +320,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.destroyEditor(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.paintingRoles = function(...args) 
           
@@ -330,7 +330,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.paintingRoles(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.hasClipping = function(...args) 
           
@@ -340,7 +340,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.hasClipping(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.setClipping = function(...args) 
           
@@ -350,7 +350,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.setClipping(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.createEditor = function(...args) 
           
@@ -360,7 +360,8 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.createEditorSuper(...args);
             
         };
-    
+        QItemDelegate.prototype.createEditor.__SUPER__ = true;
+        
         // function 
         QItemDelegate.prototype.setEditorData = function(...args) 
           
@@ -370,7 +371,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.setEditorData(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.setModelData = function(...args) 
           
@@ -380,7 +381,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.setModelData(...args);
             
         };
-    
+        
         // function 
         QItemDelegate.prototype.eventFilter = function(...args) 
           
@@ -390,7 +391,7 @@ QItemDelegate.RevertModelCache = QItemDelegate_Wrapper.RevertModelCache;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
 
       // static functions:
       

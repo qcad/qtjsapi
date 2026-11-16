@@ -312,7 +312,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.spontaneous = function(...args) 
           
@@ -322,7 +322,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.setAccepted = function(...args) 
           
@@ -332,7 +332,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.isAccepted = function(...args) 
           
@@ -342,7 +342,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.accept = function(...args) 
           
@@ -352,7 +352,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.ignore = function(...args) 
           
@@ -362,7 +362,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.isInputEvent = function(...args) 
           
@@ -372,7 +372,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.isPointerEvent = function(...args) 
           
@@ -382,7 +382,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -392,7 +392,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.clone = function(...args) 
           
@@ -402,7 +402,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QDragLeaveEvent.prototype.setSpontaneous = function(...args) 
           
@@ -412,7 +412,7 @@ QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
 
       // static functions:
       QDragLeaveEvent.prototype.isNullWrapper = function() {

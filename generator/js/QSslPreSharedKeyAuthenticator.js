@@ -160,7 +160,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.swap = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.identityHint = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.identityHint(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.setIdentity = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.setIdentity(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.identity = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.identity(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.maximumIdentityLength = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.maximumIdentityLength(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.setPreSharedKey = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.setPreSharedKey(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.preSharedKey = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.preSharedKey(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.maximumPreSharedKeyLength = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.maximumPreSharedKeyLength(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.isEqual = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.isEqual(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.equals = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QSslPreSharedKeyAuthenticator.prototype.operator_not_assign = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
 
       // static functions:
       

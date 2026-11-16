@@ -114,7 +114,8 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        QAbstractItemModel.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         QAbstractItemModel.prototype.setObjectName = function(...args) 
           
@@ -124,7 +125,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.isWidgetType = function(...args) 
           
@@ -134,7 +135,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.isWindowType = function(...args) 
           
@@ -144,7 +145,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.signalsBlocked = function(...args) 
           
@@ -154,7 +155,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.blockSignals = function(...args) 
           
@@ -164,7 +165,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.findChild = function(...args) 
           
@@ -174,7 +175,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.children = function(...args) 
           
@@ -184,7 +185,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.setParent = function(...args) 
           
@@ -194,7 +195,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.installEventFilter = function(...args) 
           
@@ -204,7 +205,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.removeEventFilter = function(...args) 
           
@@ -214,7 +215,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.dumpObjectTree = function(...args) 
           
@@ -224,7 +225,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.dumpObjectInfo = function(...args) 
           
@@ -234,7 +235,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.setProperty = function(...args) 
           
@@ -244,7 +245,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.property = function(...args) 
           
@@ -254,7 +255,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.dynamicPropertyNames = function(...args) 
           
@@ -264,7 +265,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.parent = function(...args) 
           
@@ -274,7 +275,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.deleteLater = function(...args) 
           
@@ -284,7 +285,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.hasIndex = function(...args) 
           
@@ -294,7 +295,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.hasIndex(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.index = function(...args) 
           
@@ -304,7 +305,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.index(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.sibling = function(...args) 
           
@@ -314,7 +315,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.sibling(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.rowCount = function(...args) 
           
@@ -324,7 +325,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.rowCount(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.columnCount = function(...args) 
           
@@ -334,7 +335,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.columnCount(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.hasChildren = function(...args) 
           
@@ -344,7 +345,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.hasChildren(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.data = function(...args) 
           
@@ -354,7 +355,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.setData = function(...args) 
           
@@ -364,7 +365,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.headerData = function(...args) 
           
@@ -374,7 +375,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.headerData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.setHeaderData = function(...args) 
           
@@ -384,7 +385,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.setHeaderData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.clearItemData = function(...args) 
           
@@ -394,7 +395,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.clearItemData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.mimeTypes = function(...args) 
           
@@ -404,7 +405,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.mimeTypes(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.supportedDropActions = function(...args) 
           
@@ -414,7 +415,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.supportedDropActions(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.supportedDragActions = function(...args) 
           
@@ -424,7 +425,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.supportedDragActions(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.insertRows = function(...args) 
           
@@ -434,7 +435,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.insertRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.insertColumns = function(...args) 
           
@@ -444,7 +445,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.insertColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.removeRows = function(...args) 
           
@@ -454,7 +455,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.removeColumns = function(...args) 
           
@@ -464,7 +465,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.moveRows = function(...args) 
           
@@ -474,7 +475,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.moveRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.moveColumns = function(...args) 
           
@@ -484,7 +485,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.moveColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.insertRow = function(...args) 
           
@@ -494,7 +495,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.insertRow(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.insertColumn = function(...args) 
           
@@ -504,7 +505,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.insertColumn(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.removeRow = function(...args) 
           
@@ -514,7 +515,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeRow(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.removeColumn = function(...args) 
           
@@ -524,7 +525,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.removeColumn(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.moveRow = function(...args) 
           
@@ -534,7 +535,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.moveRow(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.moveColumn = function(...args) 
           
@@ -544,7 +545,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.moveColumn(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.fetchMore = function(...args) 
           
@@ -554,7 +555,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.fetchMore(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.canFetchMore = function(...args) 
           
@@ -564,7 +565,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.canFetchMore(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.flags = function(...args) 
           
@@ -574,7 +575,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.sort = function(...args) 
           
@@ -584,7 +585,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.sort(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.buddy = function(...args) 
           
@@ -594,7 +595,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.buddy(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.span = function(...args) 
           
@@ -604,7 +605,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.span(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.roleNames = function(...args) 
           
@@ -614,7 +615,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.roleNames(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.submit = function(...args) 
           
@@ -624,7 +625,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.submit(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.revert = function(...args) 
           
@@ -634,7 +635,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.revert(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.resetInternalData = function(...args) 
           
@@ -644,7 +645,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.resetInternalData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.createIndex = function(...args) 
           
@@ -654,7 +655,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.createIndex(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.encodeData = function(...args) 
           
@@ -664,7 +665,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.encodeData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.decodeData = function(...args) 
           
@@ -674,7 +675,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.decodeData(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.beginInsertRows = function(...args) 
           
@@ -684,7 +685,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginInsertRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.endInsertRows = function(...args) 
           
@@ -694,7 +695,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endInsertRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.beginRemoveRows = function(...args) 
           
@@ -704,7 +705,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginRemoveRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.endRemoveRows = function(...args) 
           
@@ -714,7 +715,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endRemoveRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.beginMoveRows = function(...args) 
           
@@ -724,7 +725,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginMoveRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.endMoveRows = function(...args) 
           
@@ -734,7 +735,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endMoveRows(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.beginInsertColumns = function(...args) 
           
@@ -744,7 +745,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginInsertColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.endInsertColumns = function(...args) 
           
@@ -754,7 +755,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endInsertColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.beginRemoveColumns = function(...args) 
           
@@ -764,7 +765,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.endRemoveColumns = function(...args) 
           
@@ -774,7 +775,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endRemoveColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.beginMoveColumns = function(...args) 
           
@@ -784,7 +785,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginMoveColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.endMoveColumns = function(...args) 
           
@@ -794,7 +795,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endMoveColumns(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.beginResetModel = function(...args) 
           
@@ -804,7 +805,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.beginResetModel(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.endResetModel = function(...args) 
           
@@ -814,7 +815,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.endResetModel(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.changePersistentIndex = function(...args) 
           
@@ -824,7 +825,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.changePersistentIndex(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.changePersistentIndexList = function(...args) 
           
@@ -834,7 +835,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.changePersistentIndexList(...args);
             
         };
-    
+        
         // function 
         QAbstractItemModel.prototype.persistentIndexList = function(...args) 
           
@@ -844,7 +845,7 @@ QAbstractItemModel.HorizontalSortHint = QAbstractItemModel_Wrapper.HorizontalSor
               return this.__PROXY__.persistentIndexList(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -113,7 +113,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.isWidgetType = function(...args) 
           
@@ -123,7 +123,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.isWindowType = function(...args) 
           
@@ -133,7 +133,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.signalsBlocked = function(...args) 
           
@@ -143,7 +143,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.blockSignals = function(...args) 
           
@@ -153,7 +153,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.findChild = function(...args) 
           
@@ -163,7 +163,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.children = function(...args) 
           
@@ -173,7 +173,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setParent = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.installEventFilter = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.removeEventFilter = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.dumpObjectTree = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.dumpObjectInfo = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setProperty = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.property = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.dynamicPropertyNames = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.parent = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.deleteLater = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setOrganizationDomain = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.setOrganizationDomain(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setOrganizationName = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.setOrganizationName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setApplicationName = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.setApplicationName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setApplicationVersion = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.setApplicationVersion(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.isQuitLockEnabled = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.isQuitLockEnabled(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setQuitLockEnabled = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.setQuitLockEnabled(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.qt_sendSpontaneousEvent = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.qt_sendSpontaneousEvent(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.qAppName = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.qAppName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setApplicationDisplayName = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.setApplicationDisplayName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.applicationDisplayName = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.applicationDisplayName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setDesktopFileName = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.setDesktopFileName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.desktopFileName = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.desktopFileName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setWindowIcon = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.windowIcon = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.windowIcon(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.platformName = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.platformName(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.focusObject = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.focusObject(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.primaryScreen = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.primaryScreen(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.screens = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.screens(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.screenAt = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.screenAt(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.devicePixelRatio = function(...args) 
           
@@ -473,7 +473,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.overrideCursor = function(...args) 
           
@@ -483,7 +483,7 @@
               return this.__PROXY__.overrideCursor(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setOverrideCursor = function(...args) 
           
@@ -493,7 +493,7 @@
               return this.__PROXY__.setOverrideCursor(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.changeOverrideCursor = function(...args) 
           
@@ -503,7 +503,7 @@
               return this.__PROXY__.changeOverrideCursor(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.restoreOverrideCursor = function(...args) 
           
@@ -513,7 +513,7 @@
               return this.__PROXY__.restoreOverrideCursor(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.font = function(...args) 
           
@@ -523,7 +523,7 @@
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setFont = function(...args) 
           
@@ -533,7 +533,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.clipboard = function(...args) 
           
@@ -543,7 +543,7 @@
               return this.__PROXY__.clipboard(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.palette = function(...args) 
           
@@ -553,7 +553,7 @@
               return this.__PROXY__.palette(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setPalette = function(...args) 
           
@@ -563,7 +563,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.keyboardModifiers = function(...args) 
           
@@ -573,7 +573,7 @@
               return this.__PROXY__.keyboardModifiers(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.queryKeyboardModifiers = function(...args) 
           
@@ -583,7 +583,7 @@
               return this.__PROXY__.queryKeyboardModifiers(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.mouseButtons = function(...args) 
           
@@ -593,7 +593,7 @@
               return this.__PROXY__.mouseButtons(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setLayoutDirection = function(...args) 
           
@@ -603,7 +603,7 @@
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.layoutDirection = function(...args) 
           
@@ -613,7 +613,7 @@
               return this.__PROXY__.layoutDirection(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.isRightToLeft = function(...args) 
           
@@ -623,7 +623,7 @@
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.isLeftToRight = function(...args) 
           
@@ -633,7 +633,7 @@
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setDesktopSettingsAware = function(...args) 
           
@@ -643,7 +643,7 @@
               return this.__PROXY__.setDesktopSettingsAware(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.desktopSettingsAware = function(...args) 
           
@@ -653,7 +653,7 @@
               return this.__PROXY__.desktopSettingsAware(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.setQuitOnLastWindowClosed = function(...args) 
           
@@ -663,7 +663,7 @@
               return this.__PROXY__.setQuitOnLastWindowClosed(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.quitOnLastWindowClosed = function(...args) 
           
@@ -673,7 +673,7 @@
               return this.__PROXY__.quitOnLastWindowClosed(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.applicationState = function(...args) 
           
@@ -683,7 +683,7 @@
               return this.__PROXY__.applicationState(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.exec = function(...args) 
           
@@ -693,7 +693,7 @@
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.notify = function(...args) 
           
@@ -703,7 +703,7 @@
               return this.__PROXY__.notify(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.isSessionRestored = function(...args) 
           
@@ -713,7 +713,7 @@
               return this.__PROXY__.isSessionRestored(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.sessionId = function(...args) 
           
@@ -723,7 +723,7 @@
               return this.__PROXY__.sessionId(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.sessionKey = function(...args) 
           
@@ -733,7 +733,7 @@
               return this.__PROXY__.sessionKey(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.isSavingSession = function(...args) 
           
@@ -743,7 +743,7 @@
               return this.__PROXY__.isSavingSession(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.sync = function(...args) 
           
@@ -753,7 +753,7 @@
               return this.__PROXY__.sync(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.event = function(...args) 
           
@@ -763,7 +763,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QGuiApplication.prototype.compressEvent = function(...args) 
           
@@ -773,7 +773,7 @@
               return this.__PROXY__.compressEvent(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -165,7 +165,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.swap = function(...args) 
           
@@ -175,7 +175,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.equals = function(...args) 
           
@@ -185,7 +185,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.operator_not_assign = function(...args) 
           
@@ -195,7 +195,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.operator_not_assign(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.isNull = function(...args) 
           
@@ -205,7 +205,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.protocol = function(...args) 
           
@@ -215,7 +215,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.protocol(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setProtocol = function(...args) 
           
@@ -225,7 +225,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setProtocol(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.peerVerifyMode = function(...args) 
           
@@ -235,7 +235,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.peerVerifyMode(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setPeerVerifyMode = function(...args) 
           
@@ -245,7 +245,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setPeerVerifyMode(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.peerVerifyDepth = function(...args) 
           
@@ -255,7 +255,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.peerVerifyDepth(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setPeerVerifyDepth = function(...args) 
           
@@ -265,7 +265,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setPeerVerifyDepth(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.localCertificateChain = function(...args) 
           
@@ -275,7 +275,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.localCertificateChain(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setLocalCertificateChain = function(...args) 
           
@@ -285,7 +285,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setLocalCertificateChain(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.localCertificate = function(...args) 
           
@@ -295,7 +295,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.localCertificate(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setLocalCertificate = function(...args) 
           
@@ -305,7 +305,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setLocalCertificate(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.peerCertificate = function(...args) 
           
@@ -315,7 +315,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.peerCertificate(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.peerCertificateChain = function(...args) 
           
@@ -325,7 +325,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.peerCertificateChain(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.sessionCipher = function(...args) 
           
@@ -335,7 +335,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.sessionCipher(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.sessionProtocol = function(...args) 
           
@@ -345,7 +345,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.sessionProtocol(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.privateKey = function(...args) 
           
@@ -355,7 +355,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.privateKey(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setPrivateKey = function(...args) 
           
@@ -365,7 +365,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setPrivateKey(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.ciphers = function(...args) 
           
@@ -375,7 +375,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.ciphers(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setCiphers = function(...args) 
           
@@ -385,7 +385,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setCiphers(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.supportedCiphers = function(...args) 
           
@@ -395,7 +395,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.supportedCiphers(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.caCertificates = function(...args) 
           
@@ -405,7 +405,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.caCertificates(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setCaCertificates = function(...args) 
           
@@ -415,7 +415,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setCaCertificates(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.addCaCertificates = function(...args) 
           
@@ -425,7 +425,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.addCaCertificates(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.addCaCertificate = function(...args) 
           
@@ -435,7 +435,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.addCaCertificate(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.systemCaCertificates = function(...args) 
           
@@ -445,7 +445,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.systemCaCertificates(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setSslOption = function(...args) 
           
@@ -455,7 +455,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setSslOption(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.testSslOption = function(...args) 
           
@@ -465,7 +465,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.testSslOption(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.sessionTicket = function(...args) 
           
@@ -475,7 +475,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.sessionTicket(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setSessionTicket = function(...args) 
           
@@ -485,7 +485,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setSessionTicket(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.sessionTicketLifeTimeHint = function(...args) 
           
@@ -495,7 +495,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.sessionTicketLifeTimeHint(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.ephemeralServerKey = function(...args) 
           
@@ -505,7 +505,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.ephemeralServerKey(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.ellipticCurves = function(...args) 
           
@@ -515,7 +515,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.ellipticCurves(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setEllipticCurves = function(...args) 
           
@@ -525,7 +525,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setEllipticCurves(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.supportedEllipticCurves = function(...args) 
           
@@ -535,7 +535,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.supportedEllipticCurves(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.preSharedKeyIdentityHint = function(...args) 
           
@@ -545,7 +545,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.preSharedKeyIdentityHint(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setPreSharedKeyIdentityHint = function(...args) 
           
@@ -555,7 +555,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setPreSharedKeyIdentityHint(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.diffieHellmanParameters = function(...args) 
           
@@ -565,7 +565,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.diffieHellmanParameters(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setDiffieHellmanParameters = function(...args) 
           
@@ -575,7 +575,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setDiffieHellmanParameters(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setBackendConfigurationOption = function(...args) 
           
@@ -585,7 +585,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setBackendConfigurationOption(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.defaultConfiguration = function(...args) 
           
@@ -595,7 +595,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.defaultConfiguration(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setDefaultConfiguration = function(...args) 
           
@@ -605,7 +605,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setDefaultConfiguration(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.dtlsCookieVerificationEnabled = function(...args) 
           
@@ -615,7 +615,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.dtlsCookieVerificationEnabled(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setDtlsCookieVerificationEnabled = function(...args) 
           
@@ -625,7 +625,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setDtlsCookieVerificationEnabled(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.defaultDtlsConfiguration = function(...args) 
           
@@ -635,7 +635,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.defaultDtlsConfiguration(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setDefaultDtlsConfiguration = function(...args) 
           
@@ -645,7 +645,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setDefaultDtlsConfiguration(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.handshakeMustInterruptOnError = function(...args) 
           
@@ -655,7 +655,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.handshakeMustInterruptOnError(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setHandshakeMustInterruptOnError = function(...args) 
           
@@ -665,7 +665,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setHandshakeMustInterruptOnError(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.missingCertificateIsFatal = function(...args) 
           
@@ -675,7 +675,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.missingCertificateIsFatal(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setMissingCertificateIsFatal = function(...args) 
           
@@ -685,7 +685,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setMissingCertificateIsFatal(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setOcspStaplingEnabled = function(...args) 
           
@@ -695,7 +695,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setOcspStaplingEnabled(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.ocspStaplingEnabled = function(...args) 
           
@@ -705,7 +705,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.ocspStaplingEnabled(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.setAllowedNextProtocols = function(...args) 
           
@@ -715,7 +715,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.setAllowedNextProtocols(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.allowedNextProtocols = function(...args) 
           
@@ -725,7 +725,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.allowedNextProtocols(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.nextNegotiatedProtocol = function(...args) 
           
@@ -735,7 +735,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.nextNegotiatedProtocol(...args);
             
         };
-    
+        
         // function 
         QSslConfiguration.prototype.nextProtocolNegotiationStatus = function(...args) 
           
@@ -745,7 +745,7 @@ QSslConfiguration.NextProtocolNegotiationUnsupported = QSslConfiguration_Wrapper
               return this.__PROXY__.nextProtocolNegotiationStatus(...args);
             
         };
-    
+        
 
       // static functions:
       

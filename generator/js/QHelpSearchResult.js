@@ -160,7 +160,7 @@
               return this.__PROXY__.title(...args);
             
         };
-    
+        
         // function 
         QHelpSearchResult.prototype.url = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.url(...args);
             
         };
-    
+        
         // function 
         QHelpSearchResult.prototype.snippet = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.snippet(...args);
             
         };
-    
+        
 
       // static functions:
       QHelpSearchResult.prototype.isNullWrapper = function() {

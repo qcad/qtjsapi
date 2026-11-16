@@ -369,7 +369,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.style = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.style(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.setStyle = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.setStyle(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.transform = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.transform(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.setTransform = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.setTransform(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.texture = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.texture(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.setTexture = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.setTexture(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.textureImage = function(...args) 
           
@@ -439,7 +439,7 @@
               return this.__PROXY__.textureImage(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.setTextureImage = function(...args) 
           
@@ -449,7 +449,7 @@
               return this.__PROXY__.setTextureImage(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.color = function(...args) 
           
@@ -459,7 +459,7 @@
               return this.__PROXY__.color(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.setColor = function(...args) 
           
@@ -469,7 +469,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.gradient = function(...args) 
           
@@ -479,7 +479,7 @@
               return this.__PROXY__.gradient(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.isOpaque = function(...args) 
           
@@ -489,7 +489,7 @@
               return this.__PROXY__.isOpaque(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.qHasPixmapTexture = function(...args) 
           
@@ -499,7 +499,7 @@
               return this.__PROXY__.qHasPixmapTexture(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.detach = function(...args) 
           
@@ -509,7 +509,7 @@
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.init = function(...args) 
           
@@ -519,7 +519,7 @@
               return this.__PROXY__.init(...args);
             
         };
-    
+        
         // function 
         QBrush.prototype.isDetached = function(...args) 
           
@@ -529,7 +529,7 @@
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
 
       // static functions:
       QBrush.prototype.isNullWrapper = function() {

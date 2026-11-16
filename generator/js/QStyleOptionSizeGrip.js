@@ -164,7 +164,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
 
       // static functions:
       QStyleOptionSizeGrip.prototype.isNullWrapper = function() {

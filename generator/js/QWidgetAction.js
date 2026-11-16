@@ -156,7 +156,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isWidgetType = function(...args) 
           
@@ -166,7 +166,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isWindowType = function(...args) 
           
@@ -176,7 +176,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.signalsBlocked = function(...args) 
           
@@ -186,7 +186,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.blockSignals = function(...args) 
           
@@ -196,7 +196,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.findChild = function(...args) 
           
@@ -206,7 +206,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.children = function(...args) 
           
@@ -216,7 +216,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setParent = function(...args) 
           
@@ -226,7 +226,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.installEventFilter = function(...args) 
           
@@ -236,7 +236,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.removeEventFilter = function(...args) 
           
@@ -246,7 +246,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.dumpObjectTree = function(...args) 
           
@@ -256,7 +256,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.dumpObjectInfo = function(...args) 
           
@@ -266,7 +266,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setProperty = function(...args) 
           
@@ -276,7 +276,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.property = function(...args) 
           
@@ -286,7 +286,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.dynamicPropertyNames = function(...args) 
           
@@ -296,7 +296,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.parent = function(...args) 
           
@@ -306,7 +306,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.deleteLater = function(...args) 
           
@@ -316,7 +316,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.associatedObjects = function(...args) 
           
@@ -326,7 +326,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.associatedObjects(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setIcon = function(...args) 
           
@@ -336,7 +336,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setText = function(...args) 
           
@@ -346,7 +346,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setIconText = function(...args) 
           
@@ -356,7 +356,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setIconText(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setToolTip = function(...args) 
           
@@ -366,7 +366,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setStatusTip = function(...args) 
           
@@ -376,7 +376,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setWhatsThis = function(...args) 
           
@@ -386,7 +386,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setPriority = function(...args) 
           
@@ -396,7 +396,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setPriority(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.menu = function(...args) 
           
@@ -406,7 +406,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.menu(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setMenu = function(...args) 
           
@@ -416,7 +416,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setMenu(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setSeparator = function(...args) 
           
@@ -426,7 +426,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setSeparator(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isSeparator = function(...args) 
           
@@ -436,7 +436,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isSeparator(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setShortcut = function(...args) 
           
@@ -446,7 +446,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcut(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setShortcuts = function(...args) 
           
@@ -456,7 +456,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcuts(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.shortcuts = function(...args) 
           
@@ -466,7 +466,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.shortcuts(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setShortcutContext = function(...args) 
           
@@ -476,7 +476,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcutContext(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setAutoRepeat = function(...args) 
           
@@ -486,7 +486,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setFont = function(...args) 
           
@@ -496,7 +496,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setCheckable = function(...args) 
           
@@ -506,7 +506,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setCheckable(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isCheckable = function(...args) 
           
@@ -516,7 +516,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isCheckable(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.data = function(...args) 
           
@@ -526,7 +526,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setData = function(...args) 
           
@@ -536,7 +536,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isChecked = function(...args) 
           
@@ -546,7 +546,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isChecked(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isEnabled = function(...args) 
           
@@ -556,7 +556,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isVisible = function(...args) 
           
@@ -566,7 +566,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.showStatusText = function(...args) 
           
@@ -576,7 +576,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.showStatusText(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setMenuRole = function(...args) 
           
@@ -586,7 +586,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setMenuRole(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setIconVisibleInMenu = function(...args) 
           
@@ -596,7 +596,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setIconVisibleInMenu(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isIconVisibleInMenu = function(...args) 
           
@@ -606,7 +606,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isIconVisibleInMenu(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setShortcutVisibleInContextMenu = function(...args) 
           
@@ -616,7 +616,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setShortcutVisibleInContextMenu(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.isShortcutVisibleInContextMenu = function(...args) 
           
@@ -626,7 +626,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.isShortcutVisibleInContextMenu(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.event = function(...args) 
           
@@ -636,7 +636,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.trigger = function(...args) 
           
@@ -646,7 +646,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.trigger(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.hover = function(...args) 
           
@@ -656,7 +656,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.hover(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setChecked = function(...args) 
           
@@ -666,7 +666,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setChecked(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.toggle = function(...args) 
           
@@ -676,7 +676,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.toggle(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setEnabled = function(...args) 
           
@@ -686,7 +686,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setDisabled = function(...args) 
           
@@ -696,7 +696,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setVisible = function(...args) 
           
@@ -706,7 +706,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.qt_mac_clear_status_text = function(...args) 
           
@@ -716,7 +716,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.qt_mac_clear_status_text(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.setDefaultWidget = function(...args) 
           
@@ -726,7 +726,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.setDefaultWidget(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.defaultWidget = function(...args) 
           
@@ -736,7 +736,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.defaultWidget(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.requestWidget = function(...args) 
           
@@ -746,7 +746,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.requestWidget(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.releaseWidget = function(...args) 
           
@@ -756,7 +756,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.releaseWidget(...args);
             
         };
-    
+        
         // function 
         QWidgetAction.prototype.eventFilter = function(...args) 
           
@@ -766,7 +766,7 @@ QWidgetAction.HighPriority = QWidgetAction_Wrapper.HighPriority;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
 
       // static functions:
       

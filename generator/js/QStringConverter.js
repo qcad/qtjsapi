@@ -121,7 +121,7 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QStringConverter.prototype.resetState = function(...args) 
           
@@ -131,7 +131,7 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
               return this.__PROXY__.resetState(...args);
             
         };
-    
+        
         // function 
         QStringConverter.prototype.hasError = function(...args) 
           
@@ -141,7 +141,7 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
               return this.__PROXY__.hasError(...args);
             
         };
-    
+        
         // function 
         QStringConverter.prototype.name = function(...args) 
           
@@ -151,7 +151,7 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QStringConverter.prototype.nameForEncoding = function(...args) 
           
@@ -161,7 +161,7 @@ QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
               return this.__PROXY__.nameForEncoding(...args);
             
         };
-    
+        
 
       // static functions:
       

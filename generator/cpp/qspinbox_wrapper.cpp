@@ -249,15 +249,21 @@ QSpinBox_Wrapper::QSpinBox_Wrapper
 
                 // set handler for wrapped base object:
                 //((QSpinBox_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QSpinBox_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QSpinBox_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       
@@ -19086,15 +19092,21 @@ QDoubleSpinBox_Wrapper::QDoubleSpinBox_Wrapper
 
                 // set handler for wrapped base object:
                 //((QDoubleSpinBox_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((QDoubleSpinBox_Base*)wrapped)->self = handler.getSelf();
               
 
         // signal forwarding:
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          
+              ((QDoubleSpinBox_Base*)wrapped)->self = handler.getSelf();
+            
         return;
 
       

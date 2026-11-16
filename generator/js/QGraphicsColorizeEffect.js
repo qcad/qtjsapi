@@ -150,7 +150,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
               return this.__PROXY__.boundingRectFor(...args);
             
         };
-    
+        
         // function 
         QGraphicsColorizeEffect.prototype.boundingRect = function(...args) 
           
@@ -160,7 +160,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QGraphicsColorizeEffect.prototype.isEnabled = function(...args) 
           
@@ -170,7 +170,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsColorizeEffect.prototype.setEnabled = function(...args) 
           
@@ -180,7 +180,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsColorizeEffect.prototype.update = function(...args) 
           
@@ -190,7 +190,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QGraphicsColorizeEffect.prototype.color = function(...args) 
           
@@ -200,7 +200,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
               return this.__PROXY__.color(...args);
             
         };
-    
+        
         // function 
         QGraphicsColorizeEffect.prototype.setColor = function(...args) 
           
@@ -210,7 +210,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         QGraphicsColorizeEffect.prototype.setStrength = function(...args) 
           
@@ -220,7 +220,7 @@ QGraphicsColorizeEffect.PadToEffectiveBoundingRect = QGraphicsColorizeEffect_Wra
               return this.__PROXY__.setStrength(...args);
             
         };
-    
+        
 
       // static functions:
       

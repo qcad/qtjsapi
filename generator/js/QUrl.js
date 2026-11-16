@@ -165,7 +165,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setUrl(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.url = function(...args) 
           
@@ -175,7 +175,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.url(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.toString = function(...args) 
           
@@ -185,7 +185,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.toString(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.toDisplayString = function(...args) 
           
@@ -195,7 +195,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.toDisplayString(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.adjusted = function(...args) 
           
@@ -205,7 +205,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.adjusted(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.toEncoded = function(...args) 
           
@@ -215,7 +215,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.toEncoded(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.fromEncoded = function(...args) 
           
@@ -225,7 +225,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.fromEncoded(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.fromUserInput = function(...args) 
           
@@ -235,7 +235,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.fromUserInput(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.isValid = function(...args) 
           
@@ -245,7 +245,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.errorString = function(...args) 
           
@@ -255,7 +255,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.isEmpty = function(...args) 
           
@@ -265,7 +265,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.clear = function(...args) 
           
@@ -275,7 +275,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setScheme = function(...args) 
           
@@ -285,7 +285,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setScheme(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.scheme = function(...args) 
           
@@ -295,7 +295,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.scheme(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setAuthority = function(...args) 
           
@@ -305,7 +305,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setAuthority(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.authority = function(...args) 
           
@@ -315,7 +315,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.authority(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setUserInfo = function(...args) 
           
@@ -325,7 +325,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setUserInfo(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.userInfo = function(...args) 
           
@@ -335,7 +335,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.userInfo(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setUserName = function(...args) 
           
@@ -345,7 +345,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setUserName(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.userName = function(...args) 
           
@@ -355,7 +355,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.userName(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setPassword = function(...args) 
           
@@ -365,7 +365,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setPassword(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.password = function(...args) 
           
@@ -375,7 +375,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.password(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setHost = function(...args) 
           
@@ -385,7 +385,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setHost(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.host = function(...args) 
           
@@ -395,7 +395,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.host(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setPort = function(...args) 
           
@@ -405,7 +405,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setPort(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.port = function(...args) 
           
@@ -415,7 +415,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.port(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setPath = function(...args) 
           
@@ -425,7 +425,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setPath(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.path = function(...args) 
           
@@ -435,7 +435,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.path(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.fileName = function(...args) 
           
@@ -445,7 +445,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.hasQuery = function(...args) 
           
@@ -455,7 +455,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.hasQuery(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setQuery = function(...args) 
           
@@ -465,7 +465,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setQuery(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.query = function(...args) 
           
@@ -475,7 +475,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.query(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.hasFragment = function(...args) 
           
@@ -485,7 +485,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.hasFragment(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.fragment = function(...args) 
           
@@ -495,7 +495,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.fragment(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setFragment = function(...args) 
           
@@ -505,7 +505,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setFragment(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.resolved = function(...args) 
           
@@ -515,7 +515,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.resolved(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.isRelative = function(...args) 
           
@@ -525,7 +525,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.isRelative(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.isParentOf = function(...args) 
           
@@ -535,7 +535,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.isParentOf(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.isLocalFile = function(...args) 
           
@@ -545,7 +545,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.isLocalFile(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.fromLocalFile = function(...args) 
           
@@ -555,7 +555,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.fromLocalFile(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.toLocalFile = function(...args) 
           
@@ -565,7 +565,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.toLocalFile(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.detach = function(...args) 
           
@@ -575,7 +575,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.isDetached = function(...args) 
           
@@ -585,7 +585,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.matches = function(...args) 
           
@@ -595,7 +595,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.matches(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.fromPercentEncoding = function(...args) 
           
@@ -605,7 +605,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.fromPercentEncoding(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.toPercentEncoding = function(...args) 
           
@@ -615,7 +615,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.toPercentEncoding(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.fromAce = function(...args) 
           
@@ -625,7 +625,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.fromAce(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.toAce = function(...args) 
           
@@ -635,7 +635,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.toAce(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.idnWhitelist = function(...args) 
           
@@ -645,7 +645,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.idnWhitelist(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.toStringList = function(...args) 
           
@@ -655,7 +655,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.toStringList(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.fromStringList = function(...args) 
           
@@ -665,7 +665,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.fromStringList(...args);
             
         };
-    
+        
         // function 
         QUrl.prototype.setIdnWhitelist = function(...args) 
           
@@ -675,7 +675,7 @@ QUrl.AssumeLocalFile = QUrl_Wrapper.AssumeLocalFile;
               return this.__PROXY__.setIdnWhitelist(...args);
             
         };
-    
+        
 
       // static functions:
       

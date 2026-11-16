@@ -156,7 +156,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.position = function(...args) 
           
@@ -166,7 +166,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setBorder = function(...args) 
           
@@ -176,7 +176,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBorder(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.border = function(...args) 
           
@@ -186,7 +186,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.border(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setBorderBrush = function(...args) 
           
@@ -196,7 +196,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBorderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.borderBrush = function(...args) 
           
@@ -206,7 +206,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.borderBrush(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setBorderStyle = function(...args) 
           
@@ -216,7 +216,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBorderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.borderStyle = function(...args) 
           
@@ -226,7 +226,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.borderStyle(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setMargin = function(...args) 
           
@@ -236,7 +236,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.margin = function(...args) 
           
@@ -246,7 +246,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.margin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setTopMargin = function(...args) 
           
@@ -256,7 +256,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setTopMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.topMargin = function(...args) 
           
@@ -266,7 +266,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.topMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setBottomMargin = function(...args) 
           
@@ -276,7 +276,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBottomMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.bottomMargin = function(...args) 
           
@@ -286,7 +286,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.bottomMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setLeftMargin = function(...args) 
           
@@ -296,7 +296,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setLeftMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.leftMargin = function(...args) 
           
@@ -306,7 +306,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.leftMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setRightMargin = function(...args) 
           
@@ -316,7 +316,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setRightMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.rightMargin = function(...args) 
           
@@ -326,7 +326,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.rightMargin(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setPadding = function(...args) 
           
@@ -336,7 +336,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.padding = function(...args) 
           
@@ -346,7 +346,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.padding(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setWidth = function(...args) 
           
@@ -356,7 +356,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.width = function(...args) 
           
@@ -366,7 +366,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setHeight = function(...args) 
           
@@ -376,7 +376,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.height = function(...args) 
           
@@ -386,7 +386,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setPageBreakPolicy = function(...args) 
           
@@ -396,7 +396,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setPageBreakPolicy(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.pageBreakPolicy = function(...args) 
           
@@ -406,7 +406,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.pageBreakPolicy(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.isValid = function(...args) 
           
@@ -416,7 +416,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.columns = function(...args) 
           
@@ -426,7 +426,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.columns(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setColumns = function(...args) 
           
@@ -436,7 +436,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setColumns(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setColumnWidthConstraints = function(...args) 
           
@@ -446,7 +446,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setColumnWidthConstraints(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.columnWidthConstraints = function(...args) 
           
@@ -456,7 +456,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.columnWidthConstraints(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.clearColumnWidthConstraints = function(...args) 
           
@@ -466,7 +466,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.clearColumnWidthConstraints(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.cellSpacing = function(...args) 
           
@@ -476,7 +476,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.cellSpacing(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setCellSpacing = function(...args) 
           
@@ -486,7 +486,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setCellSpacing(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.cellPadding = function(...args) 
           
@@ -496,7 +496,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.cellPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setCellPadding = function(...args) 
           
@@ -506,7 +506,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setCellPadding(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setAlignment = function(...args) 
           
@@ -516,7 +516,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.alignment = function(...args) 
           
@@ -526,7 +526,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setHeaderRowCount = function(...args) 
           
@@ -536,7 +536,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setHeaderRowCount(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.headerRowCount = function(...args) 
           
@@ -546,7 +546,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.headerRowCount(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.setBorderCollapse = function(...args) 
           
@@ -556,7 +556,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.setBorderCollapse(...args);
             
         };
-    
+        
         // function 
         QTextTableFormat.prototype.borderCollapse = function(...args) 
           
@@ -566,7 +566,7 @@ QTextTableFormat.BorderStyle_Outset = QTextTableFormat_Wrapper.BorderStyle_Outse
               return this.__PROXY__.borderCollapse(...args);
             
         };
-    
+        
 
       // static functions:
       QTextTableFormat.prototype.isNullWrapper = function() {

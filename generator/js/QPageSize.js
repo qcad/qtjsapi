@@ -380,7 +380,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.isEquivalentTo = function(...args) 
           
@@ -390,7 +390,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.isEquivalentTo(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.isValid = function(...args) 
           
@@ -400,7 +400,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.key = function(...args) 
           
@@ -410,7 +410,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.key(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.name = function(...args) 
           
@@ -420,7 +420,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.name(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.id = function(...args) 
           
@@ -430,7 +430,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.id(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.windowsId = function(...args) 
           
@@ -440,7 +440,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.windowsId(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.definitionSize = function(...args) 
           
@@ -450,7 +450,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.definitionSize(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.definitionUnits = function(...args) 
           
@@ -460,7 +460,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.definitionUnits(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.size = function(...args) 
           
@@ -470,7 +470,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.sizePoints = function(...args) 
           
@@ -480,7 +480,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.sizePoints(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.sizePixels = function(...args) 
           
@@ -490,7 +490,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.sizePixels(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.rect = function(...args) 
           
@@ -500,7 +500,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.rect(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.rectPoints = function(...args) 
           
@@ -510,7 +510,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.rectPoints(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.rectPixels = function(...args) 
           
@@ -520,7 +520,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.rectPixels(...args);
             
         };
-    
+        
         // function 
         QPageSize.prototype.equals = function(...args) 
           
@@ -530,7 +530,7 @@ QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
               return this.__PROXY__.equals(...args);
             
         };
-    
+        
 
       // static functions:
       

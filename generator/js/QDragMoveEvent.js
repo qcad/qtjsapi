@@ -317,7 +317,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.spontaneous = function(...args) 
           
@@ -327,7 +327,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.setAccepted = function(...args) 
           
@@ -337,7 +337,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.isAccepted = function(...args) 
           
@@ -347,7 +347,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.isInputEvent = function(...args) 
           
@@ -357,7 +357,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.isPointerEvent = function(...args) 
           
@@ -367,7 +367,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -377,7 +377,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.setSpontaneous = function(...args) 
           
@@ -387,7 +387,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.position = function(...args) 
           
@@ -397,7 +397,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.buttons = function(...args) 
           
@@ -407,7 +407,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.modifiers = function(...args) 
           
@@ -417,7 +417,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.modifiers(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.acceptProposedAction = function(...args) 
           
@@ -427,7 +427,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.acceptProposedAction(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.setDropAction = function(...args) 
           
@@ -437,7 +437,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.setDropAction(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.source = function(...args) 
           
@@ -447,7 +447,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.mimeData = function(...args) 
           
@@ -457,7 +457,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.mimeData(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.clone = function(...args) 
           
@@ -467,7 +467,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.answerRect = function(...args) 
           
@@ -477,7 +477,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.answerRect(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.accept = function(...args) 
           
@@ -487,7 +487,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QDragMoveEvent.prototype.ignore = function(...args) 
           
@@ -497,7 +497,7 @@ QDragMoveEvent.MaxUser = QDragMoveEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
 
       // static functions:
       QDragMoveEvent.prototype.isNullWrapper = function() {

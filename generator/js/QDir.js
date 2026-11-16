@@ -198,7 +198,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.setPath = function(...args) 
           
@@ -208,7 +208,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.setPath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.path = function(...args) 
           
@@ -218,7 +218,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.path(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.absolutePath = function(...args) 
           
@@ -228,7 +228,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.absolutePath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.canonicalPath = function(...args) 
           
@@ -238,7 +238,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.canonicalPath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.setSearchPaths = function(...args) 
           
@@ -248,7 +248,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.setSearchPaths(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.addSearchPath = function(...args) 
           
@@ -258,7 +258,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.addSearchPath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.searchPaths = function(...args) 
           
@@ -268,7 +268,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.searchPaths(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.dirName = function(...args) 
           
@@ -278,7 +278,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.dirName(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.filePath = function(...args) 
           
@@ -288,7 +288,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.filePath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.absoluteFilePath = function(...args) 
           
@@ -298,7 +298,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.absoluteFilePath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.relativeFilePath = function(...args) 
           
@@ -308,7 +308,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.relativeFilePath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.toNativeSeparators = function(...args) 
           
@@ -318,7 +318,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.toNativeSeparators(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.fromNativeSeparators = function(...args) 
           
@@ -328,7 +328,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.fromNativeSeparators(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.cd = function(...args) 
           
@@ -338,7 +338,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.cd(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.cdUp = function(...args) 
           
@@ -348,7 +348,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.cdUp(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.nameFilters = function(...args) 
           
@@ -358,7 +358,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.nameFilters(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.setNameFilters = function(...args) 
           
@@ -368,7 +368,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.setNameFilters(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.filter = function(...args) 
           
@@ -378,7 +378,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.filter(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.setFilter = function(...args) 
           
@@ -388,7 +388,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.setFilter(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.sorting = function(...args) 
           
@@ -398,7 +398,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.sorting(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.setSorting = function(...args) 
           
@@ -408,7 +408,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.setSorting(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.count = function(...args) 
           
@@ -418,7 +418,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.isEmpty = function(...args) 
           
@@ -428,7 +428,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.nameFiltersFromString = function(...args) 
           
@@ -438,7 +438,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.nameFiltersFromString(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.entryList = function(...args) 
           
@@ -448,7 +448,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.entryList(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.entryInfoList = function(...args) 
           
@@ -458,7 +458,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.entryInfoList(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.mkdir = function(...args) 
           
@@ -468,7 +468,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.mkdir(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.rmdir = function(...args) 
           
@@ -478,7 +478,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.rmdir(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.mkpath = function(...args) 
           
@@ -488,7 +488,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.mkpath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.rmpath = function(...args) 
           
@@ -498,7 +498,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.rmpath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.removeRecursively = function(...args) 
           
@@ -508,7 +508,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.removeRecursively(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.isReadable = function(...args) 
           
@@ -518,7 +518,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.exists = function(...args) 
           
@@ -528,7 +528,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.exists(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.isRoot = function(...args) 
           
@@ -538,7 +538,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.isRoot(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.isRelativePath = function(...args) 
           
@@ -548,7 +548,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.isRelativePath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.isAbsolutePath = function(...args) 
           
@@ -558,7 +558,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.isAbsolutePath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.isRelative = function(...args) 
           
@@ -568,7 +568,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.isRelative(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.isAbsolute = function(...args) 
           
@@ -578,7 +578,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.isAbsolute(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.makeAbsolute = function(...args) 
           
@@ -588,7 +588,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.makeAbsolute(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.remove = function(...args) 
           
@@ -598,7 +598,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.remove(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.rename = function(...args) 
           
@@ -608,7 +608,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.rename(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.drives = function(...args) 
           
@@ -618,7 +618,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.drives(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.listSeparator = function(...args) 
           
@@ -628,7 +628,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.listSeparator(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.sep = function(...args) 
           
@@ -638,7 +638,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.separator(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.setCurrent = function(...args) 
           
@@ -648,7 +648,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.setCurrent(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.current = function(...args) 
           
@@ -658,7 +658,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.current(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.currentPath = function(...args) 
           
@@ -668,7 +668,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.currentPath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.home = function(...args) 
           
@@ -678,7 +678,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.home(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.homePath = function(...args) 
           
@@ -688,7 +688,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.homePath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.root = function(...args) 
           
@@ -698,7 +698,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.root(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.rootPath = function(...args) 
           
@@ -708,7 +708,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.rootPath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.temp = function(...args) 
           
@@ -718,7 +718,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.temp(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.tempPath = function(...args) 
           
@@ -728,7 +728,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.tempPath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.match = function(...args) 
           
@@ -738,7 +738,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.match(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.cleanPath = function(...args) 
           
@@ -748,7 +748,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.cleanPath(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.refresh = function(...args) 
           
@@ -758,7 +758,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.refresh(...args);
             
         };
-    
+        
         // function 
         QDir.prototype.d_func = function(...args) 
           
@@ -768,7 +768,7 @@ QDir.NoSort = QDir_Wrapper.NoSort;
               return this.__PROXY__.d_func(...args);
             
         };
-    
+        
 
       // static functions:
       

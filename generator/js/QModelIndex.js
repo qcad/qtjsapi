@@ -105,7 +105,7 @@
               return this.__PROXY__.row(...args);
             
         };
-    
+        
         // function 
         QModelIndex.prototype.column = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.column(...args);
             
         };
-    
+        
         // function 
         QModelIndex.prototype.parent = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QModelIndex.prototype.sibling = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.sibling(...args);
             
         };
-    
+        
         // function 
         QModelIndex.prototype.siblingAtColumn = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.siblingAtColumn(...args);
             
         };
-    
+        
         // function 
         QModelIndex.prototype.siblingAtRow = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.siblingAtRow(...args);
             
         };
-    
+        
         // function 
         QModelIndex.prototype.data = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QModelIndex.prototype.flags = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QModelIndex.prototype.isValid = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
 
       // static functions:
       QModelIndex.prototype.isNullWrapper = function() {

@@ -290,7 +290,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.isEmpty = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.isValid = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.normalized = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.normalized(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.left = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.left(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.top = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.top(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.right = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.right(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.bottom = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.bottom(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.x = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.x(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.y = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.y(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setLeft = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.setLeft(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setTop = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.setTop(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setRight = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.setRight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setBottom = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.setBottom(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setX = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.setX(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setY = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.setY(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.topLeft = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.topLeft(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.bottomRight = function(...args) 
           
@@ -460,7 +460,7 @@
               return this.__PROXY__.bottomRight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.topRight = function(...args) 
           
@@ -470,7 +470,7 @@
               return this.__PROXY__.topRight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.bottomLeft = function(...args) 
           
@@ -480,7 +480,7 @@
               return this.__PROXY__.bottomLeft(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.center = function(...args) 
           
@@ -490,7 +490,7 @@
               return this.__PROXY__.center(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setTopLeft = function(...args) 
           
@@ -500,7 +500,7 @@
               return this.__PROXY__.setTopLeft(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setBottomRight = function(...args) 
           
@@ -510,7 +510,7 @@
               return this.__PROXY__.setBottomRight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setTopRight = function(...args) 
           
@@ -520,7 +520,7 @@
               return this.__PROXY__.setTopRight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setBottomLeft = function(...args) 
           
@@ -530,7 +530,7 @@
               return this.__PROXY__.setBottomLeft(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveLeft = function(...args) 
           
@@ -540,7 +540,7 @@
               return this.__PROXY__.moveLeft(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveTop = function(...args) 
           
@@ -550,7 +550,7 @@
               return this.__PROXY__.moveTop(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveRight = function(...args) 
           
@@ -560,7 +560,7 @@
               return this.__PROXY__.moveRight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveBottom = function(...args) 
           
@@ -570,7 +570,7 @@
               return this.__PROXY__.moveBottom(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveTopLeft = function(...args) 
           
@@ -580,7 +580,7 @@
               return this.__PROXY__.moveTopLeft(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveBottomRight = function(...args) 
           
@@ -590,7 +590,7 @@
               return this.__PROXY__.moveBottomRight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveTopRight = function(...args) 
           
@@ -600,7 +600,7 @@
               return this.__PROXY__.moveTopRight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveBottomLeft = function(...args) 
           
@@ -610,7 +610,7 @@
               return this.__PROXY__.moveBottomLeft(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveCenter = function(...args) 
           
@@ -620,7 +620,7 @@
               return this.__PROXY__.moveCenter(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.translate = function(...args) 
           
@@ -630,7 +630,7 @@
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.translated = function(...args) 
           
@@ -640,7 +640,7 @@
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.transposed = function(...args) 
           
@@ -650,7 +650,7 @@
               return this.__PROXY__.transposed(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.moveTo = function(...args) 
           
@@ -660,7 +660,7 @@
               return this.__PROXY__.moveTo(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setRect = function(...args) 
           
@@ -670,7 +670,7 @@
               return this.__PROXY__.setRect(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setCoords = function(...args) 
           
@@ -680,7 +680,7 @@
               return this.__PROXY__.setCoords(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.adjust = function(...args) 
           
@@ -690,7 +690,7 @@
               return this.__PROXY__.adjust(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.adjusted = function(...args) 
           
@@ -700,7 +700,7 @@
               return this.__PROXY__.adjusted(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.size = function(...args) 
           
@@ -710,7 +710,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.width = function(...args) 
           
@@ -720,7 +720,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.height = function(...args) 
           
@@ -730,7 +730,7 @@
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setWidth = function(...args) 
           
@@ -740,7 +740,7 @@
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setHeight = function(...args) 
           
@@ -750,7 +750,7 @@
               return this.__PROXY__.setHeight(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.setSize = function(...args) 
           
@@ -760,7 +760,7 @@
               return this.__PROXY__.setSize(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.contains = function(...args) 
           
@@ -770,7 +770,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.united = function(...args) 
           
@@ -780,7 +780,7 @@
               return this.__PROXY__.united(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.intersected = function(...args) 
           
@@ -790,7 +790,7 @@
               return this.__PROXY__.intersected(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.intersects = function(...args) 
           
@@ -800,7 +800,7 @@
               return this.__PROXY__.intersects(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.marginsAdded = function(...args) 
           
@@ -810,7 +810,7 @@
               return this.__PROXY__.marginsAdded(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.marginsRemoved = function(...args) 
           
@@ -820,7 +820,7 @@
               return this.__PROXY__.marginsRemoved(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.toRect = function(...args) 
           
@@ -830,7 +830,7 @@
               return this.__PROXY__.toRect(...args);
             
         };
-    
+        
         // function 
         QRectF.prototype.toAlignedRect = function(...args) 
           
@@ -840,7 +840,7 @@
               return this.__PROXY__.toAlignedRect(...args);
             
         };
-    
+        
 
       // static functions:
       QRectF.prototype.isNullWrapper = function() {

@@ -105,7 +105,7 @@
               return this.__PROXY__.feature(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.setFeature = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.setFeature(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.hasFeature = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.hasFeature(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.hasProperty = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.hasProperty(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.setEntityResolver = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.setEntityResolver(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.entityResolver = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.entityResolver(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.setDTDHandler = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.setDTDHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.DTDHandler = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.DTDHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.setContentHandler = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.setContentHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.contentHandler = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.contentHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.setErrorHandler = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.setErrorHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.errorHandler = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.errorHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.setLexicalHandler = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.setLexicalHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.lexicalHandler = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.lexicalHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.setDeclHandler = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.setDeclHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.declHandler = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.declHandler(...args);
             
         };
-    
+        
         // function 
         QXmlReader.prototype.parse = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.parse(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlReader.prototype.isNullWrapper = function() {

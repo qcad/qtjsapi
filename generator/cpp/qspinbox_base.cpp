@@ -27,7 +27,9 @@
 
       //QJSValue f = self.prototype().property("eventFilter");
       QJSValue f = self.property("eventFilter");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -90,7 +92,9 @@ event
 
       //QJSValue f = self.prototype().property("actionEvent");
       QJSValue f = self.property("actionEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -143,7 +147,9 @@ event
 
       //QJSValue f = self.prototype().property("resizeEvent");
       QJSValue f = self.property("resizeEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -196,7 +202,9 @@ event
 
       //QJSValue f = self.prototype().property("keyPressEvent");
       QJSValue f = self.property("keyPressEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -249,7 +257,9 @@ event
 
       //QJSValue f = self.prototype().property("keyReleaseEvent");
       QJSValue f = self.property("keyReleaseEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -302,7 +312,9 @@ event
 
       //QJSValue f = self.prototype().property("wheelEvent");
       QJSValue f = self.property("wheelEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -355,7 +367,9 @@ event
 
       //QJSValue f = self.prototype().property("focusInEvent");
       QJSValue f = self.property("focusInEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -408,7 +422,9 @@ event
 
       //QJSValue f = self.prototype().property("focusOutEvent");
       QJSValue f = self.property("focusOutEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -461,7 +477,9 @@ event
 
       //QJSValue f = self.prototype().property("contextMenuEvent");
       QJSValue f = self.property("contextMenuEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -514,7 +532,9 @@ event
 
       //QJSValue f = self.prototype().property("changeEvent");
       QJSValue f = self.property("changeEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -567,7 +587,9 @@ event
 
       //QJSValue f = self.prototype().property("mousePressEvent");
       QJSValue f = self.property("mousePressEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -620,7 +642,9 @@ event
 
       //QJSValue f = self.prototype().property("mouseReleaseEvent");
       QJSValue f = self.property("mouseReleaseEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -673,7 +697,9 @@ event
 
       //QJSValue f = self.prototype().property("mouseMoveEvent");
       QJSValue f = self.property("mouseMoveEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -726,7 +752,9 @@ event
 
       //QJSValue f = self.prototype().property("paintEvent");
       QJSValue f = self.property("paintEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -796,7 +824,9 @@ event
 
       //QJSValue f = self.prototype().property("eventFilter");
       QJSValue f = self.property("eventFilter");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -859,7 +889,9 @@ event
 
       //QJSValue f = self.prototype().property("actionEvent");
       QJSValue f = self.property("actionEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -912,7 +944,9 @@ event
 
       //QJSValue f = self.prototype().property("resizeEvent");
       QJSValue f = self.property("resizeEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -965,7 +999,9 @@ event
 
       //QJSValue f = self.prototype().property("keyPressEvent");
       QJSValue f = self.property("keyPressEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1018,7 +1054,9 @@ event
 
       //QJSValue f = self.prototype().property("keyReleaseEvent");
       QJSValue f = self.property("keyReleaseEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1071,7 +1109,9 @@ event
 
       //QJSValue f = self.prototype().property("wheelEvent");
       QJSValue f = self.property("wheelEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1124,7 +1164,9 @@ event
 
       //QJSValue f = self.prototype().property("focusInEvent");
       QJSValue f = self.property("focusInEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1177,7 +1219,9 @@ event
 
       //QJSValue f = self.prototype().property("focusOutEvent");
       QJSValue f = self.property("focusOutEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1230,7 +1274,9 @@ event
 
       //QJSValue f = self.prototype().property("contextMenuEvent");
       QJSValue f = self.property("contextMenuEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1283,7 +1329,9 @@ event
 
       //QJSValue f = self.prototype().property("changeEvent");
       QJSValue f = self.property("changeEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1336,7 +1384,9 @@ event
 
       //QJSValue f = self.prototype().property("mousePressEvent");
       QJSValue f = self.property("mousePressEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1389,7 +1439,9 @@ event
 
       //QJSValue f = self.prototype().property("mouseReleaseEvent");
       QJSValue f = self.property("mouseReleaseEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1442,7 +1494,9 @@ event
 
       //QJSValue f = self.prototype().property("mouseMoveEvent");
       QJSValue f = self.property("mouseMoveEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 
@@ -1495,7 +1549,9 @@ event
 
       //QJSValue f = self.prototype().property("paintEvent");
       QJSValue f = self.property("paintEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         
 
 

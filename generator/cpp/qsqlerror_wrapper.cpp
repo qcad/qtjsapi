@@ -184,6 +184,8 @@ QSqlError_Wrapper::QSqlError_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

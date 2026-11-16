@@ -236,6 +236,8 @@ QStackedLayout_Wrapper::QStackedLayout_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -279,6 +281,8 @@ QStackedLayout_Wrapper::QStackedLayout_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       
@@ -302,6 +306,8 @@ QStackedLayout_Wrapper::QStackedLayout_Wrapper
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        
         return;
 
       

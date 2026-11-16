@@ -170,7 +170,7 @@ QGeoShape.PolygonType = QGeoShape_Wrapper.PolygonType;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QGeoShape.prototype.isValid = function(...args) 
           
@@ -180,7 +180,7 @@ QGeoShape.PolygonType = QGeoShape_Wrapper.PolygonType;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QGeoShape.prototype.isEmpty = function(...args) 
           
@@ -190,7 +190,7 @@ QGeoShape.PolygonType = QGeoShape_Wrapper.PolygonType;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QGeoShape.prototype.contains = function(...args) 
           
@@ -200,7 +200,7 @@ QGeoShape.PolygonType = QGeoShape_Wrapper.PolygonType;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QGeoShape.prototype.boundingGeoRectangle = function(...args) 
           
@@ -210,7 +210,7 @@ QGeoShape.PolygonType = QGeoShape_Wrapper.PolygonType;
               return this.__PROXY__.boundingGeoRectangle(...args);
             
         };
-    
+        
         // function 
         QGeoShape.prototype.center = function(...args) 
           
@@ -220,7 +220,7 @@ QGeoShape.PolygonType = QGeoShape_Wrapper.PolygonType;
               return this.__PROXY__.center(...args);
             
         };
-    
+        
 
       // static functions:
       QGeoShape.prototype.isNullWrapper = function() {

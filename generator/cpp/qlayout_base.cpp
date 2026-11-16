@@ -39,7 +39,9 @@
 
       //QJSValue f = self.prototype().property("sizeHint");
       QJSValue f = self.property("sizeHint");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -102,7 +104,9 @@
 
       //QJSValue f = self.prototype().property("addItem");
       QJSValue f = self.property("addItem");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -175,7 +179,9 @@ a1
 
       //QJSValue f = self.prototype().property("minimumSize");
       QJSValue f = self.property("minimumSize");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -237,7 +243,9 @@ a1
 
       //QJSValue f = self.prototype().property("setGeometry");
       QJSValue f = self.property("setGeometry");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -309,7 +317,9 @@ a1
 
       //QJSValue f = self.prototype().property("itemAt");
       QJSValue f = self.property("itemAt");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -379,7 +389,9 @@ index
 
       //QJSValue f = self.prototype().property("takeAt");
       QJSValue f = self.property("takeAt");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 
@@ -451,7 +463,9 @@ index
 
       //QJSValue f = self.prototype().property("count");
       QJSValue f = self.property("count");
-      if (f.isCallable() /*&& !recFlag*/) {
+      // only call into JS if the function is overridden in JS
+      // (not the auto generated forwarder to the ...Super function, see xml2js.xsl):
+      if (f.isCallable() && !f.property("__SUPER__").toBool() /*&& !recFlag*/) {
         QJSValueList args;
         
 

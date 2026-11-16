@@ -293,7 +293,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.isEmpty = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.isNull = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.contains = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.translate = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.translated = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.united = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.united(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.intersected = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.intersected(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.subtracted = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.subtracted(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.xored = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.xored(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.intersects = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.intersects(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.boundingRect = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.rectCount = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.rectCount(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.copy = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.detach = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.qt_region_strictContains = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.qt_region_strictContains(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.exec = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QRegion.prototype.cleanUp = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.cleanUp(...args);
             
         };
-    
+        
 
       // static functions:
       

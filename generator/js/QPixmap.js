@@ -295,7 +295,7 @@
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.widthMM = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.heightMM = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.logicalDpiX = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.logicalDpiY = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.physicalDpiX = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.physicalDpiY = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.devicePixelRatioF = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.colorCount = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.initPainter = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.redirected = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.sharedPainter = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.qt_paint_device_metric = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.swap = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.isNull = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.devType = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.width = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.height = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.size = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.rect = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.rect(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.depth = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.defaultDepth = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.defaultDepth(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.fill = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.fill(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.mask = function(...args) 
           
@@ -525,7 +525,7 @@
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.setMask = function(...args) 
           
@@ -535,7 +535,7 @@
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.devicePixelRatio = function(...args) 
           
@@ -545,7 +545,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.setDevicePixelRatio = function(...args) 
           
@@ -555,7 +555,7 @@
               return this.__PROXY__.setDevicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.deviceIndependentSize = function(...args) 
           
@@ -565,7 +565,7 @@
               return this.__PROXY__.deviceIndependentSize(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.hasAlpha = function(...args) 
           
@@ -575,7 +575,7 @@
               return this.__PROXY__.hasAlpha(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.hasAlphaChannel = function(...args) 
           
@@ -585,7 +585,7 @@
               return this.__PROXY__.hasAlphaChannel(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.createHeuristicMask = function(...args) 
           
@@ -595,7 +595,7 @@
               return this.__PROXY__.createHeuristicMask(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.createMaskFromColor = function(...args) 
           
@@ -605,7 +605,7 @@
               return this.__PROXY__.createMaskFromColor(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.scaled = function(...args) 
           
@@ -615,7 +615,7 @@
               return this.__PROXY__.scaled(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.scaledToWidth = function(...args) 
           
@@ -625,7 +625,7 @@
               return this.__PROXY__.scaledToWidth(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.scaledToHeight = function(...args) 
           
@@ -635,7 +635,7 @@
               return this.__PROXY__.scaledToHeight(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.transformed = function(...args) 
           
@@ -645,7 +645,7 @@
               return this.__PROXY__.transformed(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.trueMatrix = function(...args) 
           
@@ -655,7 +655,7 @@
               return this.__PROXY__.trueMatrix(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.toImage = function(...args) 
           
@@ -665,7 +665,7 @@
               return this.__PROXY__.toImage(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.fromImage = function(...args) 
           
@@ -675,7 +675,7 @@
               return this.__PROXY__.fromImage(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.fromImageReader = function(...args) 
           
@@ -685,7 +685,7 @@
               return this.__PROXY__.fromImageReader(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.load = function(...args) 
           
@@ -695,7 +695,7 @@
               return this.__PROXY__.load(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.loadFromData = function(...args) 
           
@@ -705,7 +705,7 @@
               return this.__PROXY__.loadFromData(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.save = function(...args) 
           
@@ -715,7 +715,7 @@
               return this.__PROXY__.save(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.convertFromImage = function(...args) 
           
@@ -725,7 +725,7 @@
               return this.__PROXY__.convertFromImage(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.copy = function(...args) 
           
@@ -735,7 +735,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.scroll = function(...args) 
           
@@ -745,7 +745,7 @@
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.cacheKey = function(...args) 
           
@@ -755,7 +755,7 @@
               return this.__PROXY__.cacheKey(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.isDetached = function(...args) 
           
@@ -765,7 +765,7 @@
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.detach = function(...args) 
           
@@ -775,7 +775,7 @@
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.isQBitmap = function(...args) 
           
@@ -785,7 +785,7 @@
               return this.__PROXY__.isQBitmap(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.paintEngine = function(...args) 
           
@@ -795,7 +795,7 @@
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.metric = function(...args) 
           
@@ -805,7 +805,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.fromImageInPlace = function(...args) 
           
@@ -815,7 +815,7 @@
               return this.__PROXY__.fromImageInPlace(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.doImageIO = function(...args) 
           
@@ -825,7 +825,7 @@
               return this.__PROXY__.doImageIO(...args);
             
         };
-    
+        
         // function 
         QPixmap.prototype.doInit = function(...args) 
           
@@ -835,7 +835,7 @@
               return this.__PROXY__.doInit(...args);
             
         };
-    
+        
 
       // static functions:
       

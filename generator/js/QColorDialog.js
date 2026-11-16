@@ -183,7 +183,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isWidgetType = function(...args) 
           
@@ -193,7 +193,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isWindowType = function(...args) 
           
@@ -203,7 +203,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.signalsBlocked = function(...args) 
           
@@ -213,7 +213,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.blockSignals = function(...args) 
           
@@ -223,7 +223,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.findChild = function(...args) 
           
@@ -233,7 +233,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.children = function(...args) 
           
@@ -243,7 +243,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.installEventFilter = function(...args) 
           
@@ -253,7 +253,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.removeEventFilter = function(...args) 
           
@@ -263,7 +263,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.dumpObjectTree = function(...args) 
           
@@ -273,7 +273,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.dumpObjectInfo = function(...args) 
           
@@ -283,7 +283,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setProperty = function(...args) 
           
@@ -293,7 +293,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.property = function(...args) 
           
@@ -303,7 +303,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.dynamicPropertyNames = function(...args) 
           
@@ -313,7 +313,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.parent = function(...args) 
           
@@ -323,7 +323,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.deleteLater = function(...args) 
           
@@ -333,7 +333,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.devType = function(...args) 
           
@@ -343,7 +343,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.createWinId = function(...args) 
           
@@ -353,7 +353,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isWindow = function(...args) 
           
@@ -363,7 +363,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isModal = function(...args) 
           
@@ -373,7 +373,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowModality = function(...args) 
           
@@ -383,7 +383,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isEnabled = function(...args) 
           
@@ -393,7 +393,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isEnabledTo = function(...args) 
           
@@ -403,7 +403,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setEnabled = function(...args) 
           
@@ -413,7 +413,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setDisabled = function(...args) 
           
@@ -423,7 +423,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowModified = function(...args) 
           
@@ -433,7 +433,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setMinimumSize = function(...args) 
           
@@ -443,7 +443,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setMaximumSize = function(...args) 
           
@@ -453,7 +453,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setMinimumWidth = function(...args) 
           
@@ -463,7 +463,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setMinimumHeight = function(...args) 
           
@@ -473,7 +473,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setMaximumWidth = function(...args) 
           
@@ -483,7 +483,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setMaximumHeight = function(...args) 
           
@@ -493,7 +493,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setSizeIncrement = function(...args) 
           
@@ -503,7 +503,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setBaseSize = function(...args) 
           
@@ -513,7 +513,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setFixedSize = function(...args) 
           
@@ -523,7 +523,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setFixedWidth = function(...args) 
           
@@ -533,7 +533,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setFixedHeight = function(...args) 
           
@@ -543,7 +543,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.mapToGlobal = function(...args) 
           
@@ -553,7 +553,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.mapFromGlobal = function(...args) 
           
@@ -563,7 +563,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.mapToParent = function(...args) 
           
@@ -573,7 +573,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.mapFromParent = function(...args) 
           
@@ -583,7 +583,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.mapTo = function(...args) 
           
@@ -593,7 +593,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.mapFrom = function(...args) 
           
@@ -603,7 +603,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.window = function(...args) 
           
@@ -613,7 +613,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.nativeParentWidget = function(...args) 
           
@@ -623,7 +623,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.topLevelWidget = function(...args) 
           
@@ -633,7 +633,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setPalette = function(...args) 
           
@@ -643,7 +643,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setBackgroundRole = function(...args) 
           
@@ -653,7 +653,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.backgroundRole = function(...args) 
           
@@ -663,7 +663,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setForegroundRole = function(...args) 
           
@@ -673,7 +673,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.foregroundRole = function(...args) 
           
@@ -683,7 +683,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setFont = function(...args) 
           
@@ -693,7 +693,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.fontInfo = function(...args) 
           
@@ -703,7 +703,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setCursor = function(...args) 
           
@@ -713,7 +713,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.unsetCursor = function(...args) 
           
@@ -723,7 +723,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setMouseTracking = function(...args) 
           
@@ -733,7 +733,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.hasMouseTracking = function(...args) 
           
@@ -743,7 +743,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.underMouse = function(...args) 
           
@@ -753,7 +753,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setTabletTracking = function(...args) 
           
@@ -763,7 +763,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.hasTabletTracking = function(...args) 
           
@@ -773,7 +773,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setMask = function(...args) 
           
@@ -783,7 +783,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.mask = function(...args) 
           
@@ -793,7 +793,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.clearMask = function(...args) 
           
@@ -803,7 +803,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.grab = function(...args) 
           
@@ -813,7 +813,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.grabGesture = function(...args) 
           
@@ -823,7 +823,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.ungrabGesture = function(...args) 
           
@@ -833,7 +833,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowTitle = function(...args) 
           
@@ -843,7 +843,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setStyleSheet = function(...args) 
           
@@ -853,7 +853,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowIcon = function(...args) 
           
@@ -863,7 +863,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowIconText = function(...args) 
           
@@ -873,7 +873,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowRole = function(...args) 
           
@@ -883,7 +883,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.windowRole = function(...args) 
           
@@ -893,7 +893,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowFilePath = function(...args) 
           
@@ -903,7 +903,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowOpacity = function(...args) 
           
@@ -913,7 +913,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isWindowModified = function(...args) 
           
@@ -923,7 +923,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setToolTip = function(...args) 
           
@@ -933,7 +933,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setToolTipDuration = function(...args) 
           
@@ -943,7 +943,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setStatusTip = function(...args) 
           
@@ -953,7 +953,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWhatsThis = function(...args) 
           
@@ -963,7 +963,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setAccessibleName = function(...args) 
           
@@ -973,7 +973,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setAccessibleDescription = function(...args) 
           
@@ -983,7 +983,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setLayoutDirection = function(...args) 
           
@@ -993,7 +993,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1003,7 +1003,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setLocale = function(...args) 
           
@@ -1013,7 +1013,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.unsetLocale = function(...args) 
           
@@ -1023,7 +1023,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isRightToLeft = function(...args) 
           
@@ -1033,7 +1033,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isLeftToRight = function(...args) 
           
@@ -1043,7 +1043,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.activateWindow = function(...args) 
           
@@ -1053,7 +1053,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.clearFocus = function(...args) 
           
@@ -1063,7 +1063,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setFocus = function(...args) 
           
@@ -1073,7 +1073,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setFocusPolicy = function(...args) 
           
@@ -1083,7 +1083,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.hasFocus = function(...args) 
           
@@ -1093,7 +1093,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setFocusProxy = function(...args) 
           
@@ -1103,7 +1103,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.focusProxy = function(...args) 
           
@@ -1113,7 +1113,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1123,7 +1123,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.grabMouse = function(...args) 
           
@@ -1133,7 +1133,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.releaseMouse = function(...args) 
           
@@ -1143,7 +1143,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.grabKeyboard = function(...args) 
           
@@ -1153,7 +1153,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.releaseKeyboard = function(...args) 
           
@@ -1163,7 +1163,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.grabShortcut = function(...args) 
           
@@ -1173,7 +1173,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.releaseShortcut = function(...args) 
           
@@ -1183,7 +1183,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setShortcutEnabled = function(...args) 
           
@@ -1193,7 +1193,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1203,7 +1203,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1213,7 +1213,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.update = function(...args) 
           
@@ -1223,7 +1223,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.repaint = function(...args) 
           
@@ -1233,7 +1233,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setHidden = function(...args) 
           
@@ -1243,7 +1243,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.show = function(...args) 
           
@@ -1253,7 +1253,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.hide = function(...args) 
           
@@ -1263,7 +1263,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.showMinimized = function(...args) 
           
@@ -1273,7 +1273,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.showMaximized = function(...args) 
           
@@ -1283,7 +1283,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.showFullScreen = function(...args) 
           
@@ -1293,7 +1293,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.showNormal = function(...args) 
           
@@ -1303,7 +1303,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.close = function(...args) 
           
@@ -1313,7 +1313,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.raise = function(...args) 
           
@@ -1323,7 +1323,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.lower = function(...args) 
           
@@ -1333,7 +1333,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.stackUnder = function(...args) 
           
@@ -1343,7 +1343,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.move = function(...args) 
           
@@ -1353,7 +1353,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.resize = function(...args) 
           
@@ -1363,7 +1363,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setGeometry = function(...args) 
           
@@ -1373,7 +1373,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.saveGeometry = function(...args) 
           
@@ -1383,7 +1383,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.restoreGeometry = function(...args) 
           
@@ -1393,7 +1393,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.adjustSize = function(...args) 
           
@@ -1403,7 +1403,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isVisible = function(...args) 
           
@@ -1413,7 +1413,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isVisibleTo = function(...args) 
           
@@ -1423,7 +1423,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isHidden = function(...args) 
           
@@ -1433,7 +1433,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isMinimized = function(...args) 
           
@@ -1443,7 +1443,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isMaximized = function(...args) 
           
@@ -1453,7 +1453,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isFullScreen = function(...args) 
           
@@ -1463,7 +1463,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.windowState = function(...args) 
           
@@ -1473,7 +1473,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowState = function(...args) 
           
@@ -1483,7 +1483,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.overrideWindowState = function(...args) 
           
@@ -1493,7 +1493,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setSizePolicy = function(...args) 
           
@@ -1503,7 +1503,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.heightForWidth = function(...args) 
           
@@ -1513,7 +1513,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.hasHeightForWidth = function(...args) 
           
@@ -1523,7 +1523,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.visibleRegion = function(...args) 
           
@@ -1533,7 +1533,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setContentsMargins = function(...args) 
           
@@ -1543,7 +1543,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.contentsMargins = function(...args) 
           
@@ -1553,7 +1553,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.contentsRect = function(...args) 
           
@@ -1563,7 +1563,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.layout = function(...args) 
           
@@ -1573,7 +1573,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setLayout = function(...args) 
           
@@ -1583,7 +1583,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.updateGeometry = function(...args) 
           
@@ -1593,7 +1593,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setParent = function(...args) 
           
@@ -1603,7 +1603,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.scroll = function(...args) 
           
@@ -1613,7 +1613,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.focusWidget = function(...args) 
           
@@ -1623,7 +1623,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.nextInFocusChain = function(...args) 
           
@@ -1633,7 +1633,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.previousInFocusChain = function(...args) 
           
@@ -1643,7 +1643,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setAcceptDrops = function(...args) 
           
@@ -1653,7 +1653,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.addAction = function(...args) 
           
@@ -1663,7 +1663,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.addActions = function(...args) 
           
@@ -1673,7 +1673,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.insertActions = function(...args) 
           
@@ -1683,7 +1683,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.insertAction = function(...args) 
           
@@ -1693,7 +1693,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.removeAction = function(...args) 
           
@@ -1703,7 +1703,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.actions = function(...args) 
           
@@ -1713,7 +1713,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.parentWidget = function(...args) 
           
@@ -1723,7 +1723,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowFlags = function(...args) 
           
@@ -1733,7 +1733,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.windowFlags = function(...args) 
           
@@ -1743,7 +1743,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setWindowFlag = function(...args) 
           
@@ -1753,7 +1753,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.overrideWindowFlags = function(...args) 
           
@@ -1763,7 +1763,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.windowType = function(...args) 
           
@@ -1773,7 +1773,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.childAt = function(...args) 
           
@@ -1783,7 +1783,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setAttribute = function(...args) 
           
@@ -1793,7 +1793,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.testAttribute = function(...args) 
           
@@ -1803,7 +1803,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.ensurePolished = function(...args) 
           
@@ -1813,7 +1813,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isAncestorOf = function(...args) 
           
@@ -1823,7 +1823,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setAutoFillBackground = function(...args) 
           
@@ -1833,7 +1833,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.event = function(...args) 
           
@@ -1843,7 +1843,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1853,7 +1853,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.wheelEvent = function(...args) 
           
@@ -1863,7 +1863,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.keyReleaseEvent = function(...args) 
           
@@ -1873,7 +1873,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.focusInEvent = function(...args) 
           
@@ -1883,7 +1883,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.focusOutEvent = function(...args) 
           
@@ -1893,7 +1893,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.enterEvent = function(...args) 
           
@@ -1903,7 +1903,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.leaveEvent = function(...args) 
           
@@ -1913,7 +1913,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.moveEvent = function(...args) 
           
@@ -1923,7 +1923,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.tabletEvent = function(...args) 
           
@@ -1933,7 +1933,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.dragEnterEvent = function(...args) 
           
@@ -1943,7 +1943,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.dragMoveEvent = function(...args) 
           
@@ -1953,7 +1953,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.dragLeaveEvent = function(...args) 
           
@@ -1963,7 +1963,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.dropEvent = function(...args) 
           
@@ -1973,7 +1973,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.hideEvent = function(...args) 
           
@@ -1983,7 +1983,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.nativeEvent = function(...args) 
           
@@ -1993,7 +1993,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.changeEvent = function(...args) 
           
@@ -2003,7 +2003,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.metric = function(...args) 
           
@@ -2013,7 +2013,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.initPainter = function(...args) 
           
@@ -2023,7 +2023,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.redirected = function(...args) 
           
@@ -2033,7 +2033,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.sharedPainter = function(...args) 
           
@@ -2043,7 +2043,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.inputMethodEvent = function(...args) 
           
@@ -2053,7 +2053,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.inputMethodQuery = function(...args) 
           
@@ -2063,7 +2063,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setInputMethodHints = function(...args) 
           
@@ -2073,7 +2073,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.updateMicroFocus = function(...args) 
           
@@ -2083,7 +2083,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.create = function(...args) 
           
@@ -2093,7 +2093,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.destroy = function(...args) 
           
@@ -2103,7 +2103,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.focusNextPrevChild = function(...args) 
           
@@ -2113,7 +2113,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.focusNextChild = function(...args) 
           
@@ -2123,7 +2123,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.focusPreviousChild = function(...args) 
           
@@ -2133,7 +2133,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setBackingStore = function(...args) 
           
@@ -2143,7 +2143,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.testAttribute_helper = function(...args) 
           
@@ -2153,7 +2153,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.takeLayout = function(...args) 
           
@@ -2163,7 +2163,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2173,7 +2173,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.qt_qwidget_data = function(...args) 
           
@@ -2183,7 +2183,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.qt_widget_private = function(...args) 
           
@@ -2193,7 +2193,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.result = function(...args) 
           
@@ -2203,7 +2203,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.result(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setSizeGripEnabled = function(...args) 
           
@@ -2213,7 +2213,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.isSizeGripEnabled = function(...args) 
           
@@ -2223,7 +2223,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.isSizeGripEnabled(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setModal = function(...args) 
           
@@ -2233,7 +2233,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setModal(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setResult = function(...args) 
           
@@ -2243,7 +2243,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setResult(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.exec = function(...args) 
           
@@ -2253,7 +2253,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.accept = function(...args) 
           
@@ -2263,7 +2263,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.reject = function(...args) 
           
@@ -2273,7 +2273,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.reject(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.keyPressEvent = function(...args) 
           
@@ -2283,7 +2283,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.closeEvent = function(...args) 
           
@@ -2293,7 +2293,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.showEvent = function(...args) 
           
@@ -2303,7 +2303,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.contextMenuEvent = function(...args) 
           
@@ -2313,7 +2313,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.adjustPosition = function(...args) 
           
@@ -2323,7 +2323,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.adjustPosition(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setCurrentColor = function(...args) 
           
@@ -2333,7 +2333,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setCurrentColor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.currentColor = function(...args) 
           
@@ -2343,7 +2343,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.currentColor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.selectedColor = function(...args) 
           
@@ -2353,7 +2353,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.selectedColor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setOption = function(...args) 
           
@@ -2363,7 +2363,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setOption(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.testOption = function(...args) 
           
@@ -2373,7 +2373,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.testOption(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setOptions = function(...args) 
           
@@ -2383,7 +2383,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setOptions(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.options = function(...args) 
           
@@ -2393,7 +2393,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.options(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.open = function(...args) 
           
@@ -2403,7 +2403,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setVisible = function(...args) 
           
@@ -2413,7 +2413,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.getColor = function(...args) 
           
@@ -2423,7 +2423,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.getColor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.customCount = function(...args) 
           
@@ -2433,7 +2433,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.customCount(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.customColor = function(...args) 
           
@@ -2443,7 +2443,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.customColor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setCustomColor = function(...args) 
           
@@ -2453,7 +2453,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setCustomColor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.standardColor = function(...args) 
           
@@ -2463,7 +2463,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.standardColor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.setStandardColor = function(...args) 
           
@@ -2473,7 +2473,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.setStandardColor(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.done = function(...args) 
           
@@ -2483,7 +2483,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.done(...args);
             
         };
-    
+        
         // function 
         QColorDialog.prototype.eventFilter = function(...args) 
           
@@ -2493,7 +2493,7 @@ QColorDialog.DontUseNativeDialog = QColorDialog_Wrapper.DontUseNativeDialog;
               return this.__PROXY__.eventFilter(...args);
             
         };
-    
+        
 
       // static functions:
       

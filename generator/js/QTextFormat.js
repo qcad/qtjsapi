@@ -318,7 +318,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.merge = function(...args) 
           
@@ -328,7 +328,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.merge(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isValid = function(...args) 
           
@@ -338,7 +338,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isEmpty = function(...args) 
           
@@ -348,7 +348,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.type = function(...args) 
           
@@ -358,7 +358,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.objectIndex = function(...args) 
           
@@ -368,7 +368,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.objectIndex(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.setObjectIndex = function(...args) 
           
@@ -378,7 +378,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.setObjectIndex(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.property = function(...args) 
           
@@ -388,7 +388,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.setProperty = function(...args) 
           
@@ -398,7 +398,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.clearProperty = function(...args) 
           
@@ -408,7 +408,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.clearProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.hasProperty = function(...args) 
           
@@ -418,7 +418,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.hasProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.boolProperty = function(...args) 
           
@@ -428,7 +428,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.boolProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.intProperty = function(...args) 
           
@@ -438,7 +438,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.intProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.doubleProperty = function(...args) 
           
@@ -448,7 +448,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.doubleProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.stringProperty = function(...args) 
           
@@ -458,7 +458,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.stringProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.colorProperty = function(...args) 
           
@@ -468,7 +468,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.colorProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.penProperty = function(...args) 
           
@@ -478,7 +478,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.penProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.brushProperty = function(...args) 
           
@@ -488,7 +488,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.brushProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.lengthProperty = function(...args) 
           
@@ -498,7 +498,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.lengthProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.lengthVectorProperty = function(...args) 
           
@@ -508,7 +508,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.lengthVectorProperty(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.propertyCount = function(...args) 
           
@@ -518,7 +518,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.propertyCount(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.setObjectType = function(...args) 
           
@@ -528,7 +528,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.setObjectType(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.objectType = function(...args) 
           
@@ -538,7 +538,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.objectType(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isCharFormat = function(...args) 
           
@@ -548,7 +548,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isBlockFormat = function(...args) 
           
@@ -558,7 +558,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isListFormat = function(...args) 
           
@@ -568,7 +568,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isListFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isFrameFormat = function(...args) 
           
@@ -578,7 +578,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isImageFormat = function(...args) 
           
@@ -588,7 +588,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isTableFormat = function(...args) 
           
@@ -598,7 +598,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.isTableCellFormat = function(...args) 
           
@@ -608,7 +608,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.isTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.toBlockFormat = function(...args) 
           
@@ -618,7 +618,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.toBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.toCharFormat = function(...args) 
           
@@ -628,7 +628,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.toCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.toListFormat = function(...args) 
           
@@ -638,7 +638,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.toListFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.toTableFormat = function(...args) 
           
@@ -648,7 +648,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.toTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.toFrameFormat = function(...args) 
           
@@ -658,7 +658,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.toFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.toImageFormat = function(...args) 
           
@@ -668,7 +668,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.toImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.toTableCellFormat = function(...args) 
           
@@ -678,7 +678,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.toTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.setLayoutDirection = function(...args) 
           
@@ -688,7 +688,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.layoutDirection = function(...args) 
           
@@ -698,7 +698,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.layoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.setBackground = function(...args) 
           
@@ -708,7 +708,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.background = function(...args) 
           
@@ -718,7 +718,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.clearBackground = function(...args) 
           
@@ -728,7 +728,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.clearBackground(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.setForeground = function(...args) 
           
@@ -738,7 +738,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.setForeground(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.foreground = function(...args) 
           
@@ -748,7 +748,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.foreground(...args);
             
         };
-    
+        
         // function 
         QTextFormat.prototype.clearForeground = function(...args) 
           
@@ -758,7 +758,7 @@ QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
               return this.__PROXY__.clearForeground(...args);
             
         };
-    
+        
 
       // static functions:
       QTextFormat.prototype.isNullWrapper = function() {

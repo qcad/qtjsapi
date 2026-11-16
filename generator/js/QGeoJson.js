@@ -108,7 +108,7 @@
               return this.__PROXY__.importGeoJson(...args);
             
         };
-    
+        
         // function 
         QGeoJson.prototype.importGeoJsonPlain = function(...args) 
           
@@ -118,7 +118,7 @@
               return this.__PROXY__.importGeoJsonPlain(...args);
             
         };
-    
+        
         // function 
         QGeoJson.prototype.toPlain = function(...args) 
           
@@ -128,7 +128,7 @@
               return this.__PROXY__.toPlain(...args);
             
         };
-    
+        
         // function 
         QGeoJson.prototype.exportGeoJson = function(...args) 
           
@@ -138,7 +138,7 @@
               return this.__PROXY__.exportGeoJson(...args);
             
         };
-    
+        
 
       // static functions:
       

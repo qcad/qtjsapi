@@ -193,7 +193,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.isWidgetType = function(...args) 
           
@@ -203,7 +203,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.isWindowType = function(...args) 
           
@@ -213,7 +213,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.signalsBlocked = function(...args) 
           
@@ -223,7 +223,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.blockSignals = function(...args) 
           
@@ -233,7 +233,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.findChild = function(...args) 
           
@@ -243,7 +243,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.children = function(...args) 
           
@@ -253,7 +253,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setParent = function(...args) 
           
@@ -263,7 +263,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.installEventFilter = function(...args) 
           
@@ -273,7 +273,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.removeEventFilter = function(...args) 
           
@@ -283,7 +283,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.dumpObjectTree = function(...args) 
           
@@ -293,7 +293,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.dumpObjectInfo = function(...args) 
           
@@ -303,7 +303,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setProperty = function(...args) 
           
@@ -313,7 +313,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.property = function(...args) 
           
@@ -323,7 +323,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.dynamicPropertyNames = function(...args) 
           
@@ -333,7 +333,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.parent = function(...args) 
           
@@ -343,7 +343,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.deleteLater = function(...args) 
           
@@ -353,7 +353,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.clone = function(...args) 
           
@@ -363,7 +363,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.isEmpty = function(...args) 
           
@@ -373,7 +373,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.clear = function(...args) 
           
@@ -383,7 +383,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setUndoRedoEnabled = function(...args) 
           
@@ -393,7 +393,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setUndoRedoEnabled(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.isUndoRedoEnabled = function(...args) 
           
@@ -403,7 +403,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.isUndoRedoEnabled(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.isUndoAvailable = function(...args) 
           
@@ -413,7 +413,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.isUndoAvailable(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.isRedoAvailable = function(...args) 
           
@@ -423,7 +423,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.isRedoAvailable(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.availableUndoSteps = function(...args) 
           
@@ -433,7 +433,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.availableUndoSteps(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.availableRedoSteps = function(...args) 
           
@@ -443,7 +443,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.availableRedoSteps(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.revision = function(...args) 
           
@@ -453,7 +453,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.revision(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setMetaInformation = function(...args) 
           
@@ -463,7 +463,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setMetaInformation(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.metaInformation = function(...args) 
           
@@ -473,7 +473,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.metaInformation(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.toHtml = function(...args) 
           
@@ -483,7 +483,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.toHtml(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setHtml = function(...args) 
           
@@ -493,7 +493,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setHtml(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.toMarkdown = function(...args) 
           
@@ -503,7 +503,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.toMarkdown(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setMarkdown = function(...args) 
           
@@ -513,7 +513,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setMarkdown(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.toRawText = function(...args) 
           
@@ -523,7 +523,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.toRawText(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.toPlainText = function(...args) 
           
@@ -533,7 +533,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.toPlainText(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setPlainText = function(...args) 
           
@@ -543,7 +543,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setPlainText(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.characterAt = function(...args) 
           
@@ -553,7 +553,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.characterAt(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.find = function(...args) 
           
@@ -563,7 +563,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.find(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setPageSize = function(...args) 
           
@@ -573,7 +573,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setPageSize(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setDefaultFont = function(...args) 
           
@@ -583,7 +583,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setDefaultFont(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setSuperScriptBaseline = function(...args) 
           
@@ -593,7 +593,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setSuperScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.superScriptBaseline = function(...args) 
           
@@ -603,7 +603,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.superScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setSubScriptBaseline = function(...args) 
           
@@ -613,7 +613,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setSubScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.subScriptBaseline = function(...args) 
           
@@ -623,7 +623,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.subScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setBaselineOffset = function(...args) 
           
@@ -633,7 +633,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setBaselineOffset(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.baselineOffset = function(...args) 
           
@@ -643,7 +643,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.baselineOffset(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.pageCount = function(...args) 
           
@@ -653,7 +653,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.pageCount(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.isModified = function(...args) 
           
@@ -663,7 +663,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.isModified(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.print = function(...args) 
           
@@ -673,7 +673,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.print(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.resource = function(...args) 
           
@@ -683,7 +683,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.resource(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.addResource = function(...args) 
           
@@ -693,7 +693,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.addResource(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.allFormats = function(...args) 
           
@@ -703,7 +703,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.allFormats(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.markContentsDirty = function(...args) 
           
@@ -713,7 +713,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.markContentsDirty(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setUseDesignMetrics = function(...args) 
           
@@ -723,7 +723,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setUseDesignMetrics(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.drawContents = function(...args) 
           
@@ -733,7 +733,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.drawContents(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setTextWidth = function(...args) 
           
@@ -743,7 +743,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setTextWidth(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.idealWidth = function(...args) 
           
@@ -753,7 +753,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.idealWidth(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setIndentWidth = function(...args) 
           
@@ -763,7 +763,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setIndentWidth(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setDocumentMargin = function(...args) 
           
@@ -773,7 +773,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setDocumentMargin(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.adjustSize = function(...args) 
           
@@ -783,7 +783,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.lineCount = function(...args) 
           
@@ -793,7 +793,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.lineCount(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.characterCount = function(...args) 
           
@@ -803,7 +803,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.characterCount(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setDefaultStyleSheet = function(...args) 
           
@@ -813,7 +813,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setDefaultStyleSheet(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.clearUndoRedoStacks = function(...args) 
           
@@ -823,7 +823,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.clearUndoRedoStacks(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setMaximumBlockCount = function(...args) 
           
@@ -833,7 +833,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setMaximumBlockCount(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setBaseUrl = function(...args) 
           
@@ -843,7 +843,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setBaseUrl(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.defaultCursorMoveStyle = function(...args) 
           
@@ -853,7 +853,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.defaultCursorMoveStyle(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setDefaultCursorMoveStyle = function(...args) 
           
@@ -863,7 +863,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setDefaultCursorMoveStyle(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.undo = function(...args) 
           
@@ -873,7 +873,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.redo = function(...args) 
           
@@ -883,7 +883,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.setModified = function(...args) 
           
@@ -893,7 +893,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.setModified(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.createObject = function(...args) 
           
@@ -903,7 +903,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.createObject(...args);
             
         };
-    
+        
         // function 
         QTextDocument.prototype.loadResource = function(...args) 
           
@@ -913,7 +913,7 @@ QTextDocument.UndoAndRedoStacks = QTextDocument_Wrapper.UndoAndRedoStacks;
               return this.__PROXY__.loadResource(...args);
             
         };
-    
+        
 
       // static functions:
       

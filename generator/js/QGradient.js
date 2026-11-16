@@ -352,7 +352,7 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QGradient.prototype.setSpread = function(...args) 
           
@@ -362,7 +362,7 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
               return this.__PROXY__.setSpread(...args);
             
         };
-    
+        
         // function 
         QGradient.prototype.spread = function(...args) 
           
@@ -372,7 +372,7 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
               return this.__PROXY__.spread(...args);
             
         };
-    
+        
         // function 
         QGradient.prototype.setColorAt = function(...args) 
           
@@ -382,7 +382,7 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
               return this.__PROXY__.setColorAt(...args);
             
         };
-    
+        
         // function 
         QGradient.prototype.coordinateMode = function(...args) 
           
@@ -392,7 +392,7 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
               return this.__PROXY__.coordinateMode(...args);
             
         };
-    
+        
         // function 
         QGradient.prototype.setCoordinateMode = function(...args) 
           
@@ -402,7 +402,7 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
               return this.__PROXY__.setCoordinateMode(...args);
             
         };
-    
+        
         // function 
         QGradient.prototype.interpolationMode = function(...args) 
           
@@ -412,7 +412,7 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
               return this.__PROXY__.interpolationMode(...args);
             
         };
-    
+        
         // function 
         QGradient.prototype.setInterpolationMode = function(...args) 
           
@@ -422,7 +422,7 @@ QGradient.NumPresets = QGradient_Wrapper.NumPresets;
               return this.__PROXY__.setInterpolationMode(...args);
             
         };
-    
+        
 
       // static functions:
       QGradient.prototype.isNullWrapper = function() {

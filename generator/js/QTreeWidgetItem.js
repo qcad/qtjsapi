@@ -359,7 +359,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.treeWidget(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setSelected = function(...args) 
           
@@ -369,7 +369,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setSelected(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.isSelected = function(...args) 
           
@@ -379,7 +379,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.isSelected(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setHidden = function(...args) 
           
@@ -389,7 +389,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.isHidden = function(...args) 
           
@@ -399,7 +399,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setExpanded = function(...args) 
           
@@ -409,7 +409,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setExpanded(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.isExpanded = function(...args) 
           
@@ -419,7 +419,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.isExpanded(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setFirstColumnSpanned = function(...args) 
           
@@ -429,7 +429,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setFirstColumnSpanned(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.isFirstColumnSpanned = function(...args) 
           
@@ -439,7 +439,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.isFirstColumnSpanned(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setDisabled = function(...args) 
           
@@ -449,7 +449,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.isDisabled = function(...args) 
           
@@ -459,7 +459,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.isDisabled(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setChildIndicatorPolicy = function(...args) 
           
@@ -469,7 +469,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setChildIndicatorPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.childIndicatorPolicy = function(...args) 
           
@@ -479,7 +479,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.childIndicatorPolicy(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.flags = function(...args) 
           
@@ -489,7 +489,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.flags(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setFlags = function(...args) 
           
@@ -499,7 +499,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setFlags(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.text = function(...args) 
           
@@ -509,7 +509,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setText = function(...args) 
           
@@ -519,7 +519,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.icon = function(...args) 
           
@@ -529,7 +529,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.icon(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setIcon = function(...args) 
           
@@ -539,7 +539,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setIcon(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.statusTip = function(...args) 
           
@@ -549,7 +549,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.statusTip(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setStatusTip = function(...args) 
           
@@ -559,7 +559,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.toolTip = function(...args) 
           
@@ -569,7 +569,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.toolTip(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setToolTip = function(...args) 
           
@@ -579,7 +579,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.whatsThis = function(...args) 
           
@@ -589,7 +589,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.whatsThis(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setWhatsThis = function(...args) 
           
@@ -599,7 +599,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.font = function(...args) 
           
@@ -609,7 +609,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setFont = function(...args) 
           
@@ -619,7 +619,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.textAlignment = function(...args) 
           
@@ -629,7 +629,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.textAlignment(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.background = function(...args) 
           
@@ -639,7 +639,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setBackground = function(...args) 
           
@@ -649,7 +649,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.foreground = function(...args) 
           
@@ -659,7 +659,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.foreground(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setForeground = function(...args) 
           
@@ -669,7 +669,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setForeground(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.sizeHint = function(...args) 
           
@@ -679,7 +679,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.sizeHint(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setSizeHint = function(...args) 
           
@@ -689,7 +689,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setSizeHint(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.data = function(...args) 
           
@@ -699,7 +699,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.setData = function(...args) 
           
@@ -709,7 +709,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.parent = function(...args) 
           
@@ -719,7 +719,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.child = function(...args) 
           
@@ -729,7 +729,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.child(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.childCount = function(...args) 
           
@@ -739,7 +739,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.childCount(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.columnCount = function(...args) 
           
@@ -749,7 +749,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.columnCount(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.indexOfChild = function(...args) 
           
@@ -759,7 +759,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.indexOfChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.addChild = function(...args) 
           
@@ -769,7 +769,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.addChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.insertChild = function(...args) 
           
@@ -779,7 +779,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.insertChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.removeChild = function(...args) 
           
@@ -789,7 +789,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.removeChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.takeChild = function(...args) 
           
@@ -799,7 +799,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.takeChild(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.addChildren = function(...args) 
           
@@ -809,7 +809,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.addChildren(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.insertChildren = function(...args) 
           
@@ -819,7 +819,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.insertChildren(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.takeChildren = function(...args) 
           
@@ -829,7 +829,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.takeChildren(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.type = function(...args) 
           
@@ -839,7 +839,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.emitDataChanged = function(...args) 
           
@@ -849,7 +849,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.emitDataChanged(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.sortChildren = function(...args) 
           
@@ -859,7 +859,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.sortChildren(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.childrenCheckState = function(...args) 
           
@@ -869,7 +869,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.childrenCheckState(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.itemChanged = function(...args) 
           
@@ -879,7 +879,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.itemChanged(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.executePendingSort = function(...args) 
           
@@ -889,7 +889,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.executePendingSort(...args);
             
         };
-    
+        
         // function 
         QTreeWidgetItem.prototype.treeModel = function(...args) 
           
@@ -899,7 +899,7 @@ QTreeWidgetItem.DontShowIndicatorWhenChildless = QTreeWidgetItem_Wrapper.DontSho
               return this.__PROXY__.treeModel(...args);
             
         };
-    
+        
 
       // static functions:
       QTreeWidgetItem.prototype.isNullWrapper = function() {

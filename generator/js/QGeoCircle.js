@@ -252,7 +252,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.isValid = function(...args) 
           
@@ -262,7 +262,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.isEmpty = function(...args) 
           
@@ -272,7 +272,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.contains = function(...args) 
           
@@ -282,7 +282,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.boundingGeoRectangle = function(...args) 
           
@@ -292,7 +292,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.boundingGeoRectangle(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.setCenter = function(...args) 
           
@@ -302,7 +302,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.setCenter(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.center = function(...args) 
           
@@ -312,7 +312,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.center(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.setRadius = function(...args) 
           
@@ -322,7 +322,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.setRadius(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.radius = function(...args) 
           
@@ -332,7 +332,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.radius(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.translate = function(...args) 
           
@@ -342,7 +342,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.translated = function(...args) 
           
@@ -352,7 +352,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QGeoCircle.prototype.extendCircle = function(...args) 
           
@@ -362,7 +362,7 @@ QGeoCircle.PolygonType = QGeoCircle_Wrapper.PolygonType;
               return this.__PROXY__.extendCircle(...args);
             
         };
-    
+        
 
       // static functions:
       QGeoCircle.prototype.isNullWrapper = function() {

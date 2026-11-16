@@ -192,7 +192,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isWidgetType = function(...args) 
           
@@ -202,7 +202,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isWindowType = function(...args) 
           
@@ -212,7 +212,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.signalsBlocked = function(...args) 
           
@@ -222,7 +222,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.blockSignals = function(...args) 
           
@@ -232,7 +232,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.findChild = function(...args) 
           
@@ -242,7 +242,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.children = function(...args) 
           
@@ -252,7 +252,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.installEventFilter = function(...args) 
           
@@ -262,7 +262,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.removeEventFilter = function(...args) 
           
@@ -272,7 +272,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.dumpObjectTree = function(...args) 
           
@@ -282,7 +282,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.dumpObjectInfo = function(...args) 
           
@@ -292,7 +292,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setProperty = function(...args) 
           
@@ -302,7 +302,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.property = function(...args) 
           
@@ -312,7 +312,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.dynamicPropertyNames = function(...args) 
           
@@ -322,7 +322,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.parent = function(...args) 
           
@@ -332,7 +332,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.deleteLater = function(...args) 
           
@@ -342,7 +342,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.devType = function(...args) 
           
@@ -352,7 +352,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.createWinId = function(...args) 
           
@@ -362,7 +362,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isWindow = function(...args) 
           
@@ -372,7 +372,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isModal = function(...args) 
           
@@ -382,7 +382,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowModality = function(...args) 
           
@@ -392,7 +392,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isEnabled = function(...args) 
           
@@ -402,7 +402,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isEnabledTo = function(...args) 
           
@@ -412,7 +412,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setEnabled = function(...args) 
           
@@ -422,7 +422,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setDisabled = function(...args) 
           
@@ -432,7 +432,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowModified = function(...args) 
           
@@ -442,7 +442,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMinimumSize = function(...args) 
           
@@ -452,7 +452,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMaximumSize = function(...args) 
           
@@ -462,7 +462,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMinimumWidth = function(...args) 
           
@@ -472,7 +472,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMinimumHeight = function(...args) 
           
@@ -482,7 +482,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMaximumWidth = function(...args) 
           
@@ -492,7 +492,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMaximumHeight = function(...args) 
           
@@ -502,7 +502,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setSizeIncrement = function(...args) 
           
@@ -512,7 +512,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setBaseSize = function(...args) 
           
@@ -522,7 +522,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFixedSize = function(...args) 
           
@@ -532,7 +532,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFixedWidth = function(...args) 
           
@@ -542,7 +542,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFixedHeight = function(...args) 
           
@@ -552,7 +552,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mapToGlobal = function(...args) 
           
@@ -562,7 +562,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mapFromGlobal = function(...args) 
           
@@ -572,7 +572,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mapToParent = function(...args) 
           
@@ -582,7 +582,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mapFromParent = function(...args) 
           
@@ -592,7 +592,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mapTo = function(...args) 
           
@@ -602,7 +602,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mapFrom = function(...args) 
           
@@ -612,7 +612,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.window = function(...args) 
           
@@ -622,7 +622,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.nativeParentWidget = function(...args) 
           
@@ -632,7 +632,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.topLevelWidget = function(...args) 
           
@@ -642,7 +642,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setPalette = function(...args) 
           
@@ -652,7 +652,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setBackgroundRole = function(...args) 
           
@@ -662,7 +662,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.backgroundRole = function(...args) 
           
@@ -672,7 +672,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setForegroundRole = function(...args) 
           
@@ -682,7 +682,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.foregroundRole = function(...args) 
           
@@ -692,7 +692,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFont = function(...args) 
           
@@ -702,7 +702,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.fontInfo = function(...args) 
           
@@ -712,7 +712,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setCursor = function(...args) 
           
@@ -722,7 +722,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.unsetCursor = function(...args) 
           
@@ -732,7 +732,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMouseTracking = function(...args) 
           
@@ -742,7 +742,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.hasMouseTracking = function(...args) 
           
@@ -752,7 +752,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.underMouse = function(...args) 
           
@@ -762,7 +762,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setTabletTracking = function(...args) 
           
@@ -772,7 +772,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.hasTabletTracking = function(...args) 
           
@@ -782,7 +782,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMask = function(...args) 
           
@@ -792,7 +792,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mask = function(...args) 
           
@@ -802,7 +802,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.clearMask = function(...args) 
           
@@ -812,7 +812,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.grab = function(...args) 
           
@@ -822,7 +822,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.grabGesture = function(...args) 
           
@@ -832,7 +832,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.ungrabGesture = function(...args) 
           
@@ -842,7 +842,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowTitle = function(...args) 
           
@@ -852,7 +852,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setStyleSheet = function(...args) 
           
@@ -862,7 +862,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowIcon = function(...args) 
           
@@ -872,7 +872,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowIconText = function(...args) 
           
@@ -882,7 +882,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowRole = function(...args) 
           
@@ -892,7 +892,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.windowRole = function(...args) 
           
@@ -902,7 +902,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowFilePath = function(...args) 
           
@@ -912,7 +912,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowOpacity = function(...args) 
           
@@ -922,7 +922,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isWindowModified = function(...args) 
           
@@ -932,7 +932,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setToolTip = function(...args) 
           
@@ -942,7 +942,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setToolTipDuration = function(...args) 
           
@@ -952,7 +952,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setStatusTip = function(...args) 
           
@@ -962,7 +962,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWhatsThis = function(...args) 
           
@@ -972,7 +972,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setAccessibleName = function(...args) 
           
@@ -982,7 +982,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setAccessibleDescription = function(...args) 
           
@@ -992,7 +992,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setLayoutDirection = function(...args) 
           
@@ -1002,7 +1002,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1012,7 +1012,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setLocale = function(...args) 
           
@@ -1022,7 +1022,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.unsetLocale = function(...args) 
           
@@ -1032,7 +1032,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isRightToLeft = function(...args) 
           
@@ -1042,7 +1042,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isLeftToRight = function(...args) 
           
@@ -1052,7 +1052,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.activateWindow = function(...args) 
           
@@ -1062,7 +1062,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.clearFocus = function(...args) 
           
@@ -1072,7 +1072,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFocus = function(...args) 
           
@@ -1082,7 +1082,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFocusPolicy = function(...args) 
           
@@ -1092,7 +1092,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.hasFocus = function(...args) 
           
@@ -1102,7 +1102,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFocusProxy = function(...args) 
           
@@ -1112,7 +1112,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.focusProxy = function(...args) 
           
@@ -1122,7 +1122,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1132,7 +1132,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.grabMouse = function(...args) 
           
@@ -1142,7 +1142,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.releaseMouse = function(...args) 
           
@@ -1152,7 +1152,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.grabKeyboard = function(...args) 
           
@@ -1162,7 +1162,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.releaseKeyboard = function(...args) 
           
@@ -1172,7 +1172,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.grabShortcut = function(...args) 
           
@@ -1182,7 +1182,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.releaseShortcut = function(...args) 
           
@@ -1192,7 +1192,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setShortcutEnabled = function(...args) 
           
@@ -1202,7 +1202,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1212,7 +1212,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1222,7 +1222,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.update = function(...args) 
           
@@ -1232,7 +1232,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.repaint = function(...args) 
           
@@ -1242,7 +1242,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setVisible = function(...args) 
           
@@ -1252,7 +1252,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setHidden = function(...args) 
           
@@ -1262,7 +1262,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.show = function(...args) 
           
@@ -1272,7 +1272,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.hide = function(...args) 
           
@@ -1282,7 +1282,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.showMinimized = function(...args) 
           
@@ -1292,7 +1292,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.showMaximized = function(...args) 
           
@@ -1302,7 +1302,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.showFullScreen = function(...args) 
           
@@ -1312,7 +1312,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.showNormal = function(...args) 
           
@@ -1322,7 +1322,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.close = function(...args) 
           
@@ -1332,7 +1332,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.raise = function(...args) 
           
@@ -1342,7 +1342,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.lower = function(...args) 
           
@@ -1352,7 +1352,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.stackUnder = function(...args) 
           
@@ -1362,7 +1362,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.move = function(...args) 
           
@@ -1372,7 +1372,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.resize = function(...args) 
           
@@ -1382,7 +1382,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setGeometry = function(...args) 
           
@@ -1392,7 +1392,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.saveGeometry = function(...args) 
           
@@ -1402,7 +1402,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.restoreGeometry = function(...args) 
           
@@ -1412,7 +1412,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.adjustSize = function(...args) 
           
@@ -1422,7 +1422,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isVisible = function(...args) 
           
@@ -1432,7 +1432,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isVisibleTo = function(...args) 
           
@@ -1442,7 +1442,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isHidden = function(...args) 
           
@@ -1452,7 +1452,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isMinimized = function(...args) 
           
@@ -1462,7 +1462,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isMaximized = function(...args) 
           
@@ -1472,7 +1472,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isFullScreen = function(...args) 
           
@@ -1482,7 +1482,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.windowState = function(...args) 
           
@@ -1492,7 +1492,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowState = function(...args) 
           
@@ -1502,7 +1502,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.overrideWindowState = function(...args) 
           
@@ -1512,7 +1512,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setSizePolicy = function(...args) 
           
@@ -1522,7 +1522,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.hasHeightForWidth = function(...args) 
           
@@ -1532,7 +1532,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.visibleRegion = function(...args) 
           
@@ -1542,7 +1542,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setContentsMargins = function(...args) 
           
@@ -1552,7 +1552,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.contentsMargins = function(...args) 
           
@@ -1562,7 +1562,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.contentsRect = function(...args) 
           
@@ -1572,7 +1572,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.layout = function(...args) 
           
@@ -1582,7 +1582,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setLayout = function(...args) 
           
@@ -1592,7 +1592,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.updateGeometry = function(...args) 
           
@@ -1602,7 +1602,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setParent = function(...args) 
           
@@ -1612,7 +1612,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.scroll = function(...args) 
           
@@ -1622,7 +1622,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.focusWidget = function(...args) 
           
@@ -1632,7 +1632,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.nextInFocusChain = function(...args) 
           
@@ -1642,7 +1642,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.previousInFocusChain = function(...args) 
           
@@ -1652,7 +1652,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setAcceptDrops = function(...args) 
           
@@ -1662,7 +1662,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.addAction = function(...args) 
           
@@ -1672,7 +1672,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.addActions = function(...args) 
           
@@ -1682,7 +1682,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.insertActions = function(...args) 
           
@@ -1692,7 +1692,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.insertAction = function(...args) 
           
@@ -1702,7 +1702,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.removeAction = function(...args) 
           
@@ -1712,7 +1712,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.actions = function(...args) 
           
@@ -1722,7 +1722,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.parentWidget = function(...args) 
           
@@ -1732,7 +1732,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowFlags = function(...args) 
           
@@ -1742,7 +1742,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.windowFlags = function(...args) 
           
@@ -1752,7 +1752,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWindowFlag = function(...args) 
           
@@ -1762,7 +1762,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.overrideWindowFlags = function(...args) 
           
@@ -1772,7 +1772,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.windowType = function(...args) 
           
@@ -1782,7 +1782,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.childAt = function(...args) 
           
@@ -1792,7 +1792,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setAttribute = function(...args) 
           
@@ -1802,7 +1802,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.testAttribute = function(...args) 
           
@@ -1812,7 +1812,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.ensurePolished = function(...args) 
           
@@ -1822,7 +1822,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.isAncestorOf = function(...args) 
           
@@ -1832,7 +1832,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setAutoFillBackground = function(...args) 
           
@@ -1842,7 +1842,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1852,7 +1852,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.wheelEvent = function(...args) 
           
@@ -1862,7 +1862,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.keyReleaseEvent = function(...args) 
           
@@ -1872,7 +1872,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.enterEvent = function(...args) 
           
@@ -1882,7 +1882,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.leaveEvent = function(...args) 
           
@@ -1892,7 +1892,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.moveEvent = function(...args) 
           
@@ -1902,7 +1902,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.closeEvent = function(...args) 
           
@@ -1912,7 +1912,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.tabletEvent = function(...args) 
           
@@ -1922,7 +1922,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.dragEnterEvent = function(...args) 
           
@@ -1932,7 +1932,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.dragMoveEvent = function(...args) 
           
@@ -1942,7 +1942,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.dragLeaveEvent = function(...args) 
           
@@ -1952,7 +1952,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.dropEvent = function(...args) 
           
@@ -1962,7 +1962,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.showEvent = function(...args) 
           
@@ -1972,7 +1972,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.hideEvent = function(...args) 
           
@@ -1982,7 +1982,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.nativeEvent = function(...args) 
           
@@ -1992,7 +1992,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.metric = function(...args) 
           
@@ -2002,7 +2002,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.initPainter = function(...args) 
           
@@ -2012,7 +2012,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.redirected = function(...args) 
           
@@ -2022,7 +2022,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.sharedPainter = function(...args) 
           
@@ -2032,7 +2032,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.inputMethodEvent = function(...args) 
           
@@ -2042,7 +2042,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.inputMethodQuery = function(...args) 
           
@@ -2052,7 +2052,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setInputMethodHints = function(...args) 
           
@@ -2062,7 +2062,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.updateMicroFocus = function(...args) 
           
@@ -2072,7 +2072,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.create = function(...args) 
           
@@ -2082,7 +2082,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.destroy = function(...args) 
           
@@ -2092,7 +2092,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.focusNextChild = function(...args) 
           
@@ -2102,7 +2102,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.focusPreviousChild = function(...args) 
           
@@ -2112,7 +2112,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setBackingStore = function(...args) 
           
@@ -2122,7 +2122,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.testAttribute_helper = function(...args) 
           
@@ -2132,7 +2132,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.takeLayout = function(...args) 
           
@@ -2142,7 +2142,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2152,7 +2152,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.qt_qwidget_data = function(...args) 
           
@@ -2162,7 +2162,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.qt_widget_private = function(...args) 
           
@@ -2172,7 +2172,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.frameStyle = function(...args) 
           
@@ -2182,7 +2182,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFrameStyle = function(...args) 
           
@@ -2192,7 +2192,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFrameShape = function(...args) 
           
@@ -2202,7 +2202,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFrameShadow = function(...args) 
           
@@ -2212,7 +2212,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setLineWidth = function(...args) 
           
@@ -2222,7 +2222,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMidLineWidth = function(...args) 
           
@@ -2232,7 +2232,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setFrameRect = function(...args) 
           
@@ -2242,7 +2242,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.drawFrame = function(...args) 
           
@@ -2252,7 +2252,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.initStyleOption = function(...args) 
           
@@ -2262,7 +2262,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.picture = function(...args) 
           
@@ -2272,7 +2272,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.picture(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setTextFormat = function(...args) 
           
@@ -2282,7 +2282,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setTextFormat(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setAlignment = function(...args) 
           
@@ -2292,7 +2292,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setWordWrap = function(...args) 
           
@@ -2302,7 +2302,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setWordWrap(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setIndent = function(...args) 
           
@@ -2312,7 +2312,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setIndent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setMargin = function(...args) 
           
@@ -2322,7 +2322,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setMargin(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.hasScaledContents = function(...args) 
           
@@ -2332,7 +2332,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.hasScaledContents(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setScaledContents = function(...args) 
           
@@ -2342,7 +2342,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setScaledContents(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setBuddy = function(...args) 
           
@@ -2352,7 +2352,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setBuddy(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.buddy = function(...args) 
           
@@ -2362,7 +2362,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.buddy(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.heightForWidth = function(...args) 
           
@@ -2372,7 +2372,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setOpenExternalLinks = function(...args) 
           
@@ -2382,7 +2382,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setOpenExternalLinks(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setTextInteractionFlags = function(...args) 
           
@@ -2392,7 +2392,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setTextInteractionFlags(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setSelection = function(...args) 
           
@@ -2402,7 +2402,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setSelection(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.selectionStart = function(...args) 
           
@@ -2412,7 +2412,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.selectionStart(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setText = function(...args) 
           
@@ -2422,7 +2422,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setPixmap = function(...args) 
           
@@ -2432,7 +2432,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setPixmap(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setPicture = function(...args) 
           
@@ -2442,7 +2442,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setPicture(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.setNum = function(...args) 
           
@@ -2452,7 +2452,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.setNum(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.clear = function(...args) 
           
@@ -2462,7 +2462,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.event = function(...args) 
           
@@ -2472,7 +2472,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.keyPressEvent = function(...args) 
           
@@ -2482,7 +2482,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.paintEvent = function(...args) 
           
@@ -2492,7 +2492,8 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QLabel.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QLabel.prototype.changeEvent = function(...args) 
           
@@ -2502,7 +2503,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mousePressEvent = function(...args) 
           
@@ -2512,7 +2513,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.mouseMoveEvent = function(...args) 
           
@@ -2522,7 +2523,8 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QLabel.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QLabel.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2532,7 +2534,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.contextMenuEvent = function(...args) 
           
@@ -2542,7 +2544,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.focusInEvent = function(...args) 
           
@@ -2552,7 +2554,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.focusOutEvent = function(...args) 
           
@@ -2562,7 +2564,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QLabel.prototype.focusNextPrevChild = function(...args) 
           
@@ -2572,7 +2574,7 @@ QLabel.Shape_Mask = QLabel_Wrapper.Shape_Mask;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
 
       // static functions:
       

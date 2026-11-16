@@ -266,7 +266,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QCursor.prototype.shape = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.shape(...args);
             
         };
-    
+        
         // function 
         QCursor.prototype.setShape = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.setShape(...args);
             
         };
-    
+        
         // function 
         QCursor.prototype.pixmap = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.pixmap(...args);
             
         };
-    
+        
         // function 
         QCursor.prototype.hotSpot = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.hotSpot(...args);
             
         };
-    
+        
         // function 
         QCursor.prototype.pos = function(...args) 
           
@@ -316,7 +316,7 @@
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QCursor.prototype.setPos = function(...args) 
           
@@ -326,7 +326,7 @@
               return this.__PROXY__.setPos(...args);
             
         };
-    
+        
 
       // static functions:
       

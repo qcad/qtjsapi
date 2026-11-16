@@ -114,7 +114,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.isWidgetType = function(...args) 
           
@@ -124,7 +124,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.isWindowType = function(...args) 
           
@@ -134,7 +134,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.signalsBlocked = function(...args) 
           
@@ -144,7 +144,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.blockSignals = function(...args) 
           
@@ -154,7 +154,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.findChild = function(...args) 
           
@@ -164,7 +164,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.children = function(...args) 
           
@@ -174,7 +174,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.setParent = function(...args) 
           
@@ -184,7 +184,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.installEventFilter = function(...args) 
           
@@ -194,7 +194,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.removeEventFilter = function(...args) 
           
@@ -204,7 +204,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.dumpObjectTree = function(...args) 
           
@@ -214,7 +214,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.dumpObjectInfo = function(...args) 
           
@@ -224,7 +224,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.setProperty = function(...args) 
           
@@ -234,7 +234,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.property = function(...args) 
           
@@ -244,7 +244,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.dynamicPropertyNames = function(...args) 
           
@@ -254,7 +254,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.parent = function(...args) 
           
@@ -264,7 +264,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.deleteLater = function(...args) 
           
@@ -274,7 +274,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.setLocale = function(...args) 
           
@@ -284,7 +284,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.locale = function(...args) 
           
@@ -294,7 +294,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.locale(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.validate = function(...args) 
           
@@ -304,7 +304,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         QValidator.prototype.fixup = function(...args) 
           
@@ -314,7 +314,7 @@ QValidator.Acceptable = QValidator_Wrapper.Acceptable;
               return this.__PROXY__.fixup(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -212,7 +212,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QMargins.prototype.left = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.left(...args);
             
         };
-    
+        
         // function 
         QMargins.prototype.top = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.top(...args);
             
         };
-    
+        
         // function 
         QMargins.prototype.right = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.right(...args);
             
         };
-    
+        
         // function 
         QMargins.prototype.bottom = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.bottom(...args);
             
         };
-    
+        
         // function 
         QMargins.prototype.setLeft = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.setLeft(...args);
             
         };
-    
+        
         // function 
         QMargins.prototype.setTop = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.setTop(...args);
             
         };
-    
+        
         // function 
         QMargins.prototype.setRight = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.setRight(...args);
             
         };
-    
+        
         // function 
         QMargins.prototype.setBottom = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.setBottom(...args);
             
         };
-    
+        
 
       // static functions:
       QMargins.prototype.isNullWrapper = function() {

@@ -138,7 +138,7 @@
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.layout = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.spacerItem = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.spacerItem(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.alignment = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.setAlignment = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.sizeHint = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.sizeHint(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.minimumSize = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.minimumSize(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.maximumSize = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.maximumSize(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.expandingDirections = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.expandingDirections(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.isEmpty = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.setGeometry = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.geometry = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.widget = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.hasHeightForWidth = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.heightForWidth = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.minimumHeightForWidth = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.minimumHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QWidgetItem.prototype.controlTypes = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.controlTypes(...args);
             
         };
-    
+        
 
       // static functions:
       QWidgetItem.prototype.isNullWrapper = function() {

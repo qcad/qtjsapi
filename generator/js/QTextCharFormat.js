@@ -293,7 +293,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.merge = function(...args) 
           
@@ -303,7 +303,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.merge(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isEmpty = function(...args) 
           
@@ -313,7 +313,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.type = function(...args) 
           
@@ -323,7 +323,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.objectIndex = function(...args) 
           
@@ -333,7 +333,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.objectIndex(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setObjectIndex = function(...args) 
           
@@ -343,7 +343,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setObjectIndex(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.property = function(...args) 
           
@@ -353,7 +353,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setProperty = function(...args) 
           
@@ -363,7 +363,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.clearProperty = function(...args) 
           
@@ -373,7 +373,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.clearProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.hasProperty = function(...args) 
           
@@ -383,7 +383,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.hasProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.boolProperty = function(...args) 
           
@@ -393,7 +393,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.boolProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.intProperty = function(...args) 
           
@@ -403,7 +403,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.intProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.doubleProperty = function(...args) 
           
@@ -413,7 +413,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.doubleProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.stringProperty = function(...args) 
           
@@ -423,7 +423,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.stringProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.colorProperty = function(...args) 
           
@@ -433,7 +433,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.colorProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.penProperty = function(...args) 
           
@@ -443,7 +443,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.penProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.brushProperty = function(...args) 
           
@@ -453,7 +453,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.brushProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.lengthProperty = function(...args) 
           
@@ -463,7 +463,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.lengthProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.lengthVectorProperty = function(...args) 
           
@@ -473,7 +473,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.lengthVectorProperty(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.propertyCount = function(...args) 
           
@@ -483,7 +483,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.propertyCount(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setObjectType = function(...args) 
           
@@ -493,7 +493,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setObjectType(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.objectType = function(...args) 
           
@@ -503,7 +503,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.objectType(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isCharFormat = function(...args) 
           
@@ -513,7 +513,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isBlockFormat = function(...args) 
           
@@ -523,7 +523,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isListFormat = function(...args) 
           
@@ -533,7 +533,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isListFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isFrameFormat = function(...args) 
           
@@ -543,7 +543,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isImageFormat = function(...args) 
           
@@ -553,7 +553,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isTableFormat = function(...args) 
           
@@ -563,7 +563,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isTableCellFormat = function(...args) 
           
@@ -573,7 +573,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.toBlockFormat = function(...args) 
           
@@ -583,7 +583,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.toCharFormat = function(...args) 
           
@@ -593,7 +593,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.toListFormat = function(...args) 
           
@@ -603,7 +603,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toListFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.toTableFormat = function(...args) 
           
@@ -613,7 +613,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toTableFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.toFrameFormat = function(...args) 
           
@@ -623,7 +623,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toFrameFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.toImageFormat = function(...args) 
           
@@ -633,7 +633,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toImageFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.toTableCellFormat = function(...args) 
           
@@ -643,7 +643,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toTableCellFormat(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setLayoutDirection = function(...args) 
           
@@ -653,7 +653,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.layoutDirection = function(...args) 
           
@@ -663,7 +663,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.layoutDirection(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setBackground = function(...args) 
           
@@ -673,7 +673,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setBackground(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.background = function(...args) 
           
@@ -683,7 +683,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.background(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.clearBackground = function(...args) 
           
@@ -693,7 +693,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.clearBackground(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setForeground = function(...args) 
           
@@ -703,7 +703,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setForeground(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.foreground = function(...args) 
           
@@ -713,7 +713,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.foreground(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.clearForeground = function(...args) 
           
@@ -723,7 +723,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.clearForeground(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isValid = function(...args) 
           
@@ -733,7 +733,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFont = function(...args) 
           
@@ -743,7 +743,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.font = function(...args) 
           
@@ -753,7 +753,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontFamilies = function(...args) 
           
@@ -763,7 +763,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontFamilies(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontFamilies = function(...args) 
           
@@ -773,7 +773,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontFamilies(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontStyleName = function(...args) 
           
@@ -783,7 +783,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStyleName(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontStyleName = function(...args) 
           
@@ -793,7 +793,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStyleName(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontPointSize = function(...args) 
           
@@ -803,7 +803,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontPointSize = function(...args) 
           
@@ -813,7 +813,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontPointSize(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontWeight = function(...args) 
           
@@ -823,7 +823,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontWeight(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontWeight = function(...args) 
           
@@ -833,7 +833,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontWeight(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontItalic = function(...args) 
           
@@ -843,7 +843,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontItalic(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontItalic = function(...args) 
           
@@ -853,7 +853,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontItalic(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontCapitalization = function(...args) 
           
@@ -863,7 +863,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontCapitalization(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontCapitalization = function(...args) 
           
@@ -873,7 +873,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontCapitalization(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontLetterSpacingType = function(...args) 
           
@@ -883,7 +883,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontLetterSpacingType(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontLetterSpacingType = function(...args) 
           
@@ -893,7 +893,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontLetterSpacingType(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontLetterSpacing = function(...args) 
           
@@ -903,7 +903,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontLetterSpacing(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontLetterSpacing = function(...args) 
           
@@ -913,7 +913,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontLetterSpacing(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontWordSpacing = function(...args) 
           
@@ -923,7 +923,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontWordSpacing(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontWordSpacing = function(...args) 
           
@@ -933,7 +933,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontWordSpacing(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontUnderline = function(...args) 
           
@@ -943,7 +943,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontUnderline = function(...args) 
           
@@ -953,7 +953,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontUnderline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontOverline = function(...args) 
           
@@ -963,7 +963,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontOverline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontOverline = function(...args) 
           
@@ -973,7 +973,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontOverline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontStrikeOut = function(...args) 
           
@@ -983,7 +983,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStrikeOut(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontStrikeOut = function(...args) 
           
@@ -993,7 +993,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStrikeOut(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setUnderlineColor = function(...args) 
           
@@ -1003,7 +1003,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setUnderlineColor(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.underlineColor = function(...args) 
           
@@ -1013,7 +1013,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.underlineColor(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontFixedPitch = function(...args) 
           
@@ -1023,7 +1023,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontFixedPitch(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontFixedPitch = function(...args) 
           
@@ -1033,7 +1033,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontFixedPitch(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontStretch = function(...args) 
           
@@ -1043,7 +1043,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStretch(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontStretch = function(...args) 
           
@@ -1053,7 +1053,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStretch(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontStyleHint = function(...args) 
           
@@ -1063,7 +1063,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStyleHint(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontStyleStrategy = function(...args) 
           
@@ -1073,7 +1073,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontStyleStrategy(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontStyleHint = function(...args) 
           
@@ -1083,7 +1083,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStyleHint(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontStyleStrategy = function(...args) 
           
@@ -1093,7 +1093,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontStyleStrategy(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontHintingPreference = function(...args) 
           
@@ -1103,7 +1103,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontHintingPreference(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontHintingPreference = function(...args) 
           
@@ -1113,7 +1113,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontHintingPreference(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setFontKerning = function(...args) 
           
@@ -1123,7 +1123,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setFontKerning(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.fontKerning = function(...args) 
           
@@ -1133,7 +1133,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.fontKerning(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setUnderlineStyle = function(...args) 
           
@@ -1143,7 +1143,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setUnderlineStyle(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.underlineStyle = function(...args) 
           
@@ -1153,7 +1153,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.underlineStyle(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setVerticalAlignment = function(...args) 
           
@@ -1163,7 +1163,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setVerticalAlignment(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.verticalAlignment = function(...args) 
           
@@ -1173,7 +1173,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.verticalAlignment(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setTextOutline = function(...args) 
           
@@ -1183,7 +1183,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setTextOutline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.textOutline = function(...args) 
           
@@ -1193,7 +1193,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.textOutline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setToolTip = function(...args) 
           
@@ -1203,7 +1203,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.toolTip = function(...args) 
           
@@ -1213,7 +1213,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.toolTip(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setSuperScriptBaseline = function(...args) 
           
@@ -1223,7 +1223,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setSuperScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.superScriptBaseline = function(...args) 
           
@@ -1233,7 +1233,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.superScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setSubScriptBaseline = function(...args) 
           
@@ -1243,7 +1243,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setSubScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.subScriptBaseline = function(...args) 
           
@@ -1253,7 +1253,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.subScriptBaseline(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setBaselineOffset = function(...args) 
           
@@ -1263,7 +1263,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setBaselineOffset(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.baselineOffset = function(...args) 
           
@@ -1273,7 +1273,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.baselineOffset(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setAnchor = function(...args) 
           
@@ -1283,7 +1283,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setAnchor(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.isAnchor = function(...args) 
           
@@ -1293,7 +1293,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.isAnchor(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setAnchorHref = function(...args) 
           
@@ -1303,7 +1303,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setAnchorHref(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.anchorHref = function(...args) 
           
@@ -1313,7 +1313,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.anchorHref(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setAnchorNames = function(...args) 
           
@@ -1323,7 +1323,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setAnchorNames(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.anchorNames = function(...args) 
           
@@ -1333,7 +1333,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.anchorNames(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setTableCellRowSpan = function(...args) 
           
@@ -1343,7 +1343,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setTableCellRowSpan(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.tableCellRowSpan = function(...args) 
           
@@ -1353,7 +1353,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.tableCellRowSpan(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.setTableCellColumnSpan = function(...args) 
           
@@ -1363,7 +1363,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.setTableCellColumnSpan(...args);
             
         };
-    
+        
         // function 
         QTextCharFormat.prototype.tableCellColumnSpan = function(...args) 
           
@@ -1373,7 +1373,7 @@ QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
               return this.__PROXY__.tableCellColumnSpan(...args);
             
         };
-    
+        
 
       // static functions:
       QTextCharFormat.prototype.isNullWrapper = function() {

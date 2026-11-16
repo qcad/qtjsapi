@@ -313,7 +313,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.spontaneous = function(...args) 
           
@@ -323,7 +323,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.setAccepted = function(...args) 
           
@@ -333,7 +333,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.isAccepted = function(...args) 
           
@@ -343,7 +343,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.accept = function(...args) 
           
@@ -353,7 +353,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.ignore = function(...args) 
           
@@ -363,7 +363,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.isInputEvent = function(...args) 
           
@@ -373,7 +373,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.isPointerEvent = function(...args) 
           
@@ -383,7 +383,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -393,7 +393,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.clone = function(...args) 
           
@@ -403,7 +403,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.setSpontaneous = function(...args) 
           
@@ -413,7 +413,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.position = function(...args) 
           
@@ -423,7 +423,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.buttons = function(...args) 
           
@@ -433,7 +433,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.modifiers = function(...args) 
           
@@ -443,7 +443,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.modifiers(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.acceptProposedAction = function(...args) 
           
@@ -453,7 +453,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.acceptProposedAction(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.setDropAction = function(...args) 
           
@@ -463,7 +463,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.setDropAction(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.source = function(...args) 
           
@@ -473,7 +473,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
         // function 
         QDropEvent.prototype.mimeData = function(...args) 
           
@@ -483,7 +483,7 @@ QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
               return this.__PROXY__.mimeData(...args);
             
         };
-    
+        
 
       // static functions:
       QDropEvent.prototype.isNullWrapper = function() {

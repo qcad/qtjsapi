@@ -186,7 +186,7 @@
               return this.__PROXY__.printerName(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.description = function(...args) 
           
@@ -196,7 +196,7 @@
               return this.__PROXY__.description(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.location = function(...args) 
           
@@ -206,7 +206,7 @@
               return this.__PROXY__.location(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.makeAndModel = function(...args) 
           
@@ -216,7 +216,7 @@
               return this.__PROXY__.makeAndModel(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.isNull = function(...args) 
           
@@ -226,7 +226,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.isDefault = function(...args) 
           
@@ -236,7 +236,7 @@
               return this.__PROXY__.isDefault(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.isRemote = function(...args) 
           
@@ -246,7 +246,7 @@
               return this.__PROXY__.isRemote(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.state = function(...args) 
           
@@ -256,7 +256,7 @@
               return this.__PROXY__.state(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.supportedPageSizes = function(...args) 
           
@@ -266,7 +266,7 @@
               return this.__PROXY__.supportedPageSizes(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.defaultPageSize = function(...args) 
           
@@ -276,7 +276,7 @@
               return this.__PROXY__.defaultPageSize(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.supportsCustomPageSizes = function(...args) 
           
@@ -286,7 +286,7 @@
               return this.__PROXY__.supportsCustomPageSizes(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.minimumPhysicalPageSize = function(...args) 
           
@@ -296,7 +296,7 @@
               return this.__PROXY__.minimumPhysicalPageSize(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.maximumPhysicalPageSize = function(...args) 
           
@@ -306,7 +306,7 @@
               return this.__PROXY__.maximumPhysicalPageSize(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.supportedResolutions = function(...args) 
           
@@ -316,7 +316,7 @@
               return this.__PROXY__.supportedResolutions(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.defaultDuplexMode = function(...args) 
           
@@ -326,7 +326,7 @@
               return this.__PROXY__.defaultDuplexMode(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.supportedDuplexModes = function(...args) 
           
@@ -336,7 +336,7 @@
               return this.__PROXY__.supportedDuplexModes(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.defaultColorMode = function(...args) 
           
@@ -346,7 +346,7 @@
               return this.__PROXY__.defaultColorMode(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.supportedColorModes = function(...args) 
           
@@ -356,7 +356,7 @@
               return this.__PROXY__.supportedColorModes(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.availablePrinterNames = function(...args) 
           
@@ -366,7 +366,7 @@
               return this.__PROXY__.availablePrinterNames(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.availablePrinters = function(...args) 
           
@@ -376,7 +376,7 @@
               return this.__PROXY__.availablePrinters(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.defaultPrinterName = function(...args) 
           
@@ -386,7 +386,7 @@
               return this.__PROXY__.defaultPrinterName(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.defaultPrinter = function(...args) 
           
@@ -396,7 +396,7 @@
               return this.__PROXY__.defaultPrinter(...args);
             
         };
-    
+        
         // function 
         QPrinterInfo.prototype.printerInfo = function(...args) 
           
@@ -406,7 +406,7 @@
               return this.__PROXY__.printerInfo(...args);
             
         };
-    
+        
 
       // static functions:
       

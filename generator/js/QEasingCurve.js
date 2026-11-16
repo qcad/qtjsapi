@@ -238,7 +238,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.swap = function(...args) 
           
@@ -248,7 +248,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.amplitude = function(...args) 
           
@@ -258,7 +258,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.amplitude(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.setAmplitude = function(...args) 
           
@@ -268,7 +268,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.setAmplitude(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.period = function(...args) 
           
@@ -278,7 +278,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.period(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.setPeriod = function(...args) 
           
@@ -288,7 +288,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.setPeriod(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.overshoot = function(...args) 
           
@@ -298,7 +298,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.overshoot(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.setOvershoot = function(...args) 
           
@@ -308,7 +308,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.setOvershoot(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.addCubicBezierSegment = function(...args) 
           
@@ -318,7 +318,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.addCubicBezierSegment(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.addTCBSegment = function(...args) 
           
@@ -328,7 +328,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.addTCBSegment(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.toCubicSpline = function(...args) 
           
@@ -338,7 +338,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.toCubicSpline(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.type = function(...args) 
           
@@ -348,7 +348,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.setType = function(...args) 
           
@@ -358,7 +358,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.setType(...args);
             
         };
-    
+        
         // function 
         QEasingCurve.prototype.valueForProgress = function(...args) 
           
@@ -368,7 +368,7 @@ QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
               return this.__PROXY__.valueForProgress(...args);
             
         };
-    
+        
 
       // static functions:
       QEasingCurve.prototype.isNullWrapper = function() {

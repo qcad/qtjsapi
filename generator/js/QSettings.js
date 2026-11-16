@@ -304,7 +304,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.isWidgetType = function(...args) 
           
@@ -314,7 +314,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.isWindowType = function(...args) 
           
@@ -324,7 +324,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.signalsBlocked = function(...args) 
           
@@ -334,7 +334,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.blockSignals = function(...args) 
           
@@ -344,7 +344,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.findChild = function(...args) 
           
@@ -354,7 +354,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.children = function(...args) 
           
@@ -364,7 +364,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.setParent = function(...args) 
           
@@ -374,7 +374,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.installEventFilter = function(...args) 
           
@@ -384,7 +384,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.removeEventFilter = function(...args) 
           
@@ -394,7 +394,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.dumpObjectTree = function(...args) 
           
@@ -404,7 +404,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.dumpObjectInfo = function(...args) 
           
@@ -414,7 +414,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.setProperty = function(...args) 
           
@@ -424,7 +424,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.property = function(...args) 
           
@@ -434,7 +434,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.dynamicPropertyNames = function(...args) 
           
@@ -444,7 +444,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.parent = function(...args) 
           
@@ -454,7 +454,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.deleteLater = function(...args) 
           
@@ -464,7 +464,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.clear = function(...args) 
           
@@ -474,7 +474,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.sync = function(...args) 
           
@@ -484,7 +484,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.sync(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.status = function(...args) 
           
@@ -494,7 +494,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.status(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.isAtomicSyncRequired = function(...args) 
           
@@ -504,7 +504,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.isAtomicSyncRequired(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.setAtomicSyncRequired = function(...args) 
           
@@ -514,7 +514,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setAtomicSyncRequired(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.beginGroup = function(...args) 
           
@@ -524,7 +524,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.beginGroup(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.endGroup = function(...args) 
           
@@ -534,7 +534,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.endGroup(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.group = function(...args) 
           
@@ -544,7 +544,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.group(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.beginReadArray = function(...args) 
           
@@ -554,7 +554,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.beginReadArray(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.beginWriteArray = function(...args) 
           
@@ -564,7 +564,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.beginWriteArray(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.endArray = function(...args) 
           
@@ -574,7 +574,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.endArray(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.setArrayIndex = function(...args) 
           
@@ -584,7 +584,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setArrayIndex(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.allKeys = function(...args) 
           
@@ -594,7 +594,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.allKeys(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.childKeys = function(...args) 
           
@@ -604,7 +604,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.childKeys(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.childGroups = function(...args) 
           
@@ -614,7 +614,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.childGroups(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.isWritable = function(...args) 
           
@@ -624,7 +624,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.setValue = function(...args) 
           
@@ -634,7 +634,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setValue(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.value = function(...args) 
           
@@ -644,7 +644,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.value(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.remove = function(...args) 
           
@@ -654,7 +654,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.remove(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.contains = function(...args) 
           
@@ -664,7 +664,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.contains(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.setFallbacksEnabled = function(...args) 
           
@@ -674,7 +674,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setFallbacksEnabled(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.fallbacksEnabled = function(...args) 
           
@@ -684,7 +684,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.fallbacksEnabled(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.fileName = function(...args) 
           
@@ -694,7 +694,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.format = function(...args) 
           
@@ -704,7 +704,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.format(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.scope = function(...args) 
           
@@ -714,7 +714,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.scope(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.organizationName = function(...args) 
           
@@ -724,7 +724,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.organizationName(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.applicationName = function(...args) 
           
@@ -734,7 +734,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.applicationName(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.setDefaultFormat = function(...args) 
           
@@ -744,7 +744,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setDefaultFormat(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.defaultFormat = function(...args) 
           
@@ -754,7 +754,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.defaultFormat(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.setPath = function(...args) 
           
@@ -764,7 +764,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.setPath(...args);
             
         };
-    
+        
         // function 
         QSettings.prototype.event = function(...args) 
           
@@ -774,7 +774,7 @@ QSettings.SystemScope = QSettings_Wrapper.SystemScope;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
 
       // static functions:
       

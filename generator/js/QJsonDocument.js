@@ -164,7 +164,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
               return this.__PROXY__.fromVariant(...args);
             
         };
-    
+        
         // function 
         QJsonDocument.prototype.toVariant = function(...args) 
           
@@ -174,7 +174,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
               return this.__PROXY__.toVariant(...args);
             
         };
-    
+        
         // function 
         QJsonDocument.prototype.fromJson = function(...args) 
           
@@ -184,7 +184,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
               return this.__PROXY__.fromJson(...args);
             
         };
-    
+        
         // function 
         QJsonDocument.prototype.toJson = function(...args) 
           
@@ -194,7 +194,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
               return this.__PROXY__.toJson(...args);
             
         };
-    
+        
         // function 
         QJsonDocument.prototype.isEmpty = function(...args) 
           
@@ -204,7 +204,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QJsonDocument.prototype.isArray = function(...args) 
           
@@ -214,7 +214,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
               return this.__PROXY__.isArray(...args);
             
         };
-    
+        
         // function 
         QJsonDocument.prototype.isObject = function(...args) 
           
@@ -224,7 +224,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
               return this.__PROXY__.isObject(...args);
             
         };
-    
+        
         // function 
         QJsonDocument.prototype.isNull = function(...args) 
           
@@ -234,7 +234,7 @@ QJsonDocument.Compact = QJsonDocument_Wrapper.Compact;
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
 
       // static functions:
       

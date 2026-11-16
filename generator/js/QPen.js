@@ -265,7 +265,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.style = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.style(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setStyle = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.setStyle(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.dashPattern = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.dashPattern(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setDashPattern = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.setDashPattern(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.dashOffset = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.dashOffset(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setDashOffset = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.setDashOffset(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.miterLimit = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.miterLimit(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setMiterLimit = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.setMiterLimit(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.widthF = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.widthF(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setWidthF = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.setWidthF(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.width = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setWidth = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.setWidth(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.color = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.color(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setColor = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.setColor(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.brush = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.brush(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setBrush = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.setBrush(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.isSolid = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.isSolid(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.capStyle = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.capStyle(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setCapStyle = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.setCapStyle(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.joinStyle = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.joinStyle(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setJoinStyle = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.setJoinStyle(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.isCosmetic = function(...args) 
           
@@ -485,7 +485,7 @@
               return this.__PROXY__.isCosmetic(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.setCosmetic = function(...args) 
           
@@ -495,7 +495,7 @@
               return this.__PROXY__.setCosmetic(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.isDetached = function(...args) 
           
@@ -505,7 +505,7 @@
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
         // function 
         QPen.prototype.detach = function(...args) 
           
@@ -515,7 +515,7 @@
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
 
       // static functions:
       QPen.prototype.isNullWrapper = function() {

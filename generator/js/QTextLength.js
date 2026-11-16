@@ -165,7 +165,7 @@ QTextLength.PercentageLength = QTextLength_Wrapper.PercentageLength;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QTextLength.prototype.value = function(...args) 
           
@@ -175,7 +175,7 @@ QTextLength.PercentageLength = QTextLength_Wrapper.PercentageLength;
               return this.__PROXY__.value(...args);
             
         };
-    
+        
         // function 
         QTextLength.prototype.rawValue = function(...args) 
           
@@ -185,7 +185,7 @@ QTextLength.PercentageLength = QTextLength_Wrapper.PercentageLength;
               return this.__PROXY__.rawValue(...args);
             
         };
-    
+        
         // function 
         QTextLength.prototype.operator = function(...args) 
           
@@ -195,7 +195,7 @@ QTextLength.PercentageLength = QTextLength_Wrapper.PercentageLength;
               return this.__PROXY__.operator(...args);
             
         };
-    
+        
 
       // static functions:
       QTextLength.prototype.isNullWrapper = function() {

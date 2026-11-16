@@ -160,7 +160,7 @@
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QDomNodeList.prototype.item = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.item(...args);
             
         };
-    
+        
         // function 
         QDomNodeList.prototype.at = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.at(...args);
             
         };
-    
+        
         // function 
         QDomNodeList.prototype.length = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QDomNodeList.prototype.count = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QDomNodeList.prototype.size = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QDomNodeList.prototype.isEmpty = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
 
       // static functions:
       QDomNodeList.prototype.isNullWrapper = function() {

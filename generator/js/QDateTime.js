@@ -130,7 +130,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.isNull = function(...args) 
           
@@ -140,7 +140,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.isValid = function(...args) 
           
@@ -150,7 +150,7 @@
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.date = function(...args) 
           
@@ -160,7 +160,7 @@
               return this.__PROXY__.date(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.time = function(...args) 
           
@@ -170,7 +170,7 @@
               return this.__PROXY__.time(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.timeSpec = function(...args) 
           
@@ -180,7 +180,7 @@
               return this.__PROXY__.timeSpec(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.offsetFromUtc = function(...args) 
           
@@ -190,7 +190,7 @@
               return this.__PROXY__.offsetFromUtc(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.timeZone = function(...args) 
           
@@ -200,7 +200,7 @@
               return this.__PROXY__.timeZone(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.timeZoneAbbreviation = function(...args) 
           
@@ -210,7 +210,7 @@
               return this.__PROXY__.timeZoneAbbreviation(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.isDaylightTime = function(...args) 
           
@@ -220,7 +220,7 @@
               return this.__PROXY__.isDaylightTime(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.toMSecsSinceEpoch = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.toMSecsSinceEpoch(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.toSecsSinceEpoch = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.toSecsSinceEpoch(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.setDate = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.setDate(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.setTime = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.setTime(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.setTimeSpec = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.setTimeSpec(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.setTimeZone = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.setTimeZone(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.setMSecsSinceEpoch = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.setMSecsSinceEpoch(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.setSecsSinceEpoch = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.setSecsSinceEpoch(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.toString = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.toString(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.addDays = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.addDays(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.addMonths = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.addMonths(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.addYears = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.addYears(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.addSecs = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.addSecs(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.addMSecs = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.addMSecs(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.toLocalTime = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.toLocalTime(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.toUTC = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.toUTC(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.toOffsetFromUtc = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.toOffsetFromUtc(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.toTimeZone = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.toTimeZone(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.daysTo = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.daysTo(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.secsTo = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.secsTo(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.msecsTo = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.msecsTo(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.currentDateTime = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.currentDateTime(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.currentDateTimeUtc = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.currentDateTimeUtc(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.fromString = function(...args) 
           
@@ -460,7 +460,7 @@
               return this.__PROXY__.fromString(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.fromMSecsSinceEpoch = function(...args) 
           
@@ -470,7 +470,7 @@
               return this.__PROXY__.fromMSecsSinceEpoch(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.currentMSecsSinceEpoch = function(...args) 
           
@@ -480,7 +480,7 @@
               return this.__PROXY__.currentMSecsSinceEpoch(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.currentSecsSinceEpoch = function(...args) 
           
@@ -490,7 +490,7 @@
               return this.__PROXY__.currentSecsSinceEpoch(...args);
             
         };
-    
+        
         // function 
         QDateTime.prototype.operator_lessthan = function(...args) 
           
@@ -500,7 +500,7 @@
               return this.__PROXY__.operator_lessthan(...args);
             
         };
-    
+        
 
       // static functions:
       

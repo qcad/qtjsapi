@@ -184,7 +184,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.operator_equal(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.operator_unequal = function(...args) 
           
@@ -194,7 +194,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.operator_unequal(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.insertBefore = function(...args) 
           
@@ -204,7 +204,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.insertBefore(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.insertAfter = function(...args) 
           
@@ -214,7 +214,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.insertAfter(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.replaceChild = function(...args) 
           
@@ -224,7 +224,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.replaceChild(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.removeChild = function(...args) 
           
@@ -234,7 +234,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.removeChild(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.appendChild = function(...args) 
           
@@ -244,7 +244,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.appendChild(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.hasChildNodes = function(...args) 
           
@@ -254,7 +254,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.hasChildNodes(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.cloneNode = function(...args) 
           
@@ -264,7 +264,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.cloneNode(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.normalize = function(...args) 
           
@@ -274,7 +274,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.normalize(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isSupported = function(...args) 
           
@@ -284,7 +284,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isSupported(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.nodeName = function(...args) 
           
@@ -294,7 +294,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.nodeName(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.parentNode = function(...args) 
           
@@ -304,7 +304,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.parentNode(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.childNodes = function(...args) 
           
@@ -314,7 +314,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.childNodes(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.firstChild = function(...args) 
           
@@ -324,7 +324,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.firstChild(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.lastChild = function(...args) 
           
@@ -334,7 +334,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.lastChild(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.previousSibling = function(...args) 
           
@@ -344,7 +344,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.previousSibling(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.nextSibling = function(...args) 
           
@@ -354,7 +354,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.nextSibling(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.attributes = function(...args) 
           
@@ -364,7 +364,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.attributes(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.ownerDocument = function(...args) 
           
@@ -374,7 +374,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.ownerDocument(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.namespaceURI = function(...args) 
           
@@ -384,7 +384,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.namespaceURI(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.localName = function(...args) 
           
@@ -394,7 +394,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.localName(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.hasAttributes = function(...args) 
           
@@ -404,7 +404,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.hasAttributes(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.nodeValue = function(...args) 
           
@@ -414,7 +414,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.nodeValue(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.setNodeValue = function(...args) 
           
@@ -424,7 +424,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.setNodeValue(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.prefix = function(...args) 
           
@@ -434,7 +434,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.prefix(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.setPrefix = function(...args) 
           
@@ -444,7 +444,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.setPrefix(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isAttr = function(...args) 
           
@@ -454,7 +454,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isAttr(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isCDATASection = function(...args) 
           
@@ -464,7 +464,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isCDATASection(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isDocumentFragment = function(...args) 
           
@@ -474,7 +474,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isDocumentFragment(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isDocument = function(...args) 
           
@@ -484,7 +484,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isDocument(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isDocumentType = function(...args) 
           
@@ -494,7 +494,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isDocumentType(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isElement = function(...args) 
           
@@ -504,7 +504,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isElement(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isEntityReference = function(...args) 
           
@@ -514,7 +514,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isEntityReference(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isText = function(...args) 
           
@@ -524,7 +524,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isText(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isEntity = function(...args) 
           
@@ -534,7 +534,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isEntity(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isNotation = function(...args) 
           
@@ -544,7 +544,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isNotation(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isProcessingInstruction = function(...args) 
           
@@ -554,7 +554,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isProcessingInstruction(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isCharacterData = function(...args) 
           
@@ -564,7 +564,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isCharacterData(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isComment = function(...args) 
           
@@ -574,7 +574,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isComment(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.namedItem = function(...args) 
           
@@ -584,7 +584,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.namedItem(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.isNull = function(...args) 
           
@@ -594,7 +594,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.clear = function(...args) 
           
@@ -604,7 +604,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toAttr = function(...args) 
           
@@ -614,7 +614,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toAttr(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toCDATASection = function(...args) 
           
@@ -624,7 +624,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toCDATASection(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toDocumentFragment = function(...args) 
           
@@ -634,7 +634,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toDocumentFragment(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toDocument = function(...args) 
           
@@ -644,7 +644,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toDocument(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toDocumentType = function(...args) 
           
@@ -654,7 +654,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toDocumentType(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toElement = function(...args) 
           
@@ -664,7 +664,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toElement(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toEntityReference = function(...args) 
           
@@ -674,7 +674,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toEntityReference(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toText = function(...args) 
           
@@ -684,7 +684,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toText(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toEntity = function(...args) 
           
@@ -694,7 +694,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toEntity(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toNotation = function(...args) 
           
@@ -704,7 +704,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toNotation(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toProcessingInstruction = function(...args) 
           
@@ -714,7 +714,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toProcessingInstruction(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toCharacterData = function(...args) 
           
@@ -724,7 +724,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toCharacterData(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.toComment = function(...args) 
           
@@ -734,7 +734,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.toComment(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.firstChildElement = function(...args) 
           
@@ -744,7 +744,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.firstChildElement(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.lastChildElement = function(...args) 
           
@@ -754,7 +754,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.lastChildElement(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.previousSiblingElement = function(...args) 
           
@@ -764,7 +764,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.previousSiblingElement(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.nextSiblingElement = function(...args) 
           
@@ -774,7 +774,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.nextSiblingElement(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.lineNumber = function(...args) 
           
@@ -784,7 +784,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.lineNumber(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.columnNumber = function(...args) 
           
@@ -794,7 +794,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.columnNumber(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.operator_assign = function(...args) 
           
@@ -804,7 +804,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.operator_assign(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.substringData = function(...args) 
           
@@ -814,7 +814,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.substringData(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.appendData = function(...args) 
           
@@ -824,7 +824,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.appendData(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.insertData = function(...args) 
           
@@ -834,7 +834,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.insertData(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.deleteData = function(...args) 
           
@@ -844,7 +844,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.deleteData(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.replaceData = function(...args) 
           
@@ -854,7 +854,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.replaceData(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.length = function(...args) 
           
@@ -864,7 +864,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.length(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.data = function(...args) 
           
@@ -874,7 +874,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.setData = function(...args) 
           
@@ -884,7 +884,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.setData(...args);
             
         };
-    
+        
         // function 
         QDomCharacterData.prototype.nodeType = function(...args) 
           
@@ -894,7 +894,7 @@ QDomCharacterData.EncodingFromTextStream = QDomCharacterData_Wrapper.EncodingFro
               return this.__PROXY__.nodeType(...args);
             
         };
-    
+        
 
       // static functions:
       QDomCharacterData.prototype.isNullWrapper = function() {

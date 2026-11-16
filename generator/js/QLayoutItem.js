@@ -137,7 +137,7 @@
               return this.__PROXY__.minimumSize(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.maximumSize = function(...args) 
           
@@ -147,7 +147,7 @@
               return this.__PROXY__.maximumSize(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.expandingDirections = function(...args) 
           
@@ -157,7 +157,7 @@
               return this.__PROXY__.expandingDirections(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.setGeometry = function(...args) 
           
@@ -167,7 +167,7 @@
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.geometry = function(...args) 
           
@@ -177,7 +177,7 @@
               return this.__PROXY__.geometry(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.isEmpty = function(...args) 
           
@@ -187,7 +187,7 @@
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.hasHeightForWidth = function(...args) 
           
@@ -197,7 +197,7 @@
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.heightForWidth = function(...args) 
           
@@ -207,7 +207,7 @@
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.minimumHeightForWidth = function(...args) 
           
@@ -217,7 +217,7 @@
               return this.__PROXY__.minimumHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.invalidate = function(...args) 
           
@@ -227,7 +227,7 @@
               return this.__PROXY__.invalidate(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.widget = function(...args) 
           
@@ -237,7 +237,7 @@
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.layout = function(...args) 
           
@@ -247,7 +247,7 @@
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.spacerItem = function(...args) 
           
@@ -257,7 +257,7 @@
               return this.__PROXY__.spacerItem(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.alignment = function(...args) 
           
@@ -267,7 +267,7 @@
               return this.__PROXY__.alignment(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.setAlignment = function(...args) 
           
@@ -277,7 +277,7 @@
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QLayoutItem.prototype.controlTypes = function(...args) 
           
@@ -287,7 +287,7 @@
               return this.__PROXY__.controlTypes(...args);
             
         };
-    
+        
 
       // static functions:
       QLayoutItem.prototype.isNullWrapper = function() {

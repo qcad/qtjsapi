@@ -180,7 +180,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isWidgetType = function(...args) 
           
@@ -190,7 +190,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isWindowType = function(...args) 
           
@@ -200,7 +200,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.signalsBlocked = function(...args) 
           
@@ -210,7 +210,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.blockSignals = function(...args) 
           
@@ -220,7 +220,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.findChild = function(...args) 
           
@@ -230,7 +230,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.children = function(...args) 
           
@@ -240,7 +240,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.installEventFilter = function(...args) 
           
@@ -250,7 +250,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.removeEventFilter = function(...args) 
           
@@ -260,7 +260,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.dumpObjectTree = function(...args) 
           
@@ -270,7 +270,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.dumpObjectInfo = function(...args) 
           
@@ -280,7 +280,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setProperty = function(...args) 
           
@@ -290,7 +290,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.property = function(...args) 
           
@@ -300,7 +300,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.dynamicPropertyNames = function(...args) 
           
@@ -310,7 +310,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.parent = function(...args) 
           
@@ -320,7 +320,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.deleteLater = function(...args) 
           
@@ -330,7 +330,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.devType = function(...args) 
           
@@ -340,7 +340,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.createWinId = function(...args) 
           
@@ -350,7 +350,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isWindow = function(...args) 
           
@@ -360,7 +360,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isModal = function(...args) 
           
@@ -370,7 +370,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowModality = function(...args) 
           
@@ -380,7 +380,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isEnabled = function(...args) 
           
@@ -390,7 +390,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isEnabledTo = function(...args) 
           
@@ -400,7 +400,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setEnabled = function(...args) 
           
@@ -410,7 +410,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setDisabled = function(...args) 
           
@@ -420,7 +420,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowModified = function(...args) 
           
@@ -430,7 +430,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMinimumSize = function(...args) 
           
@@ -440,7 +440,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMaximumSize = function(...args) 
           
@@ -450,7 +450,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMinimumWidth = function(...args) 
           
@@ -460,7 +460,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMinimumHeight = function(...args) 
           
@@ -470,7 +470,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMaximumWidth = function(...args) 
           
@@ -480,7 +480,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMaximumHeight = function(...args) 
           
@@ -490,7 +490,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setSizeIncrement = function(...args) 
           
@@ -500,7 +500,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setBaseSize = function(...args) 
           
@@ -510,7 +510,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setFixedSize = function(...args) 
           
@@ -520,7 +520,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setFixedWidth = function(...args) 
           
@@ -530,7 +530,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setFixedHeight = function(...args) 
           
@@ -540,7 +540,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mapToGlobal = function(...args) 
           
@@ -550,7 +550,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mapFromGlobal = function(...args) 
           
@@ -560,7 +560,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mapToParent = function(...args) 
           
@@ -570,7 +570,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mapFromParent = function(...args) 
           
@@ -580,7 +580,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mapTo = function(...args) 
           
@@ -590,7 +590,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mapFrom = function(...args) 
           
@@ -600,7 +600,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.window = function(...args) 
           
@@ -610,7 +610,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.nativeParentWidget = function(...args) 
           
@@ -620,7 +620,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.topLevelWidget = function(...args) 
           
@@ -630,7 +630,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setPalette = function(...args) 
           
@@ -640,7 +640,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setBackgroundRole = function(...args) 
           
@@ -650,7 +650,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.backgroundRole = function(...args) 
           
@@ -660,7 +660,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setForegroundRole = function(...args) 
           
@@ -670,7 +670,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.foregroundRole = function(...args) 
           
@@ -680,7 +680,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setFont = function(...args) 
           
@@ -690,7 +690,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.fontInfo = function(...args) 
           
@@ -700,7 +700,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setCursor = function(...args) 
           
@@ -710,7 +710,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.unsetCursor = function(...args) 
           
@@ -720,7 +720,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMouseTracking = function(...args) 
           
@@ -730,7 +730,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.hasMouseTracking = function(...args) 
           
@@ -740,7 +740,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.underMouse = function(...args) 
           
@@ -750,7 +750,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setTabletTracking = function(...args) 
           
@@ -760,7 +760,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.hasTabletTracking = function(...args) 
           
@@ -770,7 +770,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMask = function(...args) 
           
@@ -780,7 +780,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mask = function(...args) 
           
@@ -790,7 +790,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.clearMask = function(...args) 
           
@@ -800,7 +800,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.grab = function(...args) 
           
@@ -810,7 +810,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.grabGesture = function(...args) 
           
@@ -820,7 +820,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.ungrabGesture = function(...args) 
           
@@ -830,7 +830,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowTitle = function(...args) 
           
@@ -840,7 +840,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setStyleSheet = function(...args) 
           
@@ -850,7 +850,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowIcon = function(...args) 
           
@@ -860,7 +860,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowIconText = function(...args) 
           
@@ -870,7 +870,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowRole = function(...args) 
           
@@ -880,7 +880,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.windowRole = function(...args) 
           
@@ -890,7 +890,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowFilePath = function(...args) 
           
@@ -900,7 +900,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowOpacity = function(...args) 
           
@@ -910,7 +910,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isWindowModified = function(...args) 
           
@@ -920,7 +920,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setToolTip = function(...args) 
           
@@ -930,7 +930,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setToolTipDuration = function(...args) 
           
@@ -940,7 +940,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setStatusTip = function(...args) 
           
@@ -950,7 +950,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWhatsThis = function(...args) 
           
@@ -960,7 +960,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setAccessibleName = function(...args) 
           
@@ -970,7 +970,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setAccessibleDescription = function(...args) 
           
@@ -980,7 +980,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setLayoutDirection = function(...args) 
           
@@ -990,7 +990,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.unsetLayoutDirection = function(...args) 
           
@@ -1000,7 +1000,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setLocale = function(...args) 
           
@@ -1010,7 +1010,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.unsetLocale = function(...args) 
           
@@ -1020,7 +1020,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isRightToLeft = function(...args) 
           
@@ -1030,7 +1030,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isLeftToRight = function(...args) 
           
@@ -1040,7 +1040,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.activateWindow = function(...args) 
           
@@ -1050,7 +1050,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.clearFocus = function(...args) 
           
@@ -1060,7 +1060,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setFocus = function(...args) 
           
@@ -1070,7 +1070,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setFocusPolicy = function(...args) 
           
@@ -1080,7 +1080,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.hasFocus = function(...args) 
           
@@ -1090,7 +1090,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setFocusProxy = function(...args) 
           
@@ -1100,7 +1100,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.focusProxy = function(...args) 
           
@@ -1110,7 +1110,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1120,7 +1120,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.grabMouse = function(...args) 
           
@@ -1130,7 +1130,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.releaseMouse = function(...args) 
           
@@ -1140,7 +1140,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.grabKeyboard = function(...args) 
           
@@ -1150,7 +1150,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.releaseKeyboard = function(...args) 
           
@@ -1160,7 +1160,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.grabShortcut = function(...args) 
           
@@ -1170,7 +1170,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.releaseShortcut = function(...args) 
           
@@ -1180,7 +1180,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setShortcutEnabled = function(...args) 
           
@@ -1190,7 +1190,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1200,7 +1200,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1210,7 +1210,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.update = function(...args) 
           
@@ -1220,7 +1220,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.repaint = function(...args) 
           
@@ -1230,7 +1230,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setVisible = function(...args) 
           
@@ -1240,7 +1240,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setHidden = function(...args) 
           
@@ -1250,7 +1250,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.show = function(...args) 
           
@@ -1260,7 +1260,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.hide = function(...args) 
           
@@ -1270,7 +1270,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.showMinimized = function(...args) 
           
@@ -1280,7 +1280,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.showMaximized = function(...args) 
           
@@ -1290,7 +1290,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.showFullScreen = function(...args) 
           
@@ -1300,7 +1300,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.showNormal = function(...args) 
           
@@ -1310,7 +1310,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.close = function(...args) 
           
@@ -1320,7 +1320,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.raise = function(...args) 
           
@@ -1330,7 +1330,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.lower = function(...args) 
           
@@ -1340,7 +1340,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.stackUnder = function(...args) 
           
@@ -1350,7 +1350,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.move = function(...args) 
           
@@ -1360,7 +1360,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.resize = function(...args) 
           
@@ -1370,7 +1370,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setGeometry = function(...args) 
           
@@ -1380,7 +1380,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.saveGeometry = function(...args) 
           
@@ -1390,7 +1390,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.restoreGeometry = function(...args) 
           
@@ -1400,7 +1400,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.adjustSize = function(...args) 
           
@@ -1410,7 +1410,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isVisible = function(...args) 
           
@@ -1420,7 +1420,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isVisibleTo = function(...args) 
           
@@ -1430,7 +1430,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isHidden = function(...args) 
           
@@ -1440,7 +1440,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isMinimized = function(...args) 
           
@@ -1450,7 +1450,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isMaximized = function(...args) 
           
@@ -1460,7 +1460,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isFullScreen = function(...args) 
           
@@ -1470,7 +1470,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.windowState = function(...args) 
           
@@ -1480,7 +1480,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowState = function(...args) 
           
@@ -1490,7 +1490,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.overrideWindowState = function(...args) 
           
@@ -1500,7 +1500,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setSizePolicy = function(...args) 
           
@@ -1510,7 +1510,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.heightForWidth = function(...args) 
           
@@ -1520,7 +1520,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.hasHeightForWidth = function(...args) 
           
@@ -1530,7 +1530,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.visibleRegion = function(...args) 
           
@@ -1540,7 +1540,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setContentsMargins = function(...args) 
           
@@ -1550,7 +1550,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.contentsMargins = function(...args) 
           
@@ -1560,7 +1560,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.contentsRect = function(...args) 
           
@@ -1570,7 +1570,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.layout = function(...args) 
           
@@ -1580,7 +1580,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setLayout = function(...args) 
           
@@ -1590,7 +1590,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.updateGeometry = function(...args) 
           
@@ -1600,7 +1600,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setParent = function(...args) 
           
@@ -1610,7 +1610,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.scroll = function(...args) 
           
@@ -1620,7 +1620,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.focusWidget = function(...args) 
           
@@ -1630,7 +1630,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.nextInFocusChain = function(...args) 
           
@@ -1640,7 +1640,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.previousInFocusChain = function(...args) 
           
@@ -1650,7 +1650,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setAcceptDrops = function(...args) 
           
@@ -1660,7 +1660,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.addActions = function(...args) 
           
@@ -1670,7 +1670,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.insertActions = function(...args) 
           
@@ -1680,7 +1680,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.insertAction = function(...args) 
           
@@ -1690,7 +1690,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.removeAction = function(...args) 
           
@@ -1700,7 +1700,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.actions = function(...args) 
           
@@ -1710,7 +1710,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.parentWidget = function(...args) 
           
@@ -1720,7 +1720,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowFlags = function(...args) 
           
@@ -1730,7 +1730,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.windowFlags = function(...args) 
           
@@ -1740,7 +1740,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setWindowFlag = function(...args) 
           
@@ -1750,7 +1750,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.overrideWindowFlags = function(...args) 
           
@@ -1760,7 +1760,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.windowType = function(...args) 
           
@@ -1770,7 +1770,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.childAt = function(...args) 
           
@@ -1780,7 +1780,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setAttribute = function(...args) 
           
@@ -1790,7 +1790,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.testAttribute = function(...args) 
           
@@ -1800,7 +1800,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.ensurePolished = function(...args) 
           
@@ -1810,7 +1810,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isAncestorOf = function(...args) 
           
@@ -1820,7 +1820,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setAutoFillBackground = function(...args) 
           
@@ -1830,7 +1830,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.event = function(...args) 
           
@@ -1840,7 +1840,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.wheelEvent = function(...args) 
           
@@ -1850,7 +1850,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.enterEvent = function(...args) 
           
@@ -1860,7 +1860,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.leaveEvent = function(...args) 
           
@@ -1870,7 +1870,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.moveEvent = function(...args) 
           
@@ -1880,7 +1880,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.closeEvent = function(...args) 
           
@@ -1890,7 +1890,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.tabletEvent = function(...args) 
           
@@ -1900,7 +1900,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.showEvent = function(...args) 
           
@@ -1910,7 +1910,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.hideEvent = function(...args) 
           
@@ -1920,7 +1920,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.nativeEvent = function(...args) 
           
@@ -1930,7 +1930,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.metric = function(...args) 
           
@@ -1940,7 +1940,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.initPainter = function(...args) 
           
@@ -1950,7 +1950,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.redirected = function(...args) 
           
@@ -1960,7 +1960,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.sharedPainter = function(...args) 
           
@@ -1970,7 +1970,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setInputMethodHints = function(...args) 
           
@@ -1980,7 +1980,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.updateMicroFocus = function(...args) 
           
@@ -1990,7 +1990,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.create = function(...args) 
           
@@ -2000,7 +2000,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.destroy = function(...args) 
           
@@ -2010,7 +2010,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.focusNextPrevChild = function(...args) 
           
@@ -2020,7 +2020,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.focusNextChild = function(...args) 
           
@@ -2030,7 +2030,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.focusPreviousChild = function(...args) 
           
@@ -2040,7 +2040,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setBackingStore = function(...args) 
           
@@ -2050,7 +2050,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.testAttribute_helper = function(...args) 
           
@@ -2060,7 +2060,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.takeLayout = function(...args) 
           
@@ -2070,7 +2070,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2080,7 +2080,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.qt_qwidget_data = function(...args) 
           
@@ -2090,7 +2090,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.qt_widget_private = function(...args) 
           
@@ -2100,7 +2100,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setPlaceholderText = function(...args) 
           
@@ -2110,7 +2110,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setMaxLength = function(...args) 
           
@@ -2120,7 +2120,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setMaxLength(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setFrame = function(...args) 
           
@@ -2130,7 +2130,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setFrame(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.hasFrame = function(...args) 
           
@@ -2140,7 +2140,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasFrame(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setClearButtonEnabled = function(...args) 
           
@@ -2150,7 +2150,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setClearButtonEnabled(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isClearButtonEnabled = function(...args) 
           
@@ -2160,7 +2160,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isClearButtonEnabled(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setEchoMode = function(...args) 
           
@@ -2170,7 +2170,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setEchoMode(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isReadOnly = function(...args) 
           
@@ -2180,7 +2180,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isReadOnly(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setReadOnly = function(...args) 
           
@@ -2190,7 +2190,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setReadOnly(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setValidator = function(...args) 
           
@@ -2200,7 +2200,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setValidator(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setCompleter = function(...args) 
           
@@ -2210,7 +2210,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCompleter(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.completer = function(...args) 
           
@@ -2220,7 +2220,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.completer(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setCursorPosition = function(...args) 
           
@@ -2230,7 +2230,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursorPosition(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.cursorPositionAt = function(...args) 
           
@@ -2240,7 +2240,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorPositionAt(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setAlignment = function(...args) 
           
@@ -2250,7 +2250,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setAlignment(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.cursorForward = function(...args) 
           
@@ -2260,7 +2260,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorForward(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.cursorBackward = function(...args) 
           
@@ -2270,7 +2270,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorBackward(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.cursorWordForward = function(...args) 
           
@@ -2280,7 +2280,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorWordForward(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.cursorWordBackward = function(...args) 
           
@@ -2290,7 +2290,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorWordBackward(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.backspace = function(...args) 
           
@@ -2300,7 +2300,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.backspace(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.del = function(...args) 
           
@@ -2310,7 +2310,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.del(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.home = function(...args) 
           
@@ -2320,7 +2320,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.home(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.end = function(...args) 
           
@@ -2330,7 +2330,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.end(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isModified = function(...args) 
           
@@ -2340,7 +2340,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isModified(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setModified = function(...args) 
           
@@ -2350,7 +2350,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setModified(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setSelection = function(...args) 
           
@@ -2360,7 +2360,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setSelection(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.selectionStart = function(...args) 
           
@@ -2370,7 +2370,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionStart(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.selectionEnd = function(...args) 
           
@@ -2380,7 +2380,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionEnd(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.selectionLength = function(...args) 
           
@@ -2390,7 +2390,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectionLength(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isUndoAvailable = function(...args) 
           
@@ -2400,7 +2400,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isUndoAvailable(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.isRedoAvailable = function(...args) 
           
@@ -2410,7 +2410,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.isRedoAvailable(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setDragEnabled = function(...args) 
           
@@ -2420,7 +2420,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setDragEnabled(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setCursorMoveStyle = function(...args) 
           
@@ -2430,7 +2430,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setCursorMoveStyle(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.inputMask = function(...args) 
           
@@ -2440,7 +2440,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMask(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setInputMask = function(...args) 
           
@@ -2450,7 +2450,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setInputMask(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.hasAcceptableInput = function(...args) 
           
@@ -2460,7 +2460,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.hasAcceptableInput(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setTextMargins = function(...args) 
           
@@ -2470,7 +2470,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setTextMargins(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.textMargins = function(...args) 
           
@@ -2480,7 +2480,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.textMargins(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.addAction = function(...args) 
           
@@ -2490,7 +2490,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.setText = function(...args) 
           
@@ -2500,7 +2500,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.setText(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.clear = function(...args) 
           
@@ -2510,7 +2510,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.selectAll = function(...args) 
           
@@ -2520,7 +2520,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.selectAll(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.undo = function(...args) 
           
@@ -2530,7 +2530,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.undo(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.redo = function(...args) 
           
@@ -2540,7 +2540,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.redo(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.cut = function(...args) 
           
@@ -2550,7 +2550,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cut(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.copy = function(...args) 
           
@@ -2560,7 +2560,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.paste = function(...args) 
           
@@ -2570,7 +2570,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.paste(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.deselect = function(...args) 
           
@@ -2580,7 +2580,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.deselect(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.insert = function(...args) 
           
@@ -2590,7 +2590,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.insert(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.createStandardContextMenu = function(...args) 
           
@@ -2600,7 +2600,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.createStandardContextMenu(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mousePressEvent = function(...args) 
           
@@ -2610,7 +2610,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mouseMoveEvent = function(...args) 
           
@@ -2620,7 +2620,8 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QLineEdit.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QLineEdit.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2630,7 +2631,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -2640,7 +2641,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.keyPressEvent = function(...args) 
           
@@ -2650,7 +2651,8 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.keyPressEventSuper(...args);
             
         };
-    
+        QLineEdit.prototype.keyPressEvent.__SUPER__ = true;
+        
         // function 
         QLineEdit.prototype.keyReleaseEvent = function(...args) 
           
@@ -2660,7 +2662,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.focusInEvent = function(...args) 
           
@@ -2670,7 +2672,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.focusOutEvent = function(...args) 
           
@@ -2680,7 +2682,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.paintEvent = function(...args) 
           
@@ -2690,7 +2692,8 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QLineEdit.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QLineEdit.prototype.dragEnterEvent = function(...args) 
           
@@ -2700,7 +2703,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.dragMoveEvent = function(...args) 
           
@@ -2710,7 +2713,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.dragLeaveEvent = function(...args) 
           
@@ -2720,7 +2723,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.dropEvent = function(...args) 
           
@@ -2730,7 +2733,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.changeEvent = function(...args) 
           
@@ -2740,7 +2743,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.contextMenuEvent = function(...args) 
           
@@ -2750,7 +2753,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.inputMethodEvent = function(...args) 
           
@@ -2760,7 +2763,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.initStyleOption = function(...args) 
           
@@ -2770,7 +2773,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.inputMethodQuery = function(...args) 
           
@@ -2780,7 +2783,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QLineEdit.prototype.cursorRect = function(...args) 
           
@@ -2790,7 +2793,7 @@ QLineEdit.PasswordEchoOnEdit = QLineEdit_Wrapper.PasswordEchoOnEdit;
               return this.__PROXY__.cursorRect(...args);
             
         };
-    
+        
 
       // static functions:
       

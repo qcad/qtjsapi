@@ -205,7 +205,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.openMode(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.setTextModeEnabled = function(...args) 
           
@@ -215,7 +215,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.isTextModeEnabled = function(...args) 
           
@@ -225,7 +225,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.isOpen = function(...args) 
           
@@ -235,7 +235,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.isReadable = function(...args) 
           
@@ -245,7 +245,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.isWritable = function(...args) 
           
@@ -255,7 +255,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.readChannelCount = function(...args) 
           
@@ -265,7 +265,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.readChannelCount(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.writeChannelCount = function(...args) 
           
@@ -275,7 +275,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.writeChannelCount(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.currentReadChannel = function(...args) 
           
@@ -285,7 +285,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.currentReadChannel(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.setCurrentReadChannel = function(...args) 
           
@@ -295,7 +295,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setCurrentReadChannel(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.currentWriteChannel = function(...args) 
           
@@ -305,7 +305,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.currentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.setCurrentWriteChannel = function(...args) 
           
@@ -315,7 +315,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setCurrentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.open = function(...args) 
           
@@ -325,7 +325,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.pos = function(...args) 
           
@@ -335,7 +335,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.size = function(...args) 
           
@@ -345,7 +345,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.seek = function(...args) 
           
@@ -355,7 +355,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.atEnd = function(...args) 
           
@@ -365,7 +365,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.reset = function(...args) 
           
@@ -375,7 +375,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.readAll = function(...args) 
           
@@ -385,7 +385,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.canReadLine = function(...args) 
           
@@ -395,7 +395,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.canReadLine(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.startTransaction = function(...args) 
           
@@ -405,7 +405,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.startTransaction(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.commitTransaction = function(...args) 
           
@@ -415,7 +415,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.rollbackTransaction = function(...args) 
           
@@ -425,7 +425,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.isTransactionStarted = function(...args) 
           
@@ -435,7 +435,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isTransactionStarted(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.write = function(...args) 
           
@@ -445,7 +445,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.skip = function(...args) 
           
@@ -455,7 +455,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.skip(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.ungetChar = function(...args) 
           
@@ -465,7 +465,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.ungetChar(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.putChar = function(...args) 
           
@@ -475,7 +475,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.putChar(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.errorString = function(...args) 
           
@@ -485,7 +485,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.resume = function(...args) 
           
@@ -495,7 +495,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.resume(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.bind = function(...args) 
           
@@ -505,7 +505,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.bind(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.connectToHost = function(...args) 
           
@@ -515,7 +515,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.connectToHost(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.disconnectFromHost = function(...args) 
           
@@ -525,7 +525,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.disconnectFromHost(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.isValid = function(...args) 
           
@@ -535,7 +535,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.bytesAvailable = function(...args) 
           
@@ -545,7 +545,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.bytesAvailable(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.bytesToWrite = function(...args) 
           
@@ -555,7 +555,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.bytesToWrite(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.localPort = function(...args) 
           
@@ -565,7 +565,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.localPort(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.localAddress = function(...args) 
           
@@ -575,7 +575,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.localAddress(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.peerPort = function(...args) 
           
@@ -585,7 +585,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.peerPort(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.peerAddress = function(...args) 
           
@@ -595,7 +595,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.peerAddress(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.peerName = function(...args) 
           
@@ -605,7 +605,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.peerName(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.readBufferSize = function(...args) 
           
@@ -615,7 +615,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.readBufferSize(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.setReadBufferSize = function(...args) 
           
@@ -625,7 +625,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setReadBufferSize(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.abort = function(...args) 
           
@@ -635,7 +635,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.abort(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.setSocketOption = function(...args) 
           
@@ -645,7 +645,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setSocketOption(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.socketOption = function(...args) 
           
@@ -655,7 +655,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.socketOption(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.socketType = function(...args) 
           
@@ -665,7 +665,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.socketType(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.state = function(...args) 
           
@@ -675,7 +675,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.state(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.error = function(...args) 
           
@@ -685,7 +685,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.close = function(...args) 
           
@@ -695,7 +695,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.isSequential = function(...args) 
           
@@ -705,7 +705,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.isSequential(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.flush = function(...args) 
           
@@ -715,7 +715,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.flush(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.waitForConnected = function(...args) 
           
@@ -725,7 +725,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.waitForConnected(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.waitForReadyRead = function(...args) 
           
@@ -735,7 +735,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.waitForReadyRead(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.waitForBytesWritten = function(...args) 
           
@@ -745,7 +745,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.waitForBytesWritten(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.waitForDisconnected = function(...args) 
           
@@ -755,7 +755,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.waitForDisconnected(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.setProxy = function(...args) 
           
@@ -765,7 +765,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setProxy(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.proxy = function(...args) 
           
@@ -775,7 +775,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.proxy(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.protocolTag = function(...args) 
           
@@ -785,7 +785,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.protocolTag(...args);
             
         };
-    
+        
         // function 
         QAbstractSocket.prototype.setProtocolTag = function(...args) 
           
@@ -795,7 +795,7 @@ QAbstractSocket.PauseOnSslErrors = QAbstractSocket_Wrapper.PauseOnSslErrors;
               return this.__PROXY__.setProtocolTag(...args);
             
         };
-    
+        
 
       // static functions:
       

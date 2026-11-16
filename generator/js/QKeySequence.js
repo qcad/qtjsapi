@@ -325,7 +325,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.count(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.isEmpty = function(...args) 
           
@@ -335,7 +335,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.isEmpty(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.fromString = function(...args) 
           
@@ -345,7 +345,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.fromString(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.listFromString = function(...args) 
           
@@ -355,7 +355,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.listFromString(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.listToString = function(...args) 
           
@@ -365,7 +365,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.listToString(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.matches = function(...args) 
           
@@ -375,7 +375,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.matches(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.mnemonic = function(...args) 
           
@@ -385,7 +385,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.mnemonic(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.keyBindings = function(...args) 
           
@@ -395,7 +395,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.keyBindings(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.swap = function(...args) 
           
@@ -405,7 +405,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.isDetached = function(...args) 
           
@@ -415,7 +415,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.decodeString = function(...args) 
           
@@ -425,7 +425,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.decodeString(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.encodeString = function(...args) 
           
@@ -435,7 +435,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.encodeString(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.assign = function(...args) 
           
@@ -445,7 +445,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.assign(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.setKey = function(...args) 
           
@@ -455,7 +455,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.setKey(...args);
             
         };
-    
+        
         // function 
         QKeySequence.prototype.operator = function(...args) 
           
@@ -465,7 +465,7 @@ QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
               return this.__PROXY__.operator(...args);
             
         };
-    
+        
 
       // static functions:
       

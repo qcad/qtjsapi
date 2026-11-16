@@ -212,7 +212,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.p1 = function(...args) 
           
@@ -222,7 +222,7 @@
               return this.__PROXY__.p1(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.p2 = function(...args) 
           
@@ -232,7 +232,7 @@
               return this.__PROXY__.p2(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.x1 = function(...args) 
           
@@ -242,7 +242,7 @@
               return this.__PROXY__.x1(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.y1 = function(...args) 
           
@@ -252,7 +252,7 @@
               return this.__PROXY__.y1(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.x2 = function(...args) 
           
@@ -262,7 +262,7 @@
               return this.__PROXY__.x2(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.y2 = function(...args) 
           
@@ -272,7 +272,7 @@
               return this.__PROXY__.y2(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.dx = function(...args) 
           
@@ -282,7 +282,7 @@
               return this.__PROXY__.dx(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.dy = function(...args) 
           
@@ -292,7 +292,7 @@
               return this.__PROXY__.dy(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.translate = function(...args) 
           
@@ -302,7 +302,7 @@
               return this.__PROXY__.translate(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.translated = function(...args) 
           
@@ -312,7 +312,7 @@
               return this.__PROXY__.translated(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.center = function(...args) 
           
@@ -322,7 +322,7 @@
               return this.__PROXY__.center(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.setP1 = function(...args) 
           
@@ -332,7 +332,7 @@
               return this.__PROXY__.setP1(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.setP2 = function(...args) 
           
@@ -342,7 +342,7 @@
               return this.__PROXY__.setP2(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.setPoints = function(...args) 
           
@@ -352,7 +352,7 @@
               return this.__PROXY__.setPoints(...args);
             
         };
-    
+        
         // function 
         QLine.prototype.setLine = function(...args) 
           
@@ -362,7 +362,7 @@
               return this.__PROXY__.setLine(...args);
             
         };
-    
+        
 
       // static functions:
       QLine.prototype.isNullWrapper = function() {

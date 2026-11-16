@@ -320,7 +320,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.spontaneous = function(...args) 
           
@@ -330,7 +330,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.setAccepted = function(...args) 
           
@@ -340,7 +340,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.isAccepted = function(...args) 
           
@@ -350,7 +350,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.isInputEvent = function(...args) 
           
@@ -360,7 +360,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.isPointerEvent = function(...args) 
           
@@ -370,7 +370,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -380,7 +380,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.setSpontaneous = function(...args) 
           
@@ -390,7 +390,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.position = function(...args) 
           
@@ -400,7 +400,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.buttons = function(...args) 
           
@@ -410,7 +410,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.buttons(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.modifiers = function(...args) 
           
@@ -420,7 +420,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.modifiers(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.acceptProposedAction = function(...args) 
           
@@ -430,7 +430,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.acceptProposedAction(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.setDropAction = function(...args) 
           
@@ -440,7 +440,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.setDropAction(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.source = function(...args) 
           
@@ -450,7 +450,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.source(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.mimeData = function(...args) 
           
@@ -460,7 +460,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.mimeData(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.clone = function(...args) 
           
@@ -470,7 +470,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.answerRect = function(...args) 
           
@@ -480,7 +480,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.answerRect(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.accept = function(...args) 
           
@@ -490,7 +490,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QDragEnterEvent.prototype.ignore = function(...args) 
           
@@ -500,7 +500,7 @@ QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
 
       // static functions:
       QDragEnterEvent.prototype.isNullWrapper = function() {

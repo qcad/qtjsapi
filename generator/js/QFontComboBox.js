@@ -168,7 +168,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isWidgetType = function(...args) 
           
@@ -178,7 +178,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isWindowType = function(...args) 
           
@@ -188,7 +188,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.signalsBlocked = function(...args) 
           
@@ -198,7 +198,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.blockSignals = function(...args) 
           
@@ -208,7 +208,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.findChild = function(...args) 
           
@@ -218,7 +218,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.children = function(...args) 
           
@@ -228,7 +228,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.installEventFilter = function(...args) 
           
@@ -238,7 +238,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.removeEventFilter = function(...args) 
           
@@ -248,7 +248,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.dumpObjectTree = function(...args) 
           
@@ -258,7 +258,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.dumpObjectInfo = function(...args) 
           
@@ -268,7 +268,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setProperty = function(...args) 
           
@@ -278,7 +278,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.property = function(...args) 
           
@@ -288,7 +288,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.dynamicPropertyNames = function(...args) 
           
@@ -298,7 +298,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.parent = function(...args) 
           
@@ -308,7 +308,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.deleteLater = function(...args) 
           
@@ -318,7 +318,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.devType = function(...args) 
           
@@ -328,7 +328,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.createWinId = function(...args) 
           
@@ -338,7 +338,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isWindow = function(...args) 
           
@@ -348,7 +348,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isModal = function(...args) 
           
@@ -358,7 +358,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowModality = function(...args) 
           
@@ -368,7 +368,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isEnabled = function(...args) 
           
@@ -378,7 +378,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isEnabledTo = function(...args) 
           
@@ -388,7 +388,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setEnabled = function(...args) 
           
@@ -398,7 +398,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setDisabled = function(...args) 
           
@@ -408,7 +408,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowModified = function(...args) 
           
@@ -418,7 +418,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMinimumSize = function(...args) 
           
@@ -428,7 +428,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMaximumSize = function(...args) 
           
@@ -438,7 +438,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMinimumWidth = function(...args) 
           
@@ -448,7 +448,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMinimumHeight = function(...args) 
           
@@ -458,7 +458,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMaximumWidth = function(...args) 
           
@@ -468,7 +468,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMaximumHeight = function(...args) 
           
@@ -478,7 +478,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setSizeIncrement = function(...args) 
           
@@ -488,7 +488,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setBaseSize = function(...args) 
           
@@ -498,7 +498,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFixedSize = function(...args) 
           
@@ -508,7 +508,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFixedWidth = function(...args) 
           
@@ -518,7 +518,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFixedHeight = function(...args) 
           
@@ -528,7 +528,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mapToGlobal = function(...args) 
           
@@ -538,7 +538,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mapFromGlobal = function(...args) 
           
@@ -548,7 +548,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mapToParent = function(...args) 
           
@@ -558,7 +558,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mapFromParent = function(...args) 
           
@@ -568,7 +568,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mapTo = function(...args) 
           
@@ -578,7 +578,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mapFrom = function(...args) 
           
@@ -588,7 +588,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.window = function(...args) 
           
@@ -598,7 +598,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.nativeParentWidget = function(...args) 
           
@@ -608,7 +608,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.topLevelWidget = function(...args) 
           
@@ -618,7 +618,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setPalette = function(...args) 
           
@@ -628,7 +628,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setBackgroundRole = function(...args) 
           
@@ -638,7 +638,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.backgroundRole = function(...args) 
           
@@ -648,7 +648,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setForegroundRole = function(...args) 
           
@@ -658,7 +658,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.foregroundRole = function(...args) 
           
@@ -668,7 +668,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFont = function(...args) 
           
@@ -678,7 +678,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.fontInfo = function(...args) 
           
@@ -688,7 +688,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setCursor = function(...args) 
           
@@ -698,7 +698,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.unsetCursor = function(...args) 
           
@@ -708,7 +708,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMouseTracking = function(...args) 
           
@@ -718,7 +718,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.hasMouseTracking = function(...args) 
           
@@ -728,7 +728,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.underMouse = function(...args) 
           
@@ -738,7 +738,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setTabletTracking = function(...args) 
           
@@ -748,7 +748,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.hasTabletTracking = function(...args) 
           
@@ -758,7 +758,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMask = function(...args) 
           
@@ -768,7 +768,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mask = function(...args) 
           
@@ -778,7 +778,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.clearMask = function(...args) 
           
@@ -788,7 +788,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.grab = function(...args) 
           
@@ -798,7 +798,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.grabGesture = function(...args) 
           
@@ -808,7 +808,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.ungrabGesture = function(...args) 
           
@@ -818,7 +818,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowTitle = function(...args) 
           
@@ -828,7 +828,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setStyleSheet = function(...args) 
           
@@ -838,7 +838,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowIcon = function(...args) 
           
@@ -848,7 +848,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowIconText = function(...args) 
           
@@ -858,7 +858,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowRole = function(...args) 
           
@@ -868,7 +868,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.windowRole = function(...args) 
           
@@ -878,7 +878,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowFilePath = function(...args) 
           
@@ -888,7 +888,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowOpacity = function(...args) 
           
@@ -898,7 +898,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isWindowModified = function(...args) 
           
@@ -908,7 +908,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setToolTip = function(...args) 
           
@@ -918,7 +918,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setToolTipDuration = function(...args) 
           
@@ -928,7 +928,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setStatusTip = function(...args) 
           
@@ -938,7 +938,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWhatsThis = function(...args) 
           
@@ -948,7 +948,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setAccessibleName = function(...args) 
           
@@ -958,7 +958,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setAccessibleDescription = function(...args) 
           
@@ -968,7 +968,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setLayoutDirection = function(...args) 
           
@@ -978,7 +978,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.unsetLayoutDirection = function(...args) 
           
@@ -988,7 +988,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setLocale = function(...args) 
           
@@ -998,7 +998,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.unsetLocale = function(...args) 
           
@@ -1008,7 +1008,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isRightToLeft = function(...args) 
           
@@ -1018,7 +1018,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isLeftToRight = function(...args) 
           
@@ -1028,7 +1028,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.activateWindow = function(...args) 
           
@@ -1038,7 +1038,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.clearFocus = function(...args) 
           
@@ -1048,7 +1048,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFocus = function(...args) 
           
@@ -1058,7 +1058,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFocusPolicy = function(...args) 
           
@@ -1068,7 +1068,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.hasFocus = function(...args) 
           
@@ -1078,7 +1078,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFocusProxy = function(...args) 
           
@@ -1088,7 +1088,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.focusProxy = function(...args) 
           
@@ -1098,7 +1098,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1108,7 +1108,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.grabMouse = function(...args) 
           
@@ -1118,7 +1118,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.releaseMouse = function(...args) 
           
@@ -1128,7 +1128,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.grabKeyboard = function(...args) 
           
@@ -1138,7 +1138,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.releaseKeyboard = function(...args) 
           
@@ -1148,7 +1148,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.grabShortcut = function(...args) 
           
@@ -1158,7 +1158,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.releaseShortcut = function(...args) 
           
@@ -1168,7 +1168,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setShortcutEnabled = function(...args) 
           
@@ -1178,7 +1178,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1188,7 +1188,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1198,7 +1198,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.update = function(...args) 
           
@@ -1208,7 +1208,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.repaint = function(...args) 
           
@@ -1218,7 +1218,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setVisible = function(...args) 
           
@@ -1228,7 +1228,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setHidden = function(...args) 
           
@@ -1238,7 +1238,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.show = function(...args) 
           
@@ -1248,7 +1248,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.hide = function(...args) 
           
@@ -1258,7 +1258,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.showMinimized = function(...args) 
           
@@ -1268,7 +1268,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.showMaximized = function(...args) 
           
@@ -1278,7 +1278,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.showFullScreen = function(...args) 
           
@@ -1288,7 +1288,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.showNormal = function(...args) 
           
@@ -1298,7 +1298,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.close = function(...args) 
           
@@ -1308,7 +1308,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.raise = function(...args) 
           
@@ -1318,7 +1318,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.lower = function(...args) 
           
@@ -1328,7 +1328,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.stackUnder = function(...args) 
           
@@ -1338,7 +1338,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.move = function(...args) 
           
@@ -1348,7 +1348,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.resize = function(...args) 
           
@@ -1358,7 +1358,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setGeometry = function(...args) 
           
@@ -1368,7 +1368,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.saveGeometry = function(...args) 
           
@@ -1378,7 +1378,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.restoreGeometry = function(...args) 
           
@@ -1388,7 +1388,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.adjustSize = function(...args) 
           
@@ -1398,7 +1398,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isVisible = function(...args) 
           
@@ -1408,7 +1408,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isVisibleTo = function(...args) 
           
@@ -1418,7 +1418,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isHidden = function(...args) 
           
@@ -1428,7 +1428,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isMinimized = function(...args) 
           
@@ -1438,7 +1438,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isMaximized = function(...args) 
           
@@ -1448,7 +1448,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isFullScreen = function(...args) 
           
@@ -1458,7 +1458,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.windowState = function(...args) 
           
@@ -1468,7 +1468,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowState = function(...args) 
           
@@ -1478,7 +1478,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.overrideWindowState = function(...args) 
           
@@ -1488,7 +1488,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setSizePolicy = function(...args) 
           
@@ -1498,7 +1498,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.heightForWidth = function(...args) 
           
@@ -1508,7 +1508,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.hasHeightForWidth = function(...args) 
           
@@ -1518,7 +1518,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.visibleRegion = function(...args) 
           
@@ -1528,7 +1528,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setContentsMargins = function(...args) 
           
@@ -1538,7 +1538,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.contentsMargins = function(...args) 
           
@@ -1548,7 +1548,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.contentsRect = function(...args) 
           
@@ -1558,7 +1558,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.layout = function(...args) 
           
@@ -1568,7 +1568,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setLayout = function(...args) 
           
@@ -1578,7 +1578,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.updateGeometry = function(...args) 
           
@@ -1588,7 +1588,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setParent = function(...args) 
           
@@ -1598,7 +1598,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.scroll = function(...args) 
           
@@ -1608,7 +1608,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.focusWidget = function(...args) 
           
@@ -1618,7 +1618,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.nextInFocusChain = function(...args) 
           
@@ -1628,7 +1628,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.previousInFocusChain = function(...args) 
           
@@ -1638,7 +1638,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setAcceptDrops = function(...args) 
           
@@ -1648,7 +1648,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.addAction = function(...args) 
           
@@ -1658,7 +1658,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.addActions = function(...args) 
           
@@ -1668,7 +1668,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.insertActions = function(...args) 
           
@@ -1678,7 +1678,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.insertAction = function(...args) 
           
@@ -1688,7 +1688,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.removeAction = function(...args) 
           
@@ -1698,7 +1698,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.actions = function(...args) 
           
@@ -1708,7 +1708,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.parentWidget = function(...args) 
           
@@ -1718,7 +1718,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowFlags = function(...args) 
           
@@ -1728,7 +1728,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.windowFlags = function(...args) 
           
@@ -1738,7 +1738,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWindowFlag = function(...args) 
           
@@ -1748,7 +1748,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.overrideWindowFlags = function(...args) 
           
@@ -1758,7 +1758,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.windowType = function(...args) 
           
@@ -1768,7 +1768,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.childAt = function(...args) 
           
@@ -1778,7 +1778,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setAttribute = function(...args) 
           
@@ -1788,7 +1788,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.testAttribute = function(...args) 
           
@@ -1798,7 +1798,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.ensurePolished = function(...args) 
           
@@ -1808,7 +1808,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isAncestorOf = function(...args) 
           
@@ -1818,7 +1818,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setAutoFillBackground = function(...args) 
           
@@ -1828,7 +1828,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.event = function(...args) 
           
@@ -1838,7 +1838,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1848,7 +1848,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.enterEvent = function(...args) 
           
@@ -1858,7 +1858,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.leaveEvent = function(...args) 
           
@@ -1868,7 +1868,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.moveEvent = function(...args) 
           
@@ -1878,7 +1878,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.closeEvent = function(...args) 
           
@@ -1888,7 +1888,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.tabletEvent = function(...args) 
           
@@ -1898,7 +1898,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.dragEnterEvent = function(...args) 
           
@@ -1908,7 +1908,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.dragMoveEvent = function(...args) 
           
@@ -1918,7 +1918,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.dragLeaveEvent = function(...args) 
           
@@ -1928,7 +1928,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.dropEvent = function(...args) 
           
@@ -1938,7 +1938,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.nativeEvent = function(...args) 
           
@@ -1948,7 +1948,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.metric = function(...args) 
           
@@ -1958,7 +1958,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.initPainter = function(...args) 
           
@@ -1968,7 +1968,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.redirected = function(...args) 
           
@@ -1978,7 +1978,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.sharedPainter = function(...args) 
           
@@ -1988,7 +1988,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setInputMethodHints = function(...args) 
           
@@ -1998,7 +1998,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.updateMicroFocus = function(...args) 
           
@@ -2008,7 +2008,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.create = function(...args) 
           
@@ -2018,7 +2018,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.destroy = function(...args) 
           
@@ -2028,7 +2028,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.focusNextPrevChild = function(...args) 
           
@@ -2038,7 +2038,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.focusNextChild = function(...args) 
           
@@ -2048,7 +2048,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.focusPreviousChild = function(...args) 
           
@@ -2058,7 +2058,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setBackingStore = function(...args) 
           
@@ -2068,7 +2068,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.testAttribute_helper = function(...args) 
           
@@ -2078,7 +2078,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.takeLayout = function(...args) 
           
@@ -2088,7 +2088,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2098,7 +2098,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.qt_qwidget_data = function(...args) 
           
@@ -2108,7 +2108,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.qt_widget_private = function(...args) 
           
@@ -2118,7 +2118,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMaxVisibleItems = function(...args) 
           
@@ -2128,7 +2128,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMaxVisibleItems(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMaxCount = function(...args) 
           
@@ -2138,7 +2138,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMaxCount(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setDuplicatesEnabled = function(...args) 
           
@@ -2148,7 +2148,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setDuplicatesEnabled(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFrame = function(...args) 
           
@@ -2158,7 +2158,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFrame(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.hasFrame = function(...args) 
           
@@ -2168,7 +2168,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.hasFrame(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.findText = function(...args) 
           
@@ -2178,7 +2178,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.findText(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.findData = function(...args) 
           
@@ -2188,7 +2188,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.findData(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setInsertPolicy = function(...args) 
           
@@ -2198,7 +2198,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setInsertPolicy(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setSizeAdjustPolicy = function(...args) 
           
@@ -2208,7 +2208,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setSizeAdjustPolicy(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setMinimumContentsLength = function(...args) 
           
@@ -2218,7 +2218,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setMinimumContentsLength(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setIconSize = function(...args) 
           
@@ -2228,7 +2228,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setIconSize(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setPlaceholderText = function(...args) 
           
@@ -2238,7 +2238,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setPlaceholderText(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.isEditable = function(...args) 
           
@@ -2248,7 +2248,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.isEditable(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setEditable = function(...args) 
           
@@ -2258,7 +2258,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setEditable(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setLineEdit = function(...args) 
           
@@ -2268,7 +2268,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setLineEdit(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.lineEdit = function(...args) 
           
@@ -2278,7 +2278,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.lineEdit(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setValidator = function(...args) 
           
@@ -2288,7 +2288,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setValidator(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setCompleter = function(...args) 
           
@@ -2298,7 +2298,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setCompleter(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.completer = function(...args) 
           
@@ -2308,7 +2308,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.completer(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.model = function(...args) 
           
@@ -2318,7 +2318,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.model(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setModelColumn = function(...args) 
           
@@ -2328,7 +2328,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setModelColumn(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.itemText = function(...args) 
           
@@ -2338,7 +2338,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.itemText(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.itemIcon = function(...args) 
           
@@ -2348,7 +2348,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.itemIcon(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.itemData = function(...args) 
           
@@ -2358,7 +2358,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.itemData(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.addItem = function(...args) 
           
@@ -2368,7 +2368,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.addItem(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.addItems = function(...args) 
           
@@ -2378,7 +2378,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.addItems(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.insertItem = function(...args) 
           
@@ -2388,7 +2388,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.insertItem(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.insertItems = function(...args) 
           
@@ -2398,7 +2398,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.insertItems(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.insertSeparator = function(...args) 
           
@@ -2408,7 +2408,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.insertSeparator(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.removeItem = function(...args) 
           
@@ -2418,7 +2418,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.removeItem(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setItemText = function(...args) 
           
@@ -2428,7 +2428,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setItemText(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setItemIcon = function(...args) 
           
@@ -2438,7 +2438,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setItemIcon(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setItemData = function(...args) 
           
@@ -2448,7 +2448,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setItemData(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.view = function(...args) 
           
@@ -2458,7 +2458,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.view(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.showPopup = function(...args) 
           
@@ -2468,7 +2468,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.showPopup(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.hidePopup = function(...args) 
           
@@ -2478,7 +2478,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.hidePopup(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.inputMethodQuery = function(...args) 
           
@@ -2488,7 +2488,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.clear = function(...args) 
           
@@ -2498,7 +2498,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.clear(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.clearEditText = function(...args) 
           
@@ -2508,7 +2508,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.clearEditText(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setEditText = function(...args) 
           
@@ -2518,7 +2518,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setEditText(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setCurrentIndex = function(...args) 
           
@@ -2528,7 +2528,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setCurrentText = function(...args) 
           
@@ -2538,7 +2538,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setCurrentText(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.focusInEvent = function(...args) 
           
@@ -2548,7 +2548,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.focusOutEvent = function(...args) 
           
@@ -2558,7 +2558,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.changeEvent = function(...args) 
           
@@ -2568,7 +2568,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.showEvent = function(...args) 
           
@@ -2578,7 +2578,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.hideEvent = function(...args) 
           
@@ -2588,7 +2588,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mousePressEvent = function(...args) 
           
@@ -2598,7 +2598,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mousePressEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.mouseReleaseEvent = function(...args) 
           
@@ -2608,7 +2608,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.mouseReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.keyPressEvent = function(...args) 
           
@@ -2618,7 +2618,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.keyReleaseEvent = function(...args) 
           
@@ -2628,7 +2628,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.wheelEvent = function(...args) 
           
@@ -2638,7 +2638,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.contextMenuEvent = function(...args) 
           
@@ -2648,7 +2648,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.contextMenuEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.inputMethodEvent = function(...args) 
           
@@ -2658,7 +2658,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.initStyleOption = function(...args) 
           
@@ -2668,7 +2668,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setWritingSystem = function(...args) 
           
@@ -2678,7 +2678,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setWritingSystem(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.writingSystem = function(...args) 
           
@@ -2688,7 +2688,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.writingSystem(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setFontFilters = function(...args) 
           
@@ -2698,7 +2698,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setFontFilters(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.fontFilters = function(...args) 
           
@@ -2708,7 +2708,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.fontFilters(...args);
             
         };
-    
+        
         // function 
         QFontComboBox.prototype.setCurrentFont = function(...args) 
           
@@ -2718,7 +2718,7 @@ QFontComboBox.ProportionalFonts = QFontComboBox_Wrapper.ProportionalFonts;
               return this.__PROXY__.setCurrentFont(...args);
             
         };
-    
+        
 
       // static functions:
       

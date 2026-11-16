@@ -120,7 +120,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.isWidgetType = function(...args) 
           
@@ -130,7 +130,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.isWindowType = function(...args) 
           
@@ -140,7 +140,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.signalsBlocked = function(...args) 
           
@@ -150,7 +150,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.blockSignals = function(...args) 
           
@@ -160,7 +160,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.findChild = function(...args) 
           
@@ -170,7 +170,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.children = function(...args) 
           
@@ -180,7 +180,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.setParent = function(...args) 
           
@@ -190,7 +190,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.installEventFilter = function(...args) 
           
@@ -200,7 +200,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.removeEventFilter = function(...args) 
           
@@ -210,7 +210,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.dumpObjectTree = function(...args) 
           
@@ -220,7 +220,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.dumpObjectInfo = function(...args) 
           
@@ -230,7 +230,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.setProperty = function(...args) 
           
@@ -240,7 +240,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.property = function(...args) 
           
@@ -250,7 +250,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.dynamicPropertyNames = function(...args) 
           
@@ -260,7 +260,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.parent = function(...args) 
           
@@ -270,7 +270,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.deleteLater = function(...args) 
           
@@ -280,7 +280,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.boundingRectFor = function(...args) 
           
@@ -290,7 +290,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.boundingRectFor(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.boundingRect = function(...args) 
           
@@ -300,7 +300,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.isEnabled = function(...args) 
           
@@ -310,7 +310,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.setEnabled = function(...args) 
           
@@ -320,7 +320,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QGraphicsEffect.prototype.update = function(...args) 
           
@@ -330,7 +330,7 @@ QGraphicsEffect.PadToEffectiveBoundingRect = QGraphicsEffect_Wrapper.PadToEffect
               return this.__PROXY__.update(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -125,7 +125,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.isWidgetType = function(...args) 
           
@@ -135,7 +135,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.isWindowType = function(...args) 
           
@@ -145,7 +145,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.signalsBlocked = function(...args) 
           
@@ -155,7 +155,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.blockSignals = function(...args) 
           
@@ -165,7 +165,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.findChild = function(...args) 
           
@@ -175,7 +175,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.children = function(...args) 
           
@@ -185,7 +185,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.setParent = function(...args) 
           
@@ -195,7 +195,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.installEventFilter = function(...args) 
           
@@ -205,7 +205,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.removeEventFilter = function(...args) 
           
@@ -215,7 +215,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.dumpObjectTree = function(...args) 
           
@@ -225,7 +225,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.dumpObjectInfo = function(...args) 
           
@@ -235,7 +235,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.setProperty = function(...args) 
           
@@ -245,7 +245,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.property = function(...args) 
           
@@ -255,7 +255,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.dynamicPropertyNames = function(...args) 
           
@@ -265,7 +265,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.parent = function(...args) 
           
@@ -275,7 +275,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.deleteLater = function(...args) 
           
@@ -285,7 +285,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.openMode = function(...args) 
           
@@ -295,7 +295,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.openMode(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.setTextModeEnabled = function(...args) 
           
@@ -305,7 +305,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.isTextModeEnabled = function(...args) 
           
@@ -315,7 +315,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.isOpen = function(...args) 
           
@@ -325,7 +325,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.isReadable = function(...args) 
           
@@ -335,7 +335,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.isWritable = function(...args) 
           
@@ -345,7 +345,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.isSequential = function(...args) 
           
@@ -355,7 +355,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isSequential(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.readChannelCount = function(...args) 
           
@@ -365,7 +365,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.readChannelCount(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.writeChannelCount = function(...args) 
           
@@ -375,7 +375,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.writeChannelCount(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.currentReadChannel = function(...args) 
           
@@ -385,7 +385,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.currentReadChannel(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.setCurrentReadChannel = function(...args) 
           
@@ -395,7 +395,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setCurrentReadChannel(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.currentWriteChannel = function(...args) 
           
@@ -405,7 +405,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.currentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.setCurrentWriteChannel = function(...args) 
           
@@ -415,7 +415,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.setCurrentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.open = function(...args) 
           
@@ -425,7 +425,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.close = function(...args) 
           
@@ -435,7 +435,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.pos = function(...args) 
           
@@ -445,7 +445,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.size = function(...args) 
           
@@ -455,7 +455,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.seek = function(...args) 
           
@@ -465,7 +465,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.atEnd = function(...args) 
           
@@ -475,7 +475,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.reset = function(...args) 
           
@@ -485,7 +485,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.bytesAvailable = function(...args) 
           
@@ -495,7 +495,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.bytesAvailable(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.bytesToWrite = function(...args) 
           
@@ -505,7 +505,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.bytesToWrite(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.readAll = function(...args) 
           
@@ -515,7 +515,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.canReadLine = function(...args) 
           
@@ -525,7 +525,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.canReadLine(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.startTransaction = function(...args) 
           
@@ -535,7 +535,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.startTransaction(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.commitTransaction = function(...args) 
           
@@ -545,7 +545,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.rollbackTransaction = function(...args) 
           
@@ -555,7 +555,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.isTransactionStarted = function(...args) 
           
@@ -565,7 +565,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.isTransactionStarted(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.write = function(...args) 
           
@@ -575,7 +575,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.skip = function(...args) 
           
@@ -585,7 +585,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.skip(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.waitForReadyRead = function(...args) 
           
@@ -595,7 +595,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.waitForReadyRead(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.waitForBytesWritten = function(...args) 
           
@@ -605,7 +605,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.waitForBytesWritten(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.ungetChar = function(...args) 
           
@@ -615,7 +615,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.ungetChar(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.putChar = function(...args) 
           
@@ -625,7 +625,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.putChar(...args);
             
         };
-    
+        
         // function 
         QIODevice.prototype.errorString = function(...args) 
           
@@ -635,7 +635,7 @@ QIODevice.ExistingOnly = QIODevice_Wrapper.ExistingOnly;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
 
       // static functions:
       

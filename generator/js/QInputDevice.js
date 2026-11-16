@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QInputDevice.prototype.seatNames = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.seatNames(...args);
             
         };
-    
+        
 
       // static functions:
       

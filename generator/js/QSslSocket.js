@@ -190,7 +190,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.openMode(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setTextModeEnabled = function(...args) 
           
@@ -200,7 +200,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.isTextModeEnabled = function(...args) 
           
@@ -210,7 +210,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.isTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.isOpen = function(...args) 
           
@@ -220,7 +220,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.isReadable = function(...args) 
           
@@ -230,7 +230,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.isWritable = function(...args) 
           
@@ -240,7 +240,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.readChannelCount = function(...args) 
           
@@ -250,7 +250,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.readChannelCount(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.writeChannelCount = function(...args) 
           
@@ -260,7 +260,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.writeChannelCount(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.currentReadChannel = function(...args) 
           
@@ -270,7 +270,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.currentReadChannel(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setCurrentReadChannel = function(...args) 
           
@@ -280,7 +280,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setCurrentReadChannel(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.currentWriteChannel = function(...args) 
           
@@ -290,7 +290,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.currentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setCurrentWriteChannel = function(...args) 
           
@@ -300,7 +300,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setCurrentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.open = function(...args) 
           
@@ -310,7 +310,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.pos = function(...args) 
           
@@ -320,7 +320,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.size = function(...args) 
           
@@ -330,7 +330,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.seek = function(...args) 
           
@@ -340,7 +340,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.reset = function(...args) 
           
@@ -350,7 +350,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.readAll = function(...args) 
           
@@ -360,7 +360,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.startTransaction = function(...args) 
           
@@ -370,7 +370,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.startTransaction(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.commitTransaction = function(...args) 
           
@@ -380,7 +380,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.rollbackTransaction = function(...args) 
           
@@ -390,7 +390,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.isTransactionStarted = function(...args) 
           
@@ -400,7 +400,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.isTransactionStarted(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.write = function(...args) 
           
@@ -410,7 +410,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.skip = function(...args) 
           
@@ -420,7 +420,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.skip(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.ungetChar = function(...args) 
           
@@ -430,7 +430,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.ungetChar(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.putChar = function(...args) 
           
@@ -440,7 +440,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.putChar(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.errorString = function(...args) 
           
@@ -450,7 +450,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.bind = function(...args) 
           
@@ -460,7 +460,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.bind(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.isValid = function(...args) 
           
@@ -470,7 +470,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.isValid(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.localPort = function(...args) 
           
@@ -480,7 +480,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.localPort(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.localAddress = function(...args) 
           
@@ -490,7 +490,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.localAddress(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.peerPort = function(...args) 
           
@@ -500,7 +500,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.peerPort(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.peerAddress = function(...args) 
           
@@ -510,7 +510,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.peerAddress(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.peerName = function(...args) 
           
@@ -520,7 +520,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.peerName(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.readBufferSize = function(...args) 
           
@@ -530,7 +530,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.readBufferSize(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.abort = function(...args) 
           
@@ -540,7 +540,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.abort(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.socketType = function(...args) 
           
@@ -550,7 +550,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.socketType(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.state = function(...args) 
           
@@ -560,7 +560,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.state(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.error = function(...args) 
           
@@ -570,7 +570,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.isSequential = function(...args) 
           
@@ -580,7 +580,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.isSequential(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.flush = function(...args) 
           
@@ -590,7 +590,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.flush(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setProxy = function(...args) 
           
@@ -600,7 +600,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setProxy(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.proxy = function(...args) 
           
@@ -610,7 +610,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.proxy(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.protocolTag = function(...args) 
           
@@ -620,7 +620,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.protocolTag(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setProtocolTag = function(...args) 
           
@@ -630,7 +630,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setProtocolTag(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.resume = function(...args) 
           
@@ -640,7 +640,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.resume(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.connectToHostEncrypted = function(...args) 
           
@@ -650,7 +650,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.connectToHostEncrypted(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setSocketDescriptor = function(...args) 
           
@@ -660,7 +660,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setSocketDescriptor(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.connectToHost = function(...args) 
           
@@ -670,7 +670,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.connectToHost(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.disconnectFromHost = function(...args) 
           
@@ -680,7 +680,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.disconnectFromHost(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setSocketOption = function(...args) 
           
@@ -690,7 +690,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setSocketOption(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.socketOption = function(...args) 
           
@@ -700,7 +700,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.socketOption(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.mode = function(...args) 
           
@@ -710,7 +710,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.mode(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.isEncrypted = function(...args) 
           
@@ -720,7 +720,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.isEncrypted(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.protocol = function(...args) 
           
@@ -730,7 +730,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.protocol(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setProtocol = function(...args) 
           
@@ -740,7 +740,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setProtocol(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.peerVerifyMode = function(...args) 
           
@@ -750,7 +750,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.peerVerifyMode(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setPeerVerifyMode = function(...args) 
           
@@ -760,7 +760,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setPeerVerifyMode(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.peerVerifyDepth = function(...args) 
           
@@ -770,7 +770,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.peerVerifyDepth(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setPeerVerifyDepth = function(...args) 
           
@@ -780,7 +780,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setPeerVerifyDepth(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.peerVerifyName = function(...args) 
           
@@ -790,7 +790,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.peerVerifyName(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setPeerVerifyName = function(...args) 
           
@@ -800,7 +800,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setPeerVerifyName(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.bytesAvailable = function(...args) 
           
@@ -810,7 +810,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.bytesAvailable(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.bytesToWrite = function(...args) 
           
@@ -820,7 +820,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.bytesToWrite(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.canReadLine = function(...args) 
           
@@ -830,7 +830,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.canReadLine(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.close = function(...args) 
           
@@ -840,7 +840,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.atEnd = function(...args) 
           
@@ -850,7 +850,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setReadBufferSize = function(...args) 
           
@@ -860,7 +860,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setReadBufferSize(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.encryptedBytesAvailable = function(...args) 
           
@@ -870,7 +870,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.encryptedBytesAvailable(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.encryptedBytesToWrite = function(...args) 
           
@@ -880,7 +880,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.encryptedBytesToWrite(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.sslConfiguration = function(...args) 
           
@@ -890,7 +890,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.sslConfiguration(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setSslConfiguration = function(...args) 
           
@@ -900,7 +900,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setSslConfiguration(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setLocalCertificateChain = function(...args) 
           
@@ -910,7 +910,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setLocalCertificateChain(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.localCertificateChain = function(...args) 
           
@@ -920,7 +920,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.localCertificateChain(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setLocalCertificate = function(...args) 
           
@@ -930,7 +930,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setLocalCertificate(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.localCertificate = function(...args) 
           
@@ -940,7 +940,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.localCertificate(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.peerCertificate = function(...args) 
           
@@ -950,7 +950,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.peerCertificate(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.peerCertificateChain = function(...args) 
           
@@ -960,7 +960,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.peerCertificateChain(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.sessionCipher = function(...args) 
           
@@ -970,7 +970,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.sessionCipher(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.sessionProtocol = function(...args) 
           
@@ -980,7 +980,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.sessionProtocol(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.ocspResponses = function(...args) 
           
@@ -990,7 +990,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.ocspResponses(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setPrivateKey = function(...args) 
           
@@ -1000,7 +1000,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setPrivateKey(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.privateKey = function(...args) 
           
@@ -1010,7 +1010,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.privateKey(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.waitForConnected = function(...args) 
           
@@ -1020,7 +1020,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.waitForConnected(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.waitForEncrypted = function(...args) 
           
@@ -1030,7 +1030,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.waitForEncrypted(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.waitForReadyRead = function(...args) 
           
@@ -1040,7 +1040,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.waitForReadyRead(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.waitForBytesWritten = function(...args) 
           
@@ -1050,7 +1050,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.waitForBytesWritten(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.waitForDisconnected = function(...args) 
           
@@ -1060,7 +1060,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.waitForDisconnected(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.sslHandshakeErrors = function(...args) 
           
@@ -1070,7 +1070,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.sslHandshakeErrors(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.supportsSsl = function(...args) 
           
@@ -1080,7 +1080,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.supportsSsl(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.sslLibraryVersionNumber = function(...args) 
           
@@ -1090,7 +1090,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.sslLibraryVersionNumber(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.sslLibraryVersionString = function(...args) 
           
@@ -1100,7 +1100,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.sslLibraryVersionString(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.sslLibraryBuildVersionNumber = function(...args) 
           
@@ -1110,7 +1110,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.sslLibraryBuildVersionNumber(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.sslLibraryBuildVersionString = function(...args) 
           
@@ -1120,7 +1120,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.sslLibraryBuildVersionString(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.availableBackends = function(...args) 
           
@@ -1130,7 +1130,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.availableBackends(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.activeBackend = function(...args) 
           
@@ -1140,7 +1140,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.activeBackend(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.setActiveBackend = function(...args) 
           
@@ -1150,7 +1150,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.setActiveBackend(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.continueInterruptedHandshake = function(...args) 
           
@@ -1160,7 +1160,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.continueInterruptedHandshake(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.startClientEncryption = function(...args) 
           
@@ -1170,7 +1170,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.startClientEncryption(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.startServerEncryption = function(...args) 
           
@@ -1180,7 +1180,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.startServerEncryption(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.ignoreSslErrors = function(...args) 
           
@@ -1190,7 +1190,7 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.ignoreSslErrors(...args);
             
         };
-    
+        
         // function 
         QSslSocket.prototype.readData = function(...args) 
           
@@ -1200,7 +1200,8 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.readDataSuper(...args);
             
         };
-    
+        QSslSocket.prototype.readData.__SUPER__ = true;
+        
         // function 
         QSslSocket.prototype.skipData = function(...args) 
           
@@ -1210,7 +1211,8 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.skipDataSuper(...args);
             
         };
-    
+        QSslSocket.prototype.skipData.__SUPER__ = true;
+        
         // function 
         QSslSocket.prototype.writeData = function(...args) 
           
@@ -1220,7 +1222,8 @@ QSslSocket.AutoVerifyPeer = QSslSocket_Wrapper.AutoVerifyPeer;
               return this.__PROXY__.writeDataSuper(...args);
             
         };
-    
+        QSslSocket.prototype.writeData.__SUPER__ = true;
+        
 
       // static functions:
       

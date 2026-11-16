@@ -165,7 +165,8 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.eventFilterSuper(...args);
             
         };
-    
+        QStackedWidget.prototype.eventFilter.__SUPER__ = true;
+        
         // function 
         QStackedWidget.prototype.setObjectName = function(...args) 
           
@@ -175,7 +176,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isWidgetType = function(...args) 
           
@@ -185,7 +186,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isWindowType = function(...args) 
           
@@ -195,7 +196,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.signalsBlocked = function(...args) 
           
@@ -205,7 +206,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.blockSignals = function(...args) 
           
@@ -215,7 +216,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.findChild = function(...args) 
           
@@ -225,7 +226,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.children = function(...args) 
           
@@ -235,7 +236,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.installEventFilter = function(...args) 
           
@@ -245,7 +246,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.removeEventFilter = function(...args) 
           
@@ -255,7 +256,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -265,7 +266,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -275,7 +276,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setProperty = function(...args) 
           
@@ -285,7 +286,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.property = function(...args) 
           
@@ -295,7 +296,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -305,7 +306,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.parent = function(...args) 
           
@@ -315,7 +316,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.deleteLater = function(...args) 
           
@@ -325,7 +326,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.devType = function(...args) 
           
@@ -335,7 +336,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.createWinId = function(...args) 
           
@@ -345,7 +346,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isWindow = function(...args) 
           
@@ -355,7 +356,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isModal = function(...args) 
           
@@ -365,7 +366,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowModality = function(...args) 
           
@@ -375,7 +376,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isEnabled = function(...args) 
           
@@ -385,7 +386,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isEnabledTo = function(...args) 
           
@@ -395,7 +396,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setEnabled = function(...args) 
           
@@ -405,7 +406,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setDisabled = function(...args) 
           
@@ -415,7 +416,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowModified = function(...args) 
           
@@ -425,7 +426,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMinimumSize = function(...args) 
           
@@ -435,7 +436,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMaximumSize = function(...args) 
           
@@ -445,7 +446,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -455,7 +456,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -465,7 +466,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -475,7 +476,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -485,7 +486,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -495,7 +496,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setBaseSize = function(...args) 
           
@@ -505,7 +506,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFixedSize = function(...args) 
           
@@ -515,7 +516,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFixedWidth = function(...args) 
           
@@ -525,7 +526,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFixedHeight = function(...args) 
           
@@ -535,7 +536,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.mapToGlobal = function(...args) 
           
@@ -545,7 +546,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -555,7 +556,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.mapToParent = function(...args) 
           
@@ -565,7 +566,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.mapFromParent = function(...args) 
           
@@ -575,7 +576,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.mapTo = function(...args) 
           
@@ -585,7 +586,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.mapFrom = function(...args) 
           
@@ -595,7 +596,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.window = function(...args) 
           
@@ -605,7 +606,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -615,7 +616,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.topLevelWidget = function(...args) 
           
@@ -625,7 +626,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setPalette = function(...args) 
           
@@ -635,7 +636,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -645,7 +646,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.backgroundRole = function(...args) 
           
@@ -655,7 +656,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setForegroundRole = function(...args) 
           
@@ -665,7 +666,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.foregroundRole = function(...args) 
           
@@ -675,7 +676,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFont = function(...args) 
           
@@ -685,7 +686,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.fontInfo = function(...args) 
           
@@ -695,7 +696,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setCursor = function(...args) 
           
@@ -705,7 +706,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.unsetCursor = function(...args) 
           
@@ -715,7 +716,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMouseTracking = function(...args) 
           
@@ -725,7 +726,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -735,7 +736,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.underMouse = function(...args) 
           
@@ -745,7 +746,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setTabletTracking = function(...args) 
           
@@ -755,7 +756,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -765,7 +766,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMask = function(...args) 
           
@@ -775,7 +776,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.mask = function(...args) 
           
@@ -785,7 +786,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.clearMask = function(...args) 
           
@@ -795,7 +796,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.grab = function(...args) 
           
@@ -805,7 +806,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.grabGesture = function(...args) 
           
@@ -815,7 +816,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.ungrabGesture = function(...args) 
           
@@ -825,7 +826,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowTitle = function(...args) 
           
@@ -835,7 +836,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setStyleSheet = function(...args) 
           
@@ -845,7 +846,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowIcon = function(...args) 
           
@@ -855,7 +856,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowIconText = function(...args) 
           
@@ -865,7 +866,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowRole = function(...args) 
           
@@ -875,7 +876,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.windowRole = function(...args) 
           
@@ -885,7 +886,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -895,7 +896,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -905,7 +906,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isWindowModified = function(...args) 
           
@@ -915,7 +916,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setToolTip = function(...args) 
           
@@ -925,7 +926,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -935,7 +936,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setStatusTip = function(...args) 
           
@@ -945,7 +946,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWhatsThis = function(...args) 
           
@@ -955,7 +956,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setAccessibleName = function(...args) 
           
@@ -965,7 +966,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -975,7 +976,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -985,7 +986,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -995,7 +996,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setLocale = function(...args) 
           
@@ -1005,7 +1006,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.unsetLocale = function(...args) 
           
@@ -1015,7 +1016,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1025,7 +1026,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1035,7 +1036,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.activateWindow = function(...args) 
           
@@ -1045,7 +1046,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.clearFocus = function(...args) 
           
@@ -1055,7 +1056,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFocus = function(...args) 
           
@@ -1065,7 +1066,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1075,7 +1076,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.hasFocus = function(...args) 
           
@@ -1085,7 +1086,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1095,7 +1096,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.focusProxy = function(...args) 
           
@@ -1105,7 +1106,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1115,7 +1116,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.grabMouse = function(...args) 
           
@@ -1125,7 +1126,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.releaseMouse = function(...args) 
           
@@ -1135,7 +1136,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1145,7 +1146,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1155,7 +1156,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.grabShortcut = function(...args) 
           
@@ -1165,7 +1166,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1175,7 +1176,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1185,7 +1186,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1195,7 +1196,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1205,7 +1206,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.update = function(...args) 
           
@@ -1215,7 +1216,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.repaint = function(...args) 
           
@@ -1225,7 +1226,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setVisible = function(...args) 
           
@@ -1235,7 +1236,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setHidden = function(...args) 
           
@@ -1245,7 +1246,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.show = function(...args) 
           
@@ -1255,7 +1256,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.hide = function(...args) 
           
@@ -1265,7 +1266,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.showMinimized = function(...args) 
           
@@ -1275,7 +1276,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.showMaximized = function(...args) 
           
@@ -1285,7 +1286,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.showFullScreen = function(...args) 
           
@@ -1295,7 +1296,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.showNormal = function(...args) 
           
@@ -1305,7 +1306,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.close = function(...args) 
           
@@ -1315,7 +1316,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.raise = function(...args) 
           
@@ -1325,7 +1326,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.lower = function(...args) 
           
@@ -1335,7 +1336,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.stackUnder = function(...args) 
           
@@ -1345,7 +1346,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.move = function(...args) 
           
@@ -1355,7 +1356,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.resize = function(...args) 
           
@@ -1365,7 +1366,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setGeometry = function(...args) 
           
@@ -1375,7 +1376,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.saveGeometry = function(...args) 
           
@@ -1385,7 +1386,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1395,7 +1396,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.adjustSize = function(...args) 
           
@@ -1405,7 +1406,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isVisible = function(...args) 
           
@@ -1415,7 +1416,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1425,7 +1426,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isHidden = function(...args) 
           
@@ -1435,7 +1436,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isMinimized = function(...args) 
           
@@ -1445,7 +1446,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isMaximized = function(...args) 
           
@@ -1455,7 +1456,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isFullScreen = function(...args) 
           
@@ -1465,7 +1466,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.windowState = function(...args) 
           
@@ -1475,7 +1476,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowState = function(...args) 
           
@@ -1485,7 +1486,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1495,7 +1496,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1505,7 +1506,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.heightForWidth = function(...args) 
           
@@ -1515,7 +1516,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1525,7 +1526,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.visibleRegion = function(...args) 
           
@@ -1535,7 +1536,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1545,7 +1546,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.contentsMargins = function(...args) 
           
@@ -1555,7 +1556,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.contentsRect = function(...args) 
           
@@ -1565,7 +1566,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.layout = function(...args) 
           
@@ -1575,7 +1576,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setLayout = function(...args) 
           
@@ -1585,7 +1586,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.updateGeometry = function(...args) 
           
@@ -1595,7 +1596,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setParent = function(...args) 
           
@@ -1605,7 +1606,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.scroll = function(...args) 
           
@@ -1615,7 +1616,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.focusWidget = function(...args) 
           
@@ -1625,7 +1626,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1635,7 +1636,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1645,7 +1646,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1655,7 +1656,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.addAction = function(...args) 
           
@@ -1665,7 +1666,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.addActions = function(...args) 
           
@@ -1675,7 +1676,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.insertActions = function(...args) 
           
@@ -1685,7 +1686,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.insertAction = function(...args) 
           
@@ -1695,7 +1696,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.removeAction = function(...args) 
           
@@ -1705,7 +1706,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.actions = function(...args) 
           
@@ -1715,7 +1716,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.parentWidget = function(...args) 
           
@@ -1725,7 +1726,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1735,7 +1736,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.windowFlags = function(...args) 
           
@@ -1745,7 +1746,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1755,7 +1756,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1765,7 +1766,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.windowType = function(...args) 
           
@@ -1775,7 +1776,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.childAt = function(...args) 
           
@@ -1785,7 +1786,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setAttribute = function(...args) 
           
@@ -1795,7 +1796,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.testAttribute = function(...args) 
           
@@ -1805,7 +1806,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.ensurePolished = function(...args) 
           
@@ -1815,7 +1816,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1825,7 +1826,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1835,7 +1836,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.mousePressEvent = function(...args) 
           
@@ -1845,7 +1846,8 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mousePressEventSuper(...args);
             
         };
-    
+        QStackedWidget.prototype.mousePressEvent.__SUPER__ = true;
+        
         // function 
         QStackedWidget.prototype.mouseReleaseEvent = function(...args) 
           
@@ -1855,7 +1857,8 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mouseReleaseEventSuper(...args);
             
         };
-    
+        QStackedWidget.prototype.mouseReleaseEvent.__SUPER__ = true;
+        
         // function 
         QStackedWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1865,7 +1868,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.wheelEvent = function(...args) 
           
@@ -1875,7 +1878,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.keyPressEvent = function(...args) 
           
@@ -1885,7 +1888,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1895,7 +1898,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.focusInEvent = function(...args) 
           
@@ -1905,7 +1908,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1915,7 +1918,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.enterEvent = function(...args) 
           
@@ -1925,7 +1928,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.leaveEvent = function(...args) 
           
@@ -1935,7 +1938,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.moveEvent = function(...args) 
           
@@ -1945,7 +1948,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.closeEvent = function(...args) 
           
@@ -1955,7 +1958,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.tabletEvent = function(...args) 
           
@@ -1965,7 +1968,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
       // function 
       QStackedWidget.prototype.actionEvent = function() 
         
@@ -2007,7 +2010,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -2017,7 +2020,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -2027,7 +2030,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.dropEvent = function(...args) 
           
@@ -2037,7 +2040,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.showEvent = function(...args) 
           
@@ -2047,7 +2050,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.hideEvent = function(...args) 
           
@@ -2057,7 +2060,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.nativeEvent = function(...args) 
           
@@ -2067,7 +2070,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.changeEvent = function(...args) 
           
@@ -2077,7 +2080,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.metric = function(...args) 
           
@@ -2087,7 +2090,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.initPainter = function(...args) 
           
@@ -2097,7 +2100,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.redirected = function(...args) 
           
@@ -2107,7 +2110,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.sharedPainter = function(...args) 
           
@@ -2117,7 +2120,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2127,7 +2130,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2137,7 +2140,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2147,7 +2150,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2157,7 +2160,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.create = function(...args) 
           
@@ -2167,7 +2170,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.destroy = function(...args) 
           
@@ -2177,7 +2180,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2187,7 +2190,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.focusNextChild = function(...args) 
           
@@ -2197,7 +2200,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2207,7 +2210,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setBackingStore = function(...args) 
           
@@ -2217,7 +2220,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2227,7 +2230,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.takeLayout = function(...args) 
           
@@ -2237,7 +2240,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2247,7 +2250,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2257,7 +2260,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2267,7 +2270,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.frameStyle = function(...args) 
           
@@ -2277,7 +2280,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.frameStyle(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFrameStyle = function(...args) 
           
@@ -2287,7 +2290,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameStyle(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFrameShape = function(...args) 
           
@@ -2297,7 +2300,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameShape(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFrameShadow = function(...args) 
           
@@ -2307,7 +2310,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameShadow(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setLineWidth = function(...args) 
           
@@ -2317,7 +2320,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setLineWidth(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setMidLineWidth = function(...args) 
           
@@ -2327,7 +2330,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setMidLineWidth(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setFrameRect = function(...args) 
           
@@ -2337,7 +2340,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setFrameRect(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.drawFrame = function(...args) 
           
@@ -2347,7 +2350,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.drawFrame(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.initStyleOption = function(...args) 
           
@@ -2357,7 +2360,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.initStyleOption(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.paintEvent = function(...args) 
           
@@ -2367,7 +2370,8 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QStackedWidget.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QStackedWidget.prototype.mouseMoveEvent = function(...args) 
           
@@ -2377,7 +2381,8 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QStackedWidget.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QStackedWidget.prototype.resizeEvent = function(...args) 
           
@@ -2387,7 +2392,8 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QStackedWidget.prototype.resizeEvent.__SUPER__ = true;
+        
         // function 
         QStackedWidget.prototype.addWidget = function(...args) 
           
@@ -2397,7 +2403,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.addWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.insertWidget = function(...args) 
           
@@ -2407,7 +2413,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.insertWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.removeWidget = function(...args) 
           
@@ -2417,7 +2423,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.removeWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.currentWidget = function(...args) 
           
@@ -2427,7 +2433,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.currentWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.currentIndex = function(...args) 
           
@@ -2437,7 +2443,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.currentIndex(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.indexOf = function(...args) 
           
@@ -2447,7 +2453,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.indexOf(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.widget = function(...args) 
           
@@ -2457,7 +2463,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setCurrentIndex = function(...args) 
           
@@ -2467,7 +2473,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setCurrentIndex(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.setCurrentWidget = function(...args) 
           
@@ -2477,7 +2483,7 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.setCurrentWidget(...args);
             
         };
-    
+        
         // function 
         QStackedWidget.prototype.event = function(...args) 
           
@@ -2487,7 +2493,8 @@ QStackedWidget.Shape_Mask = QStackedWidget_Wrapper.Shape_Mask;
               return this.__PROXY__.eventSuper(...args);
             
         };
-    
+        QStackedWidget.prototype.event.__SUPER__ = true;
+        
 
       // static functions:
       

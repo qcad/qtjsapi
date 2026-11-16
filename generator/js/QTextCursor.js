@@ -223,7 +223,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.isNull = function(...args) 
           
@@ -233,7 +233,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.setPosition = function(...args) 
           
@@ -243,7 +243,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.setPosition(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.position = function(...args) 
           
@@ -253,7 +253,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.position(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.positionInBlock = function(...args) 
           
@@ -263,7 +263,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.positionInBlock(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.anchor = function(...args) 
           
@@ -273,7 +273,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.anchor(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.insertText = function(...args) 
           
@@ -283,7 +283,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.insertText(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.movePosition = function(...args) 
           
@@ -293,7 +293,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.movePosition(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.visualNavigation = function(...args) 
           
@@ -303,7 +303,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.visualNavigation(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.setVisualNavigation = function(...args) 
           
@@ -313,7 +313,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.setVisualNavigation(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.setVerticalMovementX = function(...args) 
           
@@ -323,7 +323,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.setVerticalMovementX(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.verticalMovementX = function(...args) 
           
@@ -333,7 +333,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.verticalMovementX(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.setKeepPositionOnInsert = function(...args) 
           
@@ -343,7 +343,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.setKeepPositionOnInsert(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.keepPositionOnInsert = function(...args) 
           
@@ -353,7 +353,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.keepPositionOnInsert(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.deleteChar = function(...args) 
           
@@ -363,7 +363,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.deleteChar(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.deletePreviousChar = function(...args) 
           
@@ -373,7 +373,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.deletePreviousChar(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.select = function(...args) 
           
@@ -383,7 +383,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.select(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.hasSelection = function(...args) 
           
@@ -393,7 +393,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.hasSelection(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.hasComplexSelection = function(...args) 
           
@@ -403,7 +403,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.hasComplexSelection(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.removeSelectedText = function(...args) 
           
@@ -413,7 +413,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.removeSelectedText(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.clearSelection = function(...args) 
           
@@ -423,7 +423,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.clearSelection(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.selectionStart = function(...args) 
           
@@ -433,7 +433,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.selectionStart(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.selectionEnd = function(...args) 
           
@@ -443,7 +443,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.selectionEnd(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.selectedText = function(...args) 
           
@@ -453,7 +453,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.selectedText(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.charFormat = function(...args) 
           
@@ -463,7 +463,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.charFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.setCharFormat = function(...args) 
           
@@ -473,7 +473,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.setCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.mergeCharFormat = function(...args) 
           
@@ -483,7 +483,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.mergeCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.blockFormat = function(...args) 
           
@@ -493,7 +493,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.blockFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.setBlockFormat = function(...args) 
           
@@ -503,7 +503,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.setBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.mergeBlockFormat = function(...args) 
           
@@ -513,7 +513,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.mergeBlockFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.blockCharFormat = function(...args) 
           
@@ -523,7 +523,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.blockCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.setBlockCharFormat = function(...args) 
           
@@ -533,7 +533,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.setBlockCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.mergeBlockCharFormat = function(...args) 
           
@@ -543,7 +543,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.mergeBlockCharFormat(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.atBlockStart = function(...args) 
           
@@ -553,7 +553,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.atBlockStart(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.atBlockEnd = function(...args) 
           
@@ -563,7 +563,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.atBlockEnd(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.atStart = function(...args) 
           
@@ -573,7 +573,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.atStart(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.atEnd = function(...args) 
           
@@ -583,7 +583,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.insertBlock = function(...args) 
           
@@ -593,7 +593,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.insertBlock(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.insertHtml = function(...args) 
           
@@ -603,7 +603,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.insertHtml(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.insertImage = function(...args) 
           
@@ -613,7 +613,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.insertImage(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.beginEditBlock = function(...args) 
           
@@ -623,7 +623,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.beginEditBlock(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.joinPreviousEditBlock = function(...args) 
           
@@ -633,7 +633,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.joinPreviousEditBlock(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.endEditBlock = function(...args) 
           
@@ -643,7 +643,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.endEditBlock(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.isCopyOf = function(...args) 
           
@@ -653,7 +653,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.isCopyOf(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.blockNumber = function(...args) 
           
@@ -663,7 +663,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.blockNumber(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.columnNumber = function(...args) 
           
@@ -673,7 +673,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.columnNumber(...args);
             
         };
-    
+        
         // function 
         QTextCursor.prototype.document = function(...args) 
           
@@ -683,7 +683,7 @@ QTextCursor.Document = QTextCursor_Wrapper.Document;
               return this.__PROXY__.document(...args);
             
         };
-    
+        
 
       // static functions:
       QTextCursor.prototype.isNullWrapper = function() {

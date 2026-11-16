@@ -165,7 +165,7 @@
               return this.__PROXY__.paintingActive(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.width = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.width(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.height = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.height(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.widthMM = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.widthMM(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.heightMM = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.heightMM(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.logicalDpiX = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.logicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.logicalDpiY = function(...args) 
           
@@ -225,7 +225,7 @@
               return this.__PROXY__.logicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.physicalDpiX = function(...args) 
           
@@ -235,7 +235,7 @@
               return this.__PROXY__.physicalDpiX(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.physicalDpiY = function(...args) 
           
@@ -245,7 +245,7 @@
               return this.__PROXY__.physicalDpiY(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.devicePixelRatio = function(...args) 
           
@@ -255,7 +255,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.devicePixelRatioF = function(...args) 
           
@@ -265,7 +265,7 @@
               return this.__PROXY__.devicePixelRatioF(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.colorCount = function(...args) 
           
@@ -275,7 +275,7 @@
               return this.__PROXY__.colorCount(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.depth = function(...args) 
           
@@ -285,7 +285,7 @@
               return this.__PROXY__.depth(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.initPainter = function(...args) 
           
@@ -295,7 +295,7 @@
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.redirected = function(...args) 
           
@@ -305,7 +305,7 @@
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.sharedPainter = function(...args) 
           
@@ -315,7 +315,7 @@
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.qt_paint_device_metric = function(...args) 
           
@@ -325,7 +325,7 @@
               return this.__PROXY__.qt_paint_device_metric(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.isNull = function(...args) 
           
@@ -335,7 +335,7 @@
               return this.__PROXY__.isNull(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.devType = function(...args) 
           
@@ -345,7 +345,7 @@
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.size = function(...args) 
           
@@ -355,7 +355,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.data = function(...args) 
           
@@ -365,7 +365,7 @@
               return this.__PROXY__.data(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.play = function(...args) 
           
@@ -375,7 +375,7 @@
               return this.__PROXY__.play(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.load = function(...args) 
           
@@ -385,7 +385,7 @@
               return this.__PROXY__.load(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.save = function(...args) 
           
@@ -395,7 +395,7 @@
               return this.__PROXY__.save(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.boundingRect = function(...args) 
           
@@ -405,7 +405,7 @@
               return this.__PROXY__.boundingRect(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.setBoundingRect = function(...args) 
           
@@ -415,7 +415,7 @@
               return this.__PROXY__.setBoundingRect(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.swap = function(...args) 
           
@@ -425,7 +425,7 @@
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.detach = function(...args) 
           
@@ -435,7 +435,7 @@
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.isDetached = function(...args) 
           
@@ -445,7 +445,7 @@
               return this.__PROXY__.isDetached(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.paintEngine = function(...args) 
           
@@ -455,7 +455,7 @@
               return this.__PROXY__.paintEngine(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.metric = function(...args) 
           
@@ -465,7 +465,7 @@
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QPicture.prototype.exec = function(...args) 
           
@@ -475,7 +475,7 @@
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
 
       // static functions:
       QPicture.prototype.isNullWrapper = function() {

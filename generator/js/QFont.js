@@ -339,7 +339,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.swap(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.family = function(...args) 
           
@@ -349,7 +349,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.family(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setFamily = function(...args) 
           
@@ -359,7 +359,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setFamily(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.families = function(...args) 
           
@@ -369,7 +369,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.families(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setFamilies = function(...args) 
           
@@ -379,7 +379,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setFamilies(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.styleName = function(...args) 
           
@@ -389,7 +389,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.styleName(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setStyleName = function(...args) 
           
@@ -399,7 +399,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setStyleName(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.pointSize = function(...args) 
           
@@ -409,7 +409,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.pointSize(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setPointSize = function(...args) 
           
@@ -419,7 +419,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setPointSize(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.pointSizeF = function(...args) 
           
@@ -429,7 +429,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.pointSizeF(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setPointSizeF = function(...args) 
           
@@ -439,7 +439,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setPointSizeF(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.pixelSize = function(...args) 
           
@@ -449,7 +449,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.pixelSize(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setPixelSize = function(...args) 
           
@@ -459,7 +459,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setPixelSize(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.weight = function(...args) 
           
@@ -469,7 +469,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.weight(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setWeight = function(...args) 
           
@@ -479,7 +479,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setWeight(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.bold = function(...args) 
           
@@ -489,7 +489,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.bold(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setBold = function(...args) 
           
@@ -499,7 +499,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setBold(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setStyle = function(...args) 
           
@@ -509,7 +509,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setStyle(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.style = function(...args) 
           
@@ -519,7 +519,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.style(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.italic = function(...args) 
           
@@ -529,7 +529,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.italic(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setItalic = function(...args) 
           
@@ -539,7 +539,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setItalic(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.underline = function(...args) 
           
@@ -549,7 +549,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.underline(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setUnderline = function(...args) 
           
@@ -559,7 +559,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setUnderline(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.overline = function(...args) 
           
@@ -569,7 +569,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.overline(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setOverline = function(...args) 
           
@@ -579,7 +579,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setOverline(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.strikeOut = function(...args) 
           
@@ -589,7 +589,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.strikeOut(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setStrikeOut = function(...args) 
           
@@ -599,7 +599,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setStrikeOut(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.fixedPitch = function(...args) 
           
@@ -609,7 +609,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.fixedPitch(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setFixedPitch = function(...args) 
           
@@ -619,7 +619,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setFixedPitch(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.kerning = function(...args) 
           
@@ -629,7 +629,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.kerning(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setKerning = function(...args) 
           
@@ -639,7 +639,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setKerning(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.styleHint = function(...args) 
           
@@ -649,7 +649,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.styleHint(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.styleStrategy = function(...args) 
           
@@ -659,7 +659,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.styleStrategy(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setStyleHint = function(...args) 
           
@@ -669,7 +669,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setStyleHint(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setStyleStrategy = function(...args) 
           
@@ -679,7 +679,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setStyleStrategy(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.stretch = function(...args) 
           
@@ -689,7 +689,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.stretch(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setStretch = function(...args) 
           
@@ -699,7 +699,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setStretch(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.letterSpacing = function(...args) 
           
@@ -709,7 +709,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.letterSpacing(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.letterSpacingType = function(...args) 
           
@@ -719,7 +719,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.letterSpacingType(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setLetterSpacing = function(...args) 
           
@@ -729,7 +729,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setLetterSpacing(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.wordSpacing = function(...args) 
           
@@ -739,7 +739,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.wordSpacing(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setWordSpacing = function(...args) 
           
@@ -749,7 +749,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setWordSpacing(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setCapitalization = function(...args) 
           
@@ -759,7 +759,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setCapitalization(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.capitalization = function(...args) 
           
@@ -769,7 +769,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.capitalization(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setHintingPreference = function(...args) 
           
@@ -779,7 +779,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setHintingPreference(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.hintingPreference = function(...args) 
           
@@ -789,7 +789,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.hintingPreference(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.exactMatch = function(...args) 
           
@@ -799,7 +799,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.exactMatch(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.isCopyOf = function(...args) 
           
@@ -809,7 +809,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.isCopyOf(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.key = function(...args) 
           
@@ -819,7 +819,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.key(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.fromString = function(...args) 
           
@@ -829,7 +829,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.fromString(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.substitute = function(...args) 
           
@@ -839,7 +839,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.substitute(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.substitutes = function(...args) 
           
@@ -849,7 +849,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.substitutes(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.substitutions = function(...args) 
           
@@ -859,7 +859,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.substitutions(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.insertSubstitution = function(...args) 
           
@@ -869,7 +869,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.insertSubstitution(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.insertSubstitutions = function(...args) 
           
@@ -879,7 +879,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.insertSubstitutions(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.removeSubstitutions = function(...args) 
           
@@ -889,7 +889,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.removeSubstitutions(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.initialize = function(...args) 
           
@@ -899,7 +899,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.initialize(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.cleanup = function(...args) 
           
@@ -909,7 +909,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.cleanup(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.cacheStatistics = function(...args) 
           
@@ -919,7 +919,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.cacheStatistics(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.defaultFamily = function(...args) 
           
@@ -929,7 +929,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.defaultFamily(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.resolve = function(...args) 
           
@@ -939,7 +939,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.resolve(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.resolveMask = function(...args) 
           
@@ -949,7 +949,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.resolveMask(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.setResolveMask = function(...args) 
           
@@ -959,7 +959,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.setResolveMask(...args);
             
         };
-    
+        
         // function 
         QFont.prototype.detach = function(...args) 
           
@@ -969,7 +969,7 @@ QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
               return this.__PROXY__.detach(...args);
             
         };
-    
+        
 
       // static functions:
       

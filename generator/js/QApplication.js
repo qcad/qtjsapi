@@ -173,7 +173,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.isWidgetType = function(...args) 
           
@@ -183,7 +183,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.isWindowType = function(...args) 
           
@@ -193,7 +193,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.signalsBlocked = function(...args) 
           
@@ -203,7 +203,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.blockSignals = function(...args) 
           
@@ -213,7 +213,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.findChild = function(...args) 
           
@@ -223,7 +223,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.children = function(...args) 
           
@@ -233,7 +233,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setParent = function(...args) 
           
@@ -243,7 +243,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.installEventFilter = function(...args) 
           
@@ -253,7 +253,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.removeEventFilter = function(...args) 
           
@@ -263,7 +263,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.dumpObjectTree = function(...args) 
           
@@ -273,7 +273,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.dumpObjectInfo = function(...args) 
           
@@ -283,7 +283,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setProperty = function(...args) 
           
@@ -293,7 +293,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.property = function(...args) 
           
@@ -303,7 +303,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.dynamicPropertyNames = function(...args) 
           
@@ -313,7 +313,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.parent = function(...args) 
           
@@ -323,7 +323,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.deleteLater = function(...args) 
           
@@ -333,7 +333,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setOrganizationDomain = function(...args) 
           
@@ -343,7 +343,7 @@
               return this.__PROXY__.setOrganizationDomain(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setOrganizationName = function(...args) 
           
@@ -353,7 +353,7 @@
               return this.__PROXY__.setOrganizationName(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setApplicationName = function(...args) 
           
@@ -363,7 +363,7 @@
               return this.__PROXY__.setApplicationName(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setApplicationVersion = function(...args) 
           
@@ -373,7 +373,7 @@
               return this.__PROXY__.setApplicationVersion(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.isQuitLockEnabled = function(...args) 
           
@@ -383,7 +383,7 @@
               return this.__PROXY__.isQuitLockEnabled(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setQuitLockEnabled = function(...args) 
           
@@ -393,7 +393,7 @@
               return this.__PROXY__.setQuitLockEnabled(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.qt_sendSpontaneousEvent = function(...args) 
           
@@ -403,7 +403,7 @@
               return this.__PROXY__.qt_sendSpontaneousEvent(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.qAppName = function(...args) 
           
@@ -413,7 +413,7 @@
               return this.__PROXY__.qAppName(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.devicePixelRatio = function(...args) 
           
@@ -423,7 +423,7 @@
               return this.__PROXY__.devicePixelRatio(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.isSessionRestored = function(...args) 
           
@@ -433,7 +433,7 @@
               return this.__PROXY__.isSessionRestored(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.sessionId = function(...args) 
           
@@ -443,7 +443,7 @@
               return this.__PROXY__.sessionId(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.sessionKey = function(...args) 
           
@@ -453,7 +453,7 @@
               return this.__PROXY__.sessionKey(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.isSavingSession = function(...args) 
           
@@ -463,7 +463,7 @@
               return this.__PROXY__.isSavingSession(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.event = function(...args) 
           
@@ -473,7 +473,7 @@
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.compressEvent = function(...args) 
           
@@ -483,7 +483,7 @@
               return this.__PROXY__.compressEvent(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.palette = function(...args) 
           
@@ -493,7 +493,7 @@
               return this.__PROXY__.palette(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setPalette = function(...args) 
           
@@ -503,7 +503,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.font = function(...args) 
           
@@ -513,7 +513,7 @@
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setFont = function(...args) 
           
@@ -523,7 +523,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.topLevelWidgets = function(...args) 
           
@@ -533,7 +533,7 @@
               return this.__PROXY__.topLevelWidgets(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.activePopupWidget = function(...args) 
           
@@ -543,7 +543,7 @@
               return this.__PROXY__.activePopupWidget(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.activeModalWidget = function(...args) 
           
@@ -553,7 +553,7 @@
               return this.__PROXY__.activeModalWidget(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.focusWidget = function(...args) 
           
@@ -563,7 +563,7 @@
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.activeWindow = function(...args) 
           
@@ -573,7 +573,7 @@
               return this.__PROXY__.activeWindow(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.widgetAt = function(...args) 
           
@@ -583,7 +583,7 @@
               return this.__PROXY__.widgetAt(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.topLevelAt = function(...args) 
           
@@ -593,7 +593,7 @@
               return this.__PROXY__.topLevelAt(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.beep = function(...args) 
           
@@ -603,7 +603,7 @@
               return this.__PROXY__.beep(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.alert = function(...args) 
           
@@ -613,7 +613,7 @@
               return this.__PROXY__.alert(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setCursorFlashTime = function(...args) 
           
@@ -623,7 +623,7 @@
               return this.__PROXY__.setCursorFlashTime(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.cursorFlashTime = function(...args) 
           
@@ -633,7 +633,7 @@
               return this.__PROXY__.cursorFlashTime(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setDoubleClickInterval = function(...args) 
           
@@ -643,7 +643,7 @@
               return this.__PROXY__.setDoubleClickInterval(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setKeyboardInputInterval = function(...args) 
           
@@ -653,7 +653,7 @@
               return this.__PROXY__.setKeyboardInputInterval(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setWheelScrollLines = function(...args) 
           
@@ -663,7 +663,7 @@
               return this.__PROXY__.setWheelScrollLines(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setStartDragTime = function(...args) 
           
@@ -673,7 +673,7 @@
               return this.__PROXY__.setStartDragTime(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setStartDragDistance = function(...args) 
           
@@ -683,7 +683,7 @@
               return this.__PROXY__.setStartDragDistance(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.exec = function(...args) 
           
@@ -693,7 +693,7 @@
               return this.__PROXY__.exec(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.notify = function(...args) 
           
@@ -703,7 +703,7 @@
               return this.__PROXY__.notify(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setStyleSheet = function(...args) 
           
@@ -713,7 +713,7 @@
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.setAutoSipEnabled = function(...args) 
           
@@ -723,7 +723,7 @@
               return this.__PROXY__.setAutoSipEnabled(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.closeAllWindows = function(...args) 
           
@@ -733,7 +733,7 @@
               return this.__PROXY__.closeAllWindows(...args);
             
         };
-    
+        
         // function 
         QApplication.prototype.aboutQt = function(...args) 
           
@@ -743,7 +743,7 @@
               return this.__PROXY__.aboutQt(...args);
             
         };
-    
+        
 
       // static functions:
       

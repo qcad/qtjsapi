@@ -138,7 +138,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.isWidgetType = function(...args) 
           
@@ -148,7 +148,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.isWindowType = function(...args) 
           
@@ -158,7 +158,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.signalsBlocked = function(...args) 
           
@@ -168,7 +168,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.blockSignals = function(...args) 
           
@@ -178,7 +178,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.findChild = function(...args) 
           
@@ -188,7 +188,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.children = function(...args) 
           
@@ -198,7 +198,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.setParent = function(...args) 
           
@@ -208,7 +208,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.installEventFilter = function(...args) 
           
@@ -218,7 +218,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.removeEventFilter = function(...args) 
           
@@ -228,7 +228,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.dumpObjectTree = function(...args) 
           
@@ -238,7 +238,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.dumpObjectInfo = function(...args) 
           
@@ -248,7 +248,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.setProperty = function(...args) 
           
@@ -258,7 +258,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.property = function(...args) 
           
@@ -268,7 +268,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.dynamicPropertyNames = function(...args) 
           
@@ -278,7 +278,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.parent = function(...args) 
           
@@ -288,7 +288,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.deleteLater = function(...args) 
           
@@ -298,7 +298,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.Q_DECLARE_PRIVATE = function(...args) 
           
@@ -308,7 +308,7 @@
               return this.__PROXY__.Q_DECLARE_PRIVATE(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.addAction = function(...args) 
           
@@ -318,7 +318,7 @@
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.removeAction = function(...args) 
           
@@ -328,7 +328,7 @@
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.actions = function(...args) 
           
@@ -338,7 +338,7 @@
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.checkedAction = function(...args) 
           
@@ -348,7 +348,7 @@
               return this.__PROXY__.checkedAction(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.isExclusive = function(...args) 
           
@@ -358,7 +358,7 @@
               return this.__PROXY__.isExclusive(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.isEnabled = function(...args) 
           
@@ -368,7 +368,7 @@
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.isVisible = function(...args) 
           
@@ -378,7 +378,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.setEnabled = function(...args) 
           
@@ -388,7 +388,7 @@
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.setDisabled = function(...args) 
           
@@ -398,7 +398,7 @@
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.setVisible = function(...args) 
           
@@ -408,7 +408,7 @@
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype.setExclusive = function(...args) 
           
@@ -418,7 +418,7 @@
               return this.__PROXY__.setExclusive(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype._q_actionTriggered = function(...args) 
           
@@ -428,7 +428,7 @@
               return this.__PROXY__._q_actionTriggered(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype._q_actionHovered = function(...args) 
           
@@ -438,7 +438,7 @@
               return this.__PROXY__._q_actionHovered(...args);
             
         };
-    
+        
         // function 
         QActionGroup.prototype._q_actionChanged = function(...args) 
           
@@ -448,7 +448,7 @@
               return this.__PROXY__._q_actionChanged(...args);
             
         };
-    
+        
 
       // static functions:
       

@@ -179,7 +179,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.isWidgetType = function(...args) 
           
@@ -189,7 +189,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.isWindowType = function(...args) 
           
@@ -199,7 +199,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.signalsBlocked = function(...args) 
           
@@ -209,7 +209,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.blockSignals = function(...args) 
           
@@ -219,7 +219,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.findChild = function(...args) 
           
@@ -229,7 +229,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.children = function(...args) 
           
@@ -239,7 +239,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.setParent = function(...args) 
           
@@ -249,7 +249,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.installEventFilter = function(...args) 
           
@@ -259,7 +259,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.removeEventFilter = function(...args) 
           
@@ -269,7 +269,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.dumpObjectTree = function(...args) 
           
@@ -279,7 +279,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.dumpObjectInfo = function(...args) 
           
@@ -289,7 +289,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.setProperty = function(...args) 
           
@@ -299,7 +299,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.property = function(...args) 
           
@@ -309,7 +309,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.dynamicPropertyNames = function(...args) 
           
@@ -319,7 +319,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.parent = function(...args) 
           
@@ -329,7 +329,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.deleteLater = function(...args) 
           
@@ -339,7 +339,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.setLocale = function(...args) 
           
@@ -349,7 +349,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.locale = function(...args) 
           
@@ -359,7 +359,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.locale(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.fixup = function(...args) 
           
@@ -369,7 +369,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.fixup(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.validate = function(...args) 
           
@@ -379,7 +379,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.setRange = function(...args) 
           
@@ -389,7 +389,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setRange(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.setBottom = function(...args) 
           
@@ -399,7 +399,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setBottom(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.setTop = function(...args) 
           
@@ -409,7 +409,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setTop(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.setDecimals = function(...args) 
           
@@ -419,7 +419,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setDecimals(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.setNotation = function(...args) 
           
@@ -429,7 +429,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.setNotation(...args);
             
         };
-    
+        
         // function 
         QDoubleValidator.prototype.bottom = function(...args) 
           
@@ -439,7 +439,7 @@ QDoubleValidator.ScientificNotation = QDoubleValidator_Wrapper.ScientificNotatio
               return this.__PROXY__.bottom(...args);
             
         };
-    
+        
 
       // static functions:
       

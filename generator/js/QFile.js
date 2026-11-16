@@ -220,7 +220,7 @@
               return this.__PROXY__.error(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.unsetError = function(...args) 
           
@@ -230,7 +230,7 @@
               return this.__PROXY__.unsetError(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.handle = function(...args) 
           
@@ -240,7 +240,7 @@
               return this.__PROXY__.handle(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.flush = function(...args) 
           
@@ -250,7 +250,7 @@
               return this.__PROXY__.flush(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.fileTime = function(...args) 
           
@@ -260,7 +260,7 @@
               return this.__PROXY__.fileTime(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.setFileTime = function(...args) 
           
@@ -270,7 +270,7 @@
               return this.__PROXY__.setFileTime(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.readData = function(...args) 
           
@@ -280,7 +280,7 @@
               return this.__PROXY__.readData(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.writeData = function(...args) 
           
@@ -290,7 +290,7 @@
               return this.__PROXY__.writeData(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.readLineData = function(...args) 
           
@@ -300,7 +300,7 @@
               return this.__PROXY__.readLineData(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.openMode = function(...args) 
           
@@ -310,7 +310,7 @@
               return this.__PROXY__.openMode(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.setTextModeEnabled = function(...args) 
           
@@ -320,7 +320,7 @@
               return this.__PROXY__.setTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.isTextModeEnabled = function(...args) 
           
@@ -330,7 +330,7 @@
               return this.__PROXY__.isTextModeEnabled(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.isOpen = function(...args) 
           
@@ -340,7 +340,7 @@
               return this.__PROXY__.isOpen(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.isReadable = function(...args) 
           
@@ -350,7 +350,7 @@
               return this.__PROXY__.isReadable(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.isWritable = function(...args) 
           
@@ -360,7 +360,7 @@
               return this.__PROXY__.isWritable(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.isSequential = function(...args) 
           
@@ -370,7 +370,7 @@
               return this.__PROXY__.isSequential(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.readChannelCount = function(...args) 
           
@@ -380,7 +380,7 @@
               return this.__PROXY__.readChannelCount(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.writeChannelCount = function(...args) 
           
@@ -390,7 +390,7 @@
               return this.__PROXY__.writeChannelCount(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.currentReadChannel = function(...args) 
           
@@ -400,7 +400,7 @@
               return this.__PROXY__.currentReadChannel(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.setCurrentReadChannel = function(...args) 
           
@@ -410,7 +410,7 @@
               return this.__PROXY__.setCurrentReadChannel(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.currentWriteChannel = function(...args) 
           
@@ -420,7 +420,7 @@
               return this.__PROXY__.currentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.setCurrentWriteChannel = function(...args) 
           
@@ -430,7 +430,7 @@
               return this.__PROXY__.setCurrentWriteChannel(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.close = function(...args) 
           
@@ -440,7 +440,7 @@
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.pos = function(...args) 
           
@@ -450,7 +450,7 @@
               return this.__PROXY__.pos(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.seek = function(...args) 
           
@@ -460,7 +460,7 @@
               return this.__PROXY__.seek(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.atEnd = function(...args) 
           
@@ -470,7 +470,7 @@
               return this.__PROXY__.atEnd(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.reset = function(...args) 
           
@@ -480,7 +480,7 @@
               return this.__PROXY__.reset(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.bytesAvailable = function(...args) 
           
@@ -490,7 +490,7 @@
               return this.__PROXY__.bytesAvailable(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.bytesToWrite = function(...args) 
           
@@ -500,7 +500,7 @@
               return this.__PROXY__.bytesToWrite(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.readAll = function(...args) 
           
@@ -510,7 +510,7 @@
               return this.__PROXY__.readAll(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.canReadLine = function(...args) 
           
@@ -520,7 +520,7 @@
               return this.__PROXY__.canReadLine(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.startTransaction = function(...args) 
           
@@ -530,7 +530,7 @@
               return this.__PROXY__.startTransaction(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.commitTransaction = function(...args) 
           
@@ -540,7 +540,7 @@
               return this.__PROXY__.commitTransaction(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.rollbackTransaction = function(...args) 
           
@@ -550,7 +550,7 @@
               return this.__PROXY__.rollbackTransaction(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.isTransactionStarted = function(...args) 
           
@@ -560,7 +560,7 @@
               return this.__PROXY__.isTransactionStarted(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.write = function(...args) 
           
@@ -570,7 +570,7 @@
               return this.__PROXY__.write(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.skip = function(...args) 
           
@@ -580,7 +580,7 @@
               return this.__PROXY__.skip(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.waitForReadyRead = function(...args) 
           
@@ -590,7 +590,7 @@
               return this.__PROXY__.waitForReadyRead(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.waitForBytesWritten = function(...args) 
           
@@ -600,7 +600,7 @@
               return this.__PROXY__.waitForBytesWritten(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.ungetChar = function(...args) 
           
@@ -610,7 +610,7 @@
               return this.__PROXY__.ungetChar(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.putChar = function(...args) 
           
@@ -620,7 +620,7 @@
               return this.__PROXY__.putChar(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.errorString = function(...args) 
           
@@ -630,7 +630,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.fileName = function(...args) 
           
@@ -640,7 +640,7 @@
               return this.__PROXY__.fileName(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.setFileName = function(...args) 
           
@@ -650,7 +650,7 @@
               return this.__PROXY__.setFileName(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.exists = function(...args) 
           
@@ -660,7 +660,7 @@
               return this.__PROXY__.exists(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.symLinkTarget = function(...args) 
           
@@ -670,7 +670,7 @@
               return this.__PROXY__.symLinkTarget(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.remove = function(...args) 
           
@@ -680,7 +680,7 @@
               return this.__PROXY__.remove(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.rename = function(...args) 
           
@@ -690,7 +690,7 @@
               return this.__PROXY__.rename(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.link = function(...args) 
           
@@ -700,7 +700,7 @@
               return this.__PROXY__.link(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.copy = function(...args) 
           
@@ -710,7 +710,7 @@
               return this.__PROXY__.copy(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.open = function(...args) 
           
@@ -720,7 +720,7 @@
               return this.__PROXY__.open(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.size = function(...args) 
           
@@ -730,7 +730,7 @@
               return this.__PROXY__.size(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.resize = function(...args) 
           
@@ -740,7 +740,7 @@
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.permissions = function(...args) 
           
@@ -750,7 +750,7 @@
               return this.__PROXY__.permissions(...args);
             
         };
-    
+        
         // function 
         QFile.prototype.setPermissions = function(...args) 
           
@@ -760,7 +760,7 @@
               return this.__PROXY__.setPermissions(...args);
             
         };
-    
+        
 
       // static functions:
       

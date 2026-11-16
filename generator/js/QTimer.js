@@ -139,7 +139,7 @@
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.isWidgetType = function(...args) 
           
@@ -149,7 +149,7 @@
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.isWindowType = function(...args) 
           
@@ -159,7 +159,7 @@
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.signalsBlocked = function(...args) 
           
@@ -169,7 +169,7 @@
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.blockSignals = function(...args) 
           
@@ -179,7 +179,7 @@
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.findChild = function(...args) 
           
@@ -189,7 +189,7 @@
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.children = function(...args) 
           
@@ -199,7 +199,7 @@
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.setParent = function(...args) 
           
@@ -209,7 +209,7 @@
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.installEventFilter = function(...args) 
           
@@ -219,7 +219,7 @@
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.removeEventFilter = function(...args) 
           
@@ -229,7 +229,7 @@
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.dumpObjectTree = function(...args) 
           
@@ -239,7 +239,7 @@
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.dumpObjectInfo = function(...args) 
           
@@ -249,7 +249,7 @@
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.setProperty = function(...args) 
           
@@ -259,7 +259,7 @@
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.property = function(...args) 
           
@@ -269,7 +269,7 @@
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.dynamicPropertyNames = function(...args) 
           
@@ -279,7 +279,7 @@
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.parent = function(...args) 
           
@@ -289,7 +289,7 @@
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.deleteLater = function(...args) 
           
@@ -299,7 +299,7 @@
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.isActive = function(...args) 
           
@@ -309,7 +309,7 @@
               return this.__PROXY__.isActive(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.timerId = function(...args) 
           
@@ -319,7 +319,7 @@
               return this.__PROXY__.timerId(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.setInterval = function(...args) 
           
@@ -329,7 +329,7 @@
               return this.__PROXY__.setInterval(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.setTimerType = function(...args) 
           
@@ -339,7 +339,7 @@
               return this.__PROXY__.setTimerType(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.setSingleShot = function(...args) 
           
@@ -349,7 +349,7 @@
               return this.__PROXY__.setSingleShot(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.isSingleShot = function(...args) 
           
@@ -359,7 +359,7 @@
               return this.__PROXY__.isSingleShot(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.start = function(...args) 
           
@@ -369,7 +369,7 @@
               return this.__PROXY__.start(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.stop = function(...args) 
           
@@ -379,7 +379,7 @@
               return this.__PROXY__.stop(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.timerEvent = function(...args) 
           
@@ -389,7 +389,7 @@
               return this.__PROXY__.timerEvent(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.startTimer = function(...args) 
           
@@ -399,7 +399,7 @@
               return this.__PROXY__.startTimer(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.killTimer = function(...args) 
           
@@ -409,7 +409,7 @@
               return this.__PROXY__.killTimer(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.defaultTypeFor = function(...args) 
           
@@ -419,7 +419,7 @@
               return this.__PROXY__.defaultTypeFor(...args);
             
         };
-    
+        
         // function 
         QTimer.prototype.singleShotImpl = function(...args) 
           
@@ -429,7 +429,7 @@
               return this.__PROXY__.singleShotImpl(...args);
             
         };
-    
+        
 
       // static functions:
       

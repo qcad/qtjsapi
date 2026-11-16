@@ -161,7 +161,7 @@
               return this.__PROXY__.keyboardModifiers(...args);
             
         };
-    
+        
         // function 
         QKeyCombination.prototype.key = function(...args) 
           
@@ -171,7 +171,7 @@
               return this.__PROXY__.key(...args);
             
         };
-    
+        
         // function 
         QKeyCombination.prototype.fromCombined = function(...args) 
           
@@ -181,7 +181,7 @@
               return this.__PROXY__.fromCombined(...args);
             
         };
-    
+        
         // function 
         QKeyCombination.prototype.toCombined = function(...args) 
           
@@ -191,7 +191,7 @@
               return this.__PROXY__.toCombined(...args);
             
         };
-    
+        
 
       // static functions:
       

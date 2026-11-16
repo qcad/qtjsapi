@@ -105,7 +105,7 @@
               return this.__PROXY__.setDocumentLocator(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.startDocument = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.startDocument(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.endDocument = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.endDocument(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.startPrefixMapping = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.startPrefixMapping(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.endPrefixMapping = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.endPrefixMapping(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.startElement = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.startElement(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.endElement = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.endElement(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.characters = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.characters(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.ignorableWhitespace = function(...args) 
           
@@ -185,7 +185,7 @@
               return this.__PROXY__.ignorableWhitespace(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.processingInstruction = function(...args) 
           
@@ -195,7 +195,7 @@
               return this.__PROXY__.processingInstruction(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.skippedEntity = function(...args) 
           
@@ -205,7 +205,7 @@
               return this.__PROXY__.skippedEntity(...args);
             
         };
-    
+        
         // function 
         QXmlContentHandler.prototype.errorString = function(...args) 
           
@@ -215,7 +215,7 @@
               return this.__PROXY__.errorString(...args);
             
         };
-    
+        
 
       // static functions:
       QXmlContentHandler.prototype.isNullWrapper = function() {

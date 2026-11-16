@@ -179,7 +179,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isWidgetType = function(...args) 
           
@@ -189,7 +189,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isWindowType = function(...args) 
           
@@ -199,7 +199,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.signalsBlocked = function(...args) 
           
@@ -209,7 +209,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.blockSignals = function(...args) 
           
@@ -219,7 +219,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.findChild = function(...args) 
           
@@ -229,7 +229,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.children = function(...args) 
           
@@ -239,7 +239,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.installEventFilter = function(...args) 
           
@@ -249,7 +249,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.removeEventFilter = function(...args) 
           
@@ -259,7 +259,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.dumpObjectTree = function(...args) 
           
@@ -269,7 +269,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.dumpObjectInfo = function(...args) 
           
@@ -279,7 +279,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setProperty = function(...args) 
           
@@ -289,7 +289,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.property = function(...args) 
           
@@ -299,7 +299,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.dynamicPropertyNames = function(...args) 
           
@@ -309,7 +309,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.parent = function(...args) 
           
@@ -319,7 +319,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.deleteLater = function(...args) 
           
@@ -329,7 +329,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.devType = function(...args) 
           
@@ -339,7 +339,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.devType(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.createWinId = function(...args) 
           
@@ -349,7 +349,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.createWinId(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isWindow = function(...args) 
           
@@ -359,7 +359,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isWindow(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isModal = function(...args) 
           
@@ -369,7 +369,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isModal(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowModality = function(...args) 
           
@@ -379,7 +379,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowModality(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isEnabled = function(...args) 
           
@@ -389,7 +389,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isEnabled(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isEnabledTo = function(...args) 
           
@@ -399,7 +399,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isEnabledTo(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setEnabled = function(...args) 
           
@@ -409,7 +409,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setEnabled(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setDisabled = function(...args) 
           
@@ -419,7 +419,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setDisabled(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowModified = function(...args) 
           
@@ -429,7 +429,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowModified(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setMinimumSize = function(...args) 
           
@@ -439,7 +439,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMinimumSize(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setMaximumSize = function(...args) 
           
@@ -449,7 +449,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMaximumSize(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setMinimumWidth = function(...args) 
           
@@ -459,7 +459,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMinimumWidth(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setMinimumHeight = function(...args) 
           
@@ -469,7 +469,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMinimumHeight(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setMaximumWidth = function(...args) 
           
@@ -479,7 +479,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMaximumWidth(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setMaximumHeight = function(...args) 
           
@@ -489,7 +489,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMaximumHeight(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setSizeIncrement = function(...args) 
           
@@ -499,7 +499,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setSizeIncrement(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setBaseSize = function(...args) 
           
@@ -509,7 +509,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setBaseSize(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFixedSize = function(...args) 
           
@@ -519,7 +519,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFixedSize(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFixedWidth = function(...args) 
           
@@ -529,7 +529,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFixedWidth(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFixedHeight = function(...args) 
           
@@ -539,7 +539,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFixedHeight(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.mapToGlobal = function(...args) 
           
@@ -549,7 +549,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapToGlobal(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.mapFromGlobal = function(...args) 
           
@@ -559,7 +559,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapFromGlobal(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.mapToParent = function(...args) 
           
@@ -569,7 +569,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapToParent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.mapFromParent = function(...args) 
           
@@ -579,7 +579,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapFromParent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.mapTo = function(...args) 
           
@@ -589,7 +589,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapTo(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.mapFrom = function(...args) 
           
@@ -599,7 +599,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mapFrom(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.window = function(...args) 
           
@@ -609,7 +609,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.window(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.nativeParentWidget = function(...args) 
           
@@ -619,7 +619,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.nativeParentWidget(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.topLevelWidget = function(...args) 
           
@@ -629,7 +629,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.topLevelWidget(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setPalette = function(...args) 
           
@@ -639,7 +639,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setBackgroundRole = function(...args) 
           
@@ -649,7 +649,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setBackgroundRole(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.backgroundRole = function(...args) 
           
@@ -659,7 +659,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.backgroundRole(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setForegroundRole = function(...args) 
           
@@ -669,7 +669,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setForegroundRole(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.foregroundRole = function(...args) 
           
@@ -679,7 +679,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.foregroundRole(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFont = function(...args) 
           
@@ -689,7 +689,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.fontInfo = function(...args) 
           
@@ -699,7 +699,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.fontInfo(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setCursor = function(...args) 
           
@@ -709,7 +709,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setCursor(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.unsetCursor = function(...args) 
           
@@ -719,7 +719,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.unsetCursor(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setMouseTracking = function(...args) 
           
@@ -729,7 +729,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMouseTracking(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.hasMouseTracking = function(...args) 
           
@@ -739,7 +739,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hasMouseTracking(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.underMouse = function(...args) 
           
@@ -749,7 +749,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.underMouse(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setTabletTracking = function(...args) 
           
@@ -759,7 +759,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setTabletTracking(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.hasTabletTracking = function(...args) 
           
@@ -769,7 +769,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hasTabletTracking(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setMask = function(...args) 
           
@@ -779,7 +779,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setMask(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.mask = function(...args) 
           
@@ -789,7 +789,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mask(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.clearMask = function(...args) 
           
@@ -799,7 +799,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.clearMask(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.grab = function(...args) 
           
@@ -809,7 +809,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grab(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.grabGesture = function(...args) 
           
@@ -819,7 +819,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grabGesture(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.ungrabGesture = function(...args) 
           
@@ -829,7 +829,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.ungrabGesture(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowTitle = function(...args) 
           
@@ -839,7 +839,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowTitle(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setStyleSheet = function(...args) 
           
@@ -849,7 +849,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setStyleSheet(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowIcon = function(...args) 
           
@@ -859,7 +859,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowIcon(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowIconText = function(...args) 
           
@@ -869,7 +869,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowIconText(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowRole = function(...args) 
           
@@ -879,7 +879,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowRole(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.windowRole = function(...args) 
           
@@ -889,7 +889,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.windowRole(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowFilePath = function(...args) 
           
@@ -899,7 +899,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowFilePath(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowOpacity = function(...args) 
           
@@ -909,7 +909,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowOpacity(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isWindowModified = function(...args) 
           
@@ -919,7 +919,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isWindowModified(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setToolTip = function(...args) 
           
@@ -929,7 +929,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setToolTip(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setToolTipDuration = function(...args) 
           
@@ -939,7 +939,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setToolTipDuration(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setStatusTip = function(...args) 
           
@@ -949,7 +949,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setStatusTip(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWhatsThis = function(...args) 
           
@@ -959,7 +959,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWhatsThis(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setAccessibleName = function(...args) 
           
@@ -969,7 +969,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAccessibleName(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setAccessibleDescription = function(...args) 
           
@@ -979,7 +979,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAccessibleDescription(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setLayoutDirection = function(...args) 
           
@@ -989,7 +989,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.unsetLayoutDirection = function(...args) 
           
@@ -999,7 +999,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.unsetLayoutDirection(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setLocale = function(...args) 
           
@@ -1009,7 +1009,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.unsetLocale = function(...args) 
           
@@ -1019,7 +1019,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.unsetLocale(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isRightToLeft = function(...args) 
           
@@ -1029,7 +1029,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isRightToLeft(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isLeftToRight = function(...args) 
           
@@ -1039,7 +1039,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isLeftToRight(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.activateWindow = function(...args) 
           
@@ -1049,7 +1049,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.activateWindow(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.clearFocus = function(...args) 
           
@@ -1059,7 +1059,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.clearFocus(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFocus = function(...args) 
           
@@ -1069,7 +1069,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFocus(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFocusPolicy = function(...args) 
           
@@ -1079,7 +1079,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFocusPolicy(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.hasFocus = function(...args) 
           
@@ -1089,7 +1089,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hasFocus(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFocusProxy = function(...args) 
           
@@ -1099,7 +1099,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFocusProxy(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.focusProxy = function(...args) 
           
@@ -1109,7 +1109,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusProxy(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setContextMenuPolicy = function(...args) 
           
@@ -1119,7 +1119,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setContextMenuPolicy(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.grabMouse = function(...args) 
           
@@ -1129,7 +1129,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grabMouse(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.releaseMouse = function(...args) 
           
@@ -1139,7 +1139,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.releaseMouse(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.grabKeyboard = function(...args) 
           
@@ -1149,7 +1149,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grabKeyboard(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.releaseKeyboard = function(...args) 
           
@@ -1159,7 +1159,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.releaseKeyboard(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.grabShortcut = function(...args) 
           
@@ -1169,7 +1169,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.grabShortcut(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.releaseShortcut = function(...args) 
           
@@ -1179,7 +1179,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.releaseShortcut(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setShortcutEnabled = function(...args) 
           
@@ -1189,7 +1189,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setShortcutEnabled(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setShortcutAutoRepeat = function(...args) 
           
@@ -1199,7 +1199,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setShortcutAutoRepeat(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setUpdatesEnabled = function(...args) 
           
@@ -1209,7 +1209,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setUpdatesEnabled(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.update = function(...args) 
           
@@ -1219,7 +1219,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.update(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.repaint = function(...args) 
           
@@ -1229,7 +1229,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.repaint(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setVisible = function(...args) 
           
@@ -1239,7 +1239,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setVisible(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setHidden = function(...args) 
           
@@ -1249,7 +1249,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setHidden(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.show = function(...args) 
           
@@ -1259,7 +1259,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.show(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.hide = function(...args) 
           
@@ -1269,7 +1269,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hide(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.showMinimized = function(...args) 
           
@@ -1279,7 +1279,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showMinimized(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.showMaximized = function(...args) 
           
@@ -1289,7 +1289,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showMaximized(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.showFullScreen = function(...args) 
           
@@ -1299,7 +1299,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showFullScreen(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.showNormal = function(...args) 
           
@@ -1309,7 +1309,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showNormal(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.close = function(...args) 
           
@@ -1319,7 +1319,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.close(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.raise = function(...args) 
           
@@ -1329,7 +1329,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.raise(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.lower = function(...args) 
           
@@ -1339,7 +1339,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.lower(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.stackUnder = function(...args) 
           
@@ -1349,7 +1349,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.stackUnder(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.move = function(...args) 
           
@@ -1359,7 +1359,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.move(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.resize = function(...args) 
           
@@ -1369,7 +1369,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.resize(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setGeometry = function(...args) 
           
@@ -1379,7 +1379,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setGeometry(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.saveGeometry = function(...args) 
           
@@ -1389,7 +1389,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.saveGeometry(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.restoreGeometry = function(...args) 
           
@@ -1399,7 +1399,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.restoreGeometry(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.adjustSize = function(...args) 
           
@@ -1409,7 +1409,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.adjustSize(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isVisible = function(...args) 
           
@@ -1419,7 +1419,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isVisibleTo = function(...args) 
           
@@ -1429,7 +1429,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isVisibleTo(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isHidden = function(...args) 
           
@@ -1439,7 +1439,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isHidden(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isMinimized = function(...args) 
           
@@ -1449,7 +1449,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isMinimized(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isMaximized = function(...args) 
           
@@ -1459,7 +1459,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isMaximized(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isFullScreen = function(...args) 
           
@@ -1469,7 +1469,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isFullScreen(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.windowState = function(...args) 
           
@@ -1479,7 +1479,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.windowState(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowState = function(...args) 
           
@@ -1489,7 +1489,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowState(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.overrideWindowState = function(...args) 
           
@@ -1499,7 +1499,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.overrideWindowState(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setSizePolicy = function(...args) 
           
@@ -1509,7 +1509,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setSizePolicy(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.heightForWidth = function(...args) 
           
@@ -1519,7 +1519,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.heightForWidth(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.hasHeightForWidth = function(...args) 
           
@@ -1529,7 +1529,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hasHeightForWidth(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.visibleRegion = function(...args) 
           
@@ -1539,7 +1539,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.visibleRegion(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setContentsMargins = function(...args) 
           
@@ -1549,7 +1549,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setContentsMargins(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.contentsMargins = function(...args) 
           
@@ -1559,7 +1559,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.contentsMargins(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.contentsRect = function(...args) 
           
@@ -1569,7 +1569,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.contentsRect(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.layout = function(...args) 
           
@@ -1579,7 +1579,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.layout(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setLayout = function(...args) 
           
@@ -1589,7 +1589,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setLayout(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.updateGeometry = function(...args) 
           
@@ -1599,7 +1599,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.updateGeometry(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setParent = function(...args) 
           
@@ -1609,7 +1609,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.scroll = function(...args) 
           
@@ -1619,7 +1619,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.scroll(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.focusWidget = function(...args) 
           
@@ -1629,7 +1629,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusWidget(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.nextInFocusChain = function(...args) 
           
@@ -1639,7 +1639,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.nextInFocusChain(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.previousInFocusChain = function(...args) 
           
@@ -1649,7 +1649,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.previousInFocusChain(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setAcceptDrops = function(...args) 
           
@@ -1659,7 +1659,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAcceptDrops(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.addAction = function(...args) 
           
@@ -1669,7 +1669,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.addAction(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.addActions = function(...args) 
           
@@ -1679,7 +1679,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.addActions(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.insertActions = function(...args) 
           
@@ -1689,7 +1689,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.insertActions(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.insertAction = function(...args) 
           
@@ -1699,7 +1699,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.insertAction(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.removeAction = function(...args) 
           
@@ -1709,7 +1709,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.removeAction(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.actions = function(...args) 
           
@@ -1719,7 +1719,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.actions(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.parentWidget = function(...args) 
           
@@ -1729,7 +1729,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.parentWidget(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowFlags = function(...args) 
           
@@ -1739,7 +1739,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowFlags(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.windowFlags = function(...args) 
           
@@ -1749,7 +1749,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.windowFlags(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWindowFlag = function(...args) 
           
@@ -1759,7 +1759,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWindowFlag(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.overrideWindowFlags = function(...args) 
           
@@ -1769,7 +1769,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.overrideWindowFlags(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.windowType = function(...args) 
           
@@ -1779,7 +1779,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.windowType(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.childAt = function(...args) 
           
@@ -1789,7 +1789,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.childAt(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setAttribute = function(...args) 
           
@@ -1799,7 +1799,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAttribute(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.testAttribute = function(...args) 
           
@@ -1809,7 +1809,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.testAttribute(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.ensurePolished = function(...args) 
           
@@ -1819,7 +1819,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.ensurePolished(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isAncestorOf = function(...args) 
           
@@ -1829,7 +1829,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isAncestorOf(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setAutoFillBackground = function(...args) 
           
@@ -1839,7 +1839,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAutoFillBackground(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.event = function(...args) 
           
@@ -1849,7 +1849,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.event(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.mouseDoubleClickEvent = function(...args) 
           
@@ -1859,7 +1859,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mouseDoubleClickEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.wheelEvent = function(...args) 
           
@@ -1869,7 +1869,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.wheelEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.keyPressEvent = function(...args) 
           
@@ -1879,7 +1879,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.keyPressEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.keyReleaseEvent = function(...args) 
           
@@ -1889,7 +1889,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.keyReleaseEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.focusInEvent = function(...args) 
           
@@ -1899,7 +1899,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusInEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.focusOutEvent = function(...args) 
           
@@ -1909,7 +1909,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusOutEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.enterEvent = function(...args) 
           
@@ -1919,7 +1919,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.enterEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.leaveEvent = function(...args) 
           
@@ -1929,7 +1929,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.leaveEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.moveEvent = function(...args) 
           
@@ -1939,7 +1939,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.moveEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.closeEvent = function(...args) 
           
@@ -1949,7 +1949,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.closeEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.tabletEvent = function(...args) 
           
@@ -1959,7 +1959,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.tabletEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.dragEnterEvent = function(...args) 
           
@@ -1969,7 +1969,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dragEnterEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.dragMoveEvent = function(...args) 
           
@@ -1979,7 +1979,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dragMoveEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.dragLeaveEvent = function(...args) 
           
@@ -1989,7 +1989,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dragLeaveEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.dropEvent = function(...args) 
           
@@ -1999,7 +1999,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.dropEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.showEvent = function(...args) 
           
@@ -2009,7 +2009,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.showEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.hideEvent = function(...args) 
           
@@ -2019,7 +2019,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.hideEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.nativeEvent = function(...args) 
           
@@ -2029,7 +2029,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.nativeEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.changeEvent = function(...args) 
           
@@ -2039,7 +2039,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.changeEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.metric = function(...args) 
           
@@ -2049,7 +2049,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.metric(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.initPainter = function(...args) 
           
@@ -2059,7 +2059,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.initPainter(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.redirected = function(...args) 
           
@@ -2069,7 +2069,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.redirected(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.sharedPainter = function(...args) 
           
@@ -2079,7 +2079,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.sharedPainter(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.inputMethodEvent = function(...args) 
           
@@ -2089,7 +2089,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.inputMethodEvent(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.inputMethodQuery = function(...args) 
           
@@ -2099,7 +2099,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.inputMethodQuery(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setInputMethodHints = function(...args) 
           
@@ -2109,7 +2109,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setInputMethodHints(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.updateMicroFocus = function(...args) 
           
@@ -2119,7 +2119,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.updateMicroFocus(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.create = function(...args) 
           
@@ -2129,7 +2129,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.create(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.destroy = function(...args) 
           
@@ -2139,7 +2139,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.destroy(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.focusNextPrevChild = function(...args) 
           
@@ -2149,7 +2149,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusNextPrevChild(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.focusNextChild = function(...args) 
           
@@ -2159,7 +2159,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusNextChild(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.focusPreviousChild = function(...args) 
           
@@ -2169,7 +2169,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.focusPreviousChild(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setBackingStore = function(...args) 
           
@@ -2179,7 +2179,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setBackingStore(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.testAttribute_helper = function(...args) 
           
@@ -2189,7 +2189,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.testAttribute_helper(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.takeLayout = function(...args) 
           
@@ -2199,7 +2199,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.takeLayout(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.qt_mac_is_metal = function(...args) 
           
@@ -2209,7 +2209,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.qt_mac_is_metal(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.qt_qwidget_data = function(...args) 
           
@@ -2219,7 +2219,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.qt_qwidget_data(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.qt_widget_private = function(...args) 
           
@@ -2229,7 +2229,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.qt_widget_private(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.widget = function(...args) 
           
@@ -2239,7 +2239,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.widget(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setWidget = function(...args) 
           
@@ -2249,7 +2249,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setWidget(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFeatures = function(...args) 
           
@@ -2259,7 +2259,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFeatures(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setFloating = function(...args) 
           
@@ -2269,7 +2269,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setFloating(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isFloating = function(...args) 
           
@@ -2279,7 +2279,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isFloating(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setAllowedAreas = function(...args) 
           
@@ -2289,7 +2289,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setAllowedAreas(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.setTitleBarWidget = function(...args) 
           
@@ -2299,7 +2299,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.setTitleBarWidget(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.titleBarWidget = function(...args) 
           
@@ -2309,7 +2309,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.titleBarWidget(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.isAreaAllowed = function(...args) 
           
@@ -2319,7 +2319,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.isAreaAllowed(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.toggleViewAction = function(...args) 
           
@@ -2329,7 +2329,7 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.toggleViewAction(...args);
             
         };
-    
+        
         // function 
         QDockWidget.prototype.paintEvent = function(...args) 
           
@@ -2339,7 +2339,8 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.paintEventSuper(...args);
             
         };
-    
+        QDockWidget.prototype.paintEvent.__SUPER__ = true;
+        
         // function 
         QDockWidget.prototype.mouseMoveEvent = function(...args) 
           
@@ -2349,7 +2350,8 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.mouseMoveEventSuper(...args);
             
         };
-    
+        QDockWidget.prototype.mouseMoveEvent.__SUPER__ = true;
+        
         // function 
         QDockWidget.prototype.resizeEvent = function(...args) 
           
@@ -2359,7 +2361,8 @@ QDockWidget.Reserved = QDockWidget_Wrapper.Reserved;
               return this.__PROXY__.resizeEventSuper(...args);
             
         };
-    
+        QDockWidget.prototype.resizeEvent.__SUPER__ = true;
+        
 
       // static functions:
       

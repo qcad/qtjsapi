@@ -338,7 +338,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.type(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.spontaneous = function(...args) 
           
@@ -348,7 +348,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.spontaneous(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.setAccepted = function(...args) 
           
@@ -358,7 +358,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.setAccepted(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.isAccepted = function(...args) 
           
@@ -368,7 +368,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.isAccepted(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.accept = function(...args) 
           
@@ -378,7 +378,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.accept(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.ignore = function(...args) 
           
@@ -388,7 +388,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.ignore(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.isInputEvent = function(...args) 
           
@@ -398,7 +398,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.isInputEvent(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.isPointerEvent = function(...args) 
           
@@ -408,7 +408,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.isPointerEvent(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.isSinglePointEvent = function(...args) 
           
@@ -418,7 +418,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.isSinglePointEvent(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.clone = function(...args) 
           
@@ -428,7 +428,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.clone(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.setSpontaneous = function(...args) 
           
@@ -438,7 +438,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.setSpontaneous(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.rect = function(...args) 
           
@@ -448,7 +448,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.rect(...args);
             
         };
-    
+        
         // function 
         QPaintEvent.prototype.region = function(...args) 
           
@@ -458,7 +458,7 @@ QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
               return this.__PROXY__.region(...args);
             
         };
-    
+        
 
       // static functions:
       QPaintEvent.prototype.isNullWrapper = function() {

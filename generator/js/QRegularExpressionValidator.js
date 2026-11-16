@@ -175,7 +175,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.setObjectName(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.isWidgetType = function(...args) 
           
@@ -185,7 +185,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.isWidgetType(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.isWindowType = function(...args) 
           
@@ -195,7 +195,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.isWindowType(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.signalsBlocked = function(...args) 
           
@@ -205,7 +205,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.signalsBlocked(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.blockSignals = function(...args) 
           
@@ -215,7 +215,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.blockSignals(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.findChild = function(...args) 
           
@@ -225,7 +225,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.findChild(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.children = function(...args) 
           
@@ -235,7 +235,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.children(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.setParent = function(...args) 
           
@@ -245,7 +245,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.setParent(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.installEventFilter = function(...args) 
           
@@ -255,7 +255,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.installEventFilter(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.removeEventFilter = function(...args) 
           
@@ -265,7 +265,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.removeEventFilter(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.dumpObjectTree = function(...args) 
           
@@ -275,7 +275,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.dumpObjectTree(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.dumpObjectInfo = function(...args) 
           
@@ -285,7 +285,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.dumpObjectInfo(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.setProperty = function(...args) 
           
@@ -295,7 +295,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.setProperty(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.property = function(...args) 
           
@@ -305,7 +305,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.property(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.dynamicPropertyNames = function(...args) 
           
@@ -315,7 +315,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.dynamicPropertyNames(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.parent = function(...args) 
           
@@ -325,7 +325,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.parent(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.deleteLater = function(...args) 
           
@@ -335,7 +335,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.deleteLater(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.setLocale = function(...args) 
           
@@ -345,7 +345,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.setLocale(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.locale = function(...args) 
           
@@ -355,7 +355,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.locale(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.fixup = function(...args) 
           
@@ -365,7 +365,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.fixup(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.validate = function(...args) 
           
@@ -375,7 +375,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.validate(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.regularExpression = function(...args) 
           
@@ -385,7 +385,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.regularExpression(...args);
             
         };
-    
+        
         // function 
         QRegularExpressionValidator.prototype.setRegularExpression = function(...args) 
           
@@ -395,7 +395,7 @@ QRegularExpressionValidator.Acceptable = QRegularExpressionValidator_Wrapper.Acc
               return this.__PROXY__.setRegularExpression(...args);
             
         };
-    
+        
 
       // static functions:
       

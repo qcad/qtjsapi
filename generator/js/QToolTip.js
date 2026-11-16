@@ -105,7 +105,7 @@
               return this.__PROXY__.showText(...args);
             
         };
-    
+        
         // function 
         QToolTip.prototype.hideText = function(...args) 
           
@@ -115,7 +115,7 @@
               return this.__PROXY__.hideText(...args);
             
         };
-    
+        
         // function 
         QToolTip.prototype.isVisible = function(...args) 
           
@@ -125,7 +125,7 @@
               return this.__PROXY__.isVisible(...args);
             
         };
-    
+        
         // function 
         QToolTip.prototype.text = function(...args) 
           
@@ -135,7 +135,7 @@
               return this.__PROXY__.text(...args);
             
         };
-    
+        
         // function 
         QToolTip.prototype.palette = function(...args) 
           
@@ -145,7 +145,7 @@
               return this.__PROXY__.palette(...args);
             
         };
-    
+        
         // function 
         QToolTip.prototype.setPalette = function(...args) 
           
@@ -155,7 +155,7 @@
               return this.__PROXY__.setPalette(...args);
             
         };
-    
+        
         // function 
         QToolTip.prototype.font = function(...args) 
           
@@ -165,7 +165,7 @@
               return this.__PROXY__.font(...args);
             
         };
-    
+        
         // function 
         QToolTip.prototype.setFont = function(...args) 
           
@@ -175,7 +175,7 @@
               return this.__PROXY__.setFont(...args);
             
         };
-    
+        
 
       // static functions:
       

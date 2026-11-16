@@ -2056,9 +2056,6 @@
 
                 // set handler for wrapped base object:
                 //((<xsl:value-of select="$class-name" />_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                wrapped.dynamicCast&lt;<xsl:value-of select="$class-name" />_Base&gt;()->self = handler.getSelf();
               </xsl:when>
               <xsl:otherwise>
                 wrapped = new <xsl:value-of select="$class-name" />_Base(
@@ -2072,9 +2069,6 @@
 
                 // set handler for wrapped base object:
                 //((<xsl:value-of select="$class-name" />_Base*)wrapped)->setHandler(handler);
-
-                // store self to call into JS:
-                ((<xsl:value-of select="$class-name" />_Base*)wrapped)->self = handler.getSelf();
               </xsl:otherwise>
               </xsl:choose>
           </xsl:when>
@@ -2100,6 +2094,21 @@
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
+
+        <xsl:if test="document('inheritable_class.xml')/inheritable-class/class[@name=$class-name] or ancestor::qsrc:class[1]/@inheritable='true'">
+          // store self to call into JS:
+          // note: only after initConnections(): the wrapped object receives events during
+          // initialization (dynamic property change, child added) which must not be
+          // dispatched to the JS object before it is fully constructed (__PROXY__ not set yet):
+          <xsl:choose>
+            <xsl:when test="ancestor-or-self::qsrc:class/@sharedpointer">
+              wrapped.dynamicCast&lt;<xsl:value-of select="$class-name" />_Base&gt;()->self = handler.getSelf();
+            </xsl:when>
+            <xsl:otherwise>
+              ((<xsl:value-of select="$class-name" />_Base*)wrapped)->self = handler.getSelf();
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:if>
         return;
 
       </xsl:otherwise>
